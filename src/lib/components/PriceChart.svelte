@@ -119,7 +119,7 @@
     }
 
     &.below {
-      translate: -50% var(--space-1);
+      translate: 0 var(--space-1);
     }
   }
 

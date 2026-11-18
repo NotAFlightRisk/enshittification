@@ -173,8 +173,7 @@
       letter-spacing: -0.02em;
     }
 
-    .minor,
-    .minor small {
+    .minor {
       color: transparent;
     }
   }

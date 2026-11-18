@@ -36,8 +36,9 @@
   <Wall rows={data.rows} from={data.from} to={data.to} today={data.today} />
   <figcaption>
     <p>
-      Each mark is one change in this index, coloured by kind. It's what's been logged so far, not a
-      measure of how bad anything got.
+      Each mark is one change in this index, coloured by kind, and the numbers under the years are
+      how many were logged that year. It's what's been logged so far, not a measure of how bad
+      anything got.
     </p>
     <Legend />
   </figcaption>
@@ -53,7 +54,7 @@
   <section aria-labelledby="coming">
     <h2 id="coming">Coming up</h2>
     {#if data.coming.length}
-      <ChangeList changes={data.coming} />
+      <ChangeList changes={data.coming} showStatus={false} />
     {:else}
       <p class="empty">Nothing announced and not yet in force. Give it a week.</p>
     {/if}

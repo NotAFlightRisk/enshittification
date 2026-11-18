@@ -6,8 +6,14 @@
   let {
     changes,
     showService = true,
+    showStatus = true,
     hidden = new Set()
-  }: { changes: Entry[]; showService?: boolean; hidden?: Set<string> } = $props();
+  }: {
+    changes: Entry[];
+    showService?: boolean;
+    showStatus?: boolean;
+    hidden?: Set<string>;
+  } = $props();
 </script>
 
 <ol class="changes">
@@ -20,7 +26,7 @@
           >{/if}
         {change.title}
       </a>
-      {#if change.status !== 'in-force'}
+      {#if showStatus && change.status !== 'in-force'}
         <span class="status">{statuses[change.status]}</span>
       {/if}
     </li>
