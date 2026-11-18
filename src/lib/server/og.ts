@@ -177,7 +177,10 @@ function serviceImage(id: string) {
   const worst = worstOf(service.changes, data().built);
   return frame(
     `${plural(service.changes.length, 'change')} since ${from}`,
-    lede(service.name, `${severities[worst.severity].name}: ${worst.title}`),
+    lede(
+      service.name,
+      worst ? `${severities[worst.severity].name}: ${worst.title}` : service.changes[0].title
+    ),
     strip(service.changes, from, to, Math.floor((ogSize.width - 2 * inset) * fit.wide))
   );
 }

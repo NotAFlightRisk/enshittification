@@ -48,15 +48,17 @@
   </p>
 </header>
 
-<div class="worst">
-  <Sign severity={worst.severity}>
-    <a class="headline" href={worst.path}>
-      <Pictogram kind={worst.category} severity={worst.severity} />
-      {worst.title}
-    </a>
-    <p>{formatDate(worst.date)}, {categories[worst.category].toLowerCase()}</p>
-  </Sign>
-</div>
+{#if worst}
+  <div class="worst">
+    <Sign severity={worst.severity}>
+      <a class="headline" href={worst.path}>
+        <Pictogram kind={worst.category} severity={worst.severity} />
+        {worst.title}
+      </a>
+      <p>{formatDate(worst.date)}, {categories[worst.category].toLowerCase()}</p>
+    </Sign>
+  </div>
+{/if}
 
 <figure class="strip">
   <Wall

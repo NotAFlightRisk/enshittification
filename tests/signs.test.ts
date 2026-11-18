@@ -13,7 +13,7 @@ describe('worstOf', () => {
       change('older', '2022-05-01', 2),
       change('mild', '2021-05-01', 1)
     ];
-    expect(worstOf(changes, '2026-01-01').key).toBe('newer');
+    expect(worstOf(changes, '2026-01-01')?.key).toBe('newer');
   });
 
   it("skips changes that haven't happened or didn't stick", () => {
@@ -23,7 +23,8 @@ describe('worstOf', () => {
       change('tested', '2024-01-01', 3, 'test'),
       change('real', '2023-01-01', 2)
     ];
-    expect(worstOf(changes, '2026-01-01').key).toBe('real');
+    expect(worstOf(changes, '2026-01-01')?.key).toBe('real');
+    expect(worstOf(changes.slice(0, 3), '2026-01-01')).toBeUndefined();
   });
 });
 
@@ -33,13 +34,13 @@ describe('marks', () => {
     expect(placed.map(({ lane }) => lane)).toEqual([0, 0]);
   });
 
-  it('stacks signs that are close, up to three posts high', () => {
+  it('stacks close signs as high as it takes', () => {
     const placed = marks(
       ['01', '02', '03', '04'].map((day) => change(day, `2020-06-${day}`, 1)),
       2016,
       2025
     );
-    expect(placed.map(({ lane }) => lane)).toEqual([0, 1, 2, 0]);
-    expect(placed.map(({ narrowLane }) => narrowLane)).toEqual([0, 1, 2, 0]);
+    expect(placed.map(({ lane }) => lane)).toEqual([0, 1, 2, 3]);
+    expect(placed.map(({ narrowLane }) => narrowLane)).toEqual([0, 1, 2, 3]);
   });
 });

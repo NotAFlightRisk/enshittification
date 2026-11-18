@@ -21,7 +21,6 @@ export interface Mark {
 
 // how close two signs can sit, as a share of the line, before one goes up a post
 const room = { wide: 0.04, narrow: 0.075 };
-const maxLanes = 3;
 
 /** The widest a sign can be, as a share of the line, and still clear its neighbour on the same post */
 export const fit = { wide: room.wide * 0.9, narrow: room.narrow * 0.9 };
@@ -30,8 +29,8 @@ export const fit = { wide: room.wide * 0.9, narrow: room.narrow * 0.9 };
 function lanes(positions: number[], gap: number) {
   const ends: number[] = [];
   return positions.map((at) => {
-    let lane = ends.findIndex((end) => at - end >= gap);
-    if (lane === -1) lane = ends.length < maxLanes ? ends.length : ends.indexOf(Math.min(...ends));
+    const free = ends.findIndex((end) => at - end >= gap);
+    const lane = free === -1 ? ends.length : free;
     ends[lane] = at;
     return lane;
   });

@@ -45,11 +45,11 @@ export const happenedBy = (changes: Entry[], today: string) =>
 const latestOf = (changes: Entry[], today: string) => happenedBy(changes, today)[0] ?? changes[0];
 
 /** The most serious change that happened and stuck, the newest if there's a tie */
-export function worstOf(changes: Entry[], today: string) {
+export function worstOf(changes: Entry[], today: string): Entry | undefined {
   const stuck = happenedBy(changes, today).filter(({ status }) => !isHollow(status));
   return stuck.reduce(
     (worst, change) => (change.severity > worst.severity ? change : worst),
-    stuck[0] ?? changes[0]
+    stuck[0]
   );
 }
 
