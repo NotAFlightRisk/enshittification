@@ -188,7 +188,7 @@
       align-items: center;
       gap: var(--space-2);
       padding: var(--space-1) var(--space-3);
-      border: 2px solid var(--ink);
+      border: var(--medium) solid var(--ink);
       background: var(--paper);
       font-weight: 600;
       cursor: pointer;

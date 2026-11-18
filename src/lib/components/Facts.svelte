@@ -101,7 +101,7 @@
     display: grid;
     align-content: start;
     padding: var(--space-3) var(--space-4) var(--space-4);
-    border: 2px solid var(--edge);
+    border: var(--medium) solid var(--edge);
     font-size: var(--text-sm);
   }
 
@@ -115,7 +115,7 @@
   .total {
     margin-top: var(--space-2);
     padding-top: var(--space-2);
-    border-top: 0.6rem solid var(--edge);
+    border-top: var(--band) solid var(--edge);
     font-size: var(--text-md);
     font-weight: 700;
   }
@@ -155,7 +155,7 @@
 
   table {
     margin-top: var(--space-3);
-    border-top: 0.6rem solid var(--edge);
+    border-top: var(--band) solid var(--edge);
 
     & th,
     & td {

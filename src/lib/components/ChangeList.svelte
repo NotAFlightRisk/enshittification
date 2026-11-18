@@ -56,7 +56,7 @@
     container-type: inline-size;
     padding: 0;
     list-style: none;
-    border-top: 2px solid var(--ink);
+    border-top: var(--medium) solid var(--ink);
   }
 
   li {

@@ -141,8 +141,8 @@
       gap: var(--space-2);
       height: 100%;
       padding: var(--space-4);
-      border: 2px solid var(--edge);
-      border-top: 0.6rem solid var(--level);
+      border: var(--medium) solid var(--edge);
+      border-top: var(--band) solid var(--level);
       background: var(--paper);
       text-decoration: none;
 

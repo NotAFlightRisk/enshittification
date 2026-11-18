@@ -73,7 +73,7 @@
     justify-content: space-between;
     gap: var(--space-3) var(--space-6);
     padding-block: var(--space-4);
-    border-bottom: 2px solid var(--ink);
+    border-bottom: var(--medium) solid var(--ink);
   }
 
   .wordmark {
@@ -124,7 +124,7 @@
     display: grid;
     gap: var(--space-4);
     padding-block: var(--space-6);
-    border-top: 2px solid var(--ink);
+    border-top: var(--medium) solid var(--ink);
     font-size: var(--text-sm);
     color: var(--ink-soft);
 
