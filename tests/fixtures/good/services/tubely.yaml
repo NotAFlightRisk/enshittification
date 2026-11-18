@@ -1,0 +1,149 @@
+service: tubely
+name: Tubely
+company: acme
+url: https://tubely.example
+crw: https://consumerrights.wiki/w/Tubely
+plans:
+  - id: premium-us
+    name: Tubely Premium
+    region: US
+    currency: USD
+    billing: month
+    since: 2018-06
+    price: 11.99
+    source:
+      url: https://tubely.example/premium
+      publisher: Tubely
+      kind: pricing-page
+      published: 2018-07-01
+      archive: https://web.archive.org/web/20180701000000/https://tubely.example/premium
+      quote: Premium is $11.99 a month.
+  - id: premium-uk
+    name: Tubely Premium
+    region: UK
+    currency: GBP
+    billing: month
+    since: 2018-06
+    price: 11.99
+    incomplete: no source for the 2020 rise yet
+    source:
+      url: https://tubely.example/uk/premium
+      publisher: Tubely
+      kind: pricing-page
+      published: 2018-07-01
+      archive: https://web.archive.org/web/20180701000000/https://tubely.example/uk/premium
+      quote: Premium is £11.99 a month.
+changes:
+  - id: premium-price-2023
+    date: 2023-07-20
+    date_kind: announced
+    effective: 2023-08
+    category: price-rise
+    title: Tubely Premium goes from $11.99 to $13.99
+    question: When did Tubely Premium first go up?
+    what_changed: Tubely said on 20 July 2023 that Premium would go from $11.99 to $13.99 a month in the US.
+    before: $11.99 a month
+    after: $13.99 a month
+    user_impact: Subscribers pay $24 a year more.
+    severity: 2
+    status: in-force
+    regions: [US]
+    prices: [{ plan: premium-us, from: 11.99, to: 13.99 }]
+    sources:
+      - url: https://news.example/tubely-premium-2023
+        publisher: News Example
+        kind: press
+        published: 2023-07-20
+        archive: https://web.archive.org/web/20230720000000/https://news.example/tubely-premium-2023
+        quote: Premium goes up to $13.99 a month.
+      - url: https://forum.tubely.example/post
+        publisher: Tubely forum
+        kind: primary
+        published: 2023-07-20
+        archive: blocked
+        quote: We are adjusting prices.
+    added: 2026-11-18
+    updated: 2026-11-18
+    sources_checked: 2026-11-18
+    status_checked: 2026-11-18
+  - id: premium-price-2026
+    date: 2026-04
+    date_kind: reported
+    category: price-rise
+    title: Tubely Premium goes from $13.99 to $15.99
+    what_changed: In April 2026 Premium went from $13.99 to $15.99 a month in the US.
+    user_impact: Ad-free Tubely costs more again.
+    severity: 2
+    status: in-force
+    regions: [US]
+    prices: [{ plan: premium-us, from: 13.99, to: 15.99 }]
+    sources:
+      - url: https://news.example/tubely-2026
+        publisher: News Example
+        kind: press
+        published: 2026-04-10
+        archive: https://web.archive.org/web/20260410000000/https://news.example/tubely-2026
+        quote: Premium is now $15.99.
+    added: 2026-11-18
+    updated: 2026-11-18
+    sources_checked: 2026-11-18
+    status_checked: 2026-11-18
+  - id: dislikes-hidden
+    date: 2021-11-10
+    date_kind: announced
+    category: removed-feature
+    title: Tubely hides the public dislike count
+    what_changed: Tubely hid public dislike counts on 10 November 2021, keeping the button.
+    user_impact: Viewers lost a quick way to spot a bad video.
+    company_said: It said the counts were being used to pile on creators.
+    severity: 2
+    status: reversed
+    reversed:
+      date: 2022-02
+      what: The counts came back in a test.
+      sources:
+        - url: https://news.example/dislikes-back
+          publisher: News Example
+          kind: press
+          published: 2022-02-01
+          archive: https://web.archive.org/web/20220201000000/https://news.example/dislikes-back
+          quote: Dislikes are back.
+    sources:
+      - url: https://blog.tubely.example/dislikes
+        publisher: Tubely Blog
+        kind: primary
+        published: 2021-11-10
+        archive: https://web.archive.org/web/20211110000000/https://blog.tubely.example/dislikes
+        quote: We're making the dislike count private.
+      - url: https://news.example/dislikes-extra
+        publisher: News Example
+        kind: press
+        published: 2021-11-11
+        archive: pending
+        quote: Dislike counts are gone.
+    corrections: [{ date: 2026-11-18, what: Fixed the date. }]
+    added: 2026-11-18
+    updated: 2026-11-18
+    sources_checked: 2026-11-18
+    status_checked: 2026-11-18
+  - id: feeds-end
+    date: 2027-03
+    date_kind: announced
+    category: api-restriction
+    title: Tubely ends its public feeds
+    what_changed: Tubely said in March 2027 its public feeds would end.
+    user_impact: Feed readers stop working.
+    severity: 3
+    status: scheduled
+    related: [tubely/dislikes-hidden]
+    sources:
+      - url: https://news.example/feeds
+        publisher: News Example
+        kind: press
+        published: 2026-10-01
+        archive: https://web.archive.org/web/20261001000000/https://news.example/feeds
+        quote: Feeds are ending.
+    added: 2026-11-18
+    updated: 2026-11-18
+    sources_checked: 2026-11-18
+    status_checked: 2026-11-18
