@@ -58,6 +58,7 @@ export const listIndexed = (changes: Entry[]) => changes.length >= 5;
 /** "YouTube Premium" for plans called "YouTube Premium" and "YouTube Premium Family" */
 export function productName(service: Service | { name: string; plans: PlanHistory[] }) {
   const names = service.plans.map(({ name }) => name.split(' '));
+  if (!names.length) return service.name;
   const common: string[] = [];
   const shortest = Math.min(...names.map((words) => words.length));
   for (let index = 0; index < shortest; index++) {

@@ -64,7 +64,7 @@
   .row,
   .axis {
     display: grid;
-    grid-template-columns: var(--name) 1fr var(--count);
+    grid-template-columns: var(--name) minmax(0, 1fr) var(--count);
     align-items: center;
     column-gap: var(--space-4);
   }
@@ -112,12 +112,13 @@
     & ol {
       grid-column: 2;
       display: grid;
-      grid-template-columns: repeat(var(--years), 1fr);
+      grid-template-columns: repeat(var(--years), minmax(0, 1fr));
       padding: 0;
       list-style: none;
     }
 
     & li {
+      overflow: hidden;
       padding-left: var(--space-1);
       border-left: var(--rule-thin) solid var(--rule-faint);
     }
@@ -129,7 +130,7 @@
 
   @media (max-width: 40rem) {
     .wall:not(.big) .row {
-      grid-template-columns: 1fr auto;
+      grid-template-columns: minmax(0, 1fr) auto;
       row-gap: var(--space-1);
 
       & .line {
@@ -143,7 +144,7 @@
     }
 
     .wall:not(.big) .axis {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
 
       & ol {
         grid-column: 1;
