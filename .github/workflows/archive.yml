@@ -1,0 +1,53 @@
+name: 🗄️ Archive
+
+on:
+  schedule:
+    - cron: '41 4,16 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: archive
+  cancel-in-progress: false
+
+jobs:
+  save:
+    name: 🗄️ Save pending sources to the Wayback Machine
+    if: github.repository_owner == 'NotAFlightRisk'
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    permissions:
+      contents: write
+    env:
+      HAS_BOT: ${{ secrets.BOT_PRIVATE_KEY != '' }}
+    steps:
+      - uses: actions/create-github-app-token@64ab729a6294000f5aa4a4bc0b73d1f32bc45510 # v3.3.0
+        id: bot
+        if: env.HAS_BOT == 'true'
+        with:
+          client-id: Iv23liPIG7E12UlaQMaD
+          private-key: ${{ secrets.BOT_PRIVATE_KEY }}
+          permission-contents: write
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run archive -- --minutes 30
+      - name: Make sure only archive links changed
+        run: |
+          if git diff -U0 -- data | grep -E '^[-+][^-+]' | grep -v 'archive'; then
+            echo "❌ The archive job changed more than archive links" >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+      - name: Commit the snapshots to main
+        env:
+          GH_TOKEN: ${{ steps.bot.outputs.token || github.token }}
+        run: |
+          scripts/commit.sh 'chore(data): add archive links' data/services >> "$GITHUB_STEP_SUMMARY"

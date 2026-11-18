@@ -1,0 +1,74 @@
+name: 📅 Weekly check
+
+on:
+  schedule:
+    - cron: '17 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: weekly
+  cancel-in-progress: false
+
+jobs:
+  check:
+    name: 📅 Re-read every source and refresh inflation
+    if: github.repository_owner == 'NotAFlightRisk'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: write
+      issues: write
+    env:
+      HAS_BOT: ${{ secrets.BOT_PRIVATE_KEY != '' }}
+    steps:
+      - uses: actions/create-github-app-token@64ab729a6294000f5aa4a4bc0b73d1f32bc45510 # v3.3.0
+        id: bot
+        if: env.HAS_BOT == 'true'
+        with:
+          client-id: Iv23liPIG7E12UlaQMaD
+          private-key: ${{ secrets.BOT_PRIVATE_KEY }}
+          permission-contents: write
+          permission-issues: write
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+
+      - name: Refresh the CPI files
+        env:
+          GH_TOKEN: ${{ steps.bot.outputs.token || github.token }}
+        run: |
+          npm run -s cpi
+          scripts/commit.sh 'chore(data): refresh the CPI figures' data/cpi >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Re-read every source
+        id: sources
+        continue-on-error: true
+        run: npm run check:sources -- --weekly --report "$RUNNER_TEMP/report.md"
+
+      - name: Keep one issue open for whatever needs a look
+        env:
+          GH_TOKEN: ${{ steps.bot.outputs.token || github.token }}
+          FINDINGS: ${{ steps.sources.outputs.findings }}
+          RUN: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          title='Weekly source check'
+          open=$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --search "\"$title\" in:title" --json number --jq '.[0].number // empty')
+          if [ "${FINDINGS:-0}" = "0" ]; then
+            [ -n "$open" ] && gh issue close "$open" --repo "$GITHUB_REPOSITORY" --comment "All clear on [this week's run]($RUN)."
+            exit 0
+          fi
+          { cat "$RUNNER_TEMP/report.md"; echo; echo "From [this run]($RUN)."; } > "$RUNNER_TEMP/body.md"
+          if [ -n "$open" ]; then
+            gh issue edit "$open" --repo "$GITHUB_REPOSITORY" --body-file "$RUNNER_TEMP/body.md"
+          else
+            gh issue create --repo "$GITHUB_REPOSITORY" --title "$title" --body-file "$RUNNER_TEMP/body.md" --label data
+          fi
