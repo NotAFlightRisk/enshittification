@@ -8,25 +8,35 @@
   );
 </script>
 
-<ul class="legend">
-  {#each shown as category (category)}
-    <li style:--ink="var(--{category})">
-      <a href="/category/{category}">{categories[category]}</a>
-    </li>
-  {/each}
-  <li class="hollow">Reversed or only tested</li>
-  <li class="ahead">Not in force yet</li>
-</ul>
+<div class="legend">
+  <ul>
+    {#each shown as category (category)}
+      <li style:--ink="var(--{category})">
+        <a href="/category/{category}">{categories[category]}</a>
+      </li>
+    {/each}
+  </ul>
+  <ul>
+    <li class="hollow">Reversed or only tested</li>
+    <li class="ahead">Not in force yet</li>
+    <li class="today">Today</li>
+  </ul>
+</div>
 
 <style>
   .legend {
+    display: grid;
+    gap: var(--space-2);
+    font-size: var(--text-sm);
+    color: var(--text-muted);
+  }
+
+  ul {
     display: flex;
     flex-wrap: wrap;
     gap: var(--space-2) var(--space-5);
     padding: 0;
     list-style: none;
-    font-size: var(--text-sm);
-    color: var(--text-muted);
   }
 
   li {
@@ -51,6 +61,12 @@
 
   .ahead::before {
     background: repeating-linear-gradient(var(--ink) 0 3px, transparent 3px 6px);
+  }
+
+  .today::before {
+    width: 0;
+    background: none;
+    border-left: var(--rule-thin) dashed var(--text-muted);
   }
 
   a {

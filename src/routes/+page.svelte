@@ -27,7 +27,8 @@
   <p>
     {plural(counts.changes, 'change')} at {plural(counts.services, 'service')} since {counts.first}:
     price rises, new ads, paywalls, removed features and API lockdowns. Each one has the date, what
-    the company said, and its sources with an archived copy, so you can check it yourself.
+    the company said where it said anything, and its sources with an archived copy, so you can check
+    it yourself.
   </p>
 </header>
 
@@ -96,7 +97,6 @@
 
   .lists {
     display: grid;
-    grid-template-columns: 3fr 2fr;
     gap: var(--space-7);
 
     & section {
@@ -121,12 +121,6 @@
 
     &:hover {
       background: var(--accent-soft);
-    }
-  }
-
-  @media (max-width: 60rem) {
-    .lists {
-      grid-template-columns: 1fr;
     }
   }
 </style>

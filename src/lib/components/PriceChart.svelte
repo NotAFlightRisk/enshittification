@@ -33,6 +33,7 @@
       <span
         class="point"
         class:start={point.x < 8}
+        class:below={point.below}
         class:end={point.x > 80}
         style:left="{point.x}%"
         style:top="{point.y}%"
@@ -103,6 +104,8 @@
   .point {
     position: absolute;
     translate: -50% calc(-100% - var(--space-1));
+    padding: 0 2px;
+    background: var(--surface);
     font-size: var(--text-sm);
     font-weight: 700;
     white-space: nowrap;
@@ -115,8 +118,8 @@
       translate: -100% calc(-100% - var(--space-1));
     }
 
-    & a {
-      text-decoration-color: var(--price-rise);
+    &.below {
+      translate: -50% var(--space-1);
     }
   }
 

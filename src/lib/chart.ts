@@ -8,7 +8,11 @@ export interface PricePoint {
   price: number;
   date: string;
   change?: string;
+  below?: boolean;
 }
+
+// labels closer than this (as a share of the width) to the one before go under their step
+const crowded = 7;
 
 /** A step chart of a plan's price, with its launch price kept up with inflation behind it */
 export function priceChart(plan: PlanHistory, cpi: Cpi, today: string) {
@@ -30,11 +34,12 @@ export function priceChart(plan: PlanHistory, cpi: Cpi, today: string) {
   const x = (date: string) => ((yearFraction(date) - start) / (end - start || 1)) * 100;
   const y = (price: number) => 100 - (price / top) * 100;
 
-  const points: PricePoint[] = steps.map((step) => ({
-    ...step,
-    x: x(step.date),
-    y: y(step.price)
-  }));
+  const points: PricePoint[] = [];
+  for (const step of steps) {
+    const before = points.at(-1);
+    const near = before !== undefined && x(step.date) - before.x < crowded;
+    points.push({ ...step, x: x(step.date), y: y(step.price), below: near && !before.below });
+  }
   const line = points
     .map((point, index) => (index ? `H ${point.x} V ${point.y}` : `M ${point.x} ${point.y}`))
     .join(' ')

@@ -128,6 +128,12 @@
     padding-block: var(--space-6) var(--space-8);
   }
 
+  @media (max-width: 40rem) {
+    nav {
+      column-gap: var(--space-4);
+    }
+  }
+
   .colophon {
     display: grid;
     gap: var(--space-4);

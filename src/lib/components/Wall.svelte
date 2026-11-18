@@ -2,6 +2,7 @@
   import Strip from '#lib/components/Strip.svelte';
   import Tally from '#lib/components/Tally.svelte';
   import { yearsBetween } from '#lib/strip.ts';
+  import { yearOf } from '#lib/dates.ts';
   import { plural } from '#lib/format.ts';
   import type { Entry } from '#lib/data/types.ts';
 
@@ -20,6 +21,12 @@
   } = $props();
 
   const years = $derived(yearsBetween(from, to));
+  const perYear = $derived(
+    Map.groupBy(
+      rows.flatMap(({ changes }) => changes),
+      ({ date }) => yearOf(date)
+    )
+  );
   // labels every other year once there are too many to fit on a phone
   const sparse = $derived(years.length > 8);
 </script>
@@ -42,7 +49,10 @@
   <div class="axis" aria-hidden="true">
     <ol>
       {#each years as year, index (year)}
-        <li class:minor={sparse && index % 2 === 1}>{year}</li>
+        <li class:minor={sparse && index % 2 === 1}>
+          {year}
+          {#if !big}<small>{perYear.get(year)?.length ?? 0}</small>{/if}
+        </li>
       {/each}
     </ol>
   </div>
@@ -118,9 +128,16 @@
     }
 
     & li {
+      display: grid;
       overflow: hidden;
       padding-left: var(--space-1);
       border-left: var(--rule-thin) solid var(--rule-faint);
+    }
+
+    & small {
+      font-size: var(--text-xs);
+      font-weight: 700;
+      color: var(--text);
     }
   }
 
@@ -156,7 +173,8 @@
       letter-spacing: -0.02em;
     }
 
-    .minor {
+    .minor,
+    .minor small {
       color: transparent;
     }
   }

@@ -187,7 +187,7 @@
     <a href="/category/{entry.category}">{categories[entry.category].toLowerCase()}</a>, or all of
     <a href="/{entry.service}">{entry.serviceName}</a>.
   </p>
-  <p>
+  <p class="actions">
     Added {shortDate(entry.added)}, updated {shortDate(entry.updated)}, sources last read
     {shortDate(entry.sources_checked)}.
     <a href={correctionUrl(entry.key, entry.title)} rel="external">Something wrong?</a>
@@ -220,7 +220,7 @@
     flex-wrap: wrap;
     gap: var(--space-3) var(--space-6);
     padding-top: var(--space-4);
-    border-top: var(--rule-heavy) solid var(--ink);
+    border-top: var(--rule-heavy) solid var(--rule);
     font-size: var(--text-sm);
 
     & dt {
@@ -265,11 +265,12 @@
       font-weight: 800;
       letter-spacing: -0.03em;
       line-height: 1.05;
+      text-wrap: balance;
     }
 
     & .was {
       color: var(--text-muted);
-      text-decoration: line-through var(--ink) 0.08em;
+      text-decoration: line-through var(--accent) 0.08em;
     }
   }
 
@@ -376,7 +377,7 @@
     font-size: var(--text-sm);
     color: var(--text-muted);
 
-    & a + a {
+    & .actions a + a {
       margin-left: var(--space-3);
     }
   }
