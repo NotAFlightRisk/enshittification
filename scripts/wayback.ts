@@ -34,7 +34,8 @@ export function archived(url: string, init: RequestInit & { timeout?: number } =
     } catch (error) {
       if (error instanceof Unavailable) throw error;
       await pause(cooldown);
-      throw new Unavailable(`couldn't reach the archive (${(error as Error).message})`);
+      const { message, cause } = error as Error & { cause?: { code?: string } };
+      throw new Unavailable(`couldn't reach the archive (${cause?.code ?? message})`);
     } finally {
       last = Date.now();
     }
