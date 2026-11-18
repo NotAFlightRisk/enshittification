@@ -88,9 +88,10 @@ async function checkLive(key: string, source: Source) {
   }
 }
 
-/** Reads each source, checks its quote is in it, and hands back the text of the ones it could read */
+/** Reads each source and checks its quote is in it. `unread` counts the ones the archive was too busy for */
 async function readAll(key: string, sources: Source[]) {
   const read: string[] = [];
+  let unread = 0;
   for (const source of sources) {
     await checkLive(key, source);
     try {
@@ -104,6 +105,7 @@ async function readAll(key: string, sources: Source[]) {
         );
     } catch (error) {
       const unreadable = error instanceof Unavailable || source.archive === 'blocked';
+      if (error instanceof Unavailable) unread++;
       note(
         unreadable ? 'warn' : 'fail',
         key,
@@ -111,19 +113,21 @@ async function readAll(key: string, sources: Source[]) {
       );
     }
   }
-  return read;
+  return { read, unread };
 }
 
 function numbers(
   key: string,
   claim: (string | undefined)[],
-  read: string[],
+  { read, unread }: Awaited<ReturnType<typeof readAll>>,
   exempt = new Set<string>()
 ) {
   if (!read.length) return;
   const missing = missingNumbers(claim.filter(Boolean).join(' '), read.join(' '), exempt);
-  if (missing.length) note('fail', key, `no source has ${missing.join(', ')}`);
-  else console.log('  ✓ quotes and numbers found');
+  if (!missing.length) console.log('  ✓ quotes and numbers found');
+  else if (unread)
+    note('warn', key, `numbers not checked, since ${plural(unread, 'source')} couldn't be fetched`);
+  else note('fail', key, `no source has ${missing.join(', ')}`);
 }
 
 async function checkChange(file: ServiceFile, change: Change) {
