@@ -59,9 +59,6 @@ export function shortDate(date: string) {
   return [day, months[month - 1].slice(0, 3), year].filter(Boolean).join(' ');
 }
 
-/** "on 10 November 2021", "in November 2021" or "in 2021" */
-export const onDate = (date: string) => `${date.length === 10 ? 'on' : 'in'} ${formatDate(date)}`;
-
 export const monthOf = (date: string) => startOf(date).slice(0, 7);
 
 export const today = () => new Date().toISOString().slice(0, 10);

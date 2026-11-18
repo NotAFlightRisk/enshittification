@@ -2,16 +2,18 @@
   import { SvelteSet } from 'svelte/reactivity';
   import ChangeList from '#lib/components/ChangeList.svelte';
   import Crumbs from '#lib/components/Crumbs.svelte';
+  import Facts from '#lib/components/Facts.svelte';
   import Legend from '#lib/components/Legend.svelte';
+  import Pictogram from '#lib/components/Pictogram.svelte';
   import Seo from '#lib/components/Seo.svelte';
+  import Sign from '#lib/components/Sign.svelte';
   import Wall from '#lib/components/Wall.svelte';
-  import { onDate, shortDate } from '#lib/dates.ts';
-  import { money, perBilling, percent, plural } from '#lib/format.ts';
+  import { formatDate } from '#lib/dates.ts';
+  import { plural } from '#lib/format.ts';
   import { categories, type Category } from '#lib/data/types.ts';
 
   let { data } = $props();
-  const { service } = $derived(data);
-  const latest = $derived(data.latest);
+  const { service, worst } = $derived(data);
   const kinds = $derived(
     (Object.keys(categories) as Category[]).filter((kind) =>
       service.changes.some(({ category }) => category === kind)
@@ -31,21 +33,30 @@
   description={data.description}
   path="/{service.service}"
   {crumbs}
-  alt="{service.name}'s decline strip: {plural(
+  alt="{service.name}'s wall: {plural(
     service.changes.length,
     'change'
-  )} from {data.from} to {data.to}."
+  )} as warning signs from {data.from} to {data.to}."
 />
 
 <header class="head">
   <Crumbs {crumbs} />
   <h1>{service.name}</h1>
   <p>
-    {plural(service.changes.length, 'change')} since {data.from}, from
-    <a href="/company/{data.company.id}">{data.company.name}</a>. The latest, {onDate(latest.date)}:
-    <a href={latest.path}>{latest.title}</a>.
+    Owned by <a href="/company/{data.company.id}">{data.company.name}</a>.
+    {plural(service.changes.length, 'change')} since {data.from}.
   </p>
 </header>
+
+<div class="worst">
+  <Sign severity={worst.severity}>
+    <a class="headline" href={worst.path}>
+      <Pictogram kind={worst.category} severity={worst.severity} />
+      {worst.title}
+    </a>
+    <p>{formatDate(worst.date)}, {categories[worst.category].toLowerCase()}</p>
+  </Sign>
+</div>
 
 <figure class="strip">
   <Wall
@@ -58,72 +69,50 @@
   <figcaption><Legend only={kinds} /></figcaption>
 </figure>
 
-{#if data.hasPrices}
-  <section class="prices" aria-labelledby="prices">
-    <h2 id="prices">What it costs now</h2>
-    <table>
-      <thead>
-        <tr
-          ><th scope="col">Plan</th><th scope="col">Now</th><th scope="col">At launch</th><th
-            scope="col">Rise</th
-          ></tr
-        >
-      </thead>
-      <tbody>
-        {#each data.plans as plan (plan.key)}
-          <tr>
-            <th scope="row">{plan.name} <span>{plan.region}</span></th>
-            <td>{money(plan.now.price, plan.currency)} {perBilling[plan.billing]}</td>
-            <td>{money(plan.launch.price, plan.currency)}, {shortDate(plan.launch.date)}</td>
-            <td>{percent(plan.now.price / plan.launch.price - 1)}</td>
-          </tr>
-        {/each}
-      </tbody>
-    </table>
-    <p>
-      <a href="/{service.service}/price-history"
-        >{data.product} price history, every step since launch</a
-      >
-    </p>
-  </section>
-{/if}
+<div class="split">
+  <div class="side">
+    <Facts
+      name={service.name}
+      owner={data.company.name}
+      from={data.from}
+      changes={service.changes}
+      plans={data.plans}
+      history={data.hasPrices ? `/${service.service}/price-history` : undefined}
+    />
+  </div>
 
-<section class="history" aria-labelledby="every">
-  <div class="bar">
+  <section class="history" aria-labelledby="every">
     <h2 id="every">Every change, newest first</h2>
     {#if kinds.length > 1}
       <div class="filters" role="group" aria-label="Show kinds of change">
         {#each kinds as kind (kind)}
-          <button
-            type="button"
-            aria-pressed={!hidden.has(kind)}
-            style:--ink="var(--{kind})"
-            onclick={() => toggle(kind)}>{categories[kind]}</button
-          >
+          <button type="button" aria-pressed={!hidden.has(kind)} onclick={() => toggle(kind)}>
+            <Pictogram {kind} />{categories[kind]}
+          </button>
         {/each}
       </div>
     {/if}
-  </div>
-  {#each data.years as [year, changes] (year)}
-    <section class="year" hidden={changes.every(({ category }) => hidden.has(category))}>
-      <h3><a href="/year/{year}">{year}</a></h3>
-      <ChangeList {changes} showService={false} {hidden} />
-    </section>
-  {/each}
-</section>
+    {#each data.years as [year, changes] (year)}
+      <section class="year" hidden={changes.every(({ category }) => hidden.has(category))}>
+        <h3><a href="/year/{year}">{year}</a></h3>
+        <ChangeList {changes} showService={false} {hidden} />
+      </section>
+    {/each}
+  </section>
+</div>
 
 <aside class="further" aria-labelledby="further">
   <h2 id="further">Further reading</h2>
   <ul>
     <li>
-      <a href="/company/{data.company.id}">Everything from {data.company.name} in this index</a>
+      <a href="/company/{data.company.id}">Everything from {data.company.name}</a>
     </li>
-    {#if service.crw}<li>
-        <a href={service.crw} rel="external">{service.name} on Consumer Rights Wiki</a>
-      </li>{/if}
-    {#if service.wikipedia}<li>
-        <a href={service.wikipedia} rel="external">{service.name} on Wikipedia</a>
-      </li>{/if}
+    {#if service.crw}
+      <li><a href={service.crw} rel="external">{service.name} on Consumer Rights Wiki</a></li>
+    {/if}
+    {#if service.wikipedia}
+      <li><a href={service.wikipedia} rel="external">{service.name} on Wikipedia</a></li>
+    {/if}
     <li><a href={service.url} rel="external">{service.name}'s own site</a></li>
   </ul>
 </aside>
@@ -134,38 +123,59 @@
     gap: var(--space-3);
 
     & p {
-      max-width: var(--measure);
       font-size: var(--text-md);
-      color: var(--text-muted);
+      color: var(--ink-soft);
+    }
+  }
+
+  .worst {
+    max-width: 56rem;
+    margin-top: var(--space-6);
+
+    & p {
+      margin-top: var(--space-2);
+      color: var(--ink-soft);
+    }
+  }
+
+  .headline {
+    --sign-size: 2.75rem;
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    font-family: var(--font-sign);
+    font-size: var(--text-xl);
+    font-weight: 700;
+    line-height: 1.05;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline 3px;
     }
   }
 
   .strip {
     display: grid;
-    gap: var(--space-4);
-    margin-block: var(--space-6) var(--space-7);
-    padding-block: var(--space-5);
-    border-block: var(--rule-heavy) solid var(--rule);
+    gap: var(--space-5);
+    margin-block: var(--space-7);
   }
 
-  .prices {
+  .split {
     display: grid;
-    gap: var(--space-4);
-    margin-bottom: var(--space-7);
+    grid-template-columns: minmax(0, 1fr) 22rem;
+    grid-template-areas: 'history side';
+    gap: var(--space-7);
+    align-items: start;
   }
 
-  table {
-    max-width: 48rem;
+  .side {
+    grid-area: side;
   }
 
   .history {
+    grid-area: history;
     display: grid;
-    gap: var(--space-6);
-  }
-
-  .bar {
-    display: grid;
-    gap: var(--space-3);
+    gap: var(--space-5);
   }
 
   .filters {
@@ -178,32 +188,16 @@
       align-items: center;
       gap: var(--space-2);
       padding: var(--space-1) var(--space-3);
-      border: var(--rule-thin) solid var(--rule-faint);
-      background: var(--surface-raised);
-      font-size: var(--text-sm);
+      border: 2px solid var(--ink);
+      background: var(--paper);
+      font-weight: 600;
       cursor: pointer;
-      transition: border-color var(--quick) var(--ease);
-
-      &:hover {
-        border-color: var(--rule);
-      }
-
-      &::before {
-        content: '';
-        width: 0.7em;
-        height: 0.7em;
-        background: var(--ink);
-      }
 
       &[aria-pressed='false'] {
-        color: var(--text-muted);
+        border-style: dashed;
         background: none;
+        color: var(--ink-soft);
         text-decoration: line-through;
-
-        &::before {
-          background: none;
-          box-shadow: inset 0 0 0 1.5px var(--ink);
-        }
       }
     }
   }
@@ -216,7 +210,7 @@
       text-decoration: none;
 
       &:hover {
-        text-decoration: underline 2px var(--accent);
+        text-decoration: underline 2px;
       }
     }
 
@@ -230,10 +224,28 @@
     gap: var(--space-3);
     margin-top: var(--space-7);
 
+    & h2 {
+      font-size: var(--text-lg);
+    }
+
     & ul {
       display: grid;
       gap: var(--space-2);
       padding-left: var(--space-5);
+    }
+  }
+
+  @media (max-width: 56rem) {
+    .split {
+      grid-template-columns: 1fr;
+      grid-template-areas: 'side' 'history';
+    }
+  }
+
+  @media (max-width: 40rem) {
+    .headline {
+      --sign-size: 2rem;
+      font-size: var(--text-lg);
     }
   }
 </style>

@@ -7,7 +7,7 @@ import { money, percent, plural } from '#lib/format.ts';
 import { glyphSvg } from '#lib/icons.ts';
 import { marks } from '#lib/strip.ts';
 import { launched, league, stepsBy } from '#lib/prices.ts';
-import { firstYear, productName } from '#lib/seo.ts';
+import { firstYear, productName, worstOf } from '#lib/seo.ts';
 import {
   categories,
   isHollow,
@@ -172,10 +172,10 @@ function serviceImage(id: string) {
   const service = data().services.find((item) => item.service === id)!;
   const from = firstYear(service.changes);
   const to = Math.max(yearOf(service.changes[0].date), yearOf(data().built));
-  const [latest] = service.changes;
+  const worst = worstOf(service.changes, data().built);
   return frame(
     `${plural(service.changes.length, 'change')} since ${from}`,
-    lede(service.name, `The latest, ${formatDate(latest.date)}: ${latest.title}`),
+    lede(service.name, `${severities[worst.severity].name}: ${worst.title}`),
     strip(service.changes, from, to, 48)
   );
 }

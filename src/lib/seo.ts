@@ -36,8 +36,16 @@ export const happenedBy = (changes: Entry[], today: string) =>
   changes.filter(({ date, status }) => date <= today && status !== 'scheduled');
 
 /** The newest change that has actually happened, so a scheduled one doesn't count as the latest */
-export const latestOf = (changes: Entry[], today: string) =>
-  happenedBy(changes, today)[0] ?? changes[0];
+const latestOf = (changes: Entry[], today: string) => happenedBy(changes, today)[0] ?? changes[0];
+
+/** The most serious change that has happened, the newest if there's a tie */
+export function worstOf(changes: Entry[], today: string) {
+  const happened = happenedBy(changes, today);
+  return happened.reduce(
+    (worst, change) => (change.severity > worst.severity ? change : worst),
+    happened[0] ?? changes[0]
+  );
+}
 
 export function serviceDescription(service: Service, today: string) {
   const latest = latestOf(service.changes, today);
