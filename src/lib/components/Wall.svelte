@@ -124,6 +124,7 @@
     }
 
     & li {
+      container-type: inline-size;
       display: grid;
       overflow: hidden;
       padding-left: var(--space-1);
@@ -139,6 +140,16 @@
 
     & .short {
       display: none;
+    }
+
+    @container (width < 2.5em) {
+      & .full {
+        display: none;
+      }
+
+      & .short {
+        display: inline;
+      }
     }
   }
 
@@ -163,14 +174,6 @@
 
       & li {
         padding-left: 2px;
-      }
-
-      & .full {
-        display: none;
-      }
-
-      & .short {
-        display: inline;
       }
     }
   }
