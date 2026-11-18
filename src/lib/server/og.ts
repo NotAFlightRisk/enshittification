@@ -4,32 +4,31 @@ import { initWasm, Resvg } from '@resvg/resvg-wasm';
 import satori from 'satori';
 import { formatDate, yearOf } from '#lib/dates.ts';
 import { money, percent, plural } from '#lib/format.ts';
+import { glyphSvg } from '#lib/icons.ts';
 import { marks } from '#lib/strip.ts';
 import { launched, league, stepsBy } from '#lib/prices.ts';
 import { firstYear, productName } from '#lib/seo.ts';
-import { categories, type Category, type Entry } from '#lib/data/types.ts';
+import {
+  categories,
+  isHollow,
+  severities,
+  type Category,
+  type Entry,
+  type Severity
+} from '#lib/data/types.ts';
 import { ogSize, site } from '#lib/site.ts';
 import { data, stats } from '#lib/server/data.ts';
 
 // Share cards drawn at build time: satori lays the divs out as SVG, resvg makes the PNG
 
-// the light theme from app.css, in hex since satori doesn't speak oklch
-const colour = {
-  surface: '#f5f7f9',
-  text: '#13161c',
-  muted: '#4f5359',
-  faint: '#ced1d5'
-};
-const ink: Record<Category, string> = {
-  'price-rise': '#9d671c',
-  ads: '#754d9e',
-  paywall: '#1f689d',
-  'removed-feature': '#1e7777',
-  'api-restriction': '#3b723e',
-  tracking: '#914373',
-  'lock-out': '#48528f',
-  bricked: '#4a4d53',
-  ai: '#6c6d29'
+// the light theme from app.css, since satori can't read CSS variables
+const colour = { ground: '#e6e6e1', ink: '#000', soft: '#4a4a45', line: '#b8b8b1' };
+const condensed = { fontFamily: 'Barlow Condensed', fontWeight: 700 };
+const blank = { plate: '#fff', ink: '#000' };
+const level: Record<Severity, typeof blank> = {
+  1: { plate: '#ffc400', ink: '#000' },
+  2: { plate: '#ff7a00', ink: '#000' },
+  3: { plate: '#d42a1a', ink: '#fff' }
 };
 
 type Child = Node | string | false | undefined;
@@ -43,7 +42,24 @@ const div = (style: object, ...children: Child[]): Node => ({
   props: { style: { display: 'flex', ...style }, children: children.filter(Boolean) }
 });
 
-const logo = `data:image/svg+xml;base64,${readFileSync(resolve('static/favicon.svg')).toString('base64')}`;
+const dataUri = (svg: string | Buffer) =>
+  `data:image/svg+xml;base64,${Buffer.from(svg).toString('base64')}`;
+
+const logo = dataUri(readFileSync(resolve('static/favicon.svg')));
+
+const tape = dataUri(
+  `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="16"><defs><pattern id="t" width="24" height="24" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="12" height="24" fill="#ffc400"/><rect x="12" width="12" height="24" fill="#000"/></pattern></defs><rect width="1200" height="16" fill="url(#t)"/></svg>`
+);
+
+const img = (src: string, width: number, height = width) => ({
+  type: 'img',
+  props: { src, width, height }
+});
+
+function sign(kind: Category, size: number, severity?: Severity) {
+  const { plate, ink } = severity ? level[severity] : blank;
+  return img(dataUri(glyphSvg(kind, plate, ink)), size);
+}
 
 const frame = (aside: string, ...content: Child[]) =>
   div(
@@ -52,84 +68,79 @@ const frame = (aside: string, ...content: Child[]) =>
       height: '100%',
       boxSizing: 'border-box',
       flexDirection: 'column',
-      padding: '0 64px 52px',
-      borderTop: `14px solid ${colour.text}`,
-      background: colour.surface,
-      color: colour.text,
-      fontFamily: 'Public Sans'
+      background: colour.ground,
+      color: colour.ink,
+      fontFamily: 'Libre Franklin'
     },
+    img(tape, ogSize.width, 16),
     div(
-      {
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        padding: '24px 0',
-        borderBottom: `2px solid ${colour.text}`
-      },
+      { flexGrow: 1, flexDirection: 'column', padding: '0 64px 52px' },
       div(
-        { alignItems: 'center', gap: 16, fontSize: 30, fontWeight: 800, letterSpacing: '-0.03em' },
-        { type: 'img', props: { src: logo, width: 52, height: 52 } },
-        site.name
+        {
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          padding: '22px 0',
+          borderBottom: `3px solid ${colour.ink}`
+        },
+        div(
+          { ...condensed, alignItems: 'center', gap: 16, fontSize: 36 },
+          img(logo, 56),
+          site.name
+        ),
+        div({ fontSize: 24, color: colour.soft }, aside)
       ),
-      div({ fontSize: 24, color: colour.muted }, aside)
-    ),
-    div(
-      { flexGrow: 1, flexDirection: 'column', justifyContent: 'space-between', paddingTop: 40 },
-      ...content
+      div(
+        { flexGrow: 1, flexDirection: 'column', justifyContent: 'space-between', paddingTop: 40 },
+        ...content
+      )
     )
   );
 
-const headline = (text: string, size = 76) =>
-  div(
-    {
-      fontSize: size,
-      fontWeight: 800,
-      letterSpacing: '-0.035em',
-      lineHeight: 1.02,
-      textWrap: 'balance'
-    },
-    text
-  );
+const headline = (text: string, size = 84) =>
+  div({ ...condensed, fontSize: size, lineHeight: 1, textWrap: 'balance' }, text);
 
 const lede = (title: string, text: string) =>
   div(
     { flexDirection: 'column', gap: 22 },
-    headline(title, title.length > 60 ? 60 : 76),
-    div({ fontSize: 32, color: colour.muted, lineHeight: 1.3 }, text)
+    headline(title, title.length > 60 ? 68 : 84),
+    div({ fontSize: 32, color: colour.soft, lineHeight: 1.3 }, text)
   );
 
 const tag = (category: Category) =>
-  div(
-    { alignItems: 'center', gap: 12, fontSize: 28, color: colour.muted },
-    div({ width: 18, height: 18, background: ink[category] }),
-    categories[category]
-  );
+  div({ alignItems: 'center', gap: 12, fontSize: 28 }, sign(category, 36), categories[category]);
 
-/** A strip of marks, as on the site, with years under it */
-function strip(changes: Entry[], from: number, to: number, height: number) {
-  const today = data().built;
+/** A strip of signs on hazard tape, as on the site, with years under it */
+function strip(changes: Entry[], from: number, to: number, size: number, labels = true) {
   const years = to - from + 1;
+  const placed = marks(changes, from, to);
+  const height = (Math.max(0, ...placed.map(({ lane }) => lane)) + 1) * (size + 6) + 8;
   return div(
     { flexDirection: 'column', gap: 8 },
     div(
-      { position: 'relative', height, borderBottom: `2px solid ${colour.faint}` },
-      ...marks(changes, from, to, today).map((mark) =>
-        div({
-          position: 'absolute',
-          left: `${mark.at}%`,
-          top: 0,
-          width: mark.hollow ? 10 : 6,
-          height,
-          background: mark.hollow ? 'transparent' : ink[mark.category],
-          border: mark.hollow ? `3px solid ${ink[mark.category]}` : 'none'
-        })
+      { position: 'relative', height },
+      div(
+        { position: 'absolute', inset: 'auto 0 0', height: 8, overflow: 'hidden' },
+        img(tape, ogSize.width, 8)
+      ),
+      ...placed.map((mark) =>
+        div(
+          {
+            position: 'absolute',
+            left: `${mark.at}%`,
+            bottom: 8 + mark.lane * (size + 6),
+            marginLeft: -size / 2
+          },
+          sign(mark.category, size, isHollow(mark.status) ? undefined : mark.severity)
+        )
       )
     ),
-    div(
-      { fontSize: 20, color: colour.muted },
-      ...Array.from({ length: years }, (_, index) =>
-        div({ width: `${100 / years}%` }, years > 8 && index % 2 ? '' : String(from + index))
+    labels &&
+      div(
+        { ...condensed, fontSize: 22, color: colour.soft },
+        ...Array.from({ length: years }, (_, index) =>
+          div({ width: `${100 / years}%` }, years > 8 && index % 2 ? '' : String(from + index))
+        )
       )
-    )
   );
 }
 
@@ -137,23 +148,22 @@ function homeImage() {
   const { services, built } = data();
   const counts = stats();
   const to = Math.max(counts.last, yearOf(built));
+  const shown = services.slice(0, 4);
   return frame(
-    `${plural(counts.changes, 'change')} · ${plural(counts.services, 'service')}`,
-    headline('Every time big tech made it worse, dated and sourced.', 64),
+    `${plural(counts.changes, 'change')} at ${plural(counts.services, 'service')}`,
+    headline('Big tech gets worse after you sign up.', 68),
     div(
-      { flexDirection: 'column', gap: 14 },
-      ...services
-        .slice(0, 5)
-        .map((service) =>
+      { flexDirection: 'column', gap: 12 },
+      ...shown.map((service, index) =>
+        div(
+          { alignItems: 'flex-end', gap: 24 },
+          div({ ...condensed, width: 150, fontSize: 32, paddingBottom: 4 }, service.name),
           div(
-            { alignItems: 'center', gap: 24 },
-            div({ width: 170, fontSize: 26, fontWeight: 800 }, service.name),
-            div(
-              { flexGrow: 1, flexDirection: 'column' },
-              strip(service.changes, counts.first, to, 30)
-            )
+            { flexGrow: 1, flexDirection: 'column' },
+            strip(service.changes, counts.first, to, 26, index === shown.length - 1)
           )
         )
+      )
     )
   );
 }
@@ -162,40 +172,54 @@ function serviceImage(id: string) {
   const service = data().services.find((item) => item.service === id)!;
   const from = firstYear(service.changes);
   const to = Math.max(yearOf(service.changes[0].date), yearOf(data().built));
+  const [latest] = service.changes;
   return frame(
     `${plural(service.changes.length, 'change')} since ${from}`,
-    lede(
-      service.name,
-      `The latest, ${formatDate(service.changes[0].date)}: ${service.changes[0].title}`
-    ),
-    strip(service.changes, from, to, 90)
+    lede(service.name, `The latest, ${formatDate(latest.date)}: ${latest.title}`),
+    strip(service.changes, from, to, 48)
   );
 }
 
 function changeImage(entry: Entry) {
-  const prices = entry.before && entry.after;
+  const short = (text?: string) => text !== undefined && text.length <= 24;
+  const prices = short(entry.before) && short(entry.after);
+  const hollow = isHollow(entry.status);
+  const { plate, ink } = hollow ? blank : level[entry.severity];
   return frame(
     entry.serviceName,
     div(
       { flexDirection: 'column', gap: 20 },
-      div({ fontSize: 34, fontWeight: 700, color: colour.muted }, formatDate(entry.date)),
-      headline(entry.title, entry.title.length > 55 ? 58 : 70)
+      div(
+        { alignItems: 'center', gap: 20 },
+        div(
+          {
+            ...condensed,
+            alignItems: 'center',
+            gap: 14,
+            padding: '6px 20px 6px 8px',
+            border: `3px solid ${colour.ink}`,
+            background: plate,
+            color: ink,
+            fontSize: 36,
+            letterSpacing: 2
+          },
+          sign(entry.category, 44, hollow ? undefined : entry.severity),
+          severities[entry.severity].name.toUpperCase()
+        ),
+        div({ fontSize: 30, color: colour.soft }, formatDate(entry.date))
+      ),
+      headline(entry.title, entry.title.length > 55 ? 66 : 80)
     ),
     prices
       ? div(
           { alignItems: 'flex-end', gap: 36, justifyContent: 'space-between' },
           div(
-            { alignItems: 'baseline', gap: 28 },
+            { ...condensed, alignItems: 'baseline', gap: 28 },
             div(
-              {
-                fontSize: 64,
-                fontWeight: 800,
-                color: colour.muted,
-                textDecoration: 'line-through'
-              },
+              { fontSize: 64, color: colour.soft, textDecoration: 'line-through' },
               entry.before!
             ),
-            div({ fontSize: 80, fontWeight: 800, letterSpacing: '-0.03em' }, entry.after!)
+            div({ fontSize: 84 }, entry.after!)
           ),
           tag(entry.category)
         )
@@ -212,19 +236,13 @@ function priceImage(id: string) {
     `${plan.name}, ${plan.region}`,
     headline(`${productName(service)} price history`),
     div(
-      { alignItems: 'baseline', gap: 28 },
+      { ...condensed, alignItems: 'baseline', gap: 28 },
       div(
-        { fontSize: 60, fontWeight: 800, color: colour.muted },
+        { fontSize: 64, color: colour.soft },
         `${money(first.price, plan.currency)} in ${yearOf(first.date)}`
       ),
-      div(
-        { fontSize: 84, fontWeight: 800, letterSpacing: '-0.03em' },
-        `${money(last.price, plan.currency)} now`
-      ),
-      div(
-        { fontSize: 40, fontWeight: 700, color: ink['price-rise'] },
-        percent(last.price / first.price - 1)
-      )
+      div({ fontSize: 92 }, `${money(last.price, plan.currency)} now`),
+      div({ fontSize: 48, color: level[3].plate }, percent(last.price / first.price - 1))
     )
   );
 }
@@ -234,7 +252,7 @@ function leagueImage() {
   const { ranked } = league(plans, cpi, '2020-01', built);
   return frame(
     'Since January 2020',
-    headline('Which subscriptions have gone up most', 64),
+    headline('Which subscriptions have gone up most', 68),
     div(
       { flexDirection: 'column', gap: 10 },
       ...ranked.slice(0, 4).map((rise, index) =>
@@ -243,14 +261,14 @@ function leagueImage() {
             justifyContent: 'space-between',
             fontSize: 30,
             paddingBottom: 8,
-            borderBottom: `2px solid ${colour.faint}`
+            borderBottom: `2px solid ${colour.line}`
           },
           div(
             { gap: 18 },
-            div({ color: colour.muted, width: 30 }, String(index + 1)),
+            div({ color: colour.soft, width: 30 }, String(index + 1)),
             `${rise.plan.serviceName} ${rise.plan.name} (${rise.plan.region})`
           ),
-          div({ fontWeight: 800 }, percent(rise.rise))
+          div({ ...condensed, fontSize: 36 }, percent(rise.rise))
         )
       )
     )
@@ -327,7 +345,13 @@ function pickImage(page: string) {
   return serviceImage(first);
 }
 
-let fonts: { name: string; data: Buffer; weight: 400 | 700 | 800; style: 'normal' }[] | undefined;
+const fontFiles = [
+  ['Libre Franklin', 'libre-franklin', 400],
+  ['Libre Franklin', 'libre-franklin', 700],
+  ['Barlow Condensed', 'barlow-condensed', 700]
+] as const;
+
+let fonts: { name: string; data: Buffer; weight: 400 | 700; style: 'normal' }[] | undefined;
 let wasm: Promise<void> | undefined;
 
 async function rasterise(svg: string, width?: number) {
@@ -339,10 +363,10 @@ async function rasterise(svg: string, width?: number) {
 
 export async function drawPage(page: string) {
   if (!cardPages().includes(page)) return undefined;
-  fonts ??= ([400, 700, 800] as const).map((weight) => ({
-    name: 'Public Sans',
+  fonts ??= fontFiles.map(([name, file, weight]) => ({
+    name,
     data: readFileSync(
-      resolve(`node_modules/@fontsource/public-sans/files/public-sans-latin-${weight}-normal.woff`)
+      resolve(`node_modules/@fontsource/${file}/files/${file}-latin-${weight}-normal.woff`)
     ),
     weight,
     style: 'normal'

@@ -70,7 +70,7 @@
     position: relative;
     height: 13rem;
     margin-top: var(--space-5);
-    border-bottom: var(--rule-thin) solid var(--rule);
+    border-bottom: var(--thin) solid var(--ink);
   }
 
   svg {
@@ -87,16 +87,16 @@
   }
 
   .grid {
-    stroke: var(--rule-faint);
+    stroke: var(--line);
   }
 
   .price {
-    stroke: var(--price-rise);
+    stroke: var(--ink);
     stroke-width: 2.5;
   }
 
   .inflation {
-    stroke: var(--text-muted);
+    stroke: var(--ink-soft);
     stroke-width: 1.5;
     stroke-dasharray: 2 4;
   }
@@ -105,7 +105,7 @@
     position: absolute;
     translate: -50% calc(-100% - var(--space-1));
     padding: 0 2px;
-    background: var(--surface);
+    background: var(--ground);
     font-size: var(--text-sm);
     font-weight: 700;
     white-space: nowrap;
@@ -129,7 +129,7 @@
     padding: 0;
     list-style: none;
     font-size: var(--text-xs);
-    color: var(--text-muted);
+    color: var(--ink-soft);
 
     & li {
       position: absolute;
@@ -142,7 +142,7 @@
     flex-wrap: wrap;
     gap: var(--space-2) var(--space-5);
     font-size: var(--text-sm);
-    color: var(--text-muted);
+    color: var(--ink-soft);
   }
 
   .key {
@@ -153,11 +153,11 @@
     &::before {
       content: '';
       width: 1.5rem;
-      border-top: 2.5px solid var(--price-rise);
+      border-top: 2.5px solid var(--ink);
     }
 
     &.inflation::before {
-      border-top: 1.5px dashed var(--text-muted);
+      border-top: 1.5px dashed var(--ink-soft);
     }
   }
 

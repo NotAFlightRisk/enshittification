@@ -1,37 +1,28 @@
 <script lang="ts">
+  import Pictogram from '#lib/components/Pictogram.svelte';
   import { categories, type Category } from '#lib/data/types.ts';
 
   let { category, link = false }: { category: Category; link?: boolean } = $props();
 </script>
 
-{#if link}
-  <a class="tag" href="/category/{category}" style:--ink="var(--{category})"
-    >{categories[category]}</a
-  >
-{:else}
-  <span class="tag" style:--ink="var(--{category})">{categories[category]}</span>
-{/if}
+<svelte:element
+  this={link ? 'a' : 'span'}
+  class="tag"
+  href={link ? `/category/${category}` : undefined}
+>
+  <Pictogram kind={category} />{categories[category]}
+</svelte:element>
 
 <style>
   .tag {
     display: inline-flex;
     align-items: center;
-    gap: 0.4em;
-    font-size: var(--text-sm);
-    color: var(--text-muted);
+    gap: 0.45em;
     white-space: nowrap;
     text-decoration: none;
-
-    &::before {
-      content: '';
-      width: 0.7em;
-      height: 0.7em;
-      background: var(--ink);
-    }
   }
 
   a.tag:hover {
-    color: var(--text);
-    text-decoration: underline 2px var(--accent);
+    text-decoration: underline 2px;
   }
 </style>

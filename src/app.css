@@ -1,38 +1,37 @@
-@import '@fontsource-variable/public-sans/wght.css';
+@import '@fontsource/barlow-condensed/600.css';
+@import '@fontsource/barlow-condensed/700.css';
+@import '@fontsource/libre-franklin/400.css';
+@import '@fontsource/libre-franklin/600.css';
+@import '@fontsource/libre-franklin/700.css';
 
 :root {
   color-scheme: light dark;
 
-  --surface: light-dark(oklch(0.975 0.003 250), oklch(0.17 0.006 250));
-  --surface-raised: light-dark(#ffffff, oklch(0.21 0.006 250));
-  --text: light-dark(oklch(0.2 0.012 260), oklch(0.95 0.004 250));
-  --text-muted: light-dark(oklch(0.44 0.012 260), oklch(0.74 0.008 250));
-  --rule: var(--text);
-  --rule-faint: light-dark(oklch(0.86 0.006 250), oklch(0.33 0.008 250));
-  --accent: light-dark(oklch(0.46 0.075 55), oklch(0.74 0.08 60));
-  --accent-soft: light-dark(oklch(0.88 0.04 65), oklch(0.36 0.05 55));
-  --shadow: light-dark(rgb(0 0 0 / 0.18), rgb(0 0 0 / 0.5));
+  --ground: light-dark(#e6e6e1, #1b1b19);
+  --paper: light-dark(#fff, #262624);
+  --ink: light-dark(#000, #f2f2ee);
+  --ink-soft: light-dark(#4a4a45, #b4b4ac);
+  --line: light-dark(#b8b8b1, #45453f);
+  --edge: #000;
+  --edge-soft: #4a4a45;
+  --blank: #fff;
+  --caution: #ffc400;
+  --warning: #ff7a00;
+  --danger: #d42a1a;
+  --on-danger: #fff;
+  --focus: light-dark(#000, var(--caution));
+  --tape: repeating-linear-gradient(-45deg, var(--caution) 0 0.5rem, var(--edge) 0 1rem);
 
-  /* one ink per kind of change, for the marks and their tags only */
-  --price-rise: light-dark(oklch(0.56 0.11 70), oklch(0.78 0.12 75));
-  --ads: light-dark(oklch(0.5 0.13 305), oklch(0.74 0.12 305));
-  --paywall: light-dark(oklch(0.5 0.11 245), oklch(0.74 0.1 245));
-  --removed-feature: light-dark(oklch(0.52 0.08 195), oklch(0.76 0.08 195));
-  --api-restriction: light-dark(oklch(0.5 0.1 145), oklch(0.75 0.11 145));
-  --tracking: light-dark(oklch(0.5 0.12 345), oklch(0.74 0.11 345));
-  --lock-out: light-dark(oklch(0.46 0.1 275), oklch(0.72 0.09 275));
-  --bricked: light-dark(oklch(0.42 0.01 260), oklch(0.68 0.01 260));
-  --ai: light-dark(oklch(0.52 0.09 110), oklch(0.78 0.1 110));
-
-  --font: 'Public Sans Variable', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-body: 'Libre Franklin', 'Helvetica Neue', Arial, sans-serif;
+  --font-sign: 'Barlow Condensed', 'Arial Narrow', sans-serif;
 
   --text-xs: 0.75rem;
   --text-sm: 0.875rem;
   --text-base: 1.0625rem;
   --text-md: 1.25rem;
-  --text-lg: 1.625rem;
-  --text-xl: 2.375rem;
-  --text-display: clamp(2.375rem, 5.5vw, 4.25rem);
+  --text-lg: 1.75rem;
+  --text-xl: 2.5rem;
+  --text-display: clamp(2.75rem, 7vw, 5rem);
 
   --space-1: 0.25rem;
   --space-2: 0.5rem;
@@ -43,16 +42,15 @@
   --space-7: 3rem;
   --space-8: 4.5rem;
 
-  --rule-thin: 1px;
-  --rule-heavy: 4px;
+  --thin: 1px;
+  --thick: 4px;
   --page: 76rem;
   --measure: 68ch;
   --pad: clamp(1rem, 4vw, 3rem);
-  --mark-width: 3px;
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
   --quick: 160ms;
 
-  accent-color: var(--accent);
+  accent-color: var(--caution);
 }
 
 *,
@@ -62,15 +60,15 @@
 }
 
 html {
-  scrollbar-color: var(--rule-faint) var(--surface);
+  scrollbar-color: var(--line) var(--ground);
 }
 
 body {
   margin: 0;
-  background: var(--surface);
-  color: var(--text);
-  caret-color: var(--accent);
-  font-family: var(--font);
+  padding-top: 0.6rem;
+  background: var(--tape) top / 100% 0.6rem no-repeat var(--ground);
+  color: var(--ink);
+  font-family: var(--font-body);
   font-size: var(--text-base);
   line-height: 1.55;
   font-variant-numeric: tabular-nums;
@@ -81,25 +79,23 @@ h1,
 h2,
 h3 {
   margin: 0;
-  line-height: 1.08;
-  letter-spacing: -0.025em;
-  font-weight: 750;
+  font-family: var(--font-sign);
+  font-weight: 700;
+  line-height: 1;
   text-wrap: balance;
 }
 
 h1 {
   font-size: var(--text-display);
-  font-weight: 820;
-  letter-spacing: -0.035em;
-  line-height: 1;
+  line-height: 0.95;
 }
 
 h2 {
-  font-size: var(--text-lg);
+  font-size: var(--text-xl);
 }
 
 h3 {
-  font-size: var(--text-md);
+  font-size: var(--text-lg);
 }
 
 p,
@@ -123,23 +119,59 @@ a {
 
   &:hover {
     text-decoration-thickness: 2px;
-    text-decoration-color: var(--accent);
   }
 }
 
 ::selection {
-  background: var(--accent-soft);
-  color: var(--text);
+  background: var(--caution);
+  color: var(--edge);
 }
 
 :focus-visible {
-  outline: 2px solid var(--accent);
+  outline: 3px solid var(--focus);
   outline-offset: 2px;
 }
 
 :where(button, input, select) {
   font: inherit;
   color: inherit;
+}
+
+[data-level] {
+  --on-level: var(--edge);
+}
+
+[data-level='caution'] {
+  --level: var(--caution);
+}
+
+[data-level='warning'] {
+  --level: var(--warning);
+}
+
+[data-level='danger'] {
+  --level: var(--danger);
+  --on-level: var(--on-danger);
+}
+
+.on-sign {
+  --ink: var(--edge);
+  --ink-soft: var(--edge-soft);
+  background: var(--blank);
+  color: var(--ink);
+}
+
+.swatch {
+  flex: none;
+  width: 1.1em;
+  height: 1.1em;
+  border: 2px solid var(--edge);
+  border-radius: 3px;
+  background: var(--level, var(--blank));
+
+  &.ahead {
+    border-style: dashed;
+  }
 }
 
 .visually-hidden {
@@ -160,7 +192,6 @@ a {
   }
 }
 
-/* the top of every inner page: crumbs, heading, a sentence or two */
 .page-head {
   display: grid;
   gap: var(--space-4);
@@ -169,11 +200,10 @@ a {
   & > p {
     max-width: var(--measure);
     font-size: var(--text-md);
-    color: var(--text-muted);
+    color: var(--ink-soft);
   }
 }
 
-/* long-form text on about, data and corrections */
 .prose {
   display: grid;
   gap: var(--space-3);
@@ -181,7 +211,7 @@ a {
 
   & h2 {
     margin-top: var(--space-5);
-    font-size: var(--text-md);
+    font-size: var(--text-lg);
   }
 
   & ul,
@@ -192,7 +222,6 @@ a {
   }
 }
 
-/* plain register tables: hairline rows, no fills, a qualifier in grey beside or under the row head */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -200,41 +229,66 @@ table {
   & th,
   & td {
     padding: var(--space-2) var(--space-3) var(--space-2) 0;
-    border-bottom: var(--rule-thin) solid var(--rule-faint);
+    border-bottom: var(--thin) solid var(--line);
     text-align: left;
     font-weight: 400;
     vertical-align: baseline;
   }
 
   & thead th {
-    font-size: var(--text-sm);
-    color: var(--text-muted);
-    border-bottom-color: var(--rule);
+    font-family: var(--font-sign);
+    font-size: var(--text-md);
+    font-weight: 700;
+    border-bottom: var(--thick) solid var(--ink);
   }
 
   & tbody th {
-    font-weight: 650;
+    font-weight: 600;
 
     & span {
       font-size: var(--text-sm);
       font-weight: 400;
-      color: var(--text-muted);
+      color: var(--ink-soft);
     }
   }
 
-  /* when the table is the page */
   &.league {
     & th,
     & td {
       padding-block: var(--space-3);
     }
 
-    & thead th {
-      border-bottom: var(--rule-heavy) solid var(--rule);
-    }
-
     & tbody th span {
       display: block;
     }
+  }
+}
+
+.button {
+  justify-self: start;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  border: 2px solid var(--edge);
+  background: var(--caution);
+  color: var(--edge);
+  font-family: var(--font-sign);
+  font-size: var(--text-md);
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 3px 3px 0 var(--edge);
+  transition:
+    translate var(--quick) var(--ease),
+    box-shadow var(--quick) var(--ease);
+
+  &:hover {
+    translate: -1px -1px;
+    box-shadow: 4px 4px 0 var(--edge);
+  }
+
+  &:active {
+    translate: 2px 2px;
+    box-shadow: 1px 1px 0 var(--edge);
   }
 }

@@ -1,5 +1,6 @@
 <script lang="ts">
-  import { categories, type Category } from '#lib/data/types.ts';
+  import Tag from '#lib/components/Tag.svelte';
+  import { categories, levelOf, severities, severityKeys, type Category } from '#lib/data/types.ts';
 
   let { only }: { only?: Category[] } = $props();
 
@@ -9,26 +10,28 @@
 </script>
 
 <div class="legend">
-  <ul>
+  <ul aria-label="Kinds of change">
     {#each shown as category (category)}
-      <li style:--ink="var(--{category})">
-        <a href="/category/{category}">{categories[category]}</a>
-      </li>
+      <li><Tag {category} link /></li>
     {/each}
   </ul>
-  <ul>
-    <li class="hollow">Reversed or only tested</li>
-    <li class="ahead">Not in force yet</li>
-    <li class="today">Today</li>
+  <ul aria-label="How bad, and when">
+    {#each severityKeys as severity (severity)}
+      <li title={severities[severity].means}>
+        <span class="swatch" data-level={levelOf(severity)}></span>{severities[severity].name}
+      </li>
+    {/each}
+    <li><span class="swatch"></span>Reversed or only tested</li>
+    <li><span class="swatch ahead"></span>Not in force yet</li>
+    <li><span class="today"></span>Today</li>
   </ul>
 </div>
 
 <style>
   .legend {
     display: grid;
-    gap: var(--space-2);
+    gap: var(--space-3);
     font-size: var(--text-sm);
-    color: var(--text-muted);
   }
 
   ul {
@@ -40,41 +43,13 @@
   }
 
   li {
-    --ink: var(--text-muted);
     display: flex;
     align-items: center;
     gap: var(--space-2);
-
-    &::before {
-      content: '';
-      width: var(--mark-width);
-      height: 1.1em;
-      background: var(--ink);
-    }
   }
 
-  .hollow::before {
-    width: calc(var(--mark-width) * 2);
-    background: none;
-    box-shadow: inset 0 0 0 1.5px var(--ink);
-  }
-
-  .ahead::before {
-    background: repeating-linear-gradient(var(--ink) 0 3px, transparent 3px 6px);
-  }
-
-  .today::before {
-    width: 0;
-    background: none;
-    border-left: var(--rule-thin) dashed var(--text-muted);
-  }
-
-  a {
-    text-decoration: none;
-
-    &:hover {
-      color: var(--text);
-      text-decoration: underline 2px var(--accent);
-    }
+  .today {
+    height: 1.3em;
+    border-left: 2px dashed var(--danger);
   }
 </style>

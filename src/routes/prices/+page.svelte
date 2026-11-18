@@ -120,17 +120,17 @@
       text-decoration: none;
 
       &:hover {
-        text-decoration: underline 2px var(--accent);
+        text-decoration: underline 2px;
       }
     }
 
     & td span {
-      color: var(--text-muted);
+      color: var(--ink-soft);
     }
   }
 
   .rank {
-    color: var(--text-muted);
+    color: var(--ink-soft);
   }
 
   .rise {
@@ -147,7 +147,7 @@
   .empty {
     max-width: var(--measure);
     font-size: var(--text-sm);
-    color: var(--text-muted);
+    color: var(--ink-soft);
   }
 
   @media (max-width: 40rem) {
