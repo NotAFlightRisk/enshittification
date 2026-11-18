@@ -31,8 +31,12 @@ export function serviceTitle(service: Service) {
   return `${service.name}: every ${listOf(topKinds(service.changes))} since ${firstYear(service.changes)}, dated`;
 }
 
-export function serviceDescription(service: Service) {
-  const [latest] = service.changes;
+/** The newest change that has actually happened, so a scheduled one doesn't count as the latest */
+export const latestOf = (changes: Entry[], today: string) =>
+  changes.find(({ date }) => date <= today) ?? changes[0];
+
+export function serviceDescription(service: Service, today: string) {
+  const latest = latestOf(service.changes, today);
   return `${plural(service.changes.length, 'change')} at ${service.name} since ${firstYear(service.changes)}, each dated and sourced. The latest, ${shortDate(latest.date)}: ${latest.title}.`;
 }
 

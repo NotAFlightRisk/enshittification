@@ -1,6 +1,6 @@
 import { data } from '#lib/server/data.ts';
 import { yearOf } from '#lib/dates.ts';
-import { current, inflate, latestMonth, priceOn, stepsBy } from '#lib/prices.ts';
+import { inflate, latestMonth, onSale, priceOn, stepsBy } from '#lib/prices.ts';
 
 const firstYear = 2010;
 
@@ -10,7 +10,7 @@ export const load = () => {
   return {
     years,
     cpiTo: latestMonth(cpi.US),
-    plans: current(plans).map((plan) => ({
+    plans: onSale(plans, built).map((plan) => ({
       key: plan.key,
       service: plan.serviceName,
       name: plan.name,

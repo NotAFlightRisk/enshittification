@@ -1,8 +1,8 @@
 import { error } from '@sveltejs/kit';
 import { data, service } from '#lib/server/data.ts';
 import { yearOf } from '#lib/dates.ts';
-import { charted, current, stepsBy } from '#lib/prices.ts';
-import { firstYear, productName, serviceDescription, serviceTitle } from '#lib/seo.ts';
+import { launched, onSale, stepsBy } from '#lib/prices.ts';
+import { firstYear, latestOf, productName, serviceDescription, serviceTitle } from '#lib/seo.ts';
 
 export const entries = () => data().services.map(({ service }) => ({ service }));
 
@@ -10,7 +10,7 @@ export const load = ({ params }) => {
   const found = service(params.service);
   if (!found) error(404, 'No such service');
   const { built, companies } = data();
-  const plans = current(found.plans).map((plan) => ({
+  const plans = onSale(found.plans, built).map((plan) => ({
     key: plan.key,
     name: plan.name,
     region: plan.region,
@@ -23,9 +23,10 @@ export const load = ({ params }) => {
     service: found,
     company: companies.find(({ id }) => id === found.company)!,
     title: serviceTitle(found),
-    description: serviceDescription(found),
+    description: serviceDescription(found, built),
+    latest: latestOf(found.changes, built),
     product: productName(found),
-    hasPrices: charted(found.plans).length > 0,
+    hasPrices: launched(found.plans, built).length > 0,
     plans,
     today: built,
     from: firstYear(found.changes),

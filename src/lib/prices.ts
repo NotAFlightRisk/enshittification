@@ -46,6 +46,14 @@ export const current = (plans: PlanHistory[]) =>
     (plan) => !plans.some((other) => other.service === plan.service && other.replaces === plan.id)
   );
 
+/** Plans on sale on a day: launched by then, and not replaced by anything */
+export const onSale = (plans: PlanHistory[], date: string) =>
+  current(plans).filter((plan) => stepsBy(plan, date).length);
+
+/** Charted plans that had launched by a day */
+export const launched = (plans: PlanHistory[], date: string) =>
+  charted(plans).filter((plan) => stepsBy(plan, date).length);
+
 export interface Rise {
   plan: PlanHistory;
   from: number;
@@ -59,9 +67,8 @@ export interface Rise {
 export function league(plans: PlanHistory[], cpi: Record<string, Cpi>, since: string, on: string) {
   const ranked: Rise[] = [];
   const newer: Rise[] = [];
-  for (const plan of current(plans)) {
-    const now = stepsBy(plan, on).at(-1)?.price;
-    if (now === undefined) continue;
+  for (const plan of onSale(plans, on)) {
+    const now = stepsBy(plan, on).at(-1)!.price;
     const then = priceOn(plan, since, plans);
     const start = then === undefined ? plan.steps[0] : { date: startOf(since), price: then };
     const inflated = inflate(start.price, start.date, cpi[plan.region], on);

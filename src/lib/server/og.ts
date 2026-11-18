@@ -5,7 +5,7 @@ import satori from 'satori';
 import { formatDate, yearOf } from '#lib/dates.ts';
 import { money, percent, plural } from '#lib/format.ts';
 import { marks } from '#lib/strip.ts';
-import { charted, league, stepsBy } from '#lib/prices.ts';
+import { launched, league, stepsBy } from '#lib/prices.ts';
 import { firstYear, productName } from '#lib/seo.ts';
 import { categories, type Category, type Entry } from '#lib/data/types.ts';
 import { ogSize, site } from '#lib/site.ts';
@@ -205,7 +205,7 @@ function changeImage(entry: Entry) {
 
 function priceImage(id: string) {
   const service = data().services.find((item) => item.service === id)!;
-  const [plan] = charted(service.plans);
+  const [plan] = launched(service.plans, data().built);
   const steps = stepsBy(plan, data().built);
   const [first, last] = [steps[0], steps.at(-1)!];
   return frame(
@@ -278,7 +278,7 @@ export function cardPages() {
     ...Object.keys(pages),
     ...services.map(({ service }) => service),
     ...services
-      .filter(({ plans }) => charted(plans).length)
+      .filter(({ plans }) => launched(plans, data().built).length)
       .map(({ service }) => `${service}--price-history`),
     ...changes.map(({ service, id }) => `${service}--${id}`),
     ...Object.keys(categories).map((category) => `category--${category}`),

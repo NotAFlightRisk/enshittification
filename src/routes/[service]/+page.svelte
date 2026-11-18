@@ -11,7 +11,7 @@
 
   let { data } = $props();
   const { service } = $derived(data);
-  const [latest] = $derived(service.changes);
+  const latest = $derived(data.latest);
   const kinds = $derived(
     (Object.keys(categories) as Category[]).filter((kind) =>
       service.changes.some(({ category }) => category === kind)

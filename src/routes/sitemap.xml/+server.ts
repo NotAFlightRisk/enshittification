@@ -1,6 +1,6 @@
 import { data, years } from '#lib/server/data.ts';
 import { categories } from '#lib/data/types.ts';
-import { charted } from '#lib/prices.ts';
+import { launched } from '#lib/prices.ts';
 import { changeIndexed, listIndexed } from '#lib/seo.ts';
 import { yearOf } from '#lib/dates.ts';
 import { absolute } from '#lib/site.ts';
@@ -18,7 +18,9 @@ export const GET = () => {
     ...['/prices', '/bill', '/latest', '/data', '/about', '/corrections'].map((path) => ({ path })),
     ...services.flatMap((service) => [
       { path: `/${service.service}`, modified: updated(service.changes) },
-      ...(charted(service.plans).length ? [{ path: `/${service.service}/price-history` }] : [])
+      ...(launched(service.plans, data().built).length
+        ? [{ path: `/${service.service}/price-history` }]
+        : [])
     ]),
     ...changes.filter(changeIndexed).map(({ path, updated }) => ({ path, modified: updated })),
     ...Object.keys(categories)
