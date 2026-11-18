@@ -5,6 +5,7 @@
   import Tag from '#lib/components/Tag.svelte';
   import { formatDate, shortDate, yearOf } from '#lib/dates.ts';
   import { categories, statuses } from '#lib/data/types.ts';
+  import { listOf } from '#lib/format.ts';
   import { absolute, correctionUrl, editUrl } from '#lib/site.ts';
 
   let { data } = $props();
@@ -79,7 +80,18 @@
       </div>
       <div>
         <dt>Where</dt>
-        <dd>{entry.regions?.join(', ') ?? 'Everywhere'}</dd>
+        <dd>
+          {#if !data.regions}
+            Everywhere
+          {:else if data.regions.length <= 4}
+            {listOf(data.regions)}
+          {:else}
+            <details>
+              <summary>{data.regions.length} countries</summary>
+              {listOf(data.regions)}
+            </details>
+          {/if}
+        </dd>
       </div>
     </dl>
   </header>
@@ -213,6 +225,14 @@
 
     & dt {
       color: var(--text-muted);
+    }
+
+    & details {
+      max-width: 40ch;
+    }
+
+    & summary {
+      cursor: pointer;
     }
   }
 
