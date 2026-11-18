@@ -52,7 +52,7 @@ It's a static site, so it runs anywhere that serves files.
 
 ### Option 1: Cloudflare
 
-The live site is a Cloudflare Worker serving the built files, deployed by [`deploy.yml`](./workflows/deploy.yml) on every push to `main`. In a fork, add `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` secrets and change the domain in that file.
+The live site is a Cloudflare Worker serving the built files, deployed by [`deploy.yml`](./workflows/deploy.yml) on every push to `main`. In a fork, add `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` secrets, then change the owner check and the domain in that file.
 
 ### Option 2: Docker
 
