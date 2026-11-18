@@ -151,6 +151,11 @@
       }
     }
 
+    .axis li {
+      padding-left: 2px;
+      letter-spacing: -0.02em;
+    }
+
     .minor {
       color: transparent;
     }
