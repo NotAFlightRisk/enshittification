@@ -20,8 +20,11 @@ export interface Mark {
 }
 
 // how close two signs can sit, as a share of the line, before one goes up a post
-const room = { wide: 0.028, narrow: 0.075 };
+const room = { wide: 0.04, narrow: 0.075 };
 const maxLanes = 3;
+
+/** The widest a sign can be, as a share of the line, and still clear its neighbour on the same post */
+export const fit = { wide: room.wide * 0.9, narrow: room.narrow * 0.9 };
 
 /** Which post height each sign takes so it doesn't cover its neighbour */
 function lanes(positions: number[], gap: number) {

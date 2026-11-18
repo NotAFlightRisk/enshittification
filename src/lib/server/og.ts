@@ -5,7 +5,7 @@ import satori from 'satori';
 import { formatDate, yearOf } from '#lib/dates.ts';
 import { money, percent, plural } from '#lib/format.ts';
 import { glyphSvg } from '#lib/icons.ts';
-import { marks } from '#lib/strip.ts';
+import { fit, marks } from '#lib/strip.ts';
 import { launched, league, stepsBy } from '#lib/prices.ts';
 import { firstYear, productName, worstOf } from '#lib/seo.ts';
 import {
@@ -61,6 +61,8 @@ function sign(kind: Category, size: number, severity?: Severity) {
   return img(dataUri(glyphSvg(kind, plate, ink)), size);
 }
 
+const inset = 64;
+
 const frame = (aside: string, ...content: Child[]) =>
   div(
     {
@@ -74,7 +76,7 @@ const frame = (aside: string, ...content: Child[]) =>
     },
     img(tape, ogSize.width, 16),
     div(
-      { flexGrow: 1, flexDirection: 'column', padding: '0 64px 52px' },
+      { flexGrow: 1, flexDirection: 'column', padding: `0 ${inset}px 52px` },
       div(
         {
           justifyContent: 'space-between',
@@ -176,7 +178,7 @@ function serviceImage(id: string) {
   return frame(
     `${plural(service.changes.length, 'change')} since ${from}`,
     lede(service.name, `${severities[worst.severity].name}: ${worst.title}`),
-    strip(service.changes, from, to, 48)
+    strip(service.changes, from, to, Math.floor((ogSize.width - 2 * inset) * fit.wide))
   );
 }
 

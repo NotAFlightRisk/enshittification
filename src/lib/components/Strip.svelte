@@ -1,6 +1,6 @@
 <script lang="ts">
   import Pictogram from '#lib/components/Pictogram.svelte';
-  import { height, marks, nowAt } from '#lib/strip.ts';
+  import { fit, height, marks, nowAt } from '#lib/strip.ts';
   import type { Entry } from '#lib/data/types.ts';
 
   let {
@@ -29,6 +29,8 @@
   class:big
   style:--posts={posts.wide}
   style:--narrow-posts={posts.narrow}
+  style:--wide-fit={fit.wide}
+  style:--narrow-fit={fit.narrow}
   aria-label="{name}, {changes.length} changes on a year line"
 >
   {#if now < 100}
@@ -56,6 +58,8 @@
     --scale: 1;
     --step: calc(2.1rem * var(--scale));
     --rows: var(--posts);
+    --fit: var(--wide-fit);
+    container-type: inline-size;
     position: relative;
     height: calc(var(--rows) * var(--step) + 1rem * var(--scale));
     padding: 0;
@@ -80,7 +84,8 @@
   }
 
   .mark {
-    --sign-size: calc(1.35rem * var(--scale));
+    --size: 1.35rem;
+    --sign-size: min(var(--size) * var(--scale), var(--fit) * 100cqi);
     --stack: var(--lane);
     display: flex;
     flex-direction: column;
@@ -88,11 +93,11 @@
     translate: -50% 0;
 
     &[data-severity='1'] {
-      --sign-size: calc(1.05rem * var(--scale));
+      --size: 1.05rem;
     }
 
     &[data-severity='3'] {
-      --sign-size: calc(1.75rem * var(--scale));
+      --size: 1.75rem;
     }
 
     &::after {
@@ -154,6 +159,7 @@
     .strip {
       --scale: 0.8;
       --rows: var(--narrow-posts);
+      --fit: var(--narrow-fit);
 
       &.big {
         --scale: 1;
