@@ -65,7 +65,7 @@
     font-weight: 550;
 
     &:hover {
-      text-decoration: underline;
+      text-decoration: underline 2px var(--accent);
     }
   }
 

@@ -32,6 +32,6 @@
 
   a.tag:hover {
     color: var(--text);
-    text-decoration: underline;
+    text-decoration: underline 2px var(--accent);
   }
 </style>

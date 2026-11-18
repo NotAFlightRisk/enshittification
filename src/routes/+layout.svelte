@@ -63,9 +63,8 @@
   .masthead,
   main,
   .colophon {
-    max-width: var(--page);
+    width: min(100% - 2 * var(--pad), var(--page) - 2 * var(--pad));
     margin-inline: auto;
-    padding-inline: var(--pad);
   }
 
   .masthead {

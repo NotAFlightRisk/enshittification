@@ -114,7 +114,7 @@
     color: var(--surface);
     font-size: var(--text-sm);
     line-height: 1.35;
-    box-shadow: 0 6px 18px rgb(0 0 0 / 0.18);
+    box-shadow: 0 6px 18px var(--shadow);
     pointer-events: none;
     transition:
       opacity var(--quick) var(--ease),

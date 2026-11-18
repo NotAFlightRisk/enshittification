@@ -27,8 +27,6 @@
       ({ date }) => yearOf(date)
     )
   );
-  // labels every other year once there are too many to fit on a phone
-  const sparse = $derived(years.length > 8);
 </script>
 
 <div class="wall" class:big style:--years={years.length}>
@@ -48,9 +46,10 @@
   {/each}
   <div class="axis" aria-hidden="true">
     <ol>
-      {#each years as year, index (year)}
-        <li class:minor={sparse && index % 2 === 1}>
-          {year}
+      {#each years as year (year)}
+        <li>
+          <span class="full">{year}</span>
+          <span class="short">{String(year).slice(2)}</span>
           {#if !big}<small>{perYear.get(year)?.length ?? 0}</small>{/if}
         </li>
       {/each}
@@ -90,7 +89,7 @@
     overflow-wrap: anywhere;
 
     &:hover {
-      text-decoration: underline;
+      text-decoration: underline 2px var(--accent);
     }
   }
 
@@ -139,6 +138,10 @@
       font-weight: 700;
       color: var(--text);
     }
+
+    & .short {
+      display: none;
+    }
   }
 
   .big .axis {
@@ -170,11 +173,14 @@
 
     .axis li {
       padding-left: 2px;
-      letter-spacing: -0.02em;
     }
 
-    .minor {
-      color: transparent;
+    .axis .full {
+      display: none;
+    }
+
+    .axis .short {
+      display: inline;
     }
   }
 </style>

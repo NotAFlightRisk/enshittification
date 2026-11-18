@@ -145,22 +145,7 @@
   }
 
   table {
-    width: 100%;
     max-width: 44rem;
-    border-collapse: collapse;
     font-size: var(--text-sm);
-
-    & th,
-    & td {
-      padding: var(--space-2) var(--space-3) var(--space-2) 0;
-      border-bottom: var(--rule-thin) solid var(--rule-faint);
-      text-align: left;
-      font-weight: 400;
-    }
-
-    & thead th {
-      color: var(--text-muted);
-      border-bottom-color: var(--rule);
-    }
   }
 </style>

@@ -120,7 +120,7 @@
     {#if !chosen.length}
       <p class="empty">Nothing ticked yet. Go on, it's only money.</p>
     {:else}
-      <table>
+      <table class="league">
         <thead>
           <tr>
             <th scope="col">Plan</th>
@@ -220,36 +220,6 @@
   .result {
     display: grid;
     gap: var(--space-4);
-  }
-
-  table {
-    width: 100%;
-    border-collapse: collapse;
-
-    & th,
-    & td {
-      padding: var(--space-3) var(--space-3) var(--space-3) 0;
-      border-bottom: var(--rule-thin) solid var(--rule-faint);
-      text-align: left;
-      font-weight: 400;
-    }
-
-    & thead th {
-      font-size: var(--text-sm);
-      color: var(--text-muted);
-      border-bottom: var(--rule-heavy) solid var(--rule);
-    }
-
-    & tbody th {
-      font-weight: 650;
-
-      & span {
-        display: block;
-        font-size: var(--text-sm);
-        font-weight: 400;
-        color: var(--text-muted);
-      }
-    }
   }
 
   .total {

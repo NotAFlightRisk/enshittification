@@ -32,7 +32,7 @@
     text-decoration: none;
 
     &:hover {
-      text-decoration: underline;
+      text-decoration: underline 2px var(--accent);
     }
   }
 </style>

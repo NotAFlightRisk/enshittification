@@ -54,7 +54,7 @@
 {/snippet}
 
 {#if data.ranked.length}
-  <table>
+  <table class="league">
     <caption class="visually-hidden">Plans ranked by their rise since January 2020</caption>
     <thead>
       <tr>
@@ -85,7 +85,7 @@
       These didn't exist in January 2020, so they can't be ranked fairly. Here's their rise since
       launch.
     </p>
-    <table>
+    <table class="league">
       <thead>
         <tr>
           <th scope="col">Plan</th>
@@ -114,41 +114,13 @@
 
 <style>
   table {
-    width: 100%;
-    border-collapse: collapse;
     margin-bottom: var(--space-7);
 
-    & th,
-    & td {
-      padding: var(--space-3) var(--space-4) var(--space-3) 0;
-      border-bottom: var(--rule-thin) solid var(--rule-faint);
-      text-align: left;
-      font-weight: 400;
-      vertical-align: baseline;
-    }
+    & tbody th a {
+      text-decoration: none;
 
-    & thead th {
-      font-size: var(--text-sm);
-      color: var(--text-muted);
-      border-bottom: var(--rule-heavy) solid var(--rule);
-    }
-
-    & tbody th {
-      font-weight: 650;
-
-      & a {
-        text-decoration: none;
-
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-
-      & span {
-        display: block;
-        font-size: var(--text-sm);
-        font-weight: 400;
-        color: var(--text-muted);
+      &:hover {
+        text-decoration: underline 2px var(--accent);
       }
     }
 

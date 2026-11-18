@@ -5,14 +5,13 @@
 
   --surface: light-dark(oklch(0.975 0.003 250), oklch(0.17 0.006 250));
   --surface-raised: light-dark(#ffffff, oklch(0.21 0.006 250));
-  --surface-sunken: light-dark(oklch(0.94 0.004 250), oklch(0.135 0.005 250));
   --text: light-dark(oklch(0.2 0.012 260), oklch(0.95 0.004 250));
   --text-muted: light-dark(oklch(0.44 0.012 260), oklch(0.74 0.008 250));
   --rule: var(--text);
   --rule-faint: light-dark(oklch(0.86 0.006 250), oklch(0.33 0.008 250));
   --accent: light-dark(oklch(0.46 0.075 55), oklch(0.74 0.08 60));
   --accent-soft: light-dark(oklch(0.88 0.04 65), oklch(0.36 0.05 55));
-  --on-accent: light-dark(#ffffff, oklch(0.17 0.006 250));
+  --shadow: light-dark(rgb(0 0 0 / 0.18), rgb(0 0 0 / 0.5));
 
   /* one ink per kind of change, for the marks and their tags only */
   --price-rise: light-dark(oklch(0.56 0.11 70), oklch(0.78 0.12 75));
@@ -190,5 +189,52 @@ a {
     display: grid;
     gap: var(--space-2);
     padding-left: var(--space-5);
+  }
+}
+
+/* plain register tables: hairline rows, no fills, a qualifier in grey beside or under the row head */
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  & th,
+  & td {
+    padding: var(--space-2) var(--space-3) var(--space-2) 0;
+    border-bottom: var(--rule-thin) solid var(--rule-faint);
+    text-align: left;
+    font-weight: 400;
+    vertical-align: baseline;
+  }
+
+  & thead th {
+    font-size: var(--text-sm);
+    color: var(--text-muted);
+    border-bottom-color: var(--rule);
+  }
+
+  & tbody th {
+    font-weight: 650;
+
+    & span {
+      font-size: var(--text-sm);
+      font-weight: 400;
+      color: var(--text-muted);
+    }
+  }
+
+  /* when the table is the page */
+  &.league {
+    & th,
+    & td {
+      padding-block: var(--space-3);
+    }
+
+    & thead th {
+      border-bottom: var(--rule-heavy) solid var(--rule);
+    }
+
+    & tbody th span {
+      display: block;
+    }
   }
 }

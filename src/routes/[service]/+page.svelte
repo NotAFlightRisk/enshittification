@@ -155,32 +155,7 @@
   }
 
   table {
-    width: 100%;
     max-width: 48rem;
-    border-collapse: collapse;
-
-    & th,
-    & td {
-      padding: var(--space-2) var(--space-3) var(--space-2) 0;
-      border-bottom: var(--rule-thin) solid var(--rule-faint);
-      text-align: left;
-      font-weight: 400;
-    }
-
-    & thead th {
-      font-size: var(--text-sm);
-      color: var(--text-muted);
-      border-bottom-color: var(--rule);
-    }
-
-    & tbody th {
-      font-weight: 650;
-
-      & span {
-        font-size: var(--text-sm);
-        color: var(--text-muted);
-      }
-    }
   }
 
   .history {
@@ -207,6 +182,11 @@
       background: var(--surface-raised);
       font-size: var(--text-sm);
       cursor: pointer;
+      transition: border-color var(--quick) var(--ease);
+
+      &:hover {
+        border-color: var(--rule);
+      }
 
       &::before {
         content: '';
@@ -234,6 +214,10 @@
 
     & h3 a {
       text-decoration: none;
+
+      &:hover {
+        text-decoration: underline 2px var(--accent);
+      }
     }
 
     &[hidden] {
