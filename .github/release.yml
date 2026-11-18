@@ -1,0 +1,38 @@
+# Controls GitHub's auto-generated release notes, grouped by the label each PR's Category gets.
+# Docs: https://docs.github.com/repositories/releasing-projects-on-github/automatically-generated-release-notes
+
+changelog:
+  exclude:
+    labels:
+      - ignore-for-release
+      - duplicate
+      - invalid
+      - question
+  categories:
+    - title: 💥 Breaking changes
+      labels:
+        - breaking-change
+    - title: 🔒 Security
+      labels:
+        - security
+    - title: 🆕 New services
+      labels:
+        - new-service
+    - title: 📋 Data
+      labels:
+        - data
+        - correction
+    - title: 🖥️ Website
+      labels:
+        - website
+    - title: 🛠️ Scripts and docs
+      labels:
+        - scripts
+        - documentation
+        - maintenance
+    - title: 📦 Dependencies
+      labels:
+        - dependencies
+    - title: 🧹 Other changes
+      labels:
+        - '*'

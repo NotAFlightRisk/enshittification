@@ -1,0 +1,47 @@
+name: ✏️ Correction
+description: Something in an entry is wrong, missing or out of date
+title: 'Correction: '
+labels: ['correction']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for checking our work. Corrections get read against the sources before anything else, and fixed entries get a line saying what changed.
+
+  - type: input
+    id: entry
+    attributes:
+      label: Which entry?
+      description: The service and change, from the page's URL, or the link itself.
+      placeholder: youtube/dislike-count-hidden
+    validations:
+      required: true
+
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What's wrong?
+      description: What the entry says, and what it should say instead.
+      placeholder: It says the price went up in August, but the post says July.
+    validations:
+      required: true
+
+  - type: input
+    id: source
+    attributes:
+      label: A source that shows it
+      description: The company's own post or help page if there is one, decent press if not.
+      placeholder: https://...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: company
+    attributes:
+      label: Are you from the company in the entry?
+      description: No difference to how it's checked, it just means it reaches the owner rather than an automated reply.
+      options:
+        - 'No'
+        - 'Yes'
+    validations:
+      required: true

@@ -1,0 +1,30 @@
+name: 💩 Suggest a change to add
+description: A price rise, new ad format, paywall, removed feature or API lockdown we've missed
+title: 'Suggestion: '
+labels: ['suggestion']
+body:
+  - type: input
+    id: service
+    attributes:
+      label: Which service?
+      placeholder: Spotify
+    validations:
+      required: true
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What changed, and when?
+      description: Plain words, with the date if you know it.
+      placeholder: Free users lost lyrics in September 2023.
+    validations:
+      required: true
+
+  - type: input
+    id: source
+    attributes:
+      label: A source
+      description: The company's own announcement is best. Press is fine. A forum post or another tracker on its own isn't enough.
+      placeholder: https://...
+    validations:
+      required: true

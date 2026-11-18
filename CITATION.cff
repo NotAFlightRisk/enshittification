@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: If you use this data, please cite it as below.
+type: dataset
+title: The Enshittification Index
+abstract: A dated, sourced and archived directory of the anti-user decisions big tech services have made, from price rises and new ad formats to paywalls, removed features and API lockdowns.
+authors:
+  - name: NotAFlightRisk
+    website: https://github.com/NotAFlightRisk
+url: https://enshittification.peng.ly
+repository-code: https://github.com/NotAFlightRisk/enshittification
+license: CC-BY-4.0
+keywords:
+  - enshittification
+  - big tech
+  - subscription prices
+  - consumer rights
+  - open data

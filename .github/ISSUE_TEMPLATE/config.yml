@@ -1,0 +1,21 @@
+# The chooser shown after "New issue". URLs must be absolute, relative paths won't resolve here.
+# Docs: https://docs.github.com/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository
+
+blank_issues_enabled: false
+
+contact_links:
+  - name: 🔒 Report a Security Vulnerability
+    url: https://github.com/NotAFlightRisk/enshittification/security/policy
+    about: Never report vulnerabilities in a public issue. Read our security policy and disclose privately.
+
+  - name: 📖 How entries are made
+    url: https://enshittification.peng.ly/about
+    about: The sourcing rules and the checks every entry passes. Worth a look before filing.
+
+  - name: 💬 Questions & Ideas
+    url: https://github.com/NotAFlightRisk/enshittification/discussions
+    about: Ask a question or share an idea.
+
+  - name: 🛠️ Contributing Guide
+    url: https://github.com/NotAFlightRisk/enshittification/blob/main/.github/CONTRIBUTING.md
+    about: Want to add an entry yourself? Start here.
