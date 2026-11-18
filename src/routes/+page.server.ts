@@ -1,9 +1,12 @@
 import { data, stats } from '#lib/server/data.ts';
 import { yearOf } from '#lib/dates.ts';
+import { happenedBy } from '#lib/seo.ts';
 
 export const load = () => {
   const { services, changes, built } = data();
   const counts = stats();
+  const happened = happenedBy(changes, built);
+  const serious = happened.filter(({ severity }) => severity === 3).slice(0, 3);
   return {
     counts,
     today: built,
@@ -15,9 +18,8 @@ export const load = () => {
       path: `/${service}`,
       changes
     })),
-    latest: changes
-      .filter(({ date, status }) => date <= built && status !== 'scheduled')
-      .slice(0, 8),
+    serious,
+    latest: happened.filter((change) => !serious.includes(change)).slice(0, 6),
     coming: changes.filter(({ status }) => status === 'scheduled').reverse()
   };
 };

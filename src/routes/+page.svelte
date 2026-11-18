@@ -1,9 +1,11 @@
 <script lang="ts">
   import ChangeList from '#lib/components/ChangeList.svelte';
   import Legend from '#lib/components/Legend.svelte';
+  import Pictogram from '#lib/components/Pictogram.svelte';
   import Seo from '#lib/components/Seo.svelte';
   import Sign from '#lib/components/Sign.svelte';
   import Wall from '#lib/components/Wall.svelte';
+  import { shortDate } from '#lib/dates.ts';
   import { plural } from '#lib/format.ts';
   import { site } from '#lib/site.ts';
 
@@ -44,6 +46,23 @@
   <Wall rows={data.rows} from={data.from} to={data.to} today={data.today} />
   <Legend />
 </section>
+
+{#if data.serious.length}
+  <section aria-labelledby="serious">
+    <h2 id="serious">Most serious</h2>
+    <ol class="serious">
+      {#each data.serious as change (change.key)}
+        <li data-level="danger">
+          <a href={change.path}>
+            <Pictogram kind={change.category} severity={change.severity} />
+            <span>{change.serviceName}, {shortDate(change.date)}</span>
+            <b>{change.title}</b>
+          </a>
+        </li>
+      {/each}
+    </ol>
+  </section>
+{/if}
 
 <div class="lists">
   <section aria-labelledby="latest">
@@ -105,6 +124,42 @@
 
     & p {
       color: var(--ink-soft);
+    }
+  }
+
+  .serious {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+    gap: var(--space-4);
+    padding: 0;
+    list-style: none;
+
+    & a {
+      --sign-size: 2.5rem;
+      display: grid;
+      align-content: start;
+      gap: var(--space-2);
+      height: 100%;
+      padding: var(--space-4);
+      border: 2px solid var(--edge);
+      border-top: 0.6rem solid var(--level);
+      background: var(--paper);
+      text-decoration: none;
+
+      &:hover b {
+        text-decoration: underline 2px;
+      }
+    }
+
+    & span {
+      font-size: var(--text-sm);
+      color: var(--ink-soft);
+    }
+
+    & b {
+      font-family: var(--font-sign);
+      font-size: var(--text-lg);
+      line-height: 1.1;
     }
   }
 
