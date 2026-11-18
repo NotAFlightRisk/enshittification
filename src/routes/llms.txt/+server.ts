@@ -1,6 +1,7 @@
 import { data, stats } from '#lib/server/data.ts';
 import { shortDate } from '#lib/dates.ts';
 import { absolute, site } from '#lib/site.ts';
+import { severities } from '#lib/data/types.ts';
 
 export const prerender = true;
 
@@ -25,7 +26,13 @@ export const GET = () => {
         `/${service.service}`,
         `${service.changes.length} changes, newest first`
       ),
-      ...service.changes.map((change) => link(change.title, change.path, shortDate(change.date))),
+      ...service.changes.map((change) =>
+        link(
+          change.title,
+          change.path,
+          `${shortDate(change.date)}, ${severities[change.severity].name.toLowerCase()}`
+        )
+      ),
       ''
     ]),
     '## Data',
