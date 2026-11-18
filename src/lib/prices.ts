@@ -40,19 +40,17 @@ export function priceOn(plan: PlanHistory, date: string, plans: PlanHistory[]): 
   return before && priceOn(before, date, plans);
 }
 
-/** Plans still on sale, meaning nothing else has replaced them */
-export const current = (plans: PlanHistory[]) =>
-  charted(plans).filter(
-    (plan) => !plans.some((other) => other.service === plan.service && other.replaces === plan.id)
-  );
-
-/** Plans on sale on a day: launched by then, and not replaced by anything */
-export const onSale = (plans: PlanHistory[], date: string) =>
-  current(plans).filter((plan) => stepsBy(plan, date).length);
-
 /** Charted plans that had launched by a day */
 export const launched = (plans: PlanHistory[], date: string) =>
   charted(plans).filter((plan) => stepsBy(plan, date).length);
+
+/** Plans on sale on a day: launched by then, and not yet replaced by one that has */
+export function onSale(plans: PlanHistory[], date: string) {
+  const live = launched(plans, date);
+  return live.filter(
+    (plan) => !live.some((other) => other.service === plan.service && other.replaces === plan.id)
+  );
+}
 
 export interface Rise {
   plan: PlanHistory;

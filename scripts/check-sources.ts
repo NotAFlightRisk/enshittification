@@ -8,7 +8,7 @@ import { loadServices } from '#lib/data/load.ts';
 import { today } from '#lib/dates.ts';
 import { plural } from '#lib/format.ts';
 import { missingNumbers, quoteFound } from '#lib/text.ts';
-import type { Change, ServiceFile, Source } from '#lib/data/types.ts';
+import type { Change, Plan, ServiceFile, Source } from '#lib/data/types.ts';
 import { isSnapshot, livePage, snapshotText, Unavailable } from './wayback.ts';
 
 // Reads every source an entry cites and checks its quote and its numbers are really in there
@@ -31,6 +31,7 @@ const note = (level: Level, key: string, message: string) => {
 
 const files = loadServices().map(({ raw }) => raw as ServiceFile);
 
+/** Every change and plan, by service/id, that differs from the same file at a git ref */
 function changedSince(ref: string) {
   const keys = new Set<string>();
   for (const file of files) {
@@ -41,20 +42,24 @@ function changedSince(ref: string) {
     } catch {
       before = undefined;
     }
-    for (const change of file.changes) {
-      const old = before?.changes.find(({ id }) => id === change.id);
-      if (JSON.stringify(old) !== JSON.stringify(change)) keys.add(`${file.service}/${change.id}`);
-    }
+    for (const [list, old] of [
+      [file.changes, before?.changes],
+      [file.plans ?? [], before?.plans]
+    ] as const)
+      for (const item of list) {
+        const was = old?.find(({ id }) => id === item.id);
+        if (JSON.stringify(was) !== JSON.stringify(item)) keys.add(`${file.service}/${item.id}`);
+      }
   }
   return keys;
 }
 
 const picked = args.base ? changedSince(args.base) : undefined;
-const wanted = (file: ServiceFile, change: Change) =>
+const wanted = (file: ServiceFile, { id }: { id: string }) =>
   picked
-    ? picked.has(`${file.service}/${change.id}`)
+    ? picked.has(`${file.service}/${id}`)
     : !positionals.length ||
-      positionals.some((name) => name === file.service || name === `${file.service}/${change.id}`);
+      positionals.some((name) => name === file.service || name === `${file.service}/${id}`);
 
 const texts = new Map<string, Promise<string>>();
 function textOf(source: Source) {
@@ -83,11 +88,10 @@ async function checkLive(key: string, source: Source) {
   }
 }
 
-async function checkChange(file: ServiceFile, change: Change) {
-  const key = `${file.service}/${change.id}`;
-  console.log(`\n${key}`);
+/** Reads each source, checks its quote is in it, and hands back the text of the ones it could read */
+async function readAll(key: string, sources: Source[]) {
   const read: string[] = [];
-  for (const source of [...change.sources, ...(change.reversed?.sources ?? [])]) {
+  for (const source of sources) {
     await checkLive(key, source);
     try {
       const text = await textOf(source);
@@ -107,20 +111,46 @@ async function checkChange(file: ServiceFile, change: Change) {
       );
     }
   }
-  if (!read.length) return;
+  return read;
+}
 
+function numbers(
+  key: string,
+  claim: (string | undefined)[],
+  read: string[],
+  exempt = new Set<string>()
+) {
+  if (!read.length) return;
+  const missing = missingNumbers(claim.filter(Boolean).join(' '), read.join(' '), exempt);
+  if (missing.length) note('fail', key, `no source has ${missing.join(', ')}`);
+  else console.log('  ✓ quotes and numbers found');
+}
+
+async function checkChange(file: ServiceFile, change: Change) {
+  const key = `${file.service}/${change.id}`;
+  console.log(`\n${key}`);
   const exempt = new Set<string>();
   for (const move of change.prices ?? []) {
     exempt.add(String(move.from));
     exempt.add(`${Math.round((move.to / move.from - 1) * 100)}%`);
   }
-  const claim = [change.title, change.what_changed, change.before, change.after, change.user_impact]
-    .concat((change.prices ?? []).map(({ to }) => String(to)))
-    .filter(Boolean)
-    .join(' ');
-  const missing = missingNumbers(claim, read.join(' '), exempt);
-  if (missing.length) note('fail', key, `no source has ${missing.join(', ')}`);
-  else console.log('  ✓ quotes and numbers found');
+  const claim = [
+    change.title,
+    change.what_changed,
+    change.before,
+    change.after,
+    change.user_impact
+  ];
+  const prices = (change.prices ?? []).map(({ to }) => String(to));
+  numbers(key, [...claim, ...prices], await readAll(key, change.sources), exempt);
+  if (change.reversed)
+    numbers(key, [change.reversed.what], await readAll(key, change.reversed.sources));
+}
+
+async function checkPlan(file: ServiceFile, plan: Plan) {
+  const key = `${file.service}/${plan.id}`;
+  console.log(`\n${key} (plan)`);
+  numbers(key, [String(plan.price)], await readAll(key, [plan.source]));
 }
 
 async function weeklyExtras() {
@@ -157,19 +187,23 @@ async function weeklyExtras() {
   }
 }
 
+const plans = files.flatMap((file) =>
+  (file.plans ?? []).filter((plan) => wanted(file, plan)).map((plan) => [file, plan] as const)
+);
 const queue = files.flatMap((file) =>
   file.changes.filter((change) => wanted(file, change)).map((change) => [file, change] as const)
 );
 console.log(
-  `Checking ${plural(queue.length, 'change')}${picked ? ` changed since ${args.base}` : ''}`
+  `Checking ${plural(queue.length, 'change')} and ${plural(plans.length, 'plan')}${picked ? ` changed since ${args.base}` : ''}`
 );
 for (const [file, change] of queue) await checkChange(file, change);
+for (const [file, plan] of plans) await checkPlan(file, plan);
 if (args.weekly) await weeklyExtras();
 
 const fails = findings.filter(({ level }) => level === 'fail');
 const verdict = fails.length
   ? `❌ ${plural(fails.length, 'problem')} in the sources`
-  : `✅ ${plural(queue.length, 'change')} checked against their sources`;
+  : `✅ ${plural(queue.length, 'change')} and ${plural(plans.length, 'plan')} checked against their sources`;
 const warnings = findings.length - fails.length;
 console.log(`\n${verdict}${warnings ? `, plus ${plural(warnings, 'warning')}` : ''}`);
 

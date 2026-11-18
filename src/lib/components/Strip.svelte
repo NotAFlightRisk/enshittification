@@ -35,7 +35,9 @@
       style:--at="{mark.at}%"
       style:--ink={mark.ink}
     >
-      <a href={mark.path}><span class="label">{mark.label}</span></a>
+      <a href={mark.path} aria-label={mark.label}
+        ><span class="label" aria-hidden="true">{mark.label}</span></a
+      >
     </li>
   {/each}
 </ol>

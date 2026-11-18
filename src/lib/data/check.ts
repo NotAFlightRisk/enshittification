@@ -28,6 +28,9 @@ const slug = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 const snapshot = /^https:\/\/web\.archive\.org\/web\/\d{14}\/https?:\/\/.+/;
 const numberWords =
   /\b(two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|(thir|four|fif|six|seven|eigh|nine)teen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|hundreds?|thousands?|millions?|billions?|dozens?)\b/i;
+const regionNames = new Intl.DisplayNames(['en-GB'], { type: 'region', fallback: 'none' });
+const isRegion = (code: unknown) =>
+  typeof code === 'string' && /^[A-Z]{2}$/.test(code) && !/^(Unknown|undefined)/.test(String(regionNames.of(code)));
 const priceQuestion = /^when did .+ (raise|put up|increase) (its|their) prices?\?$/i;
 
 export const maxTitle = 90;
@@ -107,7 +110,8 @@ const isText = (value: unknown): value is string =>
 const isUrl = (value: unknown) => typeof value === 'string' && /^https:\/\/[^\s]+$/.test(value);
 
 /** The first sentence, which is what search results and share cards show */
-export const firstSentence = (text: string) => text.split(/(?<=[.!?])\s+(?=[A-Z0-9"$£])/)[0];
+export const firstSentence = (text: string) =>
+  text.split(/(?<!\b(?:Inc|Ltd|Co|Corp|vs|St|Mr|Ms|Dr|No|e\.g|i\.e|U\.S|U\.K)\.)(?<=[.!?])\s+(?=[A-Z0-9"$£])/)[0];
 
 export const effectiveOf = (change: Pick<Change, 'date' | 'effective'>) =>
   startOf(change.effective ?? change.date);
@@ -165,6 +169,8 @@ function sources(value: unknown, path: Path, flag: Flag) {
   if (!list.some(({ archive }) => snapshot.test(String(archive))))
     flag(path, 'needs at least one source with a real snapshot before it can go live');
   if (list[0]?.paywalled) flag([...path, 0], "the first source can't be a paywalled one");
+  if (list[0]?.archive === 'pending')
+    flag([...path, 0, 'archive'], 'the first source needs its snapshot - pending only goes on the extras');
 }
 
 function words(value: unknown, path: Path, flag: Flag) {
@@ -227,7 +233,7 @@ function change(value: unknown, path: Path, flag: Flag, plans: Set<string>) {
 
   if (isText(value.what_changed) && isPartialDate(value.date)) {
     const lede = firstSentence(value.what_changed);
-    if (!lede.includes(String(yearOf(value.date))))
+    if (!new RegExp(`\\b${yearOf(value.date)}\\b`).test(lede))
       flag(at('what_changed'), `the first sentence should say when, with ${yearOf(value.date)} in it`);
     if (lede.length > maxLede)
       flag(at('what_changed'), `the first sentence is ${lede.length} characters, keep it under ${maxLede}`);
@@ -254,7 +260,7 @@ function change(value: unknown, path: Path, flag: Flag, plans: Set<string>) {
 
   if (value.regions !== undefined) {
     const list = value.regions;
-    if (!Array.isArray(list) || !list.every((code) => /^[A-Z]{2}$/.test(String(code))))
+    if (!Array.isArray(list) || !list.length || !list.every(isRegion))
       flag(at('regions'), 'should be a list of two-letter country codes, like [US, GB]');
   }
   if (value.prices !== undefined) {
@@ -308,7 +314,9 @@ function chains(file: ServiceFile, flag: Flag) {
     const own = moves
       .filter((move) => move.plan === item.id && move.when)
       .sort((a, b) => a.when.localeCompare(b.when));
-    for (const move of own) {
+    for (const [index, move] of own.entries()) {
+      if (own[index - 1]?.when === move.when)
+        flag(move.path, `${item.id} already moves on ${move.when} - one price change per plan per day`);
       if (move.when < startOf(item.since))
         flag(move.path, `moves ${item.id} before it launched (${item.since})`);
       if (move.from !== price)

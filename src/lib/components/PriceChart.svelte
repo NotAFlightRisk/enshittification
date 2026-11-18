@@ -20,7 +20,7 @@
 </script>
 
 <figure class="chart">
-  <div class="plot" role="img" aria-label={label}>
+  <div class="plot" role="group" aria-label={label}>
     <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
       {#each chart.years as { year, x } (year)}
         <line class="grid" x1={x} x2={x} y1="0" y2="100" />

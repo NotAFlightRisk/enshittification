@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { inflate, league, priceOn } from '#lib/prices.ts';
+import { inflate, league, onSale, priceOn } from '#lib/prices.ts';
 import type { Cpi, PlanHistory } from '#lib/data/types.ts';
 
 const cpi = (monthly: Record<string, number>): Cpi => ({
@@ -51,6 +51,13 @@ describe('prices', () => {
     const old = plan('old', [['2015-10-01', 9.99]]);
     const bundle = plan('bundle', [['2021-06-01', 14.99]], { replaces: 'old' });
     expect(priceOn(bundle, '2020-01-01', [old, bundle])).toBeUndefined();
+  });
+
+  it('keeps selling a plan until its replacement has launched', () => {
+    const old = plan('old', [['2018-01-01', 10]]);
+    const next = plan('next', [['2027-01-01', 12]], { replaces: 'old', like_for_like: true });
+    expect(onSale([old, next], '2026-11-18').map(({ id }) => id)).toEqual(['old']);
+    expect(onSale([old, next], '2027-02-01').map(({ id }) => id)).toEqual(['next']);
   });
 
   it('ranks the plans from 2020 and lists the newer ones apart', () => {
