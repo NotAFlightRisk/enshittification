@@ -10,6 +10,12 @@ export const categories = {
   ai: 'AI pushed in'
 } as const;
 
+export const severities = {
+  1: { name: 'Caution', means: 'An annoyance, but you can live with it' },
+  2: { name: 'Warning', means: 'Clearly worse for most people using it' },
+  3: { name: 'Danger', means: 'Took away something people paid for or relied on' }
+} as const;
+
 export const statuses = {
   'in-force': 'In force',
   reversed: 'Reversed',
@@ -39,8 +45,16 @@ export const reserved = [
 ];
 
 export type Category = keyof typeof categories;
+export type Severity = keyof typeof severities;
+export type Level = Lowercase<(typeof severities)[Severity]['name']>;
 export type Status = keyof typeof statuses;
 export type Region = keyof typeof currencies;
+
+export const severityKeys = Object.keys(severities).map(Number) as Severity[];
+/** Reversed and tested changes still count, but their signs go without colour */
+export const isHollow = (status: Status) => status === 'reversed' || status === 'test';
+
+export const levelOf = (severity: Severity) => severities[severity].name.toLowerCase() as Level;
 
 export interface Source {
   url: string;
@@ -85,7 +99,7 @@ export interface Change {
   after?: string;
   user_impact: string;
   company_said?: string;
-  severity: 1 | 2 | 3;
+  severity: Severity;
   status: Status;
   reversed?: { date: string; what: string; sources: Source[] };
   regions?: string[];
