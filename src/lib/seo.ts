@@ -1,7 +1,13 @@
 import { firstSentence } from '#lib/data/check.ts';
 import { formatDate, shortDate, yearOf } from '#lib/dates.ts';
 import { listOf, plural } from '#lib/format.ts';
-import type { Category, Entry, PlanHistory, Service } from '#lib/data/types.ts';
+import {
+  isHollow,
+  type Category,
+  type Entry,
+  type PlanHistory,
+  type Service
+} from '#lib/data/types.ts';
 
 // the words people search with, per kind of change
 export const nouns: Record<Category, [string, string]> = {
@@ -38,12 +44,12 @@ export const happenedBy = (changes: Entry[], today: string) =>
 /** The newest change that has actually happened, so a scheduled one doesn't count as the latest */
 const latestOf = (changes: Entry[], today: string) => happenedBy(changes, today)[0] ?? changes[0];
 
-/** The most serious change that has happened, the newest if there's a tie */
+/** The most serious change that happened and stuck, the newest if there's a tie */
 export function worstOf(changes: Entry[], today: string) {
-  const happened = happenedBy(changes, today);
-  return happened.reduce(
+  const stuck = happenedBy(changes, today).filter(({ status }) => !isHollow(status));
+  return stuck.reduce(
     (worst, change) => (change.severity > worst.severity ? change : worst),
-    happened[0] ?? changes[0]
+    stuck[0] ?? changes[0]
   );
 }
 

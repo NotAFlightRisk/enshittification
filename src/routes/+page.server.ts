@@ -1,12 +1,15 @@
 import { data, stats } from '#lib/server/data.ts';
 import { yearOf } from '#lib/dates.ts';
+import { isHollow } from '#lib/data/types.ts';
 import { happenedBy } from '#lib/seo.ts';
 
 export const load = () => {
   const { services, changes, built } = data();
   const counts = stats();
   const happened = happenedBy(changes, built);
-  const serious = happened.filter(({ severity }) => severity === 3).slice(0, 3);
+  const serious = happened
+    .filter(({ severity, status }) => severity === 3 && !isHollow(status))
+    .slice(0, 3);
   return {
     counts,
     today: built,
