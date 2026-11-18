@@ -33,6 +33,12 @@ npm run check:sources -- <service>
 
 `check:sources` reads every source's snapshot and makes sure each quote is in it, and that every number in the entry turns up in one of its sources. It only proves the text is there, not that it's true, so someone still reads the source before anything merges.
 
+Give every change a `severity`, which is how bad it was for the people using the service. It sets the sign's colour, and the most serious changes lead the homepage:
+
+- `1` caution: an annoyance you can live with, like a small price rise or a new ad format
+- `2` warning: clearly worse for most people using it, like a big price rise or a feature taken away
+- `3` danger: took away something people paid for or relied on, like a bricked device, a shut-down app or a lock-out
+
 Titles say what happened in plain words with no adjectives ("YouTube hides the public dislike count", not "YouTube kills dislikes"). Keep the jokes for the issues.
 
 ---
