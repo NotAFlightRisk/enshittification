@@ -1,0 +1,218 @@
+service: reddit
+name: Reddit
+company: reddit
+url: https://www.reddit.com
+crw: https://consumerrights.wiki/w/Reddit
+wikipedia: https://en.wikipedia.org/wiki/Reddit
+
+changes:
+  - id: api-pricing
+    date: 2023-04-18
+    date_kind: announced
+    category: api-restriction
+    title: Reddit announces paid access to its API
+    question: When did Reddit start charging for its API?
+    what_changed: >-
+      Reddit announced on 18 April 2023 that heavy users of its free Data API would need a new
+      premium access tier, under terms taking effect after 60 days. The charge, 24 cents per 1,000
+      requests for apps over the free limits, took effect on 1 July 2023.
+    user_impact: >-
+      Apollo, BaconReader, Boost, Reddit Is Fun and Sync shut down, and moderators took subreddits
+      dark in protest, some for weeks.
+    company_said: >-
+      Reddit said it could no longer subsidise commercial entities that need large-scale data use.
+    severity: 3
+    status: in-force
+    related: [reddit/apollo-shutdown]
+    sources:
+      - url: https://redditinc.com/news/2023apiupdates
+        publisher: Reddit Inc
+        kind: primary
+        published: 2023-04-18
+        archive: https://web.archive.org/web/20261101213230/https://redditinc.com/news/2023apiupdates
+        quote: >-
+          We are introducing a new premium access point for third parties who require additional
+          capabilities, higher usage limits, and broader usage rights.
+      - url: https://www.techtarget.com/whatis/feature/Reddit-pricing-API-charge-explained
+        publisher: TechTarget
+        kind: press
+        published: 2023-07-11
+        archive: https://web.archive.org/web/20261011125713/https://www.techtarget.com/whatis/feature/Reddit-pricing-API-charge-explained
+        quote: >-
+          The change -- which took effect July 1 -- charges developers 24 cents per 1,000 API
+          requests.
+    added: 2026-11-18
+    updated: 2026-11-18
+    sources_checked: 2026-11-18
+    status_checked: 2026-11-18
+
+  - id: apollo-shutdown
+    date: 2023-06-30
+    date_kind: effective
+    category: lock-out
+    title: Apollo shuts down over Reddit's API pricing
+    question: When did Apollo shut down?
+    what_changed: >-
+      Apollo, an iPhone app for browsing Reddit, shut down on 30 June 2023 after Reddit's new API
+      pricing made it too costly to run. Its developer, Christian Selig, said the pricing would have
+      cost him more than $20m a year, with 30 days to adapt.
+    user_impact: Apollo's users had to move to another app to keep reading Reddit.
+    severity: 3
+    status: in-force
+    related: [reddit/api-pricing]
+    sources:
+      - url: https://www.theverge.com/2023/6/8/23754183/apollo-reddit-app-shutting-down-api
+        publisher: The Verge
+        kind: press
+        published: 2023-06-08
+        archive: https://web.archive.org/web/20261108022737/https://www.theverge.com/2023/6/8/23754183/apollo-reddit-app-shutting-down-api
+        quote: The app will shut down on June 30th, according to developer Christian Selig.
+      - url: https://www.techtarget.com/whatis/feature/Reddit-pricing-API-charge-explained
+        publisher: TechTarget
+        kind: press
+        published: 2023-07-11
+        archive: https://web.archive.org/web/20261011125713/https://www.techtarget.com/whatis/feature/Reddit-pricing-API-charge-explained
+        quote: >-
+          Some of the apps that have already shut down include Apollo, BaconReader, Boost, Reddit Is
+          Fun and Sync.
+    added: 2026-11-18
+    updated: 2026-11-18
+    sources_checked: 2026-11-18
+    status_checked: 2026-11-18
+
+  - id: blocks-search-engines
+    date: 2024-07-24
+    date_kind: reported
+    category: lock-out
+    title: Reddit blocks every search engine but Google from its recent posts
+    what_changed: >-
+      Search engines other than Google stopped showing recent Reddit posts, 404 Media reported on 24
+      July 2024, after Reddit changed its robots.txt file. Bing, DuckDuckGo and others could no
+      longer crawl the site, while Google had a $60m deal to train its AI on Reddit's content.
+    user_impact: >-
+      People searching Reddit through Bing, DuckDuckGo and other alternatives stopped getting its
+      recent posts.
+    company_said: >-
+      Reddit said some search engines wouldn't make enforceable promises about how they use its
+      content, including for AI.
+    severity: 2
+    status: in-force
+    related: [reddit/blocks-internet-archive]
+    sources:
+      - url: https://www.theverge.com/2024/7/24/24205244/reddit-blocking-search-engine-crawlers-ai-bot-google
+        publisher: The Verge
+        kind: press
+        published: 2024-07-24
+        archive: https://web.archive.org/web/20261029040143/https://www.theverge.com/2024/7/24/24205244/reddit-blocking-search-engine-crawlers-ai-bot-google
+        quote: >-
+          Over the past few weeks, Reddit has started blocking search engines from surfacing recent
+          posts and comments unless the search engine pays up
+      - url: https://www.404media.co/google-is-the-only-search-engine-that-works-on-reddit-now-thanks-to-ai-deal/
+        publisher: 404 Media
+        kind: press
+        published: 2024-07-24
+        archive: https://web.archive.org/web/20240724132219/https://www.404media.co/google-is-the-only-search-engine-that-works-on-reddit-now-thanks-to-ai-deal/
+        quote: >-
+          Google is now the only search engine that can surface results from Reddit, making one of
+          the web’s most valuable repositories of user generated content exclusive to the internet’s
+          already dominant search engine.
+    added: 2026-11-18
+    updated: 2026-11-18
+    sources_checked: 2026-11-18
+    status_checked: 2026-11-18
+
+  - id: blocks-internet-archive
+    date: 2025-08-11
+    date_kind: announced
+    category: lock-out
+    title: Reddit blocks the Internet Archive
+    what_changed: >-
+      Reddit started limiting the Wayback Machine to its homepage on 11 August 2025, blocking it
+      from archiving posts, comments and profiles.
+    user_impact: >-
+      New Reddit threads, comments and profiles can no longer be saved in the Wayback Machine.
+    company_said: >-
+      Reddit said AI companies were scraping its data from the Wayback Machine, and that the limits
+      protect redditors.
+    severity: 2
+    status: in-force
+    related: [reddit/blocks-search-engines]
+    sources:
+      - url: https://www.theverge.com/news/757538/reddit-internet-archive-wayback-machine-block-limit
+        publisher: The Verge
+        kind: press
+        published: 2025-08-11
+        archive: https://web.archive.org/web/20261115070548/https://www.theverge.com/news/757538/reddit-internet-archive-wayback-machine-block-limit
+        quote: >-
+          Reddit says that it has caught AI companies scraping its data from the Internet Archive’s
+          Wayback Machine, so it’s going to start blocking the Internet Archive from indexing the
+          vast majority of Reddit.
+    added: 2026-11-18
+    updated: 2026-11-18
+    sources_checked: 2026-11-18
+    status_checked: 2026-11-18
+
+  - id: old-reddit-login
+    date: 2026-06-30
+    date_kind: announced
+    category: lock-out
+    title: Reddit requires a login to use old.reddit.com
+    what_changed: >-
+      Reddit said on 30 June 2026 that it would start requiring a login to use old.reddit.com over
+      the following month. Until then anyone could read Reddit in the old layout without an account.
+    user_impact: >-
+      People who read Reddit in the old layout without an account had to sign in to keep using it.
+    company_said: >-
+      Reddit said logged-out Old Reddit was a significant source of abusive scraping and automated
+      traffic.
+    severity: 2
+    status: in-force
+    related: [reddit/rss-and-public-api-end]
+    sources:
+      - url: https://arstechnica.com/gadgets/2026/06/reddit-will-require-you-to-log-in-to-use-old-reddit-com/
+        publisher: Ars Technica
+        kind: press
+        published: 2026-06-30
+        archive: https://web.archive.org/web/20261029221808/https://arstechnica.com/gadgets/2026/06/reddit-will-require-you-to-log-in-to-use-old-reddit-com/
+        quote: Reddit will start requiring people to be logged into Reddit to use old.reddit.com.
+      - url: https://techcrunch.com/2026/09/30/reddit-is-killing-rss-feeds-ending-public-api-access-because-of-ai-bots/
+        publisher: TechCrunch
+        kind: press
+        published: 2026-09-30
+        archive: https://web.archive.org/web/20261115172906/https://techcrunch.com/2026/09/30/reddit-is-killing-rss-feeds-ending-public-api-access-because-of-ai-bots/
+        quote: >-
+          Reddit said in the next few months it will limit access for logged-in users to those who
+          have used Old Reddit in the last 6 months.
+    added: 2026-11-18
+    updated: 2026-11-18
+    sources_checked: 2026-11-18
+    status_checked: 2026-11-18
+
+  - id: rss-and-public-api-end
+    date: 2026-09-30
+    date_kind: announced
+    category: removed-feature
+    title: Reddit ends RSS feeds and sets a date to close its public API
+    what_changed: >-
+      Reddit said on 30 September 2026 that it would end RSS feeds on 13 November 2026 and close its
+      public API by March 2027. It pointed moderators to a Discord Relay app instead, but said there
+      was no replacement for other uses of RSS.
+    user_impact: >-
+      People following subreddits in feed readers lose those feeds, and tools built on the public
+      API have until March 2027.
+    company_said: >-
+      Reddit said RSS had become a common surface for large-scale scraping and automated abuse.
+    severity: 3
+    status: scheduled
+    related: [reddit/old-reddit-login, reddit/api-pricing]
+    sources:
+      - url: https://techcrunch.com/2026/09/30/reddit-is-killing-rss-feeds-ending-public-api-access-because-of-ai-bots/
+        publisher: TechCrunch
+        kind: press
+        published: 2026-09-30
+        archive: https://web.archive.org/web/20261115172906/https://techcrunch.com/2026/09/30/reddit-is-killing-rss-feeds-ending-public-api-access-because-of-ai-bots/
+        quote: Reddit said RSS support will cease on November 13.
+    added: 2026-11-18
+    updated: 2026-11-18
+    sources_checked: 2026-11-18
+    status_checked: 2026-11-18

@@ -1,0 +1,14 @@
+- id: google
+  name: Google
+  url: https://about.google
+  wikipedia: https://en.wikipedia.org/wiki/Google
+
+- id: spotify
+  name: Spotify
+  url: https://newsroom.spotify.com
+  wikipedia: https://en.wikipedia.org/wiki/Spotify
+
+- id: reddit
+  name: Reddit
+  url: https://redditinc.com
+  wikipedia: https://en.wikipedia.org/wiki/Reddit

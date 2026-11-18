@@ -1,0 +1,355 @@
+service: spotify
+name: Spotify
+company: spotify
+url: https://www.spotify.com
+crw: https://consumerrights.wiki/w/Spotify
+wikipedia: https://en.wikipedia.org/wiki/Spotify
+
+plans:
+  - id: individual-us
+    name: Premium Individual
+    region: US
+    currency: USD
+    billing: month
+    since: 2011-07-14
+    price: 9.99
+    source:
+      url: https://news.spotify.com/us/2011/07/14/hello-america-spotify-here/
+      publisher: Spotify News
+      kind: primary
+      published: 2011-07-14
+      archive: https://web.archive.org/web/20130901193202/http://news.spotify.com/us/2011/07/14/hello-america-spotify-here/
+      quote: Premium costs just $9.99 a month.
+
+  - id: duo-us
+    name: Premium Duo
+    region: US
+    currency: USD
+    billing: month
+    since: 2020-07-01
+    price: 12.99
+    source:
+      url: https://newsroom.spotify.com/2020-07-01/new-spotify-premium-duo-subscription-plan-launches-in-55-markets/
+      publisher: Spotify Newsroom
+      kind: primary
+      published: 2020-07-01
+      archive: https://web.archive.org/web/20200701113625/https://newsroom.spotify.com/2020-07-01/new-spotify-premium-duo-subscription-plan-launches-in-55-markets/
+      quote: >-
+        Each individual gets their own Premium account under one plan in addition to unique benefits
+        for couples for just $12.99 (or market equivalent) per month.
+
+  - id: family-us
+    name: Premium Family
+    region: US
+    currency: USD
+    billing: month
+    since: 2016-05-23
+    price: 14.99
+    source:
+      url: https://news.spotify.com/us/2016/05/23/spotify-family-plan-gets-an-upgrade/
+      publisher: Spotify News
+      kind: primary
+      published: 2016-05-23
+      archive: https://web.archive.org/web/20160615155649/https://news.spotify.com/us/2016/05/23/spotify-family-plan-gets-an-upgrade/
+      quote: >-
+        starting today, Spotify Family Plan now provides families with up to six individual Spotify
+        Premium accounts for only $14.99 a month
+
+  - id: student-us
+    name: Premium Student
+    region: US
+    currency: USD
+    billing: month
+    since: 2014-03-25
+    price: 4.99
+    source:
+      url: https://news.spotify.com/us/2014/03/25/the-student-discount-is-here/
+      publisher: Spotify News
+      kind: primary
+      published: 2014-03-25
+      archive: https://web.archive.org/web/20140329105541/http://news.spotify.com/us/2014/03/25/the-student-discount-is-here/
+      quote: >-
+        We are pleased to announce that college students in the United States can now purchase
+        Spotify Premium for $4.99.
+
+changes:
+  - id: family-price-2021
+    date: 2021-04-26
+    date_kind: reported
+    effective: 2021-04-30
+    category: price-rise
+    title: Spotify Premium Family goes from $14.99 to $15.99 in the US
+    what_changed: >-
+      Spotify's US Premium Family plan went from $14.99 to $15.99 a month from 30 April 2021, with
+      existing subscribers paying it after a month's grace. Individual, Duo and Student stayed the
+      same in the US, while Student, Duo and Family went up in the UK and Europe.
+    before: $14.99 a month
+    after: $15.99 a month
+    user_impact: US families sharing a plan paid more, while every other US plan kept its price.
+    company_said: >-
+      Spotify said it updates prices from time to time to reflect local macroeconomic factors and
+      market demands.
+    severity: 2
+    status: in-force
+    regions: [US]
+    prices:
+      - { plan: family-us, from: 14.99, to: 15.99 }
+    sources:
+      - url: https://www.theverge.com/2021/4/26/22403813/spotify-price-increase-subscriptions-2021
+        publisher: The Verge
+        kind: press
+        published: 2021-04-26
+        archive: https://web.archive.org/web/20210426162507/https://www.theverge.com/2021/4/26/22403813/spotify-price-increase-subscriptions-2021
+        quote: Spotify family is increasing from $14.99 to $15.99 per month in the US.
+    added: 2026-11-18
+    updated: 2026-11-18
+    sources_checked: 2026-11-18
+    status_checked: 2026-11-18
+
+  - id: premium-price-2023
+    date: 2023-07-24
+    date_kind: announced
+    category: price-rise
+    title: Spotify Premium Individual goes from $9.99 to $10.99 in the US
+    what_changed: >-
+      Spotify raised US Premium Individual from $9.99 to $10.99 a month on 24 July 2023, along with
+      Duo, Family and Student. Duo went from $12.99 to $14.99, Family from $15.99 to $16.99 and
+      Student from $4.99 to $5.99, as prices went up in markets around the world.
+    before: $9.99 a month
+    after: $10.99 a month
+    user_impact: >-
+      It ended the $9.99 price that US Individual had kept since Spotify launched there in 2011.
+    company_said: >-
+      Spotify said it was changing prices so it could keep innovating as the market changed.
+    severity: 2
+    status: in-force
+    regions: [AD, AL, AR, AT, AU, BA, BE, BG, BR, CA, CL, CO, CR, CY, DK, EC, EE, ES, FI, FR, GB,
+      GR, GT, HK, HR, ID, IE, IL, IS, IT, LT, LU, LV, MC, ME, MK, MT, MX, NL, "NO", NZ, PE, PT, RS,
+      SE, SG, SI, SK, SM, TH, TR, US, XK]
+    prices:
+      - { plan: individual-us, from: 9.99, to: 10.99 }
+      - { plan: duo-us, from: 12.99, to: 14.99 }
+      - { plan: family-us, from: 15.99, to: 16.99 }
+      - { plan: student-us, from: 4.99, to: 5.99 }
+    sources:
+      - url: https://newsroom.spotify.com/2023-07-24/adjusting-our-spotify-premium-prices/
+        publisher: Spotify Newsroom
+        kind: primary
+        published: 2023-07-24
+        archive: https://web.archive.org/web/20260815111623/https://newsroom.spotify.com/2023-07-24/adjusting-our-spotify-premium-prices/
+        quote: >-
+          So that we can keep innovating, we are changing our Premium prices across a number of
+          markets* around the world.
+      - url: https://www.spotify.com/us/premium/
+        publisher: Spotify
+        kind: pricing-page
+        published: 2023-07-02
+        archive: https://web.archive.org/web/20230702222748/https://www.spotify.com/us/premium/
+        quote: 1 month free Individual $9.99/month after offer period
+      - url: https://news.spotify.com/us/2011/07/14/hello-america-spotify-here/
+        publisher: Spotify News
+        kind: primary
+        published: 2011-07-14
+        archive: https://web.archive.org/web/20130901193202/http://news.spotify.com/us/2011/07/14/hello-america-spotify-here/
+        quote: We’re excited to let you know that today we’re bringing Spotify to the US.
+    added: 2026-11-18
+    updated: 2026-11-18
+    sources_checked: 2026-11-18
+    status_checked: 2026-11-18
+
+  - id: lyrics-premium-test
+    date: 2023-09-05
+    date_kind: reported
+    category: paywall
+    title: Spotify tests putting lyrics behind Premium
+    what_changed: >-
+      Spotify was found testing lyrics as a Premium-only feature on 5 September 2023, with some free
+      users seeing a prompt to upgrade instead. Spotify said it was a test with a limited number of
+      users.
+    user_impact: Free listeners in the test lost the in-app lyrics unless they paid for Premium.
+    severity: 1
+    status: test
+    sources:
+      - url: https://www.theverge.com/2023/9/5/23860124/spotify-lyrics-premium-only-feature
+        publisher: The Verge
+        kind: press
+        published: 2023-09-05
+        archive: https://web.archive.org/web/20260201202858/https://www.theverge.com/2023/9/5/23860124/spotify-lyrics-premium-only-feature
+        quote: >-
+          Instead, they saw only a notification bubble saying, “Enjoy lyrics on Spotify Premium,”
+          with a link to sign up.
+    added: 2026-11-18
+    updated: 2026-11-18
+    sources_checked: 2026-11-18
+    status_checked: 2026-11-18
+
+  - id: premium-price-2024
+    date: 2024-06-03
+    date_kind: announced
+    category: price-rise
+    title: Spotify Premium Individual goes from $10.99 to $11.99 in the US
+    what_changed: >-
+      Spotify raised US Premium Individual from $10.99 to $11.99 a month on 3 June 2024, with Duo
+      and Family going up too. Duo went from $14.99 to $16.99 and Family from $16.99 to $19.99,
+      while Student stayed at $5.99.
+    before: $10.99 a month
+    after: $11.99 a month
+    user_impact: >-
+      Every US Premium subscriber except students paid more, with existing ones told by email over
+      the following month.
+    company_said: >-
+      Spotify said it updates prices now and then so it can keep investing in and improving the
+      product.
+    severity: 2
+    status: in-force
+    regions: [US]
+    prices:
+      - { plan: individual-us, from: 10.99, to: 11.99 }
+      - { plan: duo-us, from: 14.99, to: 16.99 }
+      - { plan: family-us, from: 16.99, to: 19.99 }
+    sources:
+      - url: https://newsroom.spotify.com/2024-06-03/adjusting-spotify-premium-prices-in-the-us/
+        publisher: Spotify Newsroom
+        kind: primary
+        published: 2024-06-03
+        archive: https://web.archive.org/web/20260929205044/https://newsroom.spotify.com/2024-06-03/adjusting-spotify-premium-prices-in-the-us/
+        quote: >-
+          Over the next month, subscribers in the U.S. will receive an email (pictured below)
+          explaining what this update means for their subscription.
+      - url: https://www.spotify.com/us/premium/
+        publisher: Spotify
+        kind: pricing-page
+        published: 2024-06-01
+        archive: https://web.archive.org/web/20240601063429/https://www.spotify.com/us/premium/
+        quote: >-
+          The Spotify Premium Individual plan costs $10.99 per month, the Premium Duo plan costs
+          $14.99 per month, the Premium Family plan costs $16.99 per month, the Premium Student plan
+          costs $5.99 per month.
+    added: 2026-11-18
+    updated: 2026-11-18
+    sources_checked: 2026-11-18
+    status_checked: 2026-11-18
+
+  - id: web-api-endpoints-cut
+    date: 2024-11-27
+    date_kind: effective
+    category: api-restriction
+    title: Spotify cuts recommendations and audio features from its API for new apps
+    what_changed: >-
+      Spotify cut new Web API apps off from its recommendations, related artists, audio features and
+      audio analysis endpoints on 27 November 2024. Apps still in development mode lost them too,
+      along with featured and category playlists, 30-second previews and Spotify's own editorial and
+      algorithmic playlists, while apps that already had extended access kept them.
+    user_impact: >-
+      Developers starting new apps, or still in development mode, lost Spotify's recommendations and
+      audio analysis data.
+    company_said: Spotify said the changes were meant to create a more secure platform.
+    severity: 2
+    status: in-force
+    sources:
+      - url: https://developer.spotify.com/blog/2024-11-27-changes-to-the-web-api
+        publisher: Spotify for Developers
+        kind: primary
+        published: 2024-11-27
+        archive: https://web.archive.org/web/20261113085112/https://developer.spotify.com/blog/2024-11-27-changes-to-the-web-api
+        quote: >-
+          Effective today, new Web API use cases will no longer be able to access or use the
+          following endpoints and functionality in their third-party applications.
+    added: 2026-11-18
+    updated: 2026-11-18
+    sources_checked: 2026-11-18
+    status_checked: 2026-11-18
+
+  - id: car-thing-bricked
+    date: 2024-12-09
+    date_kind: effective
+    category: bricked
+    title: Spotify switches off Car Thing, its $90 in-car player
+    question: When did Spotify Car Thing stop working?
+    what_changed: >-
+      Spotify ended Car Thing on 9 December 2024, after which its $90 in-car player no longer
+      worked. Owners were told in May 2024, with no automatic refund or credit, and Spotify later
+      asked them to contact customer service by 14 January 2025 about refund options.
+    user_impact: Every Car Thing stopped working, and Spotify didn't open-source the software.
+    company_said: Spotify said it was discontinuing Car Thing to streamline its product offerings.
+    severity: 3
+    status: in-force
+    sources:
+      - url: https://support.spotify.com/us/article/car-thing-discontinued/
+        publisher: Spotify Support
+        kind: primary
+        published: 2025-08-28
+        archive: https://web.archive.org/web/20250828003549/https://support.spotify.com/us/article/car-thing-discontinued/
+        quote: >-
+          After December 9th, 2024, Car Thing will be discontinued and will no longer be
+          operational.
+      - url: https://www.theverge.com/2024/5/23/24163383/spotify-car-thing-discontinued-december-2024
+        publisher: The Verge
+        kind: press
+        published: 2024-05-23
+        archive: https://web.archive.org/web/20260810095411/https://www.theverge.com/2024/5/23/24163383/spotify-car-thing-discontinued-december-2024
+        quote: >-
+          Customers who bought the Car Thing are receiving emails warning that it will stop working
+          altogether as of December 9th.
+    added: 2026-11-18
+    updated: 2026-11-18
+    sources_checked: 2026-11-18
+    status_checked: 2026-11-18
+
+  - id: premium-price-2026
+    date: 2026-01-15
+    date_kind: announced
+    category: price-rise
+    title: Spotify Premium Individual goes from $11.99 to $12.99 in the US
+    what_changed: >-
+      Spotify raised US Premium Individual from $11.99 to $12.99 a month on 15 January 2026, and
+      every other US plan with it. Duo went from $16.99 to $18.99, Family from $19.99 to $21.99 and
+      Student from $5.99 to $6.99, with subscribers in the US, Estonia and Latvia emailed over the
+      following month.
+    before: $11.99 a month
+    after: $12.99 a month
+    user_impact: US Individual now costs $12.99, up from $9.99 before July 2023.
+    company_said: >-
+      Spotify said occasional price updates reflect the value it delivers and let it keep offering
+      the best experience and benefit artists.
+    severity: 2
+    status: in-force
+    regions: [US, EE, LV]
+    prices:
+      - { plan: individual-us, from: 11.99, to: 12.99 }
+      - { plan: duo-us, from: 16.99, to: 18.99 }
+      - { plan: family-us, from: 19.99, to: 21.99 }
+      - { plan: student-us, from: 5.99, to: 6.99 }
+    sources:
+      - url: https://newsroom.spotify.com/2026-01-15/premium-pricing-update/
+        publisher: Spotify Newsroom
+        kind: primary
+        published: 2026-01-15
+        archive: https://web.archive.org/web/20261003201209/https://newsroom.spotify.com/2026-01-15/premium-pricing-update/
+        quote: >-
+          Over the next month, Premium subscribers across the U.S., Estonia, and Latvia will receive
+          an email explaining what this update means for their subscriptions
+      - url: https://www.spotify.com/us/premium/
+        publisher: Spotify
+        kind: pricing-page
+        published: 2026-01-02
+        archive: https://web.archive.org/web/20260102055634/https://www.spotify.com/us/premium/
+        quote: $0 for 1 month, then $11.99 per month after.
+      - url: https://www.spotify.com/us/premium/
+        publisher: Spotify
+        kind: pricing-page
+        published: 2026-02-01
+        archive: https://web.archive.org/web/20260201133533/https://www.spotify.com/us/premium/
+        quote: $0 for 1 month, then $12.99 per month after.
+      - url: https://www.bgr.com/2296756/spotify-subscription-cost-2016-vs-2026/
+        publisher: BGR
+        kind: press
+        published: 2026-11-06
+        archive: https://web.archive.org/web/20261109144417/https://www.bgr.com/2296756/spotify-subscription-cost-2016-vs-2026/
+        quote: >-
+          As of October 2026, Spotify's premium, duo, family, and student plans cost $12.99, $18.99,
+          $21.99, and $6.99, respectively.
+    added: 2026-11-18
+    updated: 2026-11-18
+    sources_checked: 2026-11-18
+    status_checked: 2026-11-18

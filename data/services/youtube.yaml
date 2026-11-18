@@ -1,0 +1,380 @@
+service: youtube
+name: YouTube
+company: google
+url: https://www.youtube.com
+crw: https://consumerrights.wiki/w/YouTube
+wikipedia: https://en.wikipedia.org/wiki/YouTube
+
+plans:
+  - id: individual-us
+    name: Premium Individual
+    region: US
+    currency: USD
+    billing: month
+    since: 2018-06-18
+    price: 11.99
+    source:
+      url: https://youtube.googleblog.com/2018/06/youtube-music-and-youtube-premium.html
+      publisher: YouTube Official Blog
+      kind: primary
+      published: 2018-06-18
+      archive: https://web.archive.org/web/20180618221621/https://youtube.googleblog.com/2018/06/youtube-music-and-youtube-premium.html
+      quote: >-
+        YouTube Music Premium is $9.99 per month and YouTube Premium is $11.99 per month for
+        individual memberships in the U.S.
+
+  - id: family-us
+    name: Premium Family
+    region: US
+    currency: USD
+    billing: month
+    since: 2018-06-18
+    price: 17.99
+    source:
+      url: https://youtube.googleblog.com/2018/06/youtube-music-and-youtube-premium.html
+      publisher: YouTube Official Blog
+      kind: primary
+      published: 2018-06-18
+      archive: https://web.archive.org/web/20180618221621/https://youtube.googleblog.com/2018/06/youtube-music-and-youtube-premium.html
+      quote: $11.99 per month after, $17.99 per month for a Family Plan
+
+  - id: music-premium-us
+    name: Music Premium
+    region: US
+    currency: USD
+    billing: month
+    since: 2018-06-18
+    price: 9.99
+    source:
+      url: https://youtube.googleblog.com/2018/06/youtube-music-and-youtube-premium.html
+      publisher: YouTube Official Blog
+      kind: primary
+      published: 2018-06-18
+      archive: https://web.archive.org/web/20180618221621/https://youtube.googleblog.com/2018/06/youtube-music-and-youtube-premium.html
+      quote: >-
+        YouTube Music Premium is $9.99 per month and YouTube Premium is $11.99 per month for
+        individual memberships in the U.S.
+
+  - id: lite-us
+    name: Premium Lite
+    region: US
+    currency: USD
+    billing: month
+    since: 2025-03-05
+    price: 7.99
+    source:
+      url: https://blog.youtube/news-and-events/introducing-premium-lite/
+      publisher: YouTube Official Blog
+      kind: primary
+      published: 2025-03-05
+      archive: https://web.archive.org/web/20250305162829/https://blog.youtube/news-and-events/introducing-premium-lite/
+      quote: >-
+        Premium Lite gives viewers a new, more affordable way to enjoy most videos on YouTube
+        ad-free for $7.99 per month
+
+changes:
+  - id: bumper-ads
+    date: 2016-04-26
+    date_kind: announced
+    category: ads
+    title: YouTube announces 6-second Bumper ads that can't be skipped
+    what_changed: >-
+      Google announced Bumper ads for YouTube on 26 April 2016, a 6-second video ad format that
+      viewers can't skip. Advertisers could buy them from May 2016, as an extra to YouTube's longer
+      ad formats rather than a replacement.
+    user_impact: >-
+      Viewers got a new kind of ad with no skip button, made for people watching on their phones.
+    company_said: >-
+      Google said people increasingly turn to their phones first to watch video, and it wanted ad
+      formats that fit.
+    severity: 1
+    status: in-force
+    related: [youtube/30-second-unskippable-tv-ads]
+    sources:
+      - url: https://adwords.blogspot.com/2016/04/bumper-ads-drive-incremental-reach-and-frequency.html
+        publisher: Inside AdWords (Google)
+        kind: primary
+        published: 2016-04-26
+        archive: https://web.archive.org/web/20160505053259/http://adwords.blogspot.com/2016/04/bumper-ads-drive-incremental-reach-and-frequency.html
+        quote: >-
+          That’s why today we’re announcing Bumper ads – a new six-second video format, sold through
+          the AdWords auction on a CPM basis.
+      - url: https://techcrunch.com/2016/04/26/youtube-bumper-ads/
+        publisher: TechCrunch
+        kind: press
+        published: 2016-04-26
+        archive: https://web.archive.org/web/20250319113011/https://techcrunch.com/2016/04/26/youtube-bumper-ads/
+        quote: And since they’re so short, the Bumpers won’t be skippable.
+    added: 2026-11-18
+    updated: 2026-11-18
+    sources_checked: 2026-11-18
+    status_checked: 2026-11-18
+
+  - id: dislike-count-hidden
+    date: 2021-11-10
+    date_kind: announced
+    category: removed-feature
+    title: YouTube hides the public dislike count
+    question: When did YouTube hide dislikes?
+    what_changed: >-
+      YouTube started making dislike counts private across the site on 10 November 2021, after
+      testing the change earlier that year. The dislike button stayed, and creators can still see
+      their exact counts in YouTube Studio.
+    before: Dislike count public on every video
+    after: Only the video's creator sees it
+    user_impact: >-
+      Viewers lost the public count that some used to decide whether a video was worth watching.
+    company_said: >-
+      YouTube said hiding the count protects creators, smaller channels especially, from harassment
+      and dislike attacks.
+    severity: 2
+    status: in-force
+    sources:
+      - url: https://blog.youtube/news-and-events/update-to-youtube/
+        publisher: YouTube Official Blog
+        kind: primary
+        published: 2021-11-10
+        archive: https://web.archive.org/web/20261111035613/https://blog.youtube/news-and-events/update-to-youtube/
+        quote: >-
+          We're making the dislike counts private across YouTube, but the dislike button is not
+          going away.
+    added: 2026-11-18
+    updated: 2026-11-18
+    sources_checked: 2026-11-18
+    status_checked: 2026-11-18
+
+  - id: premium-family-price-2022
+    date: 2022-10-20
+    date_kind: announced
+    category: price-rise
+    title: YouTube Premium Family goes from $17.99 to $22.99 in the US
+    what_changed: >-
+      YouTube raised Premium Family in the US from $17.99 to $22.99 a month on 20 October 2022,
+      telling subscribers by email. New subscribers paid it straight away and existing ones from
+      their first bill on or after 21 November 2022, while Individual stayed at $11.99. YouTube said
+      prices were changing in Canada, the UK, Japan, Indonesia, Brazil, Turkey and Argentina too.
+    before: $17.99 a month
+    after: $22.99 a month
+    user_impact: Households sharing a Premium plan paid $5 a month more, a 28% rise.
+    company_said: >-
+      YouTube said the new price reflects Premium's full value and will pay for new features and
+      support creators and artists.
+    severity: 2
+    status: in-force
+    regions: [US, CA, GB, JP, ID, BR, TR, AR]
+    prices:
+      - { plan: family-us, from: 17.99, to: 22.99 }
+    sources:
+      - url: https://9to5google.com/2022/10/20/youtube-premium-price-hike/
+        publisher: 9to5Google
+        kind: press
+        published: 2022-10-20
+        archive: https://web.archive.org/web/20221020195638/https://9to5google.com/2022/10/20/youtube-premium-price-hike/
+        quote: >-
+          To continue delivering great service and features, we will be increasing your Premium
+          family plan price from $17.99/month to $22.99/month.
+      - url: https://www.theverge.com/2022/10/20/23415258/youtube-premium-family-plan-price-increase-more-expensive-cost
+        publisher: The Verge
+        kind: press
+        published: 2022-10-20
+        archive: https://web.archive.org/web/20260530213413/https://www.theverge.com/2022/10/20/23415258/youtube-premium-family-plan-price-increase-more-expensive-cost
+        quote: >-
+          Prices will be “adjusted” in the US, Canada, Great Britain, Japan, Indonesia, Brazil,
+          Turkey, and Argentina, YouTube spokesperson Marni Greenberg said in an email to The Verge.
+    added: 2026-11-18
+    updated: 2026-11-18
+    sources_checked: 2026-11-18
+    status_checked: 2026-11-18
+
+  - id: 30-second-unskippable-tv-ads
+    date: 2023-05-17
+    date_kind: announced
+    category: ads
+    title: YouTube brings 30-second unskippable ads to TVs
+    what_changed: >-
+      YouTube said at Brandcast on 17 May 2023 that it would show 30-second ads that can't be
+      skipped to people watching its most popular videos on TVs. They take the place of back-to-back
+      15-second ads on YouTube Select, its ad package for top content, and YouTube said it would
+      also start testing ads on paused videos.
+    user_impact: >-
+      Viewers without Premium watching popular videos on a TV got a 30-second ad they couldn't skip.
+    company_said: >-
+      YouTube told advertisers that longer ads suit the big screen and allow richer storytelling.
+    severity: 2
+    status: in-force
+    related: [youtube/longer-unskippable-tv-ads]
+    sources:
+      - url: https://blog.youtube/news-and-events/brandcast-2023-highlights-trends/
+        publisher: YouTube Official Blog
+        kind: primary
+        published: 2023-05-17
+        archive: https://web.archive.org/web/20230518071857/https://blog.youtube/news-and-events/brandcast-2023-highlights-trends/
+        quote: First, we’re bringing 30 second non-skips to YouTube Select on CTV.
+      - url: https://www.theverge.com/2023/5/18/23728150/youtube-tv-unskippable-ads-premium-pause-commercial
+        publisher: The Verge
+        kind: press
+        published: 2023-05-18
+        archive: https://web.archive.org/web/20260908074921/https://www.theverge.com/2023/5/18/23728150/youtube-tv-unskippable-ads-premium-pause-commercial
+        quote: >-
+          YouTube says viewers will see a single 30-second ad instead of two consecutive 15-second
+          ads, though that doesn’t mean that those shorter ads will be disappearing entirely.
+    added: 2026-11-18
+    updated: 2026-11-18
+    sources_checked: 2026-11-18
+    status_checked: 2026-11-18
+
+  - id: premium-price-2023
+    date: 2023-07-19
+    date_kind: reported
+    category: price-rise
+    title: YouTube Premium goes from $11.99 to $13.99 in the US
+    what_changed: >-
+      YouTube Premium's US price went from $11.99 to $13.99 a month, first reported on 19 July 2023
+      after YouTube changed its signup page without an announcement. The annual plan went up by $20
+      to $139.99 and Music Premium from $9.99 to $10.99. Most existing members paid more from their
+      next billing cycle, and legacy $9.99 YouTube Red subscribers after a grace period at their old
+      rate.
+    before: $11.99 a month
+    after: $13.99 a month
+    user_impact: >-
+      Individual members paid $2 a month more, the first rise for that plan since YouTube Red became
+      YouTube Premium in 2018.
+    company_said: >-
+      YouTube said the new price would let it keep delivering great service and features, and
+      reflected Premium's value.
+    severity: 2
+    status: in-force
+    regions: [US]
+    prices:
+      - { plan: individual-us, from: 11.99, to: 13.99 }
+      - { plan: music-premium-us, from: 9.99, to: 10.99 }
+    sources:
+      - url: https://9to5google.com/2023/07/19/youtube-premium-price-increase/
+        publisher: 9to5Google
+        kind: press
+        published: 2023-07-19
+        archive: https://web.archive.org/web/20230720051135/https://9to5google.com/2023/07/19/youtube-premium-price-increase/
+        quote: >-
+          The price of an individual YouTube Premium subscription is increasing by $2 to $13.99 per
+          month in the US.
+      - url: https://www.theverge.com/2023/7/20/23801390/youtube-premium-music-price-increase
+        publisher: The Verge
+        kind: press
+        published: 2023-07-20
+        archive: https://web.archive.org/web/20230720191054/https://www.theverge.com/2023/7/20/23801390/youtube-premium-music-price-increase
+        quote: >-
+          We’re updating the price for YouTube Premium and YouTube Music Premium subscribers in the
+          US to continue delivering great service and features
+    added: 2026-11-18
+    updated: 2026-11-18
+    sources_checked: 2026-11-18
+    status_checked: 2026-11-18
+
+  - id: ad-blocker-crackdown
+    date: 2023-10-31
+    date_kind: announced
+    category: ads
+    title: YouTube starts blocking videos for people using ad blockers worldwide
+    question: When did YouTube start blocking ad blockers?
+    what_changed: >-
+      YouTube confirmed on 31 October 2023 that it had launched a global effort against ad blockers,
+      after calling a June 2023 version a small experiment. Viewers using one were told to allow ads
+      or try Premium, and some found videos wouldn't play until they did.
+    user_impact: >-
+      People using an ad blocker on YouTube had to allow ads or pay for Premium to keep watching.
+    company_said: >-
+      YouTube said ad blockers break its terms of service, and that ads support creators and let
+      billions of people watch.
+    severity: 3
+    status: in-force
+    sources:
+      - url: https://www.theverge.com/2023/10/31/23940583/youtube-ad-blocker-crackdown-broadening
+        publisher: The Verge
+        kind: press
+        published: 2023-10-31
+        archive: https://web.archive.org/web/20260908194741/https://www.theverge.com/2023/10/31/23940583/youtube-ad-blocker-crackdown-broadening
+        quote: >-
+          The platform has “launched a global effort” to encourage users to allow ads or try YouTube
+          Premium, YouTube communications manager Christopher Lawton says in a statement provided to
+          The Verge.
+    added: 2026-11-18
+    updated: 2026-11-18
+    sources_checked: 2026-11-18
+    status_checked: 2026-11-18
+
+  - id: longer-unskippable-tv-ads
+    date: 2024-09
+    date_kind: effective
+    category: ads
+    title: YouTube starts showing longer unskippable ads on TVs
+    what_changed: >-
+      YouTube started showing more, and longer, unskippable ads on TVs at the start of September
+      2024, along with ads on paused videos. Most were 30-second ads in place of back-to-back
+      15-second ones, and a source told Tubefilter that YouTube was also offering advertisers
+      60-second unskippable ads for TVs.
+    user_impact: Viewers without Premium watching on a TV got longer ad breaks they couldn't skip.
+    company_said: >-
+      YouTube said its data showed 79% of viewers would rather sit through one longer ad break than
+      several shorter ones.
+    severity: 2
+    status: in-force
+    related: [youtube/30-second-unskippable-tv-ads]
+    sources:
+      - url: https://www.tubefilter.com/2024/09/26/youtube-longer-unskippable-ads/
+        publisher: Tubefilter
+        kind: press
+        published: 2024-09-26
+        archive: https://web.archive.org/web/20250926014133/https://www.tubefilter.com/2024/09/26/youtube-longer-unskippable-ads/
+        quote: >-
+          So, we reached out to YouTube, which confirms more unskippable ad formats debuted
+          alongside pause-vertising at the beginning of September.
+    added: 2026-11-18
+    updated: 2026-11-18
+    sources_checked: 2026-11-18
+    status_checked: 2026-11-18
+
+  - id: premium-price-2026
+    date: 2026-04-10
+    date_kind: reported
+    category: price-rise
+    title: YouTube Premium goes from $13.99 to $15.99 in the US, and every plan rises
+    what_changed: >-
+      YouTube Premium Individual went from $13.99 to $15.99 a month in the US, reported on 10 April
+      2026 as the new prices went live for new subscribers. Family went from $22.99 to $26.99, Lite
+      from $7.99 to $8.99 and Music Premium from $10.99 to $11.99, and existing subscribers pay the
+      new price from their June 2026 billing date.
+    before: $13.99 a month
+    after: $15.99 a month
+    user_impact: Families sharing a plan got the biggest rise, $4 a month.
+    company_said: >-
+      Google's email to subscribers said the rise would let it keep improving Premium and support
+      the creators and artists they watch.
+    severity: 2
+    status: in-force
+    regions: [US]
+    prices:
+      - { plan: individual-us, from: 13.99, to: 15.99 }
+      - { plan: family-us, from: 22.99, to: 26.99 }
+      - { plan: lite-us, from: 7.99, to: 8.99 }
+      - { plan: music-premium-us, from: 10.99, to: 11.99 }
+    sources:
+      - url: https://9to5google.com/2026/04/10/youtube-premium-us-price-hike/
+        publisher: 9to5Google
+        kind: press
+        published: 2026-04-10
+        archive: https://web.archive.org/web/20260410134437/https://9to5google.com/2026/04/10/youtube-premium-us-price-hike/
+        quote: >-
+          Google is implementing a price hike for YouTube Premium plans in the US, with prices going
+          up by as much as $4 per month.
+      - url: https://www.androidheadlines.com/2026/04/youtube-premium-just-got-more-expensive-across-every-plan.html
+        publisher: Android Headlines
+        kind: press
+        published: 2026-04-10
+        archive: https://web.archive.org/web/20260411035624/https://www.androidheadlines.com/2026/04/youtube-premium-just-got-more-expensive-across-every-plan.html
+        quote: >-
+          Google is raising YouTube Premium prices across all tiers, with the Family plan jumping to
+          $26.99/month and the Individual plan hitting $15.99/month.
+    added: 2026-11-18
+    updated: 2026-11-18
+    sources_checked: 2026-11-18
+    status_checked: 2026-11-18
