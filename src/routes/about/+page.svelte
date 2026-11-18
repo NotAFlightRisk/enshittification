@@ -1,9 +1,11 @@
 <script lang="ts">
   import Crumbs from '#lib/components/Crumbs.svelte';
   import Seo from '#lib/components/Seo.svelte';
-  import { categories } from '#lib/data/types.ts';
+  import Tag from '#lib/components/Tag.svelte';
+  import { categories, levelOf, severities, severityKeys, type Category } from '#lib/data/types.ts';
   import { site, suggestionUrl } from '#lib/site.ts';
 
+  const kinds = Object.keys(categories) as Category[];
   const crumbs = [
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' }
@@ -38,9 +40,28 @@
   <h2>What goes in</h2>
   <p>
     A decision by the company that made the service worse for its users: one of
-    {Object.values(categories).join(', ').toLowerCase()}. Climbdowns and ended tests stay in, drawn
-    hollow, because they still happened. Changes for the better don't, unless they undo one of ours.
+    {Object.values(categories).join(', ').toLowerCase()}. Climbdowns and ended tests stay in, shown
+    without colour, because they still happened. Changes for the better don't, unless they undo one
+    of ours.
   </p>
+
+  <h2>Reading the signs</h2>
+  <p>A sign's picture says what kind of change it was, and its colour says how bad.</p>
+  <ul class="signs">
+    {#each kinds as category (category)}
+      <li><Tag {category} link /></li>
+    {/each}
+  </ul>
+  <dl class="levels">
+    {#each severityKeys as severity (severity)}
+      <div>
+        <dt>
+          <span class="swatch" data-level={levelOf(severity)}></span>{severities[severity].name}
+        </dt>
+        <dd>{severities[severity].means}.</dd>
+      </div>
+    {/each}
+  </dl>
 
   <h2>How an entry is made</h2>
   <ul>
@@ -66,10 +87,10 @@
 
   <h2>What it isn't</h2>
   <p>
-    It isn't a score. With a handful of entries per service, any total would rank how much has been
-    written about each company rather than how much worse it got. The marks on the wall are what's
-    been logged, not how bad anything was. The <a href="/prices">price league</a> is the one ranking,
-    because prices are numbers nobody here made up.
+    It isn't a score. Each change gets a level, but there's no total: with a handful of entries per
+    service, any sum would rank how much has been written about each company rather than how much
+    worse it got. The <a href="/prices">price league</a> is the one ranking, because prices are numbers
+    nobody here made up.
   </p>
 
   <h2>Who's behind it</h2>
@@ -85,3 +106,31 @@
     <a href="/corrections">how corrections work</a>.
   </p>
 </section>
+
+<style>
+  .signs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2) var(--space-5);
+    padding: 0;
+    list-style: none;
+  }
+
+  .levels {
+    display: grid;
+    gap: var(--space-2);
+
+    & div {
+      display: grid;
+      grid-template-columns: 7rem 1fr;
+      gap: var(--space-3);
+    }
+
+    & dt {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+      font-weight: 700;
+    }
+  }
+</style>

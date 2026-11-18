@@ -23,7 +23,7 @@ When a service you use gets worse, the question you type has a date in it: "when
 
 Every entry is written from its sources, and every source has a quote and an archived copy in the Wayback Machine. A script checks each quote really is in its source, and that every number in an entry turns up in one of them, on every pull request and again every week.
 
-It's not a score. The marks on the wall are what's been logged so far, not how bad anything got.
+Each change is marked caution, warning or danger by how badly it hit people, but there's no total score. The signs on the wall are what's been logged so far.
 
 ---
 

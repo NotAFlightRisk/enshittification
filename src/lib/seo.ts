@@ -1,7 +1,13 @@
 import { firstSentence } from '#lib/data/check.ts';
 import { formatDate, shortDate, yearOf } from '#lib/dates.ts';
 import { listOf, plural } from '#lib/format.ts';
-import type { Category, Entry, PlanHistory, Service } from '#lib/data/types.ts';
+import {
+  isHollow,
+  type Category,
+  type Entry,
+  type PlanHistory,
+  type Service
+} from '#lib/data/types.ts';
 
 // the words people search with, per kind of change
 export const nouns: Record<Category, [string, string]> = {
@@ -31,9 +37,21 @@ export function serviceTitle(service: Service) {
   return `${service.name}: every ${listOf(topKinds(service.changes))} since ${firstYear(service.changes)}, dated`;
 }
 
+/** Changes in force or tried by a day, leaving out ones only announced */
+export const happenedBy = (changes: Entry[], today: string) =>
+  changes.filter(({ date, status }) => date <= today && status !== 'scheduled');
+
 /** The newest change that has actually happened, so a scheduled one doesn't count as the latest */
-export const latestOf = (changes: Entry[], today: string) =>
-  changes.find(({ date }) => date <= today) ?? changes[0];
+const latestOf = (changes: Entry[], today: string) => happenedBy(changes, today)[0] ?? changes[0];
+
+/** The most serious change that happened and stuck, the newest if there's a tie */
+export function worstOf(changes: Entry[], today: string): Entry | undefined {
+  const stuck = happenedBy(changes, today).filter(({ status }) => !isHollow(status));
+  return stuck.reduce(
+    (worst, change) => (change.severity > worst.severity ? change : worst),
+    stuck[0]
+  );
+}
 
 export function serviceDescription(service: Service, today: string) {
   const latest = latestOf(service.changes, today);

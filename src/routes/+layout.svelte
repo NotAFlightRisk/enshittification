@@ -1,5 +1,6 @@
 <script lang="ts">
   import { page } from '$app/state';
+  import Glyphs from '#lib/components/Glyphs.svelte';
   import { site } from '#lib/site.ts';
   import '../app.css';
 
@@ -15,11 +16,12 @@
 </script>
 
 <a class="skip" href="#main">Skip to content</a>
+<Glyphs />
 
 <header class="masthead">
   <a class="wordmark" href="/" aria-label="{site.name}, home">
-    <img src="/favicon.svg" alt="" width="40" height="40" />
-    <span><small>The</small> Enshittification <span>Index</span></span>
+    <img src="/favicon.svg" alt="" width="44" height="44" />
+    <span>The Enshittification Index</span>
   </a>
   <nav aria-label="Main">
     {#each nav as { href, label } (href)}
@@ -33,10 +35,7 @@
 </main>
 
 <footer class="colophon">
-  <p>
-    Every entry is dated, sourced and archived, written flat from what the companies and the press
-    actually said. Updated whenever big tech makes something worse, so: often.
-  </p>
+  <p>Every entry dated, sourced and archived. Updated whenever big tech makes something worse.</p>
   <ul>
     <li><a href="/data">Data (CC BY 4.0)</a></li>
     <li><a href="/corrections">Corrections</a></li>
@@ -52,11 +51,11 @@
     left: var(--pad);
     top: -10rem;
     padding: var(--space-2) var(--space-3);
-    background: var(--text);
-    color: var(--surface);
+    background: var(--caution);
+    color: var(--edge);
 
     &:focus {
-      top: var(--space-2);
+      top: var(--space-3);
     }
   }
 
@@ -74,16 +73,16 @@
     justify-content: space-between;
     gap: var(--space-3) var(--space-6);
     padding-block: var(--space-4);
-    border-bottom: var(--rule-thin) solid var(--rule);
+    border-bottom: var(--medium) solid var(--ink);
   }
 
   .wordmark {
     display: flex;
     align-items: center;
     gap: var(--space-3);
-    font-size: var(--text-md);
-    font-weight: 820;
-    letter-spacing: -0.03em;
+    font-family: var(--font-sign);
+    font-size: var(--text-lg);
+    font-weight: 700;
     line-height: 1;
     text-decoration: none;
 
@@ -94,31 +93,25 @@
     &:hover img {
       rotate: -8deg;
     }
-
-    & small {
-      font-size: var(--text-sm);
-      font-weight: 500;
-      letter-spacing: 0;
-    }
-
-    & span span {
-      font-weight: 400;
-    }
   }
 
   nav {
     display: flex;
     flex-wrap: wrap;
     gap: var(--space-2) var(--space-5);
-    font-size: var(--text-sm);
+    font-weight: 600;
 
     & a {
+      padding-block: var(--space-1);
       text-decoration: none;
+      border-bottom: 3px solid transparent;
 
-      &:hover,
+      &:hover {
+        border-color: var(--line);
+      }
+
       &[aria-current='page'] {
-        text-decoration: underline;
-        text-decoration-color: var(--accent);
+        border-color: var(--ink);
       }
     }
   }
@@ -127,23 +120,13 @@
     padding-block: var(--space-6) var(--space-8);
   }
 
-  @media (max-width: 40rem) {
-    nav {
-      column-gap: var(--space-4);
-    }
-  }
-
   .colophon {
     display: grid;
     gap: var(--space-4);
     padding-block: var(--space-6);
-    border-top: var(--rule-thin) solid var(--rule);
+    border-top: var(--medium) solid var(--ink);
     font-size: var(--text-sm);
-    color: var(--text-muted);
-
-    & p {
-      max-width: var(--measure);
-    }
+    color: var(--ink-soft);
 
     & ul {
       display: flex;
@@ -151,6 +134,22 @@
       gap: var(--space-2) var(--space-5);
       padding: 0;
       list-style: none;
+    }
+  }
+
+  @media (max-width: 40rem) {
+    .wordmark {
+      font-size: var(--text-md);
+
+      & img {
+        width: 2.25rem;
+        height: 2.25rem;
+      }
+    }
+
+    nav {
+      column-gap: var(--space-4);
+      font-size: var(--text-sm);
     }
   }
 </style>

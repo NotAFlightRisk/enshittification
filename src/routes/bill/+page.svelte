@@ -186,8 +186,8 @@
 
     & select {
       padding: var(--space-2) var(--space-3);
-      border: var(--rule-thin) solid var(--rule);
-      background: var(--surface-raised);
+      border: var(--thin) solid var(--ink);
+      background: var(--paper);
     }
   }
 
@@ -197,7 +197,7 @@
     margin: 0;
     padding: var(--space-3) 0 0;
     border: 0;
-    border-top: var(--rule-thin) solid var(--rule);
+    border-top: var(--thin) solid var(--ink);
 
     & legend {
       padding: 0 var(--space-2) 0 0;
@@ -213,7 +213,7 @@
 
     & small {
       display: block;
-      color: var(--text-muted);
+      color: var(--ink-soft);
     }
   }
 
@@ -229,7 +229,7 @@
 
   .empty,
   .note {
-    color: var(--text-muted);
+    color: var(--ink-soft);
   }
 
   .note {

@@ -2,7 +2,7 @@ import { error } from '@sveltejs/kit';
 import { data, service } from '#lib/server/data.ts';
 import { yearOf } from '#lib/dates.ts';
 import { launched, onSale, stepsBy } from '#lib/prices.ts';
-import { firstYear, latestOf, productName, serviceDescription, serviceTitle } from '#lib/seo.ts';
+import { firstYear, serviceDescription, serviceTitle, worstOf } from '#lib/seo.ts';
 
 export const entries = () => data().services.map(({ service }) => ({ service }));
 
@@ -24,8 +24,7 @@ export const load = ({ params }) => {
     company: companies.find(({ id }) => id === found.company)!,
     title: serviceTitle(found),
     description: serviceDescription(found, built),
-    latest: latestOf(found.changes, built),
-    product: productName(found),
+    worst: worstOf(found.changes, built),
     hasPrices: launched(found.plans, built).length > 0,
     plans,
     today: built,

@@ -117,7 +117,7 @@
 
     & .note {
       font-size: var(--text-sm);
-      color: var(--text-muted);
+      color: var(--ink-soft);
     }
   }
 
@@ -126,7 +126,7 @@
     gap: var(--space-6);
     padding-top: var(--space-5);
     margin-bottom: var(--space-7);
-    border-top: var(--rule-heavy) solid var(--rule);
+    border-top: var(--thick) solid var(--ink);
 
     & ul {
       display: grid;
@@ -141,7 +141,7 @@
   }
 
   .sum {
-    color: var(--text-muted);
+    color: var(--ink-soft);
   }
 
   table {

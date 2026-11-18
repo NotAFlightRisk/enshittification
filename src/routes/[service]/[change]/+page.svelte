@@ -1,15 +1,17 @@
 <script lang="ts">
   import ChangeList from '#lib/components/ChangeList.svelte';
   import Crumbs from '#lib/components/Crumbs.svelte';
+  import Pictogram from '#lib/components/Pictogram.svelte';
   import Seo from '#lib/components/Seo.svelte';
   import Tag from '#lib/components/Tag.svelte';
   import { formatDate, shortDate, yearOf } from '#lib/dates.ts';
-  import { categories, statuses } from '#lib/data/types.ts';
+  import { categories, isHollow, levelOf, severities, statuses } from '#lib/data/types.ts';
   import { listOf } from '#lib/format.ts';
   import { absolute, correctionUrl, editUrl } from '#lib/site.ts';
 
   let { data } = $props();
   const { entry } = $derived(data);
+  const level = $derived(isHollow(entry.status) ? undefined : levelOf(entry.severity));
   const kinds = {
     primary: 'from the company',
     press: 'press',
@@ -56,9 +58,14 @@
   {schema}
 />
 
-<article class="change" style:--ink="var(--{entry.category})">
+<article class="change">
   <header class="head">
     <Crumbs {crumbs} />
+    <p class="signal" data-level={level}>
+      <Pictogram kind={entry.category} severity={entry.severity} status={entry.status} />
+      <b>{severities[entry.severity].name}</b>
+      <span>{severities[entry.severity].means}</span>
+    </p>
     <h1>{entry.title}</h1>
     <p class="answer">{entry.what_changed}</p>
     <dl class="facts">
@@ -210,6 +217,27 @@
     }
   }
 
+  .signal {
+    --sign-size: 2.25rem;
+    justify-self: start;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-1) var(--space-3);
+    padding: var(--space-2) var(--space-4) var(--space-2) var(--space-2);
+    border: var(--medium) solid var(--edge);
+    background: var(--level, var(--blank));
+    color: var(--on-level, var(--edge));
+
+    & b {
+      font-family: var(--font-sign);
+      font-size: var(--text-lg);
+      line-height: 1;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+  }
+
   .answer {
     max-width: var(--measure);
     font-size: var(--text-md);
@@ -220,11 +248,12 @@
     flex-wrap: wrap;
     gap: var(--space-3) var(--space-6);
     padding-top: var(--space-4);
-    border-top: var(--rule-heavy) solid var(--rule);
-    font-size: var(--text-sm);
+    border-top: var(--thick) solid var(--ink);
 
     & dt {
-      color: var(--text-muted);
+      font-family: var(--font-sign);
+      font-size: var(--text-md);
+      font-weight: 700;
     }
 
     & details {
@@ -240,7 +269,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 48rem;
-    border: var(--rule-thin) solid var(--rule);
+    border: var(--medium) solid var(--edge);
+    background: var(--paper);
 
     & div {
       display: grid;
@@ -248,29 +278,26 @@
       padding: var(--space-5);
 
       & + div {
-        border-left: var(--rule-thin) solid var(--rule);
-        background: var(--surface-raised);
+        border-left: var(--medium) solid var(--edge);
       }
     }
 
     & h2 {
-      font-size: var(--text-sm);
-      font-weight: 600;
-      letter-spacing: 0;
-      color: var(--text-muted);
+      font-size: var(--text-md);
+      color: var(--ink-soft);
     }
 
     & p {
+      font-family: var(--font-sign);
       font-size: var(--text-xl);
-      font-weight: 800;
-      letter-spacing: -0.03em;
+      font-weight: 700;
       line-height: 1.05;
       text-wrap: balance;
     }
 
     & .was {
-      color: var(--text-muted);
-      text-decoration: line-through var(--accent) 0.08em;
+      color: var(--ink-soft);
+      text-decoration: line-through var(--danger) 0.1em;
     }
   }
 
@@ -280,14 +307,14 @@
     max-width: var(--measure);
 
     & h2 {
-      font-size: var(--text-md);
+      font-size: var(--text-lg);
       margin-top: var(--space-3);
     }
   }
 
   blockquote {
     padding-left: var(--space-4);
-    border-left: var(--rule-thin) solid var(--rule);
+    border-left: var(--thick) solid var(--caution);
   }
 
   .sources {
@@ -297,28 +324,33 @@
     & ol {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
-      gap: var(--space-5) var(--space-6);
+      gap: var(--space-4);
       padding: 0;
       list-style: none;
-      counter-reset: source;
     }
 
     & li {
       display: grid;
       align-content: start;
       gap: var(--space-2);
-      padding-top: var(--space-3);
-      border-top: var(--rule-thin) solid var(--rule);
+      padding: var(--space-4);
+      border: var(--thin) solid var(--line);
+      border-top: var(--thick) solid var(--ink);
+      background: var(--paper);
     }
 
     & blockquote {
       font-size: var(--text-sm);
-      color: var(--text-muted);
     }
   }
 
   .who {
     font-size: var(--text-sm);
+    color: var(--ink-soft);
+
+    & b {
+      color: var(--ink);
+    }
   }
 
   .links {
@@ -326,34 +358,36 @@
     flex-wrap: wrap;
     gap: var(--space-2) var(--space-4);
     font-size: var(--text-sm);
+    font-weight: 600;
 
     & span {
-      color: var(--text-muted);
+      font-weight: 400;
+      color: var(--ink-soft);
     }
   }
 
   .neighbours {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--space-5);
+    gap: var(--space-4);
     margin-block: var(--space-7);
 
     & a {
       display: grid;
       gap: var(--space-1);
       padding: var(--space-4);
-      border: var(--rule-thin) solid var(--rule-faint);
-      font-weight: 650;
+      border: var(--medium) solid var(--ink);
+      font-weight: 600;
       text-decoration: none;
 
       &:hover {
-        border-color: var(--rule);
+        background: var(--paper);
       }
 
       & span {
         font-size: var(--text-sm);
         font-weight: 400;
-        color: var(--text-muted);
+        color: var(--ink-soft);
       }
     }
 
@@ -373,9 +407,9 @@
     display: grid;
     gap: var(--space-2);
     padding-top: var(--space-4);
-    border-top: var(--rule-thin) solid var(--rule-faint);
+    border-top: var(--thin) solid var(--line);
     font-size: var(--text-sm);
-    color: var(--text-muted);
+    color: var(--ink-soft);
 
     & .actions a + a {
       margin-left: var(--space-3);

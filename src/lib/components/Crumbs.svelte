@@ -20,7 +20,7 @@
     padding: 0;
     list-style: none;
     font-size: var(--text-sm);
-    color: var(--text-muted);
+    color: var(--ink-soft);
   }
 
   li:not(:last-child)::after {
@@ -32,7 +32,7 @@
     text-decoration: none;
 
     &:hover {
-      text-decoration: underline 2px var(--accent);
+      text-decoration: underline 2px;
     }
   }
 </style>
