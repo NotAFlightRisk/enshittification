@@ -1,0 +1,668 @@
+service: disney-plus
+name: Disney+
+company: disney
+url: https://www.disneyplus.com
+crw: https://consumerrights.wiki/w/Disney%2B
+wikipedia: https://en.wikipedia.org/wiki/Disney%2B
+
+plans:
+  - id: premium-us
+    name: Premium
+    region: US
+    currency: USD
+    billing: month
+    since: 2019-11-12
+    price: 6.99
+    source:
+      url: https://www.thewaltdisneycompany.com/disney-launches-today-and-a-new-era-of-disney-entertainment-begins/
+      publisher: The Walt Disney Company
+      kind: primary
+      published: 2019-11-12
+      archive: https://web.archive.org/web/20191112161355/https://www.thewaltdisneycompany.com/disney-launches-today-and-a-new-era-of-disney-entertainment-begins/
+      quote: >-
+        Disney+’s low monthly fee of just $6.99 (or $69.99 per year) offers consumers of all ages a
+        compelling entertainment offering and an amazing price-to-value proposition.
+
+  - id: ads-us
+    name: Basic (with ads)
+    region: US
+    currency: USD
+    billing: month
+    since: 2022-12-08
+    price: 7.99
+    source:
+      url: https://thewaltdisneycompany.com/ad-supported-disney-plan-now-available-in-the-u-s-with-more-than-100-advertisers-across-all-major-categories-at-launch/
+      publisher: The Walt Disney Company
+      kind: primary
+      published: 2022-12-08
+      archive: https://web.archive.org/web/20221208211023/https://thewaltdisneycompany.com/ad-supported-disney-plan-now-available-in-the-u-s-with-more-than-100-advertisers-across-all-major-categories-at-launch/
+      quote: Existing Disney+ subscribers have the option to switch to the Basic plan for $7.99/month.
+
+  - id: premium-uk
+    name: Premium
+    region: UK
+    currency: GBP
+    billing: month
+    since: 2020-03-24
+    price: 5.99
+    source:
+      url: https://thewaltdisneycompany.com/disney-launches-today-in-seven-european-markets/
+      publisher: The Walt Disney Company
+      kind: primary
+      published: 2020-03-24
+      archive: https://web.archive.org/web/20200401221000/https://thewaltdisneycompany.com/disney-launches-today-in-seven-european-markets/
+      quote: >-
+        Pricing for Disney+ has been confirmed at £5.99/€6.99 per month, or £59.99/€69.99 for an
+        annual subscription.
+
+  - id: standard-uk
+    name: Standard
+    region: UK
+    currency: GBP
+    billing: month
+    since: 2023-11-01
+    price: 7.99
+    source:
+      url: https://press.disney.co.uk/news/disney+-to-launch-an-ad-supported-subscription-plan-on-november-1-in-europe
+      publisher: Disney UK Press
+      kind: primary
+      published: 2023-08-10
+      archive: https://web.archive.org/web/20230811110848/https://press.disney.co.uk/news/disney+-to-launch-an-ad-supported-subscription-plan-on-november-1-in-europe
+      quote: 'In the UK, the Disney+ Subscription plans available from November 1 are:'
+
+  - id: ads-uk
+    name: Standard with Ads
+    region: UK
+    currency: GBP
+    billing: month
+    since: 2023-11-01
+    price: 4.99
+    source:
+      url: https://press.disney.co.uk/news/disney+-to-launch-an-ad-supported-subscription-plan-on-november-1-in-europe
+      publisher: Disney UK Press
+      kind: primary
+      published: 2023-08-10
+      archive: https://web.archive.org/web/20230811110848/https://press.disney.co.uk/news/disney+-to-launch-an-ad-supported-subscription-plan-on-november-1-in-europe
+      quote: 'In the UK, the Disney+ Subscription plans available from November 1 are:'
+
+changes:
+  - id: price-2021
+    date: 2020-12-10
+    date_kind: announced
+    effective: 2021-03-26
+    category: price-rise
+    title: Disney+ goes from $6.99 to $7.99 a month in the US, its first rise
+    what_changed: >-
+      Disney said on 10 December 2020 that US Disney+ would go from $6.99 to $7.99 a month, and the
+      new price took effect on 26 March 2021.
+    before: $6.99 a month
+    after: $7.99 a month
+    user_impact: US subscribers paid $1 more a month, the first rise since Disney+ launched in 2019.
+    severity: 1
+    status: in-force
+    regions: [US]
+    prices:
+      - { plan: premium-us, from: 6.99, to: 7.99 }
+    sources:
+      - url: https://variety.com/2021/digital/news/disney-plus-price-increase-1234937352/
+        publisher: Variety
+        kind: press
+        published: 2021-03-24
+        archive: https://web.archive.org/web/20210324212914/https://variety.com/2021/digital/news/disney-plus-price-increase-1234937352/
+        quote: >-
+          As of March 26, 2021, Disney Plus will be priced in the U.S. at $7.99 per month, up a
+          dollar from the current $6.99, or $79.99 per year, compared with $69.99 for the annual
+          plan previously.
+      - url: https://www.theverge.com/2020/12/10/22165869/disney-price-hike-united-states-bundle
+        publisher: The Verge
+        kind: press
+        published: 2020-12-10
+        archive: https://web.archive.org/web/20201211011512/https://www.theverge.com/2020/12/10/22165869/disney-price-hike-united-states-bundle
+        quote: >-
+          Disney Plus is following Netflix and introducing a $1 price hike for subscribers in the
+          United States, raising it to $7.99 a month.
+      - url: https://deadline.com/2020/12/disney-plus-price-streaming-dollars-a-month-disney-investor-day-1234654578/
+        publisher: Deadline
+        kind: press
+        published: 2020-12-10
+        archive: https://web.archive.org/web/20201211012214/https://deadline.com/2020/12/disney-plus-price-streaming-dollars-a-month-disney-investor-day-1234654578/
+        quote: >-
+          Disney plans to raise the monthly price of Disney+ to $7.99 a month from $6.99 next March
+          as it ramps up its content offerings substantially.
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: uk-price-2021
+    date: 2021-02-23
+    date_kind: effective
+    category: price-rise
+    title: Disney+ goes from £5.99 to £7.99 a month in the UK as Star is added
+    what_changed: >-
+      Disney+ in the UK went from £5.99 to £7.99 a month for new subscribers on 23 February 2021,
+      the day Star was added. Existing subscribers kept their old price until their first bill
+      after 22 August 2021.
+    before: £5.99 a month
+    after: £7.99 a month
+    user_impact: >-
+      UK subscribers paid 33% more, new ones straight away and existing ones from August 2021.
+    company_said: >-
+      Disney said Star added a broader range of general entertainment films and series to Disney+.
+    severity: 2
+    status: in-force
+    regions: [GB]
+    prices:
+      - { plan: premium-uk, from: 5.99, to: 7.99 }
+    sources:
+      - url: https://www.disneyplus.com/en-gb
+        publisher: Disney+ UK
+        kind: primary
+        published: 2021-02-24
+        archive: https://web.archive.org/web/20210224084517/https://www.disneyplus.com/en-gb
+        quote: >-
+          When Star content becomes available on 23 February, 2021, the price of the monthly
+          subscription will increase to £7.99 and the price of the annual subscription will increase
+          to £79.90, for new subscribers.
+      - url: https://variety.com/2021/digital/news/disney-plus-price-increase-1234937352/
+        publisher: Variety
+        kind: press
+        published: 2021-03-24
+        archive: https://web.archive.org/web/20210324212914/https://variety.com/2021/digital/news/disney-plus-price-increase-1234937352/
+        quote: >-
+          In Europe and the U.K., Disney Plus pricing increased last month for new or lapsed
+          subscribers, going up to €8.99 per month (from €6.99) in Europe and to £7.99 per month
+          (from £5.99) in the U.K. as of Feb. 23 with the launch of Star
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: premium-price-2022
+    date: 2022-08-10
+    date_kind: announced
+    effective: 2022-12-08
+    category: price-rise
+    title: Disney+ without ads goes from $7.99 to $10.99 a month in the US
+    what_changed: >-
+      Disney said on 10 August 2022 that US Disney+ without ads would go from $7.99 to $10.99 a
+      month on 8 December 2022. That day the plan became Disney+ Premium, and a Basic plan with ads
+      launched at $7.99.
+    before: $7.99 a month
+    after: $10.99 a month
+    user_impact: >-
+      US subscribers paid $3 more a month to keep Disney+ without ads, or moved to the $7.99 plan
+      with ads.
+    company_said: Disney said the new plans would give viewers more choice at a range of prices.
+    severity: 2
+    status: in-force
+    regions: [US]
+    prices:
+      - { plan: premium-us, from: 7.99, to: 10.99 }
+    sources:
+      - url: https://thewaltdisneycompany.com/ad-supported-disney-subscription-tier-to-launch-december-8-in-the-u-s/
+        publisher: The Walt Disney Company
+        kind: primary
+        published: 2022-08-10
+        archive: https://web.archive.org/web/20220810215509/https://thewaltdisneycompany.com/ad-supported-disney-subscription-tier-to-launch-december-8-in-the-u-s/
+        quote: Disney+ Basic (With Ads) $7.99 N/A Disney+ Premium (No Ads) $10.99 $109.99
+      - url: https://thewaltdisneycompany.com/ad-supported-disney-subscription-tier-to-launch-december-8-in-the-u-s/
+        publisher: The Walt Disney Company
+        kind: primary
+        published: 2022-08-10
+        archive: https://web.archive.org/web/20220810215509/https://thewaltdisneycompany.com/ad-supported-disney-subscription-tier-to-launch-december-8-in-the-u-s/
+        quote: >-
+          we will be providing greater consumer choice at a variety of price points to cater to the
+          diverse needs of our viewers and appeal to an even broader audience
+      - url: https://www.theverge.com/2022/8/10/23300460/disney-plus-price-increase-ads-streaming
+        publisher: The Verge
+        kind: press
+        published: 2022-08-10
+        archive: https://web.archive.org/web/20220810212357/https://www.theverge.com/2022/8/10/23300460/disney-plus-price-increase-ads-streaming
+        quote: >-
+          Disney has announced that it’s raising the price of Disney Plus to $10.99 / month, up from
+          its current price of $7.99 / month, starting December 8th in the US.
+      - url: https://thewaltdisneycompany.com/ad-supported-disney-plan-now-available-in-the-u-s-with-more-than-100-advertisers-across-all-major-categories-at-launch/
+        publisher: The Walt Disney Company
+        kind: primary
+        published: 2022-12-08
+        archive: https://web.archive.org/web/20221208211023/https://thewaltdisneycompany.com/ad-supported-disney-plan-now-available-in-the-u-s-with-more-than-100-advertisers-across-all-major-categories-at-launch/
+        quote: >-
+          Those that choose to remain a Premium subscriber for $10.99/month or $109.99/year require
+          no further action.
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: premium-price-2023
+    date: 2023-08-09
+    date_kind: announced
+    effective: 2023-10-12
+    category: price-rise
+    title: Disney+ Premium goes from $10.99 to $13.99 in the US
+    what_changed: >-
+      Disney said on 9 August 2023 that US Disney+ Premium, its plan without ads, would go from
+      $10.99 to $13.99 a month on 12 October 2023. Basic, with ads, stayed at $7.99.
+    before: $10.99 a month
+    after: $13.99 a month
+    user_impact: Premium subscribers paid 27% more, while Basic kept its price.
+    company_said: Disney said its plans were still among the best values in streaming.
+    severity: 2
+    status: in-force
+    regions: [US]
+    prices:
+      - { plan: premium-us, from: 10.99, to: 13.99 }
+    sources:
+      - url: https://press.disneyplus.com/disney-plus-to-launch-ad-supported-supscription-offering-in-europe-and-canada-this-fall
+        publisher: Disney+ Press
+        kind: primary
+        published: 2023-08-09
+        archive: https://web.archive.org/web/20230811051645/https://press.disneyplus.com/disney-plus-to-launch-ad-supported-supscription-offering-in-europe-and-canada-this-fall
+        quote: >-
+          Beginning October 12, the new pricing for Disney+, Hulu and ESPN+ ad-supported and ad-free
+          plans in the U.S. include:
+      - url: https://www.theverge.com/2023/8/9/23826500/disney-plus-hulu-no-ads-plan-price-increases
+        publisher: The Verge
+        kind: press
+        published: 2023-08-09
+        archive: https://web.archive.org/web/20230809213853/https://www.theverge.com/2023/8/9/23826500/disney-plus-hulu-no-ads-plan-price-increases
+        quote: >-
+          Beginning on October 12th, Disney Plus will cost $13.99 per month, while Hulu's no-ads tier
+          will run $17.99.
+      - url: https://www.theverge.com/2023/8/9/23826500/disney-plus-hulu-no-ads-plan-price-increases
+        publisher: The Verge
+        kind: press
+        published: 2023-08-09
+        archive: https://web.archive.org/web/20230809213853/https://www.theverge.com/2023/8/9/23826500/disney-plus-hulu-no-ads-plan-price-increases
+        quote: The ad-sponsored tiers of both services will (for now) each remain $7.99.
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: uk-premium-2023
+    date: 2023-08-10
+    date_kind: announced
+    effective: 2023-11-01
+    category: price-rise
+    title: Disney+ renames its UK plan Premium and raises it from £7.99 to £10.99
+    what_changed: >-
+      Disney said on 10 August 2023 that its £7.99 UK plan would be renamed Premium and cost £10.99
+      a month from 1 November 2023. Existing subscribers paid it from their first bill on or after 6
+      December unless they moved to the new £7.99 Standard, which drops 4K and allows 2 streams, not
+      4, or to £4.99 Standard with Ads.
+    before: £7.99 a month with 4K and 4 streams
+    after: £10.99 a month with 4K and 4 streams
+    user_impact: >-
+      Existing subscribers paid 38% more to keep 4K and 4 streams, or kept paying £7.99 by dropping
+      to 1080p and 2 streams.
+    company_said: Disney said the new plans gave UK customers more ways to subscribe.
+    severity: 2
+    status: in-force
+    regions: [GB]
+    prices:
+      - { plan: premium-uk, from: 7.99, to: 10.99 }
+    sources:
+      - url: https://press.disney.co.uk/news/disney+-to-launch-an-ad-supported-subscription-plan-on-november-1-in-europe
+        publisher: Disney UK Press
+        kind: primary
+        published: 2023-08-10
+        archive: https://web.archive.org/web/20230811110848/https://press.disney.co.uk/news/disney+-to-launch-an-ad-supported-subscription-plan-on-november-1-in-europe
+        quote: >-
+          Existing customers will remain in their current subscription, which will be renamed Disney+
+          Premium and will have the option to switch to Standard Plan or Standard with Ads Plan (except
+          where noted). Existing customers who choose not to switch will be billed the new price
+          starting from their next billing cycle on or after December 6th.
+      - url: https://www.disneyplus.com/en-gb
+        publisher: Disney+ UK
+        kind: pricing-page
+        published: 2023-11-08
+        archive: https://web.archive.org/web/20231108173826/https://www.disneyplus.com/en-gb
+        quote: >-
+          Premium (£10.99/month or £109.90/year): Up to 4K UHD & HDR video. 4 concurrent streams.
+      - url: https://www.disneyplus.com/en-gb
+        publisher: Disney+ UK
+        kind: pricing-page
+        published: 2023-09-06
+        archive: https://web.archive.org/web/20230906105308/https://www.disneyplus.com/en-gb
+        quote: >-
+          Savings compared to the current monthly price of £7.99. After 3 months auto-renews at
+          then-current monthly Premium price of £10.99 until cancelled.
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: price-2024
+    date: 2024-08-06
+    date_kind: announced
+    effective: 2024-10-17
+    category: price-rise
+    title: Disney+ Basic goes from $7.99 to $9.99 and Premium from $13.99 to $15.99 in the US
+    what_changed: >-
+      Disney said on 6 August 2024 that US Disney+ Basic would go from $7.99 to $9.99 a month and
+      Premium from $13.99 to $15.99 on 17 October 2024.
+    before: $7.99 a month for Basic, $13.99 for Premium
+    after: $9.99 a month for Basic, $15.99 for Premium
+    user_impact: Basic subscribers paid 25% more and Premium subscribers 14% more.
+    company_said: Disney said its plans remained among the best values in streaming.
+    severity: 2
+    status: in-force
+    regions: [US]
+    prices:
+      - { plan: ads-us, from: 7.99, to: 9.99 }
+      - { plan: premium-us, from: 13.99, to: 15.99 }
+    sources:
+      - url: https://thewaltdisneycompany.com/disney-streaming-playlists/
+        publisher: The Walt Disney Company
+        kind: primary
+        published: 2024-08-06
+        archive: https://web.archive.org/web/20240806172440/https://thewaltdisneycompany.com/disney-streaming-playlists/
+        quote: >-
+          Beginning October 17, 2024, the new pricing for Disney+, Hulu and ESPN+ ad-supported and
+          ad-free plans in the U.S. will be:
+      - url: https://www.cnbc.com/2024/08/06/disney-raises-streaming-prices.html
+        publisher: CNBC
+        kind: press
+        published: 2024-08-06
+        archive: https://web.archive.org/web/20240806171558/https://www.cnbc.com/2024/08/06/disney-raises-streaming-prices.html
+        quote: Disney+ basic and premium will be priced at $9.99 and $15.99, respectively.
+      - url: https://www.theverge.com/2024/8/6/24214550/disney-plus-espn-and-hulu-october-price-hike
+        publisher: The Verge
+        kind: press
+        published: 2024-08-06
+        archive: https://web.archive.org/web/20240806170320/https://www.theverge.com/2024/8/6/24214550/disney-plus-espn-and-hulu-october-price-hike
+        quote: >-
+          Beginning October 17th, Individual monthly and annual plans for Disney Plus, Hulu, and ESPN
+          are all going up.
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: paid-sharing
+    date: 2024-09-25
+    date_kind: effective
+    category: paywall
+    title: Disney+ starts charging US subscribers to share outside their household
+    question: When did Disney+ start charging for password sharing?
+    what_changed: >-
+      Disney started charging US subscribers to share Disney+ outside their household on 25
+      September 2024, at $6.99 a month on Basic and $9.99 on Premium. Each account could add only
+      one Extra Member, and bundle subscribers and people billed through a partner couldn't add any.
+    user_impact: >-
+      Basic and Premium subscribers could pay for one extra member outside their home, while people
+      sharing a bundle or partner-billed account had to stop.
+    company_said: Disney said a Disney+ subscription is meant to be used within one household.
+    severity: 2
+    status: in-force
+    regions: [US]
+    sources:
+      - url: https://thewaltdisneycompany.com/paid-sharing-disney-explainer/
+        publisher: The Walt Disney Company
+        kind: primary
+        published: 2024-09-25
+        archive: https://web.archive.org/web/20240925161616/https://thewaltdisneycompany.com/paid-sharing-disney-explainer/
+        quote: >-
+          For example, in the U.S., an Extra Member profile will cost an additional $6.99 per month
+          for Disney+ Basic subscriptions and $9.99 per month for Disney+ Premium subscriptions.
+      - url: https://thewaltdisneycompany.com/paid-sharing-disney-explainer/
+        publisher: The Walt Disney Company
+        kind: primary
+        published: 2024-09-25
+        archive: https://web.archive.org/web/20240925161616/https://thewaltdisneycompany.com/paid-sharing-disney-explainer/
+        quote: >-
+          Note that only one Extra Member slot is available per account*. *Extra Member not
+          available for Disney Bundle subscribers or for subscribers billed through our partners at
+          this time.
+      - url: https://www.theverge.com/2024/9/25/24254189/disney-plus-password-sharing-pricing-extra-member
+        publisher: The Verge
+        kind: press
+        published: 2024-09-25
+        archive: https://web.archive.org/web/20240925170645/https://www.theverge.com/2024/9/25/24254189/disney-plus-password-sharing-pricing-extra-member
+        quote: >-
+          That member will be restricted to one profile, and they can only stream and download on
+          one device at a time.
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: uk-price-2024
+    date: 2024-10-17
+    date_kind: effective
+    category: price-rise
+    title: Disney+ UK Standard goes from £7.99 to £8.99 and Premium from £10.99 to £12.99
+    what_changed: >-
+      Disney+ raised UK Standard from £7.99 to £8.99 a month and Premium from £10.99 to £12.99 for
+      new subscribers on 17 October 2024. Existing subscribers paid it from 21 November, and
+      Standard with Ads stayed at £4.99.
+    before: £10.99 a month for Premium
+    after: £12.99 a month for Premium
+    user_impact: >-
+      Premium subscribers paid 18% more and Standard subscribers 13% more, while the plan with ads
+      kept its price.
+    severity: 1
+    status: in-force
+    regions: [GB]
+    prices:
+      - { plan: premium-uk, from: 10.99, to: 12.99 }
+      - { plan: standard-uk, from: 7.99, to: 8.99 }
+    sources:
+      - url: https://www.moneysavingexpert.com/news/2024/10/disney-plus-price-increase/
+        publisher: MoneySavingExpert
+        kind: press
+        published: 2024-10-15
+        archive: https://web.archive.org/web/20241111113145/https://www.moneysavingexpert.com/news/2024/10/disney-plus-price-increase/
+        quote: >-
+          The increases will take effect from Thursday 17 October for newbies and Thursday 21
+          November for existing subscribers.
+      - url: https://www.disneyplus.com/en-gb
+        publisher: Disney+ UK
+        kind: primary
+        published: 2024-10-13
+        archive: https://web.archive.org/web/20241013161954/https://www.disneyplus.com/en-gb
+        quote: The price of the annual Standard Plan will increase to £89.90 from 17/10/24.
+      - url: https://www.disneyplus.com/en-gb
+        publisher: Disney+ UK
+        kind: pricing-page
+        published: 2024-11-03
+        archive: https://web.archive.org/web/20241103231147/https://www.disneyplus.com/en-gb
+        quote: >-
+          Premium (£12.99/month or £129.90/year): Up to 4K UHD & HDR video.
+      - url: https://www.disneyplus.com/en-gb
+        publisher: Disney+ UK
+        kind: pricing-page
+        published: 2024-11-03
+        archive: https://web.archive.org/web/20241103231147/https://www.disneyplus.com/en-gb
+        quote: >-
+          Standard (£8.99/month or £89.90/year): Up to 1080p Full HD video. 2 concurrent streams.
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: price-2025
+    date: 2025-09-23
+    date_kind: announced
+    effective: 2025-10-21
+    category: price-rise
+    title: Disney+ with ads goes from $9.99 to $11.99 and Premium from $15.99 to $18.99 in the US
+    what_changed: >-
+      Disney said on 23 September 2025 that US Disney+ with ads would go from $9.99 to $11.99 a
+      month and Premium from $15.99 to $18.99 on 21 October 2025.
+    before: $9.99 a month with ads, $15.99 for Premium
+    after: $11.99 a month with ads, $18.99 for Premium
+    user_impact: Subscribers paid 20% more on the plan with ads and 19% more for Premium.
+    severity: 1
+    status: in-force
+    regions: [US]
+    prices:
+      - { plan: ads-us, from: 9.99, to: 11.99 }
+      - { plan: premium-us, from: 15.99, to: 18.99 }
+    sources:
+      - url: https://variety.com/2025/tv/news/disney-plus-hulu-price-increases-october-2025-1236527241/
+        publisher: Variety
+        kind: press
+        published: 2025-09-23
+        archive: https://web.archive.org/web/20250923211622/https://variety.com/2025/tv/news/disney-plus-hulu-price-increases-october-2025-1236527241/
+        quote: >-
+          The standalone Disney+ with ads service is rising from $9.99 to $11.99/month on Oct. 21,
+          2025, while the Disney+ Premium (without ads) is going from $15.99 to $18.99/month.
+      - url: https://www.disneyplus.com/
+        publisher: Disney+
+        kind: primary
+        published: 2025-10-15
+        archive: https://web.archive.org/web/20251015003736/https://www.disneyplus.com/
+        quote: >-
+          The price of Disney+ will increase to $11.99/mo and the price of Disney+ Premium will
+          increase to $18.99/mo and $189.99/year on 10/21/25.
+      - url: https://www.disneyplus.com/
+        publisher: Disney+
+        kind: pricing-page
+        published: 2025-11-01
+        archive: https://web.archive.org/web/20251101000204/https://www.disneyplus.com/
+        quote: >-
+          Disney+: Disney+ (With Ads) for the price of $11.99/month Disney+ Premium: Disney+ (No
+          Ads*) for the price of $18.99/month
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: uk-price-2025
+    date: 2025-09-30
+    date_kind: effective
+    category: price-rise
+    title: Disney+ raises every UK plan, taking Premium from £12.99 to £14.99
+    what_changed: >-
+      Disney+ raised every UK plan for new subscribers on 30 September 2025, taking Premium from
+      £12.99 to £14.99 a month. Standard went from £8.99 to £9.99 and Standard with Ads from £4.99
+      to £5.99, and existing monthly subscribers paid it from their first bill on or after 4
+      November 2025.
+    before: £4.99, £8.99 and £12.99 a month
+    after: £5.99, £9.99 and £14.99 a month
+    user_impact: >-
+      Every UK subscriber paid more, with Standard with Ads up 20% and Premium up 15%.
+    severity: 1
+    status: in-force
+    regions: [GB]
+    prices:
+      - { plan: ads-uk, from: 4.99, to: 5.99 }
+      - { plan: standard-uk, from: 8.99, to: 9.99 }
+      - { plan: premium-uk, from: 12.99, to: 14.99 }
+    sources:
+      - url: https://www.moneysavingexpert.com/news/2025/09/disney-plus-price-rise/
+        publisher: MoneySavingExpert
+        kind: press
+        published: 2025-09-26
+        archive: https://web.archive.org/web/20251006195217/https://www.moneysavingexpert.com/news/2025/09/disney-plus-price-rise/
+        quote: >-
+          The table below shows the new Disney+ prices, which rose for newbies on Tuesday 30
+          September.
+      - url: https://www.disneyplus.com/en-gb
+        publisher: Disney+ UK
+        kind: primary
+        published: 2025-09-10
+        archive: https://web.archive.org/web/20250910172131/https://www.disneyplus.com/en-gb
+        quote: The price of the annual Standard Plan will increase to £99.90 from 30/09/25.
+      - url: https://www.disneyplus.com/en-gb
+        publisher: Disney+ UK
+        kind: pricing-page
+        published: 2025-10-02
+        archive: https://web.archive.org/web/20251002080650/https://www.disneyplus.com/en-gb
+        quote: Premium Standard Standard With Ads £14.99 / month £9.99 / month £5.99 / month
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: price-2026
+    date: 2026-09-23
+    date_kind: effective
+    category: price-rise
+    title: Disney+ Premium goes from $18.99 to $21.49 and the plan with ads to $12.49 in the US
+    what_changed: >-
+      Disney raised US Disney+ Premium from $18.99 to $21.49 a month, and the plan with ads from
+      $11.99 to $12.49, on 23 September 2026. New subscribers paid it straight away and existing
+      ones from their next monthly bill.
+    before: $11.99 a month with ads, $18.99 for Premium
+    after: $12.49 a month with ads, $21.49 for Premium
+    user_impact: Subscribers paid 13% more for Premium and 4% more on the plan with ads.
+    severity: 1
+    status: in-force
+    regions: [US]
+    prices:
+      - { plan: ads-us, from: 11.99, to: 12.49 }
+      - { plan: premium-us, from: 18.99, to: 21.49 }
+    sources:
+      - url: https://variety.com/2026/tv/news/disney-plus-hulu-price-increase-2026-1236873281/
+        publisher: Variety
+        kind: press
+        published: 2026-09-23
+        archive: https://web.archive.org/web/20260923162359/https://variety.com/2026/tv/news/disney-plus-hulu-price-increase-2026-1236873281/
+        quote: >-
+          The Disney+ and Hulu price increases are effective Wednesday (Sept. 23) for new
+          subscribers. Existing customers will see the new pricing on their next monthly bill.
+      - url: https://www.disneyplus.com/
+        publisher: Disney+
+        kind: pricing-page
+        published: 2026-09-24
+        archive: https://web.archive.org/web/20260924024413/https://www.disneyplus.com/
+        quote: >-
+          Disney+: Disney+ (With Ads) for the price of $12.49/month Disney+ Premium: Disney+ (No
+          Ads*) for the price of $21.49/month
+      - url: https://arstechnica.com/gadgets/2026/09/disney-and-hulu-raise-prices-by-up-to-13-percent-after-doubling-profits/
+        publisher: Ars Technica
+        kind: press
+        published: 2026-09-23
+        archive: https://web.archive.org/web/20260923213553/https://arstechnica.com/gadgets/2026/09/disney-and-hulu-raise-prices-by-up-to-13-percent-after-doubling-profits/
+        quote: Disney+ got its fourth price hike in four years today.
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: uk-price-2026
+    date: 2026-10-14
+    date_kind: effective
+    category: price-rise
+    title: Disney+ raises every UK plan, taking Standard from £9.99 to £11.99
+    what_changed: >-
+      Disney+ raised every UK plan for new subscribers on 14 October 2026, taking Standard from
+      £9.99 to £11.99 a month. Standard with Ads went from £5.99 to £6.99 and Premium from £14.99
+      to £15.99, and existing monthly subscribers paid it from their first bill on or after 18
+      November 2026.
+    before: £5.99, £9.99 and £14.99 a month
+    after: £6.99, £11.99 and £15.99 a month
+    user_impact: Every UK subscriber paid more, with Standard up 20%.
+    severity: 1
+    status: in-force
+    regions: [GB]
+    prices:
+      - { plan: ads-uk, from: 5.99, to: 6.99 }
+      - { plan: standard-uk, from: 9.99, to: 11.99 }
+      - { plan: premium-uk, from: 14.99, to: 15.99 }
+    sources:
+      - url: https://www.moneysavingexpert.com/news/2026/10/disney-plus-price-rise-again/
+        publisher: MoneySavingExpert
+        kind: press
+        published: 2026-10-14
+        archive: https://web.archive.org/web/20261017092525/https://www.moneysavingexpert.com/news/2026/10/disney-plus-price-rise-again/
+        quote: >-
+          Monthly subscriber? You'll pay the new price from your next billing date on or after
+          Wednesday 18 November .
+      - url: https://www.disneyplus.com/en-gb
+        publisher: Disney+ UK
+        kind: pricing-page
+        published: 2026-10-20
+        archive: https://web.archive.org/web/20261020031738/https://www.disneyplus.com/en-gb
+        quote: >-
+          Premium From £11.99/mo Save 25% for 6 months, then £15.99/mo 1 Standard From £9.99/mo
+          Save 16% for 6 months, then £11.99/mo 1 Standard with Ads From £5.99/mo Save 14% for 6
+          months , then £6.99/mo
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
