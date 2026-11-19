@@ -1,0 +1,675 @@
+service: microsoft-365
+name: Microsoft 365
+company: microsoft
+url: https://www.microsoft.com/microsoft-365
+crw: https://consumerrights.wiki/w/Microsoft_Office_365
+wikipedia: https://en.wikipedia.org/wiki/Microsoft_365
+
+plans:
+  - id: family-annual-us
+    name: Microsoft 365 Family (annual)
+    region: US
+    currency: USD
+    billing: year
+    since: 2013-01-29
+    price: 99.99
+    source:
+      url: https://news.microsoft.com/2013/01/29/microsoft-releases-office-365-home-premium/
+      publisher: Microsoft
+      kind: primary
+      published: 2013-01-29
+      archive: https://web.archive.org/web/20141021171859/http://news.microsoft.com/2013/01/29/microsoft-releases-office-365-home-premium/
+      quote: all for US$99.99 for an annual subscription
+
+  - id: family-monthly-us
+    name: Microsoft 365 Family (monthly)
+    region: US
+    currency: USD
+    billing: month
+    since: 2013-01-29
+    price: 9.99
+    source:
+      url: https://www.computerworld.com/article/2495146/faq--microsoft-rents-out-office-365.html
+      publisher: Computerworld
+      kind: press
+      published: 2013-02-02
+      archive: https://web.archive.org/web/20210620010546/https://www.computerworld.com/article/2495146/faq--microsoft-rents-out-office-365.html
+      quote: Home Premium runs $99.99 annually, or $9.99 when billed monthly.
+
+  - id: personal-annual-us
+    name: Microsoft 365 Personal (annual)
+    region: US
+    currency: USD
+    billing: year
+    since: 2014-04-15
+    price: 69.99
+    source:
+      url: https://blogs.office.com/2014/04/15/office-365-personal-now-available-and-unlocks-editing-and-document-creation-on-ipad/
+      publisher: Microsoft
+      kind: primary
+      published: 2014-04-15
+      archive: https://web.archive.org/web/20140416224012/http://blogs.office.com/2014/04/15/office-365-personal-now-available-and-unlocks-editing-and-document-creation-on-ipad/
+      quote: Today we’re announcing that it’s available for purchase-$69.99 USD/year or $6.99 USD/month
+
+  - id: personal-monthly-us
+    name: Microsoft 365 Personal (monthly)
+    region: US
+    currency: USD
+    billing: month
+    since: 2014-04-15
+    price: 6.99
+    source:
+      url: https://blogs.office.com/2014/04/15/office-365-personal-now-available-and-unlocks-editing-and-document-creation-on-ipad/
+      publisher: Microsoft
+      kind: primary
+      published: 2014-04-15
+      archive: https://web.archive.org/web/20140416224012/http://blogs.office.com/2014/04/15/office-365-personal-now-available-and-unlocks-editing-and-document-creation-on-ipad/
+      quote: Today we’re announcing that it’s available for purchase-$69.99 USD/year or $6.99 USD/month
+
+  - id: basic-annual-us
+    name: Microsoft 365 Basic (annual)
+    region: US
+    currency: USD
+    billing: year
+    since: 2023-01-30
+    price: 19.99
+    source:
+      url: https://www.microsoft.com/en-us/microsoft-365/blog/2023/01/11/10-years-of-microsoft-365-more-benefits-at-even-better-prices/
+      publisher: Microsoft
+      kind: primary
+      published: 2023-01-11
+      archive: https://web.archive.org/web/20230112002207/https://www.microsoft.com/en-us/microsoft-365/blog/2023/01/11/10-years-of-microsoft-365-more-benefits-at-even-better-prices/
+      quote: >-
+        Microsoft 365 Basic will cost only USD1.99 per month or USD19.99 per year and be available
+        worldwide on January 30, 2023
+
+  - id: basic-monthly-us
+    name: Microsoft 365 Basic (monthly)
+    region: US
+    currency: USD
+    billing: month
+    since: 2023-01-30
+    price: 1.99
+    source:
+      url: https://www.microsoft.com/en-us/microsoft-365/blog/2023/01/11/10-years-of-microsoft-365-more-benefits-at-even-better-prices/
+      publisher: Microsoft
+      kind: primary
+      published: 2023-01-11
+      archive: https://web.archive.org/web/20230112002207/https://www.microsoft.com/en-us/microsoft-365/blog/2023/01/11/10-years-of-microsoft-365-more-benefits-at-even-better-prices/
+      quote: >-
+        Microsoft 365 Basic will cost only USD1.99 per month or USD19.99 per year and be available
+        worldwide on January 30, 2023
+
+  - id: family-annual-uk
+    name: Microsoft 365 Family (annual)
+    region: UK
+    currency: GBP
+    billing: year
+    since: 2013-01-29
+    price: 79.99
+    source:
+      url: https://www.theregister.co.uk/2013/01/29/microsoft_office_365_home_subscription/
+      publisher: The Register
+      kind: press
+      published: 2013-01-29
+      archive: https://web.archive.org/web/20130129221900/http://www.theregister.co.uk/2013/01/29/microsoft_office_365_home_subscription/
+      quote: >-
+        US users pay $99.99 a year for Office 365 Home Premium, which at the current exchange rates
+        would translate into £63.50 or €74.15, but instead will pay £79.99 or €99 respectively.
+
+  - id: personal-annual-uk
+    name: Microsoft 365 Personal (annual)
+    region: UK
+    currency: GBP
+    billing: year
+    since: 2014-04-16
+    price: 59.99
+    source:
+      url: https://www.techradar.com/news/software/step-up-singletons-microsoft-reveals-uk-pricing-for-office-365-personal-1243176
+      publisher: TechRadar
+      kind: press
+      published: 2014-04-16
+      archive: https://web.archive.org/web/20140418060623/http://www.techradar.com/news/software/step-up-singletons-microsoft-reveals-uk-pricing-for-office-365-personal-1243176
+      quote: Microsoft has revealed the UK pricing at £59.99 for the entire year, or £5.99 per month
+
+  - id: personal-monthly-uk
+    name: Microsoft 365 Personal (monthly)
+    region: UK
+    currency: GBP
+    billing: month
+    since: 2014-04-16
+    price: 5.99
+    source:
+      url: https://www.techradar.com/news/software/step-up-singletons-microsoft-reveals-uk-pricing-for-office-365-personal-1243176
+      publisher: TechRadar
+      kind: press
+      published: 2014-04-16
+      archive: https://web.archive.org/web/20140418060623/http://www.techradar.com/news/software/step-up-singletons-microsoft-reveals-uk-pricing-for-office-365-personal-1243176
+      quote: Microsoft has revealed the UK pricing at £59.99 for the entire year, or £5.99 per month
+
+changes:
+  - id: unlimited-onedrive-ends
+    date: 2015-11-02
+    date_kind: announced
+    category: removed-feature
+    title: Office 365 Home and Personal lose unlimited OneDrive storage and get 1TB
+    question: When did Microsoft end unlimited OneDrive storage?
+    what_changed: >-
+      Microsoft said on 2 November 2015 that Office 365 Home, Personal and University would get 1TB
+      of OneDrive storage, not unlimited. It had started rolling out unlimited storage to them, and
+      anyone already over 1TB could keep the extra for at least 12 months, or take a pro-rated
+      refund.
+    before: Unlimited OneDrive storage
+    after: 1TB
+    user_impact: >-
+      Subscribers got 1TB in place of the unlimited storage Microsoft had started rolling out, and
+      the ones already storing more had at least 12 months to move it.
+    company_said: >-
+      Microsoft said a small number of users had backed up numerous PCs and stored entire movie
+      collections and DVR recordings, in some cases over 75TB each.
+    severity: 2
+    status: in-force
+    sources:
+      - url: https://blogs.office.com/2015/11/02/onedrive_changes/
+        publisher: Microsoft
+        kind: primary
+        published: 2015-11-02
+        archive: https://web.archive.org/web/20170102225532/https://blogs.office.com/2015/11/02/onedrive_changes/
+        quote: >-
+          We’re no longer planning to offer unlimited storage to Office 365 Home, Personal, or
+          University subscribers. Starting now, those subscriptions will include 1 TB of OneDrive
+          storage.
+      - url: https://blogs.office.com/2015/11/02/onedrive_changes/
+        publisher: Microsoft
+        kind: primary
+        published: 2015-11-02
+        archive: https://web.archive.org/web/20170102225532/https://blogs.office.com/2015/11/02/onedrive_changes/
+        quote: >-
+          If you are an Office 365 consumer subscriber and have stored in excess of 1 TB, you will be
+          notified of this change and will be able to keep your increased storage for at least 12
+          months.
+      - url: https://blogs.office.com/2015/11/02/onedrive_changes/
+        publisher: Microsoft
+        kind: primary
+        published: 2015-11-02
+        archive: https://web.archive.org/web/20170102225532/https://blogs.office.com/2015/11/02/onedrive_changes/
+        quote: >-
+          Since we started to roll out unlimited cloud storage to Office 365 consumer subscribers, a
+          small number of users backed up numerous PCs and stored entire movie collections and DVR
+          recordings. In some instances, this exceeded 75 TB per user or 14,000 times the average.
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: money-in-excel-ends
+    date: 2023-06-30
+    date_kind: effective
+    category: removed-feature
+    title: Microsoft 365 drops Money in Excel, Wolfram data types and partner offers
+    what_changed: >-
+      Microsoft took Money in Excel out of Microsoft 365 Personal and Family on 30 June 2023, after
+      the Wolfram data types in Excel stopped on 11 June. Partner offers for subscribers went too.
+      Money in Excel had pulled bank transactions into a workbook, in the US only.
+    user_impact: >-
+      Subscribers who tracked their money in Excel stopped getting new transactions, and Wolfram
+      data types stopped refreshing, with no change to the price.
+    company_said: >-
+      Microsoft said there were other areas where it could have a greater impact, and that it was
+      choosing not to renew the Wolfram partnership for this range of data.
+    severity: 1
+    status: in-force
+    sources:
+      - url: https://support.microsoft.com/en-us/office/end-of-support-for-money-in-excel-wolfram-data-types-and-partner-offers-43ceac07-794e-4015-af04-21bb4795a14a
+        publisher: Microsoft Support
+        kind: primary
+        published: 2022-05-25
+        archive: https://web.archive.org/web/20220526184732/https://support.microsoft.com/en-us/office/end-of-support-for-money-in-excel-wolfram-data-types-and-partner-offers-43ceac07-794e-4015-af04-21bb4795a14a
+        quote: >-
+          No, once Money in Excel ends on June 30, 2023, you will no longer receive updates to your
+          transactions or receive new transactions.
+      - url: https://support.microsoft.com/en-us/office/end-of-support-for-money-in-excel-wolfram-data-types-and-partner-offers-43ceac07-794e-4015-af04-21bb4795a14a
+        publisher: Microsoft Support
+        kind: primary
+        published: 2022-05-25
+        archive: https://web.archive.org/web/20220526184732/https://support.microsoft.com/en-us/office/end-of-support-for-money-in-excel-wolfram-data-types-and-partner-offers-43ceac07-794e-4015-af04-21bb4795a14a
+        quote: >-
+          No, once the service connecting Excel with Wolfram ends on June 11, 2023, you will no
+          longer be able to create new Wolfram data types, refresh the data of existing ones, follow
+          links to new data, or access new Wolfram images.
+      - url: https://support.microsoft.com/en-us/office/end-of-support-for-money-in-excel-wolfram-data-types-and-partner-offers-43ceac07-794e-4015-af04-21bb4795a14a
+        publisher: Microsoft Support
+        kind: primary
+        published: 2022-05-25
+        archive: https://web.archive.org/web/20220526184732/https://support.microsoft.com/en-us/office/end-of-support-for-money-in-excel-wolfram-data-types-and-partner-offers-43ceac07-794e-4015-af04-21bb4795a14a
+        quote: Why are you removing unique partner offers from Microsoft 365 Personal and Family subscriptions?
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: personalized-email-ends
+    date: 2023-11-30
+    date_kind: effective
+    category: removed-feature
+    title: Microsoft 365 stops new Outlook.com addresses on your own domain
+    what_changed: >-
+      From 30 November 2023, Microsoft 365 Personal and Family subscribers couldn't set up a new
+      personalized email address on their Outlook.com mailbox. Existing ones kept working, but one
+      that's removed can't be added back.
+    user_impact: >-
+      Subscribers who wanted email on their own domain were pointed to Microsoft 365 Business plans
+      instead.
+    severity: 1
+    status: in-force
+    sources:
+      - url: https://support.microsoft.com/en-us/office/changes-to-microsoft-365-email-features-and-storage-e888d746-61e5-49e3-9bd1-94b88e9be988
+        publisher: Microsoft Support
+        kind: primary
+        published: 2022-10-26
+        archive: https://web.archive.org/web/20221026003223/https://support.microsoft.com/en-us/office/changes-to-microsoft-365-email-features-and-storage-e888d746-61e5-49e3-9bd1-94b88e9be988
+        quote: >-
+          Starting November 30, 2023, Microsoft 365 Personal or Microsoft 365 Family subscribers will
+          no longer be able to create a new personalized email address associated with their
+          Outlook.com mailbox.
+      - url: https://support.microsoft.com/en-us/office/changes-to-microsoft-365-email-features-and-storage-e888d746-61e5-49e3-9bd1-94b88e9be988
+        publisher: Microsoft Support
+        kind: primary
+        published: 2022-10-26
+        archive: https://web.archive.org/web/20221026003223/https://support.microsoft.com/en-us/office/changes-to-microsoft-365-email-features-and-storage-e888d746-61e5-49e3-9bd1-94b88e9be988
+        quote: >-
+          After November 30, 2023, Microsoft 365 Personal or Microsoft 365 Family subscribers who
+          remove their personalized email address from their Outlook.com account will not be able to
+          add it back.
+      - url: https://support.microsoft.com/en-us/onedrive/changes-to-microsoft-365-email-features-and-storage
+        publisher: Microsoft Support
+        kind: primary
+        published: 2026-10-07
+        archive: https://web.archive.org/web/20261007111513/https://support.microsoft.com/en-us/onedrive/changes-to-microsoft-365-email-features-and-storage
+        quote: >-
+          If you change your mind and want to use Outlook with a personalized email address, you need
+          to consider switching to one of our Microsoft 365 Business plans
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: family-safety-location-ends
+    date: 2024-11-29
+    date_kind: effective
+    category: removed-feature
+    title: Microsoft 365 Family loses Family Safety's location alerts and drive safety
+    what_changed: >-
+      Microsoft removed location sharing and drive safety from Family Safety on 29 November 2024.
+      Location alerts and drive safety were the premium Family Safety features that came with
+      Microsoft 365 Family.
+    user_impact: >-
+      Families who used Family Safety to see where each other were, or Microsoft 365 Family
+      subscribers who'd bought it for location alerts or drive safety, lost them with no change to
+      the price.
+    company_said: >-
+      Microsoft said subscribers used the digital safety features much more than the physical
+      safety ones.
+    severity: 2
+    status: in-force
+    sources:
+      - url: https://support.microsoft.com/en-us/account-billing/end-of-support-for-location-and-drive-safety-fac9830e-97b1-46f2-8a70-54aa71fa7e9f
+        publisher: Microsoft Support
+        kind: primary
+        published: 2024-02-24
+        archive: https://web.archive.org/web/20240224052035/https://support.microsoft.com/en-us/account-billing/end-of-support-for-location-and-drive-safety-fac9830e-97b1-46f2-8a70-54aa71fa7e9f
+        quote: >-
+          Location and driving safety features will be removed from Microsoft Family Safety on
+          November 29, 2024.
+      - url: https://support.microsoft.com/en-us/account-billing/end-of-support-for-location-and-drive-safety-fac9830e-97b1-46f2-8a70-54aa71fa7e9f
+        publisher: Microsoft Support
+        kind: primary
+        published: 2024-02-24
+        archive: https://web.archive.org/web/20240224052035/https://support.microsoft.com/en-us/account-billing/end-of-support-for-location-and-drive-safety-fac9830e-97b1-46f2-8a70-54aa71fa7e9f
+        quote: >-
+          We found that in the Family Safety app, subscribers are using the digital safety features
+          much more than the physical safety features.
+      - url: https://support.microsoft.com/en-us/account-billing/premium-family-safety-features-with-microsoft-365-family-418b186a-f2a7-5554-1354-e5f30b605a21
+        publisher: Microsoft Support
+        kind: primary
+        published: 2024-08-07
+        archive: https://web.archive.org/web/20240807043335/https://support.microsoft.com/en-us/account-billing/premium-family-safety-features-with-microsoft-365-family-418b186a-f2a7-5554-1354-e5f30b605a21
+        quote: >-
+          To get premium Family Safety features like location alerts and drive safety* an organizer in
+          the family will need to buy a Microsoft 365 Family subscription
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: copilot-price-2025
+    date: 2025-01-16
+    date_kind: announced
+    category: price-rise
+    title: Microsoft 365 Personal and Family go up $3 a month in the US, with Copilot added
+    question: Why did Microsoft 365 go up in price?
+    what_changed: >-
+      Microsoft said on 16 January 2025 that Microsoft 365 Personal and Family would cost $3 a month
+      more in the US, the first rise since launch, with Copilot added. Personal went from $69.99 to
+      $99.99 a year and Family from $99.99 to $129.99. Existing subscribers paid it from their next
+      renewal, or for a limited time could switch to a Classic plan without Copilot, offered when
+      they went to cancel.
+    before: Personal $69.99, Family $99.99 a year
+    after: Personal $99.99, Family $129.99 a year
+    user_impact: >-
+      US subscribers paid 43% more for Personal and 30% more for Family, unless they moved to a
+      plan without Copilot.
+    company_said: >-
+      Microsoft said the rise reflected the benefits it had added over the past 12 years and would
+      fund new innovations.
+    severity: 2
+    status: in-force
+    regions: [US]
+    prices:
+      - { plan: personal-annual-us, from: 69.99, to: 99.99 }
+      - { plan: personal-monthly-us, from: 6.99, to: 9.99 }
+      - { plan: family-annual-us, from: 99.99, to: 129.99 }
+      - { plan: family-monthly-us, from: 9.99, to: 12.99 }
+    sources:
+      - url: https://www.microsoft.com/en-us/microsoft-365/blog/2025/01/16/copilot-is-now-included-in-microsoft-365-personal-and-family/
+        publisher: Microsoft
+        kind: primary
+        published: 2025-01-16
+        archive: https://web.archive.org/web/20250116203624/https://www.microsoft.com/en-us/microsoft-365/blog/2025/01/16/copilot-is-now-included-in-microsoft-365-personal-and-family/
+        quote: >-
+          To reflect the extensive subscription benefits that we’ve added over the past 12 years and
+          enable us to deliver new innovations for years to come, we’re increasing the prices of
+          Microsoft 365 Personal and Family in the US for the first time since its release by $3 USD
+          per month
+      - url: https://www.microsoft.com/en-us/microsoft-365/blog/2025/01/16/copilot-is-now-included-in-microsoft-365-personal-and-family/
+        publisher: Microsoft
+        kind: primary
+        published: 2025-01-16
+        archive: https://web.archive.org/web/20250116203624/https://www.microsoft.com/en-us/microsoft-365/blog/2025/01/16/copilot-is-now-included-in-microsoft-365-personal-and-family/
+        quote: >-
+          Existing subscribers with recurring billing enabled with Microsoft can switch to plans
+          without Copilot or AI credits like our Basic plan , or, for a limited time, to new Personal
+          Classic or Family Classic plans
+      - url: https://support.microsoft.com/en-us/office/switching-to-microsoft-365-personal-and-family-classic-plans-58342e83-38e7-4cda-b63b-88604a8fb7ef
+        publisher: Microsoft Support
+        kind: primary
+        published: 2025-01-16
+        archive: https://web.archive.org/web/20250116200840/https://support.microsoft.com/en-us/office/switching-to-microsoft-365-personal-and-family-classic-plans-58342e83-38e7-4cda-b63b-88604a8fb7ef
+        quote: Find your current subscription and select Manage > Cancel subscription
+      - url: https://www.theregister.com/2025/01/17/copilot_microsoft_365/
+        publisher: The Register
+        kind: press
+        published: 2025-01-17
+        archive: https://web.archive.org/web/20250118013100/https://www.theregister.com/2025/01/17/copilot_microsoft_365/
+        quote: an extra $3 per month
+      - url: https://www.microsoft.com/en-us/microsoft-365/buy/compare-all-microsoft-365-products
+        publisher: Microsoft
+        kind: pricing-page
+        published: 2025-01-17
+        archive: https://web.archive.org/web/20250117133112/https://www.microsoft.com/en-us/microsoft-365/buy/compare-all-microsoft-365-products
+        quote: Microsoft 365 Family $12.99/month $129.99/year
+      - url: https://www.microsoft.com/en-us/microsoft-365/buy/compare-all-microsoft-365-products
+        publisher: Microsoft
+        kind: pricing-page
+        published: 2025-01-17
+        archive: https://web.archive.org/web/20250117133112/https://www.microsoft.com/en-us/microsoft-365/buy/compare-all-microsoft-365-products
+        quote: Microsoft 365 Personal $9.99/month $99.99/year
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: uk-copilot-price-2025
+    date: 2025-01-16
+    date_kind: effective
+    category: price-rise
+    title: Microsoft 365 Personal and Family go up 42% and 31% in the UK, with Copilot added
+    what_changed: >-
+      Microsoft 365 Personal went from £59.99 to £84.99 a year in the UK on 16 January 2025, and
+      Family from £79.99 to £104.99. Monthly plans went from £5.99 to £8.49 and from £7.99 to
+      £10.49. Existing subscribers paid it from their next billing date.
+    before: Personal £59.99, Family £79.99 a year
+    after: Personal £84.99, Family £104.99 a year
+    user_impact: UK subscribers paid 42% more for Personal and 31% more for Family.
+    severity: 2
+    status: in-force
+    regions: [GB]
+    prices:
+      - { plan: personal-annual-uk, from: 59.99, to: 84.99 }
+      - { plan: personal-monthly-uk, from: 5.99, to: 8.49 }
+      - { plan: family-annual-uk, from: 79.99, to: 104.99 }
+    related: [microsoft-365/copilot-price-2025]
+    sources:
+      - url: https://www.moneysavingexpert.com/news/2025/02/microsoft-365-price-hike/
+        publisher: MoneySavingExpert
+        kind: press
+        published: 2025-02-11
+        archive: https://web.archive.org/web/20250325090124/https://www.moneysavingexpert.com/news/2025/02/microsoft-365-price-hike/
+        quote: >-
+          Those with Microsoft 365's (formerly Office 365) 'Personal' and 'Family' plans will see
+          prices rise by 42% and 31% respectively from their next billing date on or after 16 January
+          2025 (new subscribers also paid these increased prices from this date).
+      - url: https://www.moneysavingexpert.com/news/2025/02/microsoft-365-price-hike/
+        publisher: MoneySavingExpert
+        kind: press
+        published: 2025-02-11
+        archive: https://web.archive.org/web/20250325090124/https://www.moneysavingexpert.com/news/2025/02/microsoft-365-price-hike/
+        quote: Family - up to six users £7.99 a month or £79.99 a year £10.49 a month or £104.99 a year
+      - url: https://www.microsoft.com/en-gb/microsoft-365/buy/compare-all-microsoft-365-products
+        publisher: Microsoft
+        kind: pricing-page
+        published: 2025-01-24
+        archive: https://web.archive.org/web/20250124130225/https://www.microsoft.com/en-gb/microsoft-365/buy/compare-all-microsoft-365-products
+        quote: Microsoft 365 Personal £8.49/month £84.99/year
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: copilot-in-apps
+    date: 2025-01-16
+    date_kind: announced
+    category: ai
+    title: Copilot goes into Microsoft 365's apps, with no off switch on phones or the web
+    question: Can you turn off Copilot in Microsoft 365?
+    what_changed: >-
+      Microsoft put Copilot into Word, Excel, PowerPoint, Outlook and OneNote for Personal and
+      Family subscribers on 16 January 2025, on their next update. At first the only way to turn it
+      off was a privacy setting that turns off other features too. Per-app switches came to Windows
+      and Mac by March 2025, but Microsoft says you can't turn it off in the iOS, Android or web
+      versions of Word, Excel or PowerPoint.
+    user_impact: >-
+      Every Personal and Family subscriber got Copilot, and anyone using Word, Excel or PowerPoint
+      on a phone or the web still has no way to turn it off on its own.
+    company_said: >-
+      Microsoft said it was adding settings in apps like Word, Excel and PowerPoint to disable or
+      enable Copilot as needed.
+    severity: 1
+    status: in-force
+    related: [microsoft-365/copilot-price-2025]
+    sources:
+      - url: https://www.microsoft.com/en-us/microsoft-365/blog/2025/01/16/copilot-is-now-included-in-microsoft-365-personal-and-family/
+        publisher: Microsoft
+        kind: primary
+        published: 2025-01-16
+        archive: https://web.archive.org/web/20250116203624/https://www.microsoft.com/en-us/microsoft-365/blog/2025/01/16/copilot-is-now-included-in-microsoft-365-personal-and-family/
+        quote: >-
+          Existing Microsoft 365 Personal and Family subscribers in most markets will automatically
+          get access to Copilot in their apps once they update to the latest version.
+      - url: https://support.microsoft.com/en-us/privacy/turn-off-copilot-in-microsoft-365-apps
+        publisher: Microsoft Support
+        kind: primary
+        published: 2026-10-13
+        archive: https://web.archive.org/web/20261013042708/https://support.microsoft.com/en-us/privacy/turn-off-copilot-in-microsoft-365-apps
+        quote: You can't turn off Copilot in the iOS, Android, or web versions of Word, Excel, or PowerPoint.
+      - url: https://support.microsoft.com/en-us/privacy/turn-off-copilot-in-microsoft-365-apps
+        publisher: Microsoft Support
+        kind: primary
+        published: 2026-10-13
+        archive: https://web.archive.org/web/20261013042708/https://support.microsoft.com/en-us/privacy/turn-off-copilot-in-microsoft-365-apps
+        quote: >-
+          As of March 13, 2025, the Enable Copilot checkbox is available in the following apps
+          starting with the versions listed
+      - url: https://support.microsoft.com/en-us/office/how-to-turn-off-copilot-in-microsoft-365-family-and-personal-subscriptions-bc7e530b-152d-4123-8e78-edc06f8b85f1
+        publisher: Microsoft Support
+        kind: primary
+        published: 2025-01-16
+        archive: https://web.archive.org/web/20250116203855/https://support.microsoft.com/en-us/office/how-to-turn-off-copilot-in-microsoft-365-family-and-personal-subscriptions-bc7e530b-152d-4123-8e78-edc06f8b85f1
+        quote: >-
+          But, when you turn off Copilot, you're also turning off other features in your Microsoft
+          365 apps that you might want to use.
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: defender-vpn-ends
+    date: 2025-02-28
+    date_kind: effective
+    category: removed-feature
+    title: Microsoft 365 Personal and Family lose the VPN in Microsoft Defender
+    what_changed: >-
+      Microsoft switched off privacy protection, the VPN in the Microsoft Defender app, on 28
+      February 2025. Defender needs a Microsoft 365 Personal or Family subscription, and the VPN
+      came with up to 50GB a month.
+    user_impact: >-
+      Personal and Family subscribers who used the VPN lost it, with no change to the price.
+    company_said: >-
+      Microsoft said it routinely evaluates the usage and effectiveness of its features, and would
+      invest in new areas.
+    severity: 1
+    status: in-force
+    sources:
+      - url: https://support.microsoft.com/en-us/topic/end-of-support-privacy-protection-vpn-in-microsoft-defender-for-individuals-8b503da5-732a-4472-833a-e2ddca53036a
+        publisher: Microsoft Support
+        kind: primary
+        published: 2025-01-31
+        archive: https://web.archive.org/web/20250131224626/https://support.microsoft.com/en-us/topic/end-of-support-privacy-protection-vpn-in-microsoft-defender-for-individuals-8b503da5-732a-4472-833a-e2ddca53036a
+        quote: The privacy protection (VPN) feature within Defender is going away February 28, 2025.
+      - url: https://support.microsoft.com/en-us/topic/end-of-support-privacy-protection-vpn-in-microsoft-defender-for-individuals-8b503da5-732a-4472-833a-e2ddca53036a
+        publisher: Microsoft Support
+        kind: primary
+        published: 2025-01-31
+        archive: https://web.archive.org/web/20250131224626/https://support.microsoft.com/en-us/topic/end-of-support-privacy-protection-vpn-in-microsoft-defender-for-individuals-8b503da5-732a-4472-833a-e2ddca53036a
+        quote: Microsoft Defender requires a Microsoft 365 Personal or Family subscription.
+      - url: https://www.engadget.com/cybersecurity/microsoft-defenders-vpn-feature-will-be-killed-off-at-the-end-of-february-212313322.html
+        publisher: Engadget
+        kind: press
+        published: 2025-02-01
+        archive: https://web.archive.org/web/20250202103106/https://www.engadget.com/cybersecurity/microsoft-defenders-vpn-feature-will-be-killed-off-at-the-end-of-february-212313322.html
+        quote: up to the monthly data limit of 50GB
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: publisher-removed
+    date: 2026-10-01
+    date_kind: effective
+    category: removed-feature
+    title: Microsoft takes Publisher out of Microsoft 365
+    what_changed: >-
+      Microsoft took Publisher out of Microsoft 365 from 1 October 2026, as an update removes it.
+      Subscribers can't open or edit their Publisher files in it any more, while people who bought
+      a perpetual copy can keep using theirs.
+    user_impact: >-
+      Subscribers who made things in Publisher lost the app and had to convert their files to
+      another format, with no change to the price.
+    company_said: Microsoft said it occasionally removes features and products to focus on new benefits.
+    severity: 2
+    status: in-force
+    sources:
+      - url: https://support.microsoft.com/en-us/publisher/microsoft-publisher-will-no-longer-be-supported-after-october-2026
+        publisher: Microsoft Support
+        kind: primary
+        published: 2026-11-15
+        archive: https://web.archive.org/web/20261115054828/https://support.microsoft.com/en-us/publisher/microsoft-publisher-will-no-longer-be-supported-after-october-2026
+        quote: >-
+          Microsoft 365 subscribers will not be able to access Publisher on or shortly after October 1,
+          2026, as the removal update process rolls out.
+      - url: https://support.microsoft.com/en-us/publisher/microsoft-publisher-will-no-longer-be-supported-after-october-2026
+        publisher: Microsoft Support
+        kind: primary
+        published: 2026-11-15
+        archive: https://web.archive.org/web/20261115054828/https://support.microsoft.com/en-us/publisher/microsoft-publisher-will-no-longer-be-supported-after-october-2026
+        quote: >-
+          However, if you have the Perpetual version of Publisher, although support will end, you
+          will still be able to install and use the app beyond this date.
+      - url: https://support.microsoft.com/en-us/office/microsoft-publisher-will-no-longer-be-supported-after-october-2026-ee6302a2-4bc7-4841-babf-8e9be3acbfd7
+        publisher: Microsoft Support
+        kind: primary
+        published: 2024-02-16
+        archive: https://web.archive.org/web/20240216034414/https://support.microsoft.com/en-us/office/microsoft-publisher-will-no-longer-be-supported-after-october-2026-ee6302a2-4bc7-4841-babf-8e9be3acbfd7
+        quote: >-
+          In October 2026, Microsoft Publisher will reach its end of life. After that time, it will no
+          longer be included in Microsoft 365 and existing on-premises suites will no longer be
+          supported.
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: family-shared-storage
+    date: 2026-10-08
+    date_kind: effective
+    category: removed-feature
+    title: Microsoft 365 Family goes from 1TB per person to 2TB shared by up to 6 people
+    question: Is Microsoft 365 Family storage shared now?
+    what_changed: >-
+      From 8 October 2026, new Microsoft 365 Family subscriptions share 2TB of storage between
+      everyone on the plan, where each of up to 6 people had their own 1TB. Existing subscriptions
+      move over when they renew on or after 2 May 2027.
+    before: 1TB each, up to 6TB
+    after: 2TB shared
+    user_impact: >-
+      Families of 3 or more, or 2 people storing over 1TB between them, get less space for the same
+      $129.99 a year, with up to a year to get under the limit.
+    company_said: >-
+      Microsoft said shared storage stops one person running out of space while others have unused
+      storage.
+    severity: 2
+    status: in-force
+    sources:
+      - url: https://support.microsoft.com/en-us/onedrive/changes-to-microsoft-365-storage
+        publisher: Microsoft Support
+        kind: primary
+        published: 2026-10-08
+        archive: https://web.archive.org/web/20261008175837/https://support.microsoft.com/en-us/onedrive/changes-to-microsoft-365-storage
+        quote: >-
+          New and upgraded subscriptions include shared storage starting October 8, 2026. If you
+          already have a subscription before October 8, 2026, your plan moves to shared storage when
+          it renews on or after May 2, 2027.
+      - url: https://support.microsoft.com/en-us/onedrive/changes-to-microsoft-365-storage
+        publisher: Microsoft Support
+        kind: primary
+        published: 2026-10-08
+        archive: https://web.archive.org/web/20261008175837/https://support.microsoft.com/en-us/onedrive/changes-to-microsoft-365-storage
+        quote: >-
+          Shared storage helps ensure that one person doesn't run out of space while other members
+          have unused storage available.
+      - url: https://support.microsoft.com/en-us/onedrive/changes-to-microsoft-365-storage
+        publisher: Microsoft Support
+        kind: primary
+        published: 2026-10-08
+        archive: https://web.archive.org/web/20261008175837/https://support.microsoft.com/en-us/onedrive/changes-to-microsoft-365-storage
+        quote: >-
+          If your subscription exceeds the limit, you can continue to access your files for up to one
+          year while you manage your storage.
+      - url: https://www.microsoft.com/en-us/microsoft-365/p/microsoft-365-family/cfq7ttc0k5dm
+        publisher: Microsoft
+        kind: pricing-page
+        published: 2026-10-07
+        archive: https://web.archive.org/web/20261007104841/https://www.microsoft.com/en-us/microsoft-365/p/microsoft-365-family/cfq7ttc0k5dm
+        quote: Up to 6 TB of cloud storage (1 TB per person)
+      - url: https://www.microsoft.com/en-us/microsoft-365/p/microsoft-365-family/cfq7ttc0k5dm
+        publisher: Microsoft
+        kind: pricing-page
+        published: 2026-10-31
+        archive: https://web.archive.org/web/20261031085335/https://www.microsoft.com/en-us/microsoft-365/p/microsoft-365-family/cfq7ttc0k5dm
+        quote: >-
+          Share 2 TB (2000 GB) of secure storage with up to 5 people for their photos, files, videos,
+          emails, and more.
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
