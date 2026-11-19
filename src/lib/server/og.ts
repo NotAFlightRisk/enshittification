@@ -150,7 +150,7 @@ function homeImage() {
   const { services, built } = data();
   const counts = stats();
   const to = Math.max(counts.last, yearOf(built));
-  const shown = services.slice(0, 4);
+  const shown = services.toSorted((a, b) => b.changes.length - a.changes.length).slice(0, 3);
   return frame(
     `${plural(counts.changes, 'change')} at ${plural(counts.services, 'service')}`,
     headline('Big tech gets worse after you sign up.', 68),
