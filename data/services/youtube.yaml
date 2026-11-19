@@ -200,7 +200,7 @@ changes:
       Viewers without Premium watching popular videos on a TV got a 30-second ad they couldn't skip.
     company_said: >-
       YouTube told advertisers that longer ads suit the big screen and allow richer storytelling.
-    severity: 2
+    severity: 1
     status: in-force
     related: [youtube/longer-unskippable-tv-ads]
     sources:
@@ -219,7 +219,7 @@ changes:
           YouTube says viewers will see a single 30-second ad instead of two consecutive 15-second
           ads, though that doesn’t mean that those shorter ads will be disappearing entirely.
     added: 2026-11-18
-    updated: 2026-11-18
+    updated: 2026-11-19
     sources_checked: 2026-11-18
     status_checked: 2026-11-18
 
@@ -242,7 +242,7 @@ changes:
     company_said: >-
       YouTube said the new price would let it keep delivering great service and features, and
       reflected Premium's value.
-    severity: 2
+    severity: 1
     status: in-force
     regions: [US]
     prices:
@@ -266,7 +266,7 @@ changes:
           We’re updating the price for YouTube Premium and YouTube Music Premium subscribers in the
           US to continue delivering great service and features
     added: 2026-11-18
-    updated: 2026-11-18
+    updated: 2026-11-19
     sources_checked: 2026-11-18
     status_checked: 2026-11-18
 
@@ -285,7 +285,7 @@ changes:
     company_said: >-
       YouTube said ad blockers break its terms of service, and that ads support creators and let
       billions of people watch.
-    severity: 3
+    severity: 2
     status: in-force
     sources:
       - url: https://www.theverge.com/2023/10/31/23940583/youtube-ad-blocker-crackdown-broadening
@@ -298,7 +298,7 @@ changes:
           Premium, YouTube communications manager Christopher Lawton says in a statement provided to
           The Verge.
     added: 2026-11-18
-    updated: 2026-11-18
+    updated: 2026-11-19
     sources_checked: 2026-11-18
     status_checked: 2026-11-18
 
@@ -316,7 +316,7 @@ changes:
     company_said: >-
       YouTube said its data showed 79% of viewers would rather sit through one longer ad break than
       several shorter ones.
-    severity: 2
+    severity: 1
     status: in-force
     related: [youtube/30-second-unskippable-tv-ads]
     sources:
@@ -329,7 +329,7 @@ changes:
           So, we reached out to YouTube, which confirms more unskippable ad formats debuted
           alongside pause-vertising at the beginning of September.
     added: 2026-11-18
-    updated: 2026-11-18
+    updated: 2026-11-19
     sources_checked: 2026-11-18
     status_checked: 2026-11-18
 
@@ -349,7 +349,7 @@ changes:
     company_said: >-
       Google's email to subscribers said the rise would let it keep improving Premium and support
       the creators and artists they watch.
-    severity: 2
+    severity: 1
     status: in-force
     regions: [US]
     prices:
@@ -375,6 +375,6 @@ changes:
           Google is raising YouTube Premium prices across all tiers, with the Family plan jumping to
           $26.99/month and the Individual plan hitting $15.99/month.
     added: 2026-11-18
-    updated: 2026-11-18
+    updated: 2026-11-19
     sources_checked: 2026-11-18
     status_checked: 2026-11-18
