@@ -22,3 +22,8 @@
   name: The Walt Disney Company
   url: https://thewaltdisneycompany.com
   wikipedia: https://en.wikipedia.org/wiki/The_Walt_Disney_Company
+
+- id: amazon
+  name: Amazon
+  url: https://www.aboutamazon.com
+  wikipedia: https://en.wikipedia.org/wiki/Amazon_(company)

@@ -1,0 +1,918 @@
+service: amazon-prime
+name: Amazon Prime
+company: amazon
+url: https://www.amazon.com/amazonprime
+wikipedia: https://en.wikipedia.org/wiki/Amazon_Prime
+
+plans:
+  - id: annual-us
+    name: Prime (annual)
+    region: US
+    currency: USD
+    billing: year
+    since: 2005-02-02
+    price: 79
+    source:
+      url: https://press.aboutamazon.com/2005/2/amazon-com-announces-record-free-cash-flow-fueled-by-lower-prices-and-free-shipping-introduces-new-express-shipping-program-amazon-prime
+      publisher: Amazon
+      kind: primary
+      published: 2005-02-02
+      archive: https://web.archive.org/web/20250112112226/https://press.aboutamazon.com/2005/2/amazon-com-announces-record-free-cash-flow-fueled-by-lower-prices-and-free-shipping-introduces-new-express-shipping-program-amazon-prime
+      quote: >-
+        For a flat membership fee of $79 per year, members get unlimited, express two-day shipping for
+        free, with no minimum purchase requirement.
+
+  - id: monthly-us
+    name: Prime (monthly)
+    region: US
+    currency: USD
+    billing: month
+    since: 2016-04-17
+    price: 10.99
+    source:
+      url: https://www.theverge.com/2016/4/17/11448880/amazon-prime-monthly-subscription-price-video
+      publisher: The Verge
+      kind: press
+      published: 2016-04-17
+      archive: https://web.archive.org/web/20161211064210/http://www.theverge.com/2016/4/17/11448880/amazon-prime-monthly-subscription-price-video
+      quote: >-
+        The retailer is adding new subscription options tonight, reports CNN , that will price Prime at
+        $10.99 a month and, for the first time, offer Prime Video as a standalone service at $8.99 a
+        month.
+
+  - id: video-us
+    name: Prime Video on its own
+    region: US
+    currency: USD
+    billing: month
+    since: 2016-04-17
+    price: 8.99
+    source:
+      url: https://www.theverge.com/2016/4/17/11448880/amazon-prime-monthly-subscription-price-video
+      publisher: The Verge
+      kind: press
+      published: 2016-04-17
+      archive: https://web.archive.org/web/20161211064210/http://www.theverge.com/2016/4/17/11448880/amazon-prime-monthly-subscription-price-video
+      quote: >-
+        The retailer is adding new subscription options tonight, reports CNN , that will price Prime at
+        $10.99 a month and, for the first time, offer Prime Video as a standalone service at $8.99 a
+        month.
+
+  - id: access-us
+    name: Prime Access
+    region: US
+    currency: USD
+    billing: month
+    since: 2017-06-06
+    price: 5.99
+    source:
+      url: https://press.aboutamazon.com/news-releases/news-release-details/amazon-introduces-discounted-monthly-prime-offer-customers
+      publisher: Amazon
+      kind: primary
+      published: 2017-06-06
+      archive: https://web.archive.org/web/20220211043928/https://press.aboutamazon.com/news-releases/news-release-details/amazon-introduces-discounted-monthly-prime-offer-customers
+      quote: >-
+        Customers participating in a growing list of government assistance programs get Prime
+        benefits for $5.99 per month
+    incomplete: It's $6.99 now, but we haven't found when it went up.
+  - id: annual-uk
+    name: Prime (annual)
+    region: UK
+    currency: GBP
+    billing: year
+    since: 2007-11-05
+    price: 49
+    source:
+      url: https://press.aboutamazon.com/news-releases/news-release-details/amazoncouk-offers-unlimited-free-one-day-launch-amazon-prime
+      publisher: Amazon
+      kind: primary
+      published: 2007-11-05
+      archive: https://web.archive.org/web/20230201114639/https://press.aboutamazon.com/news-releases/news-release-details/amazoncouk-offers-unlimited-free-one-day-launch-amazon-prime/
+      quote: >-
+        Amazon.co.uk today launches Amazon Prime, giving customers unlimited free One-Day Delivery on
+        millions of eligible items sold by Amazon.co.uk for an annual fee of just £49
+
+  - id: monthly-uk
+    name: Prime (monthly)
+    region: UK
+    currency: GBP
+    billing: month
+    since: '2015'
+    price: 7.99
+    source:
+      url: https://www.moneysavingexpert.com/news/2016/05/amazon-to-offer-monthly-prime-subscriptions/
+      publisher: MoneySavingExpert
+      kind: press
+      published: 2016-05-05
+      archive: https://web.archive.org/web/20190824064300/https://www.moneysavingexpert.com/news/2016/05/amazon-to-offer-monthly-prime-subscriptions/
+      quote: >-
+        Online retail giant Amazon is rolling out a new monthly subscription option for its flagship
+        Prime service across the UK, with users able to pay £7.99/month rather than commit to a hefty
+        annual subscription of £79, MoneySavingExpert.com can reveal. The monthly subscription offer
+        is currently in "testing" and has been available in some form since late 2015
+
+  - id: ad-free-us
+    name: Prime Video ad-free add-on
+    region: US
+    currency: USD
+    billing: month
+    since: 2024-01-29
+    price: 2.99
+    source:
+      url: https://www.theverge.com/2023/12/26/24015595/amazon-prime-video-ads-coming-january-29
+      publisher: The Verge
+      kind: press
+      published: 2023-12-26
+      archive: https://web.archive.org/web/20231227230804/https://www.theverge.com/2023/12/26/24015595/amazon-prime-video-ads-coming-january-29
+      quote: >-
+        Prime Video will start showing ads during movies and TV shows on January 29th, Amazon has
+        announced. Customers can pay an extra $2.99 monthly to avoid them.
+
+  - id: ad-free-uk
+    name: Prime Video ad-free add-on
+    region: UK
+    currency: GBP
+    billing: month
+    since: 2024-02
+    price: 2.99
+    source:
+      url: https://www.theguardian.com/technology/2023/dec/27/amazon-prime-video-streaming-content-to-include-limited-advertisements
+      publisher: The Guardian
+      kind: press
+      published: 2023-12-27
+      archive: https://web.archive.org/web/20250102130610/https://www.theguardian.com/technology/2023/dec/27/amazon-prime-video-streaming-content-to-include-limited-advertisements
+      quote: >-
+        Subscribers to Amazon’s Prime Video streaming service will start seeing commercials in films
+        and TV shows from early next year unless they pay an extra £2.99 for an ad-free experience.
+
+changes:
+  - id: uk-price-2014
+    date: 2014-02-21
+    date_kind: announced
+    effective: 2014-02-26
+    category: price-rise
+    title: Amazon Prime UK goes from £49 to £79 a year as streaming joins it
+    what_changed: >-
+      Amazon said on 21 February 2014 that UK Prime would go from £49 to £79 a year from 26 February
+      2014, when LOVEFiLM's streaming became part of it. Current members kept their price until they
+      renewed.
+    before: £49 a year
+    after: £79 a year
+    user_impact: UK members paid 61% more a year at renewal, with Prime Instant Video now included.
+    severity: 2
+    status: in-force
+    regions: [GB]
+    prices: [{ plan: annual-uk, from: 49, to: 79 }]
+    sources:
+      - url: https://press.aboutamazon.com/uk/2014/2/the-countdown-begins-unlimited-streaming-of-more-than-15-000-popular-movies-and-tv-episodes-coming-to-amazon-prime-next-week
+        publisher: Amazon UK
+        kind: primary
+        published: 2014-02-21
+        archive: https://web.archive.org/web/20240625085632/https://press.aboutamazon.com/uk/2014/2/the-countdown-begins-unlimited-streaming-of-more-than-15-000-popular-movies-and-tv-episodes-coming-to-amazon-prime-next-week
+        quote: When the two programmes combine, Prime will be offered at the low price of £79 a year
+      - url: https://press.aboutamazon.com/uk/2014/2/the-countdown-begins-unlimited-streaming-of-more-than-15-000-popular-movies-and-tv-episodes-coming-to-amazon-prime-next-week
+        publisher: Amazon UK
+        kind: primary
+        published: 2014-02-21
+        archive: https://web.archive.org/web/20240625085632/https://press.aboutamazon.com/uk/2014/2/the-countdown-begins-unlimited-streaming-of-more-than-15-000-popular-movies-and-tv-episodes-coming-to-amazon-prime-next-week
+        quote: Current Prime members can enjoy unlimited streaming at their current price until their renewal date.
+      - url: https://www.engadget.com/2014/02/21/amazon-rebrand-lovefilm-prime-instant-video/
+        publisher: Engadget
+        kind: press
+        published: 2014-02-21
+        archive: https://web.archive.org/web/20141025093312/http://www.engadget.com/2014/02/21/amazon-rebrand-lovefilm-prime-instant-video/
+        quote: >-
+          Before Amazon's changes begin kicking in next week, a full year of Prime will cost just £49
+          (€29) up until launch day (the original cost of Prime's one-day delivery service), rising to
+          £79 (€49) thereafter.
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: price-2014
+    date: 2014-03-13
+    date_kind: announced
+    effective: 2014-03-20
+    category: price-rise
+    title: Amazon Prime goes from $79 to $99 a year in the US, its first rise
+    what_changed: >-
+      Amazon said on 13 March 2014 that US Prime would go from $79 to $99 a year, from 20 March for
+      new members and 17 April 2014 for renewals.
+    before: $79 a year
+    after: $99 a year
+    user_impact: US members paid 25% more a year, the first rise since Prime started.
+    company_said: >-
+      Amazon told members that fuel and transportation costs had gone up while Prime's price stayed
+      the same.
+    severity: 2
+    status: in-force
+    regions: [US]
+    prices: [{ plan: annual-us, from: 79, to: 99 }]
+    sources:
+      - url: https://www.theverge.com/2014/3/13/5503908/amazon-prime-price-increases-to-99-per-year-in-us
+        publisher: The Verge
+        kind: press
+        published: 2014-03-13
+        archive: https://web.archive.org/web/20140314074919/http://www.theverge.com/2014/3/13/5503908/amazon-prime-price-increases-to-99-per-year-in-us
+        quote: >-
+          Amazon is about to raise the price of its Prime membership service for the first time ever in
+          the US, bringing the cost up to $99 per year, $20 above where it's been for nearly a decade.
+      - url: https://money.cnn.com/2014/03/13/technology/amazon-prime-price-increase/
+        publisher: CNN Money
+        kind: press
+        published: 2014-03-13
+        archive: https://web.archive.org/web/20140317103435/http://money.cnn.com:80/2014/03/13/technology/amazon-prime-price-increase/
+        quote: Amazon ( AMZN , Fortune 500 ) announced the annual membership will now cost $99 a year, up from $79.
+      - url: https://consumerist.com/2014/03/13/amazon-clears-up-dates-for-new-prime-pricing/
+        publisher: Consumerist
+        kind: press
+        published: 2014-03-13
+        archive: https://web.archive.org/web/20140313204826/http://consumerist.com/2014/03/13/amazon-clears-up-dates-for-new-prime-pricing/
+        quote: >-
+          “Starting March 20, new Prime members will pay $99 per year. Beginning April 17, existing
+          Prime members will pay the new fee on their subsequent annual renewal date.”
+      - url: https://the-gadgeteer.com/2014/03/13/its-official-amazon-prime-membership-fees-are-going-up/
+        publisher: The Gadgeteer
+        kind: press
+        published: 2014-03-13
+        archive: https://web.archive.org/web/20140313160414/http://the-gadgeteer.com/2014/03/13/its-official-amazon-prime-membership-fees-are-going-up/
+        quote: >-
+          Even as fuel and transportation costs have increased, the price of Prime has remained the
+          same for nine years.
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: monthly-price-2018
+    date: 2018-01-19
+    date_kind: effective
+    category: price-rise
+    title: Amazon Prime's US monthly plan goes from $10.99 to $12.99
+    what_changed: >-
+      Amazon put US Prime's monthly price up from $10.99 to $12.99 on its membership page on 19
+      January 2018.
+    before: $10.99 a month
+    after: $12.99 a month
+    user_impact: US members paying monthly paid 18% more.
+    company_said: Amazon said it keeps investing in making Prime more valuable for its members.
+    severity: 1
+    status: in-force
+    regions: [US]
+    prices: [{ plan: monthly-us, from: 10.99, to: 12.99 }]
+    sources:
+      - url: https://www.cnbc.com/2018/01/19/amazon-is-raising-its-monthly-prime-membership-monthly-rate.html
+        publisher: CNBC
+        kind: press
+        published: 2018-01-19
+        archive: https://web.archive.org/web/20240303051346/https://www.cnbc.com/2018/01/19/amazon-is-raising-its-monthly-prime-membership-monthly-rate.html
+        quote: >-
+          The premium membership that grants faster shipping and access to Amazon Video will now cost
+          $12.99 per month, up from $10.99, according to the company's membership page.
+      - url: https://www.cnbc.com/2018/01/19/amazon-is-raising-its-monthly-prime-membership-monthly-rate.html
+        publisher: CNBC
+        kind: press
+        published: 2018-01-19
+        archive: https://web.archive.org/web/20240303051346/https://www.cnbc.com/2018/01/19/amazon-is-raising-its-monthly-prime-membership-monthly-rate.html
+        quote: >-
+          Prime provides an unparalleled combination of shipping, shopping and entertainment benefits,
+          and we continue to invest in making Prime even more valuable for our members.
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: annual-price-2018
+    date: 2018-04-26
+    date_kind: announced
+    effective: 2018-05-11
+    category: price-rise
+    title: Amazon Prime goes from $99 to $119 a year in the US
+    what_changed: >-
+      Amazon said on 26 April 2018 that US Prime would go from $99 to $119 a year, from 11 May 2018
+      for new members and 16 June for renewals.
+    before: $99 a year
+    after: $119 a year
+    user_impact: US members on the annual plan paid 20% more.
+    company_said: Amazon said its costs kept rising, especially for shipping and digital benefits.
+    severity: 1
+    status: in-force
+    regions: [US]
+    prices: [{ plan: annual-us, from: 99, to: 119 }]
+    sources:
+      - url: https://www.cnbc.com/2018/04/26/amazon-will-increase-the-price-of-its-annual-prime-plan-effective-may-1.html
+        publisher: CNBC
+        kind: press
+        published: 2018-04-26
+        archive: https://web.archive.org/web/20250331033313/https://www.cnbc.com/2018/04/26/amazon-will-increase-the-price-of-its-annual-prime-plan-effective-may-1.html
+        quote: >-
+          So effective May 11, we're going to increase the price of our U.S. annual plan from $99 to
+          $119 for new members. The new price will apply to renewals starting on June 16.
+      - url: https://www.cnbc.com/2018/04/26/amazon-will-increase-the-price-of-its-annual-prime-plan-effective-may-1.html
+        publisher: CNBC
+        kind: press
+        published: 2018-04-26
+        archive: https://web.archive.org/web/20250331033313/https://www.cnbc.com/2018/04/26/amazon-will-increase-the-price-of-its-annual-prime-plan-effective-may-1.html
+        quote: especially with shipping options and digital benefits, we continue to see rises in costs
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: twitch-ad-free-ends
+    date: 2018-08-20
+    date_kind: announced
+    effective: 2018-09-14
+    category: removed-feature
+    title: Twitch Prime stops including ad-free viewing on Twitch
+    what_changed: >-
+      Twitch said on 20 August 2018 that Twitch Prime, part of Amazon Prime, would stop including
+      ad-free viewing for new members from 14 September 2018. Members on monthly Prime kept it until
+      15 October, and annual members until their next renewal.
+    user_impact: >-
+      Prime members who watched Twitch got ads again, bar one channel a month with their free sub,
+      unless they paid for Twitch Turbo.
+    company_said: Twitch said advertising is an important source of support for the creators on Twitch.
+    severity: 2
+    status: in-force
+    sources:
+      - url: https://blog.twitch.tv/en/2018/08/20/changes-to-twitch-prime-a986f0d8c9a9/
+        publisher: Twitch Blog
+        kind: primary
+        published: 2018-08-20
+        archive: https://web.archive.org/web/20190926192658/https://blog.twitch.tv/en/2018/08/20/changes-to-twitch-prime-a986f0d8c9a9/
+        quote: >-
+          As a result, universal ad-free viewing will no longer be part of Twitch Prime for new
+          members, starting on September 14.
+      - url: https://blog.twitch.tv/en/2018/08/20/changes-to-twitch-prime-a986f0d8c9a9/
+        publisher: Twitch Blog
+        kind: primary
+        published: 2018-08-20
+        archive: https://web.archive.org/web/20190926192658/https://blog.twitch.tv/en/2018/08/20/changes-to-twitch-prime-a986f0d8c9a9/
+        quote: >-
+          Twitch Prime members with monthly subscriptions will continue to get ad-free viewing until
+          October 15. If you already have an annual subscription, or if you upgrade to an annual
+          subscription before September 14, you will continue with ad-free viewing until your next
+          renewal date.
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: whole-foods-delivery-fee
+    date: 2021-09-25
+    date_kind: reported
+    effective: 2021-10-25
+    category: paywall
+    title: Amazon adds a $9.95 fee to every Whole Foods delivery for Prime members
+    what_changed: >-
+      Every Whole Foods delivery order through Amazon Prime would carry a $9.95 charge from 25
+      October 2021, CNN reported on 25 September 2021. Prime had included free Whole Foods
+      delivery since 2018, and free pickup stayed.
+    before: Free delivery
+    after: $9.95 a delivery
+    user_impact: Prime members who had Whole Foods groceries delivered paid $9.95 an order on top.
+    company_said: >-
+      Whole Foods said the fee would cover delivery costs like equipment and technology without
+      raising grocery prices.
+    severity: 2
+    status: in-force
+    regions: [US]
+    sources:
+      - url: https://www.cnn.com/2021/09/25/business/whole-foods-delivery-charge/index.html
+        publisher: CNN Business
+        kind: press
+        published: 2021-09-25
+        archive: https://web.archive.org/web/20210926131807/https://www.cnn.com/2021/09/25/business/whole-foods-delivery-charge/index.html
+        quote: >-
+          Starting on October 25, every Whole Foods delivery order placed through Amazon Prime will
+          include a $9.95 delivery charge.
+      - url: https://www.cnn.com/2021/09/25/business/whole-foods-delivery-charge/index.html
+        publisher: CNN Business
+        kind: press
+        published: 2021-09-25
+        archive: https://web.archive.org/web/20210926131807/https://www.cnn.com/2021/09/25/business/whole-foods-delivery-charge/index.html
+        quote: >-
+          Amazon acquired Whole Foods in 2017. The following year, it introduced free two-hour
+          delivery from the grocer. Certain perks, like free one-hour grocery pickup, will remain for
+          available to Prime members.
+      - url: https://www.cnn.com/2021/09/25/business/whole-foods-delivery-charge/index.html
+        publisher: CNN Business
+        kind: press
+        published: 2021-09-25
+        archive: https://web.archive.org/web/20210926131807/https://www.cnn.com/2021/09/25/business/whole-foods-delivery-charge/index.html
+        quote: >-
+          The new fee is designed to help cover operating costs associated with delivery like
+          equipment and technology without raising grocery prices, a Whole Foods spokesperson said
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: price-2022
+    date: 2022-02-03
+    date_kind: announced
+    effective: 2022-02-18
+    category: price-rise
+    title: Amazon Prime goes from $119 to $139 a year and $12.99 to $14.99 a month in the US
+    what_changed: >-
+      Amazon said on 3 February 2022 that US Prime would go from $119 to $139 a year and from $12.99
+      to $14.99 a month. New members paid it from 18 February 2022, and current members from their
+      first renewal after 25 March.
+    before: $119 a year, $12.99 a month
+    after: $139 a year, $14.99 a month
+    user_impact: US members paid 17% more on the annual plan and 15% more on the monthly one.
+    company_said: Amazon pointed to more Prime benefits and rising wages and transportation costs.
+    severity: 1
+    status: in-force
+    regions: [US]
+    prices:
+      - { plan: annual-us, from: 119, to: 139 }
+      - { plan: monthly-us, from: 12.99, to: 14.99 }
+    sources:
+      - url: https://press.aboutamazon.com/2022/2/amazon-com-announces-fourth-quarter-results
+        publisher: Amazon
+        kind: primary
+        published: 2022-02-03
+        archive: https://web.archive.org/web/20221228205333/https://press.aboutamazon.com/2022/2/amazon-com-announces-fourth-quarter-results
+        quote: >-
+          With the continued expansion of Prime member benefits as well as the rise in wages and
+          transportation costs, Amazon will increase the price of a Prime membership in the U.S., with
+          the monthly fee going from $12.99 to $14.99, and the annual membership from $119 to $139.
+      - url: https://press.aboutamazon.com/2022/2/amazon-com-announces-fourth-quarter-results
+        publisher: Amazon
+        kind: primary
+        published: 2022-02-03
+        archive: https://web.archive.org/web/20221228205333/https://press.aboutamazon.com/2022/2/amazon-com-announces-fourth-quarter-results
+        quote: >-
+          For new Prime members, the price change will go into effect on February 18, 2022, and for
+          current Prime members, the new price will apply after March 25, 2022, on the date of their
+          next renewal.
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: uk-price-2022
+    date: 2022-07-26
+    date_kind: announced
+    effective: 2022-09-15
+    category: price-rise
+    title: Amazon Prime UK goes from £79 to £95 a year and £7.99 to £8.99 a month
+    what_changed: >-
+      Amazon told UK members on 26 July 2022 that Prime would go from £79 to £95 a year and from
+      £7.99 to £8.99 a month from 15 September 2022.
+    before: £79 a year, £7.99 a month
+    after: £95 a year, £8.99 a month
+    user_impact: UK members paid 20% more on the annual plan and 13% more on the monthly one.
+    company_said: Amazon pointed to increased inflation and operating costs.
+    severity: 1
+    status: in-force
+    regions: [GB]
+    prices:
+      - { plan: annual-uk, from: 79, to: 95 }
+      - { plan: monthly-uk, from: 7.99, to: 8.99 }
+    sources:
+      - url: https://techcrunch.com/2022/07/26/amazon-hikes-prime-subscription-prices-in-europe-by-up-to-43/
+        publisher: TechCrunch
+        kind: press
+        published: 2022-07-26
+        archive: https://web.archive.org/web/20230326072554/https://techcrunch.com/2022/07/26/amazon-hikes-prime-subscription-prices-in-europe-by-up-to-43/
+        quote: >-
+          As of 15 September 2022, the price of the monthly Prime membership will increase from £7.99
+          to £8.99, and the price of the annual Prime membership will increase from £79 to £95.
+      - url: https://variety.com/2022/digital/news/amazon-prime-fees-increase-europe-uk-1235326108/
+        publisher: Variety
+        kind: press
+        published: 2022-07-26
+        archive: https://web.archive.org/web/20220811221851/https://variety.com/2022/digital/news/amazon-prime-fees-increase-europe-uk-1235326108/
+        quote: >-
+          According to Amazon, the higher prices will take effect starting Sept. 15, for new members
+          and for customers who renew after that date.
+      - url: https://variety.com/2022/digital/news/amazon-prime-fees-increase-europe-uk-1235326108/
+        publisher: Variety
+        kind: press
+        published: 2022-07-26
+        archive: https://web.archive.org/web/20220811221851/https://variety.com/2022/digital/news/amazon-prime-fees-increase-europe-uk-1235326108/
+        quote: Amazon called out “increased inflation and operating costs”
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: music-shuffle-only
+    date: 2022-11-01
+    date_kind: announced
+    category: removed-feature
+    title: Amazon Music for Prime members goes from picking songs to shuffle play
+    question: When did Amazon Prime Music go shuffle only?
+    what_changed: >-
+      Amazon said on 1 November 2022 that Prime members' music would grow from 2m to 100m songs,
+      but in shuffle mode. Prime members could still play a selection of All-Access
+      playlists on demand, and picking a song needed Amazon Music Unlimited.
+    before: 2m songs
+    after: 100m songs on shuffle
+    user_impact: >-
+      Prime members couldn't listen to songs in the order they wanted any more unless they paid for
+      Music Unlimited on top of Prime.
+    company_said: >-
+      Amazon called it an expansion of the Prime benefit, ad-free and at no extra cost to
+      membership.
+    severity: 3
+    status: in-force
+    sources:
+      - url: https://press.aboutamazon.com/2022/11/amazon-music-expands-its-prime-benefit-now-with-a-full-catalog-of-music-and-the-most-top-podcasts-ad-free
+        publisher: Amazon
+        kind: primary
+        published: 2022-11-01
+        archive: https://web.archive.org/web/20221102173528/https://press.aboutamazon.com/2022/11/amazon-music-expands-its-prime-benefit-now-with-a-full-catalog-of-music-and-the-most-top-podcasts-ad-free
+        quote: >-
+          With today’s news, Prime members can shuffle play any artist, album, or playlist, plus
+          stream a selection of All-Access playlists on demand.
+      - url: https://press.aboutamazon.com/2022/11/amazon-music-expands-its-prime-benefit-now-with-a-full-catalog-of-music-and-the-most-top-podcasts-ad-free
+        publisher: Amazon
+        kind: primary
+        published: 2022-11-01
+        archive: https://web.archive.org/web/20221102173528/https://press.aboutamazon.com/2022/11/amazon-music-expands-its-prime-benefit-now-with-a-full-catalog-of-music-and-the-most-top-podcasts-ad-free
+        quote: >-
+          Prime members will enjoy an increase from 2 million to 100 million songs in shuffle mode,
+          ad-free, and at no additional cost to their membership
+      - url: https://www.theverge.com/2022/11/1/23433585/amazon-music-prime-subscribers-library-songs-podcasts
+        publisher: The Verge
+        kind: press
+        published: 2022-11-01
+        archive: https://web.archive.org/web/20221101141419/https://www.theverge.com/2022/11/1/23433585/amazon-music-prime-subscribers-library-songs-podcasts
+        quote: >-
+          All Prime members will be able to access the entire Amazon Music catalog, but not fully on
+          demand; you can shuffle any artist, album, or playlist, Amazon says, but you can’t just
+          select a song and hit play.
+      - url: https://www.tomsguide.com/news/amazon-music-users-say-service-is-in-shambles-heres-why
+        publisher: Tom's Guide
+        kind: press
+        published: 2022-11-09
+        archive: https://web.archive.org/web/20221109155800/https://www.tomsguide.com/news/amazon-music-users-say-service-is-in-shambles-heres-why
+        quote: >-
+          These changes have meant that members can no longer listen to songs in the order they want
+          to unless they pay a further $9 per month subscription fee to Amazon Music Unlimited on top
+          of their Prime membership.
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: fresh-delivery-fee
+    date: 2023-01-27
+    date_kind: announced
+    effective: 2023-02-28
+    category: paywall
+    title: Amazon Fresh starts charging Prime members for delivery on orders under $150
+    what_changed: >-
+      Amazon said on 27 January 2023 that Prime members would pay to have Amazon Fresh orders under
+      $150 delivered from 28 February 2023. The fee was $9.95 under $50, $6.95 between $50 and $100
+      and $3.95 between $100 and $150, where Prime had included free delivery on orders over $35.
+    before: Free delivery over $35
+    after: $3.95 to $9.95 under $150
+    user_impact: Prime members who had Fresh groceries delivered paid up to $9.95 an order unless they spent $150.
+    company_said: >-
+      Amazon said the fee would help keep grocery prices low as it better covered the cost of
+      delivery.
+    severity: 2
+    status: in-force
+    regions: [US]
+    sources:
+      - url: https://www.cnbc.com/2023/01/27/amazon-to-charge-delivery-fees-on-fresh-grocery-orders-under-150.html
+        publisher: CNBC
+        kind: press
+        published: 2023-01-27
+        archive: https://web.archive.org/web/20230127233904/https://www.cnbc.com/2023/01/27/amazon-to-charge-delivery-fees-on-fresh-grocery-orders-under-150.html
+        quote: >-
+          Beginning Feb. 28, Prime members who want home delivery from Amazon Fresh will incur a $9.95
+          delivery fee for orders below $50, while orders between $50 and $100 will include a $6.95
+          delivery fee, and orders between $100 and $150 will have a $3.95 delivery fee
+      - url: https://www.cnbc.com/2023/01/27/amazon-to-charge-delivery-fees-on-fresh-grocery-orders-under-150.html
+        publisher: CNBC
+        kind: press
+        published: 2023-01-27
+        archive: https://web.archive.org/web/20230127233904/https://www.cnbc.com/2023/01/27/amazon-to-charge-delivery-fees-on-fresh-grocery-orders-under-150.html
+        quote: >-
+          Amazon previously guaranteed members of its $139-a-year Prime service free delivery on Fresh
+          orders over $35.
+      - url: https://www.cnbc.com/2023/01/27/amazon-to-charge-delivery-fees-on-fresh-grocery-orders-under-150.html
+        publisher: CNBC
+        kind: press
+        published: 2023-01-27
+        archive: https://web.archive.org/web/20230127233904/https://www.cnbc.com/2023/01/27/amazon-to-charge-delivery-fees-on-fresh-grocery-orders-under-150.html
+        quote: >-
+          This service fee will help keep prices low in our online and physical grocery stores as we
+          better cover grocery delivery costs
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: video-ads
+    date: 2023-09-22
+    date_kind: announced
+    category: ads
+    title: Prime Video starts showing ads unless members pay extra
+    question: When did Amazon Prime Video start showing ads?
+    what_changed: >-
+      Amazon said on 22 September 2023 that Prime Video films and shows would carry ads from early
+      2024 unless US members paid $2.99 a month more. Ads started on 29 January 2024 in the US and
+      after 5 February in the UK and Germany, where ad-free cost £2.99 in the UK.
+    before: No ads in films and shows
+    after: Ads, or $2.99 a month more in the US
+    user_impact: >-
+      Prime members who didn't pay extra got ads in the films and shows they'd been watching without
+      them.
+    company_said: Amazon said ads would let it keep investing in content over a long period of time.
+    severity: 3
+    status: in-force
+    regions: [US, GB, DE, CA]
+    sources:
+      - url: https://www.aboutamazon.com/news/entertainment/prime-video-update-announces-limited-ads
+        publisher: About Amazon
+        kind: primary
+        published: 2023-09-22
+        archive: https://web.archive.org/web/20230923003639/https://www.aboutamazon.com/news/entertainment/prime-video-update-announces-limited-ads
+        quote: >-
+          To continue investing in compelling content and keep increasing that investment over a long
+          period of time, starting in early 2024, Prime Video shows and movies will include limited
+          advertisements.
+      - url: https://www.aboutamazon.com/news/entertainment/prime-video-update-announces-limited-ads
+        publisher: About Amazon
+        kind: primary
+        published: 2023-09-22
+        archive: https://web.archive.org/web/20230923003639/https://www.aboutamazon.com/news/entertainment/prime-video-update-announces-limited-ads
+        quote: >-
+          We will also offer a new ad-free option for an additional $2.99 per month* for U.S. Prime
+          members and will share pricing for other countries at a later date.
+      - url: https://www.aboutamazon.com/news/entertainment/prime-video-update-announces-limited-ads
+        publisher: About Amazon
+        kind: primary
+        published: 2023-09-22
+        archive: https://web.archive.org/web/20230923003639/https://www.aboutamazon.com/news/entertainment/prime-video-update-announces-limited-ads
+        quote: >-
+          Ads in Prime Video content will be introduced in the U.S., U.K., Germany, and Canada in early
+          2024, followed by France, Italy, Spain, Mexico, and Australia later in the year.
+      - url: https://www.theverge.com/2023/12/26/24015595/amazon-prime-video-ads-coming-january-29
+        publisher: The Verge
+        kind: press
+        published: 2023-12-26
+        archive: https://web.archive.org/web/20231227230804/https://www.theverge.com/2023/12/26/24015595/amazon-prime-video-ads-coming-january-29
+        quote: >-
+          Prime Video will start showing ads during movies and TV shows on January 29th, Amazon has
+          announced. Customers can pay an extra $2.99 monthly to avoid them.
+      - url: https://www.theguardian.com/technology/2023/dec/27/amazon-prime-video-streaming-content-to-include-limited-advertisements
+        publisher: The Guardian
+        kind: press
+        published: 2023-12-27
+        archive: https://web.archive.org/web/20250102130610/https://www.theguardian.com/technology/2023/dec/27/amazon-prime-video-streaming-content-to-include-limited-advertisements
+        quote: >-
+          The company said customers in the UK and Germany would begin to see “limited advertisements”
+          in its streaming content after 5 February.
+      - url: https://www.theguardian.com/technology/2023/dec/27/amazon-prime-video-streaming-content-to-include-limited-advertisements
+        publisher: The Guardian
+        kind: press
+        published: 2023-12-27
+        archive: https://web.archive.org/web/20250102130610/https://www.theguardian.com/technology/2023/dec/27/amazon-prime-video-streaming-content-to-include-limited-advertisements
+        quote: >-
+          Subscribers to Amazon’s Prime Video streaming service will start seeing commercials in films
+          and TV shows from early next year unless they pay an extra £2.99 for an ad-free experience.
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: dolby-off-ad-plan
+    date: 2024-02-12
+    date_kind: reported
+    category: removed-feature
+    title: Prime Video drops Dolby Vision and Atmos for members who watch with ads
+    what_changed: >-
+      Prime Video took Dolby Vision and Dolby Atmos away from members watching with ads, Ars
+      Technica reported on 12 February 2024. They were left with HDR10+ and Dolby Digital 5.1. Dolby
+      Vision came back to the US plan with ads in 1080p from 10 April 2026, and Atmos didn't.
+    user_impact: >-
+      Members with Dolby Vision or Atmos TVs and speakers lost them unless they paid to remove ads.
+    severity: 2
+    status: in-force
+    sources:
+      - url: https://arstechnica.com/gadgets/2024/02/prime-video-cuts-dolby-vision-atmos-support-from-ad-tier-and-didnt-tell-subs/
+        publisher: Ars Technica
+        kind: press
+        published: 2024-02-12
+        archive: https://web.archive.org/web/20241206151144/https://arstechnica.com/gadgets/2024/02/prime-video-cuts-dolby-vision-atmos-support-from-ad-tier-and-didnt-tell-subs/
+        quote: >-
+          Prime Video users who choose to sit through ads can no longer use Dolby Vision or Atmos while
+          streaming. Ad-tier subscribers are limited to HDR10+ and Dolby Digital 5.1.
+      - url: https://www.theverge.com/tech/894466/amazon-prime-video-ultra-ad-free-price-hike
+        publisher: The Verge
+        kind: press
+        published: 2026-03-13
+        archive: https://web.archive.org/web/20261022045051/https://www.theverge.com/tech/894466/amazon-prime-video-ultra-ad-free-price-hike
+        quote: >-
+          There are upgrades for Prime subscribers without Ultra after April 10th that will bring Dolby
+          Vision (in 1080p) back after Amazon removed it from the plan in 2024
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: invitee-ends
+    date: 2025-09-02
+    date_kind: reported
+    effective: 2025-10-01
+    category: removed-feature
+    title: Amazon ends Prime Invitee, so members can't share shipping outside their home
+    what_changed: >-
+      Prime Invitee, which let members share Prime shipping outside their household, would end on 1
+      October 2025, Engadget reported on 2 September 2025. Amazon had updated its support page, and
+      pointed members to Amazon Family instead.
+    user_impact: People who got Prime shipping through a member in another household lost it.
+    company_said: >-
+      Amazon said Invitee only shared the shipping benefit, and members could share a broad range of
+      benefits with Amazon Family instead.
+    severity: 1
+    status: in-force
+    regions: [US]
+    sources:
+      - url: https://www.cbsnews.com/news/amazon-prime-free-shipping-sharing-invitee-ending-what-to-know/
+        publisher: CBS News
+        kind: press
+        published: 2025-09-03
+        archive: https://web.archive.org/web/20250903153617/https://www.cbsnews.com/news/amazon-prime-free-shipping-sharing-invitee-ending-what-to-know/
+        quote: >-
+          Amazon said in a customer service section of its website that it will end the sharing
+          program, called Prime Invitee, on Oct. 1
+      - url: https://www.cbsnews.com/news/amazon-prime-free-shipping-sharing-invitee-ending-what-to-know/
+        publisher: CBS News
+        kind: press
+        published: 2025-09-03
+        archive: https://web.archive.org/web/20250903153617/https://www.cbsnews.com/news/amazon-prime-free-shipping-sharing-invitee-ending-what-to-know/
+        quote: >-
+          "The Invitee program, which enabled sharing of the Prime shipping benefit only, is being
+          phased out, and Prime members can instead share a broad range of Prime benefits with Amazon
+          Family," an Amazon spokesperson said
+      - url: https://www.engadget.com/big-tech/amazon-ends-shared-prime-shipping-182513989.html
+        publisher: Engadget
+        kind: press
+        published: 2025-09-02
+        archive: https://web.archive.org/web/20250902192158/https://www.engadget.com/big-tech/amazon-ends-shared-prime-shipping-182513989.html
+        quote: >-
+          An updated support page says sharing through Invitee will end on October 1 and that
+          previously invited guests will be notified by September 5 of the changes.
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: ad-free-price-2026
+    date: 2026-03-13
+    date_kind: announced
+    effective: 2026-04-10
+    category: price-rise
+    title: Prime Video's ad-free add-on goes from $2.99 to $4.99 a month as Ultra
+    what_changed: >-
+      Amazon said on 13 March 2026 that Prime Video's ad-free add-on would become Prime Video Ultra
+      on 10 April 2026, going from $2.99 to $4.99 a month. Ultra added more streams and downloads.
+    before: $2.99 a month
+    after: $4.99 a month
+    user_impact: US members paying to skip ads paid 67% more on top of Prime.
+    company_said: >-
+      Amazon said ad-free streaming with premium features needs significant investment, and the new
+      structure matches other big streaming services.
+    severity: 2
+    status: in-force
+    regions: [US]
+    prices: [{ plan: ad-free-us, from: 2.99, to: 4.99 }]
+    sources:
+      - url: https://www.aboutamazon.com/news/entertainment/prime-video-ultra-ad-free-streaming-subscription
+        publisher: About Amazon
+        kind: primary
+        published: 2026-03-13
+        archive: https://web.archive.org/web/20260313223614/https://www.aboutamazon.com/news/entertainment/prime-video-ultra-ad-free-streaming-subscription
+        quote: >-
+          On April 10, 2026, Prime Video’s Ad Free subscription will become Prime Video Ultra in the
+          U.S., priced at $4.99 a month.
+      - url: https://www.aboutamazon.com/news/entertainment/prime-video-ultra-ad-free-streaming-subscription
+        publisher: About Amazon
+        kind: primary
+        published: 2026-03-13
+        archive: https://web.archive.org/web/20260313223614/https://www.aboutamazon.com/news/entertainment/prime-video-ultra-ad-free-streaming-subscription
+        quote: >-
+          Delivering ad-free streaming with premium features requires significant investment, and this
+          structure aligns with other major streaming services while ensuring customers have the
+          flexibility to choose how they want to watch.
+      - url: https://www.theverge.com/tech/894466/amazon-prime-video-ultra-ad-free-price-hike
+        publisher: The Verge
+        kind: press
+        published: 2026-03-13
+        archive: https://web.archive.org/web/20261022045051/https://www.theverge.com/tech/894466/amazon-prime-video-ultra-ad-free-price-hike
+        quote: >-
+          Starting April 10th, Amazon’s ad-free Prime Video subscription will be rebranded as Ultra as
+          its price increases to $4.99 per month from the current $2.99.
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: 4k-ultra-only
+    date: 2026-03-13
+    date_kind: announced
+    effective: 2026-04-10
+    category: paywall
+    title: Prime Video moves 4K streaming to its $4.99 Ultra add-on
+    what_changed: >-
+      Amazon said on 13 March 2026 that from 10 April 2026, 4K streaming on Prime Video would only
+      come with the $4.99-a-month Ultra add-on. The Prime Video included with Prime got Dolby Vision
+      back, 4 streams instead of 3 and 50 downloads instead of 25 the same day.
+    user_impact: US members watching on 4K TVs dropped to HD unless they paid for Ultra on top of Prime.
+    company_said: >-
+      Amazon said ad-free streaming with premium features needs significant investment, and the new
+      structure matches other big streaming services.
+    severity: 2
+    status: in-force
+    regions: [US]
+    sources:
+      - url: https://www.aboutamazon.com/news/entertainment/prime-video-ultra-ad-free-streaming-subscription
+        publisher: About Amazon
+        kind: primary
+        published: 2026-03-13
+        archive: https://web.archive.org/web/20260313223614/https://www.aboutamazon.com/news/entertainment/prime-video-ultra-ad-free-streaming-subscription
+        quote: >-
+          The new Ultra subscription will deliver enhanced features including up to five concurrent
+          streams (previously three), up to 100 downloads (previously 25), and exclusive access to
+          4K/UHD streaming.
+      - url: https://www.aboutamazon.com/news/entertainment/prime-video-ultra-ad-free-streaming-subscription
+        publisher: About Amazon
+        kind: primary
+        published: 2026-03-13
+        archive: https://web.archive.org/web/20260313223614/https://www.aboutamazon.com/news/entertainment/prime-video-ultra-ad-free-streaming-subscription
+        quote: >-
+          Prime members will continue to enjoy the core Prime Video benefit, including HD/HDR and now
+          Dolby Vision, at no additional cost with their Prime membership
+      - url: https://www.theverge.com/tech/894466/amazon-prime-video-ultra-ad-free-price-hike
+        publisher: The Verge
+        kind: press
+        published: 2026-03-13
+        archive: https://web.archive.org/web/20261022045051/https://www.theverge.com/tech/894466/amazon-prime-video-ultra-ad-free-price-hike
+        quote: >-
+          Once it launches, it will also be the “exclusive” way to access 4K/UHD streaming, removing
+          4K streaming access from Prime subscribers who don’t pay extra.
+    related: [amazon-prime/ad-free-price-2026]
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: music-ads-india
+    date: 2026-06-02
+    date_kind: announced
+    effective: 2026-07-02
+    category: ads
+    title: Amazon Music for Prime members in India gets ads and loses offline downloads
+    what_changed: >-
+      Amazon said on 2 June 2026 that the music that comes with Prime in India would carry ads and
+      stop supporting offline downloads. It launched Amazon Music Unlimited the same day at ₹99 a
+      month for Prime members, and the change took effect on 2 July 2026.
+    user_impact: >-
+      Prime members in India got ads and lost offline listening unless they paid for Music Unlimited
+      on top.
+    company_said: >-
+      Amazon said the new tiers make it simple to find the right experience, from Music Unlimited to
+      the on-demand catalogue that comes with Prime.
+    severity: 3
+    status: in-force
+    regions: [IN]
+    sources:
+      - url: https://www.aboutamazon.in/news/entertainment/amazon-music-unlimited-india-price-plans
+        publisher: Amazon India
+        kind: primary
+        published: 2026-06-02
+        archive: https://web.archive.org/web/20260602210853/https://www.aboutamazon.in/news/entertainment/amazon-music-unlimited-india-price-plans
+        quote: >-
+          Prime members continue to enjoy full, on-demand access to the complete catalogue of over 100
+          million songs and top podcasts as part of their membership at no additional cost. This tier
+          now includes advertisements and does not support offline downloads.
+      - url: https://www.aboutamazon.in/news/entertainment/amazon-music-unlimited-india-price-plans
+        publisher: Amazon India
+        kind: primary
+        published: 2026-06-02
+        archive: https://web.archive.org/web/20260602210853/https://www.aboutamazon.in/news/entertainment/amazon-music-unlimited-india-price-plans
+        quote: >-
+          The three tiers make it simple to find the right experience, whether that’s the most premium
+          audio experience available with the new Amazon Music Unlimited, or a great on-demand
+          catalogue included with Prime membership.
+      - url: https://9to5google.com/2026/06/03/amazon-prime-music-ads-downloads-change/
+        publisher: 9to5Google
+        kind: press
+        published: 2026-06-03
+        archive: https://web.archive.org/web/20260604124546/https://9to5google.com/2026/06/03/amazon-prime-music-ads-downloads-change/
+        quote: The change kicks in on July 2, 2026.
+    related: [amazon-prime/music-shuffle-only]
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
