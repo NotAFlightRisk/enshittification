@@ -95,7 +95,7 @@ changes:
     company_said: >-
       Reddit said some search engines wouldn't make enforceable promises about how they use its
       content, including for AI.
-    severity: 2
+    severity: 1
     status: in-force
     related: [reddit/blocks-internet-archive]
     sources:
@@ -117,7 +117,7 @@ changes:
           the web’s most valuable repositories of user generated content exclusive to the internet’s
           already dominant search engine.
     added: 2026-11-18
-    updated: 2026-11-18
+    updated: 2026-11-19
     sources_checked: 2026-11-18
     status_checked: 2026-11-18
 
@@ -134,7 +134,7 @@ changes:
     company_said: >-
       Reddit said AI companies were scraping its data from the Wayback Machine, and that the limits
       protect redditors.
-    severity: 2
+    severity: 1
     status: in-force
     related: [reddit/blocks-search-engines]
     sources:
@@ -148,7 +148,7 @@ changes:
           Wayback Machine, so it’s going to start blocking the Internet Archive from indexing the
           vast majority of Reddit.
     added: 2026-11-18
-    updated: 2026-11-18
+    updated: 2026-11-19
     sources_checked: 2026-11-18
     status_checked: 2026-11-18
 
@@ -165,7 +165,7 @@ changes:
     company_said: >-
       Reddit said logged-out Old Reddit was a significant source of abusive scraping and automated
       traffic.
-    severity: 2
+    severity: 1
     status: in-force
     related: [reddit/rss-and-public-api-end]
     sources:
@@ -184,7 +184,7 @@ changes:
           Reddit said in the next few months it will limit access for logged-in users to those who
           have used Old Reddit in the last 6 months.
     added: 2026-11-18
-    updated: 2026-11-18
+    updated: 2026-11-19
     sources_checked: 2026-11-18
     status_checked: 2026-11-18
 
