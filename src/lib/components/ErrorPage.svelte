@@ -14,7 +14,7 @@
 />
 
 <section class="gone">
-  <Sign severity={missing ? 2 : 3}>
+  <Sign level={missing ? 'warning' : 'danger'}>
     <h1>
       {missing
         ? 'This page has been removed to improve your experience'

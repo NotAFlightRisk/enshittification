@@ -436,7 +436,7 @@ changes:
       Standard and Premium members could pay $7.99 a month for each extra member outside their home,
       while people sharing a Basic or ad plan account had to stop.
     company_said: Netflix said a Netflix account is for use by one household.
-    severity: 2
+    severity: 3
     status: in-force
     regions: [US]
     sources:
@@ -676,7 +676,7 @@ changes:
     user_impact: >-
       People who cast from their phone to a Chromecast with Google TV, a Google TV Streamer or most
       TVs lost the feature.
-    severity: 1
+    severity: 2
     status: in-force
     sources:
       - url: https://help.netflix.com/en/node/58351

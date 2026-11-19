@@ -24,32 +24,23 @@
 />
 
 <div class="hero">
-  <Sign severity={1}>
+  <Sign level="caution">
     <div class="claim">
-      <img src="/favicon.svg" alt="" width="128" height="128" />
-      <div>
-        <h1>Big tech gets worse after you sign up.</h1>
-        <p>
-          {plural(counts.changes, 'change')} at {plural(counts.services, 'service')} since
-          {counts.first}, every one dated, sourced and archived.
-        </p>
-      </div>
+      <img src="/icon.svg" alt="" width="128" height="128" />
+      <h1>Big tech gets worse after you sign up.</h1>
     </div>
   </Sign>
 </div>
 
 <section class="wall" aria-labelledby="wall">
-  <div class="bar">
-    <h2 id="wall">The wall</h2>
-    <p>One sign per change, on the day it happened.</p>
-  </div>
+  <h2 id="wall">The wall</h2>
   <Wall rows={data.rows} from={data.from} to={data.to} today={data.today} />
   <Legend />
 </section>
 
 {#if data.serious.length}
   <section aria-labelledby="serious">
-    <h2 id="serious">Most serious</h2>
+    <h2 id="serious">It's shit now</h2>
     <ol class="serious">
       {#each data.serious as change (change.key)}
         <li data-level="danger">
@@ -103,27 +94,6 @@
       flex: none;
       width: clamp(4.5rem, 14vw, 8rem);
       height: auto;
-    }
-
-    & div {
-      display: grid;
-      gap: var(--space-3);
-    }
-
-    & p {
-      max-width: 44ch;
-      font-size: var(--text-md);
-    }
-  }
-
-  .bar {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    gap: var(--space-2) var(--space-4);
-
-    & p {
-      color: var(--ink-soft);
     }
   }
 

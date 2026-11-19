@@ -3,9 +3,9 @@
   import { money, perBilling, percent } from '#lib/format.ts';
   import {
     categories,
+    levelKeys,
     levelOf,
-    severities,
-    severityKeys,
+    levels,
     type Entry,
     type PlanHistory
   } from '#lib/data/types.ts';
@@ -31,7 +31,7 @@
     history?: string;
   } = $props();
 
-  const levels = $derived(Map.groupBy(changes, ({ severity }) => severity));
+  const byLevel = $derived(Map.groupBy(changes, ({ severity }) => levelOf(severity)));
   const kinds = $derived(
     [...Map.groupBy(changes, ({ category }) => category)].sort((a, b) => b[1].length - a[1].length)
   );
@@ -50,13 +50,13 @@
   <p class="since">Since {from}</p>
 
   <dl>
-    {#each severityKeys.toReversed() as severity (severity)}
+    {#each levelKeys.toReversed() as level (level)}
       <div>
         <dt>
-          <span class="swatch" data-level={levelOf(severity)}></span>
-          {severities[severity].name}
+          <span class="swatch" data-level={level}></span>
+          {levels[level].name}
         </dt>
-        <dd>{levels.get(severity)?.length ?? 0}</dd>
+        <dd>{byLevel.get(level)?.length ?? 0}</dd>
       </div>
     {/each}
   </dl>

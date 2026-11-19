@@ -2,10 +2,20 @@
   import Crumbs from '#lib/components/Crumbs.svelte';
   import Seo from '#lib/components/Seo.svelte';
   import Tag from '#lib/components/Tag.svelte';
-  import { categories, levelOf, severities, severityKeys, type Category } from '#lib/data/types.ts';
+  import {
+    categories,
+    levelKeys,
+    levelOf,
+    levels,
+    severityKeys,
+    type Category,
+    type Level
+  } from '#lib/data/types.ts';
   import { site, suggestionUrl } from '#lib/site.ts';
 
   const kinds = Object.keys(categories) as Category[];
+  const gradesIn = (level: Level) =>
+    severityKeys.filter((severity) => levelOf(severity) === level).join(' or ');
   const crumbs = [
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' }
@@ -46,19 +56,22 @@
   </p>
 
   <h2>Reading the signs</h2>
-  <p>A sign's picture says what kind of change it was, and its colour says how bad.</p>
+  <p>
+    A sign's picture says what kind of change it was, and its colour says how bad. Each change is
+    graded from 1 to 5, and the colour shows which band its grade falls in.
+  </p>
   <ul class="signs">
     {#each kinds as category (category)}
       <li><Tag {category} link /></li>
     {/each}
   </ul>
   <dl class="levels">
-    {#each severityKeys as severity (severity)}
+    {#each levelKeys as level (level)}
       <div>
         <dt>
-          <span class="swatch" data-level={levelOf(severity)}></span>{severities[severity].name}
+          <span class="swatch" data-level={level}></span>{levels[level].name}
         </dt>
-        <dd>{severities[severity].means}.</dd>
+        <dd>{levels[level].means}, graded {gradesIn(level)}.</dd>
       </div>
     {/each}
   </dl>
@@ -87,7 +100,7 @@
 
   <h2>What it isn't</h2>
   <p>
-    It isn't a score. Each change gets a level, but there's no total: with a handful of entries per
+    It isn't a score. Each change gets a grade, but there's no total: with a handful of entries per
     service, any sum would rank how much has been written about each company rather than how much
     worse it got. The <a href="/prices">price league</a> is the one ranking, because prices are numbers
     nobody here made up.

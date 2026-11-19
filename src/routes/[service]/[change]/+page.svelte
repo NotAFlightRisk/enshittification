@@ -5,7 +5,7 @@
   import Seo from '#lib/components/Seo.svelte';
   import Tag from '#lib/components/Tag.svelte';
   import { formatDate, shortDate, yearOf } from '#lib/dates.ts';
-  import { categories, isHollow, levelOf, severities, statuses } from '#lib/data/types.ts';
+  import { categories, isHollow, levelOf, levels, statuses } from '#lib/data/types.ts';
   import { listOf } from '#lib/format.ts';
   import { absolute, correctionUrl, editUrl } from '#lib/site.ts';
 
@@ -63,8 +63,8 @@
     <Crumbs {crumbs} />
     <p class="signal" data-level={level}>
       <Pictogram kind={entry.category} severity={entry.severity} status={entry.status} />
-      <b>{severities[entry.severity].name}</b>
-      <span>{severities[entry.severity].means}</span>
+      <b>{levels[levelOf(entry.severity)].name}</b>
+      <span>{levels[levelOf(entry.severity)].means}</span>
     </p>
     <h1>{entry.title}</h1>
     <p class="answer">{entry.what_changed}</p>
@@ -132,7 +132,7 @@
   <section class="sources" aria-labelledby="sources">
     <h2 id="sources">Sources</h2>
     <ol>
-      {#each [...entry.sources, ...(entry.reversed?.sources ?? [])] as source (source.url)}
+      {#each [...entry.sources, ...(entry.reversed?.sources ?? [])] as source (source)}
         <li>
           <p class="who">
             <b>{source.publisher}</b>, {kinds[source.kind]}, {shortDate(source.published)}

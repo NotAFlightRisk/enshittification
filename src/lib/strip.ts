@@ -1,6 +1,7 @@
 import { shortDate, yearFraction } from '#lib/dates.ts';
 import {
-  severities,
+  levelOf,
+  levels,
   type Category,
   type Entry,
   type Severity,
@@ -52,7 +53,7 @@ export function marks(changes: Entry[], from: number, to: number): Mark[] {
     category: change.category,
     severity: change.severity,
     status: change.status,
-    label: `${severities[change.severity].name}, ${shortDate(change.date)}: ${change.title}`,
+    label: `${levels[levelOf(change.severity)].name}, ${shortDate(change.date)}: ${change.title}`,
     lane: wide[index],
     narrowLane: narrow[index]
   }));

@@ -285,7 +285,7 @@ changes:
     company_said: >-
       YouTube said ad blockers break its terms of service, and that ads support creators and let
       billions of people watch.
-    severity: 2
+    severity: 3
     status: in-force
     sources:
       - url: https://www.theverge.com/2023/10/31/23940583/youtube-ad-blocker-crackdown-broadening

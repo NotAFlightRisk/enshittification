@@ -395,7 +395,7 @@ changes:
       Basic and Premium subscribers could pay for one extra member outside their home, while people
       sharing a bundle or partner-billed account had to stop.
     company_said: Disney said a Disney+ subscription is meant to be used within one household.
-    severity: 2
+    severity: 3
     status: in-force
     regions: [US]
     sources:

@@ -1,14 +1,7 @@
 <script lang="ts">
   import Pictogram from '#lib/components/Pictogram.svelte';
   import { shortDate } from '#lib/dates.ts';
-  import {
-    categories,
-    isHollow,
-    levelOf,
-    severities,
-    statuses,
-    type Entry
-  } from '#lib/data/types.ts';
+  import { categories, isHollow, levelOf, levels, statuses, type Entry } from '#lib/data/types.ts';
 
   let {
     changes,
@@ -39,8 +32,8 @@
           <span>{categories[change.category]}</span>
           <span
             class="level"
-            class:danger={change.severity === 3 && !isHollow(change.status)}
-            data-level={levelOf(change.severity)}>{severities[change.severity].name}</span
+            class:danger={levelOf(change.severity) === 'danger' && !isHollow(change.status)}
+            data-level={levelOf(change.severity)}>{levels[levelOf(change.severity)].name}</span
           >
           {#if showStatus && change.status !== 'in-force'}
             <span class="status">{statuses[change.status]}</span>
