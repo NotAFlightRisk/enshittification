@@ -1,0 +1,681 @@
+service: windows
+name: Windows
+company: microsoft
+url: https://www.microsoft.com/windows
+crw: https://consumerrights.wiki/w/Microsoft_Windows
+wikipedia: https://en.wikipedia.org/wiki/Microsoft_Windows
+
+changes:
+  - id: diagnostic-data-always-on
+    date: 2015-07-29
+    date_kind: effective
+    category: tracking
+    title: Windows 10 sends diagnostic data to Microsoft that Home and Pro users can't turn off
+    question: Can you turn off telemetry in Windows 10?
+    what_changed: >-
+      Windows 10 came out on 29 July 2015 sending diagnostic data to Microsoft, which Home and Pro
+      users could turn down to Basic but never off. Microsoft's November 2015 guide for IT staff
+      offered a lower Security level only on Enterprise, Education and IoT Core, and its current
+      guide still only lets Server, Enterprise and Education turn diagnostic data off.
+    user_impact: >-
+      Windows 10 Home and Pro users could turn diagnostic data down to Basic, which tells Microsoft
+      about their device, what's installed on it and whether Windows is working, but had no setting
+      to turn it off.
+    company_said: >-
+      Microsoft said Basic data was vital to the operation of Windows and helped keep Windows and
+      apps running properly.
+    severity: 2
+    status: in-force
+    sources:
+      - url: https://technet.microsoft.com/en-us/library/mt577208(v=vs.85).aspx
+        publisher: Microsoft TechNet
+        kind: primary
+        published: 2015-11-12
+        archive: https://web.archive.org/web/20151117072049/https://technet.microsoft.com/en-us/library/mt577208(v=vs.85).aspx
+        quote: >-
+          Security (only available on Windows 10 Enterprise, Windows 10 Education, and Windows 10
+          IoT Core (IoT Core) editions)
+      - url: https://windows.microsoft.com/en-us/windows-10/feedback-diagnostics-privacy-faq
+        publisher: Microsoft
+        kind: primary
+        published: 2015-08-06
+        archive: https://web.archive.org/web/20150806073511/https://windows.microsoft.com/en-us/windows-10/feedback-diagnostics-privacy-faq
+        quote: >-
+          Basic information is data that is vital to the operation of Windows. This data helps keep
+          Windows and apps running properly by letting Microsoft know the capabilities of your
+          device, what is installed, and whether Windows is operating correctly.
+      - url: https://news.microsoft.com/2015/06/01/windows-10-available-as-a-free-upgrade-on-july-29/
+        publisher: Microsoft
+        kind: primary
+        published: 2015-06-01
+        archive: https://web.archive.org/web/20150731063036/https://news.microsoft.com/2015/06/01/windows-10-available-as-a-free-upgrade-on-july-29/
+        quote: On Monday, Microsoft Corp. announced that Windows 10 will be available July 29 in 190 countries.
+      - url: https://learn.microsoft.com/en-us/windows/privacy/configure-windows-diagnostic-data-in-your-organization
+        publisher: Microsoft Learn
+        kind: primary
+        published: 2025-09-11
+        archive: https://web.archive.org/web/20261028150527/https://learn.microsoft.com/en-us/windows/privacy/configure-windows-diagnostic-data-in-your-organization
+        quote: >-
+          When you configure this setting, no Windows diagnostic data is sent from your device. This
+          is only available on Windows Server, Windows Enterprise, and Windows Education editions.
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: cortana-search-edge-only
+    date: 2016-04-28
+    date_kind: announced
+    category: lock-out
+    title: Windows 10 opens web searches from the Cortana box only in Edge
+    question: Why does Windows search open in Edge?
+    what_changed: >-
+      Microsoft said on 28 April 2016 that Edge would be the only browser to open when you searched
+      from the Cortana box on the Windows 10 taskbar. It stopped the browser extensions and other
+      tricks people had used to send those searches to Google instead of Bing. Outside the EEA,
+      Windows search still opens Edge and Bing whatever your default browser, while in the EEA it
+      has used the default browser since 2025.
+    user_impact: >-
+      People who used another browser or search engine got their Cortana box searches in Edge and
+      Bing instead.
+    company_said: >-
+      Microsoft said the only way it could deliver its personalised, end-to-end search was through
+      Cortana, Edge and Bing working together.
+    severity: 2
+    status: in-force
+    related: [windows/edgedeflector-blocked]
+    sources:
+      - url: https://blogs.windows.com/windowsexperience/2016/04/28/delivering-personalized-search-experiences-in-windows-10-through-cortana/
+        publisher: Microsoft
+        kind: primary
+        published: 2016-04-28
+        archive: https://web.archive.org/web/20160430045222/https://blogs.windows.com/windowsexperience/2016/04/28/delivering-personalized-search-experiences-in-windows-10-through-cortana/
+        quote: >-
+          Starting today, to ensure we can deliver the integrated search experience designed for
+          Windows 10, Microsoft Edge will be the only browser that will launch when you search from
+          the Cortana box.
+      - url: https://blogs.windows.com/windowsexperience/2016/04/28/delivering-personalized-search-experiences-in-windows-10-through-cortana/
+        publisher: Microsoft
+        kind: primary
+        published: 2016-04-28
+        archive: https://web.archive.org/web/20160430045222/https://blogs.windows.com/windowsexperience/2016/04/28/delivering-personalized-search-experiences-in-windows-10-through-cortana/
+        quote: >-
+          The only way we can confidently deliver this personalized, end-to-end search experience is
+          through the integration of Cortana, Microsoft Edge and Bing
+      - url: https://www.theverge.com/2016/4/28/11532474/windows-10-block-google-search-cortana-bing-edge
+        publisher: The Verge
+        kind: press
+        published: 2016-04-28
+        archive: https://web.archive.org/web/20160429003157/https://www.theverge.com/2016/4/28/11532474/windows-10-block-google-search-cortana-bing-edge
+        quote: >-
+          which used browser extensions or even registry edits to establish Google as the default
+          engine for Cortana searches instead of Bing
+      - url: https://www.windowscentral.com/microsoft/windows-11/windows-11s-taskbar-search-might-finally-use-google-and-chrome-if-thats-what-you-want
+        publisher: Windows Central
+        kind: press
+        published: 2025-09-29
+        archive: https://web.archive.org/web/20250929135836/https://www.windowscentral.com/microsoft/windows-11/windows-11s-taskbar-search-might-finally-use-google-and-chrome-if-thats-what-you-want
+        quote: >-
+          In non-EEA markets, Windows is set to open Edge and use Bing whenever you type an internet
+          search query into the search box, regardless of what browser you have set as default.
+      - url: https://blogs.windows.com/windows-insider/2025/06/02/updates-to-windows-for-the-digital-markets-act/
+        publisher: Microsoft
+        kind: primary
+        published: 2025-06-02
+        archive: https://web.archive.org/web/20250731005843/https://blogs.windows.com/windows-insider/2025/06/02/updates-to-windows-for-the-digital-markets-act/
+        quote: >-
+          The Microsoft Bing app, which is a provider of web search experiences in Windows Search,
+          now opens web content with the default browser in the EEA.
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: file-explorer-onedrive-ads
+    date: 2017-03-09
+    date_kind: reported
+    category: ads
+    title: Windows 10 shows OneDrive ads inside File Explorer
+    what_changed: >-
+      The Verge reported on 9 March 2017 that Windows 10 was showing OneDrive ads at the top of File
+      Explorer's Quick Access screen. The ad showed the service's price and a button to learn more,
+      and a week later The Verge said they were encouraging people to pay $6.99 for an Office 365
+      subscription.
+    user_impact: >-
+      Windows 10 users who saw it got a Microsoft subscription ad in File Explorer. It could be
+      dismissed, but turning it off for good seemed to mean losing all notifications from file sync
+      providers.
+    company_said: >-
+      Microsoft said the tips were designed to help Windows 10 customers with quick, easy
+      information on storage and cloud file management, and that customers could opt out.
+    severity: 1
+    status: in-force
+    sources:
+      - url: https://www.theverge.com/2017/3/9/14872464/windows-10-onedrive-ads-inside-file-explorer
+        publisher: The Verge
+        kind: press
+        published: 2017-03-09
+        archive: https://web.archive.org/web/20170309225802/https://www.theverge.com/2017/3/9/14872464/windows-10-onedrive-ads-inside-file-explorer
+        quote: >-
+          But a newer prompt is clearly an ad, with Microsoft displaying the service's price and
+          letting people click a button to "learn more" about it.
+      - url: https://arstechnica.com/information-technology/2017/03/microsoft-put-gross-ads-in-windows-explorer-and-i-dont-have-the-energy-to-be-angry/
+        publisher: Ars Technica
+        kind: press
+        published: 2017-03-09
+        archive: https://web.archive.org/web/20170309231722/https://arstechnica.com/information-technology/2017/03/microsoft-put-gross-ads-in-windows-explorer-and-i-dont-have-the-energy-to-be-angry/
+        quote: >-
+          The new tips notifications within the File Explorer in Windows 10 were designed to help
+          Windows 10 customers by providing quick, easy information to enhance the experience
+          relative to storage and cloud file management.
+      - url: https://arstechnica.com/information-technology/2017/03/microsoft-put-gross-ads-in-windows-explorer-and-i-dont-have-the-energy-to-be-angry/
+        publisher: Ars Technica
+        kind: press
+        published: 2017-03-09
+        archive: https://web.archive.org/web/20170309231722/https://arstechnica.com/information-technology/2017/03/microsoft-put-gross-ads-in-windows-explorer-and-i-dont-have-the-energy-to-be-angry/
+        quote: >-
+          it seems that you can only do so as collateral damage from killing off all notifications
+          from file sync providers
+      - url: https://www.theverge.com/2017/3/17/14956540/microsoft-windows-10-ads-taskbar-file-explorer
+        publisher: The Verge
+        kind: press
+        published: 2017-03-17
+        archive: https://web.archive.org/web/20170317160655/https://www.theverge.com/2017/3/17/14956540/microsoft-windows-10-ads-taskbar-file-explorer
+        quote: >-
+          encouraging them to pay $6.99 for an Office 365 subscription
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: windows-11-home-account
+    date: 2021-10-05
+    date_kind: effective
+    category: lock-out
+    title: Windows 11 Home needs a Microsoft account and internet to set up
+    question: Does Windows 11 need a Microsoft account?
+    what_changed: >-
+      Windows 11 came out on 5 October 2021, and its Home edition needed an internet connection and
+      a Microsoft account to finish setting up a new PC. On earlier versions of Windows you could
+      choose a local account instead, though the option wasn't always easy to find.
+    before: A local account at setup
+    after: A Microsoft account and internet at setup
+    user_impact: >-
+      Anyone setting up a new Windows 11 Home PC had to be online and sign in with a Microsoft
+      account to finish.
+    severity: 2
+    status: in-force
+    related: [windows/windows-11-pro-account]
+    sources:
+      - url: https://www.microsoft.com/en-us/windows/windows-11-specifications
+        publisher: Microsoft
+        kind: primary
+        published: 2021-06-24
+        archive: https://web.archive.org/web/20210624155416/https://www.microsoft.com/en-us/windows/windows-11-specifications
+        quote: >-
+          Windows 11 Home edition requires internet connectivity and a Microsoft account to complete
+          device setup on first use.
+      - url: https://blogs.windows.com/windowsexperience/2021/10/04/windows-11-a-new-era-for-the-pc-begins-today/
+        publisher: Microsoft
+        kind: primary
+        published: 2021-10-04
+        archive: https://web.archive.org/web/20211004201814/https://blogs.windows.com/windowsexperience/2021/10/04/windows-11-a-new-era-for-the-pc-begins-today/
+        quote: >-
+          As the day becomes October 5 in each time zone around the world, availability of Windows 11
+          begins through a free upgrade on eligible Windows 10 PCs and on new PCs pre-installed with
+          Windows 11
+      - url: https://www.windowscentral.com/youll-need-internet-connection-and-microsoft-account-set-windows-11-home
+        publisher: Windows Central
+        kind: press
+        published: 2021-06-25
+        archive: https://web.archive.org/web/20210625120247/https://www.windowscentral.com/youll-need-internet-connection-and-microsoft-account-set-windows-11-home
+        quote: >-
+          On previous versions of Windows, you could choose to use a local account rather than a
+          Microsoft account. It wasn't always easy to find that option
+      - url: https://www.microsoft.com/en-us/windows/windows-11-specifications
+        publisher: Microsoft
+        kind: primary
+        published: 2026-11-09
+        archive: https://web.archive.org/web/20261109174001/https://www.microsoft.com/en-us/windows/windows-11-specifications
+        quote: >-
+          Windows 11 Pro for personal use and Windows 11 Home require internet connectivity and a
+          Microsoft account during initial device setup.
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: edgedeflector-blocked
+    date: 2021-11-22
+    date_kind: effective
+    category: lock-out
+    title: Windows 11 stops apps like EdgeDeflector opening its Edge links in other browsers
+    what_changed: >-
+      An optional Windows 11 update on 22 November 2021 stopped apps like EdgeDeflector opening
+      Windows' microsoft-edge: links in another browser. Windows 11 opened Start menu search results
+      and the Widgets panel's links in Edge whatever your default browser, and those apps were the
+      way round it. In the EEA, Microsoft made Windows search and Widgets use the default browser in
+      2025.
+    user_impact: >-
+      People using EdgeDeflector, which its developer said had 500,000 users, had Start menu search
+      and Widgets links open in Edge again.
+    company_said: >-
+      Microsoft said search from the taskbar is an end-to-end experience that isn't designed to be
+      redirected.
+    severity: 1
+    status: in-force
+    related: [windows/cortana-search-edge-only]
+    sources:
+      - url: https://support.microsoft.com/en-us/topic/november-22-2021-kb5007262-os-build-22000-348-preview-7f3e18d7-4189-4882-b0e9-afc920253aee
+        publisher: Microsoft Support
+        kind: primary
+        published: 2021-11-22
+        archive: https://web.archive.org/web/20211123012108/https://support.microsoft.com/en-us/topic/november-22-2021-kb5007262-os-build-22000-348-preview-7f3e18d7-4189-4882-b0e9-afc920253aee
+        quote: >-
+          Addresses an issue that might improperly redirect OS functionality when you invoke
+          microsoft-edge: links.
+      - url: https://www.theverge.com/2021/11/15/22782802/microsoft-block-edgedeflector-windows-11
+        publisher: The Verge
+        kind: press
+        published: 2021-11-15
+        archive: https://web.archive.org/web/20211115131029/https://www.theverge.com/2021/11/15/22782802/microsoft-block-edgedeflector-windows-11
+        quote: >-
+          Microsoft has decided to prevent app developers from invoking microsoft-edge protocol
+          links, which are now restricted to the Edge browser.
+      - url: https://www.theverge.com/2021/11/15/22782802/microsoft-block-edgedeflector-windows-11
+        publisher: The Verge
+        kind: press
+        published: 2021-11-15
+        archive: https://web.archive.org/web/20211115131029/https://www.theverge.com/2021/11/15/22782802/microsoft-block-edgedeflector-windows-11
+        quote: >-
+          Microsoft has been forcing Windows 10 and Windows 11 users into Edge and its Bing search
+          engine in the Start menu search results, and now with the new Widgets panel in Windows 11.
+      - url: https://www.theverge.com/2021/11/15/22782802/microsoft-block-edgedeflector-windows-11
+        publisher: The Verge
+        kind: press
+        published: 2021-11-15
+        archive: https://web.archive.org/web/20211115131029/https://www.theverge.com/2021/11/15/22782802/microsoft-block-edgedeflector-windows-11
+        quote: >-
+          the search experience from the taskbar is one such example of an end-to-end experience that
+          is not designed to be redirected.
+      - url: https://www.theverge.com/2021/11/15/22782802/microsoft-block-edgedeflector-windows-11
+        publisher: The Verge
+        kind: press
+        published: 2021-11-15
+        archive: https://web.archive.org/web/20211115131029/https://www.theverge.com/2021/11/15/22782802/microsoft-block-edgedeflector-windows-11
+        quote: The 500,000 EdgeDeflector users were probably never more than a nuisance to Microsoft
+      - url: https://blogs.windows.com/windows-insider/2025/06/02/updates-to-windows-for-the-digital-markets-act/
+        publisher: Microsoft
+        kind: primary
+        published: 2025-06-02
+        archive: https://web.archive.org/web/20250731005843/https://blogs.windows.com/windows-insider/2025/06/02/updates-to-windows-for-the-digital-markets-act/
+        quote: >-
+          The Start Experiences app, which is a provider of widget and feed experiences in the
+          Widgets Board and Lock Screen, now opens web content with the default browser in the EEA.
+      - url: https://blogs.windows.com/windows-insider/2025/06/02/updates-to-windows-for-the-digital-markets-act/
+        publisher: Microsoft
+        kind: primary
+        published: 2025-06-02
+        archive: https://web.archive.org/web/20250731005843/https://blogs.windows.com/windows-insider/2025/06/02/updates-to-windows-for-the-digital-markets-act/
+        quote: >-
+          The Microsoft Bing app, which is a provider of web search experiences in Windows Search,
+          now opens web content with the default browser in the EEA.
+      - url: https://www.windowscentral.com/microsoft/windows-11/windows-11s-taskbar-search-might-finally-use-google-and-chrome-if-thats-what-you-want
+        publisher: Windows Central
+        kind: press
+        published: 2025-09-29
+        archive: https://web.archive.org/web/20250929135836/https://www.windowscentral.com/microsoft/windows-11/windows-11s-taskbar-search-might-finally-use-google-and-chrome-if-thats-what-you-want
+        quote: >-
+          In non-EEA markets, Windows is set to open Edge and use Bing whenever you type an internet
+          search query into the search box, regardless of what browser you have set as default.
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: windows-11-pro-account
+    date: 2022-09-20
+    date_kind: effective
+    category: lock-out
+    title: Windows 11 Pro needs a Microsoft account and internet to set up for personal use
+    what_changed: >-
+      From the Windows 11 2022 Update on 20 September 2022, Windows 11 Pro set up for personal use
+      needed internet and a Microsoft account, as Home already did. Windows Central
+      reported that setup no longer offered the "I don't have internet" option that let you carry on
+      with a local account.
+    before: A local account at setup
+    after: A Microsoft account and internet at setup
+    user_impact: >-
+      People setting up Windows 11 Pro for personal use had to be online and sign in with a
+      Microsoft account to finish setup.
+    severity: 2
+    status: in-force
+    related: [windows/windows-11-home-account]
+    sources:
+      - url: https://www.microsoft.com/en-us/windows/windows-11-specifications
+        publisher: Microsoft
+        kind: primary
+        published: 2022-10-01
+        archive: https://web.archive.org/web/20221001211500/https://www.microsoft.com/en-us/windows/windows-11-specifications
+        quote: >-
+          Windows 11 Pro for personal use and Windows 11 Home require internet connectivity and a
+          Microsoft account during initial device setup.
+      - url: https://www.windowscentral.com/software-apps/windows-11/whats-new-with-the-out-of-box-experience-oobe-on-windows-11-2022-update
+        publisher: Windows Central
+        kind: press
+        published: 2022-09-20
+        archive: https://web.archive.org/web/20221006105542/https://www.windowscentral.com/software-apps/windows-11/whats-new-with-the-out-of-box-experience-oobe-on-windows-11-2022-update
+        quote: >-
+          If you don't have an internet connection, you won't be able to continue since the Windows
+          11 2022 Update requires you to create an account with a Microsoft account. This is true
+          for Windows 11 Home and Pro editions.
+      - url: https://www.windowscentral.com/software-apps/windows-11/whats-new-with-the-out-of-box-experience-oobe-on-windows-11-2022-update
+        publisher: Windows Central
+        kind: press
+        published: 2022-09-20
+        archive: https://web.archive.org/web/20221006105542/https://www.windowscentral.com/software-apps/windows-11/whats-new-with-the-out-of-box-experience-oobe-on-windows-11-2022-update
+        quote: >-
+          in the past, if an internet connection was not detected, you would see the "I don't have
+          internet" option that would let you continue with a local account, but that's no longer
+          the case
+      - url: https://www.microsoft.com/en-us/windows/windows-11-specifications
+        publisher: Microsoft
+        kind: primary
+        published: 2026-11-09
+        archive: https://web.archive.org/web/20261109174001/https://www.microsoft.com/en-us/windows/windows-11-specifications
+        quote: >-
+          Windows 11 Pro for personal use and Windows 11 Home require internet connectivity and a
+          Microsoft account during initial device setup.
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: new-outlook-imap-sync
+    date: 2023-11-10
+    date_kind: reported
+    category: tracking
+    title: The new Outlook for Windows sends IMAP passwords to Microsoft and syncs mail through it
+    what_changed: >-
+      Heise's c't magazine reported on 10 November 2023 that the new Outlook for Windows sends IMAP
+      account passwords to Microsoft. It sends the server, user name and password, and Microsoft's
+      cloud then syncs the mail. Microsoft told heise it stores those credentials, encrypted, in the
+      user's mailbox. The new Outlook replaced Windows Mail and Calendar, which stopped sending and
+      receiving email after 31 December 2024.
+    user_impact: >-
+      People who added an IMAP account that signs in with a password to the new Outlook had the
+      password and a copy of their mail stored by Microsoft, and Windows Mail users were pointed to
+      the new Outlook when Mail stopped working.
+    company_said: >-
+      Microsoft said syncing IMAP accounts gives a consistent experience for every account added to
+      Outlook, such as mail search being able to mark emails as read or unread.
+    severity: 2
+    status: in-force
+    sources:
+      - url: https://www.heise.de/en/news/Microsoft-lays-hands-on-login-data-Beware-of-the-new-Outlook-9608798.html
+        publisher: heise online
+        kind: press
+        published: 2023-11-10
+        archive: https://web.archive.org/web/20240126130534/https://www.heise.de/en/news/Microsoft-lays-hands-on-login-data-Beware-of-the-new-Outlook-9608798.html
+        quote: >-
+          When creating an IMAP account, c't was able to sniff the traffic between new Outlook and
+          the Microsoft servers. It contained the target server, log-in name and password which were
+          sent to those Servers of Microsoft.
+      - url: https://support.microsoft.com/en-us/office/sync-your-account-in-outlook-to-the-microsoft-cloud-985f9e19-d308-4e85-9d1d-0c6f32f8e981
+        publisher: Microsoft Support
+        kind: primary
+        published: 2026-05-10
+        archive: https://web.archive.org/web/20260510010508/https://support.microsoft.com/en-us/office/sync-your-account-in-outlook-to-the-microsoft-cloud-985f9e19-d308-4e85-9d1d-0c6f32f8e981
+        quote: >-
+          Syncing your account to the Microsoft Cloud means that a copy of your email, calendar, and
+          contacts will be synchronized between your email provider and Microsoft data centers.
+      - url: https://www.heise.de/news/Neues-Outlook-Microsoft-bezieht-Stellung-zur-Uebertragung-von-Zugangsdaten-9528869.html
+        publisher: heise online
+        kind: press
+        published: 2023-11-15
+        archive: https://web.archive.org/web/20231115183052/https://www.heise.de/news/Neues-Outlook-Microsoft-bezieht-Stellung-zur-Uebertragung-von-Zugangsdaten-9528869.html
+        quote: >-
+          Zugangsdaten zu IMAP-Anbietern, deren Server Microsoft mit dem BasicAuth-Verfahren
+          kontakiert, speichern wir als Benutzertoken in verschlüsselter Form in der Mailbox der
+          Anwender
+      - url: https://www.heise.de/news/Neues-Outlook-Microsoft-bezieht-Stellung-zur-Uebertragung-von-Zugangsdaten-9528869.html
+        publisher: heise online
+        kind: press
+        published: 2023-11-15
+        archive: https://web.archive.org/web/20231115183052/https://www.heise.de/news/Neues-Outlook-Microsoft-bezieht-Stellung-zur-Uebertragung-von-Zugangsdaten-9528869.html
+        quote: >-
+          Das Synchronisieren der IMAP-Konten der Nutzer hilft, eine konsistente Nutzererfahrung für
+          alle in Outlook hinzugefügte Konten zu liefern.
+      - url: https://support.microsoft.com/en-us/office/outlook-for-windows-the-future-of-mail-calendar-and-people-on-windows-11-715fc27c-e0f4-4652-9174-47faa751b199
+        publisher: Microsoft Support
+        kind: primary
+        published: 2025-01-14
+        archive: https://web.archive.org/web/20250114122416/https://support.microsoft.com/en-us/office/outlook-for-windows-the-future-of-mail-calendar-and-people-on-windows-11-715fc27c-e0f4-4652-9174-47faa751b199
+        quote: >-
+          Support for Windows Mail, Calendar, and People ended on December 31, 2024. You can no
+          longer able to send and receive emails or events using Windows Mail and Calendar.
+      - url: https://support.microsoft.com/en-us/office/outlook-for-windows-the-future-of-mail-calendar-and-people-on-windows-11-715fc27c-e0f4-4652-9174-47faa751b199
+        publisher: Microsoft Support
+        kind: primary
+        published: 2024-03-04
+        archive: https://web.archive.org/web/20240304205456/https://support.microsoft.com/en-us/office/outlook-for-windows-the-future-of-mail-calendar-and-people-on-windows-11-715fc27c-e0f4-4652-9174-47faa751b199
+        quote: >-
+          The Mail and Calendar applications will continue to be available via download in the
+          Microsoft Store through December 31, 2024. After this date the Mail & Calendar applications
+          will no longer be supported.
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: start-menu-store-apps
+    date: 2024-04-23
+    date_kind: announced
+    effective: 2024-05-14
+    category: ads
+    title: Windows 11 puts Microsoft Store apps in the Start menu's Recommended section
+    question: Can you turn off ads in the Windows 11 Start menu?
+    what_changed: >-
+      Microsoft said on 23 April 2024 that the Recommended section of the Windows 11 Start menu
+      would show some Microsoft Store apps. They come from a small set of curated developers, and
+      they show unless you turn off "Show recommendations for tips, app promotions, and more" in
+      Settings > Personalization > Start. It came in an optional update first, then in the May
+      2024 security update.
+    user_impact: >-
+      Windows 11 users on versions 22H2 and 23H2 started getting app promotions in the Start menu as
+      the change rolled out, unless they turned the setting off.
+    company_said: Microsoft said it would help people discover some of the great apps that are available.
+    severity: 1
+    status: in-force
+    sources:
+      - url: https://support.microsoft.com/en-us/topic/april-23-2024-kb5036980-os-builds-22621-3527-and-22631-3527-preview-5a0d6c49-e42e-4eb4-8541-33a7139281ed
+        publisher: Microsoft Support
+        kind: primary
+        published: 2024-04-23
+        archive: https://web.archive.org/web/20240424014610/https://support.microsoft.com/en-us/topic/april-23-2024-kb5036980-os-builds-22621-3527-and-22631-3527-preview-5a0d6c49-e42e-4eb4-8541-33a7139281ed
+        quote: >-
+          The Recommended section of the Start menu will show some Microsoft Store apps. These apps
+          come from a small set of curated developers. This will help you to discover some of the
+          great apps that are available.
+      - url: https://support.microsoft.com/en-us/topic/april-23-2024-kb5036980-os-builds-22621-3527-and-22631-3527-preview-5a0d6c49-e42e-4eb4-8541-33a7139281ed
+        publisher: Microsoft Support
+        kind: primary
+        published: 2024-04-23
+        archive: https://web.archive.org/web/20240424014610/https://support.microsoft.com/en-us/topic/april-23-2024-kb5036980-os-builds-22621-3527-and-22631-3527-preview-5a0d6c49-e42e-4eb4-8541-33a7139281ed
+        quote: Turn off the toggle for Show recommendations for tips, app promotions, and more
+      - url: https://support.microsoft.com/en-us/topic/may-14-2024-kb5037771-os-builds-22621-3593-and-22631-3593-e633ff2f-a021-4abb-bd2e-7f3687f166fe
+        publisher: Microsoft Support
+        kind: primary
+        published: 2024-05-14
+        archive: https://web.archive.org/web/20240514222727/https://support.microsoft.com/en-us/topic/may-14-2024-kb5037771-os-builds-22621-3593-and-22631-3593-e633ff2f-a021-4abb-bd2e-7f3687f166fe
+        quote: >-
+          This security update includes improvements that were a part of update KB5036980
+          (released April 23, 2024).
+      - url: https://www.theverge.com/2024/4/24/24138949/microsoft-windows-11-start-menu-ads-recommendations-setting-disable
+        publisher: The Verge
+        kind: press
+        published: 2024-04-24
+        archive: https://web.archive.org/web/20240424093356/https://www.theverge.com/2024/4/24/24138949/microsoft-windows-11-start-menu-ads-recommendations-setting-disable
+        quote: >-
+          While KB5036980 is optional right now, Microsoft will push this to all Windows 11
+          machines in the coming weeks.
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: onedrive-backup-at-setup
+    date: 2024-06-24
+    date_kind: reported
+    category: tracking
+    title: Windows 11 setup turns on OneDrive folder backup without asking
+    question: Why is OneDrive backing up my desktop in Windows 11?
+    what_changed: >-
+      Neowin reported on 24 June 2024 that Windows 11 setup was turning on OneDrive folder backup
+      without asking when you sign in with a Microsoft account. People reached the desktop with
+      folders like Desktop, Documents and Pictures already syncing to OneDrive, where before you had
+      to turn backup on yourself. It can be turned off afterwards, and isn't turned on for local
+      accounts or existing installs.
+    user_impact: >-
+      People setting up a new Windows 11 PC with a Microsoft account could find their folders
+      syncing to OneDrive without being asked, and anyone who filled its free 5GB was prompted to
+      pay for more.
+    severity: 2
+    status: in-force
+    sources:
+      - url: https://www.theregister.com/2024/06/26/microsoft_makes_onedrive_avoidance_trickier/
+        publisher: The Register
+        kind: press
+        published: 2024-06-26
+        archive: https://web.archive.org/web/20240626185406/https://www.theregister.com/2024/06/26/microsoft_makes_onedrive_avoidance_trickier/
+        quote: >-
+          a change in Windows 11's setup for new devices has resulted in OneDrive being fired up for
+          automatic folder backup without first asking for authorization.
+      - url: https://www.theregister.com/2024/06/26/microsoft_makes_onedrive_avoidance_trickier/
+        publisher: The Register
+        kind: press
+        published: 2024-06-26
+        archive: https://web.archive.org/web/20240626185406/https://www.theregister.com/2024/06/26/microsoft_makes_onedrive_avoidance_trickier/
+        quote: >-
+          The feature can be turned off – and won't be turned on for users able to dodge the
+          Microsoft Account requirement or for existing Windows 11 installations
+      - url: https://www.theregister.com/2024/06/26/microsoft_makes_onedrive_avoidance_trickier/
+        publisher: The Register
+        kind: press
+        published: 2024-06-26
+        archive: https://web.archive.org/web/20240626185406/https://www.theregister.com/2024/06/26/microsoft_makes_onedrive_avoidance_trickier/
+        quote: >-
+          This will be particularly annoying when OneDrive's 5GB of free personal storage is
+          exhausted, and the user is prompted to set up a subscription to add more capacity.
+      - url: https://www.pcworld.com/article/2376883/attention-microsoft-activates-this-feature-in-windows-11-without-asking-you.html
+        publisher: PCWorld
+        kind: press
+        published: 2024-06-25
+        archive: https://web.archive.org/web/20240626011309/https://www.pcworld.com/article/2376883/attention-microsoft-activates-this-feature-in-windows-11-without-asking-you.html
+        quote: >-
+          Previously, you had to explicitly activate automatic folder backups, and Microsoft would
+          ping you with recurring notifications to remind you of the feature if it wasn't enabled.
+      - url: https://www.neowin.net/news/windows-11-is-now-automatically-enabling-onedrive-folder-backup-without-asking-permission/
+        publisher: Neowin
+        kind: press
+        published: 2024-06-24
+        archive: https://web.archive.org/web/20240624212128/https://www.neowin.net/news/windows-11-is-now-automatically-enabling-onedrive-folder-backup-without-asking-permission/
+        quote: >-
+          will get to their desktops with OneDrive already syncing stuff from folders like Desktop
+          Pictures, Documents, Music, and Videos.
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: settings-game-pass-ad
+    date: 2024-06-25
+    date_kind: announced
+    effective: 2024-07-09
+    category: ads
+    title: Windows 11 adds a Game Pass ad to the Settings home page
+    what_changed: >-
+      Microsoft said on 25 June 2024 that Windows 11 would add a Game Pass recommendation card to
+      the Settings home page. It shows on Home and Pro editions signed in with a Microsoft account,
+      if you actively play games on the PC. It came in an optional update first, then in the July
+      2024 security update, rolling out gradually.
+    user_impact: >-
+      Windows 11 Home and Pro users who play games on their PC started seeing an ad for Microsoft's
+      Game Pass subscription in the Settings app as it rolled out.
+    severity: 1
+    status: in-force
+    sources:
+      - url: https://support.microsoft.com/en-us/topic/june-25-2024-kb5039302-os-builds-22621-3810-and-22631-3810-preview-0ab34e3f-bca9-4a52-a1a4-404bf8162f58
+        publisher: Microsoft Support
+        kind: primary
+        published: 2024-06-25
+        archive: https://web.archive.org/web/20240625214406/https://support.microsoft.com/en-us/topic/june-25-2024-kb5039302-os-builds-22621-3810-and-22631-3810-preview-0ab34e3f-bca9-4a52-a1a4-404bf8162f58
+        quote: >-
+          This update adds a new Game Pass recommendation card on the Settings home page. This home
+          page shows on Home and Pro editions when you sign in to Windows using your Microsoft
+          account. The card appears if you actively play games on your PC.
+      - url: https://support.microsoft.com/en-us/topic/july-9-2024-kb5040442-os-builds-22621-3880-and-22631-3880-0864308e-61cc-413b-8194-0294331aba52
+        publisher: Microsoft Support
+        kind: primary
+        published: 2024-07-09
+        archive: https://web.archive.org/web/20240709190656/https://support.microsoft.com/en-us/topic/july-9-2024-kb5040442-os-builds-22621-3880-and-22631-3880-0864308e-61cc-413b-8194-0294331aba52
+        quote: >-
+          This security update includes improvements that were a part of update KB5039302
+          (released June 25, 2024).
+      - url: https://www.windowscentral.com/software-apps/windows-11/windows-11s-july-patch-tuesday-update-squashes-bugs-brings-improvements-and-adds-an-ad-to-your-pc
+        publisher: Windows Central
+        kind: press
+        published: 2024-07-09
+        archive: https://web.archive.org/web/20240709201050/https://www.windowscentral.com/software-apps/windows-11/windows-11s-july-patch-tuesday-update-squashes-bugs-brings-improvements-and-adds-an-ad-to-your-pc
+        quote: >-
+          Those who play games on their PC will see an advertisement for Game Pass, while those who
+          do not game should not see the ad.
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: windows-10-new-pc-ads
+    date: 2024-11-20
+    date_kind: reported
+    category: ads
+    title: Windows 10 shows full-screen prompts to buy a new Windows 11 PC
+    what_changed: >-
+      The Verge reported on 20 November 2024 that Windows 10 was showing full-screen prompts telling
+      people to buy a new Windows 11 PC. They said to "level up to the new Copilot Plus PCs", and
+      the link went to a promotional site with links to new PCs. Microsoft had used similar
+      prompts earlier in 2024 to warn about the end of Windows 10 support.
+    user_impact: >-
+      Some Windows 10 users had their whole screen taken over by an ad for new Windows 11 PCs.
+    severity: 1
+    status: in-force
+    sources:
+      - url: https://www.theverge.com/2024/11/20/24301768/microsoft-windows-10-upgrade-prompt-copilot-plus-pcs
+        publisher: The Verge
+        kind: press
+        published: 2024-11-20
+        archive: https://web.archive.org/web/20241120210347/https://www.theverge.com/2024/11/20/24301768/microsoft-windows-10-upgrade-prompt-copilot-plus-pcs
+        quote: >-
+          Earlier this year, Microsoft started using fullscreen prompts to warn Windows 10 users
+          about the support cutoff, and now it's using similar prompts to try and tempt people to
+          buy a new Windows 11 PC instead.
+      - url: https://www.theverge.com/2024/11/20/24301768/microsoft-windows-10-upgrade-prompt-copilot-plus-pcs
+        publisher: The Verge
+        kind: press
+        published: 2024-11-20
+        archive: https://web.archive.org/web/20241120210347/https://www.theverge.com/2024/11/20/24301768/microsoft-windows-10-upgrade-prompt-copilot-plus-pcs
+        quote: >-
+          Like the prompts earlier this year, the read more link goes to a promotional site that
+          includes links to new Windows 11 PCs.
+      - url: https://www.pcworld.com/article/2528510/windows-10-gets-fullscreen-ads-that-say-buy-a-new-pc-already.html
+        publisher: PCWorld
+        kind: press
+        published: 2024-11-21
+        archive: https://web.archive.org/web/20241121160515/https://www.pcworld.com/article/2528510/windows-10-gets-fullscreen-ads-that-say-buy-a-new-pc-already.html
+        quote: >-
+          Rather, this new alert spotted by The Verge is just a full-on advertisement for a
+          brand-new laptop.
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
