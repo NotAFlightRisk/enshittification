@@ -26,7 +26,7 @@ plans:
     region: US
     currency: USD
     billing: month
-    since: 2013-01-29
+    since: 2013-02
     price: 9.99
     source:
       url: https://www.computerworld.com/article/2495146/faq--microsoft-rents-out-office-365.html
@@ -152,14 +152,14 @@ changes:
     date: 2015-11-02
     date_kind: announced
     category: removed-feature
-    title: Office 365 Home and Personal lose unlimited OneDrive storage and get 1TB
+    title: Microsoft stops rolling out unlimited OneDrive storage to Office 365 and caps it at 1TB
     question: When did Microsoft end unlimited OneDrive storage?
     what_changed: >-
-      Microsoft said on 2 November 2015 that Office 365 Home, Personal and University would get 1TB
-      of OneDrive storage, not unlimited. It had started rolling out unlimited storage to them, and
-      anyone already over 1TB could keep the extra for at least 12 months, or take a pro-rated
-      refund.
-    before: Unlimited OneDrive storage
+      Microsoft said on 2 November 2015 that Office 365 Home, Personal and University would include
+      1TB of OneDrive storage, not unlimited. It had started rolling out unlimited storage to them.
+      Subscribers already over 1TB could keep the extra for at least 12 months, and any consumer
+      subscriber who found Office 365 no longer met their needs could get a pro-rated refund.
+    before: Unlimited storage, rolling out
     after: 1TB
     user_impact: >-
       Subscribers got 1TB in place of the unlimited storage Microsoft had started rolling out, and
@@ -167,7 +167,7 @@ changes:
     company_said: >-
       Microsoft said a small number of users had backed up numerous PCs and stored entire movie
       collections and DVR recordings, in some cases over 75TB each.
-    severity: 2
+    severity: 1
     status: in-force
     sources:
       - url: https://blogs.office.com/2015/11/02/onedrive_changes/
@@ -197,52 +197,12 @@ changes:
           Since we started to roll out unlimited cloud storage to Office 365 consumer subscribers, a
           small number of users backed up numerous PCs and stored entire movie collections and DVR
           recordings. In some instances, this exceeded 75 TB per user or 14,000 times the average.
-    added: 2026-11-19
-    updated: 2026-11-19
-    sources_checked: 2026-11-19
-    status_checked: 2026-11-19
-
-  - id: money-in-excel-ends
-    date: 2023-06-30
-    date_kind: effective
-    category: removed-feature
-    title: Microsoft 365 drops Money in Excel, Wolfram data types and partner offers
-    what_changed: >-
-      Microsoft took Money in Excel out of Microsoft 365 Personal and Family on 30 June 2023, after
-      the Wolfram data types in Excel stopped on 11 June. Partner offers for subscribers went too.
-      Money in Excel had pulled bank transactions into a workbook, in the US only.
-    user_impact: >-
-      Subscribers who tracked their money in Excel stopped getting new transactions, and Wolfram
-      data types stopped refreshing, with no change to the price.
-    company_said: >-
-      Microsoft said there were other areas where it could have a greater impact, and that it was
-      choosing not to renew the Wolfram partnership for this range of data.
-    severity: 1
-    status: in-force
-    sources:
-      - url: https://support.microsoft.com/en-us/office/end-of-support-for-money-in-excel-wolfram-data-types-and-partner-offers-43ceac07-794e-4015-af04-21bb4795a14a
-        publisher: Microsoft Support
-        kind: primary
-        published: 2022-05-25
-        archive: https://web.archive.org/web/20220526184732/https://support.microsoft.com/en-us/office/end-of-support-for-money-in-excel-wolfram-data-types-and-partner-offers-43ceac07-794e-4015-af04-21bb4795a14a
-        quote: >-
-          No, once Money in Excel ends on June 30, 2023, you will no longer receive updates to your
-          transactions or receive new transactions.
-      - url: https://support.microsoft.com/en-us/office/end-of-support-for-money-in-excel-wolfram-data-types-and-partner-offers-43ceac07-794e-4015-af04-21bb4795a14a
-        publisher: Microsoft Support
-        kind: primary
-        published: 2022-05-25
-        archive: https://web.archive.org/web/20220526184732/https://support.microsoft.com/en-us/office/end-of-support-for-money-in-excel-wolfram-data-types-and-partner-offers-43ceac07-794e-4015-af04-21bb4795a14a
-        quote: >-
-          No, once the service connecting Excel with Wolfram ends on June 11, 2023, you will no
-          longer be able to create new Wolfram data types, refresh the data of existing ones, follow
-          links to new data, or access new Wolfram images.
-      - url: https://support.microsoft.com/en-us/office/end-of-support-for-money-in-excel-wolfram-data-types-and-partner-offers-43ceac07-794e-4015-af04-21bb4795a14a
-        publisher: Microsoft Support
-        kind: primary
-        published: 2022-05-25
-        archive: https://web.archive.org/web/20220526184732/https://support.microsoft.com/en-us/office/end-of-support-for-money-in-excel-wolfram-data-types-and-partner-offers-43ceac07-794e-4015-af04-21bb4795a14a
-        quote: Why are you removing unique partner offers from Microsoft 365 Personal and Family subscriptions?
+      - url: https://www.microsoft.com/en-us/microsoft-365/p/microsoft-365-family/cfq7ttc0k5dm
+        publisher: Microsoft
+        kind: pricing-page
+        published: 2026-10-07
+        archive: https://web.archive.org/web/20261007104841/https://www.microsoft.com/en-us/microsoft-365/p/microsoft-365-family/cfq7ttc0k5dm
+        quote: Up to 6 TB of cloud storage (1 TB per person)
     added: 2026-11-19
     updated: 2026-11-19
     sources_checked: 2026-11-19
@@ -301,12 +261,11 @@ changes:
     title: Microsoft 365 Family loses Family Safety's location alerts and drive safety
     what_changed: >-
       Microsoft removed location sharing and drive safety from Family Safety on 29 November 2024.
-      Location alerts and drive safety were the premium Family Safety features that came with
+      Location alerts and drive safety were among the premium Family Safety features that came with
       Microsoft 365 Family.
     user_impact: >-
-      Families who used Family Safety to see where each other were, or Microsoft 365 Family
-      subscribers who'd bought it for location alerts or drive safety, lost them with no change to
-      the price.
+      Families who used Family Safety to see where each other were, and Microsoft 365 Family
+      subscribers who'd bought it for location alerts or drive safety, lost them.
     company_said: >-
       Microsoft said subscribers used the digital safety features much more than the physical
       safety ones.
@@ -316,11 +275,11 @@ changes:
       - url: https://support.microsoft.com/en-us/account-billing/end-of-support-for-location-and-drive-safety-fac9830e-97b1-46f2-8a70-54aa71fa7e9f
         publisher: Microsoft Support
         kind: primary
-        published: 2024-02-24
-        archive: https://web.archive.org/web/20240224052035/https://support.microsoft.com/en-us/account-billing/end-of-support-for-location-and-drive-safety-fac9830e-97b1-46f2-8a70-54aa71fa7e9f
+        published: 2025-07-25
+        archive: https://web.archive.org/web/20250725132147/https://support.microsoft.com/en-us/account-billing/end-of-support-for-location-and-drive-safety-fac9830e-97b1-46f2-8a70-54aa71fa7e9f
         quote: >-
-          Location and driving safety features will be removed from Microsoft Family Safety on
-          November 29, 2024.
+          Location and driving safety features were removed from Microsoft Family Safety on November
+          29, 2024.
       - url: https://support.microsoft.com/en-us/account-billing/end-of-support-for-location-and-drive-safety-fac9830e-97b1-46f2-8a70-54aa71fa7e9f
         publisher: Microsoft Support
         kind: primary
@@ -352,13 +311,13 @@ changes:
       Microsoft said on 16 January 2025 that Microsoft 365 Personal and Family would cost $3 a month
       more in the US, the first rise since launch, with Copilot added. Personal went from $69.99 to
       $99.99 a year and Family from $99.99 to $129.99. Existing subscribers paid it from their next
-      renewal, or for a limited time could switch to a Classic plan without Copilot, offered when
-      they went to cancel.
+      renewal, unless they switched to Basic or, for a limited time, to a Classic plan without
+      Copilot, which Microsoft said might not always be offered and was found by going to cancel.
     before: Personal $69.99, Family $99.99 a year
     after: Personal $99.99, Family $129.99 a year
     user_impact: >-
-      US subscribers paid 43% more for Personal and 30% more for Family, unless they moved to a
-      plan without Copilot.
+      US subscribers paid 43% more for Personal and 30% more for Family, unless they dropped to
+      Basic or took a Classic plan while it was offered.
     company_said: >-
       Microsoft said the rise reflected the benefits it had added over the past 12 years and would
       fund new innovations.
@@ -396,6 +355,14 @@ changes:
         published: 2025-01-16
         archive: https://web.archive.org/web/20250116200840/https://support.microsoft.com/en-us/office/switching-to-microsoft-365-personal-and-family-classic-plans-58342e83-38e7-4cda-b63b-88604a8fb7ef
         quote: Find your current subscription and select Manage > Cancel subscription
+      - url: https://support.microsoft.com/en-us/office/switching-to-microsoft-365-personal-and-family-classic-plans-58342e83-38e7-4cda-b63b-88604a8fb7ef
+        publisher: Microsoft Support
+        kind: primary
+        published: 2025-01-16
+        archive: https://web.archive.org/web/20250116200840/https://support.microsoft.com/en-us/office/switching-to-microsoft-365-personal-and-family-classic-plans-58342e83-38e7-4cda-b63b-88604a8fb7ef
+        quote: >-
+          Microsoft 365 Personal Classic and Microsoft 365 Family Classic plans are limited offers and
+          may not always be offered as a plan option.
       - url: https://www.theregister.com/2025/01/17/copilot_microsoft_365/
         publisher: The Register
         kind: press
@@ -470,17 +437,18 @@ changes:
     date: 2025-01-16
     date_kind: announced
     category: ai
-    title: Copilot goes into Microsoft 365's apps, with no off switch on phones or the web
+    title: Copilot goes into Microsoft 365's apps, with no Copilot-only switch on phones or the web
     question: Can you turn off Copilot in Microsoft 365?
     what_changed: >-
       Microsoft put Copilot into Word, Excel, PowerPoint, Outlook and OneNote for Personal and
-      Family subscribers on 16 January 2025, on their next update. At first the only way to turn it
-      off was a privacy setting that turns off other features too. Per-app switches came to Windows
-      and Mac by March 2025, but Microsoft says you can't turn it off in the iOS, Android or web
-      versions of Word, Excel or PowerPoint.
+      Family subscribers in most markets on 16 January 2025. On Family it's the owner's alone. At
+      first the only way to turn it off was a privacy setting that turns off other features too.
+      Windows and Mac versions got an Enable Copilot checkbox from March 2025, but Microsoft says you
+      can't turn it off in the iOS, Android or web versions of Word, Excel or PowerPoint, other than
+      with that privacy setting.
     user_impact: >-
-      Every Personal and Family subscriber got Copilot, and anyone using Word, Excel or PowerPoint
-      on a phone or the web still has no way to turn it off on its own.
+      Personal subscribers and Family owners got Copilot in their apps, and anyone using Word, Excel
+      or PowerPoint on a phone or the web can only turn it off by turning off other features too.
     company_said: >-
       Microsoft said it was adding settings in apps like Word, Excel and PowerPoint to disable or
       enable Copilot as needed.
@@ -496,12 +464,26 @@ changes:
         quote: >-
           Existing Microsoft 365 Personal and Family subscribers in most markets will automatically
           get access to Copilot in their apps once they update to the latest version.
+      - url: https://www.microsoft.com/en-us/microsoft-365/blog/2025/01/16/copilot-is-now-included-in-microsoft-365-personal-and-family/
+        publisher: Microsoft
+        kind: primary
+        published: 2025-01-16
+        archive: https://web.archive.org/web/20250116203624/https://www.microsoft.com/en-us/microsoft-365/blog/2025/01/16/copilot-is-now-included-in-microsoft-365-personal-and-family/
+        quote: >-
+          For Microsoft 365 Family subscribers, Copilot will be available to the subscription owner
+          and cannot be shared with others.
       - url: https://support.microsoft.com/en-us/privacy/turn-off-copilot-in-microsoft-365-apps
         publisher: Microsoft Support
         kind: primary
         published: 2026-10-13
         archive: https://web.archive.org/web/20261013042708/https://support.microsoft.com/en-us/privacy/turn-off-copilot-in-microsoft-365-apps
         quote: You can't turn off Copilot in the iOS, Android, or web versions of Word, Excel, or PowerPoint.
+      - url: https://support.microsoft.com/en-us/privacy/turn-off-copilot-in-microsoft-365-apps
+        publisher: Microsoft Support
+        kind: primary
+        published: 2026-10-13
+        archive: https://web.archive.org/web/20261013042708/https://support.microsoft.com/en-us/privacy/turn-off-copilot-in-microsoft-365-apps
+        quote: In the meantime, you can change your privacy settings to turn off Copilot
       - url: https://support.microsoft.com/en-us/privacy/turn-off-copilot-in-microsoft-365-apps
         publisher: Microsoft Support
         kind: primary
@@ -532,8 +514,7 @@ changes:
       Microsoft switched off privacy protection, the VPN in the Microsoft Defender app, on 28
       February 2025. Defender needs a Microsoft 365 Personal or Family subscription, and the VPN
       came with up to 50GB a month.
-    user_impact: >-
-      Personal and Family subscribers who used the VPN lost it, with no change to the price.
+    user_impact: Personal and Family subscribers who used the VPN lost it.
     company_said: >-
       Microsoft said it routinely evaluates the usage and effectiveness of its features, and would
       invest in new areas.
@@ -543,8 +524,8 @@ changes:
       - url: https://support.microsoft.com/en-us/topic/end-of-support-privacy-protection-vpn-in-microsoft-defender-for-individuals-8b503da5-732a-4472-833a-e2ddca53036a
         publisher: Microsoft Support
         kind: primary
-        published: 2025-01-31
-        archive: https://web.archive.org/web/20250131224626/https://support.microsoft.com/en-us/topic/end-of-support-privacy-protection-vpn-in-microsoft-defender-for-individuals-8b503da5-732a-4472-833a-e2ddca53036a
+        published: 2026-02-07
+        archive: https://web.archive.org/web/20260207201545/https://support.microsoft.com/en-us/topic/end-of-support-privacy-protection-vpn-in-microsoft-defender-for-individuals-8b503da5-732a-4472-833a-e2ddca53036a
         quote: The privacy protection (VPN) feature within Defender is going away February 28, 2025.
       - url: https://support.microsoft.com/en-us/topic/end-of-support-privacy-protection-vpn-in-microsoft-defender-for-individuals-8b503da5-732a-4472-833a-e2ddca53036a
         publisher: Microsoft Support
@@ -569,12 +550,12 @@ changes:
     category: removed-feature
     title: Microsoft takes Publisher out of Microsoft 365
     what_changed: >-
-      Microsoft took Publisher out of Microsoft 365 from 1 October 2026, as an update removes it.
-      Subscribers can't open or edit their Publisher files in it any more, while people who bought
-      a perpetual copy can keep using theirs.
+      Microsoft 365 subscribers lost Publisher on or shortly after 1 October 2026, as an update
+      removed it. They can't open or edit their Publisher files in it any more, while people who
+      bought a perpetual copy can keep using theirs. Microsoft had announced it in February 2024.
     user_impact: >-
       Subscribers who made things in Publisher lost the app and had to convert their files to
-      another format, with no change to the price.
+      another format.
     company_said: Microsoft said it occasionally removes features and products to focus on new benefits.
     severity: 2
     status: in-force
@@ -613,17 +594,17 @@ changes:
     date: 2026-10-08
     date_kind: effective
     category: removed-feature
-    title: Microsoft 365 Family goes from 1TB per person to 2TB shared by up to 6 people
+    title: Microsoft 365 Family starts moving from 1TB each to 2TB shared by up to 6 people
     question: Is Microsoft 365 Family storage shared now?
     what_changed: >-
-      From 8 October 2026, new Microsoft 365 Family subscriptions share 2TB of storage between
-      everyone on the plan, where each of up to 6 people had their own 1TB. Existing subscriptions
-      move over when they renew on or after 2 May 2027.
+      From 8 October 2026, new and upgraded Microsoft 365 Family subscriptions share 2TB between
+      everyone on the plan, where each of up to 6 people had 1TB. Existing subscriptions move over
+      when they renew on or after 2 May 2027.
     before: 1TB each, up to 6TB
     after: 2TB shared
     user_impact: >-
-      Families of 3 or more, or 2 people storing over 1TB between them, get less space for the same
-      $129.99 a year, with up to a year to get under the limit.
+      Families of 3 or more get less space between them for the same $129.99 a year, and a plan
+      that's over the limit can still get to its files for up to a year while it clears space.
     company_said: >-
       Microsoft said shared storage stops one person running out of space while others have unused
       storage.
