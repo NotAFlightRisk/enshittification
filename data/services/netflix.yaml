@@ -1,0 +1,770 @@
+service: netflix
+name: Netflix
+company: netflix
+url: https://www.netflix.com
+crw: https://consumerrights.wiki/w/Netflix
+wikipedia: https://en.wikipedia.org/wiki/Netflix
+
+plans:
+  - id: standard-us
+    name: Standard
+    region: US
+    currency: USD
+    billing: month
+    since: 2010-11-22
+    price: 7.99
+    source:
+      url: https://blog.netflix.com/2010/11/new-plan-for-watching-instantly-plus.html
+      publisher: Netflix Blog
+      kind: primary
+      published: 2010-11-22
+      archive: https://web.archive.org/web/20101123023025/http://blog.netflix.com/2010/11/new-plan-for-watching-instantly-plus.html
+      quote: >-
+        First, we are now offering a new $7.99 a month plan which lets you instantly watch unlimited
+        TV episodes and movies streamed to your computer or TV.
+
+  - id: premium-us
+    name: Premium
+    region: US
+    currency: USD
+    billing: month
+    since: '2013'
+    price: 11.99
+    source:
+      url: https://www.sec.gov/Archives/edgar/data/1065280/000106528015000006/nflx201410k.htm
+      publisher: Netflix (SEC filing)
+      kind: primary
+      published: 2015-01-29
+      archive: https://web.archive.org/web/20150205062046/https://www.sec.gov/Archives/edgar/data/1065280/000106528015000006/nflx201410k.htm
+      quote: >-
+        Our premium plan, which we introduced in the second quarter of 2013, is priced at $11.99 per
+        month and includes access to high definition and ultra-high definition quality content on four
+        screens concurrently.
+
+  - id: ads-us
+    name: Standard with ads
+    region: US
+    currency: USD
+    billing: month
+    since: 2022-11-03
+    price: 6.99
+    source:
+      url: https://about.netflix.com/en/news/our-newest-plan-now-available-us
+      publisher: Netflix Newsroom
+      kind: primary
+      published: 2022-11-03
+      archive: https://web.archive.org/web/20221103164537/https://about.netflix.com/en/news/our-newest-plan-now-available-us
+      quote: We are excited to begin rolling out a new plan at $6.99/month from November 3 in the US.
+
+changes:
+  - id: dvd-streaming-split
+    date: 2011-07-12
+    date_kind: announced
+    effective: 2011-09-01
+    category: price-rise
+    title: Netflix splits DVDs and streaming, taking the combined plan from $9.99 to $15.98
+    what_changed: >-
+      Netflix said on 12 July 2011 that its $9.99 plan for streaming and DVDs would become a $7.99
+      streaming plan and a $7.99 DVD plan, or $15.98 for both. New members paid it
+      straight away and existing ones from 1 September 2011, while streaming on its own stayed at
+      $7.99.
+    before: $9.99 a month for streaming and DVDs
+    after: $15.98 a month for both
+    user_impact: Members who kept both streaming and DVDs paid 60% more.
+    company_said: >-
+      Netflix said separate plans would better reflect the cost of each and give members a choice.
+    severity: 2
+    status: in-force
+    regions: [US]
+    sources:
+      - url: https://blog.netflix.com/2011/07/netflix-introduces-new-plans-and.html
+        publisher: Netflix Blog
+        kind: primary
+        published: 2011-07-12
+        archive: https://web.archive.org/web/20110713091434/http://blog.netflix.com/2011/07/netflix-introduces-new-plans-and.html
+        quote: The price for getting both of these plans will be $15.98 a month ($7.99 + $7.99).
+      - url: https://www.prnewswire.com/news-releases/netflix-to-offer-new-unlimited-dvd-plans-and-will-separate-streaming-and-dvd-plans-in-the-us-125422973.html
+        publisher: Netflix via PR Newswire
+        kind: primary
+        published: 2011-07-12
+        archive: https://web.archive.org/web/20110714083521/http://www.prnewswire.com/news-releases/netflix-to-offer-new-unlimited-dvd-plans-and-will-separate-streaming-and-dvd-plans-in-the-us-125422973.html
+        quote: The unlimited streaming plan will remain at $7.99 a month.
+      - url: https://techcrunch.com/2014/05/09/netflix-learns-from-past-mistakes-increases-prices-the-right-way/
+        publisher: TechCrunch
+        kind: press
+        published: 2014-05-09
+        archive: https://web.archive.org/web/20140509175128/https://techcrunch.com/2014/05/09/netflix-learns-from-past-mistakes-increases-prices-the-right-way/
+        quote: >-
+          you suddenly went from paying $10/month to paying $16/month, a 60 percent price hike
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: standard-price-2014
+    date: 2014-05-09
+    date_kind: announced
+    category: price-rise
+    title: Netflix's HD streaming plan goes from $7.99 to $8.99 for new US members
+    what_changed: >-
+      Netflix said on 9 May 2014 that its $7.99 HD streaming plan would cost new members $8.99 a
+      month. Existing members kept their $7.99 price until 2016, and a new $7.99 plan with SD on one
+      screen became the cheapest.
+    before: $7.99 a month
+    after: $8.99 a month
+    user_impact: New members paid more for HD, while existing ones kept the old price for now.
+    company_said: Netflix said the rise was so it could keep adding more films and TV shows.
+    severity: 1
+    status: in-force
+    regions: [US]
+    prices:
+      - { plan: standard-us, from: 7.99, to: 8.99 }
+    sources:
+      - url: https://blog.netflix.com/2014/05/a-quick-update-on-our-streaming-plans.html
+        publisher: Netflix Blog
+        kind: primary
+        published: 2014-05-09
+        archive: https://web.archive.org/web/20140513223948/http://blog.netflix.com/2014/05/a-quick-update-on-our-streaming-plans.html
+        quote: >-
+          To continue adding more movies and TV shows, we are increasing the price of our $7.99 a
+          month streaming plan by one dollar to $8.99 for new members.
+      - url: https://www.sec.gov/Archives/edgar/data/1065280/000106528016000057/nflx-33116x10qxdoc.htm
+        publisher: Netflix (SEC filing)
+        kind: primary
+        published: 2016-04-20
+        archive: https://web.archive.org/web/20160430043335/https://www.sec.gov/Archives/edgar/data/1065280/000106528016000057/nflx-33116x10qxdoc.htm
+        quote: >-
+          In May 2014, in the U.S., we increased the price of our standard plan from $7.99 per month
+          to $8.99 per month with existing memberships grandfathered for a two year period.
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: standard-price-2015
+    date: 2015-10-08
+    date_kind: announced
+    category: price-rise
+    title: Netflix Standard goes from $8.99 to $9.99 for new US members
+    what_changed: >-
+      Netflix raised its most popular US plan from $8.99 to $9.99 a month for new members on 8
+      October 2015. Existing members on $8.99 kept it until October 2016, while Basic and Premium
+      stayed at $7.99 and $11.99.
+    before: $8.99 a month
+    after: $9.99 a month
+    user_impact: New members paid more for HD, with the rise for existing members held back a year.
+    company_said: >-
+      Netflix said it was raising the price for some new members so it could keep adding TV shows
+      and films, including its own.
+    severity: 1
+    status: in-force
+    regions: [US]
+    prices:
+      - { plan: standard-us, from: 8.99, to: 9.99 }
+    sources:
+      - url: https://www.theverge.com/2015/10/8/9481839/netflix-price-increase-announced
+        publisher: The Verge
+        kind: press
+        published: 2015-10-08
+        archive: https://web.archive.org/web/20151009205525/http://www.theverge.com/2015/10/8/9481839/netflix-price-increase-announced
+        quote: >-
+          Netflix has announced that effective immediately, it's raising the price of its most popular
+          plan to $9.99 per month, up from the previous monthly rate of $8.99.
+      - url: https://techcrunch.com/2015/10/08/netflix-just-raised-the-price-of-its-most-popular-plan/
+        publisher: TechCrunch
+        kind: press
+        published: 2015-10-08
+        archive: https://web.archive.org/web/20151009192806/https://techcrunch.com/2015/10/08/netflix-just-raised-the-price-of-its-most-popular-plan/
+        quote: The price increase raises its Standard plan to $9.99 a month.
+      - url: https://www.sec.gov/Archives/edgar/data/1065280/000106528016000047/nflx201510k.htm
+        publisher: Netflix (SEC filing)
+        kind: primary
+        published: 2016-01-28
+        archive: https://web.archive.org/web/20160131042540/https://www.sec.gov/Archives/edgar/data/1065280/000106528016000047/nflx201510k.htm
+        quote: >-
+          In October 2015, in the U.S., we increased the price of this same high definition plan from
+          $8.99 per month to $9.99 per month with existing memberships grandfathered for a one year
+          period.
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: price-hold-ends-2016
+    date: 2016-05
+    date_kind: effective
+    category: price-rise
+    title: Netflix ends its price hold, moving long-time members from $7.99 to $9.99
+    what_changed: >-
+      Netflix started moving US members who had kept $7.99 since 2014 onto the $9.99 Standard price
+      from May 2016, by billing date, as their price guarantees ran out. Each was emailed 30 days
+      before their next bill, and could move to the $7.99 SD plan instead.
+    before: $7.99 a month
+    after: $9.99 a month
+    user_impact: Members who had kept the old price paid more to keep HD, or gave it up.
+    severity: 2
+    status: in-force
+    regions: [US]
+    sources:
+      - url: https://www.sec.gov/Archives/edgar/data/1065280/000106528016000072/nflx-63016x10qxdoc.htm
+        publisher: Netflix (SEC filing)
+        kind: primary
+        published: 2016-07-19
+        archive: https://web.archive.org/web/20181207013602/https://www.sec.gov/Archives/edgar/data/1065280/000106528016000072/nflx-63016x10qxdoc.htm
+        quote: >-
+          In the second quarter of 2016, we began to phase out the grandfathered pricing, giving
+          members the option of electing the basic streaming plan at $7.99 per month, continuing on
+          the standard streaming plan at the higher price of $9.99 per month, or electing the premium
+          plan at $11.99 per month.
+      - url: https://abcnews.go.com/Business/netflix-delaying-price-hike-customers-rolling-basis/story?id=39034639
+        publisher: ABC News
+        kind: press
+        published: 2016-05-11
+        archive: https://web.archive.org/web/20200110052239/https://abcnews.go.com/Business/netflix-delaying-price-hike-customers-rolling-basis/story?id=39034639&cid=abcn_tco
+        quote: >-
+          Netflix will notify members whose price guarantee is ending through an email sent 30 days
+          before the next billing date
+      - url: https://www.sec.gov/Archives/edgar/data/1065280/000106528016000057/nflx-33116x10qxdoc.htm
+        publisher: Netflix (SEC filing)
+        kind: primary
+        published: 2016-04-20
+        archive: https://web.archive.org/web/20160430043335/https://www.sec.gov/Archives/edgar/data/1065280/000106528016000057/nflx-33116x10qxdoc.htm
+        quote: >-
+          In May 2014, in the U.S., we increased the price of our standard plan from $7.99 per month
+          to $8.99 per month with existing memberships grandfathered for a two year period.
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: price-2017
+    date: 2017-10-05
+    date_kind: reported
+    category: price-rise
+    title: Netflix Standard goes from $9.99 to $10.99 in the US
+    what_changed: >-
+      Netflix raised US Standard from $9.99 to $10.99 a month and Premium from $11.99 to $13.99,
+      reported on 5 October 2017, while Basic stayed at $7.99. New members paid it straight away, and
+      existing ones were told from 19 October, 30 days before their bill went up.
+    before: $9.99 a month
+    after: $10.99 a month
+    user_impact: Standard and Premium members paid more, with Premium's 4K plan getting the bigger rise.
+    company_said: >-
+      Netflix said it adjusts prices from time to time as it adds more exclusive shows and films and
+      improves the service.
+    severity: 1
+    status: in-force
+    regions: [US]
+    prices:
+      - { plan: standard-us, from: 9.99, to: 10.99 }
+      - { plan: premium-us, from: 11.99, to: 13.99 }
+    sources:
+      - url: https://www.theverge.com/2017/10/5/16429126/netflix-price-raise-standard-premium-tiers
+        publisher: The Verge
+        kind: press
+        published: 2017-10-05
+        archive: https://web.archive.org/web/20171005162929/https://www.theverge.com/2017/10/5/16429126/netflix-price-raise-standard-premium-tiers
+        quote: >-
+          The standard tier, which allows subscribers to watch on two screens at once, will be bumped
+          up from $9.99 to $10.99 per month.
+      - url: https://techcrunch.com/2017/10/05/netflix-is-raising-prices-especially-if-you-love-4k/
+        publisher: TechCrunch
+        kind: press
+        published: 2017-10-05
+        archive: https://web.archive.org/web/20171005185724/https://techcrunch.com/2017/10/05/netflix-is-raising-prices-especially-if-you-love-4k/
+        quote: New users get those new prices starting today.
+      - url: https://www.sec.gov/Archives/edgar/data/1065280/000106528017000180/nflx-093017x10qxdoc.htm
+        publisher: Netflix (SEC filing)
+        kind: primary
+        published: 2017-10-18
+        archive: https://web.archive.org/web/20171102193232/https://www.sec.gov/Archives/edgar/data/1065280/000106528017000180/nflx-093017x10qxdoc.htm
+        quote: >-
+          In October 2017, in the U.S., we increased the price of our standard streaming plan from
+          $9.99 to $10.99 per month and our premium plan from $11.99 to $13.99 per month.
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: price-2019
+    date: 2019-01-15
+    date_kind: announced
+    category: price-rise
+    title: Netflix Standard goes from $10.99 to $12.99 in the US
+    what_changed: >-
+      Netflix raised US Standard from $10.99 to $12.99 a month on 15 January 2019, with Premium going
+      from $13.99 to $15.99 and Basic from $7.99 to $8.99. New members paid it straight away, and
+      existing ones from May 2019 billing cycles.
+    before: $10.99 a month
+    after: $12.99 a month
+    user_impact: Every US plan went up, with Standard up 18%, the biggest rise Netflix had made.
+    company_said: >-
+      Netflix said it changes prices from time to time as it keeps investing in entertainment and
+      improving the service.
+    severity: 1
+    status: in-force
+    regions: [US]
+    prices:
+      - { plan: standard-us, from: 10.99, to: 12.99 }
+      - { plan: premium-us, from: 13.99, to: 15.99 }
+    sources:
+      - url: https://variety.com/2019/digital/news/netflix-us-streaming-price-increases-2019-1203108254/
+        publisher: Variety
+        kind: press
+        published: 2019-01-15
+        archive: https://web.archive.org/web/20190115170331/https://variety.com/2019/digital/news/netflix-us-streaming-price-increases-2019-1203108254/
+        quote: >-
+          the Standard tier that offers two HD streams, is increasing 18%, from $10.99 to $12.99 per
+          month.
+      - url: https://variety.com/2019/digital/news/netflix-prices-hikes-us-may-2019-1203179495/
+        publisher: Variety
+        kind: press
+        published: 2019-04-03
+        archive: https://web.archive.org/web/20190403172554/https://variety.com/2019/digital/news/netflix-prices-hikes-us-may-2019-1203179495/
+        quote: >-
+          The streamer this week began notifying U.S. customers that its previously announced fee
+          hikes will take effect starting with May 2019 billing cycles.
+      - url: https://techcrunch.com/2019/01/15/netflix-price-hike/
+        publisher: TechCrunch
+        kind: press
+        published: 2019-01-15
+        archive: https://web.archive.org/web/20190116041058/https://techcrunch.com/2019/01/15/netflix-price-hike/
+        quote: >-
+          Meanwhile, the one-device plan will go up to $8.99 per month, while the four-device plan
+          goes to $15.99.
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: price-2020
+    date: 2020-10-29
+    date_kind: announced
+    category: price-rise
+    title: Netflix Standard goes from $12.99 to $13.99 in the US
+    what_changed: >-
+      Netflix raised US Standard from $12.99 to $13.99 a month on 29 October 2020, and Premium from
+      $15.99 to $17.99, while Basic stayed at $8.99. New members paid it straight away, and existing
+      ones were told 30 days before their price went up.
+    before: $12.99 a month
+    after: $13.99 a month
+    user_impact: Standard and Premium members paid more, with Premium going up by $2.
+    company_said: >-
+      Netflix said the rise was so it could keep offering more variety of TV shows and films.
+    severity: 1
+    status: in-force
+    regions: [US]
+    prices:
+      - { plan: standard-us, from: 12.99, to: 13.99 }
+      - { plan: premium-us, from: 15.99, to: 17.99 }
+    sources:
+      - url: https://variety.com/2020/digital/news/netflix-increases-prices-us-monthly-plans-1234819132/
+        publisher: Variety
+        kind: press
+        published: 2020-10-29
+        archive: https://web.archive.org/web/20201029234110/https://variety.com/2020/digital/news/netflix-increases-prices-us-monthly-plans-1234819132/
+        quote: >-
+          In addition, Netflix’s Premium tier (with four streams and including 4K Ultra HD content) is
+          going up by $2, from $15.99 monthly to $17.99 for U.S. customers.
+      - url: https://www.theverge.com/2020/10/29/21540346/netflix-price-increase-united-states-standard-premium-content-product-features
+        publisher: The Verge
+        kind: press
+        published: 2020-10-29
+        archive: https://web.archive.org/web/20201029193729/https://www.theverge.com/2020/10/29/21540346/netflix-price-increase-united-states-standard-premium-content-product-features
+        quote: >-
+          Prices are being updated “so that we can continue to offer more variety of TV shows and
+          films,” a spokesperson told The Verge .
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: price-2022
+    date: 2022-01-14
+    date_kind: announced
+    category: price-rise
+    title: Netflix Standard goes from $13.99 to $15.49 in the US
+    what_changed: >-
+      Netflix raised US Standard from $13.99 to $15.49 a month on 14 January 2022, with Premium going
+      from $17.99 to $19.99 and Basic up $1 to $9.99. New members paid it straight away, and existing
+      ones were emailed 30 days before their price went up.
+    before: $13.99 a month
+    after: $15.49 a month
+    user_impact: Every US plan went up, Standard by $1.50 a month.
+    company_said: >-
+      Netflix said it was raising prices so it could keep offering a wide variety of quality
+      entertainment.
+    severity: 1
+    status: in-force
+    regions: [US]
+    prices:
+      - { plan: standard-us, from: 13.99, to: 15.49 }
+      - { plan: premium-us, from: 17.99, to: 19.99 }
+    sources:
+      - url: https://www.cnbc.com/2022/01/14/netflix-raises-prices-in-us-and-canada-stock-pops.html
+        publisher: CNBC
+        kind: press
+        published: 2022-01-14
+        archive: https://web.archive.org/web/20220114205005/https://www.cnbc.com/2022/01/14/netflix-raises-prices-in-us-and-canada-stock-pops.html
+        quote: >-
+          The monthly cost for the basic plan rose $1 to $9.99, the standard plan jumped from $13.99
+          to $15.49, and the premium plan rose from $17.99 to $19.99, according to Netflix's website.
+      - url: https://variety.com/2022/digital/news/netflix-hikes-prices-us-canada-1235154777/
+        publisher: Variety
+        kind: press
+        published: 2022-01-14
+        archive: https://web.archive.org/web/20220114202330/https://variety.com/2022/digital/news/netflix-hikes-prices-us-canada-1235154777/
+        quote: >-
+          The price increase, announced Friday, will see Netflix’s Standard plan — its most popular
+          tier, which provides two simultaneous HD streams, go up by $1.50, to $15.49 per month.
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: paid-sharing
+    date: 2023-05-23
+    date_kind: announced
+    category: paywall
+    title: Netflix starts charging US members to share outside their household
+    question: When did Netflix start charging for password sharing?
+    what_changed: >-
+      Netflix started emailing US members who shared their account outside their household on 23
+      May 2023, offering to add an extra member for $7.99 a month. Only Standard and Premium could
+      add extra members, so sharing on Basic or Standard with ads had to stop.
+    user_impact: >-
+      Standard and Premium members could pay $7.99 a month for each extra member outside their home,
+      while people sharing a Basic or ad plan account had to stop.
+    company_said: Netflix said a Netflix account is for use by one household.
+    severity: 2
+    status: in-force
+    regions: [US]
+    sources:
+      - url: https://about.netflix.com/en/news/update-on-sharing-may-us
+        publisher: Netflix Newsroom
+        kind: primary
+        published: 2023-05-23
+        archive: https://web.archive.org/web/20230523191832/https://about.netflix.com/en/news/update-on-sharing-may-us
+        quote: >-
+          Starting today, we will be sending this email to members who are sharing Netflix outside
+          their household in the United States.
+      - url: https://www.theverge.com/2023/5/23/23734725/netflix-password-sharing-us-pricing-streaming
+        publisher: The Verge
+        kind: press
+        published: 2023-05-23
+        archive: https://web.archive.org/web/20260104094428/https://www.theverge.com/2023/5/23/23734725/netflix-password-sharing-us-pricing-streaming
+        quote: >-
+          Netflix subscribers on its two cheapest plans (Basic or Standard with Ads, which cost $9.99
+          and $6.99 per month, respectively) don't have the option to add extra members to their
+          account at all.
+      - url: https://help.netflix.com/en/node/24926/us
+        publisher: Netflix Help Center
+        kind: pricing-page
+        published: 2023-05-31
+        archive: https://web.archive.org/web/20230531053307/https://help.netflix.com/en/node/24926/us
+        quote: >-
+          Basic : $9.99 / month Standard : $15.49 / month ( extra member slots ** can be added for
+          $7.99 each / month) Premium : $19.99 / month ( extra member slots ** can be added for $7.99
+          each / month)
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: basic-dropped-for-new-members
+    date: 2023-07-19
+    date_kind: announced
+    category: removed-feature
+    title: Netflix stops offering its Basic plan to new members in the US and UK
+    what_changed: >-
+      Netflix stopped offering its $9.99 Basic plan to new and rejoining members in the US on 19 July
+      2023, and in the UK too. That left the $6.99 ad plan as the cheapest, and $15.49 Standard as
+      the cheapest without ads, while people already on Basic could keep it.
+    before: Cheapest plan without ads $9.99 a month
+    after: Cheapest plan without ads $15.49 a month
+    user_impact: New and rejoining members who didn't want ads paid $15.49 a month instead of $9.99.
+    company_said: >-
+      Netflix said its entry prices were great value given the breadth and quality of its catalogue.
+    severity: 2
+    status: in-force
+    regions: [US, GB]
+    related: [netflix/basic-plan-ended]
+    sources:
+      - url: https://help.netflix.com/en/node/24926/us
+        publisher: Netflix Help Center
+        kind: primary
+        published: 2023-07-19
+        archive: https://web.archive.org/web/20230719132534/https://help.netflix.com/en/node/24926/us
+        quote: The Basic plan is no longer available for new or rejoining members.
+      - url: https://www.theverge.com/2023/7/19/23800079/netflix-cheap-ad-free-basic-plan-removed-us-uk
+        publisher: The Verge
+        kind: press
+        published: 2023-07-19
+        archive: https://web.archive.org/web/20250723115901/https://www.theverge.com/2023/7/19/23800079/netflix-cheap-ad-free-basic-plan-removed-us-uk
+        quote: >-
+          Netflix's support page in both countries states that the $9.99 (£6.99) / month basic plan is
+          no longer available "for new or rejoining members."
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: price-2023
+    date: 2023-10-18
+    date_kind: announced
+    category: price-rise
+    title: Netflix Premium goes from $19.99 to $22.99 in the US
+    what_changed: >-
+      Netflix raised US Premium from $19.99 to $22.99 a month on 18 October 2023, and Basic from
+      $9.99 to $11.99. Standard and the ad plan stayed at $15.49 and $6.99.
+    before: $19.99 a month
+    after: $22.99 a month
+    user_impact: Premium members and people still on Basic paid more, while Standard kept its price.
+    company_said: >-
+      Netflix said that as it delivers more value to members, it occasionally asks them to pay a bit
+      more.
+    severity: 1
+    status: in-force
+    regions: [US]
+    prices:
+      - { plan: premium-us, from: 19.99, to: 22.99 }
+    sources:
+      - url: https://www.theverge.com/2023/10/18/23922319/netflix-q3-earnings-2023-price-hike-increase-basic-premium
+        publisher: The Verge
+        kind: press
+        published: 2023-10-18
+        archive: https://web.archive.org/web/20231018215231/https://www.theverge.com/2023/10/18/23922319/netflix-q3-earnings-2023-price-hike-increase-basic-premium
+        quote: >-
+          As part of the streamer's third quarter earnings results, Netflix announced that starting
+          today, users on its $9.99 per month Basic plan will now have to pay $11.99, and those paying
+          $19.99 per month for Premium will have to pay $22.99.
+      - url: https://help.netflix.com/en/node/24926/us
+        publisher: Netflix Help Center
+        kind: pricing-page
+        published: 2023-10-04
+        archive: https://web.archive.org/web/20231004072255/https://help.netflix.com/en/node/24926/us
+        quote: 'Premium : $19.99 / month'
+      - url: https://help.netflix.com/en/node/24926/us
+        publisher: Netflix Help Center
+        kind: pricing-page
+        published: 2023-12-06
+        archive: https://web.archive.org/web/20231206195648/https://help.netflix.com/en/node/24926/us
+        quote: >-
+          Standard with ads *: $6.99 / month Standard : $15.49 / month ( extra member slots ** can be
+          added for $7.99 each / month) Premium : $22.99 / month
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: basic-plan-ended
+    date: 2024-07-18
+    date_kind: announced
+    category: removed-feature
+    title: Netflix ends its Basic plan for existing US members
+    question: When did Netflix get rid of the Basic plan?
+    what_changed: >-
+      Netflix said on 18 July 2024 that the US was next for phasing out its Basic plan, a year after
+      it stopped offering it to new members. Within days its US help page said the plan had been
+      discontinued.
+    before: Basic, without ads, $11.99 a month
+    after: Standard with ads $6.99 or Standard $15.49 a month
+    user_impact: >-
+      People on the $11.99 Basic plan who wanted to stay had to move to the $6.99 ad plan or pay
+      $15.49 a month for Standard.
+    severity: 2
+    status: in-force
+    regions: [US]
+    related: [netflix/basic-dropped-for-new-members]
+    sources:
+      - url: https://help.netflix.com/en/node/24926/us
+        publisher: Netflix Help Center
+        kind: primary
+        published: 2024-07-24
+        archive: https://web.archive.org/web/20240724064243/https://help.netflix.com/en/node/24926/us
+        quote: The Basic plan has been discontinued.
+      - url: https://www.theverge.com/2024/7/18/24201360/netflix-earnings-q2-2024-ads-advertising
+        publisher: The Verge
+        kind: press
+        published: 2024-07-18
+        archive: https://web.archive.org/web/20240718210801/https://www.theverge.com/2024/7/18/24201360/netflix-earnings-q2-2024-ads-advertising
+        quote: It plans on discontinuing the plan in the US and France next.
+      - url: https://help.netflix.com/en/node/24926/us
+        publisher: Netflix Help Center
+        kind: primary
+        published: 2024-07-04
+        archive: https://web.archive.org/web/20240704013726/https://help.netflix.com/en/node/24926/us
+        quote: >-
+          If you are currently on the Basic plan, you can remain on this plan until your plan is
+          changed or your account is canceled.
+      - url: https://www.theverge.com/2023/10/18/23922319/netflix-q3-earnings-2023-price-hike-increase-basic-premium
+        publisher: The Verge
+        kind: press
+        published: 2023-10-18
+        archive: https://web.archive.org/web/20231018215231/https://www.theverge.com/2023/10/18/23922319/netflix-q3-earnings-2023-price-hike-increase-basic-premium
+        quote: >-
+          As part of the streamer's third quarter earnings results, Netflix announced that starting
+          today, users on its $9.99 per month Basic plan will now have to pay $11.99, and those paying
+          $19.99 per month for Premium will have to pay $22.99.
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: price-2025
+    date: 2025-01-21
+    date_kind: announced
+    category: price-rise
+    title: Netflix Standard goes from $15.49 to $17.99 in the US
+    what_changed: >-
+      Netflix raised US Standard from $15.49 to $17.99 a month on 21 January 2025, with the ad plan
+      going from $6.99 to $7.99 and Premium from $22.99 to $24.99. An extra member without ads went
+      from $7.99 to $8.99, and existing members paid the new prices from their next billing cycle.
+    before: $15.49 a month
+    after: $17.99 a month
+    user_impact: Every US plan went up, the ad plan for the first time since it launched.
+    company_said: >-
+      Netflix said it occasionally asks members to pay a little more so it can reinvest in improving
+      Netflix.
+    severity: 1
+    status: in-force
+    regions: [US]
+    prices:
+      - { plan: ads-us, from: 6.99, to: 7.99 }
+      - { plan: standard-us, from: 15.49, to: 17.99 }
+      - { plan: premium-us, from: 22.99, to: 24.99 }
+    sources:
+      - url: https://www.theverge.com/2025/1/21/24348682/netflix-price-increase-earnings-q4-2024
+        publisher: The Verge
+        kind: press
+        published: 2025-01-21
+        archive: https://web.archive.org/web/20260922141348/https://www.theverge.com/2025/1/21/24348682/netflix-price-increase-earnings-q4-2024
+        quote: >-
+          the ad-supported tier is increasing from $6.99 to $7.99 per month, while the standard
+          ad-free tier will go from $15.49 to $17.99 per month.
+      - url: https://help.netflix.com/en/node/24926/us
+        publisher: Netflix Help Center
+        kind: pricing-page
+        published: 2024-12-25
+        archive: https://web.archive.org/web/20241225030504/https://help.netflix.com/en/node/24926/us
+        quote: >-
+          Standard with ads *: $6.99 / month Standard : $15.49 / month ( extra member slots ** can be
+          added for $7.99 each / month) Premium : $22.99 / month
+      - url: https://help.netflix.com/en/node/24926/us
+        publisher: Netflix Help Center
+        kind: pricing-page
+        published: 2025-01-22
+        archive: https://web.archive.org/web/20250122044245/https://help.netflix.com/en/node/24926/us
+        quote: >-
+          Standard with ads : $7.99 / month Standard : $17.99 / month Add 1 extra member for $6.99 /
+          month with ads or $8.99 / month without ads Premium : $24.99 / month
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: phone-casting-removed
+    date: 2025-12-01
+    date_kind: reported
+    category: removed-feature
+    title: Netflix stops casting from phones to most TVs
+    question: When did Netflix stop casting from phones?
+    what_changed: >-
+      Netflix stopped casting from its phone app to most TVs and streaming devices, first reported on
+      1 December 2025 after its help page changed. Casting still works with older
+      Chromecasts and TVs with Google Cast built in, and only on ad-free plans.
+    user_impact: >-
+      People who cast from their phone to a Chromecast with Google TV, a Google TV Streamer or most
+      TVs lost the feature.
+    severity: 1
+    status: in-force
+    sources:
+      - url: https://help.netflix.com/en/node/58351
+        publisher: Netflix Help Center
+        kind: primary
+        published: 2025-11-14
+        archive: https://web.archive.org/web/20251114010314/https://help.netflix.com/en/node/58351
+        quote: >-
+          Netflix no longer supports casting shows from a mobile device to most TVs and TV-streaming
+          devices.
+      - url: https://www.theverge.com/news/834655/netflix-phone-casting-chromecast-support-killed
+        publisher: The Verge
+        kind: press
+        published: 2025-12-01
+        archive: https://web.archive.org/web/20251201110043/https://www.theverge.com/news/834655/netflix-phone-casting-chromecast-support-killed
+        quote: >-
+          Casting support is still available on older Chromecast devices or TVs that support Google
+          Cast natively, according to Netflix's support page, but only for subscribers on pricier
+          ad-free plans, which start from $17.99 per month.
+      - url: https://www.androidauthority.com/netflix-casting-chromecast-google-tv-streamer-3620784/
+        publisher: Android Authority
+        kind: press
+        published: 2025-12-01
+        archive: https://web.archive.org/web/20261114180245/https://www.androidauthority.com/netflix-casting-chromecast-google-tv-streamer-3620784/
+        quote: >-
+          Netflix has removed support for casting from its mobile apps to most TVs, including
+          Chromecast with Google TV and Google TV Streamer devices.
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19
+
+  - id: price-2026
+    date: 2026-03-26
+    date_kind: reported
+    category: price-rise
+    title: Netflix Standard goes from $17.99 to $19.99 in the US
+    what_changed: >-
+      Netflix's US Standard plan went from $17.99 to $19.99 a month, reported on 26 March 2026 as new
+      members started paying it. The ad plan went from $7.99 to $8.99 and Premium from $24.99 to
+      $26.99, and existing members were emailed a month before their price went up.
+    before: $17.99 a month
+    after: $19.99 a month
+    user_impact: Every US plan went up, a little over a year after the last rise.
+    company_said: >-
+      Netflix told TechCrunch the changes reflect its wide range of entertainment and the quality of
+      its service.
+    severity: 1
+    status: in-force
+    regions: [US]
+    prices:
+      - { plan: ads-us, from: 7.99, to: 8.99 }
+      - { plan: standard-us, from: 17.99, to: 19.99 }
+      - { plan: premium-us, from: 24.99, to: 26.99 }
+    sources:
+      - url: https://www.theverge.com/streaming/901833/netflix-subscription-pricing-increase-2026
+        publisher: The Verge
+        kind: press
+        published: 2026-03-26
+        archive: https://web.archive.org/web/20260326193858/https://www.theverge.com/streaming/901833/netflix-subscription-pricing-increase-2026
+        quote: >-
+          The standard and premium plans are also getting a hike, going from $17.99 to $19.99 / month
+          and $24.99 to $26.99 / month, respectively.
+      - url: https://techcrunch.com/2026/03/26/netflix-confirms-its-raising-prices-again/
+        publisher: TechCrunch
+        kind: press
+        published: 2026-03-26
+        archive: https://web.archive.org/web/20260326210837/https://techcrunch.com/2026/03/26/netflix-confirms-its-raising-prices-again/
+        quote: >-
+          Netflix says new members who sign up will see the new plan prices from March 26, while
+          existing subscribers will see the updated prices roll out over the coming months.
+      - url: https://help.netflix.com/en/node/24926/us
+        publisher: Netflix Help Center
+        kind: pricing-page
+        published: 2026-02-25
+        archive: https://web.archive.org/web/20260225172251/https://help.netflix.com/en/node/24926/us
+        quote: >-
+          Standard with ads : $7.99 / month Standard : $17.99 / month Add 1 extra member for $6.99 /
+          month with ads or $8.99 / month without ads Premium : $24.99 / month
+      - url: https://help.netflix.com/en/node/24926/us
+        publisher: Netflix Help Center
+        kind: pricing-page
+        published: 2026-03-26
+        archive: https://web.archive.org/web/20260326233800/https://help.netflix.com/en/node/24926/us
+        quote: >-
+          Standard with ads : $8.99 / month Standard : $19.99 / month Add 1 extra member for $7.99 /
+          month with ads or $9.99 / month without ads Premium : $26.99 / month
+    added: 2026-11-19
+    updated: 2026-11-19
+    sources_checked: 2026-11-19
+    status_checked: 2026-11-19

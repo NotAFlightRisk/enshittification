@@ -12,3 +12,8 @@
   name: Reddit
   url: https://redditinc.com
   wikipedia: https://en.wikipedia.org/wiki/Reddit
+
+- id: netflix
+  name: Netflix
+  url: https://about.netflix.com
+  wikipedia: https://en.wikipedia.org/wiki/Netflix
