@@ -1,6 +1,6 @@
 <script lang="ts">
   import Tag from '#lib/components/Tag.svelte';
-  import { categories, levelOf, severities, severityKeys, type Category } from '#lib/data/types.ts';
+  import { categories, levelKeys, levels, type Category } from '#lib/data/types.ts';
 
   let { only }: { only?: Category[] } = $props();
 
@@ -16,9 +16,9 @@
     {/each}
   </ul>
   <ul aria-label="How bad, and when">
-    {#each severityKeys as severity (severity)}
-      <li title={severities[severity].means}>
-        <span class="swatch" data-level={levelOf(severity)}></span>{severities[severity].name}
+    {#each levelKeys as level (level)}
+      <li title={levels[level].means}>
+        <span class="swatch" data-level={level}></span>{levels[level].name}
       </li>
     {/each}
     <li><span class="swatch"></span>Reversed or only tested</li>

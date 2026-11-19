@@ -1,7 +1,7 @@
 <script lang="ts">
   import Pictogram from '#lib/components/Pictogram.svelte';
   import { fit, height, marks, nowAt } from '#lib/strip.ts';
-  import type { Entry } from '#lib/data/types.ts';
+  import { levelOf, type Entry } from '#lib/data/types.ts';
 
   let {
     changes,
@@ -40,7 +40,7 @@
     <li
       class="mark"
       class:late={mark.at > 55}
-      data-severity={mark.severity}
+      data-level={levelOf(mark.severity)}
       style:--at="{mark.at}%"
       style:--lane={mark.lane}
       style:--narrow-lane={mark.narrowLane}
@@ -92,11 +92,11 @@
     align-items: center;
     translate: -50% 0;
 
-    &[data-severity='1'] {
+    &[data-level='caution'] {
       --size: 1.05rem;
     }
 
-    &[data-severity='3'] {
+    &[data-level='danger'] {
       --size: 1.75rem;
     }
 

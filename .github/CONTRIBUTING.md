@@ -33,11 +33,15 @@ npm run check:sources -- <service>
 
 `check:sources` reads every source's snapshot and makes sure each quote is in it, and that every number in the entry turns up in one of its sources. It only proves the text is there, not that it's true, so someone still reads the source before anything merges.
 
-Give every change a `severity`, which is how bad it was for the people using the service. It sets the sign's colour, and the most serious changes lead the homepage:
+Give every change a `severity` from 1 to 5, which is how bad it was for the people using the service. Grade the change, not the company's reputation, and the same change gets the same grade at every service:
 
-- `1` caution: an annoyance you can live with, like a small price rise or a new ad format
-- `2` warning: clearly worse for most people using it, like a big price rise or a feature taken away
-- `3` danger: took away something people paid for or relied on, like a bricked device, a shut-down app or a lock-out
+- `1` minor, like an ordinary price rise, a new ad format or something cut for a small group
+- `2` noticeable, like a rise of a quarter or more in one go, a cheaper plan dropped or a feature a fair few people used taken away
+- `3` a lot worse but still usable, like paid sharing, ads in a plan that had none, ad blockers blocked or a feature most people used taken away
+- `4` lost something people relied on, like the third-party apps they used cut off, or a feed or API their tools were built on shut down
+- `5` critical, like something people bought turned into e-waste, or a service millions relied on switched off
+
+The sign's colour comes from the grade: 1 and 2 are caution, 3 is warning, and 4 and 5 are danger, which lead the homepage.
 
 Titles say what happened in plain words with no adjectives ("YouTube hides the public dislike count", not "YouTube kills dislikes"). Keep the jokes for the issues.
 

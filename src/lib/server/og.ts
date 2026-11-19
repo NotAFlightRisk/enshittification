@@ -11,9 +11,11 @@ import { firstYear, productName, worstOf } from '#lib/seo.ts';
 import {
   categories,
   isHollow,
-  severities,
+  levelOf,
+  levels,
   type Category,
   type Entry,
+  type Level,
   type Severity
 } from '#lib/data/types.ts';
 import { ogSize, site } from '#lib/site.ts';
@@ -25,10 +27,10 @@ import { data, stats } from '#lib/server/data.ts';
 const colour = { ground: '#e6e6e1', ink: '#000', soft: '#4a4a45', line: '#b8b8b1' };
 const condensed = { fontFamily: 'Barlow Condensed', fontWeight: 700 };
 const blank = { plate: '#fff', ink: '#000' };
-const level: Record<Severity, typeof blank> = {
-  1: { plate: '#ffc400', ink: '#000' },
-  2: { plate: '#ff7a00', ink: '#000' },
-  3: { plate: '#d42a1a', ink: '#fff' }
+const level: Record<Level, typeof blank> = {
+  caution: { plate: '#ffc400', ink: '#000' },
+  warning: { plate: '#ff7a00', ink: '#000' },
+  danger: { plate: '#d42a1a', ink: '#fff' }
 };
 
 type Child = Node | string | false | undefined;
@@ -45,7 +47,7 @@ const div = (style: object, ...children: Child[]): Node => ({
 const dataUri = (svg: string | Buffer) =>
   `data:image/svg+xml;base64,${Buffer.from(svg).toString('base64')}`;
 
-const logo = dataUri(readFileSync(resolve('static/favicon.svg')));
+const logo = dataUri(readFileSync(resolve('static/icon.svg')));
 
 const tape = dataUri(
   `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="16"><defs><pattern id="t" width="24" height="24" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="12" height="24" fill="#ffc400"/><rect x="12" width="12" height="24" fill="#000"/></pattern></defs><rect width="1200" height="16" fill="url(#t)"/></svg>`
@@ -57,7 +59,7 @@ const img = (src: string, width: number, height = width) => ({
 });
 
 function sign(kind: Category, size: number, severity?: Severity) {
-  const { plate, ink } = severity ? level[severity] : blank;
+  const { plate, ink } = severity ? level[levelOf(severity)] : blank;
   return img(dataUri(glyphSvg(kind, plate, ink)), size);
 }
 
@@ -179,7 +181,7 @@ function serviceImage(id: string) {
     `${plural(service.changes.length, 'change')} since ${from}`,
     lede(
       service.name,
-      worst ? `${severities[worst.severity].name}: ${worst.title}` : service.changes[0].title
+      worst ? `${levels[levelOf(worst.severity)].name}: ${worst.title}` : service.changes[0].title
     ),
     strip(service.changes, from, to, Math.floor((ogSize.width - 2 * inset) * fit.wide))
   );
@@ -189,7 +191,7 @@ function changeImage(entry: Entry) {
   const short = (text?: string) => text !== undefined && text.length <= 24;
   const prices = short(entry.before) && short(entry.after);
   const hollow = isHollow(entry.status);
-  const { plate, ink } = hollow ? blank : level[entry.severity];
+  const { plate, ink } = hollow ? blank : level[levelOf(entry.severity)];
   return frame(
     entry.serviceName,
     div(
@@ -209,7 +211,7 @@ function changeImage(entry: Entry) {
             letterSpacing: 2
           },
           sign(entry.category, 44, hollow ? undefined : entry.severity),
-          severities[entry.severity].name.toUpperCase()
+          levels[levelOf(entry.severity)].name.toUpperCase()
         ),
         div({ fontSize: 30, color: colour.soft }, formatDate(entry.date))
       ),
@@ -247,7 +249,7 @@ function priceImage(id: string) {
         `${money(first.price, plan.currency)} in ${yearOf(first.date)}`
       ),
       div({ fontSize: 92 }, `${money(last.price, plan.currency)} now`),
-      div({ fontSize: 48, color: level[3].plate }, percent(last.price / first.price - 1))
+      div({ fontSize: 48, color: level.danger.plate }, percent(last.price / first.price - 1))
     )
   );
 }
@@ -379,5 +381,5 @@ export async function drawPage(page: string) {
   return rasterise(await satori(pickImage(page) as never, { ...ogSize, fonts }));
 }
 
-/** The favicon at a size search engines will take as a logo */
-export const drawLogo = () => rasterise(readFileSync(resolve('static/favicon.svg'), 'utf8'), 512);
+/** The icon at a size search engines will take as a logo */
+export const drawLogo = () => rasterise(readFileSync(resolve('static/icon.svg'), 'utf8'), 512);

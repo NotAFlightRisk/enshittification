@@ -6,11 +6,13 @@ import {
   currencies,
   dateKinds,
   reserved,
+  severityKeys,
   sourceKinds,
   statuses,
   type Change,
   type Plan,
-  type ServiceFile
+  type ServiceFile,
+  type Severity
 } from '#lib/data/types.ts';
 
 export interface Problem {
@@ -221,8 +223,8 @@ function change(value: unknown, path: Path, flag: Flag, plans: Set<string>) {
   oneOf(value.date_kind, dateKinds, at('date_kind'), flag);
   oneOf(value.category, Object.keys(categories), at('category'), flag);
   oneOf(value.status, Object.keys(statuses), at('status'), flag);
-  if (value.severity !== undefined && ![1, 2, 3].includes(value.severity as number))
-    flag(at('severity'), 'should be 1, 2 or 3');
+  if (value.severity !== undefined && !severityKeys.includes(value.severity as Severity))
+    flag(at('severity'), 'should be a whole number from 1 to 5');
 
   for (const key of ['title', 'what_changed', 'user_impact'])
     if (value[key] !== undefined && !isText(value[key])) flag(at(key), 'should be some words');

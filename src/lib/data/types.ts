@@ -10,10 +10,19 @@ export const categories = {
   ai: 'AI pushed in'
 } as const;
 
+export const levels = {
+  caution: { name: 'Caution', means: 'An annoyance, but you can live with it' },
+  warning: { name: 'Warning', means: 'Made a lot worse, but you can still use it' },
+  danger: { name: 'Danger', means: 'Took away something people paid for or relied on' }
+} as const;
+
+/** Each change is graded 1 to 5, and its sign shows the level that grade falls in */
 export const severities = {
-  1: { name: 'Caution', means: 'An annoyance, but you can live with it' },
-  2: { name: 'Warning', means: 'Clearly worse for most people using it' },
-  3: { name: 'Danger', means: 'Took away something people paid for or relied on' }
+  1: 'caution',
+  2: 'caution',
+  3: 'warning',
+  4: 'danger',
+  5: 'danger'
 } as const;
 
 export const statuses = {
@@ -46,15 +55,16 @@ export const reserved = [
 
 export type Category = keyof typeof categories;
 export type Severity = keyof typeof severities;
-export type Level = Lowercase<(typeof severities)[Severity]['name']>;
+export type Level = keyof typeof levels;
 export type Status = keyof typeof statuses;
 export type Region = keyof typeof currencies;
 
 export const severityKeys = Object.keys(severities).map(Number) as Severity[];
+export const levelKeys = Object.keys(levels) as Level[];
 /** Reversed and tested changes still count, but their signs go without colour */
 export const isHollow = (status: Status) => status === 'reversed' || status === 'test';
 
-export const levelOf = (severity: Severity) => severities[severity].name.toLowerCase() as Level;
+export const levelOf = (severity: Severity) => severities[severity];
 
 export interface Source {
   url: string;

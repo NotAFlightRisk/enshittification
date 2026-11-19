@@ -20,7 +20,7 @@
 
 <header class="masthead">
   <a class="wordmark" href="/" aria-label="{site.name}, home">
-    <img src="/favicon.svg" alt="" width="44" height="44" />
+    <img src="/icon.svg" alt="" width="44" height="44" />
     <span>The Enshittification Index</span>
   </a>
   <nav aria-label="Main">

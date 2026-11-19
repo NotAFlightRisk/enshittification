@@ -167,7 +167,7 @@ changes:
       users seeing a prompt to upgrade instead. Spotify said it was a test with a limited number of
       users.
     user_impact: Free listeners in the test lost the in-app lyrics unless they paid for Premium.
-    severity: 1
+    severity: 2
     status: test
     sources:
       - url: https://www.theverge.com/2023/9/5/23860124/spotify-lyrics-premium-only-feature
@@ -179,7 +179,7 @@ changes:
           Instead, they saw only a notification bubble saying, “Enjoy lyrics on Spotify Premium,”
           with a link to sign up.
     added: 2026-11-18
-    updated: 2026-11-18
+    updated: 2026-11-19
     sources_checked: 2026-11-18
     status_checked: 2026-11-18
 
@@ -272,7 +272,7 @@ changes:
       asked them to contact customer service by 14 January 2025 about refund options.
     user_impact: Every Car Thing stopped working, and Spotify didn't open-source the software.
     company_said: Spotify said it was discontinuing Car Thing to streamline its product offerings.
-    severity: 3
+    severity: 5
     status: in-force
     sources:
       - url: https://support.spotify.com/us/article/car-thing-discontinued/
@@ -292,7 +292,7 @@ changes:
           Customers who bought the Car Thing are receiving emails warning that it will stop working
           altogether as of December 9th.
     added: 2026-11-18
-    updated: 2026-11-18
+    updated: 2026-11-19
     sources_checked: 2026-11-18
     status_checked: 2026-11-18
 

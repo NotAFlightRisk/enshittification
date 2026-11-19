@@ -42,7 +42,7 @@ export const GET = () => {
     `<id>${absolute('/')}</id>`,
     `<updated>${entries[0]?.updated ?? built}T00:00:00Z</updated>`,
     `<author><name>${site.name}</name><uri>${site.url}</uri></author>`,
-    `<icon>${absolute('/favicon.svg')}</icon>`,
+    `<icon>${absolute('/icon.svg')}</icon>`,
     ...items,
     '</feed>'
   ];

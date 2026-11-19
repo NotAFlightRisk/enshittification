@@ -10,7 +10,7 @@
   import Wall from '#lib/components/Wall.svelte';
   import { formatDate } from '#lib/dates.ts';
   import { plural } from '#lib/format.ts';
-  import { categories, type Category } from '#lib/data/types.ts';
+  import { categories, levelOf, type Category } from '#lib/data/types.ts';
 
   let { data } = $props();
   const { service, worst } = $derived(data);
@@ -50,7 +50,7 @@
 
 {#if worst}
   <div class="worst">
-    <Sign severity={worst.severity}>
+    <Sign level={levelOf(worst.severity)}>
       <a class="headline" href={worst.path}>
         <Pictogram kind={worst.category} severity={worst.severity} />
         {worst.title}

@@ -1,17 +1,17 @@
 <script lang="ts">
   import type { Snippet } from 'svelte';
-  import { levelOf, severities, type Severity } from '#lib/data/types.ts';
+  import { levels, type Level } from '#lib/data/types.ts';
 
-  let { severity, children }: { severity: Severity; children: Snippet } = $props();
+  let { level, children }: { level: Level; children: Snippet } = $props();
 </script>
 
-<div class="sign" data-level={levelOf(severity)}>
+<div class="sign" data-level={level}>
   <p class="signal">
     <svg viewBox="0 0 24 24" aria-hidden="true">
       <path class="triangle" d="M12 2.5 23 21.5H1z" />
       <path class="mark" d="M12 9v5.5M12 17.6v.1" />
     </svg>
-    {severities[severity].name}
+    {levels[level].name}
   </p>
   <div class="body on-sign">
     {@render children()}

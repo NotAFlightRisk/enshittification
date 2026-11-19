@@ -21,7 +21,7 @@ changes:
       dark in protest, some for weeks.
     company_said: >-
       Reddit said it could no longer subsidise commercial entities that need large-scale data use.
-    severity: 3
+    severity: 4
     status: in-force
     related: [reddit/apollo-shutdown]
     sources:
@@ -42,7 +42,7 @@ changes:
           The change -- which took effect July 1 -- charges developers 24 cents per 1,000 API
           requests.
     added: 2026-11-18
-    updated: 2026-11-18
+    updated: 2026-11-19
     sources_checked: 2026-11-18
     status_checked: 2026-11-18
 
@@ -57,7 +57,7 @@ changes:
       pricing made it too costly to run. Its developer, Christian Selig, said the pricing would have
       cost him more than $20m a year, with 30 days to adapt.
     user_impact: Apollo's users had to move to another app to keep reading Reddit.
-    severity: 3
+    severity: 4
     status: in-force
     related: [reddit/api-pricing]
     sources:
@@ -76,7 +76,7 @@ changes:
           Some of the apps that have already shut down include Apollo, BaconReader, Boost, Reddit Is
           Fun and Sync.
     added: 2026-11-18
-    updated: 2026-11-18
+    updated: 2026-11-19
     sources_checked: 2026-11-18
     status_checked: 2026-11-18
 
@@ -95,7 +95,7 @@ changes:
     company_said: >-
       Reddit said some search engines wouldn't make enforceable promises about how they use its
       content, including for AI.
-    severity: 1
+    severity: 2
     status: in-force
     related: [reddit/blocks-internet-archive]
     sources:
@@ -165,7 +165,7 @@ changes:
     company_said: >-
       Reddit said logged-out Old Reddit was a significant source of abusive scraping and automated
       traffic.
-    severity: 1
+    severity: 2
     status: in-force
     related: [reddit/rss-and-public-api-end]
     sources:
@@ -202,7 +202,7 @@ changes:
       API have until March 2027.
     company_said: >-
       Reddit said RSS had become a common surface for large-scale scraping and automated abuse.
-    severity: 3
+    severity: 4
     status: in-force
     related: [reddit/old-reddit-login, reddit/api-pricing]
     sources:
