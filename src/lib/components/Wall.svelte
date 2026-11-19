@@ -1,7 +1,6 @@
 <script lang="ts">
   import Strip from '#lib/components/Strip.svelte';
   import { yearsBetween } from '#lib/strip.ts';
-  import { yearOf } from '#lib/dates.ts';
   import { plural } from '#lib/format.ts';
   import type { Entry } from '#lib/data/types.ts';
 
@@ -10,22 +9,19 @@
     from,
     to,
     today,
+    totals,
     big = false
   }: {
     rows: { id: string; name: string; path: string; changes: Entry[] }[];
     from: number;
     to: number;
     today: string;
+    /** changes per year across the whole index, shown under the axis */
+    totals?: Record<number, number>;
     big?: boolean;
   } = $props();
 
   const years = $derived(yearsBetween(from, to));
-  const perYear = $derived(
-    Map.groupBy(
-      rows.flatMap(({ changes }) => changes),
-      ({ date }) => yearOf(date)
-    )
-  );
 </script>
 
 <div class="wall" class:big style:--years={years.length}>
@@ -48,7 +44,7 @@
         <li>
           <span class="full">{year}</span>
           <span class="short">{String(year).slice(2)}</span>
-          {#if !big}<small>{perYear.get(year)?.length ?? 0}</small>{/if}
+          {#if totals}<small>{totals[year] ?? 0}</small>{/if}
         </li>
       {/each}
     </ol>

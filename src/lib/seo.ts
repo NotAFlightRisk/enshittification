@@ -44,13 +44,23 @@ export const happenedBy = (changes: Entry[], today: string) =>
 /** The newest change that has actually happened, so a scheduled one doesn't count as the latest */
 const latestOf = (changes: Entry[], today: string) => happenedBy(changes, today)[0] ?? changes[0];
 
+const stuckBy = (changes: Entry[], today: string) =>
+  happenedBy(changes, today).filter(({ status }) => !isHollow(status));
+
 /** The most serious change that happened and stuck, the newest if there's a tie */
 export function worstOf(changes: Entry[], today: string): Entry | undefined {
-  const stuck = happenedBy(changes, today).filter(({ status }) => !isHollow(status));
+  const stuck = stuckBy(changes, today);
   return stuck.reduce(
     (worst, change) => (change.severity > worst.severity ? change : worst),
     stuck[0]
   );
+}
+
+/** Worst record first, each grade worth double the one below, so one 5 beats fifteen 1s */
+export function rankServices(services: Service[], today: string) {
+  const weight = ({ changes }: Service) =>
+    stuckBy(changes, today).reduce((total, { severity }) => total + 2 ** (severity - 1), 0);
+  return services.toSorted((a, b) => weight(b) - weight(a));
 }
 
 export function serviceDescription(service: Service, today: string) {

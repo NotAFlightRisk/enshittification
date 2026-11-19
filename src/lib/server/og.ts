@@ -19,7 +19,7 @@ import {
   type Severity
 } from '#lib/data/types.ts';
 import { ogSize, site } from '#lib/site.ts';
-import { data, stats } from '#lib/server/data.ts';
+import { data, stats, wall } from '#lib/server/data.ts';
 
 // Share cards drawn at build time: satori lays the divs out as SVG, resvg makes the PNG
 
@@ -149,10 +149,8 @@ function strip(changes: Entry[], from: number, to: number, size: number, labels 
 }
 
 function homeImage() {
-  const { services, built } = data();
   const counts = stats();
-  const to = Math.max(counts.last, yearOf(built));
-  const shown = services.toSorted((a, b) => b.changes.length - a.changes.length).slice(0, 3);
+  const { rows: shown, from, to } = wall(3);
   return frame(
     `${plural(counts.changes, 'change')} at ${plural(counts.services, 'service')}`,
     headline('Big tech gets worse after you sign up.', 68),
@@ -164,7 +162,7 @@ function homeImage() {
           div({ ...condensed, width: 150, fontSize: 32, paddingBottom: 4 }, service.name),
           div(
             { flexGrow: 1, flexDirection: 'column' },
-            strip(service.changes, counts.first, to, 26, index === shown.length - 1)
+            strip(service.changes, from, to, 26, index === shown.length - 1)
           )
         )
       )
@@ -287,6 +285,7 @@ const pages: Record<string, [string, string]> = {
     'Your bill',
     'What your subscriptions cost now against any year since 2010, with inflation alongside.'
   ],
+  'the-wall': ['The wall', 'Every service and every change, the worst at the top.'],
   latest: ['Latest', 'Every change in the index, newest first.'],
   data: ['The data', 'Every change as JSON and CSV, under CC BY 4.0.'],
   about: ['About the index', 'How every entry is sourced, archived and checked.'],

@@ -14,7 +14,7 @@ export const GET = () => {
   const { services, changes, companies } = data();
   const updated = (list: typeof changes) => latest(list.map(({ updated }) => updated));
   const pages = [
-    { path: '/', modified: updated(changes) },
+    ...['/', '/the-wall'].map((path) => ({ path, modified: updated(changes) })),
     ...['/prices', '/bill', '/latest', '/data', '/about', '/corrections'].map((path) => ({ path })),
     ...services.flatMap((service) => [
       { path: `/${service.service}`, modified: updated(service.changes) },

@@ -100,10 +100,11 @@
 
   <h2>What it isn't</h2>
   <p>
-    It isn't a score. Each change gets a grade, but there's no total: with a handful of entries per
-    service, any sum would rank how much has been written about each company rather than how much
-    worse it got. The <a href="/prices">price league</a> is the one ranking, because prices are numbers
-    nobody here made up.
+    It isn't a score. Each change gets a grade, but no service gets a total to quote. The homepage
+    only has room for ten services, so it shows the worst, with each grade worth double the one
+    below: one 5, like a gadget switched off for good, outweighs fifteen price rises. Reversals and
+    tests don't count. Every service is on <a href="/the-wall">the whole wall</a>, and the
+    <a href="/prices">price league</a> ranks plans by numbers nobody here made up.
   </p>
 
   <h2>Who's behind it</h2>

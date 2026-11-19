@@ -7,7 +7,7 @@
   let { children } = $props();
 
   const nav = [
-    { href: '/', label: 'The wall' },
+    { href: '/the-wall', label: 'The wall' },
     { href: '/prices', label: 'Price league' },
     { href: '/bill', label: 'Your bill' },
     { href: '/latest', label: 'Latest' },

@@ -22,11 +22,12 @@
     </h1>
     <p>
       {#if missing}
-        Or it never existed. Try <a href="/">the wall</a>, <a href="/latest">the latest changes</a>
+        Or it never existed. Try <a href="/the-wall">the wall</a>,
+        <a href="/latest">the latest changes</a>
         or <a href="/random">a random one</a>.
       {:else}
         Not deliberately, unlike everything else on this site. Try again in a minute, or head
-        <a href="/">back to the wall</a>.
+        <a href="/the-wall">back to the wall</a>.
       {/if}
     </p>
   </Sign>

@@ -50,6 +50,7 @@ export const reserved = [
   'og',
   'prices',
   'random',
+  'the-wall',
   'year'
 ];
 

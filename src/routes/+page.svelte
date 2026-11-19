@@ -20,7 +20,7 @@
   alt="The wall: {plural(counts.changes, 'change')} at {plural(
     counts.services,
     'service'
-  )} as warning signs on a line from {counts.first} to {data.to}."
+  )} as warning signs on a line from {data.wall.from} to {data.wall.to}."
 />
 
 <div class="hero">
@@ -34,8 +34,11 @@
 
 <section class="wall" aria-labelledby="wall">
   <h2 id="wall">The wall</h2>
-  <Wall rows={data.rows} from={data.from} to={data.to} today={data.today} />
+  <Wall {...data.wall} />
   <Legend />
+  {#if data.wall.rows.length < counts.services}
+    <a class="button" href="/the-wall">See all {counts.services} services</a>
+  {/if}
 </section>
 
 {#if data.serious.length}
