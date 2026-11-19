@@ -89,7 +89,7 @@ changes:
     company_said: >-
       Spotify said it updates prices from time to time to reflect local macroeconomic factors and
       market demands.
-    severity: 2
+    severity: 1
     status: in-force
     regions: [US]
     prices:
@@ -102,7 +102,7 @@ changes:
         archive: https://web.archive.org/web/20210426162507/https://www.theverge.com/2021/4/26/22403813/spotify-price-increase-subscriptions-2021
         quote: Spotify family is increasing from $14.99 to $15.99 per month in the US.
     added: 2026-11-18
-    updated: 2026-11-18
+    updated: 2026-11-19
     sources_checked: 2026-11-18
     status_checked: 2026-11-18
 
@@ -121,7 +121,7 @@ changes:
       It ended the $9.99 price that US Individual had kept since Spotify launched there in 2011.
     company_said: >-
       Spotify said it was changing prices so it could keep innovating as the market changed.
-    severity: 2
+    severity: 1
     status: in-force
     regions: [AD, AL, AR, AT, AU, BA, BE, BG, BR, CA, CL, CO, CR, CY, DK, EC, EE, ES, FI, FR, GB,
       GR, GT, HK, HR, ID, IE, IL, IS, IT, LT, LU, LV, MC, ME, MK, MT, MX, NL, "NO", NZ, PE, PT, RS,
@@ -153,7 +153,7 @@ changes:
         archive: https://web.archive.org/web/20130901193202/http://news.spotify.com/us/2011/07/14/hello-america-spotify-here/
         quote: We’re excited to let you know that today we’re bringing Spotify to the US.
     added: 2026-11-18
-    updated: 2026-11-18
+    updated: 2026-11-19
     sources_checked: 2026-11-18
     status_checked: 2026-11-18
 
@@ -200,7 +200,7 @@ changes:
     company_said: >-
       Spotify said it updates prices now and then so it can keep investing in and improving the
       product.
-    severity: 2
+    severity: 1
     status: in-force
     regions: [US]
     prices:
@@ -226,7 +226,7 @@ changes:
           $14.99 per month, the Premium Family plan costs $16.99 per month, the Premium Student plan
           costs $5.99 per month.
     added: 2026-11-18
-    updated: 2026-11-18
+    updated: 2026-11-19
     sources_checked: 2026-11-18
     status_checked: 2026-11-18
 
@@ -244,7 +244,7 @@ changes:
       Developers starting new apps, or still in development mode, lost Spotify's recommendations and
       audio analysis data.
     company_said: Spotify said the changes were meant to create a more secure platform.
-    severity: 2
+    severity: 1
     status: in-force
     sources:
       - url: https://developer.spotify.com/blog/2024-11-27-changes-to-the-web-api
@@ -256,7 +256,7 @@ changes:
           Effective today, new Web API use cases will no longer be able to access or use the
           following endpoints and functionality in their third-party applications.
     added: 2026-11-18
-    updated: 2026-11-18
+    updated: 2026-11-19
     sources_checked: 2026-11-18
     status_checked: 2026-11-18
 
@@ -312,7 +312,7 @@ changes:
     company_said: >-
       Spotify said occasional price updates reflect the value it delivers and let it keep offering
       the best experience and benefit artists.
-    severity: 2
+    severity: 1
     status: in-force
     regions: [US, EE, LV]
     prices:
@@ -350,6 +350,6 @@ changes:
           As of October 2026, Spotify's premium, duo, family, and student plans cost $12.99, $18.99,
           $21.99, and $6.99, respectively.
     added: 2026-11-18
-    updated: 2026-11-18
+    updated: 2026-11-19
     sources_checked: 2026-11-18
     status_checked: 2026-11-18
