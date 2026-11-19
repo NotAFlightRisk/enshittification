@@ -162,7 +162,7 @@ changes:
     before: Unlimited storage, rolling out
     after: 1TB
     user_impact: >-
-      Subscribers got 1TB in place of the unlimited storage Microsoft had started rolling out, and
+      Subscribers were capped at 1TB where Microsoft had started rolling out unlimited storage, and
       the ones already storing more had at least 12 months to move it.
     company_said: >-
       Microsoft said a small number of users had backed up numerous PCs and stored entire movie
@@ -443,7 +443,8 @@ changes:
       Microsoft put Copilot into Word, Excel, PowerPoint, Outlook and OneNote for Personal and
       Family subscribers in most markets on 16 January 2025. On Family it's the owner's alone. At
       first the only way to turn it off was a privacy setting that turns off other features too.
-      Windows and Mac versions got an Enable Copilot checkbox from March 2025, but Microsoft says you
+      Word, Excel and PowerPoint on Windows and Mac got an Enable Copilot checkbox from March 2025,
+      but Microsoft says you
       can't turn it off in the iOS, Android or web versions of Word, Excel or PowerPoint, other than
       with that privacy setting.
     user_impact: >-
@@ -511,9 +512,9 @@ changes:
     category: removed-feature
     title: Microsoft 365 Personal and Family lose the VPN in Microsoft Defender
     what_changed: >-
-      Microsoft switched off privacy protection, the VPN in the Microsoft Defender app, on 28
-      February 2025. Defender needs a Microsoft 365 Personal or Family subscription, and the VPN
-      came with up to 50GB a month.
+      Microsoft said privacy protection, the VPN in the Microsoft Defender app, would go away on 28
+      February 2025. Its help pages still gave that date over a year later. Defender needs a
+      Microsoft 365 Personal or Family subscription, and the VPN came with up to 50GB a month.
     user_impact: Personal and Family subscribers who used the VPN lost it.
     company_said: >-
       Microsoft said it routinely evaluates the usage and effectiveness of its features, and would
@@ -554,8 +555,8 @@ changes:
       removed it. They can't open or edit their Publisher files in it any more, while people who
       bought a perpetual copy can keep using theirs. Microsoft had announced it in February 2024.
     user_impact: >-
-      Subscribers who made things in Publisher lost the app and had to convert their files to
-      another format.
+      Subscribers who made things in Publisher lost the app, and had to convert their files or find
+      another tool to keep using them.
     company_said: Microsoft said it occasionally removes features and products to focus on new benefits.
     severity: 2
     status: in-force
@@ -599,7 +600,7 @@ changes:
     what_changed: >-
       From 8 October 2026, new and upgraded Microsoft 365 Family subscriptions share 2TB between
       everyone on the plan, where each of up to 6 people had 1TB. Existing subscriptions move over
-      when they renew on or after 2 May 2027.
+      when they renew on or after 2 May 2027, or sooner if a change of plan brings it in.
     before: 1TB each, up to 6TB
     after: 2TB shared
     user_impact: >-
