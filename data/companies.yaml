@@ -17,3 +17,8 @@
   name: Netflix
   url: https://about.netflix.com
   wikipedia: https://en.wikipedia.org/wiki/Netflix
+
+- id: disney
+  name: The Walt Disney Company
+  url: https://thewaltdisneycompany.com
+  wikipedia: https://en.wikipedia.org/wiki/The_Walt_Disney_Company
