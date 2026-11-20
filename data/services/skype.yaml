@@ -5,6 +5,47 @@ url: https://www.skype.com
 wikipedia: https://en.wikipedia.org/wiki/Skype
 
 changes:
+  - id: home-tab-ads
+    date: 2011-03-07
+    date_kind: announced
+    category: ads
+    title: Skype starts rolling out ads in the Home tab of Skype for Windows
+    what_changed: >-
+      Skype started rolling out ads in the Home tab of Skype for Windows on 7 March 2011, in the US,
+      UK and Germany, after testing them for a month. They only appeared in the consumer versions,
+      not the enterprise ones.
+    user_impact: >-
+      People using the consumer Skype for Windows app in those countries could see ads in its Home
+      tab.
+    severity: 1
+    status: reversed
+    reversed:
+      date: 2024-07-31
+      what: >-
+        Microsoft announced an update to remove all ads from Skype, going to testers in its Insider
+        programme first.
+      sources:
+        - url: https://www.theregister.com/2024/07/31/skype_adfree/
+          publisher: The Register
+          kind: press
+          published: 2024-07-31
+          archive: https://web.archive.org/web/20250915101757/https://www.theregister.com/2024/07/31/skype_adfree/
+          quote: Our latest update removes all ads from Skype channels and the entire Skype platform
+    regions: [US, GB, DE]
+    sources:
+      - url: https://techcrunch.com/2011/03/07/in-the-search-for-more-revenue-skype-rolls-out-advertisements-in-windows-client/
+        publisher: TechCrunch
+        kind: press
+        published: 2011-03-07
+        archive: https://web.archive.org/web/20110308101132/http://techcrunch.com/2011/03/07/in-the-search-for-more-revenue-skype-rolls-out-advertisements-in-windows-client/
+        quote: >-
+          The advertising will appear in the Home tab of Skype for Windows, but will only appear in
+          consumer versions not the enterprise versions.
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
   - id: desktop-api-chat-cut-off
     date: 2013-07
     date_kind: announced
