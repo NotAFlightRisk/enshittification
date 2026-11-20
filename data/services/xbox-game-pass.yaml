@@ -41,24 +41,6 @@ plans:
         month. From the next billing phase, subscribers will pay to $9.99 / £7.99 – the same as Game
         Pass for consoles.
 
-  - id: core-us
-    name: Game Pass Core
-    region: US
-    currency: USD
-    billing: month
-    since: 2023-09-14
-    price: 9.99
-    source:
-      url: https://news.xbox.com/en-us/2023/07/17/xbox-game-pass-core/
-      publisher: Xbox Wire
-      kind: primary
-      published: 2023-07-17
-      archive: https://web.archive.org/web/20230717131710/https://news.xbox.com/en-us/2023/07/17/xbox-game-pass-core/
-      quote: >-
-        Game Pass Core will give players access to our advanced multiplayer network, a select
-        collection of over 25 games to play with friends around the world, and exclusive member
-        deals, all for $9.99 USD per month or $59.99 USD per year.
-
   - id: core-annual-us
     name: Game Pass Core (12 months)
     region: US
@@ -80,25 +62,6 @@ plans:
       It became Game Pass Essential in October 2025, and we haven't found a Microsoft source for
       what Essential costs for 12 months.
 
-  - id: standard-us
-    name: Game Pass Standard
-    region: US
-    currency: USD
-    billing: month
-    since: 2024-09-10
-    price: 14.99
-    source:
-      url: https://www.theverge.com/2024/9/10/24241171/xbox-game-pass-standard-launch-pricing
-      publisher: The Verge
-      kind: press
-      published: 2024-09-10
-      archive: https://web.archive.org/web/20240910192144/https://www.theverge.com/2024/9/10/24241171/xbox-game-pass-standard-launch-pricing
-      quote: >-
-        Microsoft is launching its Xbox Game Pass Standard tier today. After briefly testing it with
-        Xbox Insiders last month, the new $14.99 per month Game Pass Standard subscription is
-        launching with the usual Game Pass library for Xbox and online console multiplayer access,
-        too.
-
   - id: premium-us
     name: Game Pass Premium
     region: US
@@ -106,7 +69,6 @@ plans:
     billing: month
     since: 2025-10-01
     price: 14.99
-    replaces: standard-us
     source:
       url: https://news.xbox.com/en-us/2025/10/01/xbox-game-pass-ultimate-premium-essential-plans/
       publisher: Xbox Wire
@@ -122,7 +84,6 @@ plans:
     billing: month
     since: 2025-10-01
     price: 9.99
-    replaces: core-us
     source:
       url: https://news.xbox.com/en-us/2025/10/01/xbox-game-pass-ultimate-premium-essential-plans/
       publisher: Xbox Wire
@@ -317,8 +278,8 @@ changes:
     title: Game Pass Ultimate goes from $16.99 to $19.99 and PC Game Pass from $9.99 to $11.99
     what_changed: >-
       Microsoft said on 9 July 2024 that US Game Pass Ultimate would go from $16.99 to $19.99 a
-      month and PC Game Pass from $9.99 to $11.99. New members paid it from 10 July and existing
-      ones from 12 September 2024.
+      month and PC Game Pass from $9.99 to $11.99. IGN reported the new prices applied to new
+      members from 10 July and existing ones from 12 September 2024.
     before: Ultimate $16.99, PC $9.99 a month
     after: Ultimate $19.99, PC $11.99 a month
     user_impact: US Ultimate and PC Game Pass members paid more, $3 a month more on Ultimate.
@@ -378,8 +339,8 @@ changes:
     title: Game Pass Core's 12-month plan goes from $59.99 to $74.99 in the US
     what_changed: >-
       Microsoft said on 9 July 2024 that US Game Pass Core would go from $59.99 to $74.99 a year,
-      while staying $9.99 a month. New members paid it from 10 July and existing ones from 12
-      September 2024.
+      while staying $9.99 a month. IGN reported the new prices applied to new members from 10 July
+      and existing ones from 12 September 2024.
     before: $59.99 a year
     after: $74.99 a year
     user_impact: >-
