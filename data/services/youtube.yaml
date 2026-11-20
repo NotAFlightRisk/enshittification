@@ -270,6 +270,47 @@ changes:
     sources_checked: 2026-11-18
     status_checked: 2026-11-18
 
+  - id: premium-lite-europe-dropped
+    date: 2023-09-25
+    date_kind: reported
+    effective: 2023-10-26
+    category: removed-feature
+    title: YouTube drops Premium Lite, its €6.99 ad-free plan in 7 European countries
+    what_changed: >-
+      YouTube emailed Premium Lite subscribers in September 2023 to say it would stop offering the
+      €6.99 a month plan after 25 October 2023. Lite had been on trial since 2021 in Belgium,
+      Denmark, Finland, Luxembourg, the Netherlands, Norway and Sweden, with ad-free videos but no
+      downloads or background play.
+    before: Ad-free for €6.99 a month
+    after: Full Premium, or ads
+    user_impact: >-
+      Lite subscribers had to pay for full Premium, which costs more and bundles YouTube Music, or
+      go back to watching ads.
+    severity: 2
+    status: in-force
+    regions: [BE, DK, FI, LU, NL, NO, SE]
+    sources:
+      - url: https://9to5google.com/2023/09/25/youtube-premium-lite-shut-down/
+        publisher: 9to5Google
+        kind: press
+        published: 2023-09-25
+        archive: https://web.archive.org/web/20230926084112/https://9to5google.com/2023/09/25/youtube-premium-lite-shut-down/
+        quote: >-
+          We’re writing to let you know that after 25 October 2023, we will no longer be offering
+          your version of Premium Lite.
+      - url: https://www.theverge.com/2023/9/25/23889917/youtube-premium-lite-subscription-discontinued-retired
+        publisher: The Verge
+        kind: press
+        published: 2023-09-25
+        archive: https://web.archive.org/web/20230925223752/https://www.theverge.com/2023/9/25/23889917/youtube-premium-lite-subscription-discontinued-retired
+        quote: >-
+          At €6.99 per month, YouTube’s Premium Lite plan first launched in select European
+          countries in 2021
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
   - id: ad-blocker-crackdown
     date: 2023-10-31
     date_kind: announced
@@ -332,6 +373,61 @@ changes:
     updated: 2026-11-19
     sources_checked: 2026-11-18
     status_checked: 2026-11-18
+
+  - id: family-plan-household-pauses
+    date: 2025-09-02
+    date_kind: reported
+    category: lock-out
+    title: YouTube starts pausing Premium Family members it can't confirm live with the manager
+    what_changed: >-
+      YouTube started warning some Premium Family members in September 2025 that their Premium would
+      be paused in 14 days. It said it appeared they may not be in the same household as the plan's
+      manager. Its help page already said members must live at the manager's address, which
+      TechRadar said YouTube hadn't been strict about until then, and later added that the pause
+      alert means YouTube can't confirm you're in the same household.
+    user_impact: >-
+      Members YouTube flagged keep their place in the family group but lose Premium and go back to
+      watching with ads.
+    severity: 2
+    status: in-force
+    related: [netflix/paid-sharing, disney-plus/paid-sharing]
+    sources:
+      - url: https://support.google.com/youtubemusic/answer/7507349
+        publisher: YouTube Help
+        kind: primary
+        published: 2026-03-02
+        archive: https://web.archive.org/web/20260302051541/https://support.google.com/youtubemusic/answer/7507349
+        quote: >-
+          Tip: If you see an alert in the YouTube app informing you that your Premium access will be
+          paused, it is because we cannot confirm that you are in the same household as your family
+          manager.
+      - url: https://www.techradar.com/computing/software/youtube-has-started-flagging-premium-family-members-who-live-at-different-addresses-just-like-netflixs-password-sharing-crackdown
+        publisher: TechRadar
+        kind: press
+        published: 2025-09-02
+        archive: https://web.archive.org/web/20260715173814/https://www.techradar.com/computing/software/youtube-has-started-flagging-premium-family-members-who-live-at-different-addresses-just-like-netflixs-password-sharing-crackdown
+        quote: >-
+          The email says "your YouTube Premium Family membership will be paused", and warns users
+          that they will lose Premium access after 14 days, after which they will only have access
+          to ad-supported content.
+      - url: https://www.droid-life.com/2025/09/02/youtube-enforcing-family-plan-rules/
+        publisher: Droid Life
+        kind: press
+        published: 2025-09-02
+        archive: https://web.archive.org/web/20260710072453/https://www.droid-life.com/2025/09/02/youtube-enforcing-family-plan-rules/
+        quote: >-
+          Once your access is paused, you will remain in your family group and be able to watch
+          YouTube with ads, but will no longer have YouTube Premium benefits.
+      - url: https://support.google.com/youtubemusic/answer/7507349
+        publisher: YouTube Help
+        kind: primary
+        published: 2025-04-21
+        archive: https://web.archive.org/web/20250421001231/https://support.google.com/youtubemusic/answer/7507349
+        quote: Live within the same residential address as the family manager.
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
 
   - id: premium-price-2026
     date: 2026-04-10
