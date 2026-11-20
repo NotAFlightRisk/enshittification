@@ -148,8 +148,8 @@ function strip(changes: Entry[], from: number, to: number, size: number, labels 
   );
 }
 
-/** Room under the home headline for the strips, their tape and the year labels */
-const homeRoom = 360;
+/** Room under the home headline for the strips and their tape, once the year labels are in */
+const homeRoom = 325;
 
 /** The worst services whose strips fit under the headline, and how big their signs can be */
 function homeRows(rows: ReturnType<typeof wall>['rows'], from: number, to: number) {
@@ -159,8 +159,8 @@ function homeRows(rows: ReturnType<typeof wall>['rows'], from: number, to: numbe
       (sum, row) => sum + stackHeight(marks(row.changes, from, to)).wide,
       0
     );
-    const space = homeRoom - 35 - count * 8 - (count - 1) * 12;
-    const size = Math.min(26, Math.floor(space / lanes) - 6);
+    const space = homeRoom - count * 8 - (count - 1) * 12;
+    const size = Math.max(12, Math.min(26, Math.floor(space / lanes) - 6));
     if (size >= 20 || count === 1) return { shown, size };
   }
 }
