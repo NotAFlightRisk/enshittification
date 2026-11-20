@@ -32,3 +32,8 @@
   name: Microsoft
   url: https://news.microsoft.com
   wikipedia: https://en.wikipedia.org/wiki/Microsoft
+
+- id: adobe
+  name: Adobe
+  url: https://news.adobe.com
+  wikipedia: https://en.wikipedia.org/wiki/Adobe_Inc.

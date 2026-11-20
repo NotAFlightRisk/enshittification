@@ -1,0 +1,802 @@
+service: adobe-creative-cloud
+name: Adobe Creative Cloud
+company: adobe
+url: https://www.adobe.com/creativecloud.html
+crw: https://consumerrights.wiki/w/Adobe
+wikipedia: https://en.wikipedia.org/wiki/Adobe_Creative_Cloud
+
+plans:
+  - id: all-apps-us
+    name: Creative Cloud Pro, was All Apps (annual, paid monthly)
+    region: US
+    currency: USD
+    billing: month
+    since: 2012-05
+    price: 49.99
+    source:
+      url: https://www.adobe.com/aboutadobe/pressroom/pressreleases/201205/050712AdobeCS6Ship.html
+      publisher: Adobe
+      kind: primary
+      published: 2012-05-07
+      archive: https://web.archive.org/web/20120509070539/https://www.adobe.com/aboutadobe/pressroom/pressreleases/201205/050712AdobeCS6Ship.html
+      quote: >-
+        Pricing for Creative Cloud membership for individuals is US$49.99 per month based on annual
+        membership and US$74.99 per month for month-to-month membership.
+
+  - id: photoshop-us
+    name: Photoshop single app (annual, paid monthly)
+    region: US
+    currency: USD
+    billing: month
+    since: 2012-05
+    price: 19.99
+    source:
+      url: https://www.adobe.com/aboutadobe/pressroom/pressreleases/201204/042312AdobePhotoshopCS6.html
+      publisher: Adobe
+      kind: primary
+      published: 2012-04-23
+      archive: https://web.archive.org/web/20120425204558/https://www.adobe.com/aboutadobe/pressroom/pressreleases/201204/042312AdobePhotoshopCS6.html
+      quote: >-
+        Subscription pricing for Photoshop CS6 is US$19.99 per month for an annual contract and
+        US$29.99 for a month-to-month contract.
+
+  - id: photography-1tb-us
+    name: Photography 1TB (annual, paid monthly)
+    region: US
+    currency: USD
+    billing: month
+    since: 2017-10-18
+    price: 19.99
+    source:
+      url: https://news.adobe.com/news/news-details/2017/Adobe-Introduces-New-Lightroom-CC-Cloud-Photography-Service/default.aspx
+      publisher: Adobe
+      kind: primary
+      published: 2017-10-18
+      archive: https://web.archive.org/web/20200812205705/https://news.adobe.com/news/news-details/2017/Adobe-Introduces-New-Lightroom-CC-Cloud-Photography-Service/default.aspx
+      quote: >-
+        the Creative Cloud Photography plan with 1 TB includes Lightroom CC, Lightroom for mobile and
+        web, Photoshop CC, Adobe Spark with premium features, Adobe Portfolio, and 1 TB of cloud
+        storage ($19.99/month, but available at $14.99/month for the first year for existing
+        Creative Cloud Photography customers).
+
+  - id: photography-20gb-us
+    name: Photography 20GB (annual, paid monthly, existing members only)
+    region: US
+    currency: USD
+    billing: month
+    since: 2014-06-18
+    price: 9.99
+    source:
+      url: https://news.adobe.com/news/news-details/2014/Adobe-Releases-New-Creative-Cloud-Photography-Plan-for-999-Per-Month/
+      publisher: Adobe
+      kind: primary
+      published: 2014-06-18
+      archive: https://web.archive.org/web/20210413042030/https://news.adobe.com/news/news-details/2014/Adobe-Releases-New-Creative-Cloud-Photography-Plan-for-999-Per-Month/?mv=affiliate&mv2=red
+      quote: Creative Cloud Photography plan is available at $USD9.99 per month.
+
+changes:
+  - id: creative-suite-ends-2013
+    date: 2013-05-06
+    date_kind: announced
+    category: removed-feature
+    title: Adobe stops making new Creative Suite versions, so new releases need Creative Cloud
+    question: When did Adobe go subscription only?
+    what_changed: >-
+      Adobe said on 6 May 2013 it had no plans for future releases of Creative Suite, so its new
+      apps would only come with a Creative Cloud membership. CS6 stayed on sale and supported.
+    before: New versions sold outright as Creative Suite
+    after: New versions only with a Creative Cloud membership
+    user_impact: >-
+      Anyone who bought Adobe's apps outright had to subscribe to get new versions, though CS6 kept
+      working and stayed on sale.
+    company_said: >-
+      Adobe said focusing development on Creative Cloud would speed up how fast it could innovate.
+    severity: 2
+    status: in-force
+    sources:
+      - url: https://www.adobe.com/aboutadobe/pressroom/pressreleases/201305/050613AdobeAcceleratesShifttotheCloud.html
+        publisher: Adobe
+        kind: primary
+        published: 2013-05-06
+        archive: https://web.archive.org/web/20130507031731/https://www.adobe.com/aboutadobe/pressroom/pressreleases/201305/050613AdobeAcceleratesShifttotheCloud.html
+        quote: >-
+          While Adobe Creative Suite® 6 products will continue to be supported and available for
+          purchase, the company has no plans for future releases of Creative Suite or other CS
+          products.
+      - url: https://www.adobe.com/aboutadobe/pressroom/pressreleases/201305/050613AdobeAcceleratesShifttotheCloud.html
+        publisher: Adobe
+        kind: primary
+        published: 2013-05-06
+        archive: https://web.archive.org/web/20130507031731/https://www.adobe.com/aboutadobe/pressroom/pressreleases/201305/050613AdobeAcceleratesShifttotheCloud.html
+        quote: >-
+          Focusing development on Creative Cloud will not only accelerate the rate at which Adobe
+          can innovate but also broaden the type of innovation the company can offer the creative
+          community.
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: lightroom-standalone-ends-2017
+    date: 2017-10-18
+    date_kind: announced
+    category: removed-feature
+    title: Lightroom 6 is the last Lightroom sold outside Creative Cloud
+    what_changed: >-
+      Adobe said on 18 October 2017 that Lightroom 6 was the last standalone Lightroom, with no
+      Lightroom 7 sold outright. In 2013 it had promised perpetual licences indefinitely.
+    before: Lightroom sold outright with a perpetual licence
+    after: New Lightroom versions only with a Creative Cloud membership
+    user_impact: >-
+      Photographers who bought Lightroom outright had to subscribe for new versions, and Lightroom 6
+      stopped getting camera support and bug fixes after 2017.
+    company_said: >-
+      Adobe said customers were overwhelmingly choosing the Creative Cloud Photography plan to get
+      Lightroom.
+    severity: 2
+    status: in-force
+    related: [adobe-creative-cloud/creative-suite-ends-2013]
+    sources:
+      - url: https://blogs.adobe.com/photoshop/2017/10/introducing-lightroom-cc-lightroom-classic-cc-and-more.html
+        publisher: Adobe Photoshop Blog
+        kind: primary
+        published: 2017-10-18
+        archive: https://web.archive.org/web/20171018222224/https://blogs.adobe.com/photoshop/2017/10/introducing-lightroom-cc-lightroom-classic-cc-and-more.html
+        quote: >-
+          Lightroom 6 is the last standalone version of Lightroom that can be purchased outside of
+          a Creative Cloud membership. There will not be a Lightroom 7 perpetual offering.
+      - url: https://blogs.adobe.com/photoshop/2017/10/introducing-lightroom-cc-lightroom-classic-cc-and-more.html
+        publisher: Adobe Photoshop Blog
+        kind: primary
+        published: 2017-10-18
+        archive: https://web.archive.org/web/20171018222224/https://blogs.adobe.com/photoshop/2017/10/introducing-lightroom-cc-lightroom-classic-cc-and-more.html
+        quote: >-
+          Lightroom 6 will remain for sale for an undetermined amount of time, but will no longer be
+          updated with camera support or bug fixes after the end of 2017.
+      - url: https://blogs.adobe.com/lightroomjournal/2013/05/lightroom-and-the-creative-cloud.html
+        publisher: Lightroom Journal
+        kind: primary
+        published: 2013-05-06
+        archive: https://web.archive.org/web/20130608171215/https://blogs.adobe.com/lightroomjournal/2013/05/lightroom-and-the-creative-cloud.html
+        quote: >-
+          Future versions of Lightroom will be made available via traditional perpetual licenses
+          indefinitely.
+      - url: https://blogs.adobe.com/lightroomjournal/2017/10/answering-your-questions-on-lightroom-cc-lightroom-classic-cc-and-more.html
+        publisher: Lightroom Journal
+        kind: primary
+        published: 2017-10-19
+        archive: https://web.archive.org/web/20171022045034/https://blogs.adobe.com/lightroomjournal/2017/10/answering-your-questions-on-lightroom-cc-lightroom-classic-cc-and-more.html
+        quote: >-
+          Customers are overwhelmingly choosing the Creative Cloud Photography plan as the
+          preferred way to get access to Lightroom.
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: creative-cloud-price-2018
+    date: 2018-04-16
+    date_kind: effective
+    category: price-rise
+    title: Creative Cloud All Apps goes from $49.99 to $52.99 a month in the US, its first rise
+    what_changed: >-
+      Adobe raised Creative Cloud prices in the US, Canada and Mexico from 16 April 2018. All Apps
+      went from $49.99 to $52.99 a month and single apps like Photoshop from $19.99 to $20.99, on the
+      annual plan paid monthly.
+    before: $49.99 a month
+    after: $52.99 a month
+    user_impact: >-
+      All Apps and single app members in North America paying monthly paid more, new ones from 16
+      April and existing ones at the end of their annual term.
+    company_said: >-
+      Adobe said it hadn't changed prices in North America since Creative Cloud launched more than 5
+      years before.
+    severity: 1
+    status: in-force
+    regions: [US, CA, MX]
+    prices:
+      - { plan: all-apps-us, from: 49.99, to: 52.99 }
+      - { plan: photoshop-us, from: 19.99, to: 20.99 }
+    sources:
+      - url: https://helpx.adobe.com/x-productkb/policy-pricing/subscription-price-increase.html
+        publisher: Adobe Help Center
+        kind: primary
+        published: 2018-03-14
+        archive: https://web.archive.org/web/20180314135543/https://helpx.adobe.com/x-productkb/policy-pricing/subscription-price-increase.html
+        quote: >-
+          Creative Cloud for individuals Single App plans will increase to US$20.99 per month from
+          US$19.99 per month, a $1 per month increase. Creative Cloud for individuals All Apps plans
+          will increase to US$52.99 per month from US$49.99 per month, a $3 per month increase.
+      - url: https://helpx.adobe.com/x-productkb/policy-pricing/subscription-price-increase.html
+        publisher: Adobe Help Center
+        kind: primary
+        published: 2018-03-14
+        archive: https://web.archive.org/web/20180314135543/https://helpx.adobe.com/x-productkb/policy-pricing/subscription-price-increase.html
+        quote: >-
+          Since launching Creative Cloud more than five years ago, we have not changed prices for
+          customers in North America (United States, Canada, and Mexico).
+      - url: https://helpx.adobe.com/x-productkb/policy-pricing/subscription-price-increase.html
+        publisher: Adobe Help Center
+        kind: primary
+        published: 2018-03-14
+        archive: https://web.archive.org/web/20180314135543/https://helpx.adobe.com/x-productkb/policy-pricing/subscription-price-increase.html
+        quote: >-
+          Pay monthly — the new price goes into effect at the end of your annual term that ends on
+          or after April 16, 2018.
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: older-versions-pulled-2019
+    date: 2019-05-08
+    date_kind: announced
+    category: lock-out
+    title: Adobe pulls older Creative Cloud app versions and warns of third-party claims
+    what_changed: >-
+      Adobe said on 8 May 2019 that Creative Cloud members could only download the most recent major
+      versions of its apps. Some members still on older versions were then emailed that they were no
+      longer licensed to use certain older versions.
+    before: Members could download older versions of the apps
+    after: Only the most recent major versions to download
+    user_impact: >-
+      Members on some older versions were told they were no longer licensed to use them, and could
+      face infringement claims from third parties if they carried on.
+    company_said: >-
+      Adobe said focusing on its latest major releases, which most customers already used, would
+      let it build the features customers asked for most.
+    severity: 2
+    status: in-force
+    sources:
+      - url: https://theblog.adobe.com/changes-to-creative-cloud-download-availability/
+        publisher: Adobe Blog
+        kind: primary
+        published: 2019-05-08
+        archive: https://web.archive.org/web/20190510121916/https://theblog.adobe.com/changes-to-creative-cloud-download-availability/
+        quote: >-
+          Please note that going forward, Creative Cloud customers will only have direct download
+          access (from the Creative Cloud Desktop app and Adobe.com) to the two most recent major
+          versions of Creative Cloud desktop applications.
+      - url: https://theblog.adobe.com/changes-to-creative-cloud-download-availability/
+        publisher: Adobe Blog
+        kind: primary
+        published: 2019-05-08
+        archive: https://web.archive.org/web/20190510121916/https://theblog.adobe.com/changes-to-creative-cloud-download-availability/
+        quote: >-
+          Focusing our efforts on the latest two major releases of Creative Cloud applications,
+          which the vast majority of Adobe customers are already using, will further enable us to
+          develop the features and functionality most requested by customers
+      - url: https://petapixel.com/2019/05/14/adobe-warns-that-using-older-cc-apps-could-get-you-sued/
+        publisher: PetaPixel
+        kind: press
+        published: 2019-05-14
+        archive: https://web.archive.org/web/20190514163149/https://petapixel.com/2019/05/14/adobe-warns-that-using-older-cc-apps-could-get-you-sued/
+        quote: >-
+          For customers who have not yet updated to the latest version of Creative Cloud, please
+          note that you are no longer licensed to use certain older versions of the applications or
+          deploy packages containing these older versions
+      - url: https://petapixel.com/2019/05/14/adobe-warns-that-using-older-cc-apps-could-get-you-sued/
+        publisher: PetaPixel
+        kind: press
+        published: 2019-05-14
+        archive: https://web.archive.org/web/20190514163149/https://petapixel.com/2019/05/14/adobe-warns-that-using-older-cc-apps-could-get-you-sued/
+        quote: >-
+          Should you continue to use or deploy these unauthorized versions, you may be at risk of
+          potential claims of infringement by third parties.
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: all-apps-price-2022
+    date: 2022-03-22
+    date_kind: announced
+    effective: 2022-04-27
+    category: price-rise
+    title: Creative Cloud All Apps goes from $52.99 to $54.99 a month in the US
+    what_changed: >-
+      Adobe said on 22 March 2022 that All Apps for individuals would go from $52.99 to $54.99 a
+      month on the annual plan paid monthly. It applied at renewal or billing dates from 27 April
+      2022, month-to-month went from $79.49 to $82.49, and single app plans didn't change.
+    before: $52.99 a month
+    after: $54.99 a month
+    user_impact: >-
+      All Apps members paying monthly paid more from their next renewal or billing date on or after
+      27 April 2022, while prepaid annual members didn't.
+    severity: 1
+    status: in-force
+    regions: [US]
+    prices:
+      - { plan: all-apps-us, from: 52.99, to: 54.99 }
+    sources:
+      - url: https://blog.adobe.com/en/publish/2022/03/22/creative-cloud-offering-price-update
+        publisher: Adobe Blog
+        kind: primary
+        published: 2022-03-22
+        archive: https://web.archive.org/web/20220326001001/https://blog.adobe.com/en/publish/2022/03/22/creative-cloud-offering-price-update
+        quote: >-
+          USD$2.00 increase for the annual billed monthly option Previously USD$52.99, will be
+          USD$54.99 per month USD$3.00 increase for the month-to-month option Previously USD$79.49,
+          will be USD$82.49 per month
+      - url: https://blog.adobe.com/en/publish/2022/03/22/creative-cloud-offering-price-update
+        publisher: Adobe Blog
+        kind: primary
+        published: 2022-03-22
+        archive: https://web.archive.org/web/20220326001001/https://blog.adobe.com/en/publish/2022/03/22/creative-cloud-offering-price-update
+        quote: >-
+          Existing members will see these changes reflected on select plans at your next renewal or
+          billing date on or after April 27, 2022.
+      - url: https://blog.adobe.com/en/publish/2022/03/22/creative-cloud-offering-price-update
+        publisher: Adobe Blog
+        kind: primary
+        published: 2022-03-22
+        archive: https://web.archive.org/web/20220326001001/https://blog.adobe.com/en/publish/2022/03/22/creative-cloud-offering-price-update
+        quote: No changes to any Creative Cloud single app plan for individuals
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: pantone-colour-books-2022
+    date: 2022-11-01
+    date_kind: reported
+    category: paywall
+    title: Most Pantone colour books leave Photoshop, Illustrator and InDesign for a paid plugin
+    what_changed: >-
+      Ars Technica reported on 1 November 2022 that Adobe was phasing most Pantone colour books out
+      of Photoshop, Illustrator and InDesign. Adobe said that after November 2022 only the Pantone +
+      CMYK and Metallic books would remain, and the rest would need a paid Pantone Connect licence.
+    before: Pantone colour books included in the apps
+    after: Most Pantone colours need a Pantone Connect licence
+    user_impact: >-
+      Designers who used Pantone colours had to pay Pantone on top of Creative Cloud, and some found
+      Pantone colours in old Photoshop files replaced with black.
+    company_said: >-
+      Adobe said Pantone's licensing with Adobe had changed, so customers would need to buy Pantone
+      Connect licences.
+    severity: 2
+    status: in-force
+    sources:
+      - url: https://helpx.adobe.com/illustrator/kb/pantone-color-books-illustrator.html
+        publisher: Adobe Help Center
+        kind: primary
+        published: 2022-09-12
+        archive: https://web.archive.org/web/20221101185606/https://helpx.adobe.com/illustrator/kb/pantone-color-books-illustrator.html
+        quote: >-
+          Standardized pre-loaded Color libraries, also known as Pantone Color books, will be
+          phased out of Illustrator, InDesign, and Photoshop in software updates released after
+          August 16, 2022
+      - url: https://helpx.adobe.com/illustrator/kb/pantone-color-books-illustrator.html
+        publisher: Adobe Help Center
+        kind: primary
+        published: 2022-09-12
+        archive: https://web.archive.org/web/20221101185606/https://helpx.adobe.com/illustrator/kb/pantone-color-books-illustrator.html
+        quote: >-
+          Pantone’s licensing with Adobe was adjusted. Due to this change, customers will need to
+          purchase Pantone Connect licenses to access Pantone colors in Adobe Creative Cloud
+          products.
+      - url: https://arstechnica.com/gadgets/2022/11/pantone-wants-15-month-for-the-privilege-of-using-its-colors-in-photoshop/
+        publisher: Ars Technica
+        kind: press
+        published: 2022-11-01
+        archive: https://web.archive.org/web/20221101184113/https://arstechnica.com/gadgets/2022/11/pantone-wants-15-month-for-the-privilege-of-using-its-colors-in-photoshop/
+        quote: >-
+          Some users have already encountered Photoshop error messages informing them of the
+          change, and that Pantone colors in old Photoshop files are being replaced with black when
+          they're opened in newer versions of the software.
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: creative-cloud-price-2023
+    date: 2023-09-13
+    date_kind: announced
+    effective: 2023-11-01
+    category: price-rise
+    title: Creative Cloud All Apps goes from $54.99 to $59.99 a month in the US
+    what_changed: >-
+      Adobe said on 13 September 2023 that All Apps would go from $54.99 to $59.99 a month and
+      single apps from $20.99 to $22.99 from 1 November 2023. Single apps include Photoshop, and the
+      rise covered the Americas and Europe, on the annual plan paid monthly.
+    before: $54.99 a month
+    after: $59.99 a month
+    user_impact: >-
+      All Apps and single app members in the Americas and Europe paid more, while Photography plans
+      and student plans stayed the same.
+    company_said: >-
+      Adobe said the rise reflected the value it had already added and the new costs of generative
+      AI content.
+    severity: 1
+    status: in-force
+    regions: [US]
+    prices:
+      - { plan: all-apps-us, from: 54.99, to: 59.99 }
+      - { plan: photoshop-us, from: 20.99, to: 22.99 }
+    sources:
+      - url: https://blog.adobe.com/en/publish/2023/09/13/ai-creative-cloud-release-pricing-update
+        publisher: Adobe Blog
+        kind: primary
+        published: 2023-09-13
+        archive: https://web.archive.org/web/20230913140452/https://blog.adobe.com/en/publish/2023/09/13/ai-creative-cloud-release-pricing-update
+        quote: >-
+          USD$5 increase for the annual billed monthly option Previously USD$54.99, will be USD$59.99
+          per month
+      - url: https://blog.adobe.com/en/publish/2023/09/13/ai-creative-cloud-release-pricing-update
+        publisher: Adobe Blog
+        kind: primary
+        published: 2023-09-13
+        archive: https://web.archive.org/web/20230913140452/https://blog.adobe.com/en/publish/2023/09/13/ai-creative-cloud-release-pricing-update
+        quote: >-
+          USD$2 increase for the annual billed monthly option Previously USD$20.99, will be USD$22.99
+          per month
+      - url: https://blog.adobe.com/en/publish/2023/09/13/ai-creative-cloud-release-pricing-update
+        publisher: Adobe Blog
+        kind: primary
+        published: 2023-09-13
+        archive: https://web.archive.org/web/20230913140452/https://blog.adobe.com/en/publish/2023/09/13/ai-creative-cloud-release-pricing-update
+        quote: >-
+          Starting November 1, 2023, the price of specific Creative Cloud plans will increase in
+          North America, Central America, South America and Europe.
+      - url: https://blog.adobe.com/en/publish/2023/09/13/ai-creative-cloud-release-pricing-update
+        publisher: Adobe Blog
+        kind: primary
+        published: 2023-09-13
+        archive: https://web.archive.org/web/20230913140452/https://blog.adobe.com/en/publish/2023/09/13/ai-creative-cloud-release-pricing-update
+        quote: >-
+          No changes to Adobe Acrobat plans, Adobe Stock plans, Adobe Substance plans, Creative Cloud
+          Photography Plans and Adobe Express plans.
+      - url: https://blog.adobe.com/en/publish/2023/09/13/ai-creative-cloud-release-pricing-update
+        publisher: Adobe Blog
+        kind: primary
+        published: 2023-09-13
+        archive: https://web.archive.org/web/20230913140452/https://blog.adobe.com/en/publish/2023/09/13/ai-creative-cloud-release-pricing-update
+        quote: >-
+          To reflect the increased value that we have already delivered to our members and given new
+          costs associated with producing generative AI content, today we’re announcing price updates
+          for our individual and business offerings.
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: photography-20gb-price-2025
+    date: 2024-12-15
+    date_kind: announced
+    effective: 2025-01-15
+    category: price-rise
+    title: Photography plan (20GB) goes from $9.99 to $14.99 a month, its first rise
+    what_changed: >-
+      Adobe said on 15 December 2024 that the 20GB Photography plan would go from $9.99 to $14.99 a
+      month at renewal from 15 January 2025. That's the annual plan paid monthly, and the prepaid
+      year stayed at $119.88.
+    before: $9.99 a month
+    after: $14.99 a month
+    user_impact: >-
+      Existing 20GB Photography members paying monthly paid 50% more unless they switched to paying
+      $119.88 a year up front.
+    company_said: >-
+      Adobe said it hadn't changed the price of its photography plans for more than a decade, and
+      the update better reflected the value of the apps.
+    severity: 2
+    status: in-force
+    prices:
+      - { plan: photography-20gb-us, from: 9.99, to: 14.99 }
+    related: [adobe-creative-cloud/photography-20gb-closed-2025]
+    sources:
+      - url: https://helpx.adobe.com/creative-cloud/faq/ccpp-20gb.html
+        publisher: Adobe Help Center
+        kind: primary
+        published: 2024-12-15
+        archive: https://web.archive.org/web/20241217104102/https://helpx.adobe.com/creative-cloud/faq/ccpp-20gb.html
+        quote: >-
+          Starting January 15, 2025, the price of the Adobe Creative Cloud Photography plan with 20GB
+          storage will increase in all countries. Annual billed monthly: Increase of US$5, from
+          US$9.99 to US$14.99 per month Annual prepaid: No increase, the price will remain US$119.88
+          per year
+      - url: https://blog.adobe.com/en/publish/2024/12/15/all-new-photography-innovations-pricing-updates
+        publisher: Adobe Blog
+        kind: primary
+        published: 2024-12-15
+        archive: https://web.archive.org/web/20241216084828/https://blog.adobe.com/en/publish/2024/12/15/all-new-photography-innovations-pricing-updates
+        quote: >-
+          For more than a decade, we’ve brought photographers hundreds of innovative features in
+          Lightroom and Photoshop without changing the price of our photography plans. Today we’re
+          announcing an update to these plans to better reflect the value that the apps deliver.
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: photography-20gb-closed-2025
+    date: 2024-12-15
+    date_kind: announced
+    effective: 2025-01-15
+    category: removed-feature
+    title: Adobe stops selling the 20GB Photography plan to new customers
+    what_changed: >-
+      Adobe said on 15 December 2024 that the 20GB Photography plan would close to new subscribers on
+      15 January 2025. Adobe called the Photography 1TB plan the best one for new customers who
+      want both Photoshop and Lightroom.
+    before: Photoshop and Lightroom from $9.99 a month
+    after: Photoshop and Lightroom from $19.99 a month
+    user_impact: >-
+      New customers who wanted Photoshop and Lightroom lost the $9.99 plan, and the cheapest one left
+      for them was the $19.99 Photography 1TB plan.
+    severity: 2
+    status: in-force
+    related: [adobe-creative-cloud/photography-20gb-price-2025]
+    sources:
+      - url: https://blog.adobe.com/en/publish/2024/12/15/all-new-photography-innovations-pricing-updates
+        publisher: Adobe Blog
+        kind: primary
+        published: 2024-12-15
+        archive: https://web.archive.org/web/20241216084828/https://blog.adobe.com/en/publish/2024/12/15/all-new-photography-innovations-pricing-updates
+        quote: >-
+          We will continue to support this plan for existing customers, however this plan will no
+          longer be available to new customers. Photography Plan (1TB) — There are no changes to the
+          Photography 1TB plan, which continues to be the best plan for new customers who want access
+          to both Photoshop and Lightroom.
+      - url: https://helpx.adobe.com/creative-cloud/faq/ccpp-20gb.html
+        publisher: Adobe Help Center
+        kind: primary
+        published: 2024-12-15
+        archive: https://web.archive.org/web/20241217104102/https://helpx.adobe.com/creative-cloud/faq/ccpp-20gb.html
+        quote: >-
+          The Creative Cloud Photography plan (20GB) will be discontinued as of January 15, 2025, and
+          will no longer be available to new subscribers.
+      - url: https://blog.adobe.com/en/publish/2024/12/15/all-new-photography-innovations-pricing-updates
+        publisher: Adobe Blog
+        kind: primary
+        published: 2024-12-15
+        archive: https://web.archive.org/web/20241216084828/https://blog.adobe.com/en/publish/2024/12/15/all-new-photography-innovations-pricing-updates
+        quote: >-
+          Photography Plan (20GB) — The pre-paid annual plan remains unchanged at $119.88/year
+          (equivalent to $9.99/month).
+      - url: https://news.adobe.com/news/news-details/2017/Adobe-Introduces-New-Lightroom-CC-Cloud-Photography-Service/default.aspx
+        publisher: Adobe
+        kind: primary
+        published: 2017-10-18
+        archive: https://web.archive.org/web/20200812205705/https://news.adobe.com/news/news-details/2017/Adobe-Introduces-New-Lightroom-CC-Cloud-Photography-Service/default.aspx
+        quote: >-
+          the Creative Cloud Photography plan with 1 TB includes Lightroom CC, Lightroom for mobile and
+          web, Photoshop CC, Adobe Spark with premium features, Adobe Portfolio, and 1 TB of cloud
+          storage ($19.99/month
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: creative-cloud-pro-price-2025
+    date: 2025-05-15
+    date_kind: announced
+    effective: 2025-06-17
+    category: price-rise
+    title: Creative Cloud All Apps becomes Creative Cloud Pro and goes to $69.99 a month
+    what_changed: >-
+      Adobe said on 15 May 2025 that in North America All Apps would be renamed Creative Cloud Pro
+      on 17 June 2025, at $69.99 a month from each member's next renewal. Members could switch to a
+      new Creative Cloud Standard plan at $54.99 with limited AI features.
+    before: $59.99 a month
+    after: $69.99 a month
+    user_impact: >-
+      All Apps members in the US, Canada and Mexico were moved to Pro at the higher price on renewal
+      unless they chose to switch to Standard.
+    company_said: >-
+      Adobe said Pro's price was going up to reflect new benefits like unlimited standard image
+      generation and non-Adobe AI models.
+    severity: 1
+    status: in-force
+    regions: [US, CA, MX]
+    prices:
+      - { plan: all-apps-us, from: 59.99, to: 69.99 }
+    sources:
+      - url: https://blog.adobe.com/en/publish/2025/05/15/meet-creative-cloud-pro-new-tools-expansive-creative-controls
+        publisher: Adobe Blog
+        kind: primary
+        published: 2025-05-15
+        archive: https://web.archive.org/web/20250515220727/https://blog.adobe.com/en/publish/2025/05/15/meet-creative-cloud-pro-new-tools-expansive-creative-controls
+        quote: >-
+          For current members in North America, your Creative Cloud All Apps plan will automatically
+          be renamed Creative Cloud Pro starting June 17. Creative Cloud Pro pricing will be
+          effective at your next renewal on or after June 17.
+      - url: https://blog.adobe.com/en/publish/2025/05/15/meet-creative-cloud-pro-new-tools-expansive-creative-controls
+        publisher: Adobe Blog
+        kind: primary
+        published: 2025-05-15
+        archive: https://web.archive.org/web/20250515220727/https://blog.adobe.com/en/publish/2025/05/15/meet-creative-cloud-pro-new-tools-expansive-creative-controls
+        quote: >-
+          Creative Cloud Pro will be available beginning June 17 at $69.99/month, plus tax, for the
+          annual billed monthly plan.
+      - url: https://helpx.adobe.com/creative-cloud/policy-pricing/changes-to-individual-plan.html
+        publisher: Adobe Help Center
+        kind: primary
+        published: 2025-05-15
+        archive: https://web.archive.org/web/20250601090424/https://helpx.adobe.com/creative-cloud/policy-pricing/changes-to-individual-plan.html
+        quote: >-
+          Creative Cloud Standard (New plan) Creative Cloud Pro (Formerly Creative Cloud All Apps
+          plan) Individual Price (USD)* Annual contract, billed monthly $54.99/month $69.99/month
+      - url: https://helpx.adobe.com/creative-cloud/policy-pricing/changes-to-individual-plan.html
+        publisher: Adobe Help Center
+        kind: primary
+        published: 2025-05-15
+        archive: https://web.archive.org/web/20250601090424/https://helpx.adobe.com/creative-cloud/policy-pricing/changes-to-individual-plan.html
+        quote: >-
+          The additional services and benefits make Creative Cloud Pro our best value offering across
+          Creative Cloud, and the plan’s price is increasing to reflect this new value.
+      - url: https://helpx.adobe.com/creative-cloud/policy-pricing/changes-to-individual-plan.html
+        publisher: Adobe Help Center
+        kind: primary
+        published: 2025-05-15
+        archive: https://web.archive.org/web/20250601090424/https://helpx.adobe.com/creative-cloud/policy-pricing/changes-to-individual-plan.html
+        quote: >-
+          There will not be any pricing or monthly generative credit changes for existing Creative
+          Cloud single app or Photography plan subscribers.
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: generative-credits-2025
+    date: 2025-06-17
+    date_kind: effective
+    category: paywall
+    title: Adobe cuts new single-app and Photography plans to 25 AI credits a month, from 500
+    what_changed: >-
+      From 17 June 2025, people joining Photography 1TB or a Creative Cloud single-app plan got 25
+      generative credits a month, down from 500. Adobe's FAQ no longer says paid members who run out
+      can keep generating more slowly, it points them to a Firefly plan instead, and PetaPixel
+      confirmed standard features can be switched off.
+    before: 500 credits a month, then slower generations
+    after: 25 credits a month for new subscribers, then a Firefly plan
+    user_impact: >-
+      Anyone joining a single-app or Photography 1TB plan from 17 June 2025 got 25 credits a month
+      instead of 500, and people on those plans who run out can have standard AI features switched
+      off unless they buy a Firefly plan.
+    company_said: >-
+      Adobe said credits reflect the additional cost and value of its generative features.
+    severity: 2
+    status: in-force
+    sources:
+      - url: https://helpx.adobe.com/firefly/get-set-up/learn-the-basics/generative-credits-faq.html
+        publisher: Adobe Help Center
+        kind: primary
+        published: 2025-07-01
+        archive: https://web.archive.org/web/20250705035453/https://helpx.adobe.com/firefly/get-set-up/learn-the-basics/generative-credits-faq.html
+        quote: >-
+          Creative Cloud Single App Photoshop, Illustrator, Premiere Pro, InDesign, After Effects
+          Audition, Animate, Dreamweaver, XD Photography 1TB Standard 500 25
+      - url: https://helpx.adobe.com/firefly/get-set-up/learn-the-basics/generative-credits-faq.html
+        publisher: Adobe Help Center
+        kind: primary
+        published: 2025-07-01
+        archive: https://web.archive.org/web/20250705035453/https://helpx.adobe.com/firefly/get-set-up/learn-the-basics/generative-credits-faq.html
+        quote: Monthly generative credits Subscribed on or after June 17, 2025
+      - url: https://helpx.adobe.com/firefly/get-set-up/learn-the-basics/generative-credits-faq.html
+        publisher: Adobe Help Center
+        kind: primary
+        published: 2025-07-01
+        archive: https://web.archive.org/web/20250705035453/https://helpx.adobe.com/firefly/get-set-up/learn-the-basics/generative-credits-faq.html
+        quote: >-
+          Paid Creative Cloud plan users may purchase a Firefly plan for additional credits to use
+          on premium generative features . Firefly plans will also unlock unlimited access to
+          standard generative features.
+      - url: https://helpx.adobe.com/firefly/get-set-up/learn-the-basics/generative-credits-faq.html
+        publisher: Adobe Help Center
+        kind: primary
+        published: 2025-07-01
+        archive: https://web.archive.org/web/20250705035453/https://helpx.adobe.com/firefly/get-set-up/learn-the-basics/generative-credits-faq.html
+        quote: >-
+          Generative credits provide a way to reflect the additional cost and value of our
+          generative features
+      - url: https://helpx.adobe.com/firefly/using/generative-credits-faq.html
+        publisher: Adobe Help Center
+        kind: primary
+        published: 2024-08-30
+        archive: https://web.archive.org/web/20240906210826/https://helpx.adobe.com/firefly/using/generative-credits-faq.html
+        quote: >-
+          Creative Cloud and Adobe Stock paid users can keep taking generative AI actions but using
+          generative AI features to create vector graphics or standard-resolution images
+      - url: https://petapixel.com/2025/06/24/adobe-is-now-tracking-generative-credit-use-what-you-need-to-know/
+        publisher: PetaPixel
+        kind: press
+        published: 2025-06-24
+        archive: https://web.archive.org/web/20250718150541/https://petapixel.com/2025/06/24/adobe-is-now-tracking-generative-credit-use-what-you-need-to-know/
+        quote: >-
+          These plans offer 500 monthly generative credits for users who subscribed before June 17,
+          2025, and 25 credits for those who subscribed after that date.
+      - url: https://petapixel.com/2025/06/24/adobe-is-now-tracking-generative-credit-use-what-you-need-to-know/
+        publisher: PetaPixel
+        kind: press
+        published: 2025-06-24
+        archive: https://web.archive.org/web/20250718150541/https://petapixel.com/2025/06/24/adobe-is-now-tracking-generative-credit-use-what-you-need-to-know/
+        quote: >-
+          PetaPixel has independently confirmed that standard Firefly features can be disabled for
+          Creative Cloud users without dedicated Firefly plans once they have expended their monthly
+          allotment of credits.
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: animate-discontinued-2026
+    date: 2026-02-02
+    date_kind: announced
+    category: removed-feature
+    title: Adobe says it will discontinue Animate and end access to its files, then backs down
+    what_changed: >-
+      Adobe said on 2 February 2026 that Animate would be discontinued on 1 March 2026 and no longer
+      be available on Adobe.com. Non-enterprise customers would lose the app, support and access to their Animate files
+      on 1 March 2027.
+    before: Animate in Creative Cloud
+    after: App and file access to end on 1 March 2027
+    user_impact: >-
+      Animate users were told to export their FLA and XFL files to other formats before they lost
+      access, until Adobe backed down.
+    company_said: >-
+      Adobe said new platforms and paradigms had emerged that better serve the needs of users.
+    severity: 2
+    status: reversed
+    reversed:
+      date: 2026-02-04
+      what: >-
+        Adobe said it was not discontinuing or removing access to Animate after all, and put it in
+        maintenance mode, with security and bug fixes but no new features.
+      sources:
+        - url: https://helpx.adobe.com/animate/kb/maintenance-mode.html
+          publisher: Adobe Help Center
+          kind: primary
+          published: 2026-02-04
+          archive: https://web.archive.org/web/20260204044527/https://helpx.adobe.com/animate/kb/maintenance-mode.html
+          quote: We are not discontinuing or removing access to Adobe Animate.
+        - url: https://helpx.adobe.com/animate/kb/maintenance-mode.html
+          publisher: Adobe Help Center
+          kind: primary
+          published: 2026-02-04
+          archive: https://web.archive.org/web/20260204044527/https://helpx.adobe.com/animate/kb/maintenance-mode.html
+          quote: >-
+            Maintenance mode means we will continue to support the application and provide ongoing
+            security and bug fixes, but we are no longer adding new features.
+    sources:
+      - url: https://helpx.adobe.com/animate/kb/end-of-life.html
+        publisher: Adobe Help Center
+        kind: primary
+        published: 2026-02-02
+        archive: https://web.archive.org/web/20260202202634/https://helpx.adobe.com/animate/kb/end-of-life.html
+        quote: >-
+          Adobe Animate will be discontinued effective March 1 , 2026 , and will no longer be
+          available on Adobe.com .
+      - url: https://helpx.adobe.com/animate/kb/end-of-life.html
+        publisher: Adobe Help Center
+        kind: primary
+        published: 2026-02-02
+        archive: https://web.archive.org/web/20260202202634/https://helpx.adobe.com/animate/kb/end-of-life.html
+        quote: >-
+          For all other customers, technical support, application access, and the ability to
+          download content will be available until March 1 , 2027 .
+      - url: https://helpx.adobe.com/animate/kb/end-of-life.html
+        publisher: Adobe Help Center
+        kind: primary
+        published: 2026-02-02
+        archive: https://web.archive.org/web/20260202202634/https://helpx.adobe.com/animate/kb/end-of-life.html
+        quote: Access to your Animate files and project data will end on the date that support ends.
+      - url: https://helpx.adobe.com/animate/kb/end-of-life.html
+        publisher: Adobe Help Center
+        kind: primary
+        published: 2026-02-02
+        archive: https://web.archive.org/web/20260202202634/https://helpx.adobe.com/animate/kb/end-of-life.html
+        quote: >-
+          we encourage you to export your Animate FLA and XFL files to other formats such as SWF,
+          SVG, and MP4 before this date
+      - url: https://helpx.adobe.com/animate/kb/end-of-life.html
+        publisher: Adobe Help Center
+        kind: primary
+        published: 2026-02-02
+        archive: https://web.archive.org/web/20260202202634/https://helpx.adobe.com/animate/kb/end-of-life.html
+        quote: >-
+          As technologies evolve, new platforms and paradigms emerge that better serve the needs of
+          the users.
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
