@@ -545,6 +545,43 @@ changes:
     sources_checked: 2026-11-19
     status_checked: 2026-11-19
 
+  - id: skype-minutes-end
+    date: 2025-02-28
+    date_kind: announced
+    effective: 2026-03
+    category: removed-feature
+    title: Microsoft 365 Personal and Family lose the 60 minutes of Skype calls
+    what_changed: >-
+      Microsoft said in 2025 that the 60 minutes of Skype calls in Microsoft 365 Personal and Family
+      would be removed starting March 2026. Its Skype help page still gave that date
+      after March 2026, and until then the minutes worked from the Skype Dial Pad in Teams Free or on
+      the web.
+    user_impact: Personal and Family subscribers who used the Skype minutes lost them.
+    severity: 1
+    status: in-force
+    related: [skype/retired-for-teams]
+    sources:
+      - url: https://support.microsoft.com/en-us/skype/skype-is-retiring-in-may-2025-what-you-need-to-know-2a7d2501-427f-485e-8be0-2068a9f90472
+        publisher: Microsoft Support
+        kind: primary
+        published: 2025-02-28
+        archive: https://web.archive.org/web/20250228182310/https://support.microsoft.com/en-us/skype/skype-is-retiring-in-may-2025-what-you-need-to-know-2a7d2501-427f-485e-8be0-2068a9f90472
+        quote: >-
+          The 60 minutes of Skype calls will be removed automatically from paid Microsoft 365
+          Personal and Family plan benefits starting March 2026.
+      - url: https://support.microsoft.com/en-us/skype/skype-is-retiring-in-may-2025-what-you-need-to-know
+        publisher: Microsoft Support
+        kind: primary
+        published: 2026-11-18
+        archive: https://web.archive.org/web/20261118163747/https://support.microsoft.com/en-us/skype/skype-is-retiring-in-may-2025-what-you-need-to-know
+        quote: >-
+          The 60 minutes of Skype calls feature will be removed from Microsoft 365 Personal and
+          Microsoft 365 Family subscriptions starting March 2026.
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
   - id: publisher-removed
     date: 2026-10-01
     date_kind: effective
