@@ -37,3 +37,8 @@
   name: Adobe
   url: https://news.adobe.com
   wikipedia: https://en.wikipedia.org/wiki/Adobe_Inc.
+
+- id: x-corp
+  name: X Corp
+  url: https://x.com
+  wikipedia: https://en.wikipedia.org/wiki/X_Corp.
