@@ -1,0 +1,775 @@
+service: xbox-game-pass
+name: Xbox Game Pass
+company: microsoft
+url: https://www.xbox.com/en-US/xbox-game-pass
+crw: https://consumerrights.wiki/w/Xbox_Game_Pass
+wikipedia: https://en.wikipedia.org/wiki/Xbox_Game_Pass
+
+plans:
+  - id: ultimate-us
+    name: Game Pass Ultimate
+    region: US
+    currency: USD
+    billing: month
+    since: 2019-06-09
+    price: 14.99
+    source:
+      url: https://news.xbox.com/en-us/2019/06/09/xbox-game-pass-ultimate-now-available/
+      publisher: Xbox Wire
+      kind: primary
+      published: 2019-06-09
+      archive: https://web.archive.org/web/20190617203403/https://news.xbox.com/en-us/2019/06/09/xbox-game-pass-ultimate-now-available/
+      quote: >-
+        combining Xbox Game Pass for Console and Xbox Live Gold into one convenient membership for
+        the low monthly price of $14.99
+
+  - id: pc-us
+    name: PC Game Pass
+    region: US
+    currency: USD
+    billing: month
+    since: 2020-09-17
+    price: 9.99
+    source:
+      url: https://www.videogameschronicle.com/news/microsoft-confirms-game-pass-pc-pricing-will-increase-this-month/
+      publisher: Video Games Chronicle
+      kind: press
+      published: 2020-09-10
+      archive: https://web.archive.org/web/20200910141425/https://www.videogameschronicle.com/news/microsoft-confirms-game-pass-pc-pricing-will-increase-this-month/
+      quote: >-
+        From September 17, the service will retire the introductory price of $4.99 / £3.99 per
+        month. From the next billing phase, subscribers will pay to $9.99 / £7.99 – the same as Game
+        Pass for consoles.
+
+  - id: core-us
+    name: Game Pass Core
+    region: US
+    currency: USD
+    billing: month
+    since: 2023-09-14
+    price: 9.99
+    source:
+      url: https://news.xbox.com/en-us/2023/07/17/xbox-game-pass-core/
+      publisher: Xbox Wire
+      kind: primary
+      published: 2023-07-17
+      archive: https://web.archive.org/web/20230717131710/https://news.xbox.com/en-us/2023/07/17/xbox-game-pass-core/
+      quote: >-
+        Game Pass Core will give players access to our advanced multiplayer network, a select
+        collection of over 25 games to play with friends around the world, and exclusive member
+        deals, all for $9.99 USD per month or $59.99 USD per year.
+
+  - id: core-annual-us
+    name: Game Pass Core (12 months)
+    region: US
+    currency: USD
+    billing: year
+    since: 2023-09-14
+    price: 59.99
+    source:
+      url: https://news.xbox.com/en-us/2023/07/17/xbox-game-pass-core/
+      publisher: Xbox Wire
+      kind: primary
+      published: 2023-07-17
+      archive: https://web.archive.org/web/20230717131710/https://news.xbox.com/en-us/2023/07/17/xbox-game-pass-core/
+      quote: >-
+        Game Pass Core will give players access to our advanced multiplayer network, a select
+        collection of over 25 games to play with friends around the world, and exclusive member
+        deals, all for $9.99 USD per month or $59.99 USD per year.
+    incomplete: >-
+      It became Game Pass Essential in October 2025, and we haven't found a Microsoft source for
+      what Essential costs for 12 months.
+
+  - id: standard-us
+    name: Game Pass Standard
+    region: US
+    currency: USD
+    billing: month
+    since: 2024-09-10
+    price: 14.99
+    source:
+      url: https://www.theverge.com/2024/9/10/24241171/xbox-game-pass-standard-launch-pricing
+      publisher: The Verge
+      kind: press
+      published: 2024-09-10
+      archive: https://web.archive.org/web/20240910192144/https://www.theverge.com/2024/9/10/24241171/xbox-game-pass-standard-launch-pricing
+      quote: >-
+        Microsoft is launching its Xbox Game Pass Standard tier today. After briefly testing it with
+        Xbox Insiders last month, the new $14.99 per month Game Pass Standard subscription is
+        launching with the usual Game Pass library for Xbox and online console multiplayer access,
+        too.
+
+  - id: premium-us
+    name: Game Pass Premium
+    region: US
+    currency: USD
+    billing: month
+    since: 2025-10-01
+    price: 14.99
+    replaces: standard-us
+    source:
+      url: https://news.xbox.com/en-us/2025/10/01/xbox-game-pass-ultimate-premium-essential-plans/
+      publisher: Xbox Wire
+      kind: primary
+      published: 2025-10-01
+      archive: https://web.archive.org/web/20251001141459/https://news.xbox.com/en-us/2025/10/01/xbox-game-pass-ultimate-premium-essential-plans/
+      quote: Standard subscribers will be upgraded to Premium remaining at $14.99/month
+
+  - id: essential-us
+    name: Game Pass Essential
+    region: US
+    currency: USD
+    billing: month
+    since: 2025-10-01
+    price: 9.99
+    replaces: core-us
+    source:
+      url: https://news.xbox.com/en-us/2025/10/01/xbox-game-pass-ultimate-premium-essential-plans/
+      publisher: Xbox Wire
+      kind: primary
+      published: 2025-10-01
+      archive: https://web.archive.org/web/20251001141459/https://news.xbox.com/en-us/2025/10/01/xbox-game-pass-ultimate-premium-essential-plans/
+      quote: Core subscribers will be upgraded to Essential remaining at $9.99/month
+
+changes:
+  - id: gold-price-2021
+    date: 2021-01-22
+    date_kind: announced
+    category: price-rise
+    title: Xbox Live Gold's 6-month price set to go from $39.99 to $59.99, then dropped
+    what_changed: >-
+      Microsoft said on 22 January 2021 that Xbox Live Gold would cost $59.99 for 6 months, up from
+      $39.99, with 1 and 3 months going up too. It dropped the rise the same day.
+    before: $39.99 for 6 months
+    after: $59.99 for 6 months
+    user_impact: >-
+      It would have hit new Gold members and anyone paying by the month or 3 months, but it was
+      dropped the same day.
+    company_said: >-
+      Microsoft said Gold's price hadn't changed for years in many markets, and for over 10 years
+      in some.
+    severity: 2
+    status: reversed
+    reversed:
+      date: 2021-01-22
+      what: Microsoft said the same night that it would not change Xbox Live Gold pricing after all.
+      sources:
+        - url: https://news.xbox.com/en-us/2021/01/22/update-on-xbox-live-gold-pricing/
+          publisher: Xbox Wire
+          kind: primary
+          published: 2021-01-22
+          archive: https://web.archive.org/web/20210201000804/https://news.xbox.com/en-us/2021/01/22/update-on-xbox-live-gold-pricing/
+          quote: As a result, we have decided not to change Xbox Live Gold pricing.
+    regions: [US]
+    sources:
+      - url: https://news.xbox.com/en-us/2021/01/22/update-on-xbox-live-gold-pricing/
+        publisher: Xbox Wire
+        kind: primary
+        published: 2021-01-22
+        archive: https://web.archive.org/web/20210122140958/https://news.xbox.com/en-us/2021/01/22/update-on-xbox-live-gold-pricing/
+        quote: >-
+          Going forward, new pricing will be 1-month for $10.99, 3-months for $29.99, and 6-months
+          for $59.99, or your local market equivalent.
+      - url: https://news.xbox.com/en-us/2021/01/22/update-on-xbox-live-gold-pricing/
+        publisher: Xbox Wire
+        kind: primary
+        published: 2021-01-22
+        archive: https://web.archive.org/web/20210122140958/https://news.xbox.com/en-us/2021/01/22/update-on-xbox-live-gold-pricing/
+        quote: >-
+          In many markets, the price of Xbox Live Gold has not changed for years and in some
+          markets, it hasn’t changed for over 10 years.
+      - url: https://news.xbox.com/en-us/2021/01/22/update-on-xbox-live-gold-pricing/
+        publisher: Xbox Wire
+        kind: primary
+        published: 2021-01-22
+        archive: https://web.archive.org/web/20210201000804/https://news.xbox.com/en-us/2021/01/22/update-on-xbox-live-gold-pricing/
+        quote: >-
+          In the US, $9.99 for 1-month, $24.99 for 3-months, $39.99 for 6-months and $59.99 for
+          retail 12-months.
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: ultimate-price-2023
+    date: 2023-06-21
+    date_kind: announced
+    effective: 2023-07-06
+    category: price-rise
+    title: Game Pass Ultimate goes from $14.99 to $16.99 a month in the US, its first rise
+    what_changed: >-
+      Microsoft said on 21 June 2023 that US Game Pass Ultimate would go from $14.99 to $16.99 a
+      month for new members on 6 July 2023. Existing members paid it from 13 August, and Game Pass
+      for Console went from $9.99 to $10.99.
+    before: $14.99 a month
+    after: $16.99 a month
+    user_impact: >-
+      US Ultimate and Game Pass for Console members paid more, new ones from July and existing
+      monthly ones from August 2023.
+    company_said: >-
+      Xbox said the Game Pass rises were to match local market conditions and weren't tied to its
+      Activision Blizzard deal.
+    severity: 1
+    status: in-force
+    regions: [US]
+    prices:
+      - { plan: ultimate-us, from: 14.99, to: 16.99 }
+    sources:
+      - url: https://www.theverge.com/2023/6/21/23768400/microsoft-xbox-series-x-xbox-game-pass-price-increase
+        publisher: The Verge
+        kind: press
+        published: 2023-06-21
+        archive: https://web.archive.org/web/20230621173918/https://www.theverge.com/2023/6/21/23768400/microsoft-xbox-series-x-xbox-game-pass-price-increase
+        quote: >-
+          Xbox Game Pass Ultimate will move from $14.99 per month to $16.99 (€14.99 / £12.99). The
+          base Xbox Game Pass for Console pricing will also move from $9.99 a month up to $10.99
+          (€10.99 / £8.99).
+      - url: https://www.theverge.com/2023/6/21/23768400/microsoft-xbox-series-x-xbox-game-pass-price-increase
+        publisher: The Verge
+        kind: press
+        published: 2023-06-21
+        archive: https://web.archive.org/web/20230621173918/https://www.theverge.com/2023/6/21/23768400/microsoft-xbox-series-x-xbox-game-pass-price-increase
+        quote: >-
+          If you’re an existing Game Pass monthly subscriber, then these new recurring prices won’t
+          take effect until August 13th, or September 13th in Germany. New Xbox Game Pass members
+          will see the new prices immediately on July 6th.
+      - url: https://www.theverge.com/2023/6/21/23768400/microsoft-xbox-series-x-xbox-game-pass-price-increase
+        publisher: The Verge
+        kind: press
+        published: 2023-06-21
+        archive: https://web.archive.org/web/20230621173918/https://www.theverge.com/2023/6/21/23768400/microsoft-xbox-series-x-xbox-game-pass-price-increase
+        quote: >-
+          These Game Pass price adjustments are not related to the Activision Blizzard deal, and are
+          intended to match local market conditions
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: games-with-gold-ended
+    date: 2023-07-17
+    date_kind: announced
+    effective: 2023-09-01
+    category: removed-feature
+    title: Microsoft ends Games with Gold, the monthly games included with Xbox Live Gold
+    question: What happened to Games with Gold?
+    what_changed: >-
+      Microsoft said on 17 July 2023 that Games with Gold, the monthly games Xbox Live Gold members
+      could add to their library, would end on 1 September 2023. Gold became Game Pass Core on 14
+      September, with over 25 games from the Game Pass catalogue in their place and new ones added
+      2-3 times a year.
+    before: New games to add to your library every month
+    after: Over 25 Game Pass games, with new ones 2-3 times a year
+    user_impact: >-
+      Xbox Live Gold members stopped getting new games to add to their library each month, and got
+      a set of Game Pass games that can change over time instead.
+    company_said: >-
+      Microsoft said it wanted to re-imagine how to include games with the subscription, and found
+      the answer was select titles from its Game Pass catalogue.
+    severity: 2
+    status: in-force
+    sources:
+      - url: https://news.xbox.com/en-us/2023/07/17/xbox-game-pass-core/
+        publisher: Xbox Wire
+        kind: primary
+        published: 2023-07-17
+        archive: https://web.archive.org/web/20230717163450/https://news.xbox.com/en-us/2023/07/17/xbox-game-pass-core/
+        quote: >-
+          Games with Gold will come to an end on September 1. Players can continue to access any
+          Xbox One games they previously redeemed through Games with Gold if they remain a Game Pass
+          Core or Game Pass Ultimate member.
+      - url: https://news.xbox.com/en-us/2023/07/17/xbox-game-pass-core/
+        publisher: Xbox Wire
+        kind: primary
+        published: 2023-07-17
+        archive: https://web.archive.org/web/20230717163450/https://news.xbox.com/en-us/2023/07/17/xbox-game-pass-core/
+        quote: >-
+          We wanted to use this opportunity to re-imagine how to include content with this
+          subscription. We found that the answer to the most compelling catalog was to leverage
+          select titles from our Xbox Game Pass catalog.
+      - url: https://www.theverge.com/2023/7/17/23794792/microsoft-xbox-game-pass-core-live-gold-replacement
+        publisher: The Verge
+        kind: press
+        published: 2023-07-17
+        archive: https://web.archive.org/web/20230717174514/https://www.theverge.com/2023/7/17/23794792/microsoft-xbox-game-pass-core-live-gold-replacement
+        quote: >-
+          Microsoft is discontinuing Games with Gold on September 1st, the perk that has allowed
+          Xbox owners to grab free games monthly for a decade and add them to their content library.
+      - url: https://news.xbox.com/en-us/2023/07/27/games-with-gold-for-august-2023/
+        publisher: Xbox Wire
+        kind: primary
+        published: 2023-07-27
+        archive: https://web.archive.org/web/20230727165656/https://news.xbox.com/en-us/2023/07/27/games-with-gold-for-august-2023/
+        quote: >-
+          Games with Gold will come to an end on September 1. You can continue to access any Games
+          with Gold games previously redeemed while remaining an Xbox Game Pass Core or Xbox Game
+          Pass Ultimate member.
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: ultimate-pc-price-2024
+    date: 2024-07-09
+    date_kind: announced
+    effective: 2024-07-10
+    category: price-rise
+    title: Game Pass Ultimate goes from $16.99 to $19.99 and PC Game Pass from $9.99 to $11.99
+    what_changed: >-
+      Microsoft said on 9 July 2024 that US Game Pass Ultimate would go from $16.99 to $19.99 a
+      month and PC Game Pass from $9.99 to $11.99. New members paid it from 10 July and existing
+      ones from 12 September 2024.
+    before: Ultimate $16.99, PC $9.99 a month
+    after: Ultimate $19.99, PC $11.99 a month
+    user_impact: US Ultimate and PC Game Pass members paid more, $3 a month more on Ultimate.
+    severity: 1
+    status: in-force
+    regions: [US]
+    prices:
+      - { plan: ultimate-us, from: 16.99, to: 19.99 }
+      - { plan: pc-us, from: 9.99, to: 11.99 }
+    related: [xbox-game-pass/core-annual-price-2024, xbox-game-pass/console-plan-closed-2024]
+    sources:
+      - url: https://www.ign.com/articles/xbox-game-pass-ultimate-appears-to-be-getting-another-price-hike
+        publisher: IGN
+        kind: press
+        published: 2024-07-09
+        archive: https://web.archive.org/web/20240710175229/https://www.ign.com/articles/xbox-game-pass-ultimate-appears-to-be-getting-another-price-hike
+        quote: >-
+          Microsoft is raising the price of Xbox Game Pass Ultimate from $16.99 to $19.99 a month in
+          the U.S.
+      - url: https://www.ign.com/articles/xbox-game-pass-ultimate-appears-to-be-getting-another-price-hike
+        publisher: IGN
+        kind: press
+        published: 2024-07-09
+        archive: https://web.archive.org/web/20240710175229/https://www.ign.com/articles/xbox-game-pass-ultimate-appears-to-be-getting-another-price-hike
+        quote: >-
+          Those wanting to play these games at launch, and potentially at all, will therefore need to
+          pay for the rolling $19.99 a month Xbox Game Pass Ultimate tier once these price changes go
+          into effect for new members on July 10, 2024 and for existing members on September 12,
+          2024.
+      - url: https://www.theverge.com/2024/7/9/24195312/microsoft-xbox-game-pass-ultimate-price-increase-standard-subscription
+        publisher: The Verge
+        kind: press
+        published: 2024-07-09
+        archive: https://web.archive.org/web/20240710005146/https://www.theverge.com/2024/7/9/24195312/microsoft-xbox-game-pass-ultimate-price-increase-standard-subscription
+        quote: >-
+          PC Game Pass subscribers will also see a price hike in September, with the service moving
+          from $9.99 to $11.99 per month and maintaining access to day-one titles.
+      - url: https://www.theverge.com/2024/7/9/24195312/microsoft-xbox-game-pass-ultimate-price-increase-standard-subscription
+        publisher: The Verge
+        kind: press
+        published: 2024-07-09
+        archive: https://web.archive.org/web/20240710005146/https://www.theverge.com/2024/7/9/24195312/microsoft-xbox-game-pass-ultimate-price-increase-standard-subscription
+        quote: >-
+          The Xbox maker has started emailing Xbox Game Pass Ultimate subscribers warning of a price
+          increase to $19.99 a month that starts on September 12th, a $3 increase over the current
+          $16.99 a month pricing.
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: core-annual-price-2024
+    date: 2024-07-09
+    date_kind: announced
+    effective: 2024-07-10
+    category: price-rise
+    title: Game Pass Core's 12-month plan goes from $59.99 to $74.99 in the US
+    what_changed: >-
+      Microsoft said on 9 July 2024 that US Game Pass Core would go from $59.99 to $74.99 a year,
+      while staying $9.99 a month. New members paid it from 10 July and existing ones from 12
+      September 2024.
+    before: $59.99 a year
+    after: $74.99 a year
+    user_impact: >-
+      Core members who paid by the year paid more for online play on Xbox, while monthly Core kept
+      its price.
+    severity: 2
+    status: in-force
+    regions: [US]
+    prices:
+      - { plan: core-annual-us, from: 59.99, to: 74.99 }
+    related: [xbox-game-pass/ultimate-pc-price-2024]
+    sources:
+      - url: https://www.ign.com/articles/xbox-game-pass-ultimate-appears-to-be-getting-another-price-hike
+        publisher: IGN
+        kind: press
+        published: 2024-07-09
+        archive: https://web.archive.org/web/20240710175229/https://www.ign.com/articles/xbox-game-pass-ultimate-appears-to-be-getting-another-price-hike
+        quote: >-
+          PC Game Pass is also rising from $9.99 a month to $11.99 a month, while the most basic
+          Xbox Game Pass Core tier is rising from $59.99 to $74.99 a year. It will remain at $9.99 a
+          month, however
+      - url: https://www.ign.com/articles/xbox-game-pass-ultimate-appears-to-be-getting-another-price-hike
+        publisher: IGN
+        kind: press
+        published: 2024-07-09
+        archive: https://web.archive.org/web/20240710175229/https://www.ign.com/articles/xbox-game-pass-ultimate-appears-to-be-getting-another-price-hike
+        quote: >-
+          go into effect for new members on July 10, 2024 and for existing members on September 12,
+          2024
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: console-plan-closed-2024
+    date: 2024-07-09
+    date_kind: announced
+    effective: 2024-07-10
+    category: removed-feature
+    title: Game Pass for Console closes to new members, replaced by $14.99 Standard
+    what_changed: >-
+      Microsoft said on 9 July 2024 that the $10.99 Game Pass for Console would close to new
+      members from 10 July. Its replacement, Game Pass Standard, launched on 10 September 2024 at
+      $14.99 without day-one games, which needed $19.99 Ultimate.
+    before: Day-one games on console from $10.99 a month
+    after: Day-one games on console from $19.99 a month
+    user_impact: >-
+      New members who wanted new Xbox games on console at launch had to pay $19.99 for Ultimate,
+      while people already on Game Pass for Console could keep it.
+    severity: 2
+    status: in-force
+    related: [xbox-game-pass/ultimate-pc-price-2024]
+    sources:
+      - url: https://www.ign.com/articles/xbox-game-pass-ultimate-appears-to-be-getting-another-price-hike
+        publisher: IGN
+        kind: press
+        published: 2024-07-09
+        archive: https://web.archive.org/web/20240710175229/https://www.ign.com/articles/xbox-game-pass-ultimate-appears-to-be-getting-another-price-hike
+        quote: >-
+          It's also replacing its more basic $10.99 Xbox Game Pass Console tier with Xbox Game Pass
+          Standard — a $14.99 option which doesn't include the beloved day one release feature
+      - url: https://www.theverge.com/2024/7/9/24195312/microsoft-xbox-game-pass-ultimate-price-increase-standard-subscription
+        publisher: The Verge
+        kind: press
+        published: 2024-07-09
+        archive: https://web.archive.org/web/20240710005146/https://www.theverge.com/2024/7/9/24195312/microsoft-xbox-game-pass-ultimate-price-increase-standard-subscription
+        quote: >-
+          The existing Xbox Game Pass for console subscription will continue for existing
+          subscribers, but new Game Pass subscribers won’t be able to select the console option
+          starting July 10th until the new Game Pass Standard subscription is available.
+      - url: https://www.ign.com/articles/xbox-game-pass-ultimate-appears-to-be-getting-another-price-hike
+        publisher: IGN
+        kind: press
+        published: 2024-07-09
+        archive: https://web.archive.org/web/20240710175229/https://www.ign.com/articles/xbox-game-pass-ultimate-appears-to-be-getting-another-price-hike
+        quote: >-
+          Those wanting to play these games at launch, and potentially at all, will therefore need to
+          pay for the rolling $19.99 a month Xbox Game Pass Ultimate tier
+      - url: https://news.xbox.com/en-us/2024/09/10/xbox-game-pass-standard-is-here/
+        publisher: Xbox Wire
+        kind: primary
+        published: 2024-09-10
+        archive: https://web.archive.org/web/20240910194009/https://news.xbox.com/en-us/2024/09/10/xbox-game-pass-standard-is-here/
+        quote: Starting today, we are launching a new plan for Xbox Game Pass – Game Pass Standard.
+      - url: https://www.theverge.com/2024/9/10/24241171/xbox-game-pass-standard-launch-pricing
+        publisher: The Verge
+        kind: press
+        published: 2024-09-10
+        archive: https://web.archive.org/web/20240910192144/https://www.theverge.com/2024/9/10/24241171/xbox-game-pass-standard-launch-pricing
+        quote: >-
+          Existing subscribers of Xbox Game Pass for Console will continue to be able to access
+          day-one games, but new Game Pass subscribers will now only be able to pick between Core,
+          Standard, PC, and Ultimate subscriptions.
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: ultimate-pc-price-2025
+    date: 2025-10-01
+    date_kind: announced
+    category: price-rise
+    title: Game Pass Ultimate goes from $19.99 to $29.99 a month and PC Game Pass to $16.49
+    what_changed: >-
+      Microsoft said on 1 October 2025 that US Game Pass Ultimate was now $29.99 a month, up from
+      $19.99, and PC Game Pass $16.49, up from $11.99. Existing members paid the new prices from 4
+      November 2025.
+    before: Ultimate $19.99, PC $11.99 a month
+    after: Ultimate $29.99, PC $16.49 a month
+    user_impact: >-
+      US Ultimate members paid 50% more and PC Game Pass members 38% more, while Core and Standard
+      members moved to Essential and Premium at the same price.
+    company_said: >-
+      Microsoft said Ultimate's new price reflected a bigger catalogue, new partner benefits and
+      better cloud gaming.
+    severity: 2
+    status: in-force
+    regions: [US]
+    prices:
+      - { plan: ultimate-us, from: 19.99, to: 29.99 }
+      - { plan: pc-us, from: 11.99, to: 16.49 }
+    sources:
+      - url: https://news.xbox.com/en-us/2025/10/01/xbox-game-pass-ultimate-premium-essential-plans/
+        publisher: Xbox Wire
+        kind: primary
+        published: 2025-10-01
+        archive: https://web.archive.org/web/20251001141459/https://news.xbox.com/en-us/2025/10/01/xbox-game-pass-ultimate-premium-essential-plans/
+        quote: >-
+          With the latest upgrades, Ultimate is now priced at $29.99/month, reflecting the expanded
+          catalog, new partner benefits, and upgraded cloud gaming experience.
+      - url: https://www.ign.com/articles/xbox-game-pass-ultimate-price-rises-to-30-a-month-microsoft-adds-more-day-one-games-and-throws-in-fortnite-crew-and-ubisoft-classics-to-help-justify-the-cost
+        publisher: IGN
+        kind: press
+        published: 2025-10-01
+        archive: https://web.archive.org/web/20251001160630/https://www.ign.com/articles/xbox-game-pass-ultimate-price-rises-to-30-a-month-microsoft-adds-more-day-one-games-and-throws-in-fortnite-crew-and-ubisoft-classics-to-help-justify-the-cost
+        quote: >-
+          In the U.S., PC Game Pass is now $16.49, up from $11.99, and in the UK it's now £13.49 a
+          month, up from £9.99.
+      - url: https://www.ign.com/articles/xbox-game-pass-ultimate-price-rises-to-30-a-month-microsoft-adds-more-day-one-games-and-throws-in-fortnite-crew-and-ubisoft-classics-to-help-justify-the-cost
+        publisher: IGN
+        kind: press
+        published: 2025-10-01
+        archive: https://web.archive.org/web/20251001160630/https://www.ign.com/articles/xbox-game-pass-ultimate-price-rises-to-30-a-month-microsoft-adds-more-day-one-games-and-throws-in-fortnite-crew-and-ubisoft-classics-to-help-justify-the-cost
+        quote: >-
+          The updated pricing goes into effect today, October 1 for new subscribers, and November 4
+          for current subscribers.
+      - url: https://news.xbox.com/en-us/2025/10/01/xbox-game-pass-ultimate-premium-essential-plans/
+        publisher: Xbox Wire
+        kind: primary
+        published: 2025-10-01
+        archive: https://web.archive.org/web/20251001141459/https://news.xbox.com/en-us/2025/10/01/xbox-game-pass-ultimate-premium-essential-plans/
+        quote: >-
+          Standard subscribers will be upgraded to Premium remaining at $14.99/month, offering
+          exceptional value for players who want flexibility and access to new Xbox-published titles
+          within a year of launch. Core subscribers will be upgraded to Essential remaining at
+          $9.99/month
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: dlc-discount-swapped-for-points
+    date: 2025-10-03
+    date_kind: reported
+    category: removed-feature
+    title: Game Pass swaps its 10% member discount on add-ons and DLC for Rewards points
+    what_changed: >-
+      Kotaku reported on 3 October 2025 that Game Pass had dropped its 10% off Call of Duty
+      add-ons, and Microsoft then said the discount had gone on all DLC. Instead,
+      Ultimate members get 10% back in Rewards points on select games and add-ons, and Premium
+      members 5%.
+    before: 10% off add-ons and DLC
+    after: 10% back in Rewards points on Ultimate, 5% on Premium
+    user_impact: >-
+      Game Pass members who buy add-ons, like Call of Duty points, lost the 10% off at checkout and
+      get Rewards points back on select games and add-ons instead, at 10% on Ultimate and 5% on
+      Premium.
+    severity: 1
+    status: in-force
+    sources:
+      - url: https://www.engadget.com/gaming/xbox/microsoft-sneakily-drops-dlc-discounts-that-come-with-xbox-game-pass-160512977.html
+        publisher: Engadget
+        kind: press
+        published: 2025-10-04
+        archive: https://web.archive.org/web/20251005132338/https://www.engadget.com/gaming/xbox/microsoft-sneakily-drops-dlc-discounts-that-come-with-xbox-game-pass-160512977.html
+        quote: >-
+          a spokesperson for Microsoft confirmed it has removed the discounts for DLC that come
+          with a Game Pass subscription, replacing them by offering points for its Rewards program
+      - url: https://www.techradar.com/gaming/microsoft-has-scrapped-xbox-game-pass-discounts-that-reflect-all-games-and-dlc-purchases-in-favor-of-reward-points
+        publisher: TechRadar
+        kind: press
+        published: 2025-10-07
+        archive: https://web.archive.org/web/20251007122033/https://www.techradar.com/gaming/microsoft-has-scrapped-xbox-game-pass-discounts-that-reflect-all-games-and-dlc-purchases-in-favor-of-reward-points
+        quote: >-
+          This is not specific to any one game and reflects all games and DLC purchases. Instead of
+          a discount on the purchases, Ultimate and Premium subscribers will earn 10% and 5% -
+          respectively - in points when purchasing select games and add-ons from the Game Pass
+          library.
+      - url: https://www.techradar.com/gaming/microsoft-has-scrapped-xbox-game-pass-discounts-that-reflect-all-games-and-dlc-purchases-in-favor-of-reward-points
+        publisher: TechRadar
+        kind: press
+        published: 2025-10-07
+        archive: https://web.archive.org/web/20251007122033/https://www.techradar.com/gaming/microsoft-has-scrapped-xbox-game-pass-discounts-that-reflect-all-games-and-dlc-purchases-in-favor-of-reward-points
+        quote: Ultimate members continue to have 20% discount on select games from the Game Pass library.
+      - url: https://kotaku.com/black-ops-7-game-pass-call-duty-points-discount-changes-2000631483
+        publisher: Kotaku
+        kind: press
+        published: 2025-10-03
+        archive: https://web.archive.org/web/20251003163920/https://kotaku.com/black-ops-7-game-pass-call-duty-points-discount-changes-2000631483
+        quote: >-
+          the 10-percent discount on buying Call of Duty points no longer appears for Game Pass
+          Ultimate subscribers in the Xbox store
+      - url: https://news.xbox.com/en-us/2025/10/01/xbox-game-pass-ultimate-premium-essential-plans/
+        publisher: Xbox Wire
+        kind: primary
+        published: 2025-10-01
+        archive: https://web.archive.org/web/20251001152558/https://news.xbox.com/en-us/2025/10/01/xbox-game-pass-ultimate-premium-essential-plans/
+        quote: >-
+          With our upgraded Rewards program, players can get up to 30% value on select Game Pass
+          games, with 4x points on purchases of games and add-ons, 10% back in points on select Game
+          Pass library titles and add-ons, and up to 20% off select Game Pass games.
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: cod-day-one-ends
+    date: 2026-04-21
+    date_kind: announced
+    category: removed-feature
+    title: Game Pass Ultimate stops getting new Call of Duty games at launch, and drops to $22.99
+    what_changed: >-
+      Microsoft said on 21 April 2026 that new Call of Duty games would no longer join Game Pass
+      Ultimate or PC Game Pass at launch, but about a year later. The same day it cut Ultimate from
+      $29.99 to $22.99 a month and PC Game Pass from $16.49 to $13.99 in the US.
+    before: New Call of Duty games on day one
+    after: New Call of Duty games about a year later
+    user_impact: >-
+      Ultimate and PC Game Pass members who want a new Call of Duty at launch have to buy it, though
+      both plans got cheaper.
+    severity: 1
+    status: in-force
+    prices:
+      - { plan: ultimate-us, from: 29.99, to: 22.99 }
+      - { plan: pc-us, from: 16.49, to: 13.99 }
+    related: [xbox-game-pass/ultimate-pc-price-2025]
+    sources:
+      - url: https://news.xbox.com/en-us/2026/04/21/xbox-game-pass-update/
+        publisher: Xbox Wire
+        kind: primary
+        published: 2026-04-21
+        archive: https://web.archive.org/web/20260421160342/https://news.xbox.com/en-us/2026/04/21/xbox-game-pass-update/
+        quote: >-
+          Beginning this year, future Call of Duty titles won’t join Game Pass Ultimate or PC Game
+          Pass at launch.
+      - url: https://news.xbox.com/en-us/2026/04/21/xbox-game-pass-update/
+        publisher: Xbox Wire
+        kind: primary
+        published: 2026-04-21
+        archive: https://web.archive.org/web/20260421160342/https://news.xbox.com/en-us/2026/04/21/xbox-game-pass-update/
+        quote: >-
+          New Call of Duty games will be added to Game Pass Ultimate and PC Game Pass during the
+          following holiday season (about a year later), while existing Call of Duty titles already
+          in the library will continue to be available.
+      - url: https://news.xbox.com/en-us/2026/04/21/xbox-game-pass-update/
+        publisher: Xbox Wire
+        kind: primary
+        published: 2026-04-21
+        archive: https://web.archive.org/web/20260421160342/https://news.xbox.com/en-us/2026/04/21/xbox-game-pass-update/
+        quote: Starting today, Game Pass Ultimate drops from $29.99 to $22.99 a month.
+      - url: https://news.xbox.com/en-us/2026/04/21/xbox-game-pass-update/
+        publisher: Xbox Wire
+        kind: primary
+        published: 2026-04-21
+        archive: https://web.archive.org/web/20260421160342/https://news.xbox.com/en-us/2026/04/21/xbox-game-pass-update/
+        quote: PC Game Pass will also drop from $16.49 to $13.99 a month.
+      - url: https://www.videogameschronicle.com/news/xbox-is-cutting-game-pass-prices-and-removing-launch-day-call-of-duty-games/
+        publisher: Video Games Chronicle
+        kind: press
+        published: 2026-04-21
+        archive: https://web.archive.org/web/20260708200022/https://www.videogameschronicle.com/news/xbox-is-cutting-game-pass-prices-and-removing-launch-day-call-of-duty-games/
+        quote: >-
+          Starting today, Game Pass Ultimate will cost $22.99 / £16.99 per month, down from $29.99 /
+          £22.99.
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: cloud-gaming-hour-limits
+    date: 2026-09-03
+    date_kind: announced
+    effective: 2026-11
+    category: paywall
+    title: Game Pass limits cloud gaming to 5 to 15 hours a month and sells extra time
+    question: Does Game Pass have a cloud gaming time limit?
+    what_changed: >-
+      Microsoft said on 3 September 2026 that from November, Game Pass would cap cloud gaming at
+      15 hours a month on Ultimate, 10 on Premium and 5 on Essential. Essential, Premium and
+      Ultimate had all been sold with unlimited cloud gaming since October 2025, and time past the
+      cap has to be bought from the Xbox Store. By 10 November 2026 the Game Pass plans page listed
+      the monthly hours.
+    before: No monthly limit on cloud gaming
+    after: 15 hours a month on Ultimate, 10 on Premium, 5 on Essential
+    user_impact: >-
+      Game Pass members who stream a lot, which Microsoft put at 4% of subscribers, have to buy
+      more playtime past the cap, though existing members in some countries, such as Germany and
+      Australia, were told it won't apply while their plan keeps renewing.
+    company_said: >-
+      Microsoft said the cost of providing cloud gaming grows as more people use it and play for
+      longer, and that for some players the practical result is a higher cost.
+    severity: 2
+    status: in-force
+    sources:
+      - url: https://news.xbox.com/en-us/2026/09/03/xbox-cloud-gaming-changes/
+        publisher: Xbox Wire
+        kind: primary
+        published: 2026-09-03
+        archive: https://web.archive.org/web/20260903213615/https://news.xbox.com/en-us/2026/09/03/xbox-cloud-gaming-changes/
+        quote: >-
+          Game Pass plans will include a set number of cloud gaming hours each month: Game Pass
+          Ultimate: 15 hours Game Pass Premium: 10 hours Game Pass Essential: 5 hours Today, eligible
+          Game Pass subscribers can stream without these monthly hour limits.
+      - url: https://news.xbox.com/en-us/2026/09/03/xbox-cloud-gaming-changes/
+        publisher: Xbox Wire
+        kind: primary
+        published: 2026-09-03
+        archive: https://web.archive.org/web/20260903213615/https://news.xbox.com/en-us/2026/09/03/xbox-cloud-gaming-changes/
+        quote: >-
+          Once subscribers use their included hours, they will be able to purchase additional cloud
+          playtime through the XBOX Store.
+      - url: https://news.xbox.com/en-us/2026/09/03/xbox-cloud-gaming-changes/
+        publisher: Xbox Wire
+        kind: primary
+        published: 2026-09-03
+        archive: https://web.archive.org/web/20260903213615/https://news.xbox.com/en-us/2026/09/03/xbox-cloud-gaming-changes/
+        quote: We expect this upcoming change to impact 4% of Game Pass subscribers.
+      - url: https://news.xbox.com/en-us/2026/09/03/xbox-cloud-gaming-changes/
+        publisher: Xbox Wire
+        kind: primary
+        published: 2026-09-03
+        archive: https://web.archive.org/web/20260903213615/https://news.xbox.com/en-us/2026/09/03/xbox-cloud-gaming-changes/
+        quote: >-
+          We’re introducing this model because the cost of providing cloud gaming grows as more
+          people use it and play for longer.
+      - url: https://news.xbox.com/en-us/2026/09/03/xbox-cloud-gaming-changes/
+        publisher: Xbox Wire
+        kind: primary
+        published: 2026-09-03
+        archive: https://web.archive.org/web/20260903213615/https://news.xbox.com/en-us/2026/09/03/xbox-cloud-gaming-changes/
+        quote: We understand that for some players the practical result is a higher cost.
+      - url: https://news.xbox.com/en-us/2025/10/01/xbox-game-pass-ultimate-premium-essential-plans/
+        publisher: Xbox Wire
+        kind: primary
+        published: 2025-10-01
+        archive: https://web.archive.org/web/20251001152558/https://news.xbox.com/en-us/2025/10/01/xbox-game-pass-ultimate-premium-essential-plans/
+        quote: >-
+          Each includes expanded game libraries, including PC titles, unlimited cloud gaming,
+          in-game benefits (including Riot Games titles), and a revamped Rewards with Xbox
+          experience.
+      - url: https://www.videogameschronicle.com/news/xbox-tells-existing-game-pass-members-its-new-cloud-gaming-cap-doesnt-apply-to-them-but-only-in-certain-countries/
+        publisher: Video Games Chronicle
+        kind: press
+        published: 2026-09-07
+        archive: https://web.archive.org/web/20260908122803/https://www.videogameschronicle.com/news/xbox-tells-existing-game-pass-members-its-new-cloud-gaming-cap-doesnt-apply-to-them-but-only-in-certain-countries/
+        quote: >-
+          At this time, these changes will only affect new purchases and will not affect your
+          current subscription for the market in which you reside, as long as you are on an
+          auto-recurring plan.
+      - url: https://www.videogameschronicle.com/news/xbox-tells-existing-game-pass-members-its-new-cloud-gaming-cap-doesnt-apply-to-them-but-only-in-certain-countries/
+        publisher: Video Games Chronicle
+        kind: press
+        published: 2026-09-07
+        archive: https://web.archive.org/web/20260908122803/https://www.videogameschronicle.com/news/xbox-tells-existing-game-pass-members-its-new-cloud-gaming-cap-doesnt-apply-to-them-but-only-in-certain-countries/
+        quote: >-
+          confirming that it has been sent to players in Australia, Brazil, Poland, Germany, but
+          not to those in the US, Canada and United Kingdom
+      - url: https://www.xbox.com/en-US/xbox-game-pass
+        publisher: Xbox
+        kind: pricing-page
+        published: 2026-11-10
+        archive: https://web.archive.org/web/20261110144610/https://www.xbox.com/en-US/xbox-game-pass
+        quote: Monthly cloud gaming limits vary by Game Pass plan.
+      - url: https://www.xbox.com/en-US/xbox-game-pass
+        publisher: Xbox
+        kind: pricing-page
+        published: 2026-11-10
+        archive: https://web.archive.org/web/20261110144610/https://www.xbox.com/en-US/xbox-game-pass
+        quote: Cloud playtime (15 hours/month)
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
