@@ -1,0 +1,169 @@
+service: chrome
+name: Google Chrome
+company: google
+url: https://www.google.com/chrome/
+crw: https://consumerrights.wiki/w/Google_Chrome
+wikipedia: https://en.wikipedia.org/wiki/Google_Chrome
+
+changes:
+  - id: chromium-sync-cutoff
+    date: 2021-01-15
+    date_kind: announced
+    effective: 2021-03-15
+    category: api-restriction
+    title: Google cuts third-party Chromium browsers off Chrome sync and other private Chrome APIs
+    what_changed: >-
+      Google said on 15 January 2021 that it would block third-party Chromium browsers from Chrome
+      sync and its other private Chrome APIs from 15 March 2021. Arch Linux's Chromium package lost
+      them on 2 March with Chromium 89, and openSUSE and Fedora had already taken the API keys out
+      of their Chromium 88 packages.
+    user_impact: >-
+      People using affected Chromium builds, such as Arch Linux's package, lost syncing of
+      passwords and bookmarks, though data already synced stayed in their Google Account.
+    company_said: >-
+      Google said an audit found some third-party Chromium browsers could use Google features such
+      as Chrome sync and Click to Call that were only intended for Google's use.
+    severity: 1
+    status: in-force
+    sources:
+      - url: https://blog.chromium.org/2021/01/limiting-private-api-availability-in.html
+        publisher: Chromium Blog
+        kind: primary
+        published: 2021-01-15
+        archive: https://web.archive.org/web/20261103031645/https://blog.chromium.org/2021/01/limiting-private-api-availability-in.html
+        quote: >-
+          We are limiting access to our private Chrome APIs starting on March 15, 2021. For users
+          who accessed Google features (like Chrome sync) through a third-party Chromium based
+          browser, their data will continue to be available in their Google Account, and data that
+          they have stored locally will continue to be available locally.
+      - url: https://archlinux.org/news/chromium-losing-sync-support-in-early-march/
+        publisher: Arch Linux
+        kind: press
+        published: 2021-02-03
+        archive: https://web.archive.org/web/20210203101031/https://archlinux.org/news/chromium-losing-sync-support-in-early-march/
+        quote: >-
+          This decision by Google is going to affect Arch's chromium package a bit earlier, on March
+          2, when Chromium 89 gets released. We know for sure that data syncing will stop working
+          (passwords, bookmarks, etc.).
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: privacy-sandbox-topics
+    date: 2023-09-07
+    date_kind: announced
+    category: tracking
+    title: Chrome turns on Topics, which builds a list of ad topics from the sites you visit
+    what_changed: >-
+      Google said on 7 September 2023 that Chrome's Privacy Sandbox ad APIs, including Topics, were
+      now available for most Chrome users. Chrome tracks the pages you visit to build a list of ad
+      topics it shares with sites that ask, and a pop-up told users an "ad privacy" feature had been
+      rolled out and enabled.
+    user_impact: >-
+      Chrome users who got the "ad privacy" pop-up had it switched on unless they opened Chrome's Ad
+      privacy settings and turned Topics off.
+    company_said: >-
+      Google called it a significant step on the path towards a fundamentally more private web.
+    severity: 2
+    status: reversed
+    reversed:
+      date: 2025-10-17
+      what: >-
+        Google said it would retire Topics, with most of the other Privacy Sandbox technologies,
+        after low levels of adoption, and its status page later listed Topics as deprecated and
+        removed from Chrome.
+      sources:
+        - url: https://privacysandbox.com/news/update-on-plans-for-privacy-sandbox-technologies/
+          publisher: Privacy Sandbox (Google)
+          kind: primary
+          published: 2025-10-17
+          archive: https://web.archive.org/web/20251119081830/https://privacysandbox.com/news/update-on-plans-for-privacy-sandbox-technologies/
+          quote: >-
+            in light of their low levels of adoption, we've decided to retire the following Privacy
+            Sandbox technologies
+        - url: https://privacysandbox.google.com/overview/status
+          publisher: Privacy Sandbox (Google)
+          kind: primary
+          published: 2026-11-20
+          archive: https://web.archive.org/web/20261120131155/https://privacysandbox.google.com/overview/status
+          quote: Topics Deprecated and removed from Chrome.
+    sources:
+      - url: https://privacysandbox.com/news/privacy-sandbox-for-the-web-reaches-general-availability
+        publisher: Privacy Sandbox (Google)
+        kind: primary
+        published: 2023-09-07
+        archive: https://web.archive.org/web/20230907230722/https://privacysandbox.com/news/privacy-sandbox-for-the-web-reaches-general-availability
+        quote: >-
+          General availability of the Privacy Sandbox APIs means advertising providers and
+          developers can now scale usage of these new technologies within their products and
+          services, as these are now available for the majority of Chrome users.
+      - url: https://arstechnica.com/gadgets/2023/09/googles-widely-opposed-ad-platform-the-privacy-sandbox-launches-in-chrome/
+        publisher: Ars Technica
+        kind: press
+        published: 2023-09-07
+        archive: https://web.archive.org/web/20230908010631/https://arstechnica.com/gadgets/2023/09/googles-widely-opposed-ad-platform-the-privacy-sandbox-launches-in-chrome/
+        quote: >-
+          If you haven't been following this, this feature will track the web pages you visit and
+          generate a list of advertising topics that it will share with web pages whenever they ask,
+          and it's built directly into the Chrome browser.
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: manifest-v2-phase-out
+    date: 2024-10
+    date_kind: effective
+    category: api-restriction
+    title: Chrome switches off Manifest V2 extensions, including the uBlock Origin ad blocker
+    question: When did Chrome stop supporting uBlock Origin?
+    what_changed: >-
+      Chrome began switching off Manifest V2 extensions such as uBlock Origin in October 2024, and
+      from Chrome 138 in July 2025 users couldn't turn them back on. Google said the phase-out was
+      beginning on 30 May 2024, Chrome 139 dropped the policy that let businesses keep them running,
+      and the last ones left the Chrome Web Store on 31 August 2026. The separate uBlock Origin
+      Lite, built for Manifest V3, has more limited filtering.
+    before: uBlock Origin and other Manifest V2 extensions work
+    after: Switched off from Chrome 138
+    user_impact: >-
+      People who kept Chrome up to date had their Manifest V2 extensions switched off, uBlock Origin
+      included, and were pointed to Manifest V3 alternatives in the Chrome Web Store.
+    company_said: >-
+      Google said Manifest V3 would improve the security, privacy, performance and trustworthiness
+      of the extension ecosystem, and that the top content filtering extensions all had Manifest V3
+      versions.
+    severity: 4
+    status: in-force
+    related: [youtube/ad-blocker-crackdown]
+    sources:
+      - url: https://blog.chromium.org/2024/05/manifest-v2-phase-out-begins.html
+        publisher: Chromium Blog
+        kind: primary
+        published: 2024-05-30
+        archive: https://web.archive.org/web/20260425185951/https://blog.chromium.org/2024/05/manifest-v2-phase-out-begins.html
+        quote: >-
+          For a short time after the extensions are disabled, users will still be able to turn
+          their Manifest V2 extensions back on, but over time, this toggle will go away as well.
+      - url: https://developer.chrome.com/docs/extensions/develop/migrate/mv2-deprecation-timeline
+        publisher: Chrome for Developers
+        kind: primary
+        published: 2026-09-09
+        archive: https://web.archive.org/web/20261115051853/https://developer.chrome.com/docs/extensions/develop/migrate/mv2-deprecation-timeline
+        quote: >-
+          With Chrome 138 all users on all channels of Chrome have now Manifest V2 extensions
+          disabled. Users can no longer turn them back on.
+      - url: https://www.theverge.com/2024/10/15/24270981/google-chrome-ublock-origin-phaseout-manifest-v3-ad-blocker
+        publisher: The Verge
+        kind: press
+        published: 2024-10-15
+        archive: https://web.archive.org/web/20261017032020/https://www.theverge.com/2024/10/15/24270981/google-chrome-ublock-origin-phaseout-manifest-v3-ad-blocker
+        quote: >-
+          Google Chrome has begun to phase out uBlock Origin. The developer of the free ad blocker,
+          Raymond Hill, recently reposted a screenshot that shows Chrome automatically turning off
+          uBlock Origin because it is "no longer supported."
+        paywalled: true
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
