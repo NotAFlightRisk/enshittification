@@ -1,0 +1,103 @@
+service: skype
+name: Skype
+company: microsoft
+url: https://www.skype.com
+wikipedia: https://en.wikipedia.org/wiki/Skype
+
+changes:
+  - id: desktop-api-chat-cut-off
+    date: 2013-07
+    date_kind: announced
+    effective: 2013-12
+    category: api-restriction
+    title: Skype stops third-party apps using Skype chat through its Desktop API
+    what_changed: >-
+      Microsoft told developers in July 2013 that Skype's Desktop API, which third-party apps used
+      to work with Skype, would be retired in December 2013. On 6 November 2013 Skype kept call
+      recording and hardware devices working, but said chat through third-party apps would still
+      stop as planned.
+    user_impact: >-
+      People who used Skype chat through other messaging apps that hooked into Skype, such as
+      Trillian, Pidgin, Adium and Miranda, were told it would stop working there.
+    company_said: >-
+      Skype said the Desktop API's extensibility model wasn't built for the cloud connected world,
+      as it was only available in the Windows and Mac desktop apps.
+    severity: 3
+    status: in-force
+    sources:
+      - url: https://blogs.skype.com/2013/11/06/feature-evolution-and-support-for-the-skype-desktop-api/
+        publisher: Skype Blogs
+        kind: primary
+        published: 2013-11-06
+        archive: https://web.archive.org/web/20160702225736/https://blogs.skype.com/2013/11/06/feature-evolution-and-support-for-the-skype-desktop-api/
+        quote: >-
+          However, I’m happy to share that we will be extending support for two of the most widely
+          used features – call recording and compatibility with hardware devices – until we
+          determine alternative options or retire the current solution. Although chat via third
+          party applications, will cease to work as previously communicated.
+      - url: https://www.infoworld.com/article/2612787/microsoft-kills-skype-third-party-tools-for-the-desktop.html
+        publisher: InfoWorld
+        kind: press
+        published: 2013-11-04
+        archive: https://web.archive.org/web/20231209112130/https://www.infoworld.com/article/2612787/microsoft-kills-skype-third-party-tools-for-the-desktop.html
+        quote: >-
+          There are also messaging apps that hook into Skype, such as Trillian, Pidgin, Adium,
+          Kopete/KDE, Miranda, IM+, and fring, which may or may not be able to communicate with the
+          future Skype.
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: retired-for-teams
+    date: 2025-02-28
+    date_kind: announced
+    effective: 2025-05-05
+    category: removed-feature
+    title: Microsoft shuts down Skype and tells its users to move to Teams Free
+    question: When did Skype shut down?
+    what_changed: >-
+      Microsoft said on 28 February 2025 that it would retire Skype on 5 May 2025, and told users to
+      move to Teams Free or export their data. New Skype Credit, subscriptions and Skype Numbers
+      stopped being sold that day, SMS, call forwarding and voicemail ended with Skype, and all Skype
+      Number subscriptions ended in May 2026. Leftover Skype Credit can still be used for calls from
+      the Skype Dial Pad in Teams Free or on the web.
+    user_impact: >-
+      Skype users had to move to Teams Free or go elsewhere, and only those who'd used Skype between
+      December 2024 and February 2025 and then Teams Free before 1 December 2025 kept their chat and
+      call history, while anyone not active on both had theirs deleted after 15 June 2026.
+    company_said: >-
+      Microsoft said it was retiring Skype to streamline its free consumer communications offerings
+      and focus on Teams Free.
+    severity: 4
+    status: in-force
+    sources:
+      - url: https://www.microsoft.com/en-us/microsoft-365/blog/2025/02/28/the-next-chapter-moving-from-skype-to-microsoft-teams/
+        publisher: Microsoft 365 Blog
+        kind: primary
+        published: 2025-02-28
+        archive: https://web.archive.org/web/20250228182451/https://www.microsoft.com/en-us/microsoft-365/blog/2025/02/28/the-next-chapter-moving-from-skype-to-microsoft-teams/
+        quote: >-
+          In order to streamline our free consumer communications offerings so we can more easily
+          adapt to customer needs, we will be retiring Skype in May 2025 to focus on Microsoft Teams
+          (free), our modern communications and collaboration hub.
+      - url: https://support.microsoft.com/en-us/skype/skype-is-retiring-in-may-2025-what-you-need-to-know-2a7d2501-427f-485e-8be0-2068a9f90472
+        publisher: Microsoft Support
+        kind: primary
+        published: 2025-02-28
+        archive: https://web.archive.org/web/20250228182310/https://support.microsoft.com/en-us/skype/skype-is-retiring-in-may-2025-what-you-need-to-know-2a7d2501-427f-485e-8be0-2068a9f90472
+        quote: >-
+          As of today, new purchases for Skype Subscriptions, Skype Numbers and Skype Credit are no
+          longer available.
+      - url: https://support.microsoft.com/en-us/skype/skype-is-retiring-in-may-2025-what-you-need-to-know
+        publisher: Microsoft Support
+        kind: primary
+        published: 2026-11-18
+        archive: https://web.archive.org/web/20261118163747/https://support.microsoft.com/en-us/skype/skype-is-retiring-in-may-2025-what-you-need-to-know
+        quote: >-
+          If you were not active in Skype and Teams Free during this time, your data will be
+          completely deleted after June 15th 2026.
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
