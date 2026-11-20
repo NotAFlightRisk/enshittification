@@ -5,7 +5,7 @@ import satori from 'satori';
 import { formatDate, yearOf } from '#lib/dates.ts';
 import { money, percent, plural } from '#lib/format.ts';
 import { glyphSvg } from '#lib/icons.ts';
-import { fit, marks } from '#lib/strip.ts';
+import { fit, height as stackHeight, marks } from '#lib/strip.ts';
 import { launched, league, stepsBy } from '#lib/prices.ts';
 import { firstYear, productName, worstOf } from '#lib/seo.ts';
 import {
@@ -148,9 +148,27 @@ function strip(changes: Entry[], from: number, to: number, size: number, labels 
   );
 }
 
+/** Room under the home headline for the strips, their tape and the year labels */
+const homeRoom = 360;
+
+/** The worst services whose strips fit under the headline, and how big their signs can be */
+function homeRows(rows: ReturnType<typeof wall>['rows'], from: number, to: number) {
+  for (let count = rows.length; ; count--) {
+    const shown = rows.slice(0, count);
+    const lanes = shown.reduce(
+      (sum, row) => sum + stackHeight(marks(row.changes, from, to)).wide,
+      0
+    );
+    const space = homeRoom - 35 - count * 8 - (count - 1) * 12;
+    const size = Math.min(26, Math.floor(space / lanes) - 6);
+    if (size >= 20 || count === 1) return { shown, size };
+  }
+}
+
 function homeImage() {
   const counts = stats();
-  const { rows: shown, from, to } = wall(3);
+  const { rows, from, to } = wall(3);
+  const { shown, size } = homeRows(rows, from, to);
   return frame(
     `${plural(counts.changes, 'change')} at ${plural(counts.services, 'service')}`,
     headline('Big tech gets worse after you sign up.', 68),
@@ -162,7 +180,7 @@ function homeImage() {
           div({ ...condensed, width: 150, fontSize: 32, paddingBottom: 4 }, service.name),
           div(
             { flexGrow: 1, flexDirection: 'column' },
-            strip(service.changes, from, to, 26, index === shown.length - 1)
+            strip(service.changes, from, to, size, index === shown.length - 1)
           )
         )
       )
