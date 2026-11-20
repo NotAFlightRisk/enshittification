@@ -11,7 +11,7 @@ plans:
     region: US
     currency: USD
     billing: month
-    since: 2012-05
+    since: 2012-05-11
     price: 49.99
     source:
       url: https://www.adobe.com/aboutadobe/pressroom/pressreleases/201205/050712AdobeCS6Ship.html
@@ -28,7 +28,7 @@ plans:
     region: US
     currency: USD
     billing: month
-    since: 2012-05
+    since: 2012-05-11
     price: 19.99
     source:
       url: https://www.adobe.com/aboutadobe/pressroom/pressreleases/201204/042312AdobePhotoshopCS6.html
@@ -234,11 +234,11 @@ changes:
     category: lock-out
     title: Adobe pulls older Creative Cloud app versions and warns of third-party claims
     what_changed: >-
-      Adobe said on 8 May 2019 that Creative Cloud members could only download the most recent major
-      versions of its apps. Some members still on older versions were then emailed that they were no
-      longer licensed to use certain older versions.
+      Adobe said on 8 May 2019 that Creative Cloud members could only download the 2 most recent
+      major versions of its apps. Some members still on older versions were then emailed that they
+      were no longer licensed to use certain older versions.
     before: Members could download older versions of the apps
-    after: Only the most recent major versions to download
+    after: Only the 2 most recent major versions to download
     user_impact: >-
       Members on some older versions were told they were no longer licensed to use them, and could
       face infringement claims from third parties if they carried on.
