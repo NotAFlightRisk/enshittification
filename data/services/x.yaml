@@ -1,0 +1,710 @@
+service: x
+name: X
+company: x-corp
+url: https://x.com
+crw: https://consumerrights.wiki/w/X_Corp
+wikipedia: https://en.wikipedia.org/wiki/X_(social_network)
+
+plans:
+  - id: premium-us
+    name: X Premium, was Twitter Blue
+    region: US
+    currency: USD
+    billing: month
+    since: 2021-11-09
+    price: 2.99
+    source:
+      url: https://techcrunch.com/2021/11/09/twitter-blue-launches-in-the-u-s-and-new-zealand-with-expanded-feature-set/
+      publisher: TechCrunch
+      kind: press
+      published: 2021-11-09
+      archive: https://web.archive.org/web/20211109170854/https://techcrunch.com/2021/11/09/twitter-blue-launches-in-the-u-s-and-new-zealand-with-expanded-feature-set/
+      quote: >-
+        The service will be available across iOS, Android and the web for $2.99 per month (or
+        $4.49 NZD).
+
+  - id: premium-annual-us
+    name: X Premium (annual), was Twitter Blue
+    region: US
+    currency: USD
+    billing: year
+    since: 2023-01-17
+    price: 84
+    source:
+      url: https://www.theverge.com/2023/1/17/23559959/twitter-blue-annual-subscription-discount-offer
+      publisher: The Verge
+      kind: press
+      published: 2023-01-17
+      archive: https://web.archive.org/web/20230118014626/https://www.theverge.com/2023/1/17/23559959/twitter-blue-annual-subscription-discount-offer
+      quote: >-
+        Normally it costs $8 per month, but the company just added a new annual option that brings
+        the price to $84 per year.
+
+  - id: basic-us
+    name: X Premium Basic
+    region: US
+    currency: USD
+    billing: month
+    since: 2023-10-27
+    price: 3
+    source:
+      url: https://techcrunch.com/2023/10/27/x-is-launching-new-premium-and-basic-subscription-tiers/
+      publisher: TechCrunch
+      kind: press
+      published: 2023-10-27
+      archive: https://web.archive.org/web/20231027193144/https://techcrunch.com/2023/10/27/x-is-launching-new-premium-and-basic-subscription-tiers/
+      quote: The second tier launching today is called “Basic” and costs $3 per month.
+
+  - id: basic-annual-us
+    name: X Premium Basic (annual)
+    region: US
+    currency: USD
+    billing: year
+    since: 2023-10-27
+    price: 32
+    source:
+      url: https://help.twitter.com/en/using-x/x-premium
+      publisher: X Help Center
+      kind: primary
+      published: 2023-10-27
+      archive: https://web.archive.org/web/20231028192416/https://help.twitter.com/en/using-x/x-premium
+      quote: 'Basic: Starts at $3/month or $32/year on web (or your local pricing)'
+
+  - id: premium-plus-us
+    name: X Premium+
+    region: US
+    currency: USD
+    billing: month
+    since: 2023-10-27
+    price: 16
+    source:
+      url: https://techcrunch.com/2023/10/27/x-is-launching-new-premium-and-basic-subscription-tiers/
+      publisher: TechCrunch
+      kind: press
+      published: 2023-10-27
+      archive: https://web.archive.org/web/20231027193144/https://techcrunch.com/2023/10/27/x-is-launching-new-premium-and-basic-subscription-tiers/
+      quote: The social media giant is adding a new Premium+ tier that costs $16 per month
+
+  - id: premium-plus-annual-us
+    name: X Premium+ (annual)
+    region: US
+    currency: USD
+    billing: year
+    since: 2023-10-27
+    price: 168
+    source:
+      url: https://help.twitter.com/en/using-x/x-premium
+      publisher: X Help Center
+      kind: primary
+      published: 2023-10-27
+      archive: https://web.archive.org/web/20231028192416/https://help.twitter.com/en/using-x/x-premium
+      quote: 'Premium+: Starts at $16/month or $168/year on web (or your local pricing)'
+
+changes:
+  - id: blue-price-2022
+    date: 2022-07-28
+    date_kind: announced
+    category: price-rise
+    title: Twitter Blue goes from $2.99 to $4.99 a month, its first US rise
+    what_changed: >-
+      Twitter raised US Twitter Blue from $2.99 to $4.99 a month on 28 July 2022. New subscribers
+      paid it at once and existing ones from October.
+    before: $2.99 a month
+    after: $4.99 a month
+    user_impact: >-
+      US Twitter Blue subscribers paid the new price from October at the latest, and the same rise
+      came in Canada, Australia and New Zealand.
+    company_said: >-
+      Twitter told subscribers the change would help it build the features they'd asked for,
+      improve the current ones and sustain its mission of supporting journalism.
+    severity: 2
+    status: in-force
+    regions: [US, CA, AU, NZ]
+    prices:
+      - { plan: premium-us, from: 2.99, to: 4.99 }
+    sources:
+      - url: https://techcrunch.com/2022/07/28/twitter-is-increasing-the-price-of-twitter-blue-from-2-99-to-4-99-per-month/
+        publisher: TechCrunch
+        kind: press
+        published: 2022-07-28
+        archive: https://web.archive.org/web/20220729050704/https://techcrunch.com/2022/07/28/twitter-is-increasing-the-price-of-twitter-blue-from-2-99-to-4-99-per-month/
+        quote: >-
+          Twitter is increasing the price of its subscription service, Twitter Blue, from $2.99 to
+          $4.99 per month. Starting in October, existing subscribers will have to pay more.
+      - url: https://help.twitter.com/en/using-twitter/twitter-blue
+        publisher: Twitter Help Center
+        kind: primary
+        published: 2022-07-28
+        archive: https://web.archive.org/web/20220814114448/https://help.twitter.com/en/using-twitter/twitter-blue
+        quote: >-
+          Twitter Blue subscriptions are paid on a monthly basis, and priced regionally based on
+          the current US price of $4.99.
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: blue-price-2022-12
+    date: 2022-12-10
+    date_kind: announced
+    effective: 2022-12-12
+    category: price-rise
+    title: Twitter Blue goes from $4.99 to $8 a month on the web and $11 on iOS
+    what_changed: >-
+      Twitter said on 10 December 2022 that Twitter Blue would relaunch that Monday at $8 a month on
+      the web and $11 on iOS, up from $4.99. People who'd subscribed on iOS at $2.99 or $4.99 had to
+      move to the new price or lose their subscription.
+    before: $4.99 a month
+    after: $8 a month on the web, $11 on iOS
+    user_impact: >-
+      Blue subscribers on iOS paid more: the old $2.99 and $4.99 ones had to upgrade or lose it, and
+      those who'd joined for $7.99 were renewed at $11 a month unless they cancelled.
+    severity: 2
+    status: in-force
+    regions: [US]
+    prices:
+      - { plan: premium-us, from: 4.99, to: 8 }
+    sources:
+      - url: https://techcrunch.com/2022/12/11/twitter-blue-to-relaunch-with-actual-verification-process-higher-price-for-apple-users/
+        publisher: TechCrunch
+        kind: press
+        published: 2022-12-11
+        archive: https://web.archive.org/web/20221211234850/https://techcrunch.com/2022/12/11/twitter-blue-to-relaunch-with-actual-verification-process-higher-price-for-apple-users/
+        quote: >-
+          Web sign-ups will cost $8 per month and iOS sign ups will cost $11 per month for "access
+          to subscriber-only features, including the blue checkmark," per a tweet from the company
+          account.
+      - url: https://help.twitter.com/en/using-twitter/twitter-blue
+        publisher: Twitter Help Center
+        kind: primary
+        published: 2022-12
+        archive: https://web.archive.org/web/20221213233736/https://help.twitter.com/en/using-twitter/twitter-blue
+        quote: >-
+          Those who initially subscribed on iOS for $2.99 or $4.99/month will need to upgrade their
+          subscription for $8/month on web or $11/month on iOS, or lose their subscription.
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: third-party-clients-cut-off
+    date: 2023-01-12
+    date_kind: effective
+    category: api-restriction
+    title: Twitter cuts off third-party apps like Tweetbot and Twitterrific, then bans them
+    question: When did Twitter stop third-party apps?
+    what_changed: >-
+      Twitter cut off third-party apps such as Tweetbot and Twitterrific from 12 January 2023, with
+      no word to their developers. On 19 January it added a clause to its developer agreement
+      banning apps that substitute for its own.
+    user_impact: >-
+      People using Tweetbot, Twitterrific, Fenix and other third-party apps had to move to Twitter's
+      own apps, and Twitterrific was discontinued.
+    company_said: Twitter said it was "enforcing long-standing API rules", without saying which.
+    severity: 4
+    status: in-force
+    sources:
+      - url: https://developer.twitter.com/en/developer-terms/agreement-and-policy
+        publisher: Twitter Developer Platform
+        kind: primary
+        published: 2023-01-19
+        archive: https://web.archive.org/web/20230125003826/https://developer.twitter.com/en/developer-terms/agreement-and-policy
+        quote: >-
+          use or access the Licensed Materials to create or attempt to create a substitute or similar
+          service or product to the Twitter Applications
+      - url: https://www.theverge.com/2023/1/19/23562947/twitter-third-party-client-tweetbot-twitterific-ban-rules
+        publisher: The Verge
+        kind: press
+        published: 2023-01-19
+        archive: https://web.archive.org/web/20260904221350/https://www.theverge.com/2023/1/19/23562947/twitter-third-party-client-tweetbot-twitterific-ban-rules
+        quote: >-
+          The rule change comes after Twitter silently broke several popular third-party Twitter
+          clients like Tweetbot and Twitterific starting on January 12th.
+      - url: https://www.engadget.com/twitter-new-developer-terms-ban-third-party-clients-211247096.html
+        publisher: Engadget
+        kind: press
+        published: 2023-01-19
+        archive: https://web.archive.org/web/20261117193154/https://www.engadget.com/twitter-new-developer-terms-ban-third-party-clients-211247096.html
+        quote: >-
+          Twitter previously said it was "enforcing long-standing API rules," but hadn't cited which
+          rules developers were violating.
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: sms-2fa-paywall
+    date: 2023-02-15
+    date_kind: announced
+    effective: 2023-03-20
+    category: paywall
+    title: Twitter makes text-message 2FA a Twitter Blue feature
+    what_changed: >-
+      Twitter said on 15 February 2023 that only Twitter Blue subscribers could use text-message
+      2FA to log in. Non-subscribers using it had until 20 March to switch to an app or security
+      key, after which their text-message 2FA was turned off.
+    before: Text-message 2FA free for everyone
+    after: Text-message 2FA for subscribers only
+    user_impact: >-
+      In December 2021, 74 percent of the 2.6 percent of users with 2FA on used text messages, and
+      free app and key methods stayed.
+    company_said: >-
+      Twitter said it had seen phone-number based 2FA used, and abused, by bad actors.
+    severity: 1
+    status: in-force
+    sources:
+      - url: https://blog.twitter.com/en_us/topics/product/2023/an-update-on-two-factor-authentication-using-sms-on-twitter
+        publisher: Twitter Blog
+        kind: primary
+        published: 2023-02-15
+        archive: https://web.archive.org/web/20231209050143/https://blog.twitter.com/en_us/topics/product/2023/an-update-on-two-factor-authentication-using-sms-on-twitter
+        quote: >-
+          After 20 March 2023, we will no longer permit non-Twitter Blue subscribers to use text
+          messages as a 2FA method.
+      - url: https://help.x.com/en/managing-your-account/two-factor-authentication
+        publisher: X Help Center
+        kind: primary
+        published: 2026-11-16
+        archive: https://web.archive.org/web/20261116191912/https://help.x.com/en/managing-your-account/two-factor-authentication
+        quote: >-
+          Effective March 20, 2023, we will no longer support two-factor authentication using text
+          messages for non-Premium subscribers.
+      - url: https://www.theverge.com/2023/2/17/23605073/twitter-blue-charge-sms-2fa
+        publisher: The Verge
+        kind: press
+        published: 2023-02-17
+        archive: https://web.archive.org/web/20261021194058/https://www.theverge.com/2023/2/17/23605073/twitter-blue-charge-sms-2fa
+        quote: >-
+          Twitter's own transparency data shows that as of December 2021, only 2.6 percent of Twitter
+          users had 2FA turned on, and 74 percent of those users were using SMS as their 2FA method.
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: free-api-ends
+    date: 2023-03-29
+    date_kind: announced
+    category: api-restriction
+    title: Twitter ends free read access to its API and charges $100 a month for Basic
+    what_changed: >-
+      Twitter announced paid API tiers on 29 March 2023, leaving a write-only free tier and charging
+      $100 a month for Basic. It had said on 2 February that free access would end, and announced no
+      dedicated replacement for academic access.
+    before: Free read and write access to the API
+    after: Free is write-only, Basic costs $100 a month
+    user_impact: >-
+      Hobby bots, small tools and researchers lost free read access, and some developers said they'd
+      shut their projects or pass the fees on to users.
+    company_said: >-
+      Elon Musk said the free API was "being abused badly" by "bot scammers & opinion manipulators".
+    severity: 4
+    status: in-force
+    related: [x/third-party-clients-cut-off]
+    sources:
+      - url: https://www.theverge.com/2023/3/30/23662832/twitter-api-tiers-free-bot-novelty-accounts-basic-enterprice-monthly-price
+        publisher: The Verge
+        kind: press
+        published: 2023-03-30
+        archive: https://web.archive.org/web/20261012003510/https://www.theverge.com/2023/3/30/23662832/twitter-api-tiers-free-bot-novelty-accounts-basic-enterprice-monthly-price
+        quote: >-
+          Basic — A $100 per month subscription for hobbyists with the option of posting 3,000 tweets
+          per month at the user level, or 50,000 tweets per month at the app level.
+      - url: https://www.theverge.com/2023/2/2/23582615/twitter-removing-free-api-developer-apps-price-announcement
+        publisher: The Verge
+        kind: press
+        published: 2023-02-02
+        archive: https://web.archive.org/web/20261019083907/https://www.theverge.com/2023/2/2/23582615/twitter-removing-free-api-developer-apps-price-announcement
+        quote: Twitter will no longer provide free access to the Twitter API from February 9th.
+      - url: https://developer.twitter.com/en/products/twitter-api
+        publisher: Twitter Developer Platform
+        kind: pricing-page
+        published: 2023-04-13
+        archive: https://web.archive.org/web/20230413034454/https://developer.twitter.com/en/products/twitter-api
+        quote: "Cost: $100 per month"
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: legacy-checkmarks-removed-2023
+    date: 2023-04-20
+    date_kind: effective
+    category: paywall
+    title: Twitter removes free blue checks, keeping them only for paying subscribers
+    question: When did Twitter remove legacy blue checks?
+    what_changed: >-
+      Twitter removed blue checkmarks from accounts verified under its old free programme on 20 April
+      2023, unless they paid for Twitter Blue. It had said accounts verified as active, notable and
+      authentic would not keep the check without a subscription.
+    user_impact: >-
+      Accounts verified for free, such as people in media and government and others at risk of
+      impersonation, lost the check unless they paid for Twitter Blue.
+    severity: 1
+    status: in-force
+    sources:
+      - url: https://help.twitter.com/en/managing-your-account/about-twitter-verified-accounts
+        publisher: Twitter Help Center
+        kind: primary
+        published: 2023-04-25
+        archive: https://web.archive.org/web/20230425215746/https://help.twitter.com/en/managing-your-account/about-twitter-verified-accounts
+        quote: >-
+          Starting April 1, we’ll be winding down our legacy Verification program and accounts that
+          were verified under the previous criteria (active, notable, and authentic) will not retain a
+          blue checkmark unless they are subscribed to Twitter Blue.
+      - url: https://www.cnbc.com/2023/04/20/twitter-finally-removes-legacy-verification-checkmarks.html
+        publisher: CNBC
+        kind: press
+        published: 2023-04-20
+        archive: https://web.archive.org/web/20230422024908/https://www.cnbc.com/2023/04/20/twitter-finally-removes-legacy-verification-checkmarks.html
+        quote: >-
+          Twitter removed blue legacy check marks from nonpaying users' accounts on Thursday, weeks
+          after the Elon Musk-owned company initially announced that the changes would begin.
+      - url: https://www.cnbc.com/2023/04/20/twitter-finally-removes-legacy-verification-checkmarks.html
+        publisher: CNBC
+        kind: press
+        published: 2023-04-20
+        archive: https://web.archive.org/web/20230422024908/https://www.cnbc.com/2023/04/20/twitter-finally-removes-legacy-verification-checkmarks.html
+        quote: >-
+          Before Elon Musk acquired the platform, verification was given out to users in media and
+          government, or those at heightened risk of impersonation.
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: tweetdeck-paywall
+    date: 2023-07-03
+    date_kind: announced
+    effective: 2023-08-15
+    category: paywall
+    title: TweetDeck, renamed X Pro, goes behind the X Premium subscription
+    what_changed: >-
+      X said on 3 July 2023 that TweetDeck would become a feature for paying subscribers only. From
+      15 August, people opening it, now called X Pro, got a sales page for X Premium instead.
+    before: TweetDeck free with any account
+    after: X Pro needs X Premium
+    user_impact: >-
+      People who used TweetDeck's multiple accounts and custom feeds, many of them journalists and
+      marketers, had to pay for X Premium to keep it.
+    severity: 2
+    status: in-force
+    sources:
+      - url: https://www.theverge.com/2023/8/15/23833707/tweetdeck-xpro-paid-service-x-premium-twitter
+        publisher: The Verge
+        kind: press
+        published: 2023-08-15
+        archive: https://web.archive.org/web/20251130193921/https://www.theverge.com/2023/8/15/23833707/tweetdeck-xpro-paid-service-x-premium-twitter
+        quote: X announced on July 3rd that it would be making XPro a subscriber-only feature.
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: circle-removed-2023
+    date: 2023-09-21
+    date_kind: announced
+    effective: 2023-10-31
+    category: removed-feature
+    title: X shuts down Circle, which let people post to a chosen group
+    what_changed: >-
+      X said in September 2023 that it would shut down Circle, which let people share a post with only
+      a set of people, on 31 October 2023. After that nobody could post to a Circle or add people to
+      one, though old Circle posts stayed visible.
+    user_impact: >-
+      People who shared posts with a Circle rather than with all their followers lost the option from
+      31 October 2023.
+    severity: 1
+    status: in-force
+    sources:
+      - url: https://help.x.com/en/using-x/twitter-circle
+        publisher: X Help Center
+        kind: primary
+        published: 2024-01-05
+        archive: https://web.archive.org/web/20240105195630/https://help.x.com/en/using-x/twitter-circle
+        quote: >-
+          X is deprecating Circles as of Oct 31st, 2023. After this date, you will not be able to
+          create new posts that are limited to your Circle, nor will you be able to add people to your
+          Circle.
+      - url: https://techcrunch.com/2023/09/21/x-is-shutting-down-its-circle-feature-in-october/
+        publisher: TechCrunch
+        kind: press
+        published: 2023-09-21
+        archive: https://web.archive.org/web/20231002164726/https://techcrunch.com/2023/09/21/x-is-shutting-down-its-circle-feature-in-october/
+        quote: >-
+          The company will still let people look at their historical Circle posts after the deadline
+          date.
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: not-a-bot-fee-test-2023
+    date: 2023-10-17
+    date_kind: announced
+    category: paywall
+    title: X tests charging new accounts $1 a year to post in New Zealand and the Philippines
+    what_changed: >-
+      X started a test on 17 October 2023 charging new accounts in New Zealand and the Philippines $1
+      a year to post, like, reply, repost or bookmark. New accounts that didn't pay got read-only
+      access, and existing users weren't affected.
+    user_impact: >-
+      New users in New Zealand and the Philippines had to verify a phone number and pay $1.43 NZD or
+      ₱42.51 PHP a year to do more than read, watch videos and follow accounts.
+    company_said: X said the test was to help it combat bots and spammers.
+    severity: 1
+    status: test
+    regions: [NZ, PH]
+    sources:
+      - url: https://help.twitter.com/en/using-x/not-a-bot
+        publisher: X Help Center
+        kind: primary
+        published: 2023-10-20
+        archive: https://web.archive.org/web/20231020225126/https://help.twitter.com/en/using-x/not-a-bot
+        quote: >-
+          New accounts created on X, in these two countries, will first be required to verify their
+          phone number. Step Two: Select Your Subscription Plan $1 USD Annual Fee (prices vary by
+          country and currency).
+      - url: https://help.twitter.com/en/using-x/not-a-bot
+        publisher: X Help Center
+        kind: primary
+        published: 2023-10-20
+        archive: https://web.archive.org/web/20231020225126/https://help.twitter.com/en/using-x/not-a-bot
+        quote: "New Zealand: $1.43 NZD per year Philippines: ₱42.51 PHP per year"
+      - url: https://help.twitter.com/en/using-x/not-a-bot
+        publisher: X Help Center
+        kind: primary
+        published: 2023-10-20
+        archive: https://web.archive.org/web/20231020225126/https://help.twitter.com/en/using-x/not-a-bot
+        quote: >-
+          This will evaluate a potentially powerful measure to help us combat bots and spammers on X,
+          while balancing platform accessibility with the small fee amount.
+      - url: https://techcrunch.com/2023/10/17/x-starts-experimenting-with-a-1-per-year-fee-for-new-users/
+        publisher: TechCrunch
+        kind: press
+        published: 2023-10-17
+        archive: https://web.archive.org/web/20231019010354/https://techcrunch.com/2023/10/17/x-starts-experimenting-with-a-1-per-year-fee-for-new-users/
+        quote: >-
+          The company said this test is currently live in New Zealand and the Philippines and existing
+          users won’t be affected. Users will get to post content, like, repost, reply, bookmark, and
+          quote posts for paying that fee. New free users will just get a read-only account to look at
+          posts and follow accounts.
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: grok-training-default-2024
+    date: 2024-07-26
+    date_kind: reported
+    category: ai
+    title: X opts users in to training its Grok AI on their public posts
+    what_changed: >-
+      X was found in July 2024 to have turned on a setting for every account, without telling anyone,
+      that let it train its Grok AI on people's posts. Its help page said posts and Grok chats may be
+      used for training and fine-tuning, with an opt-out that at first was only on the website.
+    user_impact: >-
+      Public posts could be used to train Grok unless people found the setting and turned it off, or
+      made their account private.
+    company_said: >-
+      X said it used posts and Grok chats to improve Grok's understanding of language and the answers
+      it gives.
+    severity: 1
+    status: in-force
+    sources:
+      - url: https://help.x.com/en/using-x/about-grok
+        publisher: X Help Center
+        kind: primary
+        published: 2024-08-04
+        archive: https://web.archive.org/web/20240804041616/https://help.x.com/en/using-x/about-grok
+        quote: >-
+          To continuously improve your experience, we may utilize your X posts as well as your user
+          interactions, inputs and results with Grok for training and fine-tuning purposes.
+      - url: https://help.x.com/en/using-x/about-grok
+        publisher: X Help Center
+        kind: primary
+        published: 2024-08-04
+        archive: https://web.archive.org/web/20240804041616/https://help.x.com/en/using-x/about-grok
+        quote: >-
+          Please note that you additionally may also prevent your posts from being used for training
+          Grok by making your account private.
+      - url: https://help.x.com/en/using-x/about-grok
+        publisher: X Help Center
+        kind: primary
+        published: 2024-08-04
+        archive: https://web.archive.org/web/20240804041616/https://help.x.com/en/using-x/about-grok
+        quote: >-
+          Enhance Grok's understanding of human language and communication. Improve Grok's ability to
+          provide accurate, relevant, and engaging responses.
+      - url: https://www.macrumors.com/2024/07/26/x-grok-ai-tweets-auto-opt-in/
+        publisher: MacRumors
+        kind: press
+        published: 2024-07-26
+        archive: https://web.archive.org/web/20240727150852/https://www.macrumors.com/2024/07/26/x-grok-ai-tweets-auto-opt-in/
+        quote: >-
+          All X users are opted in by default, with X failing to notify customers about the change.
+      - url: https://www.macrumors.com/2024/07/26/x-grok-ai-tweets-auto-opt-in/
+        publisher: MacRumors
+        kind: press
+        published: 2024-07-26
+        archive: https://web.archive.org/web/20240727150852/https://www.macrumors.com/2024/07/26/x-grok-ai-tweets-auto-opt-in/
+        quote: >-
+          This privacy setting is not available through the X app, so it must be disabled using the
+          desktop version of X
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: basic-api-price-2024
+    date: 2024-10-30
+    date_kind: announced
+    category: price-rise
+    title: X doubles its Basic API tier from $100 to $200 a month
+    what_changed: >-
+      X raised its Basic API tier from $100 to $200 a month on 30 October 2024, with higher limits
+      and new endpoints. It also added annual plans at a discount.
+    before: $100 a month
+    after: $200 a month
+    user_impact: >-
+      Developers and small tools on Basic faced double the monthly price, with higher limits and new
+      endpoints.
+    severity: 2
+    status: in-force
+    related: [x/free-api-ends]
+    sources:
+      - url: https://techcrunch.com/2024/10/30/x-makes-its-basic-api-tier-more-costly-launches-annual-subscriptions/
+        publisher: TechCrunch
+        kind: press
+        published: 2024-10-30
+        archive: https://web.archive.org/web/20261110101355/https://techcrunch.com/2024/10/30/x-makes-its-basic-api-tier-more-costly-launches-annual-subscriptions/
+        quote: >-
+          The company raised the prices of the basic API tier from $100 to $200 and said it would
+          introduce higher limits and new endpoints for this subscription plan.
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: block-shows-public-posts-2024
+    date: 2024-11
+    date_kind: effective
+    category: removed-feature
+    title: X lets accounts you've blocked see your public posts
+    question: Can blocked accounts see my posts on X?
+    what_changed: >-
+      X started rolling out a change to blocking in November 2024 so that accounts you block can see
+      your public posts, though they still can't engage with them.
+    user_impact: >-
+      Accounts people had blocked could read their public posts while logged in, which blocking used
+      to stop.
+    company_said: >-
+      X said blocking could be used to share and hide harmful or private information about the people
+      doing the blocking.
+    severity: 2
+    status: in-force
+    sources:
+      - url: https://help.x.com/en/using-x/blocking-and-unblocking-accounts
+        publisher: X Help Center
+        kind: primary
+        published: 2025-01-16
+        archive: https://web.archive.org/web/20250116040050/https://help.x.com/en/using-x/blocking-and-unblocking-accounts
+        quote: >-
+          If your posts are set to public, accounts you have blocked can see your posts. However,
+          they cannot engage (like, reply, repost, etc.) with your posts.
+      - url: https://www.techspot.com/news/105440-x-rolls-out-changes-block-button-allowing-users.html
+        publisher: TechSpot
+        kind: press
+        published: 2024-11-05
+        archive: https://web.archive.org/web/20241105161922/https://www.techspot.com/news/105440-x-rolls-out-changes-block-button-allowing-users.html
+        quote: >-
+          Now, X's engineering team says it has started to roll out the change to the platform's
+          block function.
+      - url: https://www.techspot.com/news/105440-x-rolls-out-changes-block-button-allowing-users.html
+        publisher: TechSpot
+        kind: press
+        published: 2024-11-05
+        archive: https://web.archive.org/web/20241105161922/https://www.techspot.com/news/105440-x-rolls-out-changes-block-button-allowing-users.html
+        quote: >-
+          X says the reason it is changing the block button is because its functionality could
+          previously be used by users to share and hide harmful or private information about people
+          they've blocked.
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: premium-plus-price-2024
+    date: 2024-12
+    date_kind: effective
+    category: price-rise
+    title: X Premium+ goes from $16 to $22 a month in the US
+    what_changed: >-
+      X raised US Premium+ from $16 to $22 a month in December 2024, and the annual plan from $168
+      to $229. Basic and Premium stayed at $3 and $8.
+    before: $16 a month
+    after: $22 a month
+    user_impact: >-
+      New Premium+ subscribers paid it straight away, and existing monthly ones kept their old rate
+      until 20 January.
+    severity: 2
+    status: in-force
+    prices:
+      - { plan: premium-plus-us, from: 16, to: 22 }
+      - { plan: premium-plus-annual-us, from: 168, to: 229 }
+    sources:
+      - url: https://help.x.com/en/using-x/x-premium
+        publisher: X Help Center
+        kind: primary
+        published: 2024-12
+        archive: https://web.archive.org/web/20241227032413/https://help.x.com/en/using-x/x-premium
+        quote: 'Premium+: Starts at $22/month or $229/year on web (or your local pricing)'
+      - url: https://www.engadget.com/social-media/x-hikes-ad-free-premium-subscription-price-from-16-to-22-133016526.html
+        publisher: Engadget
+        kind: press
+        published: 2024-12-23
+        archive: https://web.archive.org/web/20241223145426/https://www.engadget.com/social-media/x-hikes-ad-free-premium-subscription-price-from-16-to-22-133016526.html
+        quote: >-
+          Existing users on monthly subscriptions will keep their current rates until January 20th,
+          and price for other tiers (Basic and Premium) remain unchanged.
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: premium-plus-price-2025
+    date: 2025-02-18
+    date_kind: reported
+    category: price-rise
+    title: X Premium+ goes from $22 to $40 a month in the US
+    what_changed: >-
+      X raised US Premium+ from $22 to $40 a month in February 2025, and the annual plan to $395,
+      under 2 months after the last rise.
+    before: $22 a month
+    after: $40 a month
+    user_impact: >-
+      Premium+ cost $40 a month, up from $16 before the December rise.
+    severity: 2
+    status: in-force
+    prices:
+      - { plan: premium-plus-us, from: 22, to: 40 }
+      - { plan: premium-plus-annual-us, from: 229, to: 395 }
+    sources:
+      - url: https://help.x.com/en/using-x/x-premium
+        publisher: X Help Center
+        kind: primary
+        published: 2025-02
+        archive: https://web.archive.org/web/20250222074742/https://help.x.com/en/using-x/x-premium
+        quote: 'Premium+: Starts at $40/month or $395/year on web (or your local pricing)'
+      - url: https://techcrunch.com/2025/02/18/x-doubles-its-premium-plan-prices-after-xai-releases-grok-3/
+        publisher: TechCrunch
+        kind: press
+        published: 2025-02-18
+        archive: https://web.archive.org/web/20250218083515/https://techcrunch.com/2025/02/18/x-doubles-its-premium-plan-prices-after-xai-releases-grok-3/
+        quote: >-
+          This is the second time X is raising the price for the Premium+ plan in the past couple of
+          months.
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
