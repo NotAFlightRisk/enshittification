@@ -1,0 +1,547 @@
+service: google-nest
+name: Google Nest
+company: google
+url: https://store.google.com/us/category/connected_home
+crw: https://consumerrights.wiki/w/Google_Nest
+wikipedia: https://en.wikipedia.org/wiki/Google_Nest
+
+plans:
+  - id: aware-us
+    name: Google Home Premium Standard, was Nest Aware
+    region: US
+    currency: USD
+    billing: month
+    since: 2020-05-12
+    price: 6
+    source:
+      url: https://www.blog.google/products/google-nest/5-things-know-about-new-nest-aware/
+      publisher: Google
+      kind: primary
+      published: 2020-05-12
+      archive: https://web.archive.org/web/20200518204334/https://www.blog.google/products/google-nest/5-things-know-about-new-nest-aware/
+      quote: >-
+        For just $6 a month (or $60 for an annual subscription), the new Nest Aware comes with 30
+        days of event video history.
+
+  - id: aware-annual-us
+    name: Google Home Premium Standard (annual), was Nest Aware
+    region: US
+    currency: USD
+    billing: year
+    since: 2020-05-12
+    price: 60
+    source:
+      url: https://www.blog.google/products/google-nest/5-things-know-about-new-nest-aware/
+      publisher: Google
+      kind: primary
+      published: 2020-05-12
+      archive: https://web.archive.org/web/20200518204334/https://www.blog.google/products/google-nest/5-things-know-about-new-nest-aware/
+      quote: >-
+        For just $6 a month (or $60 for an annual subscription), the new Nest Aware comes with 30
+        days of event video history.
+
+  - id: aware-plus-us
+    name: Google Home Premium Advanced, was Nest Aware Plus
+    region: US
+    currency: USD
+    billing: month
+    since: 2020-05-12
+    price: 12
+    source:
+      url: https://www.blog.google/products/google-nest/5-things-know-about-new-nest-aware/
+      publisher: Google
+      kind: primary
+      published: 2020-05-12
+      archive: https://web.archive.org/web/20200518204334/https://www.blog.google/products/google-nest/5-things-know-about-new-nest-aware/
+      quote: >-
+        Or, for those who want 24/7 video history, you can choose Nest Aware Plus for 60 days of
+        event video history and 10 days of 24/7 video history for $12 per month (or $120 for an
+        annual subscription).
+
+  - id: aware-plus-annual-us
+    name: Google Home Premium Advanced (annual), was Nest Aware Plus
+    region: US
+    currency: USD
+    billing: year
+    since: 2020-05-12
+    price: 120
+    source:
+      url: https://www.blog.google/products/google-nest/5-things-know-about-new-nest-aware/
+      publisher: Google
+      kind: primary
+      published: 2020-05-12
+      archive: https://web.archive.org/web/20200518204334/https://www.blog.google/products/google-nest/5-things-know-about-new-nest-aware/
+      quote: >-
+        Or, for those who want 24/7 video history, you can choose Nest Aware Plus for 60 days of
+        event video history and 10 days of 24/7 video history for $12 per month (or $120 for an
+        annual subscription).
+
+changes:
+  - id: revolv-shutdown
+    date: 2016-02
+    date_kind: announced
+    effective: 2016-06-19
+    category: bricked
+    title: Nest switches off the $300 Revolv smart home hub
+    what_changed: >-
+      Nest told Revolv owners in February 2016 that the hub and app would stop working on 15 May,
+      then pushed the shutdown back to 19 June 2016. Revolv later offered owners who emailed its
+      support team a refund of the hub's purchase price.
+    user_impact: Revolv hubs and the app stopped working, and Revolv deleted owners' data.
+    company_said: >-
+      Revolv's founders said Nest was putting all its energy into Works with Nest and couldn't
+      allocate resources to Revolv anymore.
+    severity: 5
+    status: in-force
+    related: [google-nest/works-with-nest-shutdown]
+    sources:
+      - url: https://revolv.com/
+        publisher: Revolv
+        kind: primary
+        published: 2016-05-19
+        archive: https://web.archive.org/web/20160519050051/http://revolv.com/
+        quote: As of June 19, 2016, your Revolv hub and app will no longer work.
+      - url: https://revolv.com/
+        publisher: Revolv
+        kind: primary
+        published: 2016-06-20
+        archive: https://web.archive.org/web/20160620072227/http://revolv.com/
+        quote: >-
+          Revolv is now closed. The Revolv app and hub don’t work anymore, but we are offering a
+          refund for your Revolv hub.
+      - url: https://www.theverge.com/2016/4/5/11374358/nest-revolv-smart-home-hub-disable-user-compensation
+        publisher: The Verge
+        kind: press
+        published: 2016-04-05
+        archive: https://web.archive.org/web/20160406061804/http://www.theverge.com/2016/4/5/11374358/nest-revolv-smart-home-hub-disable-user-compensation
+        quote: >-
+          However, Revolv's smart hub and mobile app remained active until an announcement in
+          February notified customers that the product would cease functioning entirely starting May
+          15th.
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: works-with-nest-shutdown
+    date: 2019-05-07
+    date_kind: announced
+    effective: 2023-09-29
+    category: api-restriction
+    title: Google shuts down Works with Nest, which let other apps and devices control Nest
+    what_changed: >-
+      Google said on 7 May 2019 that it would shut down Works with Nest, and the last connections
+      stopped working on 29 September 2023. On 16 May 2019 it let existing connections keep running
+      on Nest accounts, but none could be added after 31 August 2019, and moving to a Google account
+      cut them off.
+    user_impact: >-
+      Owners lost the Works with Nest connections they'd set up with other apps and devices,
+      including IFTTT applets and the original Nest skill for Alexa, which Google replaced with a
+      skill for the Google Home app.
+    company_said: >-
+      Google said retiring it would unify third-party devices on a single platform and give people
+      more control over how their data is shared.
+    severity: 4
+    status: in-force
+    related: [google-nest/revolv-shutdown]
+    sources:
+      - url: https://blog.google/products/google-nest/helpful-home/
+        publisher: The Keyword (Google)
+        kind: primary
+        published: 2019-05-07
+        archive: https://web.archive.org/web/20190513044349/https://blog.google/products/google-nest/helpful-home/
+        quote: >-
+          we’re winding down the Works with Nest developer program on August 31, 2019, and
+          delivering a single consumer and developer experience through the Works with Google
+          Assistant program
+      - url: https://blog.google/products/google-nest/updates-works-with-nest/
+        publisher: The Keyword (Google)
+        kind: primary
+        published: 2019-05-16
+        archive: https://web.archive.org/web/20190516181652/https://blog.google/products/google-nest/updates-works-with-nest/
+        quote: >-
+          Your existing devices and integrations will continue working with your Nest Account,
+          however you won’t have access to new features that will be available with a Google
+          Account.
+      - url: https://www.googlenestcommunity.com/t5/Blog/An-update-for-our-Nest-Secure-Dropcam-and-Works-with-Nest-Users-and/ba-p/391449
+        publisher: Google Nest Community
+        kind: primary
+        published: 2023-04-07
+        archive: https://web.archive.org/web/20230407182457/https://www.googlenestcommunity.com/t5/Blog/An-update-for-our-Nest-Secure-Dropcam-and-Works-with-Nest-Users-and/ba-p/391449
+        quote: >-
+          we will officially end Works with Nest as of September 29, 2023. Until that date, all
+          current Works with Nest connections will remain active.
+      - url: https://support.google.com/googlenest/answer/9293712
+        publisher: Google Nest Help
+        kind: primary
+        published: 2023-10-04
+        archive: https://web.archive.org/web/20231004144220/https://support.google.com/googlenest/answer/9293712
+        quote: >-
+          The Google Nest skill for Alexa works with the Google Home app and replaces the WWN skill
+          for Alexa, which was turned off on September 29, 2023.
+      - url: https://help.ifttt.com/hc/en-us/articles/360022524734-Important-update-about-the-Nest-services
+        publisher: IFTTT Help Center
+        kind: press
+        published: 2022-12-05
+        archive: https://web.archive.org/web/20240229032921/https://help.ifttt.com/hc/en-us/articles/360022524734-Important-update-about-the-Nest-services
+        quote: >-
+          Migrating your Nest account will cause IFTTT and other Works with Nest integrations to be
+          disconnected.
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: nest-secure-shutdown
+    date: 2023-04-07
+    date_kind: announced
+    effective: 2024-04-08
+    category: bricked
+    title: Google cuts Nest Secure alarms off from the Nest app and the internet
+    question: When did Nest Secure stop working?
+    what_changed: >-
+      Google said on 7 April 2023 that it would end Nest Secure on 8 April 2024, after which the
+      alarm no longer worked in the Nest app or connected to the internet. Eligible owners were
+      offered an ADT Self Setup System (up to $485 value) or $200 to spend on the Google Store.
+    user_impact: >-
+      Owners lost app control and alarm notifications, with Google recommending they stop using it,
+      and Nest x Yale locks that went online through the Nest Guard needed a Nest Connect instead.
+    company_said: >-
+      Google said it was increasingly challenging to keep updating these products given the early
+      hardware and newer, better options, and pointed owners to its partner ADT.
+    severity: 5
+    status: in-force
+    related: [google-nest/dropcam-shutdown]
+    sources:
+      - url: https://www.googlenestcommunity.com/t5/Blog/An-update-for-our-Nest-Secure-Dropcam-and-Works-with-Nest-Users-and/ba-p/391449
+        publisher: Google Nest Community
+        kind: primary
+        published: 2023-04-07
+        archive: https://web.archive.org/web/20230407182457/https://www.googlenestcommunity.com/t5/Blog/An-update-for-our-Nest-Secure-Dropcam-and-Works-with-Nest-Users-and/ba-p/391449
+        quote: >-
+          To show our appreciation and help provide a smooth transition, we will give users an
+          exclusive offer for a Self Setup System from ADT on us (up to $485 value) or $200 to use
+          on the Google Store.
+      - url: https://support.google.com/googlenest/answer/10191961
+        publisher: Google Nest Help
+        kind: primary
+        published: 2024-04-24
+        archive: https://web.archive.org/web/20240424133743/https://support.google.com/googlenest/answer/10191961
+        quote: >-
+          Your Nest Secure will no longer connect to Cloud services, therefore it will no longer
+          work in the Google Nest app and won’t connect to the internet.
+      - url: https://www.theverge.com/2023/4/7/23673165/google-nest-dropcam-nest-secure-eol
+        publisher: The Verge
+        kind: press
+        published: 2023-04-07
+        archive: https://web.archive.org/web/20230407153422/https://www.theverge.com/2023/4/7/23673165/google-nest-dropcam-nest-secure-eol
+        quote: >-
+          We will be contacting eligible Nest Secure customers on Friday with an exclusive offer for
+          a complimentary next-generation security system from ADT (up to $485 value), or $200 to
+          use on the Google Store.
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: dropcam-shutdown
+    date: 2023-04-07
+    date_kind: announced
+    effective: 2024-04-08
+    category: bricked
+    title: Google switches off Dropcam and Dropcam Pro cameras
+    what_changed: >-
+      Google said on 7 April 2023 that Dropcam and Dropcam Pro cameras would stop working on 8 April
+      2024, losing the app, live streams and recording. Google offered eligible owners a free Nest
+      Cam (indoor, wired) if they had Nest Aware, or 50% off one if they didn't.
+    user_impact: >-
+      Every Dropcam and Dropcam Pro stopped working, and their video history went with them unless
+      owners downloaded it first.
+    company_said: >-
+      Google said it had become increasingly challenging to keep updating them given the early
+      hardware.
+    severity: 5
+    status: in-force
+    related: [google-nest/nest-secure-shutdown]
+    sources:
+      - url: https://www.googlenestcommunity.com/t5/Blog/An-update-for-our-Nest-Secure-Dropcam-and-Works-with-Nest-Users-and/ba-p/391449
+        publisher: Google Nest Community
+        kind: primary
+        published: 2023-04-07
+        archive: https://web.archive.org/web/20230407182457/https://www.googlenestcommunity.com/t5/Blog/An-update-for-our-Nest-Secure-Dropcam-and-Works-with-Nest-Users-and/ba-p/391449
+        quote: >-
+          If you are a current Nest Aware subscriber, we will be offering you a Nest Cam (indoor,
+          wired) on us to help you keep your home secure. If you are not a Nest Aware subscriber,
+          we're offering a 50% discount toward a new Nest Cam (indoor, wired).
+      - url: https://support.google.com/googlenest/answer/9257288
+        publisher: Google Nest Help
+        kind: primary
+        published: 2024-04-11
+        archive: https://web.archive.org/web/20240411174912/https://support.google.com/googlenest/answer/9257288?hl=en
+        quote: >-
+          We made the difficult decision to stop support for Dropcam and Dropcam Pro starting April
+          8, 2024. These cameras won’t be able to connect to the app, stream, or record video.
+      - url: https://www.theverge.com/2024/4/2/24119040/google-dropcam-nest-secure-support-ends-april-8th
+        publisher: The Verge
+        kind: press
+        published: 2024-04-02
+        archive: https://web.archive.org/web/20240402204301/https://www.theverge.com/2024/4/2/24119040/google-dropcam-nest-secure-support-ends-april-8th
+        quote: >-
+          Google just sent out its final reminder that Dropcam and Dropcam Pro cameras and Nest
+          Secure home security systems will stop working next Monday, April 8th.
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: aware-price-2023
+    date: 2023-09-01
+    date_kind: announced
+    effective: 2023-11-06
+    category: price-rise
+    title: Nest Aware goes from $6 to $8 a month, and Nest Aware Plus from $12 to $15
+    what_changed: >-
+      Google raised US Nest Aware from $6 to $8 a month for new subscribers on 1 September 2023,
+      and Nest Aware Plus from $12 to $15. Annual plans went from $60 to $80 and from $120 to $150.
+      Existing US subscribers paid it from their first bill on or after 6 November 2023, with
+      existing UK and Australian subscriptions going up that autumn too.
+    before: $6 a month
+    after: $8 a month
+    user_impact: >-
+      Every US subscriber paid more, apart from people who got Nest Aware through a partner like
+      ADT.
+    company_said: >-
+      Google said subscription prices can change to keep up with market shifts, which can include
+      inflation and local tax updates.
+    severity: 2
+    status: in-force
+    regions: [US, GB, AU]
+    prices:
+      - { plan: aware-us, from: 6, to: 8 }
+      - { plan: aware-annual-us, from: 60, to: 80 }
+      - { plan: aware-plus-us, from: 12, to: 15 }
+      - { plan: aware-plus-annual-us, from: 120, to: 150 }
+    sources:
+      - url: https://support.google.com/googlenest/answer/13856600
+        publisher: Google Nest Help
+        kind: primary
+        published: 2023-09-01
+        archive: https://web.archive.org/web/20230901234017/https://support.google.com/googlenest/answer/13856600
+        quote: >-
+          The new pricing for Nest Aware is now in effect for new subscribers. You can see the
+          pricing when you sign up. The price of existing Nest Aware subscriptions will increase in
+          the US, UK, and Australia in Fall 2023.
+      - url: https://9to5google.com/2023/09/01/nest-aware-price-increase/
+        publisher: 9to5Google
+        kind: press
+        published: 2023-09-01
+        archive: https://web.archive.org/web/20230902012230/https://9to5google.com/2023/09/01/nest-aware-price-increase/
+        quote: >-
+          This new price will go into effect on your next bill that occurs on or after November 6,
+          2023.
+      - url: https://store.google.com/us/product/nest_aware?hl=en-US
+        publisher: Google Store
+        kind: pricing-page
+        published: 2023-08-27
+        archive: https://web.archive.org/web/20230827001025/https://store.google.com/us/product/nest_aware?hl=en-US
+        quote: >-
+          Nest Aware $6/month $60/year (Save $12 annually) Nest Aware Plus $12/month $120/year (Save
+          $24 annually)
+      - url: https://store.google.com/us/product/nest_aware?hl=en
+        publisher: Google Store
+        kind: pricing-page
+        published: 2023-09-02
+        archive: https://web.archive.org/web/20230902224240/https://store.google.com/us/product/nest_aware?hl=en
+        quote: >-
+          Nest Aware $8/month $80/year (Save $16 annually) Nest Aware Plus $15/month $150/year (Save
+          $30 annually)
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: hub-max-meetings-end
+    date: 2023-09-18
+    date_kind: reported
+    effective: 2023-09-28
+    category: removed-feature
+    title: Nest Hub Max stops joining Meet meetings by code or link, and Zoom drops its app
+    what_changed: >-
+      Google's Nest Hub Max stopped joining Google Meet meetings by code or link from 28 September
+      2023, and Zoom ended its Hub Max app on 30 September. Video calling had been pitched as a key
+      Hub Max feature, and Google said video calls to friends and family with Meet weren't changing.
+    user_impact: >-
+      Hub Max owners who joined meetings on it with a Meet code or link, or through Zoom, lost that.
+    company_said: >-
+      Google said it was prioritising the features people love and exploring generative AI in
+      Assistant, so some underutilized features would no longer be supported.
+    severity: 1
+    status: in-force
+    sources:
+      - url: https://9to5google.com/2023/09/18/nest-hub-max-google-meet-zoom/
+        publisher: 9to5Google
+        kind: press
+        published: 2023-09-18
+        archive: https://web.archive.org/web/20231001180232/https://9to5google.com/2023/09/18/nest-hub-max-google-meet-zoom/
+        quote: >-
+          people have found that the Google Meet set-up process on the Nest Hub Max ends with the
+          following message: “Joining meetings will no longer be available on this device starting
+          September 28.”
+      - url: https://9to5google.com/2023/09/18/nest-hub-max-google-meet-zoom/
+        publisher: 9to5Google
+        kind: press
+        published: 2023-09-18
+        archive: https://web.archive.org/web/20231001180232/https://9to5google.com/2023/09/18/nest-hub-max-google-meet-zoom/
+        quote: >-
+          As we continue to make Google Assistant even more helpful, we’re prioritizing the features
+          people love and exploring new ways to build generative AI capabilities into their Assistant
+          experience. As a result, some underutilized features will no longer be supported.
+      - url: https://9to5google.com/2023/09/18/nest-hub-max-google-meet-zoom/
+        publisher: 9to5Google
+        kind: press
+        published: 2023-09-18
+        archive: https://web.archive.org/web/20231001180232/https://9to5google.com/2023/09/18/nest-hub-max-google-meet-zoom/
+        quote: >-
+          There is no change to making 1:1 and group video calls to friends, family and businesses
+          with Google Meet. What’s changing at the end of September is the support for joining
+          meetings via meeting codes and links in Meet.
+      - url: https://9to5google.com/2023/09/18/nest-hub-max-google-meet-zoom/
+        publisher: 9to5Google
+        kind: press
+        published: 2023-09-18
+        archive: https://web.archive.org/web/20231001180232/https://9to5google.com/2023/09/18/nest-hub-max-google-meet-zoom/
+        quote: >-
+          Video calling was originally pitched as a key feature of the Nest Hub Max, but Google Meet
+          and Zoom are dropping support at the end of September.
+      - url: https://support.zoom.us/hc/en-us/articles/17423126359309-Advance-notice-of-end-of-support-for-Google-Nest-Hub-Max
+        publisher: Zoom Support
+        kind: primary
+        published: 2023-07-19
+        archive: https://web.archive.org/web/20230918161634/https://support.zoom.us/hc/en-us/articles/17423126359309-Advance-notice-of-end-of-support-for-Google-Nest-Hub-Max
+        quote: >-
+          All support for Zoom for Google Nest Hub Max will end on September 30th, 2023. The Zoom
+          application for these devices will stop functioning, and no further updates will be made
+          available.
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: learning-thermostat-app-cutoff
+    date: 2025-04-25
+    date_kind: announced
+    effective: 2025-10-25
+    category: removed-feature
+    title: Google cuts 1st and 2nd gen Nest Learning Thermostats off from its apps
+    question: When did Google end support for 1st and 2nd gen Nest thermostats?
+    what_changed: >-
+      Google said on 25 April 2025 that 1st and 2nd gen Nest Learning Thermostats would be cut off
+      from the Nest and Home apps on 25 October 2025. They still run their schedules on the device,
+      but can't be controlled from a phone or with Google Assistant. Google emailed eligible owners
+      offers of $130 off a 4th gen model in the US, $160 off in Canada or 50% off a tado° thermostat
+      in Europe.
+    user_impact: >-
+      Owners of the 2011 and 2012 models and the 2014 European one lost app control, notifications,
+      Home/Away Assist and third-party assistants, and linked Nest Protects no longer ran the
+      emergency shut-off.
+    company_said: >-
+      Google said it had become increasingly challenging to keep updating them given the early
+      hardware.
+    severity: 3
+    status: in-force
+    sources:
+      - url: https://www.googlenestcommunity.com/t5/Blog/Support-changes-to-our-earliest-generation-Nest-Learning-Thermostats/ba-p/713068
+        publisher: Google Nest Community
+        kind: primary
+        published: 2025-04-25
+        archive: https://web.archive.org/web/20250425181734/https://www.googlenestcommunity.com/t5/Blog/Support-changes-to-our-earliest-generation-Nest-Learning-Thermostats/ba-p/713068
+        quote: >-
+          You will no longer be able to control them remotely from your phone or with Google
+          Assistant, but can still adjust the temperature and modify schedules directly on the
+          thermostat.
+      - url: https://support.google.com/googlenest/answer/16233096
+        publisher: Google Nest Help
+        kind: primary
+        published: 2025-10-30
+        archive: https://web.archive.org/web/20251030024406/https://support.google.com/googlenest/answer/16233096?hl=en
+        quote: >-
+          Nest Protects will also disconnect from the thermostat and emergency shut off will no
+          longer run.
+      - url: https://www.theverge.com/news/656332/google-ending-support-nest-thermostats
+        publisher: The Verge
+        kind: press
+        published: 2025-04-25
+        archive: https://web.archive.org/web/20250425172136/https://www.theverge.com/news/656332/google-ending-support-nest-thermostats
+        quote: >-
+          In a clear attempt to ease customer anger, Google is offering a $130 discount on the
+          fourth-gen Nest Learning Thermostat in the US, $160 off the same device in Canada, and 50
+          percent savings on the Tado Smart Thermostat X in Europe
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: aware-price-2025
+    date: 2025-07-16
+    date_kind: announced
+    effective: 2025-08-15
+    category: price-rise
+    title: Nest Aware goes from $8 to $10 a month, and Nest Aware Plus from $15 to $20
+    what_changed: >-
+      Google emailed US subscribers on 16 July 2025 that Nest Aware would go from $8 to $10 a
+      month, and Nest Aware Plus from $15 to $20. Annual plans went from $80 to $100 and from $150
+      to $200, from the first bill on or after 15 August 2025 or the end of a promotional period,
+      whichever was later.
+    before: $8 a month
+    after: $10 a month
+    user_impact: >-
+      US Nest Aware now costs $10 a month, up from $6 at launch in 2020, and Nest Aware Plus $20,
+      up from $12.
+    company_said: >-
+      Google said subscription prices can change to keep up with market shifts, which can include
+      inflation and local tax updates.
+    severity: 2
+    status: in-force
+    regions: [US]
+    prices:
+      - { plan: aware-us, from: 8, to: 10 }
+      - { plan: aware-annual-us, from: 80, to: 100 }
+      - { plan: aware-plus-us, from: 15, to: 20 }
+      - { plan: aware-plus-annual-us, from: 150, to: 200 }
+    sources:
+      - url: https://9to5google.com/2025/07/16/nest-aware-price-2025/
+        publisher: 9to5Google
+        kind: press
+        published: 2025-07-16
+        archive: https://web.archive.org/web/20250716182127/https://9to5google.com/2025/07/16/nest-aware-price-2025/
+        quote: >-
+          This is according to an email sent out to existing subscribers today. The entry Nest
+          Aware subscription now costs $10 per month or $100 annually ($20 savings).
+      - url: https://www.theverge.com/news/708538/google-nest-aware-plus-price-increase-subscription
+        publisher: The Verge
+        kind: press
+        published: 2025-07-16
+        archive: https://web.archive.org/web/20250716203124/https://www.theverge.com/news/708538/google-nest-aware-plus-price-increase-subscription
+        quote: >-
+          Google says the new pricing will go into effect “on your first bill that occurs on or
+          after August 15, 2025, or at the end of your promotional period (whichever is later).”
+      - url: https://store.google.com/us/product/nest_aware?hl=en-US
+        publisher: Google Store
+        kind: pricing-page
+        published: 2025-07-13
+        archive: https://web.archive.org/web/20250713192735/https://store.google.com/us/product/nest_aware?hl=en-US
+        quote: >-
+          Nest Aware $8/month $80/year (Save $16 annually) Nest Aware Plus $15/month $150/year (Save
+          $30 annually)
+      - url: https://store.google.com/us/product/nest_aware?hl=en-US
+        publisher: Google Store
+        kind: pricing-page
+        published: 2025-08-01
+        archive: https://web.archive.org/web/20250801075724/https://store.google.com/us/product/nest_aware?hl=en-US
+        quote: >-
+          Nest Aware $10/month $100/year (Save $20 annually) Nest Aware Plus $20/month $200/year
+          (Save $40 annually)
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
