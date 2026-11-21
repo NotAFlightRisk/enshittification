@@ -62,3 +62,8 @@
   name: Sonos
   url: https://newsroom.sonos.com
   wikipedia: https://en.wikipedia.org/wiki/Sonos
+
+- id: warner-bros-discovery
+  name: Warner Bros. Discovery
+  url: https://www.wbd.com
+  wikipedia: https://en.wikipedia.org/wiki/Warner_Bros._Discovery
