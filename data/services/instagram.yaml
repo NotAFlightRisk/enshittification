@@ -1,0 +1,502 @@
+service: instagram
+name: Instagram
+company: meta
+url: https://www.instagram.com
+crw: https://consumerrights.wiki/w/Instagram
+wikipedia: https://en.wikipedia.org/wiki/Instagram
+
+changes:
+  - id: first-feed-ads
+    date: 2013-11-01
+    date_kind: effective
+    category: ads
+    title: Instagram starts showing ads in the feed, in the US first
+    question: When did Instagram start showing ads?
+    what_changed: >-
+      Instagram's first ad went out in US feeds on 1 November 2013, a sponsored post from Michael
+      Kors. Instagram had said on 3 October that people in the US would start seeing an occasional
+      ad, and it had been ad-free until then.
+    before: No ads
+    after: Sponsored posts in the feed
+    user_impact: >-
+      Instagram users in the US started seeing sponsored photos and videos in their feed from brands
+      they didn't follow.
+    company_said: >-
+      Instagram said it needed to build Instagram into a sustainable business, and that people could
+      hide an ad they didn't like.
+    severity: 2
+    status: in-force
+    regions: [US]
+    sources:
+      - url: https://blog.instagram.com/post/63017560810/instagramasagrowingbusiness
+        publisher: Instagram Blog
+        kind: primary
+        published: 2013-10-03
+        archive: https://web.archive.org/web/20131005054859/http://blog.instagram.com/post/63017560810/instagramasagrowingbusiness
+        quote: >-
+          In the next couple months, you may begin seeing an occasional ad in your Instagram feed if
+          you’re in the United States.
+      - url: https://blog.instagram.com/post/64973363225/adsoninstagram
+        publisher: Instagram Blog
+        kind: primary
+        published: 2013-10-24
+        archive: https://web.archive.org/web/20131025125444/http://blog.instagram.com/post/64973363225/adsoninstagram
+        quote: >-
+          You'll know a photo or video is an advertisement when you see the "Sponsored" label where
+          the time stamp normally would be.
+      - url: https://www.theverge.com/2013/10/3/4799862/instagram-to-introduce-ads-in-the-coming-months
+        publisher: The Verge
+        kind: press
+        published: 2013-10-03
+        archive: https://web.archive.org/web/20131003212554/http://www.theverge.com/2013/10/3/4799862/instagram-to-introduce-ads-in-the-coming-months
+        quote: >-
+          Instagram confirmed today that it will begin inserting ads into users' timelines in the
+          coming months.
+      - url: https://www.theverge.com/2013/11/1/5055416/instagram-launches-sponsored-posts-michael-kors-first-ad
+        publisher: The Verge
+        kind: press
+        published: 2013-11-01
+        archive: https://web.archive.org/web/20131101210838/http://www.theverge.com/2013/11/1/5055416/instagram-launches-sponsored-posts-michael-kors-first-ad
+        quote: >-
+          Last week, Instagram began displaying a sample sponsored message to get users acclimated
+          with the change; the service has remained ad-free until now.
+    added: 2026-11-21
+    updated: 2026-11-21
+    sources_checked: 2026-11-21
+    status_checked: 2026-11-21
+
+  - id: api-review-and-feed-cutoff
+    date: 2015-11-17
+    date_kind: announced
+    effective: 2016-06-01
+    category: api-restriction
+    title: Instagram makes every API app pass a review, and stops apps reading your feed
+    what_changed: >-
+      Instagram said on 17 November 2015 that every app using its API would need to pass a review,
+      and apps not approved by 1 June 2016 were sandboxed. It also shut the endpoints apps used to
+      show your feed and popular posts, and limited the API to apps that help people share their own
+      content, serve brands and advertisers, or help publishers.
+    user_impact: >-
+      Third-party apps that showed people their Instagram feed or popular posts lost access, as did
+      any app Instagram didn't approve.
+    company_said: >-
+      Instagram said the changes would improve people's control over their content and set up a
+      more sustainable environment built around authentic experiences.
+    severity: 4
+    status: in-force
+    related: [instagram/legacy-api-cut-early]
+    sources:
+      - url: https://developers.instagram.com/post/133424514006/instagram-platform-update
+        publisher: Instagram for Developers
+        kind: primary
+        published: 2015-11-17
+        archive: https://web.archive.org/web/20151119094951/http://developers.instagram.com:80/post/133424514006/instagram-platform-update
+        quote: >-
+          today we are deprecating the /users/self/feed and /media/popular API endpoints for new
+          apps. Existing apps will have until the end of the review period before access to the
+          endpoints is terminated.
+      - url: https://developers.instagram.com/post/145262544121/instagram-platform-update-effective-june-1-2016
+        publisher: Instagram for Developers
+        kind: primary
+        published: 2016-06-01
+        archive: https://web.archive.org/web/20160604083439/http://developers.instagram.com:80/post/145262544121/instagram-platform-update-effective-june-1-2016
+        quote: >-
+          We've been in contact with existing apps via email, and they've been given until today,
+          June 1, 2016, to apply and get approved. Apps that have not been approved will be
+          sandboxed.
+      - url: https://www.instagram.com/developer/changelog/
+        publisher: Instagram Developer Documentation
+        kind: primary
+        published: 2018-04-06
+        archive: https://web.archive.org/web/20180406103408/https://www.instagram.com/developer/changelog/
+        quote: >-
+          Nov 17, 2015 Updated Platform Policy Permission Review mandatory for every app
+    added: 2026-11-21
+    updated: 2026-11-21
+    sources_checked: 2026-11-21
+    status_checked: 2026-11-21
+
+  - id: ranked-feed
+    date: 2016-06
+    date_kind: effective
+    category: removed-feature
+    title: Instagram swaps its newest-first feed for one ranked by what it thinks you care about
+    question: When did Instagram stop showing posts in chronological order?
+    what_changed: >-
+      Instagram said in June 2016 that everyone would soon get its ranked feed, which orders posts by
+      what it thinks you'll care about most, not newest first. It had announced the change on 15
+      March 2016 and tried it on some people first. In March 2022 it added Following, a newest-first
+      view of the accounts you follow that you pick from the home page.
+    before: Posts newest to oldest
+    after: Posts ranked by Instagram
+    user_impact: >-
+      Instagram users got a feed in the order Instagram picked, with no way to switch back until
+      Following arrived in 2022.
+    company_said: >-
+      Instagram said people missed on average 70 percent of their feeds, and ranking meant they'd
+      see the posts they cared about most.
+    severity: 3
+    status: in-force
+    sources:
+      - url: https://blog.instagram.com/post/141107034797/160315-news
+        publisher: Instagram Blog
+        kind: primary
+        published: 2016-03-15
+        archive: https://web.archive.org/web/20160315223405/http://blog.instagram.com/post/141107034797/160315-news
+        quote: >-
+          To improve your experience, your feed will soon be ordered to show the moments we believe
+          you will care about the most.
+      - url: https://blog.instagram.com/post/145322772067/160602-news
+        publisher: Instagram Blog
+        kind: primary
+        published: 2016-06-02
+        archive: https://web.archive.org/web/20160603080416/http://blog.instagram.com/post/145322772067/160602-news
+        quote: You'll likely see this new experience soon if you haven't already.
+      - url: https://www.theverge.com/2016/3/15/11241184/instagram-new-feed-sort-algorithm
+        publisher: The Verge
+        kind: press
+        published: 2016-03-15
+        archive: https://web.archive.org/web/20160315225814/http://www.theverge.com/2016/3/15/11241184/instagram-new-feed-sort-algorithm
+        quote: >-
+          Twitter still allows users to opt out of the new feed, though, whereas Instagram suggested
+          the new feed will not be optional.
+      - url: https://about.instagram.com/blog/announcements/favorites-and-following
+        publisher: Instagram
+        kind: primary
+        published: 2022-03-23
+        archive: https://web.archive.org/web/20220323170901/https://about.instagram.com/blog/announcements/favorites-and-following
+        quote: >-
+          Both Favorites and Following will show you posts in chronological order, so you can
+          quickly catch up on recent posts.
+    added: 2026-11-21
+    updated: 2026-11-21
+    sources_checked: 2026-11-21
+    status_checked: 2026-11-21
+
+  - id: legacy-api-cut-early
+    date: 2018-04-04
+    date_kind: effective
+    category: api-restriction
+    title: Instagram shuts parts of its old API early and cuts the rate limit from 5000 to 200
+    what_changed: >-
+      Instagram shut its follower list, relationship and public comment APIs on 4 April 2018,
+      ahead of the 31 July date it had set in January. Days before, it had cut the API's limit from
+      5000 to 200 calls per user per hour without warning. In January it had said the old API would
+      be phased out in stages until early 2020.
+    before: 5000 calls per user per hour
+    after: 200 calls per user per hour
+    user_impact: >-
+      People using apps that showed whether their followers followed them back or analysed their
+      audience found them breaking.
+    company_said: >-
+      Instagram said it was speeding up the deprecation as part of Facebook's work to protect
+      people's data.
+    severity: 3
+    status: in-force
+    related: [instagram/api-review-and-feed-cutoff]
+    sources:
+      - url: https://www.instagram.com/developer/changelog/
+        publisher: Instagram Developer Documentation
+        kind: primary
+        published: 2018-04-04
+        archive: https://web.archive.org/web/20180406103408/https://www.instagram.com/developer/changelog/
+        quote: >-
+          April 4, 2018 The following endpoints are deprecated immediately: Follows and
+          Relationships
+      - url: https://developers.facebook.com/blog/post/2018/01/30/instagram-graph-api-updates/
+        publisher: Meta for Developers
+        kind: primary
+        published: 2018-01-30
+        archive: https://web.archive.org/web/20180130184627/https://developers.facebook.com/blog/post/2018/01/30/instagram-graph-api-updates/
+        quote: >-
+          We will be deprecating the older Instagram API Platform in three phases with complete
+          deprecation occurring in early 2020. The following will be available until July 31, 2018
+      - url: https://developers.facebook.com/blog/post/2018/04/04/facebook-api-platform-product-changes/
+        publisher: Meta for Developers
+        kind: primary
+        published: 2018-04-04
+        archive: https://web.archive.org/web/20180404211713/https://developers.facebook.com/blog/post/2018/04/04/facebook-api-platform-product-changes/
+        quote: >-
+          Instagram is accelerating the previously announced deprecation of the Instagram API
+          Platform and has lowered rate limits.
+      - url: https://techcrunch.com/2018/04/02/instagram-api-limit/
+        publisher: TechCrunch
+        kind: press
+        published: 2018-04-02
+        archive: https://web.archive.org/web/20180402224559/https://techcrunch.com/2018/04/02/instagram-api-limit/
+        quote: >-
+          This weekend it surprised developers with a massive reduction in how much data they can
+          pull from the Instagram API, shrinking the API limit from 5000 to 200 calls per user per
+          hour.
+      - url: https://techcrunch.com/2018/04/04/facebook-instagram-api-shut-down/
+        publisher: TechCrunch
+        kind: press
+        published: 2018-04-04
+        archive: https://web.archive.org/web/20180404204033/https://techcrunch.com/2018/04/04/facebook-instagram-api-shut-down/
+        quote: >-
+          Now an Instagram spokesperson tells TechCrunch that “Effective today, Instagram is speeding
+          up the previously announced deprecation of the Instagram API Platform” as part of
+          Facebook’s work to protect people’s data.
+    added: 2026-11-21
+    updated: 2026-11-21
+    sources_checked: 2026-11-21
+    status_checked: 2026-11-21
+
+  - id: meta-ai-search-bar
+    date: 2024-04-18
+    date_kind: announced
+    category: ai
+    title: Meta AI goes into Instagram's search bar, with no way to turn it off
+    what_changed: >-
+      Meta put its Meta AI assistant into search on Instagram, Facebook, WhatsApp and Messenger on
+      18 April 2024, in English in the US and 13 other countries. There was no button to turn it
+      off, though people could still search as they normally would.
+    user_impact: >-
+      Instagram users who got it had Meta AI in the search bar whether they wanted it or not, with
+      ordinary search still working underneath.
+    company_said: >-
+      Meta said people could search as they normally would and choose between Meta AI's answers and
+      other results.
+    severity: 1
+    status: in-force
+    sources:
+      - url: https://about.fb.com/news/2024/04/meta-ai-assistant-built-with-llama-3/
+        publisher: Meta Newsroom
+        kind: primary
+        published: 2024-04-18
+        archive: https://web.archive.org/web/20261031082055/https://about.fb.com/news/2024/04/meta-ai-assistant-built-with-llama-3/
+        quote: Meta AI is also available in search across Facebook, Instagram, WhatsApp and Messenger.
+      - url: https://apnews.com/article/meta-ai-instagram-facebook-turn-off-disable-fd778171e2a1e7098d7b3756deb5587b
+        publisher: AP News
+        kind: press
+        published: 2024-05-30
+        archive: https://web.archive.org/web/20260720003322/https://apnews.com/article/meta-ai-instagram-facebook-turn-off-disable-fd778171e2a1e7098d7b3756deb5587b
+        quote: >-
+          The bad news is there’s no one button to turn off Meta AI on Facebook, Instagram,
+          Messenger or WhatsApp.
+      - url: https://apnews.com/article/meta-ai-instagram-facebook-turn-off-disable-fd778171e2a1e7098d7b3756deb5587b
+        publisher: AP News
+        kind: press
+        published: 2024-05-30
+        archive: https://web.archive.org/web/20260720003322/https://apnews.com/article/meta-ai-instagram-facebook-turn-off-disable-fd778171e2a1e7098d7b3756deb5587b
+        quote: >-
+          Meta AI is so far only available in the United States and 13 other countries including
+          Australia, Canada, Ghana, Jamaica, Malawi, New Zealand, Nigeria, Pakistan, Singapore, South
+          Africa, Uganda, Zambia and Zimbabwe.
+      - url: https://apnews.com/article/meta-ai-instagram-facebook-turn-off-disable-fd778171e2a1e7098d7b3756deb5587b
+        publisher: AP News
+        kind: press
+        published: 2024-05-30
+        archive: https://web.archive.org/web/20260720003322/https://apnews.com/article/meta-ai-instagram-facebook-turn-off-disable-fd778171e2a1e7098d7b3756deb5587b
+        quote: >-
+          “You can search how you normally would and choose to engage with a variety of results —
+          ones from Meta AI or others that appear as you type,” the spokesperson said in a statement.
+    added: 2026-11-21
+    updated: 2026-11-21
+    sources_checked: 2026-11-21
+    status_checked: 2026-11-21
+
+  - id: ad-breaks-test
+    date: 2024-06-03
+    date_kind: reported
+    category: ads
+    title: Instagram tests ad breaks that stop you scrolling until the ad has played
+    what_changed: >-
+      Instagram confirmed on 3 June 2024 that it was testing ad breaks, which show a countdown and
+      stop people browsing their feed until they've viewed the ad. Meta didn't say how many people
+      or which countries were in the test.
+    user_impact: People in the test had to watch an ad before they could keep scrolling.
+    company_said: Meta said it was always testing formats that can drive value for advertisers.
+    severity: 1
+    status: test
+    sources:
+      - url: https://techcrunch.com/2024/06/03/instagram-confirms-test-of-unskippable-ads/
+        publisher: TechCrunch
+        kind: press
+        published: 2024-06-03
+        archive: https://web.archive.org/web/20261112065857/https://techcrunch.com/2024/06/03/instagram-confirms-test-of-unskippable-ads/
+        quote: >-
+          These new ad breaks will display a countdown timer that stops users from being able to
+          browse through more content on the app until they view the ad, according to informational
+          text displayed in the Instagram app.
+      - url: https://techcrunch.com/2024/06/03/instagram-confirms-test-of-unskippable-ads/
+        publisher: TechCrunch
+        kind: press
+        published: 2024-06-03
+        archive: https://web.archive.org/web/20261112065857/https://techcrunch.com/2024/06/03/instagram-confirms-test-of-unskippable-ads/
+        quote: “We’re always testing formats that can drive value for advertisers,”
+      - url: https://www.engadget.com/meta-is-testing-a-new-ad-in-the-instagram-feed-that-you-cant-scroll-past-195201532.html
+        publisher: Engadget
+        kind: press
+        published: 2024-06-03
+        archive: https://web.archive.org/web/20261117061537/https://www.engadget.com/meta-is-testing-a-new-ad-in-the-instagram-feed-that-you-cant-scroll-past-195201532.html
+        quote: >-
+          With the new ads, which have already been spotted by some users, you can't scroll past
+          the feed ad until the"ad break" finishes.
+    added: 2026-11-21
+    updated: 2026-11-21
+    sources_checked: 2026-11-21
+    status_checked: 2026-11-21
+
+  - id: eu-uk-ai-training
+    date: 2024-06-10
+    date_kind: announced
+    category: ai
+    title: Meta plans to train its AI on EU and UK public Instagram posts unless people object
+    what_changed: >-
+      Meta said on 10 June 2024 that it would train its AI on public posts, comments and photos
+      shared by adults in the EU, unless they sent an objection form. It paused on 14 June 2024 after
+      the Irish Data Protection Commission asked it to delay, said on 13 September 2024 it would
+      start in the UK, and planned to begin in the EU on 27 May 2025.
+    user_impact: >-
+      Adults in the EU and UK had to find and send an objection form to keep their public Instagram
+      posts out of Meta's AI training.
+    company_said: >-
+      Meta said that without training on the public content Europeans share, its AI wouldn't
+      accurately understand regional languages, cultures or trending topics.
+    severity: 1
+    status: in-force
+    regions: [AT, BE, BG, HR, CY, CZ, DK, EE, FI, FR, DE, GR, HU, IE, IT, LV, LT, LU, MT, NL, PL, PT,
+      RO, SK, SI, ES, SE, GB]
+    related: [instagram/ai-chats-ad-targeting]
+    sources:
+      - url: https://about.fb.com/news/2024/06/building-ai-technology-for-europeans-in-a-transparent-and-responsible-way/
+        publisher: Meta Newsroom
+        kind: primary
+        published: 2024-06-10
+        archive: https://web.archive.org/web/20261116101419/https://about.fb.com/news/2024/06/building-ai-technology-for-europeans-in-a-transparent-and-responsible-way/
+        quote: >-
+          To do this, we want to train our large language models that power AI features using the
+          content that people in the EU have chosen to share publicly on Meta’s products and
+          services.
+      - url: https://about.fb.com/news/2024/06/building-ai-technology-for-europeans-in-a-transparent-and-responsible-way/
+        publisher: Meta Newsroom
+        kind: primary
+        published: 2024-06-14
+        archive: https://web.archive.org/web/20261116101419/https://about.fb.com/news/2024/06/building-ai-technology-for-europeans-in-a-transparent-and-responsible-way/
+        quote: >-
+          We’re disappointed by the request from the Irish Data Protection Commission (DPC), our lead
+          regulator, on behalf of the European DPAs, to delay training our large language models
+          (LLMs) using public content shared by adults on Facebook and Instagram
+      - url: https://about.fb.com/news/2024/06/building-ai-technology-for-europeans-in-a-transparent-and-responsible-way/
+        publisher: Meta Newsroom
+        kind: primary
+        published: 2024-06-10
+        archive: https://web.archive.org/web/20261116101419/https://about.fb.com/news/2024/06/building-ai-technology-for-europeans-in-a-transparent-and-responsible-way/
+        quote: >-
+          If we don’t train our models on the public content that Europeans share on our services
+          and others, such as public posts or comments, then models and the AI features they power
+          won’t accurately understand important regional languages, cultures or trending topics on
+          social media.
+      - url: https://about.fb.com/news/2024/09/building-ai-technology-for-the-uk-in-a-responsible-and-transparent-way/
+        publisher: Meta Newsroom
+        kind: primary
+        published: 2024-09-13
+        archive: https://web.archive.org/web/20260905035056/https://about.fb.com/news/2024/09/building-ai-technology-for-the-uk-in-a-responsible-and-transparent-way/
+        quote: >-
+          We will begin training for AI at Meta using public content shared by adults on Facebook
+          and Instagram in the UK over the coming months.
+      - url: https://about.fb.com/news/2025/04/making-ai-work-harder-for-europeans/
+        publisher: Meta Newsroom
+        kind: primary
+        published: 2025-04-14
+        archive: https://web.archive.org/web/20261116072802/https://about.fb.com/news/2025/04/making-ai-work-harder-for-europeans/
+        quote: >-
+          Today, we’re announcing our plans to train AI at Meta using public content —like public
+          posts and comments— shared by adults on our products in the EU.
+      - url: https://www.theregister.com/2025/05/22/irish_data_protection_commission_gives/
+        publisher: The Register
+        kind: press
+        published: 2025-05-22
+        archive: https://web.archive.org/web/20251211222915/https://www.theregister.com/2025/05/22/irish_data_protection_commission_gives/
+        quote: Meta intends to begin training AI on EU citizens' data on May 27.
+    added: 2026-11-21
+    updated: 2026-11-21
+    sources_checked: 2026-11-21
+    status_checked: 2026-11-21
+
+  - id: basic-display-api-end
+    date: 2024-09-04
+    date_kind: announced
+    effective: 2024-12-04
+    category: api-restriction
+    title: Instagram shuts its Basic Display API, ending API access for consumer apps
+    what_changed: >-
+      Meta said on 4 September 2024 that the Instagram Basic Display API would stop working on 4
+      December 2024, leaving no Instagram API for consumer apps. It pointed business uses to its
+      Instagram API for professional accounts.
+    user_impact: >-
+      Consumer apps built on the API had until 4 December 2024, when Meta said every request would
+      fail, with nothing to move to unless they served business or creator accounts.
+    severity: 4
+    status: in-force
+    related: [instagram/legacy-api-cut-early]
+    sources:
+      - url: https://developers.facebook.com/blog/post/2024/09/04/update-on-instagram-basic-display-api/
+        publisher: Meta for Developers
+        kind: primary
+        published: 2024-09-04
+        archive: https://web.archive.org/web/20240905183342/https://developers.facebook.com/blog/post/2024/09/04/update-on-instagram-basic-display-api/
+        quote: >-
+          After December 4th, 2024, there will no longer be a set of Instagram APIs for consumer
+          developer apps.
+    added: 2026-11-21
+    updated: 2026-11-21
+    sources_checked: 2026-11-21
+    status_checked: 2026-11-21
+
+  - id: ai-chats-ad-targeting
+    date: 2025-10-01
+    date_kind: announced
+    effective: 2025-12-16
+    category: tracking
+    title: Meta uses people's Meta AI chats to pick the ads they see, with no opt-out
+    what_changed: >-
+      Meta said on 1 October 2025 that from 16 December 2025 it would use people's Meta AI chats to
+      pick the content and ads they see on Instagram and Facebook. Meta told TechCrunch
+      there was no way to opt out, and the change didn't cover the EU, the UK or South Korea.
+    user_impact: >-
+      Instagram users who chat with Meta AI can have those chats used to target ads at them, apart
+      from conversations on sensitive topics like health or religion.
+    company_said: >-
+      Meta said AI interactions would be another signal to show people content they're more likely
+      to be interested in.
+    severity: 2
+    status: in-force
+    related: [instagram/eu-uk-ai-training]
+    sources:
+      - url: https://about.fb.com/news/2025/10/improving-your-recommendations-apps-ai-meta/
+        publisher: Meta Newsroom
+        kind: primary
+        published: 2025-10-01
+        archive: https://web.archive.org/web/20261117171706/https://about.fb.com/news/2025/10/improving-your-recommendations-apps-ai-meta/
+        quote: >-
+          We will soon use your interactions with AI at Meta to personalize the content and ads you
+          see, including things like posts and reels. We’ll start notifying people about this update
+          next week via notifications and emails, several weeks before it goes into effect on
+          December 16, 2025.
+      - url: https://about.fb.com/news/2025/10/improving-your-recommendations-apps-ai-meta/
+        publisher: Meta Newsroom
+        kind: primary
+        published: 2025-10-01
+        archive: https://web.archive.org/web/20261117171706/https://about.fb.com/news/2025/10/improving-your-recommendations-apps-ai-meta/
+        quote: >-
+          Soon, interactions with AIs will be another signal we use to improve people’s experience.
+      - url: https://techcrunch.com/2025/10/01/meta-plans-to-sell-targeted-ads-based-on-data-in-your-ai-chats/
+        publisher: TechCrunch
+        kind: press
+        published: 2025-10-01
+        archive: https://web.archive.org/web/20261106042024/https://techcrunch.com/2025/10/01/meta-plans-to-sell-targeted-ads-based-on-data-in-your-ai-chats/
+        quote: There is no way to opt out, according to Meta.
+      - url: https://techcrunch.com/2025/10/01/meta-plans-to-sell-targeted-ads-based-on-data-in-your-ai-chats/
+        publisher: TechCrunch
+        kind: press
+        published: 2025-10-01
+        archive: https://web.archive.org/web/20261106042024/https://techcrunch.com/2025/10/01/meta-plans-to-sell-targeted-ads-based-on-data-in-your-ai-chats/
+        quote: >-
+          The new policy applies globally, except for users in South Korea, the United Kingdom, and
+          the European Union, where privacy laws prevent this type of data collection.
+    added: 2026-11-21
+    updated: 2026-11-21
+    sources_checked: 2026-11-21
+    status_checked: 2026-11-21
