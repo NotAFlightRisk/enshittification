@@ -1,0 +1,392 @@
+service: google-assistant
+name: Google Assistant
+company: google
+url: https://assistant.google.com
+wikipedia: https://en.wikipedia.org/wiki/Google_Assistant
+
+changes:
+  - id: location-reminders-end
+    date: 2022-06-01
+    date_kind: reported
+    category: removed-feature
+    title: Google Assistant drops location reminders and assigning reminders to someone
+    what_changed: >-
+      On 1 June 2022 Google's Assistant help page said location reminders and assigning reminders to
+      someone were going away soon. By 29 November 2022 it said neither was available, and pointed
+      people to time-based reminders, routines for some locations, and assigning tasks in Google Chat
+      or Gmail instead.
+    user_impact: >-
+      Assistant users who set reminders for a place, or assigned reminders to people in their Google
+      Family Group, lost those options.
+    severity: 1
+    status: in-force
+    sources:
+      - url: https://support.google.com/assistant/answer/9387035
+        publisher: Google Assistant Help
+        kind: primary
+        published: 2022-06-01
+        archive: https://web.archive.org/web/20220601211839/https://support.google.com/assistant/answer/9387035
+        quote: >-
+          Important: The option to create reminders for a certain location is going away soon.
+      - url: https://support.google.com/assistant/answer/9387035
+        publisher: Google Assistant Help
+        kind: primary
+        published: 2022-11-29
+        archive: https://web.archive.org/web/20221129053752/https://support.google.com/assistant/answer/9387035
+        quote: >-
+          Important: The option to set reminders for a certain location is no longer available.
+      - url: https://support.google.com/assistant/answer/9387035
+        publisher: Google Assistant Help
+        kind: primary
+        published: 2022-11-29
+        archive: https://web.archive.org/web/20221129053752/https://support.google.com/assistant/answer/9387035
+        quote: >-
+          Important: You can no longer assign reminders to someone, but you can still use existing
+          ones.
+      - url: https://9to5google.com/2022/06/01/google-assistant-location-reminders/
+        publisher: 9to5Google
+        kind: press
+        published: 2022-06-01
+        archive: https://web.archive.org/web/20251201035703/https://9to5google.com/2022/06/01/google-assistant-location-reminders/
+        quote: >-
+          Besides adding a date and time, you’ve long been able to specify a location for reminders,
+          like “Remind me to buy milk at Costco.”
+    added: 2026-11-21
+    updated: 2026-11-21
+    sources_checked: 2026-11-21
+    status_checked: 2026-11-21
+
+  - id: third-party-voice-apps-end
+    date: 2022-06-13
+    date_kind: announced
+    effective: 2023-06-13
+    category: api-restriction
+    title: Google ends third-party Assistant voice apps, including games on Nest Hubs
+    what_changed: >-
+      Google said on 13 June 2022 it would switch off Conversational Actions, the third-party voice
+      apps and games for Assistant, on 13 June 2023. The next day Nest Hubs had lost their Games tab,
+      and from 20 June 2023 Assistant notes and lists stopped working with non-Google list apps like
+      AnyList and Bring.
+    user_impact: >-
+      Assistant users lost third-party voice apps, including games, trivia and picture books on smart
+      displays, and people who kept lists in Any.do, AnyList or Bring could no longer use them through
+      Assistant.
+    company_said: >-
+      Google said users wanted to use their favourite apps by voice and developers wanted to build on
+      Android, so it would focus on App Actions for Android instead.
+    severity: 2
+    status: in-force
+    sources:
+      - url: https://developers.google.com/assistant/ca-sunset
+        publisher: Google for Developers
+        kind: primary
+        published: 2022-06-13
+        archive: https://web.archive.org/web/20220613183703/https://developers.google.com/assistant/ca-sunset
+        quote: >-
+          All Conversational Actions will be removed, and will no longer be available to users or
+          developers.
+      - url: https://developers.googleblog.com/2022/06/Helping-Developers-Create-Meaningful-Voice-Interactions-with-Android.html
+        publisher: Google Developers Blog
+        kind: primary
+        published: 2022-06-13
+        archive: https://web.archive.org/web/20220613162658/https://developers.googleblog.com/2022/06/Helping-Developers-Create-Meaningful-Voice-Interactions-with-Android.html
+        quote: >-
+          users want to engage with their favorite apps using voice, and developers want to build
+          upon their existing investments in Android. In response to that feedback, we’ve decided to
+          focus our efforts on making App Actions with Android the best way for developers to create
+          deeper, more meaningful voice-forward experiences. As a result, we will turn down
+          Conversational Actions one year from now, in June 2023.
+      - url: https://support.google.com/assistant/answer/9415862
+        publisher: Google Assistant Help
+        kind: primary
+        published: 2023-06-01
+        archive: https://web.archive.org/web/20230601193009/https://support.google.com/assistant/answer/9415862
+        quote: >-
+          Starting June 20th, Google Assistant notes and lists will no longer work with non-Google
+          list apps.
+      - url: https://9to5google.com/2023/06/14/nest-hub-voice-apps/
+        publisher: 9to5Google
+        kind: press
+        published: 2023-06-14
+        archive: https://web.archive.org/web/20230614162641/https://9to5google.com/2023/06/14/nest-hub-voice-apps/
+        quote: >-
+          That’s now underway, with users encountering the loss of those third-party experiences,
+          while the “Games” tab on the Nest Hub has been removed.
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: driving-mode-dashboard-end
+    date: 2022-10-07
+    date_kind: reported
+    effective: 2022-11-21
+    category: removed-feature
+    title: Google shuts down the Assistant driving mode dashboard on Android phones
+    what_changed: >-
+      Google told 9to5Google on 7 October 2022 that it would shut down the Assistant driving mode
+      dashboard on 21 November. The dashboard had media suggestions, audio controls and shortcuts for
+      calls and texts, and was effectively a replacement for the Android Auto phone app Google had
+      already shut down. Driving mode inside Google Maps stayed.
+    user_impact: >-
+      Android users who drove with the Assistant driving mode dashboard lost it, leaving the simpler
+      driving mode in Google Maps.
+    company_said: >-
+      Google said it was focusing on driving mode in Google Maps, which it found most people were
+      using anyway.
+    severity: 1
+    status: in-force
+    sources:
+      - url: https://9to5google.com/2022/10/07/google-assistant-driving-mode-dashboard/
+        publisher: 9to5Google
+        kind: press
+        published: 2022-10-07
+        archive: https://web.archive.org/web/20251219202215/https://9to5google.com/2022/10/07/google-assistant-driving-mode-dashboard/
+        quote: >-
+          Google now tells us that it is shutting down the entire Assistant Driving Mode Dashboard on
+          November 21.
+      - url: https://9to5google.com/2022/10/07/google-assistant-driving-mode-dashboard/
+        publisher: 9to5Google
+        kind: press
+        published: 2022-10-07
+        archive: https://web.archive.org/web/20251219202215/https://9to5google.com/2022/10/07/google-assistant-driving-mode-dashboard/
+        quote: >-
+          The company is focusing on that and finds that most people are using just that anyways.
+      - url: https://www.engadget.com/google-shutting-down-assistant-driving-mode-081803560.html
+        publisher: Engadget
+        kind: press
+        published: 2022-10-10
+        archive: https://web.archive.org/web/20260617075441/https://www.engadget.com/google-shutting-down-assistant-driving-mode-081803560.html
+        quote: >-
+          The feature gives users an Android Auto-lite experience on their smartphone while driving,
+          and was effectively a replacement for the Android Auto smartphone app, which itself was
+          killed last year
+    added: 2026-11-21
+    updated: 2026-11-21
+    sources_checked: 2026-11-21
+    status_checked: 2026-11-21
+
+  - id: assistant-features-cut-2024
+    date: 2024-01-11
+    date_kind: announced
+    category: removed-feature
+    title: Google cuts 17 Assistant features, including music alarms on speakers
+    what_changed: >-
+      Google said on 11 January 2024 it was removing 17 underused Assistant features, several of them
+      on smart speakers and displays. They included music and radio alarms, the
+      stopwatch on speakers and displays, the Assistant cookbook and step-by-step recipes, and
+      calling a device or broadcasting to a Family Group by voice. Most were reported to go on 26 February.
+    user_impact: >-
+      People using Assistant on smart speakers and displays lost music alarms, the stopwatch and
+      step-by-step recipes, with a routine or a standard alarm offered in place of music alarms.
+    company_said: >-
+      Google said it was removing underutilized features to focus on quality and reliability.
+    severity: 1
+    status: in-force
+    sources:
+      - url: https://support.google.com/assistant/answer/13971691
+        publisher: Google Assistant Help
+        kind: primary
+        published: 2024-01-11
+        archive: https://web.archive.org/web/20240111141811/https://support.google.com/assistant/answer/13971691
+        quote: >-
+          Setting or using media alarms, music alarms, or radio alarms on Google Assistant enabled
+          devices. You can create a custom Routine that has similar behavior or use a standard alarm.
+      - url: https://blog.google/products/assistant/google-assistant-update-january-2024/
+        publisher: The Keyword (Google)
+        kind: primary
+        published: 2024-01-11
+        archive: https://web.archive.org/web/20240111123241/https://blog.google/products/assistant/google-assistant-update-january-2024/
+        quote: >-
+          We’re removing some underutilized features in Google Assistant to focus on delivering the
+          best possible user experience.
+      - url: https://www.theverge.com/2024/1/11/24034262/google-assistant-removes-17-features-layoffs-pixel-voice-commands
+        publisher: The Verge
+        kind: press
+        published: 2024-01-11
+        archive: https://web.archive.org/web/20240111133235/https://www.theverge.com/2024/1/11/24034262/google-assistant-removes-17-features-layoffs-pixel-voice-commands
+        quote: >-
+          Starting January 26th, users who activate any of the 17 Assistant features being removed
+          will be notified that it’s being discontinued, with most features departing for good on
+          February 26th, according to 9to5Google.
+      - url: https://9to5google.com/2024/01/11/google-assistant-feature-removal/
+        publisher: 9to5Google
+        kind: press
+        published: 2024-01-11
+        archive: https://web.archive.org/web/20240111151110/https://9to5google.com/2024/01/11/google-assistant-feature-removal/
+        quote: >-
+          Most of the features are going away February 26, but the Nest Hub Commute Tiles and
+          Android/ Maps App Launcher are being deprecated on February 7.
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: assistant-features-cut-2025
+    date: 2025-03-14
+    date_kind: announced
+    category: removed-feature
+    title: Google cuts more Assistant features, including interpreter mode and car accessories
+    what_changed: >-
+      In March 2025 Google added interpreter mode and Assistant on Bluetooth or AUX car accessories to
+      its list of Assistant features being removed. Other new items included changing photo frame
+      settings by voice, birthday reminders in Routines and daily updates like the weather. Google
+      gave no timeline, saying people may get a notification when they use a feature that's going.
+    user_impact: >-
+      People who used interpreter mode to translate conversations, or Assistant car accessories like
+      the JBL Link Drive and Anker Roav Bolt, were set to lose Google's support for them.
+    company_said: >-
+      Google said it was prioritising the experiences people love, so some underutilized features
+      would no longer be supported.
+    severity: 1
+    status: in-force
+    sources:
+      - url: https://support.google.com/assistant/answer/13971691
+        publisher: Google Assistant Help
+        kind: primary
+        published: 2025-03-14
+        archive: https://web.archive.org/web/20250401235605/https://support.google.com/assistant/answer/13971691
+        quote: >-
+          Translate your live conversation with someone who doesn’t speak your language with
+          interpreter mode. Translating a single word or phrase from one language to another will
+          still work.
+      - url: https://support.google.com/assistant/answer/13971691
+        publisher: Google Assistant Help
+        kind: primary
+        published: 2025-03-14
+        archive: https://web.archive.org/web/20250401235605/https://support.google.com/assistant/answer/13971691
+        quote: >-
+          Use Google Assistant on car accessories that have a Bluetooth connection or AUX plug.
+      - url: https://9to5google.com/2025/03/16/google-assistant-losing-features-2025/
+        publisher: 9to5Google
+        kind: press
+        published: 2025-03-16
+        archive: https://web.archive.org/web/20251216092223/https://9to5google.com/2025/03/16/google-assistant-losing-features-2025/
+        quote: >-
+          On Friday, we learned that Gemini is replacing Google Assistant on Android phones. At the
+          same time, Google quietly announced that Assistant is losing 7 more features.
+      - url: https://www.androidcentral.com/phones/google/google-is-dialing-back-more-assistant-features-on-android-and-nest-devices
+        publisher: Android Central
+        kind: press
+        published: 2025-03-18
+        archive: https://web.archive.org/web/20261001203614/https://www.androidcentral.com/phones/google/google-is-dialing-back-more-assistant-features-on-android-and-nest-devices
+        quote: >-
+          Google hasn't laid out a clear timeline for when these features will disappear. Instead,
+          users will get notifications while using affected features, giving them a heads-up before
+          they're shut down.
+      - url: https://9to5google.com/2025/02/10/google-assistant-car-mics-shutdown-prep/
+        publisher: 9to5Google
+        kind: press
+        published: 2025-02-10
+        archive: https://web.archive.org/web/20250802070035/https://9to5google.com/2025/02/10/google-assistant-car-mics-shutdown-prep/
+        quote: >-
+          Featuring a microphone and four indicator lights, the JBL Link Drive and Anker Roav Bolt
+          would plug into your cigarette lighter socket.
+    added: 2026-11-21
+    updated: 2026-11-21
+    sources_checked: 2026-11-21
+    status_checked: 2026-11-21
+
+  - id: gemini-replaces-assistant-on-phones
+    date: 2025-03-14
+    date_kind: announced
+    effective: 2026-09-04
+    category: ai
+    title: Gemini replaces Google Assistant on Android phones, with no switching back
+    what_changed: >-
+      Google said on 14 March 2025 that Gemini would replace Google Assistant on most phones.
+      Removal began on 4 September 2026, and the Gemini app dropped its "Switch to Google
+      Assistant" setting. Tablets, watches, headphones and phone-connected cars went too, though
+      cars with Google built-in kept Assistant.
+    user_impact: >-
+      People using Assistant on Android phones, tablets and paired devices were moved to Gemini and
+      can no longer use or switch back to Google Assistant there.
+    company_said: >-
+      Google said it was upgrading Assistant users to Gemini to offer "a new kind of help only
+      possible with the power of AI."
+    severity: 2
+    status: in-force
+    sources:
+      - url: https://blog.google/products/gemini/google-assistant-gemini-mobile/
+        publisher: The Keyword (Google)
+        kind: primary
+        published: 2025-03-14
+        archive: https://web.archive.org/web/20250314181122/https://blog.google/products/gemini/google-assistant-gemini-mobile/
+        quote: >-
+          later this year, the classic Google Assistant will no longer be accessible on most mobile
+          devices
+      - url: https://9to5google.com/2026/08/04/google-assistant-september-2026-shutdown/
+        publisher: 9to5Google
+        kind: press
+        published: 2026-08-04
+        archive: https://web.archive.org/web/20260906084228/https://9to5google.com/2026/08/04/google-assistant-september-2026-shutdown/
+        quote: >-
+          Once availability is removed, you will no longer be able to use or switch back to Google
+          Assistant on your phone, tablet, or paired devices
+      - url: https://9to5google.com/2026/09/28/google-assistant-gemini-android/
+        publisher: 9to5Google
+        kind: press
+        published: 2026-09-28
+        archive: https://web.archive.org/web/20261022115251/https://www.9to5google.com/2026/09/28/google-assistant-gemini-android/
+        quote: >-
+          Notably, the Gemini app has removed the “Switch to Google Assistant” setting
+    added: 2026-11-20
+    updated: 2026-11-20
+    sources_checked: 2026-11-20
+    status_checked: 2026-11-20
+
+  - id: gemini-replaces-assistant-on-speakers
+    date: 2026-11-20
+    date_kind: announced
+    effective: 2027-08-02
+    category: ai
+    title: Google sets a date for Gemini to replace Assistant on speakers and smart displays
+    what_changed: >-
+      Google said on 20 November 2026 that Gemini for Home would fully replace Google Assistant on
+      speakers and smart displays on 2 August 2027. Owners in the countries Gemini for Home has
+      reached can upgrade for free before then, and Google said every device it supports today works
+      with the change.
+    user_impact: >-
+      People using Assistant on speakers and smart displays will have it replaced by Gemini for Home
+      when Google retires Assistant on those devices.
+    company_said: >-
+      Google said Gemini lets people use natural language instead of having to memorise specific
+      commands.
+    severity: 2
+    status: scheduled
+    related: [google-assistant/gemini-replaces-assistant-on-phones]
+    sources:
+      - url: https://support.google.com/googlehome/blog/478236207/a-modern-foundation-for-your-smart-home-changes-coming-to-google-assistant-and-nest-app
+        publisher: Google Home & Nest Community
+        kind: primary
+        published: 2026-11-20
+        archive: https://web.archive.org/web/20261121072941/https://support.google.com/googlehome/blog/478236207/a-modern-foundation-for-your-smart-home-changes-coming-to-google-assistant-and-nest-app?hl=en
+        quote: >-
+          We are moving from Google Assistant on speakers and smart displays to Gemini for Home voice
+          assistant, and retiring Google Assistant on home devices on August 2, 2027.
+      - url: https://support.google.com/googlehome/blog/478236207/a-modern-foundation-for-your-smart-home-changes-coming-to-google-assistant-and-nest-app
+        publisher: Google Home & Nest Community
+        kind: primary
+        published: 2026-11-20
+        archive: https://web.archive.org/web/20261121072941/https://support.google.com/googlehome/blog/478236207/a-modern-foundation-for-your-smart-home-changes-coming-to-google-assistant-and-nest-app?hl=en
+        quote: >-
+          Gemini for Home is already available in many countries and languages
+      - url: https://support.google.com/googlehome/blog/478236207/a-modern-foundation-for-your-smart-home-changes-coming-to-google-assistant-and-nest-app
+        publisher: Google Home & Nest Community
+        kind: primary
+        published: 2026-11-20
+        archive: https://web.archive.org/web/20261121072941/https://support.google.com/googlehome/blog/478236207/a-modern-foundation-for-your-smart-home-changes-coming-to-google-assistant-and-nest-app?hl=en
+        quote: >-
+          Every device supported today works with these updated experiences.
+      - url: https://www.theverge.com/tech/1038834/google-assistant-smart-speakers-nest-app-killed-shut-down
+        publisher: The Verge
+        kind: press
+        published: 2026-11-20
+        archive: https://web.archive.org/web/20261121072941/https://www.theverge.com/tech/1038834/google-assistant-smart-speakers-nest-app-killed-shut-down
+        quote: >-
+          On August 2nd, 2027, the Gemini for Home voice assistant will replace Google Assistant on
+          smart speakers and smart displays, the company says.
+    added: 2026-11-21
+    updated: 2026-11-21
+    sources_checked: 2026-11-21
+    status_checked: 2026-11-21
