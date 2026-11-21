@@ -77,7 +77,7 @@
 
   .month {
     display: grid;
-    grid-template-columns: 7rem minmax(0, 1fr);
+    grid-template-columns: 8rem minmax(0, 1fr);
     gap: var(--space-2) var(--space-4);
     padding-block: var(--space-3);
     border-bottom: var(--thin) solid var(--line);
