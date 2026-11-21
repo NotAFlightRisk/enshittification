@@ -385,19 +385,23 @@ changes:
     date: 2024-09-25
     date_kind: effective
     category: paywall
-    title: Disney+ starts charging US subscribers to share outside their household
+    title: Disney+ starts charging US and UK subscribers to share outside their household
     question: When did Disney+ start charging for password sharing?
     what_changed: >-
       Disney started charging US subscribers to share Disney+ outside their household on 25
-      September 2024, at $6.99 a month on Basic and $9.99 on Premium. Each account could add only
-      one Extra Member, and bundle subscribers and people billed through a partner couldn't add any.
+      September 2024, at $6.99 a month on Basic and $9.99 on Premium. The same week it reached the
+      UK, at £3.99 on Standard with Ads and £4.99 on Standard and Premium, as part of a rollout
+      across Canada, Costa Rica, Guatemala, Europe and Asia-Pacific. Each account could add only one
+      Extra Member, and in the US bundle subscribers and people billed through a partner couldn't add
+      any.
     user_impact: >-
-      Basic and Premium subscribers could pay for one extra member outside their home, while people
-      sharing a bundle or partner-billed account had to stop.
+      Subscribers could pay for one extra member outside their home, while in the US people sharing
+      a bundle or partner-billed account couldn't add one, so the other person needed their own
+      subscription.
     company_said: Disney said a Disney+ subscription is meant to be used within one household.
     severity: 3
     status: in-force
-    regions: [US]
+    regions: [US, GB]
     sources:
       - url: https://thewaltdisneycompany.com/paid-sharing-disney-explainer/
         publisher: The Walt Disney Company
@@ -424,10 +428,30 @@ changes:
         quote: >-
           That member will be restricted to one profile, and they can only stream and download on
           one device at a time.
+      - url: https://thewaltdisneycompany.com/paid-sharing-disney-explainer/
+        publisher: The Walt Disney Company
+        kind: primary
+        published: 2024-09-25
+        archive: https://web.archive.org/web/20240925161616/https://thewaltdisneycompany.com/paid-sharing-disney-explainer/
+        quote: >-
+          These features and capabilities are now available in the United States, Canada, Costa
+          Rica, Guatemala, Europe, and the Asia-Pacific region after launching in select markets over
+          the summer.
+      - url: https://www.moneysavingexpert.com/news/2024/09/disney-plus-account-sharing/
+        publisher: MoneySavingExpert
+        kind: press
+        published: 2024-09-27
+        archive: https://web.archive.org/web/20250906225118/https://www.moneysavingexpert.com/news/2024/09/disney-plus-account-sharing/
+        quote: >-
+          On top of your base price, this will cost £3.99 a month if you have a 'Standard with Ads'
+          plan and £4.99 a month if you've got a 'Standard' or 'Premium' plan.
+    corrections:
+      - date: 2026-11-21
+        what: Added the UK, where paid sharing arrived the same week as the US.
     added: 2026-11-19
-    updated: 2026-11-19
-    sources_checked: 2026-11-19
-    status_checked: 2026-11-19
+    updated: 2026-11-21
+    sources_checked: 2026-11-21
+    status_checked: 2026-11-21
 
   - id: uk-price-2024
     date: 2024-10-17
