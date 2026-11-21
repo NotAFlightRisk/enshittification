@@ -46,6 +46,76 @@ changes:
     sources_checked: 2026-11-20
     status_checked: 2026-11-20
 
+  - id: conversation-ads
+    date: 2012-06-13
+    date_kind: announced
+    category: ads
+    title: Skype puts ads in the call window of free audio calls on Windows
+    what_changed: >-
+      Skype said on 13 June 2012 that it was launching Conversation Ads, display ads in the calling
+      window during 1:1 Skype-to-Skype audio calls in Skype for Windows. People without Skype Credit
+      or a subscription saw them, and Skype said it may use location, gender and age to target them,
+      with an opt-out that left just location.
+    user_impact: >-
+      People without Skype Credit or a subscription could see ads in the call window during 1:1
+      Skype-to-Skype audio calls in Skype for Windows.
+    company_said: >-
+      Skype said the ads were a way to generate fun interactivity between your circle of friends and
+      family and the brands you care about.
+    severity: 1
+    status: reversed
+    reversed:
+      date: 2024-07-31
+      what: >-
+        Microsoft announced an update to remove all ads from Skype, going to testers in its Insider
+        programme first.
+      sources:
+        - url: https://www.theregister.com/2024/07/31/skype_adfree/
+          publisher: The Register
+          kind: press
+          published: 2024-07-31
+          archive: https://web.archive.org/web/20250915101757/https://www.theregister.com/2024/07/31/skype_adfree/
+          quote: Our latest update removes all ads from Skype channels and the entire Skype platform
+    related: [skype/home-tab-ads]
+    sources:
+      - url: https://blogs.skype.com/2012/06/13/skype-advertising-update/
+        publisher: Skype Blogs
+        kind: primary
+        published: 2012-06-13
+        archive: https://web.archive.org/web/20130211031925/https://blogs.skype.com/2012/06/13/skype-advertising-update/
+        quote: >-
+          These new display ad units will appear within the calling window of users who do not have
+          Skype Credit or subscriptions when they’re making 1:1 Skype-to-Skype audio calls using Skype
+          for Windows.
+      - url: https://blogs.skype.com/2012/06/13/skype-advertising-update/
+        publisher: Skype Blogs
+        kind: primary
+        published: 2012-06-13
+        archive: https://web.archive.org/web/20130211031925/https://blogs.skype.com/2012/06/13/skype-advertising-update/
+        quote: >-
+          So, you should think of Conversation Ads as a way for Skype to generate fun interactivity
+          between your circle of friends and family and the brands you care about.
+      - url: https://blogs.skype.com/2012/06/13/skype-advertising-update/
+        publisher: Skype Blogs
+        kind: primary
+        published: 2012-06-13
+        archive: https://web.archive.org/web/20130211031925/https://blogs.skype.com/2012/06/13/skype-advertising-update/
+        quote: >-
+          We may use non-personally identifiable demographic information (e.g. location, gender and
+          age) to target ads.
+      - url: https://www.theverge.com/2012/6/13/3083017/skype-conversation-ads-windows
+        publisher: The Verge
+        kind: press
+        published: 2012-06-13
+        archive: https://web.archive.org/web/20260514110632/https://www.theverge.com/2012/6/13/3083017/skype-conversation-ads-windows
+        quote: >-
+          the ads “may use” personal details such as gender and age, though Skype does provide an
+          opt-out option that restricts them to only using your location.
+    added: 2026-11-21
+    updated: 2026-11-21
+    sources_checked: 2026-11-21
+    status_checked: 2026-11-21
+
   - id: desktop-api-chat-cut-off
     date: 2013-07
     date_kind: announced
