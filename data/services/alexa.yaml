@@ -1,0 +1,203 @@
+service: alexa
+name: Alexa
+company: amazon
+url: https://www.amazon.com/alexa
+wikipedia: https://en.wikipedia.org/wiki/Amazon_Alexa
+
+changes:
+  - id: echo-look-shutdown
+    date: 2020-05-29
+    date_kind: reported
+    effective: 2020-07-24
+    category: bricked
+    title: Amazon switches off the Echo Look camera and its app
+    what_changed: >-
+      The Verge reported on 29 May 2020 that the Echo Look camera and its app would stop working on
+      24 July 2020. It pointed owners to the Amazon Shopping app for Style by Alexa and asked them to recycle
+      the camera.
+    user_impact: >-
+      Every Echo Look stopped working, and owners had until July 2021 to back up their photos and
+      videos to Amazon Photos.
+    severity: 4
+    status: in-force
+    sources:
+      - url: https://www.theverge.com/2020/5/29/21274805/amazon-echo-look-discontinue-gadget-shopping-recycle-fashion-camera
+        publisher: The Verge
+        kind: press
+        published: 2020-05-29
+        archive: https://web.archive.org/web/20261105223154/https://www.theverge.com/2020/5/29/21274805/amazon-echo-look-discontinue-gadget-shopping-recycle-fashion-camera
+        quote: >-
+          The Look's companion app and the device itself will stop functioning on July 24th.
+      - url: https://www.theverge.com/2020/5/29/21274805/amazon-echo-look-discontinue-gadget-shopping-recycle-fashion-camera
+        publisher: The Verge
+        kind: press
+        published: 2020-05-29
+        archive: https://web.archive.org/web/20261105223154/https://www.theverge.com/2020/5/29/21274805/amazon-echo-look-discontinue-gadget-shopping-recycle-fashion-camera
+        quote: >-
+          The company says people should download the app to keep consulting with Amazon, and they
+          should also recycle their Look through Amazon's program.
+    added: 2026-11-21
+    updated: 2026-11-21
+    sources_checked: 2026-11-21
+    status_checked: 2026-11-21
+
+  - id: sidewalk-on-by-default
+    date: 2021-06-08
+    date_kind: effective
+    category: tracking
+    title: Amazon turns on Sidewalk on Echo devices unless owners opt out
+    what_changed: >-
+      Amazon switched on Sidewalk for compatible Echo devices in the US on 8 June 2021, using them as
+      bridges for its shared network. Owners had to opt out, and Amazon had started telling them in late
+      November 2020 that it would be on by default.
+    after: Echo devices used as Sidewalk bridges unless you opt out
+    user_impact: >-
+      US owners of compatible Echo devices who didn't turn it off in the Alexa app had their
+      devices used as Sidewalk bridges.
+    severity: 2
+    status: in-force
+    regions: [US]
+    sources:
+      - url: https://www.aboutamazon.com/news/devices/echo-tile-and-level-devices-join-amazon-sidewalk
+        publisher: Amazon
+        kind: primary
+        published: 2021-05-07
+        archive: https://web.archive.org/web/20210508163627/https://www.aboutamazon.com/news/devices/echo-tile-and-level-devices-join-amazon-sidewalk
+        quote: >-
+          we're expanding Sidewalk support to compatible Echo devices in the U.S. starting June 8
+      - url: https://www.engadget.com/amazon-sidewalk-how-to-opt-out-154924368.html
+        publisher: Engadget
+        kind: press
+        published: 2021-06-08
+        archive: https://web.archive.org/web/20210609230737/https://www.engadget.com/amazon-sidewalk-how-to-opt-out-154924368.html
+        quote: >-
+          Many Echo and Ring products are automatically being used as bridges to extend the range of
+          the network.
+      - url: https://www.engadget.com/amazon-sidewalk-how-to-opt-out-154924368.html
+        publisher: Engadget
+        kind: press
+        published: 2021-06-08
+        archive: https://web.archive.org/web/20210609230737/https://www.engadget.com/amazon-sidewalk-how-to-opt-out-154924368.html
+        quote: >-
+          You'll need to opt out if you don't want to participate in Sidewalk.
+      - url: https://www.engadget.com/amazon-sidewalk-echo-default-214620200.html
+        publisher: Engadget
+        kind: press
+        published: 2020-11-30
+        archive: https://web.archive.org/web/20201201213740/https://www.engadget.com/amazon-sidewalk-echo-default-214620200.html
+        quote: >-
+          the company has started informing customers last week that existing Echo devices will have
+          this Sidewalk connectivity enabled by default.
+    added: 2026-11-21
+    updated: 2026-11-21
+    sources_checked: 2026-11-21
+    status_checked: 2026-11-21
+
+  - id: do-not-send-voice-recordings-removed
+    date: 2025-03-28
+    date_kind: effective
+    category: tracking
+    title: Amazon ends the Echo setting that kept voice recordings off its cloud
+    question: When did Amazon remove Do Not Send Voice Recordings?
+    what_changed: >-
+      Amazon dropped Do Not Send Voice Recordings, which processed Alexa requests on the Echo itself,
+      on 28 March 2025, after emailing owners who used it on 14 March. They were moved to Don't save
+      recordings, so every request goes to Amazon's cloud and is deleted afterwards.
+    before: Alexa requests processed on the Echo, recordings never sent
+    after: Requests on those Echos sent to Amazon's cloud
+    user_impact: >-
+      US owners of the Echo Dot (4th Gen), Echo Show 10 and Echo Show 15 set to English who had
+      turned the setting on lost local processing.
+    company_said: >-
+      Amazon's email said Alexa's generative AI features rely on the processing power of its cloud,
+      so it decided to no longer support the feature.
+    severity: 1
+    status: in-force
+    regions: [US]
+    sources:
+      - url: https://arstechnica.com/gadgets/2025/03/everything-you-say-to-your-echo-will-be-sent-to-amazon-starting-on-march-28/
+        publisher: Ars Technica
+        kind: press
+        published: 2025-03-14
+        archive: https://web.archive.org/web/20261026112413/https://arstechnica.com/gadgets/2025/03/everything-you-say-to-your-echo-will-be-sent-to-amazon-starting-on-march-28/
+        quote: >-
+          Starting on March 28, recordings of every command spoken to the Alexa living in Echo
+          speakers and smart displays will automatically be sent to Amazon and processed in the
+          cloud.
+      - url: https://arstechnica.com/gadgets/2025/03/everything-you-say-to-your-echo-will-be-sent-to-amazon-starting-on-march-28/
+        publisher: Ars Technica
+        kind: press
+        published: 2025-03-14
+        archive: https://web.archive.org/web/20261026112413/https://arstechnica.com/gadgets/2025/03/everything-you-say-to-your-echo-will-be-sent-to-amazon-starting-on-march-28/
+        quote: >-
+          As we continue to expand Alexa’s capabilities with generative AI features that rely on the
+          processing power of Amazon’s secure cloud, we have decided to no longer support this
+          feature.
+      - url: https://www.theverge.com/news/630049/amazon-echo-discontinues-do-not-send-voice-recording-setting
+        publisher: The Verge
+        kind: press
+        published: 2025-03-14
+        archive: https://web.archive.org/web/20260820133106/https://www.theverge.com/news/630049/amazon-echo-discontinues-do-not-send-voice-recording-setting
+        quote: >-
+          Local processing of voice recordings was only available on three Echo devices – Echo Dot
+          (4th Gen), Echo Show 10, and Echo Show 15 – and only for customers in the U.S. with
+          devices set to English.
+      - url: https://www.theverge.com/news/630049/amazon-echo-discontinues-do-not-send-voice-recording-setting
+        publisher: The Verge
+        kind: press
+        published: 2025-03-14
+        archive: https://web.archive.org/web/20260820133106/https://www.theverge.com/news/630049/amazon-echo-discontinues-do-not-send-voice-recording-setting
+        quote: >-
+          If you have “Do Not Send Voice Recordings” option turned on, it will default to the “Don’t
+          save recordings” setting on March 28th.
+    added: 2026-11-21
+    updated: 2026-11-21
+    sources_checked: 2026-11-21
+    status_checked: 2026-11-21
+
+  - id: echo-show-full-screen-ads
+    date: 2025-10-09
+    date_kind: reported
+    category: ads
+    title: Some Echo Show screens get full-screen sponsored ads that can't be turned off
+    what_changed: >-
+      The Verge reported on 9 October 2025 that full-screen ads tagged sponsored were showing up on
+      Echo Show smart displays, even between photos in Photo Frame mode. Unlike some earlier ads on
+      the Show, they can't be turned off.
+    user_impact: >-
+      Echo Show owners who got the ads saw them on the home screen with no setting to switch them
+      off, only a swipe to skip.
+    company_said: >-
+      Amazon said advertising is a small part of the experience and helps customers discover new
+      content and products, and that they can swipe to skip an ad or give feedback.
+    severity: 2
+    status: test
+    regions: [US]
+    sources:
+      - url: https://www.theverge.com/report/797672/amazon-echo-show-ads-alexa-plus
+        publisher: The Verge
+        kind: press
+        published: 2025-10-09
+        archive: https://web.archive.org/web/20261118081718/https://www.theverge.com/report/797672/amazon-echo-show-ads-alexa-plus
+        quote: >-
+          In recent months, full-screen display ads with the tag “sponsored” have been appearing on
+          current Echo Shows, and users are not happy.
+      - url: https://www.theverge.com/report/797672/amazon-echo-show-ads-alexa-plus
+        publisher: The Verge
+        kind: press
+        published: 2025-10-09
+        archive: https://web.archive.org/web/20261118081718/https://www.theverge.com/report/797672/amazon-echo-show-ads-alexa-plus
+        quote: >-
+          And, unlike some of the previous ad experiences on the Show, they cannot be turned off.
+      - url: https://www.theverge.com/report/797672/amazon-echo-show-ads-alexa-plus
+        publisher: The Verge
+        kind: press
+        published: 2025-10-09
+        archive: https://web.archive.org/web/20261118081718/https://www.theverge.com/report/797672/amazon-echo-show-ads-alexa-plus
+        quote: >-
+          Advertising is a small part of the experience, and it helps customers discover new content
+          and products they may be interested in.
+    added: 2026-11-21
+    updated: 2026-11-21
+    sources_checked: 2026-11-21
+    status_checked: 2026-11-21
