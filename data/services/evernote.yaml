@@ -1,0 +1,393 @@
+service: evernote
+name: Evernote
+company: bending-spoons
+url: https://evernote.com
+wikipedia: https://en.wikipedia.org/wiki/Evernote
+
+changes:
+  - id: premium-price-2015
+    date: 2015-04-29
+    date_kind: announced
+    category: price-rise
+    title: Evernote Premium goes from $5 to $5.99 a month
+    what_changed: >-
+      Evernote said on 29 April 2015 that Premium would cost $5.99 a month or $49.99 a year,
+      alongside a new $2.99 Plus tier. Existing subscribers whose price went up kept their rate
+      until their first renewal after 29 April 2016.
+    before: $5 a month
+    after: $5.99 a month
+    user_impact: >-
+      New Premium subscribers paid more straight away, and existing ones from their first
+      renewal a year later.
+    severity: 1
+    status: in-force
+    regions: [US]
+    related: [evernote/price-2016]
+    sources:
+      - url: https://blog.evernote.com/blog/2015/04/29/introducing-evernote-plus-and-the-new-evernote-premium/
+        publisher: Evernote
+        kind: primary
+        published: 2015-04-29
+        archive: https://web.archive.org/web/20170706155447/https://blog.evernote.com/blog/2015/04/29/introducing-evernote-plus-and-the-new-evernote-premium/
+        quote: >-
+          If you’re currently paying and the price of Premium went up in your region, then we’ve
+          locked you into your rate for a year, or more. As long as you continue in your current
+          plan, your price will adjust at your first renewal after April 29, 2016.
+      - url: https://blog.evernote.com/blog/2015/04/29/introducing-evernote-plus-and-the-new-evernote-premium/
+        publisher: Evernote
+        kind: primary
+        published: 2015-04-29
+        archive: https://web.archive.org/web/20170706155447/https://blog.evernote.com/blog/2015/04/29/introducing-evernote-plus-and-the-new-evernote-premium/
+        quote: Go Premium for $5.99 per month or $49.99 per year.
+      - url: https://techcrunch.com/2015/04/29/evernotes-new-pricing-includes-a-cheaper-middle-tier-and-a-pricier-top-plan/
+        publisher: TechCrunch
+        kind: press
+        published: 2015-04-29
+        archive: https://web.archive.org/web/20250804125639/https://techcrunch.com/2015/04/29/evernotes-new-pricing-includes-a-cheaper-middle-tier-and-a-pricier-top-plan/
+        quote: >-
+          the full-featured premium plan, which is now $5.99 per month, up from the earlier $5 per
+          month.
+    added: 2026-11-21
+    updated: 2026-11-21
+    sources_checked: 2026-11-21
+    status_checked: 2026-11-21
+
+  - id: price-2016
+    date: 2016-06-28
+    date_kind: announced
+    category: price-rise
+    title: Evernote Premium goes from $5.99 to $7.99 a month, and Plus from $2.99 to $3.99
+    what_changed: >-
+      Evernote said on 28 June 2016 that new Premium subscriptions would cost $7.99 a month or
+      $69.99 a year, and Plus $3.99 a month or $34.99 a year. Existing subscribers were given some
+      time before the new prices reached them.
+    before: $5.99 a month
+    after: $7.99 a month
+    user_impact: New Plus and Premium subscribers paid about a third more a month.
+    company_said: >-
+      Evernote said it was asking the people who get the most value from Evernote to help pay for
+      improving its core products.
+    severity: 2
+    status: in-force
+    regions: [US]
+    related: [evernote/basic-two-devices]
+    sources:
+      - url: https://blog.evernote.com/blog/2016/06/28/changes-to-evernotes-pricing-plans/
+        publisher: Evernote
+        kind: primary
+        published: 2016-06-28
+        archive: https://web.archive.org/web/20180604033109/https://blog.evernote.com/blog/2016/06/28/changes-to-evernotes-pricing-plans/
+        quote: >-
+          Beginning today, the prices for our Plus and Premium tiers will change for new
+          subscriptions, and access from Evernote Basic accounts will be limited to two devices
+      - url: https://blog.evernote.com/blog/2016/06/28/changes-to-evernotes-pricing-plans/
+        publisher: Evernote
+        kind: primary
+        published: 2016-06-28
+        archive: https://web.archive.org/web/20180604033109/https://blog.evernote.com/blog/2016/06/28/changes-to-evernotes-pricing-plans/
+        quote: >-
+          Current subscribers and Basic users who are using more than two devices will have some
+          time to adjust before the changes take effect.
+      - url: https://blog.evernote.com/blog/2016/06/28/changes-to-evernotes-pricing-plans/
+        publisher: Evernote
+        kind: primary
+        published: 2016-06-28
+        archive: https://web.archive.org/web/20180604033109/https://blog.evernote.com/blog/2016/06/28/changes-to-evernotes-pricing-plans/
+        quote: >-
+          Evernote Plus $3.99/month or $34.99/year (save 27%)
+      - url: https://blog.evernote.com/blog/2016/06/28/changes-to-evernotes-pricing-plans/
+        publisher: Evernote
+        kind: primary
+        published: 2016-06-28
+        archive: https://web.archive.org/web/20180604033109/https://blog.evernote.com/blog/2016/06/28/changes-to-evernotes-pricing-plans/
+        quote: >-
+          Evernote Premium $7.99/month or $69.99/year (save 27%)
+      - url: https://blog.evernote.com/blog/2015/04/29/introducing-evernote-plus-and-the-new-evernote-premium/
+        publisher: Evernote
+        kind: primary
+        published: 2015-04-29
+        archive: https://web.archive.org/web/20170706155447/https://blog.evernote.com/blog/2015/04/29/introducing-evernote-plus-and-the-new-evernote-premium/
+        quote: Go Premium for $5.99 per month or $49.99 per year.
+      - url: https://blog.evernote.com/blog/2015/04/29/introducing-evernote-plus-and-the-new-evernote-premium/
+        publisher: Evernote
+        kind: primary
+        published: 2015-04-29
+        archive: https://web.archive.org/web/20170706155447/https://blog.evernote.com/blog/2015/04/29/introducing-evernote-plus-and-the-new-evernote-premium/
+        quote: All this for $2.99 per month or $24.99 per year.
+    added: 2026-11-21
+    updated: 2026-11-21
+    sources_checked: 2026-11-21
+    status_checked: 2026-11-21
+
+  - id: basic-two-devices
+    date: 2016-06-28
+    date_kind: announced
+    category: paywall
+    title: Evernote limits its free Basic plan to 2 devices
+    question: When did Evernote limit free accounts to two devices?
+    what_changed: >-
+      Evernote said on 28 June 2016 that free Basic accounts would only sync notes to 2 devices,
+      such as a computer and a phone. The web version didn't count as a device, and syncing more
+      meant paying for Plus or Premium.
+    after: Basic on 2 devices, plus the web
+    user_impact: >-
+      Free users who kept their notes on more than 2 phones, tablets or computers had to pick 2 or
+      start paying.
+    severity: 2
+    status: in-force
+    related: [evernote/price-2016]
+    sources:
+      - url: https://blog.evernote.com/blog/2016/06/28/changes-to-evernotes-pricing-plans/
+        publisher: Evernote
+        kind: primary
+        published: 2016-06-28
+        archive: https://web.archive.org/web/20180604033109/https://blog.evernote.com/blog/2016/06/28/changes-to-evernotes-pricing-plans/
+        quote: >-
+          On Basic, you can access notes on up to two devices, such as a computer and phone, two
+          computers, or a phone and a tablet, as well as on the web, so you can continue to take
+          your notes with you throughout your day.
+      - url: https://blog.evernote.com/blog/2016/06/28/changes-to-evernotes-pricing-plans/
+        publisher: Evernote
+        kind: primary
+        published: 2016-06-28
+        archive: https://web.archive.org/web/20180604033109/https://blog.evernote.com/blog/2016/06/28/changes-to-evernotes-pricing-plans/
+        quote: >-
+          To stay in sync across all your devices, consider Evernote Plus.
+      - url: https://blog.evernote.com/blog/2016/06/28/changes-to-evernotes-pricing-plans/
+        publisher: Evernote
+        kind: primary
+        published: 2016-06-28
+        archive: https://web.archive.org/web/20180604033109/https://blog.evernote.com/blog/2016/06/28/changes-to-evernotes-pricing-plans/
+        quote: >-
+          You can access Evernote via the web browser from as many computers as you like, even on a
+          Basic account.
+    added: 2026-11-21
+    updated: 2026-11-21
+    sources_checked: 2026-11-21
+    status_checked: 2026-11-21
+
+  - id: price-2023
+    date: 2023-04-28
+    date_kind: announced
+    effective: 2023-05-01
+    category: price-rise
+    title: Evernote Personal goes from $7.99 to $14.99 a month
+    what_changed: >-
+      Evernote said on 28 April 2023 that Personal would go to $14.99 a month or $129.99 a year,
+      and Professional to $17.99 or $169.99. New subscribers paid it from 1 May, and existing ones at
+      renewals from the end of May, with 28 days' notice.
+    before: $7.99 a month
+    after: $14.99 a month
+    user_impact: >-
+      Most Personal subscribers paid nearly double, new ones from 1 May 2023 and existing ones at
+      renewals from the end of May.
+    company_said: >-
+      Evernote said raising prices let it ramp up work on its infrastructure and product
+      development.
+    severity: 2
+    status: in-force
+    related: [evernote/free-50-notes]
+    sources:
+      - url: https://evernote.com/blog/evernote-pricing-upcoming-features-update
+        publisher: Evernote
+        kind: primary
+        published: 2023-04-28
+        archive: https://web.archive.org/web/20261026071911/https://evernote.com/blog/evernote-pricing-upcoming-features-update
+        quote: >-
+          The new prices are effective starting May 1 for new subscribers and starting end of May
+          for existing subscribers. We’re notifying all customers who are impacted 28 days before
+          their renewal date.
+      - url: https://evernote.com/blog/evernote-pricing-upcoming-features-update
+        publisher: Evernote
+        kind: primary
+        published: 2023-04-28
+        archive: https://web.archive.org/web/20261026071911/https://evernote.com/blog/evernote-pricing-upcoming-features-update
+        quote: >-
+          Evernote Personal subscription price Currency USD AUD BRL CAD EUR GBP JPY KRW Monthly
+          subscription 14.99 17.99 29.90 17.99 12.99 8.99 1100 10500 Yearly subscription 129.99
+          159.99 264.90 159.99 99.99 79.99 9300 99000
+      - url: https://evernote.com/blog/evernote-pricing-upcoming-features-update
+        publisher: Evernote
+        kind: primary
+        published: 2023-04-28
+        archive: https://web.archive.org/web/20261026071911/https://evernote.com/blog/evernote-pricing-upcoming-features-update
+        quote: >-
+          Evernote Professional subscription price Currency USD AUD BRL CAD EUR GBP JPY KRW Monthly
+          subscription 17.99 22.49 32.90 22.49 14.99 13.49 1550 13500 Yearly subscription 169.99
+      - url: https://evernote.com/blog/evernote-pricing-upcoming-features-update
+        publisher: Evernote
+        kind: primary
+        published: 2023-04-28
+        archive: https://web.archive.org/web/20261026071911/https://evernote.com/blog/evernote-pricing-upcoming-features-update
+        quote: >-
+          For the vast majority of subscribers this is the first price increase in almost seven
+          years
+      - url: https://blog.evernote.com/blog/2016/06/28/changes-to-evernotes-pricing-plans/
+        publisher: Evernote
+        kind: primary
+        published: 2016-06-28
+        archive: https://web.archive.org/web/20180604033109/https://blog.evernote.com/blog/2016/06/28/changes-to-evernotes-pricing-plans/
+        quote: >-
+          Evernote Premium $7.99/month or $69.99/year (save 27%)
+      - url: https://evernote.com/blog/new-features-plans-for-personal-professional-productivity
+        publisher: Evernote
+        kind: primary
+        published: 2021-07-21
+        archive: https://web.archive.org/web/20240619232312/https://evernote.com/blog/new-features-plans-for-personal-professional-productivity
+        quote: >-
+          Evernote Premium users paying current subscription rates will automatically migrate to the
+          new, more richly featured Evernote Personal offering at the price they are paying today.
+    added: 2026-11-21
+    updated: 2026-11-21
+    sources_checked: 2026-11-21
+    status_checked: 2026-11-21
+
+  - id: free-50-notes
+    date: 2023-11-29
+    date_kind: announced
+    effective: 2023-12-04
+    category: paywall
+    title: Evernote limits free accounts to 50 notes and 1 notebook
+    question: When did Evernote limit free accounts to 50 notes?
+    what_changed: >-
+      Evernote said on 29 November 2023 that from 4 December, new and existing free users could
+      have at most 50 notes and 1 notebook. Free users already over the limit could still view,
+      edit, export, share and delete what they had, but not add more without paying.
+    after: 50 notes and 1 notebook
+    user_impact: >-
+      Free users with more than 50 notes or a second notebook couldn't add notes without deleting
+      old ones or paying for Personal at $14.99 a month.
+    company_said: >-
+      Evernote said the majority of its free users fell below the new limits, so most would see no
+      change day to day.
+    severity: 2
+    status: in-force
+    related: [evernote/price-2023]
+    sources:
+      - url: https://evernote.com/blog/evernote-free-note-limits
+        publisher: Evernote
+        kind: primary
+        published: 2023-11-29
+        archive: https://web.archive.org/web/20261103025405/https://evernote.com/blog/evernote-free-note-limits
+        quote: >-
+          From December 4, the Evernote Free experience is changing. Going forward, new and existing
+          Free users will have a maximum of fifty notes and one notebook per account.
+      - url: https://evernote.com/blog/evernote-free-note-limits
+        publisher: Evernote
+        kind: primary
+        published: 2023-11-29
+        archive: https://web.archive.org/web/20261103025405/https://evernote.com/blog/evernote-free-note-limits
+        quote: >-
+          any Free user who currently has more than fifty notes and one notebook will still be able
+          to view, edit, export, share, and delete existing notes and notebooks.
+      - url: https://evernote.com/blog/evernote-free-note-limits
+        publisher: Evernote
+        kind: primary
+        published: 2023-11-29
+        archive: https://web.archive.org/web/20261103025405/https://evernote.com/blog/evernote-free-note-limits
+        quote: >-
+          When setting the new limits, we considered that the majority of our Free users fall below
+          the threshold of fifty notes and one notebook.
+      - url: https://techcrunch.com/2023/11/29/its-official-evernote-will-restrict-free-users-to-50-notes/
+        publisher: TechCrunch
+        kind: press
+        published: 2023-11-29
+        archive: https://web.archive.org/web/20260125174151/https://techcrunch.com/2023/11/29/its-official-evernote-will-restrict-free-users-to-50-notes/
+        quote: >-
+          The test was trying to get people to pay the higher limit plans, which are priced at $14.99
+          and $17.99 per month.
+    added: 2026-11-21
+    updated: 2026-11-21
+    sources_checked: 2026-11-21
+    status_checked: 2026-11-21
+
+  - id: advanced-migration-2025
+    date: 2025-07
+    date_kind: effective
+    category: price-rise
+    title: Evernote retires Personal and moves its subscribers to Advanced at $24.99 a month
+    what_changed: >-
+      From July 2025, Evernote retired Personal and Professional and moved their subscribers to its
+      new Advanced plan at renewal, $24.99 a month or $249.99 a year. App store prices could differ,
+      and Personal had gone to $14.99 a month or $129.99 a year in 2023. The new Starter plan, $14.99 a month or $99.00 a year, is capped at 1,000
+      notes, 20 notebooks and 3 synced devices, and subscribers had to switch to it themselves.
+    before: $14.99 a month
+    after: $24.99 a month
+    user_impact: >-
+      Personal subscribers billed by Evernote paid $24.99 a month from their next renewal unless they
+      cancelled or moved themselves down to Starter and its note, notebook and device limits.
+    company_said: >-
+      Evernote said it retired Personal and Professional to offer a more flexible structure aligned
+      with current user needs.
+    severity: 2
+    status: in-force
+    related: [evernote/price-2023]
+    sources:
+      - url: https://help.evernote.com/hc/en-us/articles/46317642175763-Discontinuing-Evernote-Personal-Professional-Introducing-Starter-Advanced-FAQ
+        publisher: Evernote Help & Learning
+        kind: primary
+        published: 2025-11-13
+        archive: https://web.archive.org/web/20251123063620/https://help.evernote.com/hc/en-us/articles/46317642175763-Discontinuing-Evernote-Personal-Professional-Introducing-Starter-Advanced-FAQ
+        quote: >-
+          Beginning in July 2025, customers on Personal and Professional plans have been
+          transitioned to the new Advanced plan at their next renewal
+      - url: https://help.evernote.com/hc/en-us/articles/46317642175763-Discontinuing-Evernote-Personal-Professional-Introducing-Starter-Advanced-FAQ
+        publisher: Evernote Help & Learning
+        kind: primary
+        published: 2025-11-13
+        archive: https://web.archive.org/web/20251123063620/https://help.evernote.com/hc/en-us/articles/46317642175763-Discontinuing-Evernote-Personal-Professional-Introducing-Starter-Advanced-FAQ
+        quote: >-
+          Evernote Advanced Currency USD AUD BRL CAD EUR GBP JPY KRW Monthly subscription 24.99 30.99
+          54.90 30.99 21.99 14.99 1799 18999 Yearly subscription 249.99
+      - url: https://help.evernote.com/hc/en-us/articles/46317642175763-Discontinuing-Evernote-Personal-Professional-Introducing-Starter-Advanced-FAQ
+        publisher: Evernote Help & Learning
+        kind: primary
+        published: 2025-11-13
+        archive: https://web.archive.org/web/20251123063620/https://help.evernote.com/hc/en-us/articles/46317642175763-Discontinuing-Evernote-Personal-Professional-Introducing-Starter-Advanced-FAQ
+        quote: >-
+          Evernote Starter Currency USD AUD BRL CAD EUR GBP JPY KRW Monthly subscription 14.99 17.99
+          29.90 17.99 12.99 8.99 1100 10500 Yearly subscription 99.00
+      - url: https://help.evernote.com/hc/en-us/articles/46317642175763-Discontinuing-Evernote-Personal-Professional-Introducing-Starter-Advanced-FAQ
+        publisher: Evernote Help & Learning
+        kind: primary
+        published: 2025-11-13
+        archive: https://web.archive.org/web/20251123063620/https://help.evernote.com/hc/en-us/articles/46317642175763-Discontinuing-Evernote-Personal-Professional-Introducing-Starter-Advanced-FAQ
+        quote: >-
+          Content Up to 1,000 notes, 20 notebooks, 1,000 attachments Unlimited notes, notebooks,
+          attachments
+      - url: https://help.evernote.com/hc/en-us/articles/46317642175763-Discontinuing-Evernote-Personal-Professional-Introducing-Starter-Advanced-FAQ
+        publisher: Evernote Help & Learning
+        kind: primary
+        published: 2025-11-13
+        archive: https://web.archive.org/web/20251123063620/https://help.evernote.com/hc/en-us/articles/46317642175763-Discontinuing-Evernote-Personal-Professional-Introducing-Starter-Advanced-FAQ
+        quote: >-
+          Synced devices Up to 3 devices Unlimited
+      - url: https://help.evernote.com/hc/en-us/articles/46317642175763-Discontinuing-Evernote-Personal-Professional-Introducing-Starter-Advanced-FAQ
+        publisher: Evernote Help & Learning
+        kind: primary
+        published: 2025-11-13
+        archive: https://web.archive.org/web/20251123063620/https://help.evernote.com/hc/en-us/articles/46317642175763-Discontinuing-Evernote-Personal-Professional-Introducing-Starter-Advanced-FAQ
+        quote: >-
+          If your usage falls within Starter’s limits, you may choose to downgrade via your Billing
+          page before your next renewal date
+      - url: https://help.evernote.com/hc/en-us/articles/46317642175763-Discontinuing-Evernote-Personal-Professional-Introducing-Starter-Advanced-FAQ
+        publisher: Evernote Help & Learning
+        kind: primary
+        published: 2025-11-13
+        archive: https://web.archive.org/web/20251123063620/https://help.evernote.com/hc/en-us/articles/46317642175763-Discontinuing-Evernote-Personal-Professional-Introducing-Starter-Advanced-FAQ
+        quote: >-
+          With the introduction of Starter and Advanced, we’ve retired the older Personal and
+          Professional plans to offer a more flexible structure aligned with current user needs.
+      - url: https://evernote.com/blog/evernote-pricing-upcoming-features-update
+        publisher: Evernote
+        kind: primary
+        published: 2023-04-28
+        archive: https://web.archive.org/web/20261026071911/https://evernote.com/blog/evernote-pricing-upcoming-features-update
+        quote: >-
+          Evernote Personal subscription price Currency USD AUD BRL CAD EUR GBP JPY KRW Monthly
+          subscription 14.99 17.99 29.90 17.99 12.99 8.99 1100 10500 Yearly subscription 129.99
+          159.99 264.90 159.99 99.99 79.99 9300 99000
+    added: 2026-11-21
+    updated: 2026-11-21
+    sources_checked: 2026-11-21
+    status_checked: 2026-11-21
