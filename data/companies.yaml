@@ -67,3 +67,8 @@
   name: Warner Bros. Discovery
   url: https://www.wbd.com
   wikipedia: https://en.wikipedia.org/wiki/Warner_Bros._Discovery
+
+- id: meta
+  name: Meta
+  url: https://about.meta.com
+  wikipedia: https://en.wikipedia.org/wiki/Meta_Platforms
