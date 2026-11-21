@@ -1,0 +1,263 @@
+service: plex
+name: Plex
+company: plex
+url: https://www.plex.tv
+crw: https://consumerrights.wiki/w/Plex_Media_Server
+wikipedia: https://en.wikipedia.org/wiki/Plex
+
+plans:
+  - id: pass-us
+    name: Plex Pass (monthly)
+    region: US
+    currency: USD
+    billing: month
+    since: 2012-08-28
+    price: 3.99
+    source:
+      url: https://www.plex.tv/blog/part-2-introducing-plexpass/
+      publisher: Plex
+      kind: primary
+      published: 2012-08-28
+      archive: https://web.archive.org/web/20160816173850/https://www.plex.tv/blog/part-2-introducing-plexpass/
+      quote: As for the cost, PlexPass is just $3.99/month.
+
+  - id: pass-annual-us
+    name: Plex Pass (annual)
+    region: US
+    currency: USD
+    billing: year
+    since: '2012'
+    price: 29.99
+    incomplete: >-
+      We haven't found when the annual pass launched or what it cost then. It was $29.99 before the
+      September 2014 rise.
+    source:
+      url: https://www.plex.tv/blog/upcoming-price-increase-new-plex-pass-subscriptions/
+      publisher: Plex
+      kind: primary
+      published: 2014-09-22
+      archive: https://web.archive.org/web/20160816132608/https://www.plex.tv/blog/upcoming-price-increase-new-plex-pass-subscriptions/
+      quote: Annual Plex Pass subscriptions will increase from $29.99 to $39.99 per year.
+
+changes:
+  - id: plex-pass-price-2014
+    date: 2014-09-22
+    date_kind: announced
+    effective: 2014-09-29
+    category: price-rise
+    title: Plex Pass goes from $3.99 to $4.99 a month for new subscribers
+    what_changed: >-
+      Plex said on 22 September 2014 that new Plex Pass subscriptions would cost $4.99 a month, up
+      from $3.99, from 29 September. Annual went from $29.99 to $39.99 and Lifetime from $74.99 to
+      $149.99, while existing subscribers kept their price.
+    before: $3.99 a month
+    after: $4.99 a month
+    user_impact: >-
+      Anyone taking out or upgrading a Plex Pass from 29 September 2014 paid more, while existing
+      subscriptions stayed at the old price.
+    company_said: >-
+      Plex said Lifetime went up the most because, at 2.5x the price of a yearly pass, it was
+      priced in an unsustainable way.
+    severity: 2
+    status: in-force
+    regions: [US]
+    prices:
+      - { plan: pass-us, from: 3.99, to: 4.99 }
+      - { plan: pass-annual-us, from: 29.99, to: 39.99 }
+    sources:
+      - url: https://www.plex.tv/blog/upcoming-price-increase-new-plex-pass-subscriptions/
+        publisher: Plex
+        kind: primary
+        published: 2014-09-22
+        archive: https://web.archive.org/web/20160816132608/https://www.plex.tv/blog/upcoming-price-increase-new-plex-pass-subscriptions/
+        quote: >-
+          So on September 29, 2014 we’ll be making some changes to our Plex Pass subscription rates
+          for new subscriptions (and to clarify, upgrades count as new subscriptions): Monthly Plex
+          Pass subscriptions will increase from $3.99 to $4.99 per month.
+    added: 2026-11-21
+    updated: 2026-11-21
+    sources_checked: 2026-11-21
+    status_checked: 2026-11-21
+
+  - id: plex-pass-price-2025
+    date: 2025-03-19
+    date_kind: announced
+    effective: 2025-04-29
+    category: price-rise
+    title: Plex Pass goes from $4.99 to $6.99 a month, its first rise in over 10 years
+    what_changed: >-
+      Plex said on 19 March 2025 that Plex Pass would go up on 29 April 2025, to $6.99 a month,
+      $69.99 a year and $249.99 for Lifetime. Lifetime had been $119.99, and existing monthly and
+      yearly subscriptions went up at their next renewal.
+    before: $4.99 a month
+    after: $6.99 a month
+    user_impact: >-
+      New and existing monthly and yearly Plex Pass subscribers paid more, while people who already
+      had a Lifetime pass were left alone.
+    company_said: >-
+      Plex said it had held out for more than 10 years, but needed the rise to keep up with rising
+      costs.
+    severity: 2
+    status: in-force
+    related: [plex/remote-streaming-paywall]
+    prices:
+      - { plan: pass-us, from: 4.99, to: 6.99 }
+      - { plan: pass-annual-us, from: 39.99, to: 69.99 }
+    sources:
+      - url: https://www.plex.tv/blog/important-2025-plex-updates/
+        publisher: Plex
+        kind: primary
+        published: 2025-03-19
+        archive: https://web.archive.org/web/20261024042455/https://www.plex.tv/blog/important-2025-plex-updates/
+        quote: >-
+          New USD prices as of April 29, 2025 will be: Monthly: $6.99 Yearly: $69.99 Lifetime:
+          $249.99
+      - url: https://www.plex.tv/blog/important-2025-plex-updates/
+        publisher: Plex
+        kind: primary
+        published: 2025-03-19
+        archive: https://web.archive.org/web/20250319151649/https://www.plex.tv/blog/important-2025-plex-updates/
+        quote: >-
+          Prices for existing monthly and yearly subscriptions will automatically increase with the
+          next renewal after April 29, 2025
+      - url: https://techcrunch.com/2025/03/19/streamer-plex-raises-subscription-price-for-the-first-time-in-a-decade/
+        publisher: TechCrunch
+        kind: press
+        published: 2025-03-19
+        archive: https://web.archive.org/web/20260722171751/https://techcrunch.com/2025/03/19/streamer-plex-raises-subscription-price-for-the-first-time-in-a-decade/
+        quote: The service will now cost $6.99 per month, up from $4.99 previously.
+    added: 2026-11-21
+    updated: 2026-11-21
+    sources_checked: 2026-11-21
+    status_checked: 2026-11-21
+
+  - id: remote-streaming-paywall
+    date: 2025-04-29
+    date_kind: effective
+    category: paywall
+    title: Plex makes remote video streaming from a Plex Media Server a paid feature
+    question: When did Plex stop free remote streaming?
+    what_changed: >-
+      Plex ended free remote streaming of video from Plex Media Servers on 29 April 2025, starting
+      with its new mobile apps. It had said on 19 March 2025 that this would need a Plex Pass on the
+      server owner's or the viewer's account, or a new Remote Watch Pass at $1.99 a month or $19.99
+      a year, which went up to $2.99 or $29.99 on 1 June 2026. Roku followed in November 2025, and
+      by 29 April 2026 so had the web, desktop, smart TV, PlayStation, Xbox and Fire TV apps.
+    before: Free, with a one-time unlock on mobile
+    after: Plex Pass on either account, or Remote Watch Pass
+    user_impact: >-
+      People without a Plex Pass had to pay to watch video from their own or a friend's server away
+      from home unless the server owner had one, though music and photos stayed free.
+    company_said: >-
+      Plex said it needed more resources to keep putting forth the best personal media experience.
+    severity: 3
+    status: in-force
+    related: [plex/plex-pass-price-2025]
+    sources:
+      - url: https://www.plex.tv/blog/important-2025-plex-updates/
+        publisher: Plex
+        kind: primary
+        published: 2025-03-19
+        archive: https://web.archive.org/web/20261024042455/https://www.plex.tv/blog/important-2025-plex-updates/
+        quote: >-
+          The reality is that we need more resources to continue putting forth the best personal
+          media experience, and as a result, we will no longer offer remote playback as a free
+          feature.
+      - url: https://support.plex.tv/articles/requirements-for-remote-playback-of-personal-media/
+        publisher: Plex Support
+        kind: primary
+        published: 2025-04-29
+        archive: https://web.archive.org/web/20250502014223/https://support.plex.tv/articles/requirements-for-remote-playback-of-personal-media/
+        quote: >-
+          Starting April 29, 2025, there are changes to the requirements for allowing remote
+          playback of video personal media from a Plex Media Server (that is, streaming when not on
+          the same local network as the server).
+      - url: https://www.plex.tv/blog/important-2025-plex-updates/
+        publisher: Plex
+        kind: primary
+        published: 2025-03-19
+        archive: https://web.archive.org/web/20261024042455/https://www.plex.tv/blog/important-2025-plex-updates/
+        quote: >-
+          As of today, April 29, 2026, the new remote playback requirements apply to Plex running on
+          Amazon Fire TV devices and supported TVs like Samsung, LG, Vizio, PlayStation, Xbox gaming
+          consoles and more.
+      - url: https://support.plex.tv/articles/requirements-for-remote-playback-of-personal-media/
+        publisher: Plex Support
+        kind: primary
+        published: 2025-04-29
+        archive: https://web.archive.org/web/20261114155930/https://support.plex.tv/articles/requirements-for-remote-playback-of-personal-media/
+        quote: >-
+          The following Plex apps/platforms are currently affected by the new requirements: Android
+          (mobile) iOS (mobile) PlayStation Plex for Windows/Mac/Linux Roku Smart TV supported models
+          Web app
+      - url: https://www.engadget.com/entertainment/streaming/plex-starts-paywalling-remote-streaming-to-tvs-beginning-with-its-roku-app-160535590.html
+        publisher: Engadget
+        kind: press
+        published: 2025-11-27
+        archive: https://web.archive.org/web/20251127165459/https://www.engadget.com/entertainment/streaming/plex-starts-paywalling-remote-streaming-to-tvs-beginning-with-its-roku-app-160535590.html
+        quote: Plex is rolling out the change on its Roku app this week
+      - url: https://techcrunch.com/2025/03/19/streamer-plex-raises-subscription-price-for-the-first-time-in-a-decade/
+        publisher: TechCrunch
+        kind: press
+        published: 2025-03-19
+        archive: https://web.archive.org/web/20250319165901/https://techcrunch.com/2025/03/19/streamer-plex-raises-subscription-price-for-the-first-time-in-a-decade/
+        quote: Another change will make remote playback for personal media a paid feature instead of free.
+      - url: https://www.androidauthority.com/plex-remote-watch-pass-price-increase-3663060/
+        publisher: Android Authority
+        kind: press
+        published: 2026-05-04
+        archive: https://web.archive.org/web/20260512062625/https://www.androidauthority.com/plex-remote-watch-pass-price-increase-3663060/
+        quote: >-
+          Users are now being informed that the cost of the Remote Watch Pass will increase from
+          $1.99 per month to $2.99, and the yearly subscription will go up from $19.99 to $29.99.
+    added: 2026-11-21
+    updated: 2026-11-21
+    sources_checked: 2026-11-21
+    status_checked: 2026-11-21
+
+  - id: lifetime-price-2026
+    date: 2026-05-19
+    date_kind: announced
+    effective: 2026-07-01
+    category: price-rise
+    title: Plex's Lifetime Plex Pass goes from $249.99 to $749.99
+    what_changed: >-
+      Plex said on 19 May 2026 that a new Lifetime Plex Pass would cost $749.99 from 1 July 2026, up
+      from $249.99. Monthly and annual Plex Pass prices stayed the same, and people who already had
+      a Lifetime pass kept it.
+    before: $249.99 once
+    after: $749.99 once
+    user_impact: >-
+      Anyone who wanted to pay for Plex Pass once rather than every month or year paid $749.99 from
+      July 2026.
+    company_said: >-
+      Plex said the new price more accurately reflects the true value of a Lifetime Plex Pass.
+    severity: 2
+    status: in-force
+    sources:
+      - url: https://www.plex.tv/blog/new-lifetime-plex-pass-pricing/
+        publisher: Plex
+        kind: primary
+        published: 2026-05-19
+        archive: https://web.archive.org/web/20260519134818/https://www.plex.tv/blog/new-lifetime-plex-pass-pricing/
+        quote: >-
+          What’s changing: The price of a new Lifetime Plex Pass will increase to $749.99 USD* on
+          July 1, 2026, at 12:01 AM UTC.
+      - url: https://www.plex.tv/blog/new-lifetime-plex-pass-pricing/
+        publisher: Plex
+        kind: primary
+        published: 2026-05-19
+        archive: https://web.archive.org/web/20260519134818/https://www.plex.tv/blog/new-lifetime-plex-pass-pricing/
+        quote: >-
+          You have until 12:01 AM UTC on July 1, 2026, to get a Lifetime Plex Pass at the current
+          price of $249.99 USD*
+      - url: https://www.macrumors.com/2026/05/19/lifetime-plex-pass-price-increase/
+        publisher: MacRumors
+        kind: press
+        published: 2026-05-19
+        archive: https://web.archive.org/web/20260612085304/https://www.macrumors.com/2026/05/19/lifetime-plex-pass-price-increase/
+        quote: Customers can purchase a Lifetime Plex Pass for $250 prior to when the price changes.
+    added: 2026-11-21
+    updated: 2026-11-21
+    sources_checked: 2026-11-21
+    status_checked: 2026-11-21

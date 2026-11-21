@@ -42,3 +42,8 @@
   name: X Corp
   url: https://x.com
   wikipedia: https://en.wikipedia.org/wiki/X_Corp.
+
+- id: plex
+  name: Plex
+  url: https://www.plex.tv
+  wikipedia: https://en.wikipedia.org/wiki/Plex
