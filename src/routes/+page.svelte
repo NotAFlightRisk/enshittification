@@ -1,16 +1,16 @@
 <script lang="ts">
   import ChangeList from '#lib/components/ChangeList.svelte';
-  import Legend from '#lib/components/Legend.svelte';
+  import DaysSince from '#lib/components/DaysSince.svelte';
+  import IncidentLog from '#lib/components/IncidentLog.svelte';
   import Pictogram from '#lib/components/Pictogram.svelte';
   import Seo from '#lib/components/Seo.svelte';
   import Sign from '#lib/components/Sign.svelte';
-  import Wall from '#lib/components/Wall.svelte';
   import { shortDate } from '#lib/dates.ts';
   import { plural } from '#lib/format.ts';
   import { site } from '#lib/site.ts';
 
   let { data } = $props();
-  const { counts } = $derived(data);
+  const { counts, board, log } = $derived(data);
 </script>
 
 <Seo
@@ -20,7 +20,7 @@
   alt="The wall: {plural(counts.changes, 'change')} at {plural(
     counts.services,
     'service'
-  )} as warning signs on a line from {data.wall.from} to {data.wall.to}."
+  )} as warning signs on a line from {data.span.from} to {data.span.to}."
 />
 
 <div class="hero">
@@ -32,14 +32,14 @@
   </Sign>
 </div>
 
-<section class="wall" aria-labelledby="wall">
-  <h2 id="wall">The wall</h2>
-  <Wall {...data.wall} />
-  <Legend />
-  {#if data.wall.rows.length < counts.services}
-    <a class="button" href="/the-wall">See all {counts.services} services</a>
+<div class="incidents">
+  {#if board.last}
+    <DaysSince last={board.last} counters={board.counters} best={board.best} built={data.built} />
   {/if}
-</section>
+  {#if log.length}
+    <IncidentLog months={log} />
+  {/if}
+</div>
 
 {#if data.serious.length}
   <section aria-labelledby="serious">
@@ -86,6 +86,14 @@
 
   .hero {
     max-width: 56rem;
+  }
+
+  .incidents {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 26rem), 1fr));
+    align-items: start;
+    gap: var(--space-7);
+    margin-top: var(--space-8);
   }
 
   .claim {
