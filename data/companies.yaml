@@ -77,3 +77,8 @@
   name: Bending Spoons
   url: https://www.bendingspoons.com
   wikipedia: https://en.wikipedia.org/wiki/Bending_Spoons
+
+- id: unity
+  name: Unity Technologies
+  url: https://unity.com
+  wikipedia: https://en.wikipedia.org/wiki/Unity_Technologies
