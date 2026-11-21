@@ -1,0 +1,404 @@
+service: hbo-max
+name: HBO Max
+company: warner-bros-discovery
+url: https://www.hbomax.com
+crw: https://consumerrights.wiki/w/HBO_Max
+wikipedia: https://en.wikipedia.org/wiki/HBO_Max
+
+plans:
+  - id: ad-free-us
+    name: Standard, was Ad-Free
+    region: US
+    currency: USD
+    billing: month
+    since: 2020-05-27
+    price: 14.99
+    source:
+      url: https://pressroom.warnermediagroup.com/us/media-release/hbo-max-launches-today
+      publisher: WarnerMedia Pressroom
+      kind: primary
+      published: 2020-05-27
+      archive: https://web.archive.org/web/20200527131736/https://pressroom.warnermediagroup.com/us/media-release/hbo-max-launches-today
+      quote: HBO Max is available starting today priced at $14.99/month from WarnerMedia.
+
+  - id: ads-us
+    name: Basic with Ads, was With Ads and Ad-Lite
+    region: US
+    currency: USD
+    billing: month
+    since: 2021-06-02
+    price: 9.99
+    source:
+      url: https://press.wbd.com/us/media-release/hbo-max/new-hbo-max-ad-supported-tier-available-today
+      publisher: WarnerMedia Pressroom
+      kind: primary
+      published: 2021-06-02
+      archive: https://web.archive.org/web/20230409150239/https://press.wbd.com/us/media-release/hbo-max/new-hbo-max-ad-supported-tier-available-today
+      quote: >-
+        With this launch, HBO Max now provides consumers the flexibility to choose between the
+        existing ad-free subscription option at $14.99 per month, or one with ads for $9.99 per
+        month.
+
+  - id: ultimate-us
+    name: Premium, was Ultimate Ad Free
+    region: US
+    currency: USD
+    billing: month
+    since: 2023-05-23
+    price: 19.99
+    source:
+      url: https://wbd.com/warner-bros-discovery-unveils-max-streaming-service-launching-may-23/
+      publisher: Warner Bros. Discovery
+      kind: primary
+      published: 2023-04-12
+      archive: https://web.archive.org/web/20230412194259/https://wbd.com/warner-bros-discovery-unveils-max-streaming-service-launching-may-23/
+      quote: >-
+        Max Ultimate Ad Free | $19.99/month or $199.99/year 4 concurrent streams, up to 4K UHD
+        resolution, 100 offline downloads, Dolby Atmos sound quality
+
+  - id: ad-free-annual-us
+    name: Standard (annual), was Ad-Free
+    region: US
+    currency: USD
+    billing: year
+    since: 2021-06-02
+    price: 149.99
+    source:
+      url: https://press.wbd.com/us/media-release/hbo-max/new-hbo-max-ad-supported-tier-available-today
+      publisher: WarnerMedia Pressroom
+      kind: primary
+      published: 2021-06-02
+      archive: https://web.archive.org/web/20230409150239/https://press.wbd.com/us/media-release/hbo-max/new-hbo-max-ad-supported-tier-available-today
+      quote: >-
+        For even further savings, HBO Max is offering new and returning subscribers the option to
+        pre-pay and save more than 15% by signing up for the ad-supported tier of HBO Max for
+        $99.99/year or without ads for $149.99/year.
+
+  - id: ads-annual-us
+    name: Basic with Ads (annual), was With Ads and Ad-Lite
+    region: US
+    currency: USD
+    billing: year
+    since: 2021-06-02
+    price: 99.99
+    source:
+      url: https://press.wbd.com/us/media-release/hbo-max/new-hbo-max-ad-supported-tier-available-today
+      publisher: WarnerMedia Pressroom
+      kind: primary
+      published: 2021-06-02
+      archive: https://web.archive.org/web/20230409150239/https://press.wbd.com/us/media-release/hbo-max/new-hbo-max-ad-supported-tier-available-today
+      quote: >-
+        For even further savings, HBO Max is offering new and returning subscribers the option to
+        pre-pay and save more than 15% by signing up for the ad-supported tier of HBO Max for
+        $99.99/year or without ads for $149.99/year.
+
+  - id: ultimate-annual-us
+    name: Premium (annual), was Ultimate Ad Free
+    region: US
+    currency: USD
+    billing: year
+    since: 2023-05-23
+    price: 199.99
+    source:
+      url: https://wbd.com/warner-bros-discovery-unveils-max-streaming-service-launching-may-23/
+      publisher: Warner Bros. Discovery
+      kind: primary
+      published: 2023-04-12
+      archive: https://web.archive.org/web/20230412194259/https://wbd.com/warner-bros-discovery-unveils-max-streaming-service-launching-may-23/
+      quote: >-
+        Max Ultimate Ad Free | $19.99/month or $199.99/year 4 concurrent streams, up to 4K UHD
+        resolution, 100 offline downloads, Dolby Atmos sound quality
+
+changes:
+  - id: originals-pulled
+    date: 2022-08
+    date_kind: reported
+    category: removed-feature
+    title: HBO Max pulls 36 titles including its own originals, then Westworld and The Nevers
+    what_changed: >-
+      HBO Max pulled 36 titles in August 2022, 20 of them its own in-house productions, as Warner
+      Bros. Discovery got ready to merge it with Discovery+. In December 2022 WBD said over 10
+      original series, Westworld and The Nevers among them, were leaving for free ad-supported
+      services, which NPR tied to a tax write-off on content costs.
+    user_impact: >-
+      Subscribers lost shows HBO Max had made itself, like Generation and The Not-Too-Late Show with
+      Elmo, and some of the December titles had no new streaming home lined up.
+    company_said: >-
+      HBO Max said it was bringing its content catalogs together under one platform, which would
+      include removing some content from both HBO Max and Discovery+.
+    severity: 2
+    status: in-force
+    regions: [US]
+    sources:
+      - url: https://techcrunch.com/2022/08/18/hbo-max-is-removing-36-titles-and-creators-are-not-happy/
+        publisher: TechCrunch
+        kind: press
+        published: 2022-08-18
+        archive: https://web.archive.org/web/20240424125442/https://techcrunch.com/2022/08/18/hbo-max-is-removing-36-titles-and-creators-are-not-happy/
+        quote: >-
+          HBO Max is continuing its content removal spree with 36 titles going off the service this
+          week including 20 of its in-house productions.
+      - url: https://www.npr.org/2022/08/19/1118344173/hbo-max-cuts-shows
+        publisher: NPR
+        kind: press
+        published: 2022-08-19
+        archive: https://web.archive.org/web/20260608225901/https://www.npr.org/2022/08/19/1118344173/hbo-max-cuts-shows
+        quote: >-
+          The content set to disappear includes HBO Max originals like the teen drama Generation and
+          Sesame Street spinoff The Not-Too-Late Show with Elmo
+      - url: https://techcrunch.com/2022/08/18/hbo-max-is-removing-36-titles-and-creators-are-not-happy/
+        publisher: TechCrunch
+        kind: press
+        published: 2022-08-18
+        archive: https://web.archive.org/web/20240424125442/https://techcrunch.com/2022/08/18/hbo-max-is-removing-36-titles-and-creators-are-not-happy/
+        quote: >-
+          As we work toward bringing our content catalogs together under one platform, we will be
+          making changes to the content offering available on both HBO Max and Discovery+. That will
+          include the removal of some content from both platforms,
+      - url: https://techcrunch.com/2022/12/13/westworld-removed-from-hbo-max/
+        publisher: TechCrunch
+        kind: press
+        published: 2022-12-13
+        archive: https://web.archive.org/web/20260720194007/https://techcrunch.com/2022/12/13/westworld-removed-from-hbo-max/
+        quote: >-
+          Warner Bros. Discovery confirmed today that it will be moving over 10 HBO Max original
+          series to third-party free ad-supported streaming TV (FAST) services.
+      - url: https://techcrunch.com/2022/12/15/here-are-the-13-shows-leaving-hbo-max/
+        publisher: TechCrunch
+        kind: press
+        published: 2022-12-15
+        archive: https://web.archive.org/web/20251114051843/https://techcrunch.com/2022/12/15/here-are-the-13-shows-leaving-hbo-max/
+        quote: >-
+          The remaining titles — “Gordita Chronicles” (S1), “The Garcias” (S1), “Love Life” (S1,
+          S2), “Made for Love” (S1, S2) and “Minx” (S1, S2) — are not guaranteed to have new
+          streaming homes.
+      - url: https://www.npr.org/2022/12/17/1143901911/popular-titles-are-vanishing-from-hbo-max-after-merger
+        publisher: NPR
+        kind: press
+        published: 2022-12-17
+        archive: https://web.archive.org/web/20260911125109/https://www.npr.org/2022/12/17/1143901911/popular-titles-are-vanishing-from-hbo-max-after-merger
+        quote: >-
+          So the company expects to write off something up to $3.5 billion connected to content
+          costs as a result. And part of getting that tax benefit means they have to pull some of
+          these shows from the service
+    added: 2026-11-21
+    updated: 2026-11-21
+    sources_checked: 2026-11-21
+    status_checked: 2026-11-21
+
+  - id: ad-free-price-2023
+    date: 2023-01-12
+    date_kind: announced
+    category: price-rise
+    title: HBO Max ad-free goes from $14.99 to $15.99 a month, its first US rise
+    what_changed: >-
+      HBO Max said on 12 January 2023 that its US ad-free plan would go from $14.99 to $15.99 a
+      month, its first rise since launching in May 2020. Existing subscribers paid it from their
+      first bill on or after 11 February 2023.
+    before: $14.99 a month
+    after: $15.99 a month
+    user_impact: >-
+      Ad-free subscribers paid $1 more a month, existing ones from their first bill on or after 11
+      February 2023.
+    company_said: >-
+      HBO Max said the rise would let it keep investing in more culture-defining programming and a
+      better experience for all users.
+    severity: 1
+    status: in-force
+    regions: [US]
+    prices:
+      - { plan: ad-free-us, from: 14.99, to: 15.99 }
+    sources:
+      - url: https://techcrunch.com/2023/01/12/hbo-maxs-ad-free-monthly-subscription-price-is-increasing-by-1/
+        publisher: TechCrunch
+        kind: press
+        published: 2023-01-12
+        archive: https://web.archive.org/web/20230112164214/https://techcrunch.com/2023/01/12/hbo-maxs-ad-free-monthly-subscription-price-is-increasing-by-1/
+        quote: >-
+          HBO Max is raising the price of its ad-free monthly subscription in the U.S. from $14.99
+          to $15.99 plus applicable taxes. The change marks the first time that HBO Max has
+          increased the price of its service since launching in May 2020.
+      - url: https://techcrunch.com/2023/01/12/hbo-maxs-ad-free-monthly-subscription-price-is-increasing-by-1/
+        publisher: TechCrunch
+        kind: press
+        published: 2023-01-12
+        archive: https://web.archive.org/web/20230112164214/https://techcrunch.com/2023/01/12/hbo-maxs-ad-free-monthly-subscription-price-is-increasing-by-1/
+        quote: >-
+          “Existing subscribers who are currently paying $14.99/month will see their monthly rate
+          increase to $15.99 effective their next billing cycle on or after Saturday, February 11,
+          2023,” the company said in a statement. “This price increase of one dollar will allow us
+          to continue to invest in providing even more culture-defining programming and improving
+          our customer experience for all users.”
+    added: 2026-11-21
+    updated: 2026-11-21
+    sources_checked: 2026-11-21
+    status_checked: 2026-11-21
+
+  - id: 4k-ultimate-only
+    date: 2023-04-12
+    date_kind: announced
+    effective: 2023-12-05
+    category: paywall
+    title: Max moves 4K and a third stream from its ad-free plan to a $19.99 Ultimate plan
+    what_changed: >-
+      WBD said on 12 April 2023 that Max's $15.99 ad-free plan would stream in 1080p on 2 devices
+      at once, with 4K and 4 streams only on its $19.99 Ultimate plan. HBO Max's ad-free plan had
+      included 4K titles and a third stream, and existing subscribers lost both from their first
+      bill on or after 5 December 2023, at the same price.
+    before: 4K titles on the $15.99 ad-free plan
+    after: 4K only on the $19.99 Ultimate plan
+    user_impact: >-
+      Ad-free subscribers who watched in 4K or on more than 2 devices at once had to pay $19.99 a
+      month for Ultimate to keep doing so.
+    severity: 2
+    status: in-force
+    regions: [US]
+    sources:
+      - url: https://www.wbd.com/warner-bros-discovery-unveils-max-streaming-service-launching-may-23
+        publisher: Warner Bros. Discovery
+        kind: primary
+        published: 2023-04-12
+        archive: https://web.archive.org/web/20260510232322/https://www.wbd.com/warner-bros-discovery-unveils-max-streaming-service-launching-may-23
+        quote: >-
+          Max Ad Free | $15.99/month or $149.99/year 2 concurrent streams, 1080 resolution, 30
+          offline downloads, 5.1 surround sound quality Max Ultimate Ad Free | $19.99/month or
+          $199.99/year 4 concurrent streams, up to 4K UHD resolution, 100 offline downloads, Dolby
+          Atmos sound quality
+      - url: https://www.wbd.com/warner-bros-discovery-unveils-max-streaming-service-launching-may-23
+        publisher: Warner Bros. Discovery
+        kind: primary
+        published: 2023-04-12
+        archive: https://web.archive.org/web/20260510232322/https://www.wbd.com/warner-bros-discovery-unveils-max-streaming-service-launching-may-23
+        quote: >-
+          HBO Max subscribers will still have access to their current plan features for a minimum
+          of six months following launch.
+      - url: https://variety.com/2023/digital/news/maxs-standard-plan-dropping-4k-content-concurrent-streams-three-to-two-1235778362/
+        publisher: Variety
+        kind: press
+        published: 2023-11-02
+        archive: https://web.archive.org/web/20260916150700/https://variety.com/2023/digital/news/maxs-standard-plan-dropping-4k-content-concurrent-streams-three-to-two-1235778362/
+        quote: >-
+          that the service will no longer include 4K titles — with “full HD” at 1080p as the top
+          resolution available — and that they will be able to stream on only two devices
+          simultaneously (down from three before).
+      - url: https://variety.com/2023/digital/news/maxs-standard-plan-dropping-4k-content-concurrent-streams-three-to-two-1235778362/
+        publisher: Variety
+        kind: press
+        published: 2023-11-02
+        archive: https://web.archive.org/web/20260916150700/https://variety.com/2023/digital/news/maxs-standard-plan-dropping-4k-content-concurrent-streams-three-to-two-1235778362/
+        quote: >-
+          On your next billing date, on or after December 5, 2023, the price of your subscription
+          will stay the same, but some of your plan features will change,
+    added: 2026-11-21
+    updated: 2026-11-21
+    sources_checked: 2026-11-21
+    status_checked: 2026-11-21
+
+  - id: price-2024
+    date: 2024-06-04
+    date_kind: announced
+    category: price-rise
+    title: Max Ad-Free goes from $15.99 to $16.99 and Ultimate from $19.99 to $20.99
+    what_changed: >-
+      Max raised its US Ad-Free plan from $15.99 to $16.99 a month and Ultimate Ad-Free from $19.99
+      to $20.99 on 4 June 2024, for new subscribers straight away. Yearly plans went from $149.99 to
+      $169.99 and from $199.99 to $209.99, existing subscribers paid it from their renewal on or
+      after 4 July, and the $9.99 plan with ads stayed the same.
+    before: $15.99 a month for Ad-Free, $19.99 for Ultimate
+    after: $16.99 a month for Ad-Free, $20.99 for Ultimate
+    user_impact: >-
+      Ad-free subscribers paid 6% more a month, or 13% more on a yearly Ad-Free plan, while the plan
+      with ads kept its price.
+    severity: 1
+    status: in-force
+    regions: [US]
+    prices:
+      - { plan: ad-free-us, from: 15.99, to: 16.99 }
+      - { plan: ultimate-us, from: 19.99, to: 20.99 }
+      - { plan: ad-free-annual-us, from: 149.99, to: 169.99 }
+      - { plan: ultimate-annual-us, from: 199.99, to: 209.99 }
+    sources:
+      - url: https://9to5mac.com/2024/06/04/another-streaming-service-is-raising-its-prices-effective-immediately/
+        publisher: 9to5Mac
+        kind: press
+        published: 2024-06-04
+        archive: https://web.archive.org/web/20250713181756/https://9to5mac.com/2024/06/04/another-streaming-service-is-raising-its-prices-effective-immediately/
+        quote: >-
+          The standard ad-free tier will increase from $15.99 to $16.99 per month, while the 4K
+          ad-free plan will increase from $19.99 to $20.99 per month. As The Verge reports, these
+          price increases will go into effect for new subscribers starting today. Existing
+          subscribers will see the price hike reflected on their next renewal, on or after July 4.
+      - url: https://9to5mac.com/2024/06/04/another-streaming-service-is-raising-its-prices-effective-immediately/
+        publisher: 9to5Mac
+        kind: press
+        published: 2024-06-04
+        archive: https://web.archive.org/web/20250713181756/https://9to5mac.com/2024/06/04/another-streaming-service-is-raising-its-prices-effective-immediately/
+        quote: >-
+          The standard ad-free plan will rise from $149.99 per year to $169.99, while the 4K tier
+          will go from $199.99 to $209.99. The ad-supported Max plan will go unchanged at $9.99 per
+          month or $99.99 per year.
+    added: 2026-11-21
+    updated: 2026-11-21
+    sources_checked: 2026-11-21
+    status_checked: 2026-11-21
+
+  - id: price-2025
+    date: 2025-10-21
+    date_kind: effective
+    category: price-rise
+    title: HBO Max raises every US plan, taking Standard from $16.99 to $18.49
+    what_changed: >-
+      HBO Max raised its US prices for new subscribers on 21 October 2025, taking Standard from
+      $16.99 to $18.49 a month. Basic with Ads went from $9.99 to $10.99 and Premium from $20.99 to
+      $22.99 for people paying HBO Max or an app store, and existing subscribers paid it from their
+      first bill on or after 20 November 2025.
+    before: $9.99, $16.99 and $20.99 a month
+    after: $10.99, $18.49 and $22.99 a month
+    user_impact: >-
+      US subscribers paying HBO Max directly or through an app store paid more, from $1 a month on
+      Basic with Ads to $2 on Premium, with yearly plans up $10 to $20.
+    company_said: >-
+      HBO Max said the rise lets it keep investing in the culture-defining content subscribers
+      expect.
+    severity: 1
+    status: in-force
+    regions: [US]
+    prices:
+      - { plan: ads-us, from: 9.99, to: 10.99 }
+      - { plan: ad-free-us, from: 16.99, to: 18.49 }
+      - { plan: ultimate-us, from: 20.99, to: 22.99 }
+      - { plan: ads-annual-us, from: 99.99, to: 109.99 }
+      - { plan: ad-free-annual-us, from: 169.99, to: 184.99 }
+      - { plan: ultimate-annual-us, from: 209.99, to: 229.99 }
+    sources:
+      - url: https://help.hbomax.com/US/Answer/Detail/000002580
+        publisher: HBO Max Help Center
+        kind: primary
+        published: 2025-10-21
+        archive: https://web.archive.org/web/20260422215050/https://help.hbomax.com/US/Answer/Detail/000002580
+        quote: >-
+          New subscribers : The updated pricing will take effect on October 21, 2025 . Current
+          subscribers : If you're already subscribed, the new rates will take effect on your first
+          monthly/yearly billing cycle on or after November 20, 2025 .
+      - url: https://help.hbomax.com/US/Answer/Detail/000002580
+        publisher: HBO Max Help Center
+        kind: primary
+        published: 2025-10-21
+        archive: https://web.archive.org/web/20260422215050/https://help.hbomax.com/US/Answer/Detail/000002580
+        quote: >-
+          Basic with Ads Monthly : $10.99/month (a $1/month increase) Yearly : $109.99/year (a
+          $10/year increase) Standard Monthly : $18.49/month (a $1.50/month increase) Yearly :
+          $184.99/year (a $15/year increase) Premium Monthly : $22.99/month (a $2/month increase)
+          Yearly : $229.99/year (a $20/year increase)
+      - url: https://help.hbomax.com/US/Answer/Detail/000002580
+        publisher: HBO Max Help Center
+        kind: primary
+        published: 2025-10-21
+        archive: https://web.archive.org/web/20260422215050/https://help.hbomax.com/US/Answer/Detail/000002580
+        quote: >-
+          This price increase allows us to continue investing in the culture-defining content you
+          expect from HBO Max.
+    added: 2026-11-21
+    updated: 2026-11-21
+    sources_checked: 2026-11-21
+    status_checked: 2026-11-21
