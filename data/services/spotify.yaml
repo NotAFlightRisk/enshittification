@@ -183,6 +183,70 @@ changes:
     sources_checked: 2026-11-18
     status_checked: 2026-11-18
 
+  - id: lyrics-free-limit
+    date: 2024-05
+    date_kind: reported
+    category: paywall
+    title: Spotify puts a monthly limit on lyrics for free listeners
+    what_changed: >-
+      Spotify started limiting free users to lyrics for 3 songs a month in May 2024, after testing
+      lyrics as a Premium feature in 2023. Its help page said free users got limited access,
+      and unlimited lyrics were only on Premium.
+    user_impact: >-
+      Free listeners who used up the monthly limit couldn't see lyrics for any more songs that month
+      unless they paid for Premium.
+    severity: 2
+    status: reversed
+    reversed:
+      date: 2024-07-30
+      what: >-
+        After complaints, Spotify started raising the free limit on 30 July 2024. By 9 August its help
+        page no longer said unlimited lyrics were Premium-only, and said lyrics were available on both
+        the free and Premium tiers.
+      sources:
+        - url: https://techcrunch.com/2024/07/30/spotify-expands-monthly-limit-lyrics-free-users/
+          publisher: TechCrunch
+          kind: press
+          published: 2024-07-30
+          archive: https://web.archive.org/web/20260225191712/https://techcrunch.com/2024/07/30/spotify-expands-monthly-limit-lyrics-free-users/
+          quote: >-
+            the company is now expanding the monthly limit. Starting today, Spotify is raising the
+            limit on the number of lyrics free users can view.
+        - url: https://techcrunch.com/2024/07/30/spotify-expands-monthly-limit-lyrics-free-users/
+          publisher: TechCrunch
+          kind: press
+          published: 2024-07-30
+          archive: https://web.archive.org/web/20260225191712/https://techcrunch.com/2024/07/30/spotify-expands-monthly-limit-lyrics-free-users/
+          quote: Since the company decided to remove the restriction
+        - url: https://support.spotify.com/us/article/lyrics/
+          publisher: Spotify Support
+          kind: primary
+          published: 2024-08-09
+          archive: https://web.archive.org/web/20240809010441/https://support.spotify.com/us/article/lyrics/
+          quote: Lyrics are now available for Spotify users across both our Free and Premium tiers.
+    related: [spotify/lyrics-premium-test]
+    sources:
+      - url: https://support.spotify.com/us/article/lyrics/
+        publisher: Spotify Support
+        kind: primary
+        published: 2024-05-26
+        archive: https://web.archive.org/web/20240526154717/https://support.spotify.com/us/article/lyrics/
+        quote: >-
+          On Spotify free, limited access to lyrics is available. Unlimited access is currently only
+          available on Premium.
+      - url: https://techcrunch.com/2024/07/30/spotify-expands-monthly-limit-lyrics-free-users/
+        publisher: TechCrunch
+        kind: press
+        published: 2024-07-30
+        archive: https://web.archive.org/web/20260225191712/https://techcrunch.com/2024/07/30/spotify-expands-monthly-limit-lyrics-free-users/
+        quote: >-
+          Back in May, Spotify quietly started putting lyrics behind a paywall, limiting free users
+          to lyrics for three songs per month.
+    added: 2026-11-21
+    updated: 2026-11-21
+    sources_checked: 2026-11-21
+    status_checked: 2026-11-21
+
   - id: premium-price-2024
     date: 2024-06-03
     date_kind: announced
