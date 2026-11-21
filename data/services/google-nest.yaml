@@ -545,3 +545,65 @@ changes:
     updated: 2026-11-20
     sources_checked: 2026-11-20
     status_checked: 2026-11-20
+
+  - id: nest-app-retired
+    date: 2026-11-20
+    date_kind: announced
+    effective: 2027-01-25
+    category: removed-feature
+    title: Google retires the Nest app, though some of its camera features aren't in Google Home
+    what_changed: >-
+      Google said on 20 November 2026 that it would retire the Nest app on 25 January 2027 and move
+      supported Nest devices to the Google Home app. Google Home doesn't currently have some Nest
+      app features, like saving clips to the Nest library, public livestream sharing, email
+      notifications and timelapses, and clips already saved don't transfer, so any worth keeping
+      have to be downloaded first. Google will start deleting Nest accounts not linked to a Google
+      Account, with their data and subscriptions, from 25 March 2027.
+    before: Nest app, with a Nest or Google account
+    after: Google Home app, with a Google Account only
+    user_impact: >-
+      Nest camera owners who used the Nest app-only features lose them unless Google adds them to
+      Home, and anyone still on a Nest account has to move to a Google Account to keep controlling
+      their devices remotely.
+    company_said: >-
+      Google said retiring the Nest app lets it focus its engineering, security and feature
+      investments on one unified, modern experience.
+    severity: 2
+    status: scheduled
+    related: [google-nest/works-with-nest-shutdown]
+    sources:
+      - url: https://support.google.com/googlehome/answer/18959693
+        publisher: Google Home Help
+        kind: primary
+        published: 2026-11-20
+        archive: https://web.archive.org/web/20261121072941/https://support.google.com/googlehome/answer/18959693?hl=en
+        quote: >-
+          After that date, if you have not linked your Nest account to a Google Account, your Nest
+          account along with associated data and subscriptions will be deleted.
+      - url: https://support.google.com/googlehome/answer/13038234
+        publisher: Google Home Help
+        kind: primary
+        published: 2026-11-20
+        archive: https://web.archive.org/web/20261121073539/https://support.google.com/googlehome/answer/13038234?hl=en
+        quote: >-
+          While most features are available in the Google Home app, some features are only available
+          in the Nest app. The features below aren't currently available in the Google Home app.
+      - url: https://support.google.com/googlehome/blog/478236207/a-modern-foundation-for-your-smart-home-changes-coming-to-google-assistant-and-nest-app
+        publisher: Google Home & Nest Community
+        kind: primary
+        published: 2026-11-20
+        archive: https://web.archive.org/web/20261121072941/https://support.google.com/googlehome/blog/478236207/a-modern-foundation-for-your-smart-home-changes-coming-to-google-assistant-and-nest-app?hl=en
+        quote: >-
+          To continue controlling and receiving notifications from your Nest devices remotely, you
+          will need to move to the Google Home app
+      - url: https://www.theverge.com/tech/1038834/google-assistant-smart-speakers-nest-app-killed-shut-down
+        publisher: The Verge
+        kind: press
+        published: 2026-11-20
+        archive: https://web.archive.org/web/20261121072941/https://www.theverge.com/tech/1038834/google-assistant-smart-speakers-nest-app-killed-shut-down
+        quote: >-
+          The Nest app shutdown takes place on January 25th, 2027
+    added: 2026-11-21
+    updated: 2026-11-21
+    sources_checked: 2026-11-21
+    status_checked: 2026-11-21
