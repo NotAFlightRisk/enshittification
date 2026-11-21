@@ -47,3 +47,8 @@
   name: Plex
   url: https://www.plex.tv
   wikipedia: https://en.wikipedia.org/wiki/Plex
+
+- id: ubisoft
+  name: Ubisoft
+  url: https://www.ubisoft.com/en-us/company/about-us
+  wikipedia: https://en.wikipedia.org/wiki/Ubisoft
