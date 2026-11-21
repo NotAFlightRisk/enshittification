@@ -426,19 +426,20 @@ changes:
     date: 2023-05-23
     date_kind: announced
     category: paywall
-    title: Netflix starts charging US members to share outside their household
+    title: Netflix starts charging US and UK members to share outside their household
     question: When did Netflix start charging for password sharing?
     what_changed: >-
       Netflix started emailing US members who shared their account outside their household on 23
-      May 2023, offering to add an extra member for $7.99 a month. Only Standard and Premium could
-      add extra members, so sharing on Basic or Standard with ads had to stop.
+      May 2023, offering to add an extra member for $7.99 a month. It started the same day in the
+      UK, where an extra member cost £4.99. In the US only Standard and Premium could add extra
+      members, so Basic and Standard with ads couldn't.
     user_impact: >-
-      Standard and Premium members could pay $7.99 a month for each extra member outside their home,
-      while people sharing a Basic or ad plan account had to stop.
+      Members could pay for an extra member outside their home, $7.99 a month in the US and £4.99 in
+      the UK, while Basic and Standard with ads accounts in the US couldn't add one.
     company_said: Netflix said a Netflix account is for use by one household.
     severity: 3
     status: in-force
-    regions: [US]
+    regions: [US, GB]
     sources:
       - url: https://about.netflix.com/en/news/update-on-sharing-may-us
         publisher: Netflix Newsroom
@@ -466,9 +467,28 @@ changes:
           Basic : $9.99 / month Standard : $15.49 / month ( extra member slots ** can be added for
           $7.99 each / month) Premium : $19.99 / month ( extra member slots ** can be added for $7.99
           each / month)
+      - url: https://about.netflix.com/en/news/update-on-sharing-may-gb
+        publisher: Netflix
+        kind: primary
+        published: 2023-05-23
+        archive: https://web.archive.org/web/20230523204526/https://about.netflix.com/en/news/update-on-sharing-may-gb
+        quote: >-
+          Starting today, we will be sending this email to members who are sharing Netflix outside
+          their household in the United Kingdom.
+      - url: https://about.netflix.com/en/news/update-on-sharing-may-gb
+        publisher: Netflix
+        kind: primary
+        published: 2023-05-23
+        archive: https://web.archive.org/web/20260301034059/https://about.netflix.com/en/news/update-on-sharing-may-gb
+        quote: >-
+          Buy an extra member. You can share your Netflix account with someone who doesn’t live with
+          you for £4.99/month more.
+    corrections:
+      - date: 2026-11-21
+        what: Added the UK, where paid sharing started the same day as the US.
     added: 2026-11-19
-    updated: 2026-11-19
-    sources_checked: 2026-11-19
+    updated: 2026-11-21
+    sources_checked: 2026-11-21
     status_checked: 2026-11-19
 
   - id: basic-dropped-for-new-members
