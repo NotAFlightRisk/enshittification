@@ -1,0 +1,81 @@
+service: unity
+name: Unity
+company: unity
+url: https://unity.com
+wikipedia: https://en.wikipedia.org/wiki/Unity_(game_engine)
+
+changes:
+  - id: runtime-fee
+    date: 2023-09-12
+    date_kind: announced
+    category: price-rise
+    title: Unity announces a fee per game install, including on games already released
+    what_changed: >-
+      Unity said on 12 September 2023 that from 1 January 2024 it would charge a Runtime Fee for
+      each install of games past set revenue and install thresholds. Its FAQ said the fee applied
+      to eligible games already in market, at up to $0.20 per install on Unity Personal and Plus.
+      On 22 September 2023 it dropped the fee for Unity Personal and limited it to the next LTS
+      version of Unity shipping in 2024 and beyond, leaving games already out alone.
+    before: No fee per install
+    after: Up to $0.20 per install past the thresholds
+    user_impact: >-
+      Under the plan as first announced, developers on Personal or Plus whose games passed $200,000
+      in revenue over 12 months and 200,000 lifetime installs would have paid for each new install,
+      games already released included.
+    company_said: >-
+      Unity said it charged per install because each time a game is downloaded, the Unity Runtime
+      is also installed.
+    severity: 2
+    status: reversed
+    reversed:
+      date: 2024-09-12
+      what: >-
+        Unity cancelled the Runtime Fee for games customers, effective immediately, and went back
+        to its seat-based subscriptions. Unity Pro went up 8% to $2,200 a year per seat from 1
+        January 2025.
+      sources:
+        - url: https://unity.com/blog/unity-is-canceling-the-runtime-fee
+          publisher: Unity Blog
+          kind: primary
+          published: 2024-09-12
+          archive: https://web.archive.org/web/20240912150331/https://unity.com/blog/unity-is-canceling-the-runtime-fee
+          quote: >-
+            we’ve made the decision to cancel the Runtime Fee for our games customers, effective
+            immediately.
+    sources:
+      - url: https://blog.unity.com/news/plan-pricing-and-packaging-updates
+        publisher: Unity Blog
+        kind: primary
+        published: 2023-09-12
+        archive: https://web.archive.org/web/20230912135629/https://blog.unity.com/news/plan-pricing-and-packaging-updates
+        quote: >-
+          Effective January 1, 2024, we will introduce a new Unity Runtime Fee that’s based on game
+          installs.
+      - url: https://unity.com/pricing-updates
+        publisher: Unity
+        kind: primary
+        published: 2023-09-12
+        archive: https://web.archive.org/web/20230912151806/https://unity.com/pricing-updates
+        quote: >-
+          Yes, the fee applies to eligible games currently in market that continue to distribute
+          the runtime.
+      - url: https://blog.unity.com/news/plan-pricing-and-packaging-updates
+        publisher: Unity Blog
+        kind: primary
+        published: 2023-09-12
+        archive: https://web.archive.org/web/20230912135629/https://blog.unity.com/news/plan-pricing-and-packaging-updates
+        quote: >-
+          We chose this because each time a game is downloaded, the Unity Runtime is also
+          installed.
+      - url: https://blog.unity.com/news/open-letter-on-runtime-fee
+        publisher: Unity Blog
+        kind: primary
+        published: 2023-09-22
+        archive: https://web.archive.org/web/20230922172144/https://blog.unity.com/news/open-letter-on-runtime-fee
+        quote: >-
+          The Runtime Fee policy will only apply beginning with the next LTS version of Unity
+          shipping in 2024 and beyond.
+    added: 2026-11-21
+    updated: 2026-11-21
+    sources_checked: 2026-11-21
+    status_checked: 2026-11-21
