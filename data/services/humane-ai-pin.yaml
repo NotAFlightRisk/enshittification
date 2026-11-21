@@ -1,0 +1,91 @@
+service: humane-ai-pin
+name: Humane AI Pin
+company: humane
+url: https://web.archive.org/web/20250226161747/https://humane.com/
+crw: https://consumerrights.wiki/w/Humane_Inc.
+wikipedia: https://en.wikipedia.org/wiki/Humane_Inc.
+
+changes:
+  - id: ai-pin-shutdown
+    date: 2025-02-28
+    date_kind: effective
+    category: bricked
+    title: Humane switches off the AI Pin, originally a $699 wearable, as HP buys its tech
+    question: When did the Humane AI Pin stop working?
+    what_changed: >-
+      The Humane AI Pin stopped working on 28 February 2025, when Humane cut it off from its
+      servers, as HP agreed to buy its AI technology. Humane announced it on 18 February 2025,
+      deleted all remaining customer data from its servers on the shutdown day, and offered refunds
+      only for Pins shipped on or after 15 November 2024, with claims due by 27 February.
+    user_impact: >-
+      All AI Pins lost calls, messages, AI answers and cloud access, leaving only offline features
+      like the battery level, and Humane pointed owners to e-waste recycling.
+    company_said: >-
+      Humane said it was winding down the consumer AI Pin because its business priorities had
+      shifted.
+    severity: 5
+    status: in-force
+    regions: [US]
+    sources:
+      - url: https://support.humane.com/hc/en-us/articles/34243204841997-Ai-Pin-Consumers-FAQ
+        publisher: Humane Support
+        kind: primary
+        published: 2025-02-18
+        archive: https://web.archive.org/web/20250219110309/https://support.humane.com/hc/en-us/articles/34243204841997-Ai-Pin-Consumers-FAQ
+        quote: >-
+          Your Ai Pin will continue functioning normally until February 28, 2025, at 12:00pm PST.
+          After this time, it will no longer connect to Humane’s servers, and .Center access will
+          be fully retired.
+      - url: https://support.humane.com/hc/en-us/articles/34243204841997-Ai-Pin-Consumers-FAQ
+        publisher: Humane Support
+        kind: primary
+        published: 2025-02-18
+        archive: https://web.archive.org/web/20250219110309/https://support.humane.com/hc/en-us/articles/34243204841997-Ai-Pin-Consumers-FAQ
+        quote: >-
+          Refunds are only available for customers who are still within the 90-day return window
+          from their original shipment date. You are eligible to receive a refund if your product
+          shipped on or after November 15th, 2024.
+      - url: https://support.humane.com/hc/en-us/articles/34243204841997-Ai-Pin-Consumers-FAQ
+        publisher: Humane Support
+        kind: primary
+        published: 2025-02-18
+        archive: https://web.archive.org/web/20250219110309/https://support.humane.com/hc/en-us/articles/34243204841997-Ai-Pin-Consumers-FAQ
+        quote: >-
+          After February 28, 2025, Ai Pin will still allow for offline features like battery level,
+          etc., but will not include any function that requires cloud connectivity like voice
+          interactions, AI responses, and .Center access.
+      - url: https://support.humane.com/hc/en-us/articles/34243204841997-Ai-Pin-Consumers-FAQ
+        publisher: Humane Support
+        kind: primary
+        published: 2025-02-18
+        archive: https://web.archive.org/web/20250219110309/https://support.humane.com/hc/en-us/articles/34243204841997-Ai-Pin-Consumers-FAQ
+        quote: We encourage you to recycle your Ai Pin through an e-waste recycling program.
+      - url: https://support.humane.com/hc/en-us/articles/34374173951373-Important-Update-for-Consumer-Ai-Pin-Customers
+        publisher: Humane Support
+        kind: primary
+        published: 2025-02-18
+        archive: https://web.archive.org/web/20250219110309/https://support.humane.com/hc/en-us/articles/34374173951373-Important-Update-for-Consumer-Ai-Pin-Customers
+        quote: >-
+          Your Ai Pin features will no longer include calling, messaging, Ai queries/responses, or
+          cloud access.
+      - url: https://humane.com/media/humane-hp
+        publisher: Humane
+        kind: primary
+        published: 2025-02-18
+        archive: https://web.archive.org/web/20250218221707/https://humane.com/media/humane-hp
+        quote: >-
+          HP Inc. (NYSE: HPQ) announced a definitive agreement to acquire key AI capabilities from
+          Humane, including their AI-powered platform Cosmos, highly skilled technical talent, and
+          intellectual property with more than 300 patents and patent applications.
+      - url: https://techcrunch.com/2025/02/18/humanes-ai-pin-is-dead-as-hp-buys-startups-assets-for-116m/
+        publisher: TechCrunch
+        kind: press
+        published: 2025-02-18
+        archive: https://web.archive.org/web/20250219122518/https://techcrunch.com/2025/02/18/humanes-ai-pin-is-dead-as-hp-buys-startups-assets-for-116m/
+        quote: >-
+          In October, the company, which long charged customers $699 for its AI Pin, dropped the
+          price by $200.
+    added: 2026-11-21
+    updated: 2026-11-21
+    sources_checked: 2026-11-21
+    status_checked: 2026-11-21
