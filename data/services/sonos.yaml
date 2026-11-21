@@ -1,0 +1,291 @@
+service: sonos
+name: Sonos
+company: sonos
+url: https://www.sonos.com
+crw: https://consumerrights.wiki/w/Sonos
+wikipedia: https://en.wikipedia.org/wiki/Sonos
+
+changes:
+  - id: privacy-statement-2017
+    date: 2017-08-21
+    date_kind: reported
+    category: tracking
+    title: Sonos makes owners accept its new privacy statement or lose software updates
+    what_changed: >-
+      Sonos said in August 2017 that owners who didn't accept its new privacy statement couldn't
+      update their software, and their product might cease to function. The statement added error
+      information and audio settings to what Sonos collected, and said owners couldn't opt out of the
+      data it called necessary for basic functions.
+    user_impact: >-
+      Sonos owners were asked to acknowledge it, and anyone who didn't was left on software whose
+      functionality Sonos said would decrease over time.
+    company_said: >-
+      Sonos said the new system data would let it identify issues before they became problems.
+    severity: 2
+    status: in-force
+    sources:
+      - url: https://blog.sonos.com/en/sonos-privacy/
+        publisher: Sonos Blog
+        kind: primary
+        published: 2017-08
+        archive: https://web.archive.org/web/20170822221955/http://blog.sonos.com/en/sonos-privacy/
+        quote: >-
+          And lastly, we will begin to collect some basic information about your Sonos system, like
+          error information and audio settings, so we can proactively work to identify issues before
+          they become problems.
+      - url: https://blog.sonos.com/en/sonos-privacy/
+        publisher: Sonos Blog
+        kind: primary
+        published: 2017-08
+        archive: https://web.archive.org/web/20170822221955/http://blog.sonos.com/en/sonos-privacy/
+        quote: >-
+          Sonos owners and anyone who visits our website will be asked to acknowledge this new
+          policy when we update our software and systems in the coming days.
+      - url: https://www.sonos.com/en-us/legal/privacy
+        publisher: Sonos
+        kind: primary
+        published: 2017-08
+        archive: https://web.archive.org/web/20170822221329/https://www.sonos.com/en-us/legal/privacy
+        quote: >-
+          Certain categories of the data that we collect are absolutely necessary for your Sonos
+          System to perform its basic functions in a secure way and you will not be able to opt out
+          from this data collection, sharing and/or processing
+      - url: https://www.zdnet.com/article/sonos-accept-new-privacy-policy-speakers-cease-to-function/
+        publisher: ZDNet
+        kind: press
+        published: 2017-08-21
+        archive: https://web.archive.org/web/20170822064318/https://www.zdnet.com/article/sonos-accept-new-privacy-policy-speakers-cease-to-function/
+        quote: >-
+          if a customer chooses not to acknowledge the privacy statement, the customer will not be
+          able to update the software on their Sonos system, and over time the functionality of the
+          product will decrease.
+      - url: https://www.zdnet.com/article/sonos-accept-new-privacy-policy-speakers-cease-to-function/
+        publisher: ZDNet
+        kind: press
+        published: 2017-08-21
+        archive: https://web.archive.org/web/20170822064318/https://www.zdnet.com/article/sonos-accept-new-privacy-policy-speakers-cease-to-function/
+        quote: >-
+          The customer can choose to acknowledge the policy, or can accept that over time their
+          product may cease to function
+    added: 2026-11-21
+    updated: 2026-11-21
+    sources_checked: 2026-11-21
+    status_checked: 2026-11-21
+
+  - id: legacy-products-held-back
+    date: 2020-01-21
+    date_kind: announced
+    effective: 2020-06-08
+    category: removed-feature
+    title: Sonos ends new features for its oldest products, holding back any system they're in
+    what_changed: >-
+      Sonos said on 21 January 2020 that its oldest products would stop getting new features and
+      full software updates in May, holding back any system they were in. In June 2020 it split its
+      software: legacy products could only use the S1 app, which kept bug fixes and security
+      patches, newer ones could move to S2, and an S1 system can't be grouped with an S2 one. Its 30% trade-up credit meant
+      putting the old product into Recycle Mode, which left it inoperable, until March 2020.
+    user_impact: >-
+      Owners who mixed old and new Sonos products had to choose between new features on the newer
+      ones and playing old and new together.
+    company_said: >-
+      Sonos said its oldest products had been stretched to their technical limits in memory and
+      processing power.
+    severity: 2
+    status: in-force
+    sources:
+      - url: https://blog.sonos.com/en/end-of-software-updates-for-legacy-products/
+        publisher: Sonos Blog
+        kind: primary
+        published: 2020-01-21
+        archive: https://web.archive.org/web/20200121183951/https://blog.sonos.com/en/end-of-software-updates-for-legacy-products/
+        quote: >-
+          However, we’ve now come to a point where some of the oldest products have been stretched
+          to their technical limits in terms of memory and processing power. This coming May, these
+          legacy products—our original Zone Players, Connect, and Connect:Amp (launched in 2006;
+          includes versions sold until 2015), first-generation Play:5 (launched 2009), CR200
+          (launched 2009), and Bridge (launched 2007)—will no longer receive software updates or new
+          features.
+      - url: https://blog.sonos.com/en/a-letter-from-our-ceo/
+        publisher: Sonos Blog
+        kind: primary
+        published: 2020-01-23
+        archive: https://web.archive.org/web/20200124000027/https://blog.sonos.com/en/a-letter-from-our-ceo/
+        quote: >-
+          Secondly, we heard you on the issue of legacy products and modern products not being able
+          to coexist in your home. We are working on a way to split your system so that modern
+          products work together and get the latest features, while legacy products work together
+          and remain in their current state.
+      - url: https://investors.sonos.com/news-and-events/investor-news/latest-news/2020/Introducing-Sonos-Arc-the-premium-smart-soundbar/default.aspx
+        publisher: Sonos Investor Relations
+        kind: primary
+        published: 2020-05-06
+        archive: https://web.archive.org/web/20200519232314/https://investors.sonos.com/news-and-events/investor-news/latest-news/2020/Introducing-Sonos-Arc-the-premium-smart-soundbar/default.aspx
+        quote: Starting June 8, Sonos customers will be able to download the new Sonos app
+      - url: https://www.theverge.com/2020/1/21/21075043/sonos-software-updates-ending-play-5-connect-zone-players
+        publisher: The Verge
+        kind: press
+        published: 2020-01-21
+        archive: https://web.archive.org/web/20200122031847/https://www.theverge.com/2020/1/21/21075043/sonos-software-updates-ending-play-5-connect-zone-players
+        quote: >-
+          You’ll want to do this splitting off step because once a device stops receiving updates,
+          so does your entire Sonos system
+      - url: https://www.theverge.com/2020/3/17/21182164/sonos-s2-announced-app-operating-system-high-res-audio-dolby-atmos
+        publisher: The Verge
+        kind: press
+        published: 2020-03-17
+        archive: https://web.archive.org/web/20200318140519/https://www.theverge.com/2020/3/17/21182164/sonos-s2-announced-app-operating-system-high-res-audio-dolby-atmos
+        quote: >-
+          Legacy products will remain on S1, and modern Sonos gear will make the upgrade to S2.
+      - url: https://www.theverge.com/2020/3/17/21182164/sonos-s2-announced-app-operating-system-high-res-audio-dolby-atmos
+        publisher: The Verge
+        kind: press
+        published: 2020-03-17
+        archive: https://web.archive.org/web/20200318140519/https://www.theverge.com/2020/3/17/21182164/sonos-s2-announced-app-operating-system-high-res-audio-dolby-atmos
+        quote: Unfortunately, it won’t be possible to group an S1 system with an S2 system.
+      - url: https://www.theverge.com/2020/3/5/21166777/sonos-ending-recycle-mode-trade-up-program-sustainability
+        publisher: The Verge
+        kind: press
+        published: 2020-03-05
+        archive: https://web.archive.org/web/20200306094511/https://www.theverge.com/2020/3/5/21166777/sonos-ending-recycle-mode-trade-up-program-sustainability
+        quote: >-
+          Sonos is doing away with Recycle Mode, a controversial part of the company’s trade-up
+          program that rendered old devices inoperable in exchange for a 30 percent discount on a
+          newer Sonos product.
+    added: 2026-11-21
+    updated: 2026-11-21
+    sources_checked: 2026-11-21
+    status_checked: 2026-11-21
+
+  - id: new-app-missing-features
+    date: 2024-05-07
+    date_kind: effective
+    category: removed-feature
+    title: The new Sonos app launches without sleep timers, alarm editing or queue editing
+    what_changed: >-
+      Sonos replaced its app on 7 May 2024 with a rebuilt one that had no sleep timers, alarm
+      editing, queue or playlist editing, or local music library search. Owners with an iPhone
+      couldn't go back to the old app while Sonos added the features back over the following months.
+    user_impact: >-
+      Owners who set sleep timers or alarms, edited the queue or playlists, or searched a local
+      music library had to find workarounds or wait for later app updates.
+    company_said: >-
+      Sonos said rebuilding the app from the ground up might mean taking a few steps back, and that
+      it was working to reintroduce the missing features in the coming months.
+    severity: 3
+    status: reversed
+    reversed:
+      date: 2025-03-31
+      what: >-
+        Sonos put most of the features back in app updates: alarm editing on 14 May 2024, sleep
+        timers and play next on 4 June 2024, local music library search on 22 July 2024, deleting
+        and reordering the queue on Android on 15 October 2024, and Sonos playlist editing from 31
+        March 2025.
+      sources:
+        - url: https://support.sonos.com/en-us/article/release-notes-sonos-app-updates
+          publisher: Sonos Support
+          kind: primary
+          published: 2026-10-16
+          archive: https://web.archive.org/web/20261016211129/https://support.sonos.com/en-us/article/release-notes-sonos-app-updates
+          quote: Adding and editing alarms has been re-added to the Sonos app.
+        - url: https://support.sonos.com/en-us/article/release-notes-sonos-app-updates
+          publisher: Sonos Support
+          kind: primary
+          published: 2026-10-16
+          archive: https://web.archive.org/web/20261016211129/https://support.sonos.com/en-us/article/release-notes-sonos-app-updates
+          quote: >-
+            Release date: 6/4/2024 In this update: Added support for the all new Sonos Ace
+            headphones Added sleep timer settings Added “play next” and “add to end of queue”
+        - url: https://support.sonos.com/en-us/article/release-notes-sonos-app-updates
+          publisher: Sonos Support
+          kind: primary
+          published: 2026-10-16
+          archive: https://web.archive.org/web/20261016211129/https://support.sonos.com/en-us/article/release-notes-sonos-app-updates
+          quote: >-
+            Release date: 7/22/2024 In this update: Added setup, configuration, and search for local
+            Music Library
+        - url: https://support.sonos.com/en-us/article/release-notes-sonos-app-updates
+          publisher: Sonos Support
+          kind: primary
+          published: 2026-10-16
+          archive: https://web.archive.org/web/20261016211129/https://support.sonos.com/en-us/article/release-notes-sonos-app-updates
+          quote: Improved queue management including ability to delete and reorder on Android
+        - url: https://support.sonos.com/en-us/article/release-notes-sonos-app-updates
+          publisher: Sonos Support
+          kind: primary
+          published: 2026-10-16
+          archive: https://web.archive.org/web/20261016211129/https://support.sonos.com/en-us/article/release-notes-sonos-app-updates
+          quote: >-
+            Release date: 3/31/2025 In this update: Ability to create and edit Sonos playlists
+    sources:
+      - url: https://support.sonos.com/en-us/article/the-new-sonos-app-and-future-feature-updates
+        publisher: Sonos Support
+        kind: primary
+        published: 2024-05-21
+        archive: https://web.archive.org/web/20240521175326/https://support.sonos.com/en-us/article/the-new-sonos-app-and-future-feature-updates
+        quote: >-
+          Over the coming weeks, we will reintroduce the below features, while fixing bugs and
+          performance issues.
+      - url: https://support.sonos.com/en-us/article/the-new-sonos-app-and-future-feature-updates
+        publisher: Sonos Support
+        kind: primary
+        published: 2024-05-21
+        archive: https://web.archive.org/web/20240521175326/https://support.sonos.com/en-us/article/the-new-sonos-app-and-future-feature-updates
+        quote: >-
+          Sleep timer: mid-June Use the Sonos app for macOS or Windows or Sonos Voice Control to set
+          sleep timers today. Local music library search and playback: mid-June
+      - url: https://support.sonos.com/en-us/article/release-notes-sonos-app-updates
+        publisher: Sonos Support
+        kind: primary
+        published: 2026-10-16
+        archive: https://web.archive.org/web/20261016211129/https://support.sonos.com/en-us/article/release-notes-sonos-app-updates
+        quote: >-
+          Release date: 5/7/2024 In this update: The Sonos app has been fully redesigned
+      - url: https://support.sonos.com/en-us/article/release-notes-sonos-app-updates
+        publisher: Sonos Support
+        kind: primary
+        published: 2026-10-16
+        archive: https://web.archive.org/web/20261016211129/https://support.sonos.com/en-us/article/release-notes-sonos-app-updates
+        quote: Adding and editing alarms has been re-added to the Sonos app.
+      - url: https://www.theverge.com/2024/5/8/24151704/sonos-new-app-bad-reviews-missing-features
+        publisher: The Verge
+        kind: press
+        published: 2024-05-08
+        archive: https://web.archive.org/web/20240508224046/https://www.theverge.com/2024/5/8/24151704/sonos-new-app-bad-reviews-missing-features
+        quote: >-
+          The app’s accessibility has regressed, something Sonos says it’s aiming to fix by June.
+          Sleep timer functionality is totally gone
+      - url: https://www.theverge.com/2024/5/9/24152675/sonos-new-app-bad-reviews-response-statement
+        publisher: The Verge
+        kind: press
+        published: 2024-05-09
+        archive: https://web.archive.org/web/20240509212930/https://www.theverge.com/2024/5/9/24152675/sonos-new-app-bad-reviews-response-statement
+        quote: >-
+          customers have complained about missing features like sleep timers, broken local music
+          library management, and no longer having the ability to edit playlists or the upcoming
+          song queue
+      - url: https://www.theverge.com/2024/5/9/24152675/sonos-new-app-bad-reviews-response-statement
+        publisher: The Verge
+        kind: press
+        published: 2024-05-09
+        archive: https://web.archive.org/web/20240509212930/https://www.theverge.com/2024/5/9/24152675/sonos-new-app-bad-reviews-response-statement
+        quote: There’s no going back to the prior S2 release for iPhone owners
+      - url: https://www.theverge.com/2024/5/9/24152675/sonos-new-app-bad-reviews-response-statement
+        publisher: The Verge
+        kind: press
+        published: 2024-05-09
+        archive: https://web.archive.org/web/20240509212930/https://www.theverge.com/2024/5/9/24152675/sonos-new-app-bad-reviews-response-statement
+        quote: >-
+          It takes courage to rebuild a brand’s core product from the ground up, and to do so
+          knowing it may require taking a few steps back to ultimately leap into the future.
+      - url: https://www.theverge.com/2024/5/9/24152675/sonos-new-app-bad-reviews-response-statement
+        publisher: The Verge
+        kind: press
+        published: 2024-05-09
+        archive: https://web.archive.org/web/20240509212930/https://www.theverge.com/2024/5/9/24152675/sonos-new-app-bad-reviews-response-statement
+        quote: >-
+          working diligently to reintroduce them in the coming months, alongside additional
+          enhancements that will make for an even better app experience
+    added: 2026-11-21
+    updated: 2026-11-21
+    sources_checked: 2026-11-21
+    status_checked: 2026-11-21
