@@ -1,0 +1,73 @@
+service: the-crew
+name: The Crew
+company: ubisoft
+url: https://web.archive.org/web/20240224065746/https://www.ubisoft.com/en-us/game/the-crew/the-crew
+crw: https://consumerrights.wiki/w/The_Crew
+wikipedia: https://en.wikipedia.org/wiki/The_Crew_(video_game)
+
+changes:
+  - id: servers-shutdown
+    date: 2024-04-01
+    date_kind: effective
+    category: bricked
+    title: Ubisoft shuts down The Crew's servers, and the game stops working on every platform
+    question: When did The Crew shut down?
+    what_changed: >-
+      Ubisoft shut down The Crew's servers on 1 April 2024, and the online-only game can no longer
+      be played on any platform. Ubisoft announced it on 14 December 2023, when it took the
+      game and its virtual currency packs off sale, and pointed recent buyers to their store's
+      refund policy. By 12 April 2024 it had also revoked the game's licence for people who owned it
+      on Ubisoft Connect.
+    user_impact: >-
+      All owners lost access to The Crew on every platform, including its single-player campaign.
+    company_said: >-
+      Ubisoft said shutting it down had become a necessity due to upcoming server infrastructure
+      and licensing constraints.
+    severity: 5
+    status: in-force
+    sources:
+      - url: https://www.ubisoft.com/en-us/game/the-crew/the-crew/news-updates/mOR3tviszkxfeQCUKxhOV/an-update-on-the-crew
+        publisher: Ubisoft
+        kind: primary
+        published: 2023-12-14
+        archive: https://web.archive.org/web/20231215121859/https://www.ubisoft.com/en-us/game/the-crew/the-crew/news-updates/mOR3tviszkxfeQCUKxhOV/an-update-on-the-crew
+        quote: >-
+          After this date, the servers will be shut down, which means that the game will not be
+          accessible anymore on any platform, including PC / Xbox 360 / Xbox One / PlayStation 4 /
+          Amazon Luna and Ubisoft+.
+      - url: https://www.ubisoft.com/en-us/game/the-crew/the-crew/news-updates/mOR3tviszkxfeQCUKxhOV/an-update-on-the-crew
+        publisher: Ubisoft
+        kind: primary
+        published: 2023-12-14
+        archive: https://web.archive.org/web/20231215121859/https://www.ubisoft.com/en-us/game/the-crew/the-crew/news-updates/mOR3tviszkxfeQCUKxhOV/an-update-on-the-crew
+        quote: >-
+          Players who ordered The Crew recently can check the refund policy of the store of their
+          purchase if they wish to receive a refund.
+      - url: https://www.pcgamer.com/the-crew-removed-from-sale-will-become-unplayable-after-april-1-we-understand-this-may-be-disappointing-for-players-still-enjoying-the-game/
+        publisher: PC Gamer
+        kind: press
+        published: 2023-12-14
+        archive: https://web.archive.org/web/20231214211110/https://www.pcgamer.com/the-crew-removed-from-sale-will-become-unplayable-after-april-1-we-understand-this-may-be-disappointing-for-players-still-enjoying-the-game/
+        quote: >-
+          Ubisoft announced today that sales of its online racing game have been halted on all
+          storefronts, and it will no longer be playable on any platform after March 31, 2024.
+      - url: https://www.pcgamer.com/games/racing/ubisoft-is-stripping-peoples-licences-for-the-crew-weeks-after-its-shutdown-nearly-squandering-hopes-of-private-servers-and-acting-as-a-stark-reminder-of-how-volatile-digital-ownership-is/
+        publisher: PC Gamer
+        kind: press
+        published: 2024-04-12
+        archive: https://web.archive.org/web/20240412145555/https://www.pcgamer.com/games/racing/ubisoft-is-stripping-peoples-licences-for-the-crew-weeks-after-its-shutdown-nearly-squandering-hopes-of-private-servers-and-acting-as-a-stark-reminder-of-how-volatile-digital-ownership-is/
+        quote: >-
+          Frustratingly, despite a large portion of the game being doable in singleplayer, The Crew
+          remained an online-only endeavour throughout its decade-long lifespan.
+      - url: https://www.pcgamer.com/games/racing/ubisoft-is-stripping-peoples-licences-for-the-crew-weeks-after-its-shutdown-nearly-squandering-hopes-of-private-servers-and-acting-as-a-stark-reminder-of-how-volatile-digital-ownership-is/
+        publisher: PC Gamer
+        kind: press
+        published: 2024-04-12
+        archive: https://web.archive.org/web/20240412145555/https://www.pcgamer.com/games/racing/ubisoft-is-stripping-peoples-licences-for-the-crew-weeks-after-its-shutdown-nearly-squandering-hopes-of-private-servers-and-acting-as-a-stark-reminder-of-how-volatile-digital-ownership-is/
+        quote: >-
+          The publisher has revoked its licence for those who owned it on Ubisoft Connect, almost
+          destroying fan ambitions to revive the game in both an offline and online format.
+    added: 2026-11-21
+    updated: 2026-11-21
+    sources_checked: 2026-11-21
+    status_checked: 2026-11-21
