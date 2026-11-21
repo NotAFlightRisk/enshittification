@@ -22,17 +22,21 @@ export function stats() {
   };
 }
 
+/** The years the wall runs across, from the first change to this year */
+export function span() {
+  const { first, last } = stats();
+  return { from: first, to: Math.max(last, yearOf(data().built)) };
+}
+
 /** The wall's rows, worst first, the years it spans and how many changes each year had */
 export function wall(limit?: number) {
   const { services, changes, built } = data();
-  const { first, last } = stats();
   const perYear = Map.groupBy(changes, ({ date }) => yearOf(date));
   return {
     rows: rankServices(services, built)
       .slice(0, limit)
       .map(({ service, name, changes }) => ({ id: service, name, path: `/${service}`, changes })),
-    from: first,
-    to: Math.max(last, yearOf(built)),
+    ...span(),
     today: built,
     totals: Object.fromEntries([...perYear].map(([year, list]) => [year, list.length]))
   };
