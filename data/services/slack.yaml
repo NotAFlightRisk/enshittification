@@ -1,0 +1,138 @@
+service: slack
+name: Slack
+company: salesforce
+url: https://slack.com
+wikipedia: https://en.wikipedia.org/wiki/Slack_(software)
+
+changes:
+  - id: free-history-deleted
+    date: 2024-06
+    date_kind: announced
+    effective: 2024-08-26
+    category: removed-feature
+    title: Slack deletes messages and files over a year old from free workspaces
+    what_changed: >-
+      Slack said in June 2024 that from 26 August 2024 it would delete messages and files more than
+      a year old from free workspaces, on a rolling basis. Free workspaces still see 90 days of
+      history, upgrading brings back only the other 275 days, and deleted messages can't be restored.
+    before: History past 90 days kept, and shown after an upgrade
+    after: History past a year deleted for good
+    user_impact: >-
+      Free workspaces lost every message and file older than a year for good, unless they upgraded
+      before 26 August 2024.
+    company_said: >-
+      Slack said it was reducing the data storage it offers on the free version of Slack.
+    severity: 3
+    status: in-force
+    sources:
+      - url: https://slack.com/help/articles/29414264463635-Updates-to-message-and-file-history-on-free-workspaces
+        publisher: Slack Help Center
+        kind: primary
+        published: 2024-06-24
+        archive: https://web.archive.org/web/20240812163549/https://slack.com/help/articles/29414264463635-Updates-to-message-and-file-history-on-free-workspaces
+        quote: >-
+          We will be reducing our data storage offering for the free version of Slack; starting
+          August 26, 2024, we'll begin deleting messages and files more than one year old from free
+          workspaces on a rolling basis
+      - url: https://slack.com/help/articles/29414264463635-Updates-to-message-and-file-history-on-free-workspaces
+        publisher: Slack Help Center
+        kind: primary
+        published: 2024-06-24
+        archive: https://web.archive.org/web/20240812163549/https://slack.com/help/articles/29414264463635-Updates-to-message-and-file-history-on-free-workspaces
+        quote: >-
+          If you choose to remain on a free workspace, you’ll have full access to the past 90 days
+          of message and file history, and the remaining 275 days will become available should you
+          upgrade to a paid plan.
+      - url: https://slack.com/help/articles/29414264463635-Updates-to-message-and-file-history-on-free-workspaces
+        publisher: Slack Help Center
+        kind: primary
+        published: 2024-06-24
+        archive: https://web.archive.org/web/20240812163549/https://slack.com/help/articles/29414264463635-Updates-to-message-and-file-history-on-free-workspaces
+        quote: >-
+          It will not be possible to restore messages and files once deletion occurs.
+      - url: https://slack.com/help/articles/29414264463635-Updates-to-message-and-file-history-on-free-workspaces
+        publisher: Slack Help Center
+        kind: primary
+        published: 2024-06-24
+        archive: https://web.archive.org/web/20240812163549/https://slack.com/help/articles/29414264463635-Updates-to-message-and-file-history-on-free-workspaces
+        quote: >-
+          Existing free workspaces that upgrade to a paid plan before August 26, 2024 won't be
+          impacted.
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
+
+  - id: api-rate-limits-2025
+    date: 2025-05-29
+    date_kind: announced
+    category: api-restriction
+    title: Slack limits apps outside its Marketplace to 1 history request a minute
+    what_changed: >-
+      Slack said on 29 May 2025 that apps outside its Marketplace could read message history only
+      once a minute, 15 messages at a time. It applied at once to new apps and new installs, while
+      Marketplace apps and internal apps a company had already built kept their limits. Its API
+      terms, updated the same day, made the Marketplace the only place to sell apps built on them.
+    before: Tier 3 rate limits for reading conversations
+    after: 1 request a minute, 15 messages each
+    user_impact: >-
+      New installs of apps distributed outside the Marketplace could fetch only 15 messages a minute
+      each from conversations.history and conversations.replies.
+    company_said: >-
+      Slack said it wanted to keep workspace data secure and prevent bulk data exfiltration by
+      unvetted applications.
+    severity: 3
+    status: in-force
+    sources:
+      - url: https://docs.slack.dev/changelog/2025/05/29/rate-limit-changes-for-non-marketplace-apps
+        publisher: Slack Developer Docs
+        kind: primary
+        published: 2025-05-29
+        archive: https://web.archive.org/web/20250721142026/https://docs.slack.dev/changelog/2025/05/29/rate-limit-changes-for-non-marketplace-apps
+        quote: >-
+          To help keep workspace data secure and prevent bulk data exfiltration by unvetted
+          applications, these methods will have a new rate limit of 15 messages per request at one
+          request per minute.
+      - url: https://docs.slack.dev/changelog/2025/05/29/rate-limit-changes-for-non-marketplace-apps
+        publisher: Slack Developer Docs
+        kind: primary
+        published: 2025-05-29
+        archive: https://web.archive.org/web/20250721142026/https://docs.slack.dev/changelog/2025/05/29/rate-limit-changes-for-non-marketplace-apps
+        quote: >-
+          New non-Marketplace applications and new installations of existing non-Marketplace
+          applications will be subject to the updated rate limits immediately, as of May 29, 2025.
+      - url: https://docs.slack.dev/changelog/2025/05/29/rate-limit-changes-for-non-marketplace-apps
+        publisher: Slack Developer Docs
+        kind: primary
+        published: 2025-05-29
+        archive: https://web.archive.org/web/20250721142026/https://docs.slack.dev/changelog/2025/05/29/rate-limit-changes-for-non-marketplace-apps
+        quote: >-
+          The new rate limits will be updated to allow 1 request per minute and will return a
+          maximum of 15 objects per request.
+      - url: https://docs.slack.dev/changelog/2025/05/29/rate-limit-changes-for-non-marketplace-apps
+        publisher: Slack Developer Docs
+        kind: primary
+        published: 2025-05-29
+        archive: https://web.archive.org/web/20250721142026/https://docs.slack.dev/changelog/2025/05/29/rate-limit-changes-for-non-marketplace-apps
+        quote: >-
+          Existing internal, customer-built applications created before May 29, 2025 and installed
+          on their home organization will retain their current, higher rate limits.
+      - url: https://docs.slack.dev/changelog/2025/05/29/rate-limit-changes-for-non-marketplace-apps
+        publisher: Slack Developer Docs
+        kind: primary
+        published: 2025-05-29
+        archive: https://web.archive.org/web/20250721142026/https://docs.slack.dev/changelog/2025/05/29/rate-limit-changes-for-non-marketplace-apps
+        quote: replies API methods are changing from Tier 3 to Tier 1 for apps that are not approved for the Slack Marketplace
+      - url: https://docs.slack.dev/changelog/2025/05/29/tos-updates
+        publisher: Slack Developer Docs
+        kind: primary
+        published: 2025-05-29
+        archive: https://web.archive.org/web/20250908070217/https://docs.slack.dev/changelog/2025/05/29/tos-updates/
+        quote: >-
+          The updated terms confirm that the Slack Marketplace is the only appropriate channel for
+          commercially distributing apps built with Slack APIs, whether those apps are unlisted
+          (published outside of the Marketplace) or templatized one-off "custom" apps.
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
