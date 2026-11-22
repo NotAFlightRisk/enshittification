@@ -1,0 +1,798 @@
+service: playstation
+name: PlayStation
+company: sony
+url: https://www.playstation.com
+crw: https://consumerrights.wiki/w/PlayStation
+wikipedia: https://en.wikipedia.org/wiki/PlayStation
+
+plans:
+  - id: essential-annual-us
+    name: PlayStation Plus Essential (12 months), was PlayStation Plus
+    region: US
+    currency: USD
+    billing: year
+    since: 2010-06-29
+    price: 49.99
+    source:
+      url: https://blog.us.playstation.com/2010/06/29/playstation-plus-available-today/
+      publisher: PlayStation Blog
+      kind: primary
+      published: 2010-06-29
+      archive: https://web.archive.org/web/20100702050127/https://blog.us.playstation.com/2010/06/29/playstation-plus-available-today/
+      quote: >-
+        The three-month package is available for $17.99 and the one-year package is available for
+        $49.99.
+
+  - id: essential-monthly-us
+    name: PlayStation Plus Essential (1 month), was PlayStation Plus
+    region: US
+    currency: USD
+    billing: month
+    since: '2016'
+    price: 9.99
+    incomplete: >-
+      It wasn't on sale at the June 2010 launch and was $9.99 by 2016, but we haven't found when
+      Sony started selling it in the US or what it cost then.
+    source:
+      url: https://blog.us.playstation.com/2016/07/27/playstation-plus-free-games-for-august-2016/
+      publisher: PlayStation Blog
+      kind: primary
+      published: 2016-07-27
+      archive: https://web.archive.org/web/20160921110037/https://blog.us.playstation.com/2016/07/27/playstation-plus-free-games-for-august-2016/
+      quote: The monthly plan will change to $11.99 CAD in Canada, and remain $9.99 USD in the U.S.
+
+  - id: extra-monthly-us
+    name: PlayStation Plus Extra (1 month)
+    region: US
+    currency: USD
+    billing: month
+    since: 2022-06
+    price: 14.99
+    source:
+      url: https://blog.playstation.com/2022/03/29/all-new-playstation-plus-launches-in-june-with-700-games-and-more-value-than-ever/
+      publisher: PlayStation Blog
+      kind: primary
+      published: 2022-03-29
+      archive: https://web.archive.org/web/20220613124429/https://blog.playstation.com/2022/03/29/all-new-playstation-plus-launches-in-june-with-700-games-and-more-value-than-ever/
+      quote: United States $14.99 monthly / $39.99 quarterly / $99.99 yearly
+
+  - id: extra-annual-us
+    name: PlayStation Plus Extra (12 months)
+    region: US
+    currency: USD
+    billing: year
+    since: 2022-06
+    price: 99.99
+    source:
+      url: https://blog.playstation.com/2022/03/29/all-new-playstation-plus-launches-in-june-with-700-games-and-more-value-than-ever/
+      publisher: PlayStation Blog
+      kind: primary
+      published: 2022-03-29
+      archive: https://web.archive.org/web/20220613124429/https://blog.playstation.com/2022/03/29/all-new-playstation-plus-launches-in-june-with-700-games-and-more-value-than-ever/
+      quote: United States $14.99 monthly / $39.99 quarterly / $99.99 yearly
+
+  - id: premium-monthly-us
+    name: PlayStation Plus Premium (1 month)
+    region: US
+    currency: USD
+    billing: month
+    since: 2022-06
+    price: 17.99
+    source:
+      url: https://blog.playstation.com/2022/03/29/all-new-playstation-plus-launches-in-june-with-700-games-and-more-value-than-ever/
+      publisher: PlayStation Blog
+      kind: primary
+      published: 2022-03-29
+      archive: https://web.archive.org/web/20220613124429/https://blog.playstation.com/2022/03/29/all-new-playstation-plus-launches-in-june-with-700-games-and-more-value-than-ever/
+      quote: United States $17.99 monthly / $49.99 quarterly / $119.99 yearly
+
+  - id: premium-annual-us
+    name: PlayStation Plus Premium (12 months)
+    region: US
+    currency: USD
+    billing: year
+    since: 2022-06
+    price: 119.99
+    source:
+      url: https://blog.playstation.com/2022/03/29/all-new-playstation-plus-launches-in-june-with-700-games-and-more-value-than-ever/
+      publisher: PlayStation Blog
+      kind: primary
+      published: 2022-03-29
+      archive: https://web.archive.org/web/20220613124429/https://blog.playstation.com/2022/03/29/all-new-playstation-plus-launches-in-june-with-700-games-and-more-value-than-ever/
+      quote: United States $17.99 monthly / $49.99 quarterly / $119.99 yearly
+
+  - id: extra-monthly-uk
+    name: PlayStation Plus Extra (1 month)
+    region: UK
+    currency: GBP
+    billing: month
+    since: 2022-06
+    price: 10.99
+    source:
+      url: https://blog.playstation.com/2022/03/29/all-new-playstation-plus-launches-in-june-with-700-games-and-more-value-than-ever/
+      publisher: PlayStation Blog
+      kind: primary
+      published: 2022-03-29
+      archive: https://web.archive.org/web/20220613124429/https://blog.playstation.com/2022/03/29/all-new-playstation-plus-launches-in-june-with-700-games-and-more-value-than-ever/
+      quote: United Kingdom £10.99 monthly / £31.99 quarterly / £83.99 yearly
+
+  - id: extra-annual-uk
+    name: PlayStation Plus Extra (12 months)
+    region: UK
+    currency: GBP
+    billing: year
+    since: 2022-06
+    price: 83.99
+    source:
+      url: https://blog.playstation.com/2022/03/29/all-new-playstation-plus-launches-in-june-with-700-games-and-more-value-than-ever/
+      publisher: PlayStation Blog
+      kind: primary
+      published: 2022-03-29
+      archive: https://web.archive.org/web/20220613124429/https://blog.playstation.com/2022/03/29/all-new-playstation-plus-launches-in-june-with-700-games-and-more-value-than-ever/
+      quote: United Kingdom £10.99 monthly / £31.99 quarterly / £83.99 yearly
+
+  - id: premium-monthly-uk
+    name: PlayStation Plus Premium (1 month)
+    region: UK
+    currency: GBP
+    billing: month
+    since: 2022-06
+    price: 13.49
+    source:
+      url: https://blog.playstation.com/2022/03/29/all-new-playstation-plus-launches-in-june-with-700-games-and-more-value-than-ever/
+      publisher: PlayStation Blog
+      kind: primary
+      published: 2022-03-29
+      archive: https://web.archive.org/web/20220613124429/https://blog.playstation.com/2022/03/29/all-new-playstation-plus-launches-in-june-with-700-games-and-more-value-than-ever/
+      quote: United Kingdom £13.49 monthly / £39.99 quarterly / £99.99 yearly
+
+  - id: premium-annual-uk
+    name: PlayStation Plus Premium (12 months)
+    region: UK
+    currency: GBP
+    billing: year
+    since: 2022-06
+    price: 99.99
+    source:
+      url: https://blog.playstation.com/2022/03/29/all-new-playstation-plus-launches-in-june-with-700-games-and-more-value-than-ever/
+      publisher: PlayStation Blog
+      kind: primary
+      published: 2022-03-29
+      archive: https://web.archive.org/web/20220613124429/https://blog.playstation.com/2022/03/29/all-new-playstation-plus-launches-in-june-with-700-games-and-more-value-than-ever/
+      quote: United Kingdom £13.49 monthly / £39.99 quarterly / £99.99 yearly
+
+changes:
+  - id: ps-plus-price-2016
+    date: 2016-09-22
+    date_kind: effective
+    category: price-rise
+    title: PlayStation Plus goes from $49.99 to $59.99 a year in the US, its first rise
+    what_changed: >-
+      PlayStation Plus went from $49.99 to $59.99 for 12 months in the US on 22 September 2016,
+      while the monthly plan stayed at $9.99. Sony said it was the first US rise since the service
+      launched in 2010, and current members paid it from their first renewal on or after that date.
+    before: $49.99 a year
+    after: $59.99 a year
+    user_impact: >-
+      US and Canadian members on 12-month plans paid more, current ones from their first renewal on
+      or after 22 September 2016.
+    company_said: >-
+      Sony said the new pricing reflected current market conditions while letting it keep giving
+      members exceptional value.
+    severity: 1
+    status: in-force
+    regions: [US, CA]
+    prices:
+      - { plan: essential-annual-us, from: 49.99, to: 59.99 }
+    sources:
+      - url: https://blog.us.playstation.com/2016/07/27/playstation-plus-free-games-for-august-2016/
+        publisher: PlayStation Blog
+        kind: primary
+        published: 2016-07-27
+        archive: https://web.archive.org/web/20160921110037/https://blog.us.playstation.com/2016/07/27/playstation-plus-free-games-for-august-2016/
+        quote: >-
+          Starting on September 22, 2016, prices for PlayStation Plus memberships will change to
+          $59.99 USD/ $69.99 CAD for twelve months and $24.99 USD/$29.99 CAD for three months.
+      - url: https://blog.us.playstation.com/2016/07/27/playstation-plus-free-games-for-august-2016/
+        publisher: PlayStation Blog
+        kind: primary
+        published: 2016-07-27
+        archive: https://web.archive.org/web/20160921110037/https://blog.us.playstation.com/2016/07/27/playstation-plus-free-games-for-august-2016/
+        quote: >-
+          If you are a current member, the new prices will take effect if your membership renews on
+          or after this date.
+      - url: https://blog.us.playstation.com/2016/07/27/playstation-plus-free-games-for-august-2016/
+        publisher: PlayStation Blog
+        kind: primary
+        published: 2016-07-27
+        archive: https://web.archive.org/web/20160921110037/https://blog.us.playstation.com/2016/07/27/playstation-plus-free-games-for-august-2016/
+        quote: >-
+          This marks the first time that PS Plus membership prices will increase in the U.S. and
+          Canada since the launch of the service in 2010. The new pricing reflects the current
+          market conditions while enabling us to continue providing exceptional value to our
+          members.
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
+
+  - id: ps3-vita-store-closure
+    date: 2021-03
+    date_kind: announced
+    category: removed-feature
+    title: Sony plans to close the PS3, PSP and Vita stores, then keeps PS3 and Vita open
+    what_changed: >-
+      Sony said in March 2021 that it would close the PlayStation Store on PS3 on 2 July and on
+      Vita on 27 August 2021, and end PSP purchases on 2 July. Games already bought could still be
+      downloaded, but new ones couldn't be bought unless they had cross-buy support.
+    user_impact: >-
+      PS3 and Vita owners would only have got new digital games through cross-buy, and PSP
+      purchases were still set to end on 2 July 2021.
+    company_said: >-
+      Sony said it came from commerce support challenges for older devices and wanting to focus
+      more of its resources on newer ones.
+    severity: 1
+    status: reversed
+    reversed:
+      date: 2021-04-19
+      what: >-
+        Sony's Jim Ryan said it had made the wrong decision and would keep the store running on PS3
+        and Vita, though PSP purchases would still end on 2 July 2021 as planned.
+      sources:
+        - url: https://blog.playstation.com/2021/04/19/playstation-store-on-ps3-and-ps-vita-will-continue-operations/
+          publisher: PlayStation Blog
+          kind: primary
+          published: 2021-04-19
+          archive: https://web.archive.org/web/20210420145507/https://blog.playstation.com/2021/04/19/playstation-store-on-ps3-and-ps-vita-will-continue-operations/
+          quote: >-
+            So today I’m happy to say that we will be keeping the PlayStation Store operational for
+            PS3 and PS Vita devices. PSP commerce functionality will retire on July 2, 2021 as
+            planned.
+    sources:
+      - url: https://blog.playstation.com/2021/04/19/playstation-store-on-ps3-and-ps-vita-will-continue-operations/
+        publisher: PlayStation Blog
+        kind: primary
+        published: 2021-04-19
+        archive: https://web.archive.org/web/20210420145507/https://blog.playstation.com/2021/04/19/playstation-store-on-ps3-and-ps-vita-will-continue-operations/
+        quote: >-
+          When we initially came to the decision to end purchasing support for PS3 and PS Vita, it
+          was born out of a number of factors, including commerce support challenges for older
+          devices and the ability for us to focus more of our resources on newer devices where a
+          majority of our gamers are playing on.
+      - url: https://www.theverge.com/2021/3/29/22356791/sony-playstation-store-close-ps3-vita-psp-game-downloads
+        publisher: The Verge
+        kind: press
+        published: 2021-03-29
+        archive: https://web.archive.org/web/20210331071030/https://www.theverge.com/2021/3/29/22356791/sony-playstation-store-close-ps3-vita-psp-game-downloads
+        quote: >-
+          Sony is officially closing its PlayStation Store for the PlayStation 3 on July 2nd, with
+          the store shuttering for Vita devices on August 27th.
+      - url: https://www.theverge.com/2021/3/29/22356791/sony-playstation-store-close-ps3-vita-psp-game-downloads
+        publisher: The Verge
+        kind: press
+        published: 2021-03-29
+        archive: https://web.archive.org/web/20210331071030/https://www.theverge.com/2021/3/29/22356791/sony-playstation-store-close-ps3-vita-psp-game-downloads
+        quote: >-
+          Sony is also removing the remaining purchase functionality for its PlayStation Portable
+          (PSP) on July 2nd.
+      - url: https://www.theverge.com/2021/3/29/22356791/sony-playstation-store-close-ps3-vita-psp-game-downloads
+        publisher: The Verge
+        kind: press
+        published: 2021-03-29
+        archive: https://web.archive.org/web/20210331071030/https://www.theverge.com/2021/3/29/22356791/sony-playstation-store-close-ps3-vita-psp-game-downloads
+        quote: >-
+          The only thing that’s really changing here is you won’t be able to buy new digital games
+          and content unless the games have cross-buy support.
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
+
+  - id: studiocanal-removal-2022
+    date: 2022-08-31
+    date_kind: effective
+    category: bricked
+    title: PlayStation pulls bought StudioCanal films from libraries in Germany and Austria
+    what_changed: >-
+      Sony said bought StudioCanal films and shows would leave PlayStation video libraries in
+      Germany and Austria on 31 August 2022. Its notices listed the affected titles and gave its
+      content licensing agreements as the reason.
+    user_impact: >-
+      People in Germany and Austria who'd bought StudioCanal titles on the PlayStation Store lost
+      access to them.
+    company_said: Sony said it was down to its content licensing agreements.
+    severity: 4
+    status: in-force
+    regions: [DE, AT]
+    related: [playstation/studiocanal-removal-2026, playstation/discovery-removal]
+    sources:
+      - url: https://www.playstation.com/de-de/legal/psvideocontent/
+        publisher: PlayStation (Germany)
+        kind: primary
+        published: 2022-08-19
+        archive: https://web.archive.org/web/20220819195508/https://www.playstation.com/de-de/legal/psvideocontent/
+        quote: >-
+          Ab dem 31. August 2022 kannst du aufgrund unserer Inhalte-Lizenzvereinbarungen deine
+          zuvor gekauften Inhalte von Studio Canal nicht mehr aufrufen, und sie werden aus deiner
+          Video-Bibliothek entfernt.
+      - url: https://www.playstation.com/de-at/legal/psvideocontent/
+        publisher: PlayStation (Austria)
+        kind: primary
+        published: 2022-08-13
+        archive: https://web.archive.org/web/20220813042339/https://www.playstation.com/de-at/legal/psvideocontent/
+        quote: >-
+          ab dem 31. August 2022 wirst du aufgrund unserer sich entwickelnden
+          Lizenzvereinbarungen mit Inhaltsanbietern nicht mehr in der Lage sein, deine zuvor
+          gekauften Inhalte von Studio Canal anzusehen, und sie werden aus deiner Video-Bibliothek
+          entfernt.
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
+
+  - id: plus-collection-ends
+    date: 2023-02-01
+    date_kind: announced
+    effective: 2023-05-09
+    category: removed-feature
+    title: PlayStation Plus drops the PlayStation Plus Collection of PS4 games for PS5 owners
+    what_changed: >-
+      Sony said on 1 February 2023 that PS5 owners with PlayStation Plus would lose the PlayStation
+      Plus Collection of classic PS4 games on 9 May 2023. Games already redeemed from it stayed
+      playable for as long as the member kept paying for PlayStation Plus.
+    user_impact: >-
+      PS5 owners who joined PlayStation Plus after 9 May 2023, or hadn't redeemed the games by
+      then, couldn't get them.
+    severity: 1
+    status: in-force
+    sources:
+      - url: https://blog.playstation.com/2023/02/01/playstation-plus-monthly-games-for-february-evil-dead-the-game-olliolliworld-destiny-2-beyond-light-mafia-definitive-edition/
+        publisher: PlayStation Blog
+        kind: primary
+        published: 2023-02-01
+        archive: https://web.archive.org/web/20230203000747/https://blog.playstation.com/2023/02/01/playstation-plus-monthly-games-for-february-evil-dead-the-game-olliolliworld-destiny-2-beyond-light-mafia-definitive-edition/
+        quote: >-
+          On May 9 the PlayStation Plus Collection will no longer be offered. If you haven’t
+          redeemed the titles in this collection yet, you can still do so before May 9, which will
+          enable you to access those titles even after this date for as long as you remain a
+          PlayStation Plus member.
+      - url: https://blog.playstation.com/2023/02/01/playstation-plus-monthly-games-for-february-evil-dead-the-game-olliolliworld-destiny-2-beyond-light-mafia-definitive-edition/
+        publisher: PlayStation Blog
+        kind: primary
+        published: 2023-02-01
+        archive: https://web.archive.org/web/20230203000747/https://blog.playstation.com/2023/02/01/playstation-plus-monthly-games-for-february-evil-dead-the-game-olliolliworld-destiny-2-beyond-light-mafia-definitive-edition/
+        quote: >-
+          the PlayStation Plus Collection that has been offered as a benefit to PlayStation Plus
+          members on PS5 since 2020
+      - url: https://www.theverge.com/2023/2/1/23581459/ps5-playstation-plus-collection-sony-greatest-hits-stop
+        publisher: The Verge
+        kind: press
+        published: 2023-02-01
+        archive: https://web.archive.org/web/20251217004914/https://www.theverge.com/2023/2/1/23581459/ps5-playstation-plus-collection-sony-greatest-hits-stop
+        quote: >-
+          Sony will stop offering the PlayStation Plus Collection, which gave PS5 players who
+          subscribed to PlayStation Plus access to more than a dozen classic PS4 titles, on May 9th
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
+
+  - id: ps-plus-annual-price-2023
+    date: 2023-08-30
+    date_kind: announced
+    effective: 2023-09-06
+    category: price-rise
+    title: PlayStation Plus 12-month plans go up, US Essential from $59.99 to $79.99
+    what_changed: >-
+      Sony said on 30 August 2023 that 12-month PlayStation Plus plans would cost new buyers more
+      from 6 September, with US Essential going from $59.99 to $79.99. US Extra went from $99.99 to $134.99
+      and Premium from $119.99 to $159.99, and current 12-month members paid it from their first
+      renewal on or after 6 November 2023.
+    before: Essential $59.99 a year
+    after: Essential $79.99 a year
+    user_impact: >-
+      Everyone on a 12-month plan paid more, new buyers and plan changes from 6 September and current
+      members from their first renewal on or after 6 November 2023.
+    company_said: >-
+      Sony said the rise would let it keep bringing high-quality games and value-added benefits to
+      PlayStation Plus.
+    severity: 2
+    status: in-force
+    prices:
+      - { plan: essential-annual-us, from: 59.99, to: 79.99 }
+      - { plan: extra-annual-us, from: 99.99, to: 134.99 }
+      - { plan: premium-annual-us, from: 119.99, to: 159.99 }
+      - { plan: extra-annual-uk, from: 83.99, to: 99.99 }
+      - { plan: premium-annual-uk, from: 99.99, to: 119.99 }
+    sources:
+      - url: https://blog.playstation.com/2023/08/30/playstation-plus-monthly-games-for-september-saints-row-black-desert-traveler-edition-generation-zero/
+        publisher: PlayStation Blog
+        kind: primary
+        published: 2023-08-30
+        archive: https://web.archive.org/web/20261013030856/https://blog.playstation.com/2023/08/30/playstation-plus-monthly-games-for-september-saints-row-black-desert-traveler-edition-generation-zero/
+        quote: >-
+          We also wanted to let you know that starting September 6 we will be increasing the price
+          for PlayStation Plus 12-month subscriptions globally across all benefit plans.
+      - url: https://blog.playstation.com/2023/08/30/playstation-plus-monthly-games-for-september-saints-row-black-desert-traveler-edition-generation-zero/
+        publisher: PlayStation Blog
+        kind: primary
+        published: 2023-08-30
+        archive: https://web.archive.org/web/20261013030856/https://blog.playstation.com/2023/08/30/playstation-plus-monthly-games-for-september-saints-row-black-desert-traveler-edition-generation-zero/
+        quote: >-
+          PlayStation Plus Essential 12-Month Subscription 79.99 USD | 71,99 Euro | 59.99 GBP |
+          6,800 Yen PlayStation Plus Extra 12-Month Subscription 134.99 USD | 125,99 Euro | 99.99
+          GBP | 11,700 Yen PlayStation Plus Premium 12-Month Subscription 159.99 USD | 151,99 Euro |
+          119.99 GBP | 13,900 Yen
+      - url: https://blog.playstation.com/2023/08/30/playstation-plus-monthly-games-for-september-saints-row-black-desert-traveler-edition-generation-zero/
+        publisher: PlayStation Blog
+        kind: primary
+        published: 2023-08-30
+        archive: https://web.archive.org/web/20261013030856/https://blog.playstation.com/2023/08/30/playstation-plus-monthly-games-for-september-saints-row-black-desert-traveler-edition-generation-zero/
+        quote: >-
+          For current 12-month subscribers, this price increase will not take effect until your next
+          renewal date that occurs on or after November 6.
+      - url: https://blog.playstation.com/2023/08/30/playstation-plus-monthly-games-for-september-saints-row-black-desert-traveler-edition-generation-zero/
+        publisher: PlayStation Blog
+        kind: primary
+        published: 2023-08-30
+        archive: https://web.archive.org/web/20261013030856/https://blog.playstation.com/2023/08/30/playstation-plus-monthly-games-for-september-saints-row-black-desert-traveler-edition-generation-zero/
+        quote: >-
+          This price adjustment will enable us to continue bringing high-quality games and
+          value-added benefits to your PlayStation Plus subscription service.
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
+
+  - id: discovery-removal
+    date: 2023-12
+    date_kind: reported
+    effective: 2023-12-31
+    category: bricked
+    title: PlayStation Store says bought Discovery shows will be deleted, then keeps them
+    what_changed: >-
+      PlayStation Store said in December 2023 that buyers would lose the Discovery shows they'd
+      bought on 31 December, removed from their video libraries. Ars Technica counted 1,318 seasons
+      on Sony's list and found no mention of refunds.
+    user_impact: >-
+      Anyone who'd bought Discovery shows on the PlayStation Store would have lost them.
+    company_said: Sony said it was due to its content licensing arrangements with content providers.
+    severity: 4
+    status: reversed
+    regions: [US]
+    reversed:
+      date: 2023-12-21
+      what: >-
+        Sony updated the notice on 21 December 2023 to say that, due to updated licensing
+        arrangements, the removal planned for 31 December was no longer happening.
+      sources:
+        - url: https://www.playstation.com/en-us/legal/psvideocontent/
+          publisher: PlayStation (US)
+          kind: primary
+          published: 2023-12-21
+          archive: https://web.archive.org/web/20240308174949/https://www.playstation.com/en-us/legal/psvideocontent/
+          quote: >-
+            Due to updated licensing arrangements, the Discovery content removal planned for
+            December 31, 2023 is no longer occurring.
+    related: [playstation/studiocanal-removal-2022, playstation/studiocanal-removal-2026]
+    sources:
+      - url: https://www.playstation.com/en-us/legal/psvideocontent/
+        publisher: PlayStation (US)
+        kind: primary
+        published: 2023-12-02
+        archive: https://web.archive.org/web/20231202233603/https://www.playstation.com/en-us/legal/psvideocontent/
+        quote: >-
+          As of 31 December 2023, due to our content licensing arrangements with content providers,
+          you will no longer be able to watch any of your previously purchased Discovery content and
+          the content will be removed from your video library.
+      - url: https://arstechnica.com/gadgets/2023/12/playstation-is-erasing-1318-seasons-of-discovery-shows-from-customer-libraries/
+        publisher: Ars Technica
+        kind: press
+        published: 2023-12-05
+        archive: https://web.archive.org/web/20231206151055/https://arstechnica.com/gadgets/2023/12/playstation-is-erasing-1318-seasons-of-discovery-shows-from-customer-libraries/
+        quote: >-
+          While some of the content listed sounds, shall we say, a bit niche, there are in total
+          1,318 seasons of shows listed for deletion.
+      - url: https://arstechnica.com/gadgets/2023/12/playstation-is-erasing-1318-seasons-of-discovery-shows-from-customer-libraries/
+        publisher: Ars Technica
+        kind: press
+        published: 2023-12-05
+        archive: https://web.archive.org/web/20231206151055/https://arstechnica.com/gadgets/2023/12/playstation-is-erasing-1318-seasons-of-discovery-shows-from-customer-libraries/
+        quote: No refunds mentioned
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
+
+  - id: helldivers-2-psn-link
+    date: 2024-05-03
+    date_kind: reported
+    category: lock-out
+    title: Helldivers 2 on Steam to require a PSN account, dropped 3 days later
+    what_changed: >-
+      Helldivers 2 players on Steam were told in May 2024 that they'd have to link a PSN account,
+      from 6 May for new players and later for current ones. PSN isn't available
+      in every country, so players there could have been locked out of a game they'd bought, and
+      Steam stopped selling it in countries without PSN.
+    user_impact: >-
+      Steam players would have needed a PSN account to keep playing a game they'd already bought.
+    company_said: >-
+      Arrowhead said linking had always been meant to be required, to protect players from
+      griefing and other abuse.
+    severity: 2
+    status: reversed
+    reversed:
+      date: 2024-05-06
+      what: >-
+        After the game got 84,000 negative reviews on Steam in a day, Sony said on 6 May 2024 that
+        the update adding the requirement wasn't going ahead.
+      sources:
+        - url: https://www.theverge.com/2024/5/6/24149918/sony-backtracks-now-says-it-wont-make-helldivers-2-players-on-steam-link-a-psn-account
+          publisher: The Verge
+          kind: press
+          published: 2024-05-06
+          archive: https://web.archive.org/web/20240601025749/https://www.theverge.com/2024/5/6/24149918/sony-backtracks-now-says-it-wont-make-helldivers-2-players-on-steam-link-a-psn-account
+          quote: >-
+            The May 6 update, which would have required Steam and PlayStation Network account
+            linking for new players and for current players beginning May 30, will not be moving
+            forward.
+    sources:
+      - url: https://www.theverge.com/2024/5/3/24148144/helldivers-2-steam-psn-account-link-review-bombing
+        publisher: The Verge
+        kind: press
+        published: 2024-05-03
+        archive: https://web.archive.org/web/20240504221329/https://www.theverge.com/2024/5/3/24148144/helldivers-2-steam-psn-account-link-review-bombing
+        quote: >-
+          According to the announcement , all new players on Steam will be required to link to a
+          PSN account starting May 6th, while current players will have a little bit longer, with
+          mandatory enforcement delayed until June 4th.
+      - url: https://www.theverge.com/2024/5/3/24148144/helldivers-2-steam-psn-account-link-review-bombing
+        publisher: The Verge
+        kind: press
+        published: 2024-05-03
+        archive: https://web.archive.org/web/20240504221329/https://www.theverge.com/2024/5/3/24148144/helldivers-2-steam-psn-account-link-review-bombing
+        quote: >-
+          PSN isn’t available everywhere, and this move could potentially lock players in certain
+          countries out of their game permanently.
+      - url: https://www.theverge.com/2024/5/3/24148144/helldivers-2-steam-psn-account-link-review-bombing
+        publisher: The Verge
+        kind: press
+        published: 2024-05-03
+        archive: https://web.archive.org/web/20240504221329/https://www.theverge.com/2024/5/3/24148144/helldivers-2-steam-psn-account-link-review-bombing
+        quote: >-
+          According to Helldivers 2 developer Arrowhead Game Studios, linking to a PSN account was
+          always going to be a requirement for Steam players, and the policy is there to ensure
+          players are protected from griefing and other in-game abuses.
+      - url: https://www.theverge.com/2024/5/11/24154412/steam-refunding-ghost-of-tsushima-preorders-psn-network-unavailable
+        publisher: The Verge
+        kind: press
+        published: 2024-05-11
+        archive: https://web.archive.org/web/20240603045743/https://www.theverge.com/2024/5/11/24154412/steam-refunding-ghost-of-tsushima-preorders-psn-network-unavailable
+        quote: >-
+          Earlier this month, Sony announced it would add mandatory PSN account linking to
+          Helldivers 2, which had already been available to buy in non-PSN countries for almost
+          three months. Steam quickly restricted where the game could be sold to only countries
+          where PSN was available.
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
+
+  - id: ps-plus-monthly-price-2026
+    date: 2026-05-18
+    date_kind: announced
+    effective: 2026-05-20
+    category: price-rise
+    title: PlayStation Plus 1-month plans go up for new and lapsed members, Essential to $10.99
+    what_changed: >-
+      Sony said on 18 May 2026 that PlayStation Plus would cost new customers more in some regions
+      from 20 May, with US 1-month Essential going to $10.99. Its post only gave Essential's prices,
+      but 1-month Extra went from $14.99 to $16.99 and Premium from $17.99 to $19.99 too, while
+      12-month plans stayed the same.
+    before: Essential $9.99 a month
+    after: Essential $10.99 a month
+    user_impact: >-
+      New and lapsed members in the US and UK paid more for 1-month plans, while people already on a
+      rolling plan kept their price as long as it didn't lapse.
+    company_said: Sony put it down to ongoing market conditions.
+    severity: 1
+    status: in-force
+    regions: [US, GB]
+    prices:
+      - { plan: essential-monthly-us, from: 9.99, to: 10.99 }
+      - { plan: extra-monthly-us, from: 14.99, to: 16.99 }
+      - { plan: premium-monthly-us, from: 17.99, to: 19.99 }
+      - { plan: extra-monthly-uk, from: 10.99, to: 11.99 }
+      - { plan: premium-monthly-uk, from: 13.49, to: 14.99 }
+    sources:
+      - url: https://www.engadget.com/2175751/sony-raises-ps-plus-prices-for-one-and-three-month-subscriptions/
+        publisher: Engadget
+        kind: press
+        published: 2026-05-18
+        archive: https://web.archive.org/web/20261022075341/https://www.engadget.com/2175751/sony-raises-ps-plus-prices-for-one-and-three-month-subscriptions/
+        quote: >-
+          Starting May 20, PlayStation Plus prices for new customers will increase in select
+          regions. Due to ongoing market conditions, prices will start at $10.99 USD / €9.99 EUR /
+          £7.99 GBP for 1-month subscriptions
+      - url: https://www.engadget.com/2175751/sony-raises-ps-plus-prices-for-one-and-three-month-subscriptions/
+        publisher: Engadget
+        kind: press
+        published: 2026-05-18
+        archive: https://web.archive.org/web/20261022075341/https://www.engadget.com/2175751/sony-raises-ps-plus-prices-for-one-and-three-month-subscriptions/
+        quote: This only impacts new subscribers, except in Turkey and India.
+      - url: https://www.pushsquare.com/news/2026/05/ps-plus-price-increases-also-hit-extra-premium-tiers-here-are-all-the-new-prices
+        publisher: Push Square
+        kind: press
+        published: 2026-05-21
+        archive: https://web.archive.org/web/20260810151455/https://www.pushsquare.com/news/2026/05/ps-plus-price-increases-also-hit-extra-premium-tiers-here-are-all-the-new-prices
+        quote: >-
+          Sony has sneakily increased the price of its PS Plus Extra and PS Plus Premium membership
+          tiers, despite this week’s communication implying only PS Plus Essential would be hit.
+      - url: https://www.pushsquare.com/news/2026/05/ps-plus-price-increases-also-hit-extra-premium-tiers-here-are-all-the-new-prices
+        publisher: Push Square
+        kind: press
+        published: 2026-05-21
+        archive: https://web.archive.org/web/20260810151455/https://www.pushsquare.com/news/2026/05/ps-plus-price-increases-also-hit-extra-premium-tiers-here-are-all-the-new-prices
+        quote: >-
+          1-Month Subscription $9.99 > $10.99 £6.99 > £7.99 €8.99 > €9.99 $14.99 > $16.99 £10.99 >
+          £11.99 €13.99 > €15.99 $17.99 > $19.99 £13.49 > £14.99 €16.99 > €18.99
+      - url: https://www.pushsquare.com/news/2026/05/ps-plus-price-increases-also-hit-extra-premium-tiers-here-are-all-the-new-prices
+        publisher: Push Square
+        kind: press
+        published: 2026-05-21
+        archive: https://web.archive.org/web/20260810151455/https://www.pushsquare.com/news/2026/05/ps-plus-price-increases-also-hit-extra-premium-tiers-here-are-all-the-new-prices
+        quote: >-
+          It’s worth noting that these changes only affect new or lapsed customers, so if you’re
+          committed to a rolling plan, you won’t have to pay the new prices – unless your
+          subscription expires.
+      - url: https://www.pushsquare.com/news/2026/05/ps-plus-price-increases-also-hit-extra-premium-tiers-here-are-all-the-new-prices
+        publisher: Push Square
+        kind: press
+        published: 2026-05-21
+        archive: https://web.archive.org/web/20260810151455/https://www.pushsquare.com/news/2026/05/ps-plus-price-increases-also-hit-extra-premium-tiers-here-are-all-the-new-prices
+        quote: the 12-month subscription option is unaffected across all three membership tiers
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
+
+  - id: disc-production-ends
+    date: 2026-07-01
+    date_kind: announced
+    effective: 2028-01
+    category: removed-feature
+    title: Sony stops making discs for new PlayStation games from January 2028
+    what_changed: >-
+      Sony said on 1 July 2026 that it would stop producing discs for all new PlayStation console
+      games from January 2028. After that, new games are sold digitally only, on PlayStation Store
+      and at retailers, while games released on disc before then aren't affected.
+    before: New games on disc or digital
+    after: New PlayStation console games digital only
+    user_impact: >-
+      Anyone who buys new PlayStation games on disc will have to buy them digitally from January
+      2028.
+    company_said: >-
+      Sony said consumer preferences and the wider entertainment industry were moving from physical
+      discs to digital.
+    severity: 2
+    status: scheduled
+    sources:
+      - url: https://blog.playstation.com/2026/07/01/physical-disc-production-ending-in-january-2028-for-new-games-releasing-on-playstation-consoles/
+        publisher: PlayStation Blog
+        kind: primary
+        published: 2026-07-01
+        archive: https://web.archive.org/web/20261120200916/https://blog.playstation.com/2026/07/01/physical-disc-production-ending-in-january-2028-for-new-games-releasing-on-playstation-consoles/
+        quote: >-
+          physical game disc production for all new games releasing on PlayStation consoles will be
+          discontinued starting January 2028
+      - url: https://blog.playstation.com/2026/07/01/physical-disc-production-ending-in-january-2028-for-new-games-releasing-on-playstation-consoles/
+        publisher: PlayStation Blog
+        kind: primary
+        published: 2026-07-01
+        archive: https://web.archive.org/web/20261120200916/https://blog.playstation.com/2026/07/01/physical-disc-production-ending-in-january-2028-for-new-games-releasing-on-playstation-consoles/
+        quote: >-
+          Following this date, new games will be available on PlayStation Store and at retailers in
+          digital formats only.
+      - url: https://blog.playstation.com/2026/07/01/physical-disc-production-ending-in-january-2028-for-new-games-releasing-on-playstation-consoles/
+        publisher: PlayStation Blog
+        kind: primary
+        published: 2026-07-01
+        archive: https://web.archive.org/web/20261120200916/https://blog.playstation.com/2026/07/01/physical-disc-production-ending-in-january-2028-for-new-games-releasing-on-playstation-consoles/
+        quote: >-
+          This transition has no impact on games that already released, or will be releasing, prior
+          to January 2028 in disc format.
+      - url: https://blog.playstation.com/2026/07/01/physical-disc-production-ending-in-january-2028-for-new-games-releasing-on-playstation-consoles/
+        publisher: PlayStation Blog
+        kind: primary
+        published: 2026-07-01
+        archive: https://web.archive.org/web/20261120200916/https://blog.playstation.com/2026/07/01/physical-disc-production-ending-in-january-2028-for-new-games-releasing-on-playstation-consoles/
+        quote: >-
+          As consumer preferences and the broader entertainment industry continue to shift away from
+          physical discs to digital
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
+
+  - id: studiocanal-removal-2026
+    date: 2026-09-01
+    date_kind: effective
+    category: bricked
+    title: PlayStation pulls bought StudioCanal films in the UK, Ireland, France, Spain and Italy
+    what_changed: >-
+      Sony said bought StudioCanal films and shows would leave PlayStation video libraries in the
+      UK, Ireland, France, Spain and Italy on 1 September 2026. Kotaku reported in June that Sony
+      was contacting buyers, counted 551 films and TV series on its list and found no mention of
+      refunds.
+    user_impact: >-
+      People in those countries who'd bought StudioCanal titles on the PlayStation Store lost access
+      to them.
+    company_said: Sony said it was due to its content licensing agreements.
+    severity: 4
+    status: in-force
+    regions: [GB, IE, FR, ES, IT]
+    related: [playstation/studiocanal-removal-2022, playstation/discovery-removal]
+    sources:
+      - url: https://www.playstation.com/en-gb/legal/psvideocontent/
+        publisher: PlayStation (UK)
+        kind: primary
+        published: 2026-11-20
+        archive: https://web.archive.org/web/20261120200905/https://www.playstation.com/en-gb/legal/psvideocontent/
+        quote: >-
+          From September 1, 2026, due to our content licensing agreements, you will no longer be
+          able to access your previously purchased content from Studio Canal, and it will be removed
+          from your video library.
+      - url: https://kotaku.com/playstation-store-movies-digital-studio-canal-terminator-2000711013
+        publisher: Kotaku
+        kind: press
+        published: 2026-06-26
+        archive: https://web.archive.org/web/20260628023437/https://kotaku.com/playstation-store-movies-digital-studio-canal-terminator-2000711013
+        quote: >-
+          The same warning is now reproduced in full on the PlayStation website , along with the
+          list of 551 films and TV series that are being pulled from people’s libraries.
+      - url: https://kotaku.com/playstation-store-movies-digital-studio-canal-terminator-2000711013
+        publisher: Kotaku
+        kind: press
+        published: 2026-06-26
+        archive: https://web.archive.org/web/20260628023437/https://kotaku.com/playstation-store-movies-digital-studio-canal-terminator-2000711013
+        quote: There’s no mention of any refunds or make-goods for the affected users.
+      - url: https://www.playstation.com/en-ie/legal/psvideocontent/
+        publisher: PlayStation (Ireland)
+        kind: primary
+        published: 2026-09-23
+        archive: https://web.archive.org/web/20260923010622/https://www.playstation.com/en-ie/legal/psvideocontent/
+        quote: >-
+          From September 1, 2026, due to our content licensing agreements, you will no longer be
+          able to access your previously purchased content from Studio Canal, and it will be removed
+          from your video library.
+      - url: https://www.playstation.com/fr-fr/legal/psvideocontent/
+        publisher: PlayStation (France)
+        kind: primary
+        published: 2026-07-16
+        archive: https://web.archive.org/web/20260716040646/https://www.playstation.com/fr-fr/legal/psvideocontent/
+        quote: >-
+          À compter du 1er septembre 2026, en raison de nos accords de licence de contenu, vous ne
+          pourrez plus accéder au contenu acheté précédemment auprès de Studio Canal, et il sera
+          supprimé de votre bibliothèque vidéo.
+      - url: https://www.playstation.com/es-es/legal/psvideocontent/
+        publisher: PlayStation (Spain)
+        kind: primary
+        published: 2026-07-12
+        archive: https://web.archive.org/web/20260712134100/https://www.playstation.com/es-es/legal/psvideocontent/
+        quote: >-
+          A partir del 1 de septiembre de 2026, debido a nuestros acuerdos de licencia de contenido,
+          ya no podrás acceder al contenido que compraste anteriormente en Studio Canal y se
+          eliminará de tu videoteca.
+      - url: https://www.playstation.com/it-it/legal/psvideocontent/
+        publisher: PlayStation (Italy)
+        kind: primary
+        published: 2026-07-11
+        archive: https://web.archive.org/web/20260711021113/https://www.playstation.com/it-it/legal/psvideocontent/
+        quote: >-
+          Dal 1° settembre 2026, a causa dei nostri accordi di licenza sui contenuti, non potrai più
+          accedere ai tuoi contenuti di Studio Canal precedentemente acquistati, e verranno rimossi
+          dalla tua raccolta video.
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
