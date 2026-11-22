@@ -73,6 +73,11 @@
   url: https://newsroom.sonos.com
   wikipedia: https://en.wikipedia.org/wiki/Sonos
 
+- id: smartlabs
+  name: Smartlabs
+  url: https://web.archive.org/web/20220420150811/https://www.insteon.com/news2022
+  wikipedia: https://en.wikipedia.org/wiki/Insteon
+
 - id: warner-bros-discovery
   name: Warner Bros. Discovery
   url: https://www.wbd.com
