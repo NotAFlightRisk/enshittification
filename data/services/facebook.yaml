@@ -1,0 +1,400 @@
+service: facebook
+name: Facebook
+company: meta
+url: https://www.facebook.com
+crw: https://consumerrights.wiki/w/Facebook
+wikipedia: https://en.wikipedia.org/wiki/Facebook
+
+changes:
+  - id: beacon
+    date: 2007-11-06
+    date_kind: announced
+    category: tracking
+    title: Facebook Beacon shares what people do on other sites with their Facebook friends
+    what_changed: >-
+      Facebook launched Beacon on 6 November 2007 with 44 sites, sharing things people did there,
+      like buying a movie ticket, with their friends on Facebook. It was opt-out at first, so if
+      someone forgot to decline, Beacon shared it anyway.
+    user_impact: >-
+      Facebook users who bought or did something on a participating site, like Fandango or
+      Travelocity, could have it shared with their friends unless they declined in time.
+    company_said: >-
+      Mark Zuckerberg said Facebook made it opt-out so it would be lightweight and people wouldn't
+      have to touch it for it to work, and apologised for how it was handled.
+    severity: 2
+    status: reversed
+    reversed:
+      date: 2007-12-05
+      what: >-
+        Facebook made Beacon opt-in the week before 5 December 2007, and that day added a setting to
+        turn it off completely, saying it wouldn't store actions people declined to share.
+      sources:
+        - url: https://blog.facebook.com/blog.php?post=7584397130
+          publisher: The Facebook Blog
+          kind: primary
+          published: 2007-12-05
+          archive: https://web.archive.org/web/20080107025500/http://blog.facebook.com/blog.php?post=7584397130
+          quote: >-
+            Last week we changed Beacon to be an opt-in system, and today we're releasing a privacy
+            control to turn off Beacon completely.
+    sources:
+      - url: https://www.facebook.com/press/releases.php?p=9166
+        publisher: Facebook Press Room
+        kind: primary
+        published: 2007-11-06
+        archive: https://web.archive.org/web/20080214193303/http://www.facebook.com/press/releases.php?p=9166
+        quote: >-
+          Facebook announced today that 44 websites are using Facebook Beacon to allow users to
+          share information from other websites for distribution to their friends on Facebook.
+      - url: https://www.facebook.com/press/releases.php?p=9166
+        publisher: Facebook Press Room
+        kind: primary
+        published: 2007-11-06
+        archive: https://web.archive.org/web/20080214193303/http://www.facebook.com/press/releases.php?p=9166
+        quote: >-
+          Beacon is a core element of the Facebook Ads system for connecting businesses with users
+          and targeting advertising to the audiences they want.
+      - url: https://blog.facebook.com/blog.php?post=7584397130
+        publisher: The Facebook Blog
+        kind: primary
+        published: 2007-12-05
+        archive: https://web.archive.org/web/20080107025500/http://blog.facebook.com/blog.php?post=7584397130
+        quote: >-
+          The problem with our initial approach of making it an opt-out system instead of opt-in was
+          that if someone forgot to decline to share something, Beacon still went ahead and shared
+          it with their friends.
+      - url: https://blog.facebook.com/blog.php?post=7584397130
+        publisher: The Facebook Blog
+        kind: primary
+        published: 2007-12-05
+        archive: https://web.archive.org/web/20080107025500/http://blog.facebook.com/blog.php?post=7584397130
+        quote: >-
+          At first we tried to make it very lightweight so people wouldn't have to touch it for it
+          to work.
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
+
+  - id: messaging-moved-to-messenger
+    date: 2014-04-09
+    date_kind: announced
+    category: removed-feature
+    title: Facebook takes messaging out of its mobile app, so chatting needs Messenger
+    what_changed: >-
+      Facebook began telling users on 9 April 2014 that messaging would leave its iOS and Android
+      apps, so they'd need the Messenger app to chat on mobile. Users in a few European countries
+      went first, with 2 weeks' notice, and TechCrunch reported on 28 July 2014 that everyone else
+      would follow within days.
+    user_impact: >-
+      Facebook users who messaged in the iPhone or Android app had to install Messenger, or switch
+      to Facebook's mobile site, to keep chatting on their phone.
+    company_said: >-
+      Facebook pointed to Mark Zuckerberg saying messaging as a second-class thing inside the
+      Facebook app added friction to replying, so it would rather people use a more focused app.
+    severity: 2
+    status: in-force
+    sources:
+      - url: https://techcrunch.com/2014/04/09/facebook-messenger-or-the-highway/
+        publisher: TechCrunch
+        kind: press
+        published: 2014-04-09
+        archive: https://web.archive.org/web/20261009090730/https://techcrunch.com/2014/04/09/facebook-messenger-or-the-highway/
+        quote: >-
+          It’s starting to notify users they’ll no longer have the option to send and receive
+          messages in Facebook for iOS and Android, and will instead have to download Facebook
+          Messenger to chat on mobile.
+      - url: https://techcrunch.com/2014/04/09/facebook-messenger-or-the-highway/
+        publisher: TechCrunch
+        kind: press
+        published: 2014-04-09
+        archive: https://web.archive.org/web/20261009090730/https://techcrunch.com/2014/04/09/facebook-messenger-or-the-highway/
+        quote: >-
+          we found that having it as a second-class thing inside the Facebook app makes it so
+          there’s more friction to replying to messages
+      - url: https://techcrunch.com/2014/04/09/facebook-messenger-or-the-highway/
+        publisher: TechCrunch
+        kind: press
+        published: 2014-04-09
+        archive: https://web.archive.org/web/20261009090730/https://techcrunch.com/2014/04/09/facebook-messenger-or-the-highway/
+        quote: >-
+          The only way to escape the migration is to either have a low-end Android with an OS too
+          old to run Messenger, use Facebook’s mobile web site, or use Facebook’s standalone content
+          reader app Paper.
+      - url: https://www.theverge.com/2014/4/9/5598440/facebook-will-turn-off-messaging-in-its-mobile-app-forcing-you-to-download-messenger
+        publisher: The Verge
+        kind: press
+        published: 2014-04-09
+        archive: https://web.archive.org/web/20260925190205/https://www.theverge.com/2014/4/9/5598440/facebook-will-turn-off-messaging-in-its-mobile-app-forcing-you-to-download-messenger
+        quote: >-
+          the company began notifying users in a few European countries that in two weeks, they
+          won’t be able to message friends through the Facebook app anymore.
+      - url: https://techcrunch.com/2014/07/28/facebook-moving-messages/
+        publisher: TechCrunch
+        kind: press
+        published: 2014-07-28
+        archive: https://web.archive.org/web/20260904234831/https://techcrunch.com/2014/07/28/facebook-moving-messages/
+        quote: >-
+          Over the next few days, Facebook will stop allowing messaging in its main iPhone and Android
+          apps, and force all their users around the world to download its standalone Messenger app
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
+
+  - id: two-factor-numbers-for-ads
+    date: 2018-09-26
+    date_kind: reported
+    category: tracking
+    title: Facebook uses phone numbers given for 2FA login to target ads
+    what_changed: >-
+      Gizmodo reported on 26 September 2018 that advertisers could target phone numbers people gave
+      Facebook for 2FA login. Facebook confirmed it to TechCrunch the next day.
+    user_impact: >-
+      Facebook users who added a phone number to secure their account could be targeted with ads
+      through it, unless they used 2FA without a phone number.
+    company_said: >-
+      Facebook said it uses the information people provide to offer a better, more personalized
+      experience on Facebook, including ads.
+    severity: 2
+    status: reversed
+    reversed:
+      date: 2019-07-24
+      what: >-
+        The FTC's 2019 order against Facebook prohibited it from using phone numbers obtained for a
+        security feature, like two-factor authentication, for advertising.
+      sources:
+        - url: https://www.ftc.gov/news-events/press-releases/2019/07/ftc-imposes-5-billion-penalty-sweeping-new-privacy-restrictions
+          publisher: US Federal Trade Commission
+          kind: press
+          published: 2019-07-24
+          archive: https://web.archive.org/web/20220307194809/https://www.ftc.gov/news-events/press-releases/2019/07/ftc-imposes-5-billion-penalty-sweeping-new-privacy-restrictions
+          quote: >-
+            Facebook is prohibited from using telephone numbers obtained to enable a security
+            feature (e.g., two-factor authentication) for advertising
+    sources:
+      - url: https://techcrunch.com/2018/09/27/yes-facebook-is-using-your-2fa-phone-number-to-target-you-with-ads/
+        publisher: TechCrunch
+        kind: press
+        published: 2018-09-27
+        archive: https://web.archive.org/web/20261018105344/https://techcrunch.com/2018/09/27/yes-facebook-is-using-your-2fa-phone-number-to-target-you-with-ads/
+        quote: >-
+          Facebook has confirmed it does in fact use phone numbers that users provided it for
+          security purposes to also target them with ads.
+      - url: https://techcrunch.com/2018/09/27/yes-facebook-is-using-your-2fa-phone-number-to-target-you-with-ads/
+        publisher: TechCrunch
+        kind: press
+        published: 2018-09-27
+        archive: https://web.archive.org/web/20261018105344/https://techcrunch.com/2018/09/27/yes-facebook-is-using-your-2fa-phone-number-to-target-you-with-ads/
+        quote: >-
+          We use the information people provide to offer a better, more personalized experience on
+          Facebook, including ads.
+      - url: https://techcrunch.com/2018/09/27/yes-facebook-is-using-your-2fa-phone-number-to-target-you-with-ads/
+        publisher: TechCrunch
+        kind: press
+        published: 2018-09-27
+        archive: https://web.archive.org/web/20261018105344/https://techcrunch.com/2018/09/27/yes-facebook-is-using-your-2fa-phone-number-to-target-you-with-ads/
+        quote: >-
+          A spokesman also told us that users can opt out of this ad-based repurposing of their
+          security digits by not using phone number based 2FA.
+      - url: https://gizmodo.com/facebook-is-giving-advertisers-access-to-your-shadow-co-1828476051
+        publisher: Gizmodo
+        kind: press
+        published: 2018-09-26
+        archive: https://web.archive.org/web/20180927003624/https://gizmodo.com/facebook-is-giving-advertisers-access-to-your-shadow-co-1828476051
+        quote: >-
+          They found that when a user gives Facebook a phone number for two-factor authentication
+          or in order to receive alerts about new log-ins to a user’s account, that phone number
+          became targetable by an advertiser within a couple of weeks.
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
+
+  - id: meta-ai-search-bar
+    date: 2024-04-18
+    date_kind: announced
+    category: ai
+    title: Meta AI goes into Facebook's search bar, with no way to turn it off
+    what_changed: >-
+      Meta said on 18 April 2024 it was rolling out Meta AI in search on Facebook, Instagram,
+      WhatsApp and Messenger, in English in the US and 13 other countries. There was no button to
+      turn it off, though people could still search as they normally would.
+    user_impact: >-
+      Facebook users who got it had Meta AI in the search bar whether they wanted it or not, with
+      ordinary search still working underneath.
+    company_said: >-
+      Meta said people could search as they normally would and choose between Meta AI's answers and
+      other results.
+    severity: 1
+    status: in-force
+    related: [instagram/meta-ai-search-bar]
+    sources:
+      - url: https://about.fb.com/news/2024/04/meta-ai-assistant-built-with-llama-3/
+        publisher: Meta Newsroom
+        kind: primary
+        published: 2024-04-18
+        archive: https://web.archive.org/web/20261031082055/https://about.fb.com/news/2024/04/meta-ai-assistant-built-with-llama-3/
+        quote: Meta AI is also available in search across Facebook, Instagram, WhatsApp and Messenger.
+      - url: https://apnews.com/article/meta-ai-instagram-facebook-turn-off-disable-fd778171e2a1e7098d7b3756deb5587b
+        publisher: AP News
+        kind: press
+        published: 2024-05-30
+        archive: https://web.archive.org/web/20260720003322/https://apnews.com/article/meta-ai-instagram-facebook-turn-off-disable-fd778171e2a1e7098d7b3756deb5587b
+        quote: >-
+          The bad news is there’s no one button to turn off Meta AI on Facebook, Instagram,
+          Messenger or WhatsApp.
+      - url: https://apnews.com/article/meta-ai-instagram-facebook-turn-off-disable-fd778171e2a1e7098d7b3756deb5587b
+        publisher: AP News
+        kind: press
+        published: 2024-05-30
+        archive: https://web.archive.org/web/20260720003322/https://apnews.com/article/meta-ai-instagram-facebook-turn-off-disable-fd778171e2a1e7098d7b3756deb5587b
+        quote: >-
+          Meta AI is so far only available in the United States and 13 other countries including
+          Australia, Canada, Ghana, Jamaica, Malawi, New Zealand, Nigeria, Pakistan, Singapore, South
+          Africa, Uganda, Zambia and Zimbabwe.
+      - url: https://apnews.com/article/meta-ai-instagram-facebook-turn-off-disable-fd778171e2a1e7098d7b3756deb5587b
+        publisher: AP News
+        kind: press
+        published: 2024-05-30
+        archive: https://web.archive.org/web/20260720003322/https://apnews.com/article/meta-ai-instagram-facebook-turn-off-disable-fd778171e2a1e7098d7b3756deb5587b
+        quote: >-
+          “You can search how you normally would and choose to engage with a variety of results —
+          ones from Meta AI or others that appear as you type,” the spokesperson said in a statement.
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
+
+  - id: eu-uk-ai-training
+    date: 2024-06-10
+    date_kind: announced
+    category: ai
+    title: Meta plans to train its AI on EU and UK public Facebook posts unless people object
+    what_changed: >-
+      Meta said on 10 June 2024 that it would train its AI on public posts, comments and photos
+      shared by adults in the EU, unless they sent an objection form. It paused on 14 June 2024 after
+      the Irish Data Protection Commission asked it to delay, said on 13 September 2024 it would
+      start in the UK, and planned to begin in the EU on 27 May 2025.
+    user_impact: >-
+      Adults in the EU and UK had to send an objection form to keep their public Facebook posts out
+      of Meta's AI training.
+    company_said: >-
+      Meta said that without training on the public content Europeans share, its AI wouldn't
+      accurately understand regional languages, cultures or trending topics.
+    severity: 1
+    status: in-force
+    regions: [AT, BE, BG, HR, CY, CZ, DK, EE, FI, FR, DE, GR, HU, IE, IT, LV, LT, LU, MT, NL, PL, PT,
+      RO, SK, SI, ES, SE, GB]
+    related: [instagram/eu-uk-ai-training, facebook/ai-chats-ad-targeting]
+    sources:
+      - url: https://about.fb.com/news/2024/06/building-ai-technology-for-europeans-in-a-transparent-and-responsible-way/
+        publisher: Meta Newsroom
+        kind: primary
+        published: 2024-06-10
+        archive: https://web.archive.org/web/20261116101419/https://about.fb.com/news/2024/06/building-ai-technology-for-europeans-in-a-transparent-and-responsible-way/
+        quote: >-
+          To do this, we want to train our large language models that power AI features using the
+          content that people in the EU have chosen to share publicly on Meta’s products and
+          services.
+      - url: https://about.fb.com/news/2024/06/building-ai-technology-for-europeans-in-a-transparent-and-responsible-way/
+        publisher: Meta Newsroom
+        kind: primary
+        published: 2024-06-14
+        archive: https://web.archive.org/web/20261116101419/https://about.fb.com/news/2024/06/building-ai-technology-for-europeans-in-a-transparent-and-responsible-way/
+        quote: >-
+          We’re disappointed by the request from the Irish Data Protection Commission (DPC), our lead
+          regulator, on behalf of the European DPAs, to delay training our large language models
+          (LLMs) using public content shared by adults on Facebook and Instagram
+      - url: https://about.fb.com/news/2024/06/building-ai-technology-for-europeans-in-a-transparent-and-responsible-way/
+        publisher: Meta Newsroom
+        kind: primary
+        published: 2024-06-10
+        archive: https://web.archive.org/web/20261116101419/https://about.fb.com/news/2024/06/building-ai-technology-for-europeans-in-a-transparent-and-responsible-way/
+        quote: >-
+          If we don’t train our models on the public content that Europeans share on our services
+          and others, such as public posts or comments, then models and the AI features they power
+          won’t accurately understand important regional languages, cultures or trending topics on
+          social media.
+      - url: https://about.fb.com/news/2024/09/building-ai-technology-for-the-uk-in-a-responsible-and-transparent-way/
+        publisher: Meta Newsroom
+        kind: primary
+        published: 2024-09-13
+        archive: https://web.archive.org/web/20260905035056/https://about.fb.com/news/2024/09/building-ai-technology-for-the-uk-in-a-responsible-and-transparent-way/
+        quote: >-
+          We will begin training for AI at Meta using public content shared by adults on Facebook
+          and Instagram in the UK over the coming months.
+      - url: https://about.fb.com/news/2025/04/making-ai-work-harder-for-europeans/
+        publisher: Meta Newsroom
+        kind: primary
+        published: 2025-04-14
+        archive: https://web.archive.org/web/20261116072802/https://about.fb.com/news/2025/04/making-ai-work-harder-for-europeans/
+        quote: >-
+          Today, we’re announcing our plans to train AI at Meta using public content —like public
+          posts and comments— shared by adults on our products in the EU.
+      - url: https://www.theregister.com/2025/05/22/irish_data_protection_commission_gives/
+        publisher: The Register
+        kind: press
+        published: 2025-05-22
+        archive: https://web.archive.org/web/20251211222915/https://www.theregister.com/2025/05/22/irish_data_protection_commission_gives/
+        quote: Meta intends to begin training AI on EU citizens' data on May 27.
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
+
+  - id: ai-chats-ad-targeting
+    date: 2025-10-01
+    date_kind: announced
+    effective: 2025-12-16
+    category: tracking
+    title: Meta uses people's Meta AI chats to pick the ads they see, with no opt-out
+    what_changed: >-
+      Meta said on 1 October 2025 that from 16 December 2025 it would use people's Meta AI chats to
+      pick the content and ads they see on Facebook and Instagram. Meta told TechCrunch there was no
+      way to opt out, and the change didn't cover the EU, the UK or South Korea.
+    user_impact: >-
+      Facebook users who chat with Meta AI can have those chats used to target ads at them, apart
+      from conversations on sensitive topics like health or religion.
+    company_said: >-
+      Meta said AI interactions would be another signal to show people content they're more likely
+      to be interested in.
+    severity: 2
+    status: in-force
+    related: [instagram/ai-chats-ad-targeting, facebook/eu-uk-ai-training]
+    sources:
+      - url: https://about.fb.com/news/2025/10/improving-your-recommendations-apps-ai-meta/
+        publisher: Meta Newsroom
+        kind: primary
+        published: 2025-10-01
+        archive: https://web.archive.org/web/20261117171706/https://about.fb.com/news/2025/10/improving-your-recommendations-apps-ai-meta/
+        quote: >-
+          We will soon use your interactions with AI at Meta to personalize the content and ads you
+          see, including things like posts and reels. We’ll start notifying people about this update
+          next week via notifications and emails, several weeks before it goes into effect on
+          December 16, 2025.
+      - url: https://about.fb.com/news/2025/10/improving-your-recommendations-apps-ai-meta/
+        publisher: Meta Newsroom
+        kind: primary
+        published: 2025-10-01
+        archive: https://web.archive.org/web/20261117171706/https://about.fb.com/news/2025/10/improving-your-recommendations-apps-ai-meta/
+        quote: >-
+          Soon, interactions with AIs will be another signal we use to improve people’s experience.
+      - url: https://techcrunch.com/2025/10/01/meta-plans-to-sell-targeted-ads-based-on-data-in-your-ai-chats/
+        publisher: TechCrunch
+        kind: press
+        published: 2025-10-01
+        archive: https://web.archive.org/web/20261106042024/https://techcrunch.com/2025/10/01/meta-plans-to-sell-targeted-ads-based-on-data-in-your-ai-chats/
+        quote: There is no way to opt out, according to Meta.
+      - url: https://techcrunch.com/2025/10/01/meta-plans-to-sell-targeted-ads-based-on-data-in-your-ai-chats/
+        publisher: TechCrunch
+        kind: press
+        published: 2025-10-01
+        archive: https://web.archive.org/web/20261106042024/https://techcrunch.com/2025/10/01/meta-plans-to-sell-targeted-ads-based-on-data-in-your-ai-chats/
+        quote: >-
+          The new policy applies globally, except for users in South Korea, the United Kingdom, and
+          the European Union, where privacy laws prevent this type of data collection.
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
