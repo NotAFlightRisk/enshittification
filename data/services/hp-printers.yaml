@@ -1,0 +1,81 @@
+service: hp-printers
+name: HP printers
+company: hp
+url: https://www.hp.com/us-en/printers.html
+crw: https://consumerrights.wiki/w/HP
+
+changes:
+  - id: dynamic-security-2023
+    date: 2023-03-09
+    date_kind: reported
+    category: lock-out
+    title: HP printer owners report updates blocking their third-party ink cartridges
+    what_changed: >-
+      In March 2023 HP printer owners reported firmware updates blocking the third-party ink
+      cartridges with non-HP chips they'd been using. Complaints included the OfficeJet 7740 and
+      OfficeJet Pro 6970, and HP's Dynamic Security page says its updates can
+      block cartridges with a non-HP chip, including ones that work today.
+    before: Some third-party cartridges with non-HP chips worked
+    after: Some blocked after firmware updates
+    user_impact: >-
+      Owners who'd used third-party cartridges for years found them blocked after an update, and
+      some said they'd have to buy HP ink instead.
+    company_said: >-
+      HP said it uses dynamic security to protect the quality of its customer experience, the
+      integrity of its printing systems and its intellectual property.
+    severity: 3
+    status: in-force
+    sources:
+      - url: https://support.hp.com/us-en/document/ish_7470520-7449625-16
+        publisher: HP Support
+        kind: primary
+        published: 2023-05-24
+        archive: https://web.archive.org/web/20230524082309/https://support.hp.com/us-en/document/ish_7470520-7449625-16
+        quote: >-
+          Updates can improve, enhance, or extend the printer's functionality and features, protect
+          against security threats, and serve other purposes, but these updates can also block
+          cartridges using a non-HP chip or modified or non-HP circuitry from working in the
+          printer, including cartridges that work today.
+      - url: https://support.hp.com/us-en/document/ish_7470520-7449625-16
+        publisher: HP Support
+        kind: primary
+        published: 2023-05-24
+        archive: https://web.archive.org/web/20230524082309/https://support.hp.com/us-en/document/ish_7470520-7449625-16
+        quote: >-
+          HP uses dynamic security measures to protect the quality of our customer experience,
+          maintain the integrity of our printing systems, and protect our intellectual property.
+      - url: https://arstechnica.com/gadgets/2023/03/customers-fume-as-hp-blocks-third-party-ink-from-more-of-its-printers/
+        publisher: Ars Technica
+        kind: press
+        published: 2023-03-09
+        archive: https://web.archive.org/web/20230309203359/https://arstechnica.com/gadgets/2023/03/customers-fume-as-hp-blocks-third-party-ink-from-more-of-its-printers/
+        quote: >-
+          HP customers are showing frustration online as the vendor continues to use firmware
+          updates to discourage or, as users report, outright block the use of non-HP-brand ink
+          cartridges in HP printers.
+      - url: https://arstechnica.com/gadgets/2023/03/customers-fume-as-hp-blocks-third-party-ink-from-more-of-its-printers/
+        publisher: Ars Technica
+        kind: press
+        published: 2023-03-09
+        archive: https://web.archive.org/web/20230309203359/https://arstechnica.com/gadgets/2023/03/customers-fume-as-hp-blocks-third-party-ink-from-more-of-its-printers/
+        quote: >-
+          HP community support threads include complaints about the OfficeJet 7740 and OfficeJet
+          Pro 6970
+      - url: https://arstechnica.com/gadgets/2023/03/customers-fume-as-hp-blocks-third-party-ink-from-more-of-its-printers/
+        publisher: Ars Technica
+        kind: press
+        published: 2023-03-09
+        archive: https://web.archive.org/web/20230309203359/https://arstechnica.com/gadgets/2023/03/customers-fume-as-hp-blocks-third-party-ink-from-more-of-its-printers/
+        quote: Some pointed to third-party brands they had relied on for years.
+      - url: https://arstechnica.com/gadgets/2023/03/customers-fume-as-hp-blocks-third-party-ink-from-more-of-its-printers/2/
+        publisher: Ars Technica
+        kind: press
+        published: 2023-03-09
+        archive: https://web.archive.org/web/20230309203700/https://arstechnica.com/gadgets/2023/03/customers-fume-as-hp-blocks-third-party-ink-from-more-of-its-printers/2/
+        quote: >-
+          I saw a few desperate users online say they'd have to buy HP ink if they couldn't find
+          another solution.
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22

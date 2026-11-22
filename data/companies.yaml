@@ -83,6 +83,11 @@
   url: https://web.archive.org/web/20250226161747/https://humane.com/
   wikipedia: https://en.wikipedia.org/wiki/Humane_Inc.
 
+- id: hp
+  name: HP
+  url: https://www.hp.com
+  wikipedia: https://en.wikipedia.org/wiki/HP_Inc.
+
 - id: sonos
   name: Sonos
   url: https://newsroom.sonos.com
