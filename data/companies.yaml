@@ -33,6 +33,11 @@
   url: https://www.aboutamazon.com
   wikipedia: https://en.wikipedia.org/wiki/Amazon_(company)
 
+- id: apple
+  name: Apple
+  url: https://www.apple.com
+  wikipedia: https://en.wikipedia.org/wiki/Apple_Inc.
+
 - id: microsoft
   name: Microsoft
   url: https://news.microsoft.com

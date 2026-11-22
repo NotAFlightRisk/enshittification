@@ -1,0 +1,186 @@
+service: dark-sky
+name: Dark Sky
+company: apple
+url: https://darksky.net
+
+changes:
+  - id: android-app-shutdown
+    date: 2020-03-31
+    date_kind: announced
+    effective: 2020-08-01
+    category: lock-out
+    title: Dark Sky shuts down its Android and Wear OS apps after joining Apple
+    what_changed: >-
+      Dark Sky said on 31 March 2020, the day it joined Apple, that its Android and Wear OS app
+      could no longer be downloaded and would be shut down. The shutdown moved from 1 July to 1
+      August 2020, and subscribers still active then got a full refund.
+    user_impact: >-
+      Android and Wear OS users lost Dark Sky, while the iOS app stayed on sale in the App Store.
+    severity: 3
+    status: in-force
+    related: [dark-sky/ios-app-shutdown]
+    sources:
+      - url: https://blog.darksky.net/dark-sky-has-a-new-home/
+        publisher: Dark Sky Blog
+        kind: primary
+        published: 2020-03-31
+        archive: https://web.archive.org/web/20200331172148/https://blog.darksky.net/dark-sky-has-a-new-home/
+        quote: >-
+          The app will no longer be available for download. Service to existing users and
+          subscribers will continue until July 1, 2020, at which point the app will be shut down.
+      - url: https://blog.darksky.net/dark-sky-has-a-new-home/
+        publisher: Dark Sky Blog
+        kind: primary
+        published: 2020-08-01
+        archive: https://web.archive.org/web/20200807160125/https://blog.darksky.net/dark-sky-has-a-new-home/
+        quote: >-
+          Update: The Android and Wear OS apps shut down on August 1, 2020. Subscribers who were
+          active at that time will be receiving a full refund.
+      - url: https://blog.darksky.net/dark-sky-has-a-new-home/
+        publisher: Dark Sky Blog
+        kind: primary
+        published: 2020-03-31
+        archive: https://web.archive.org/web/20200331172148/https://blog.darksky.net/dark-sky-has-a-new-home/
+        quote: >-
+          There will be no changes to Dark Sky for iOS at this time. It will continue to be
+          available for purchase in the App Store.
+      - url: https://techcrunch.com/2022/09/13/as-apples-weatherkit-launches-dark-sky-for-ios-to-wind-down-operations-by-year-end/
+        publisher: TechCrunch
+        kind: press
+        published: 2022-09-13
+        archive: https://web.archive.org/web/20220913160327/https://techcrunch.com/2022/09/13/as-apples-weatherkit-launches-dark-sky-for-ios-to-wind-down-operations-by-year-end/
+        quote: >-
+          Following the acquisition, Apple promptly wound down the Android and Wear OS versions of
+          Dark Sky
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
+
+  - id: ios-app-shutdown
+    date: 2023-01-01
+    date_kind: effective
+    category: bricked
+    title: Apple switches off the Dark Sky app for iPhone, including copies people bought
+    what_changed: >-
+      Dark Sky said its iOS app would stop working as of 1 January 2023, and that copies people had
+      already bought would no longer get weather data. Apple said Dark Sky's forecasting was now
+      part of its own Weather app.
+    user_impact: >-
+      People who'd bought the app lost it, and using Dark Sky's features in Apple's Weather app
+      needed iOS 16, iPadOS 16 or macOS Ventura.
+    company_said: >-
+      Dark Sky said its forecast technology was now enhanced and integrated into the Apple Weather
+      forecast, powering Apple's updated Weather app.
+    severity: 4
+    status: in-force
+    related: [dark-sky/api-shutdown, dark-sky/android-app-shutdown]
+    sources:
+      - url: https://blog.darksky.net/dark-sky-has-a-new-home/
+        publisher: Dark Sky Blog
+        kind: primary
+        published: 2022-06-06
+        archive: https://web.archive.org/web/20220607071922/https://blog.darksky.net/dark-sky-has-a-new-home/
+        quote: >-
+          the Dark Sky iOS app will no longer be available beginning on December 31st, 2022 and, as
+          of this date, already purchased versions of the app will no longer provide weather data.
+      - url: https://blog.darksky.net/dark-sky-has-a-new-home/
+        publisher: Dark Sky Blog
+        kind: primary
+        published: 2022-06-06
+        archive: https://web.archive.org/web/20220607071922/https://blog.darksky.net/dark-sky-has-a-new-home/
+        quote: >-
+          Dark Sky's forecast technology is now enhanced and integrated into the all-new Apple
+          Weather forecast, powering Apple’s updated Weather app.
+      - url: https://www.macrumors.com/2023/01/01/dark-sky-shuts-down-tomorrow/
+        publisher: MacRumors
+        kind: press
+        published: 2023-01-01
+        archive: https://web.archive.org/web/20230102035335/https://www.macrumors.com/2023/01/01/dark-sky-shuts-down-tomorrow/
+        quote: >-
+          To use Dark Sky features in the Weather app, your device must be updated to iOS 16,
+          iPadOS 16, or macOS Ventura.
+      - url: https://techcrunch.com/2022/09/13/as-apples-weatherkit-launches-dark-sky-for-ios-to-wind-down-operations-by-year-end/
+        publisher: TechCrunch
+        kind: press
+        published: 2022-09-13
+        archive: https://web.archive.org/web/20220913160327/https://techcrunch.com/2022/09/13/as-apples-weatherkit-launches-dark-sky-for-ios-to-wind-down-operations-by-year-end/
+        quote: >-
+          According to a notification appearing on the app’s home screen, Dark Sky will no longer be
+          available as of January 1, 2023, as its forecasting technology has now been integrated
+          with Apple’s own Weather application.
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
+
+  - id: api-shutdown
+    date: 2023-03-31
+    date_kind: effective
+    category: api-restriction
+    title: Apple shuts down the Dark Sky weather API and points developers to WeatherKit
+    question: When did the Dark Sky API shut down?
+    what_changed: >-
+      Apple shut down the Dark Sky API on 31 March 2023, having closed it to new sign-ups when it
+      bought Dark Sky in March 2020. Dark Sky first said it would run through the end of 2021, then
+      the end of 2022. Apple pointed paying customers to its WeatherKit API, with up to 500,000
+      calls a month in an Apple Developer Program membership, and Dark Sky's website closed the same
+      day as the API.
+    before: Dark Sky API for existing customers
+    after: WeatherKit, with an Apple Developer Program membership
+    user_impact: >-
+      Apps and tools built on it had to move to another weather source, and Home Assistant removed
+      its Dark Sky integration once the API had shut down.
+    severity: 4
+    status: in-force
+    related: [dark-sky/ios-app-shutdown]
+    sources:
+      - url: https://blog.darksky.net/dark-sky-has-a-new-home/
+        publisher: Dark Sky Blog
+        kind: primary
+        published: 2020-03-31
+        archive: https://web.archive.org/web/20200331172148/https://blog.darksky.net/dark-sky-has-a-new-home/
+        quote: >-
+          Our API service for existing customers is not changing today, but we will no longer
+          accept new signups. The API will continue to function through the end of 2021.
+      - url: https://blog.darksky.net/dark-sky-has-a-new-home/
+        publisher: Dark Sky Blog
+        kind: primary
+        published: 2022-06-06
+        archive: https://web.archive.org/web/20220607071922/https://blog.darksky.net/dark-sky-has-a-new-home/
+        quote: The Dark Sky API and website will continue to function until March 31st, 2023.
+      - url: https://support.apple.com/en-us/102594
+        publisher: Apple Support
+        kind: primary
+        published: 2023-08-29
+        archive: https://web.archive.org/web/20230829102411/https://support.apple.com/en-us/102594
+        quote: >-
+          Support for the Dark Sky API ended on March 31, 2023, and has been replaced by Apple’s
+          WeatherKit API.
+      - url: https://techcrunch.com/2022/09/13/as-apples-weatherkit-launches-dark-sky-for-ios-to-wind-down-operations-by-year-end/
+        publisher: TechCrunch
+        kind: press
+        published: 2022-09-13
+        archive: https://web.archive.org/web/20220913160327/https://techcrunch.com/2022/09/13/as-apples-weatherkit-launches-dark-sky-for-ios-to-wind-down-operations-by-year-end/
+        quote: >-
+          It later pushed back the API service’s closure until the end of 2022, and said the iOS app
+          would shut down around the same time.
+      - url: https://techcrunch.com/2022/09/13/as-apples-weatherkit-launches-dark-sky-for-ios-to-wind-down-operations-by-year-end/
+        publisher: TechCrunch
+        kind: press
+        published: 2022-09-13
+        archive: https://web.archive.org/web/20220913160327/https://techcrunch.com/2022/09/13/as-apples-weatherkit-launches-dark-sky-for-ios-to-wind-down-operations-by-year-end/
+        quote: >-
+          Apple announced it would transition the API’s paying customers to its new weather service,
+          WeatherKit, where it would provide up to 500,000 API calls per month as part of its Apple
+          Developer Program membership during the beta period and beyond.
+      - url: https://www.home-assistant.io/blog/2023/04/05/release-20234/
+        publisher: Home Assistant
+        kind: press
+        published: 2023-04-05
+        archive: https://web.archive.org/web/20230405180749/https://www.home-assistant.io/blog/2023/04/05/release-20234/
+        quote: Dark Sky has been removed. Apple acquired Dark Sky, and the API has now been shut down.
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
