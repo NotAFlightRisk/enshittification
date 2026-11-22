@@ -1,0 +1,140 @@
+service: flickr
+name: Flickr
+company: smugmug
+url: https://www.flickr.com
+wikipedia: https://en.wikipedia.org/wiki/Flickr
+
+changes:
+  - id: free-account-1000-photo-limit
+    date: 2018-11-01
+    date_kind: announced
+    effective: 2019-01-08
+    category: paywall
+    title: Flickr cuts free accounts from a terabyte to 1,000 photos
+    what_changed: >-
+      Flickr said on 1 November 2018 that free accounts would be limited to 1,000 photos and videos
+      from 8 January 2019, down from a free terabyte. Accounts over the limit couldn't upload more,
+      and anything over 1,000 was at risk of deletion from 5 February 2019, though Flickr said in
+      2022 it hadn't deleted a single photo over the limit. Creative Commons photos were exempt from
+      deletion.
+    before: A terabyte of free storage
+    after: 1,000 photos and videos, or pay for Pro
+    user_impact: >-
+      Free members with more than 1,000 photos couldn't upload more unless they paid for Pro or
+      deleted some, though Flickr said more than 97% of free members had fewer than 1,000.
+    company_said: >-
+      Flickr said the free terabyte drew members for the storage rather than the community, and that
+      cutting it meant Flickr would run on subscriptions rather than advertisers.
+    severity: 2
+    status: in-force
+    sources:
+      - url: https://blog.flickr.net/en/2018/11/01/changing-flickr-free-accounts-1000-photos/
+        publisher: Flickr Blog
+        kind: primary
+        published: 2018-11-01
+        archive: https://web.archive.org/web/20261027031504/https://blog.flickr.net/en/2018/11/01/changing-flickr-free-accounts-1000-photos/
+        quote: >-
+          Beginning January 8, 2019, Free accounts will be limited to 1,000 photos and videos. If you
+          need unlimited storage, you’ll need to upgrade to Flickr Pro.
+      - url: https://blog.flickr.net/en/2018/12/17/important-service-updates-and-dates-to-remember/
+        publisher: Flickr Blog
+        kind: primary
+        published: 2018-12-17
+        archive: https://web.archive.org/web/20260831101053/https://blog.flickr.net/en/2018/12/17/important-service-updates-and-dates-to-remember/
+        quote: >-
+          February 5, 2019: Any items over the 1,000-upload limit will be at risk of deletion,
+          starting with the oldest of the items.
+      - url: https://www.theverge.com/2019/3/8/18256478/flickr-creative-commons-photos-free-1000-picture-limit-exempt
+        publisher: The Verge
+        kind: press
+        published: 2019-03-08
+        archive: https://web.archive.org/web/20240301052507/https://www.theverge.com/2019/3/8/18256478/flickr-creative-commons-photos-free-1000-picture-limit-exempt
+        quote: >-
+          Flickr has announced that all Creative Commons photos will be allowed on Flickr for good,
+          regardless of upload date
+      - url: https://blog.flickr.net/en/2022/03/17/flickr-forever-2022/
+        publisher: Flickr Blog
+        kind: primary
+        published: 2022-03-17
+        archive: https://web.archive.org/web/20261029090105/https://blog.flickr.net/en/2022/03/17/flickr-forever-2022/
+        quote: In the years since, we haven’t deleted a single photo that was over the limit.
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
+
+  - id: free-account-private-photo-limit
+    date: 2022-03-17
+    date_kind: announced
+    effective: 2022-05-17
+    category: paywall
+    title: Flickr limits free accounts to 50 non-public photos
+    what_changed: >-
+      Flickr said on 17 March 2022 that free accounts would be limited to 50 non-public photos, like
+      ones marked private or friends and family. It said it would begin removing non-public photos
+      over the limit from 17 May 2022, starting with accounts that hadn't been active in years.
+    after: 50 non-public photos, or pay for Pro
+    user_impact: >-
+      Free members with more than 50 private, friends or family photos had to cut them down or pay
+      for Pro to keep them.
+    severity: 2
+    status: in-force
+    sources:
+      - url: https://blog.flickr.net/en/2022/03/17/flickr-forever-2022/
+        publisher: Flickr Blog
+        kind: primary
+        published: 2022-03-17
+        archive: https://web.archive.org/web/20261029090105/https://blog.flickr.net/en/2022/03/17/flickr-forever-2022/
+        quote: >-
+          With that in mind, we’re limiting free accounts to 50 non-public photos (e.g. photos marked
+          as private, friends, family, or friends and family.
+      - url: https://blog.flickr.net/en/2022/04/19/update-free-account-limit-changes-and-enforcement-start-may-1-2022/
+        publisher: Flickr Blog
+        kind: primary
+        published: 2022-04-19
+        archive: https://web.archive.org/web/20260812081249/https://blog.flickr.net/en/2022/04/19/update-free-account-limit-changes-and-enforcement-start-may-1-2022/
+        quote: >-
+          Starting May 17, 2022, we will begin removing non-public content in violation of Flickr’s
+          new free account limit policies. This applies to Free accounts with more than 50
+          non-public photos (private, friends, family, or friends and family).
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
+
+  - id: free-account-original-downloads
+    date: 2025-04-15
+    date_kind: announced
+    effective: 2025-05-15
+    category: paywall
+    title: Flickr restricts original and large-size downloads of free accounts' photos
+    what_changed: >-
+      Flickr said on 15 April 2025 that from 15 May it would restrict downloads of original and
+      large-size images, over 1024px, owned by free accounts. It covers free members' own photos and
+      other free members' photos, but not public Creative Commons photos, Flickr Commons members or
+      the data export in settings.
+    before: Original and large sizes downloadable from free accounts
+    after: Ordinary downloads at medium size and below, unless the owner pays for Pro
+    user_impact: >-
+      Free members, and anyone downloading their photos, lost ordinary original and large-size
+      downloads unless the owner paid for Pro, though owners could still get originals from the data
+      export.
+    company_said: >-
+      Flickr said it was tackling the misuse of free accounts as cloud storage for original files,
+      which breaks its Terms of Service.
+    severity: 1
+    status: in-force
+    sources:
+      - url: https://blog.flickr.net/en/2025/04/15/service-update-original-large-size-download-limitations-on-free-accounts/
+        publisher: Flickr Blog
+        kind: primary
+        published: 2025-04-15
+        archive: https://web.archive.org/web/20261106163918/https://blog.flickr.net/en/2025/04/15/service-update-original-large-size-download-limitations-on-free-accounts/
+        quote: >-
+          Starting May 15 , Flickr will restrict downloads of original and large-size images (larger
+          than 1024px) owned by free accounts. If you use a free account, this update applies to both
+          your own content and to content shared by other free members.
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
