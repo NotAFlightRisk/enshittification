@@ -1,0 +1,85 @@
+service: g-suite-legacy
+name: G Suite legacy free edition
+company: google
+url: https://knowledge.workspace.google.com/admin/getting-started/editions/legacy-g-suite-editions
+
+changes:
+  - id: paid-upgrade-2022
+    date: 2022-01-19
+    date_kind: announced
+    category: paywall
+    title: Google tells all G Suite legacy free edition users to pay for Workspace
+    what_changed: >-
+      Google said on 19 January 2022 that the free G Suite legacy edition would end on 1 May 2022.
+      Users would be moved to paid Google Workspace and charged from 1 July. Accounts with no payment
+      details would be suspended for 60 days, then lose access to Gmail, Calendar and Meet.
+    before: Free custom-domain Gmail and apps for anyone who signed up before 6 December 2012
+    after: A paid Google Workspace plan, or suspension
+    user_impact: >-
+      People still on the free edition were told to move to paid Workspace or risk losing access to
+      Gmail on their own domain and Google's other core services.
+    severity: 3
+    status: reversed
+    reversed:
+      date: 2022-05-17
+      what: >-
+        After customer feedback, Google let non-business users opt out of the move and keep the
+        free edition, with their custom domain and data, if they chose it by 27 June 2022.
+        Business users still had to upgrade to a paid plan.
+      sources:
+        - url: https://support.google.com/a/answer/2855120
+          publisher: Google Workspace Admin Help
+          kind: primary
+          published: 2022-05-24
+          archive: https://web.archive.org/web/20220524081501/https://support.google.com/a/answer/2855120
+          quote: >-
+            Based on customer feedback, we’re updating our approach to G Suite legacy edition
+            transitions. Business users will need to upgrade to Google Workspace, while
+            non-business users can opt-out of the transition.
+        - url: https://www.theverge.com/2022/5/17/23107246/google-g-suite-free-no-cost-option-custom-domain
+          publisher: The Verge
+          kind: press
+          published: 2022-05-17
+          archive: https://web.archive.org/web/20220518011854/https://www.theverge.com/2022/5/17/23107246/google-g-suite-free-no-cost-option-custom-domain
+          quote: >-
+            The no-cost personal use option will let you keep using a custom domain with Gmail, use
+            free Google apps like YouTube, Docs, and Meet, and keep all your data and purchases.
+            Basically, everything’s going to stay the same, as long as you choose the no-cost
+            personal transition path by June 27th.
+    sources:
+      - url: https://support.google.com/a/answer/2855120
+        publisher: Google Workspace Admin Help
+        kind: primary
+        published: 2022-01-19
+        archive: https://web.archive.org/web/20220119220252/https://support.google.com/a/answer/2855120
+        quote: >-
+          The G Suite legacy free edition will no longer be available starting May 1, 2022.
+          Starting May 1, Google will seamlessly transition you to Workspace, which you can use at
+          no cost until July 1, 2022.
+      - url: https://support.google.com/a/answer/2855120
+        publisher: Google Workspace Admin Help
+        kind: primary
+        published: 2022-01-19
+        archive: https://web.archive.org/web/20220119220252/https://support.google.com/a/answer/2855120
+        quote: As of December 6, 2012, Google stopped offering the free edition to new customers.
+      - url: https://www.theverge.com/2022/1/19/22891509/g-suite-legacy-free-google-apps-workspace-upgrade
+        publisher: The Verge
+        kind: press
+        published: 2022-01-19
+        archive: https://web.archive.org/web/20220119205454/https://www.theverge.com/2022/1/19/22891509/g-suite-legacy-free-google-apps-workspace-upgrade
+        quote: >-
+          If no payment information is entered, Google will suspend the account for 60 days, after
+          which users won’t be able to access Workspace’s “core services,” like Gmail, Calendar,
+          and Meet.
+      - url: https://www.theverge.com/2022/1/19/22891509/g-suite-legacy-free-google-apps-workspace-upgrade
+        publisher: The Verge
+        kind: press
+        published: 2022-01-19
+        archive: https://web.archive.org/web/20220119205454/https://www.theverge.com/2022/1/19/22891509/g-suite-legacy-free-google-apps-workspace-upgrade
+        quote: >-
+          There’s no option for a free plan, with only some educational institutions and
+          non-profit organizations eligible for a plan at no cost.
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
