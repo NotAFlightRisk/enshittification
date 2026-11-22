@@ -1,0 +1,83 @@
+service: wemo
+name: Wemo
+company: belkin
+url: https://www.belkin.com/support/wemo
+crw: https://consumerrights.wiki/w/Wemo
+wikipedia: https://en.wikipedia.org/wiki/WEMO
+
+changes:
+  - id: cloud-shutdown
+    date: 2026-01-31
+    date_kind: effective
+    category: bricked
+    title: Belkin shuts down Wemo's app and cloud, and most Wemo devices lose their smart features
+    question: When did Wemo stop working?
+    what_changed: >-
+      Belkin shut down the Wemo app and cloud on 31 January 2026, and with them the remote access and
+      voice control Wemo devices relied on. Belkin had announced it on 10 July 2025. Devices set up
+      in Apple HomeKit, and Thread models, kept local control, and products under warranty may have
+      been eligible for a partial refund, which BGR says Belkin has since closed.
+    user_impact: >-
+      Owners of Wemo plugs, switches and bulbs not set up in HomeKit lost Belkin's app, remote and
+      voice control, including people who used them through Google Home, and BGR says Belkin
+      recommends disposing of anything they can't get working.
+    company_said: >-
+      Belkin said that as technology evolves, it must focus its resources on different parts of
+      the Belkin business.
+    severity: 4
+    status: in-force
+    sources:
+      - url: https://techcrunch.com/2025/07/10/belkin-ends-support-for-most-wemo-devices-and-its-wemo-app/
+        publisher: TechCrunch
+        kind: press
+        published: 2025-07-10
+        archive: https://web.archive.org/web/20250710212432/https://techcrunch.com/2025/07/10/belkin-ends-support-for-most-wemo-devices-and-its-wemo-app/
+        quote: >-
+          The app will also no longer be supported after January 31, 2026, and any device features
+          that rely on cloud connectivity, like remote access or voice integrations, will no longer
+          work.
+      - url: https://techcrunch.com/2025/07/10/belkin-ends-support-for-most-wemo-devices-and-its-wemo-app/
+        publisher: TechCrunch
+        kind: press
+        published: 2025-07-10
+        archive: https://web.archive.org/web/20250710212432/https://techcrunch.com/2025/07/10/belkin-ends-support-for-most-wemo-devices-and-its-wemo-app/
+        quote: >-
+          However, as technology evolves, we must focus our resources on different parts of the
+          Belkin business.
+      - url: https://www.theverge.com/news/705136/belkin-wemo-smart-home-support-ending-homekit-thread
+        publisher: The Verge
+        kind: press
+        published: 2025-07-11
+        archive: https://web.archive.org/web/20250711114630/https://www.theverge.com/news/705136/belkin-wemo-smart-home-support-ending-homekit-thread
+        quote: >-
+          Belkin says that if your Wemo product is still under warranty when support ends, you may
+          be eligible for a “partial refund,” though it won’t begin processing those refunds before
+          that date.
+      - url: https://9to5google.com/2026/01/26/belkin-reminds-users-that-its-wemo-smart-home-products-are-shutting-down-this-week/
+        publisher: 9to5Google
+        kind: press
+        published: 2026-01-26
+        archive: https://web.archive.org/web/20260127034246/https://9to5google.com/2026/01/26/belkin-reminds-users-that-its-wemo-smart-home-products-are-shutting-down-this-week/
+        quote: >-
+          For those that have been using Belkin's smart home devices in Google Home, they're out of
+          luck as of January 31.
+      - url: https://www.bgr.com/2312274/what-to-do-with-old-belkin-wemo-smart-home/
+        publisher: BGR
+        kind: press
+        published: 2026-11-14
+        archive: https://web.archive.org/web/20261114143456/https://www.bgr.com/2312274/what-to-do-with-old-belkin-wemo-smart-home/
+        quote: >-
+          Belkin has now closed refunds and returns and recommends that you dispose of anything you
+          can't get working.
+      - url: https://www.belkin.com/support/wemo
+        publisher: Belkin Support
+        kind: primary
+        published: 2026-01
+        archive: pending
+        quote: >-
+          Devices not configured with HomeKit will lose smart functionality HomeKit-configured and
+          Thread-based devices will continue to function locally.
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22

@@ -38,6 +38,11 @@
   url: https://news.adobe.com
   wikipedia: https://en.wikipedia.org/wiki/Adobe_Inc.
 
+- id: belkin
+  name: Belkin
+  url: https://www.belkin.com
+  wikipedia: https://en.wikipedia.org/wiki/Belkin
+
 - id: x-corp
   name: X Corp
   url: https://x.com
