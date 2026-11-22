@@ -58,6 +58,11 @@
   url: https://www.plex.tv
   wikipedia: https://en.wikipedia.org/wiki/Plex
 
+- id: lastpass
+  name: LastPass
+  url: https://www.lastpass.com
+  wikipedia: https://en.wikipedia.org/wiki/LastPass
+
 - id: ubisoft
   name: Ubisoft
   url: https://www.ubisoft.com/en-us/company/about-us
