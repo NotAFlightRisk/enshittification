@@ -1,0 +1,62 @@
+service: slack
+name: Slack
+company: salesforce
+url: https://slack.com
+wikipedia: https://en.wikipedia.org/wiki/Slack_(software)
+
+changes:
+  - id: free-history-deleted
+    date: 2024-08-26
+    date_kind: effective
+    category: removed-feature
+    title: Slack deletes messages and files over a year old from free workspaces
+    what_changed: >-
+      Slack said it would begin deleting messages and files more than a year old from free
+      workspaces on 26 August 2024, on a rolling basis. Free workspaces still see 90 days of history,
+      and before deletion an upgrade brought back the other 275 days. Deleted messages can't be
+      restored.
+    before: Messages and files could be kept for the workspace's lifetime
+    after: Messages and files over a year old deleted for good
+    user_impact: >-
+      Free workspaces permanently lost their messages and files once they were more than a year old,
+      unless they upgraded before 26 August 2024.
+    severity: 3
+    status: in-force
+    sources:
+      - url: https://slack.com/help/articles/29414264463635-Updates-to-message-and-file-history-on-free-workspaces
+        publisher: Slack Help Center
+        kind: primary
+        published: 2024-06-24
+        archive: https://web.archive.org/web/20240812163549/https://slack.com/help/articles/29414264463635-Updates-to-message-and-file-history-on-free-workspaces
+        quote: >-
+          We will be reducing our data storage offering for the free version of Slack; starting
+          August 26, 2024, we'll begin deleting messages and files more than one year old from free
+          workspaces on a rolling basis
+      - url: https://slack.com/help/articles/29414264463635-Updates-to-message-and-file-history-on-free-workspaces
+        publisher: Slack Help Center
+        kind: primary
+        published: 2024-06-24
+        archive: https://web.archive.org/web/20240812163549/https://slack.com/help/articles/29414264463635-Updates-to-message-and-file-history-on-free-workspaces
+        quote: >-
+          If you choose to remain on a free workspace, you’ll have full access to the past 90 days
+          of message and file history, and the remaining 275 days will become available should you
+          upgrade to a paid plan.
+      - url: https://slack.com/help/articles/29414264463635-Updates-to-message-and-file-history-on-free-workspaces
+        publisher: Slack Help Center
+        kind: primary
+        published: 2024-06-24
+        archive: https://web.archive.org/web/20240812163549/https://slack.com/help/articles/29414264463635-Updates-to-message-and-file-history-on-free-workspaces
+        quote: >-
+          It will not be possible to restore messages and files once deletion occurs.
+      - url: https://slack.com/help/articles/29414264463635-Updates-to-message-and-file-history-on-free-workspaces
+        publisher: Slack Help Center
+        kind: primary
+        published: 2024-06-24
+        archive: https://web.archive.org/web/20240812163549/https://slack.com/help/articles/29414264463635-Updates-to-message-and-file-history-on-free-workspaces
+        quote: >-
+          Existing free workspaces that upgrade to a paid plan before August 26, 2024 won't be
+          impacted.
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
