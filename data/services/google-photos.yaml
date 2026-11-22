@@ -1,0 +1,147 @@
+service: google-photos
+name: Google Photos
+company: google
+url: https://photos.google.com
+wikipedia: https://en.wikipedia.org/wiki/Google_Photos
+
+changes:
+  - id: unlimited-storage-end
+    date: 2021-06-01
+    date_kind: effective
+    category: paywall
+    title: Google Photos ends free unlimited High quality backups for most uploads
+    question: When did Google Photos stop free unlimited storage?
+    what_changed: >-
+      From 1 June 2021, new High quality photos and videos in Google Photos counted toward the free
+      15 GB of Google Account storage. Google announced it on 11 November 2020. Anything backed up
+      before then stayed free, and more space meant paying for Google One, from $1.99 a month for
+      100 GB in the US. High quality uploads from Pixel 1 to 5 phones stayed exempt.
+    before: Unlimited free High quality backups
+    after: Counted toward the free 15 GB
+    user_impact: >-
+      People backing up in High quality started filling the 15 GB they share with Gmail and Drive,
+      and once it was full had to delete things or pay for Google One.
+    company_said: >-
+      Google said the change would help build Google Photos for the future and keep pace with the
+      growing demand for storage.
+    severity: 2
+    status: in-force
+    sources:
+      - url: https://blog.google/products/photos/storage-changes/
+        publisher: The Keyword (Google)
+        kind: primary
+        published: 2020-11-11
+        archive: https://web.archive.org/web/20201111190620/https://blog.google/products/photos/storage-changes/
+        quote: >-
+          Starting June 1, 2021, any new photos and videos you upload will count toward the free 15
+          GB of storage that comes with every Google Account or the additional storage you’ve
+          purchased as a Google One member.
+      - url: https://blog.google/products/photos/storage-changes/
+        publisher: The Keyword (Google)
+        kind: primary
+        published: 2020-11-11
+        archive: https://web.archive.org/web/20201111190620/https://blog.google/products/photos/storage-changes/
+        quote: >-
+          Plans start at $1.99 per month in the U.S. for 100 GB of storage and include additional
+          member benefits like access to Google experts, shared family plans and more.
+      - url: https://blog.google/products/photos/storage-policy-update/
+        publisher: The Keyword (Google)
+        kind: primary
+        published: 2020-11-11
+        archive: https://web.archive.org/web/20201112000354/https://blog.google/products/photos/storage-policy-update/
+        quote: >-
+          Beginning June 1, any new photo or video uploaded in High quality in Google Photos will
+          count toward your free 15 GB storage quota or any additional storage you’ve purchased as a
+          Google One member.
+      - url: https://www.theverge.com/2020/11/11/21560810/google-photos-unlimited-cap-free-uploads-15gb-ending
+        publisher: The Verge
+        kind: press
+        published: 2020-11-11
+        archive: https://web.archive.org/web/20201111185546/https://www.theverge.com/2020/11/11/21560810/google-photos-unlimited-cap-free-uploads-15gb-ending
+        quote: >-
+          After five years of offering unlimited free photo backups at “high quality,” Google Photos
+          will start charging for storage once more than 15 gigs on the account have been used.
+      - url: https://support.google.com/photos/answer/6220791
+        publisher: Google Photos Help
+        kind: primary
+        published: 2026-11-22
+        archive: pending
+        quote: >-
+          Photos and videos backed up in Storage saver count toward your Google Account storage.
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
+
+  - id: library-api-cut
+    date: 2025-03-31
+    date_kind: effective
+    category: api-restriction
+    title: Google Photos stops apps reading photos and albums they didn't upload themselves
+    what_changed: >-
+      On 31 March 2025, Google removed the Photos Library API scopes that let third-party apps read a
+      user's whole library, leaving them only what they'd uploaded. Google announced it on 18
+      September 2024 and pointed apps to its new Picker API, where people pick photos and albums
+      themselves. Photo frames like Aura lost album syncing, and a new Ambient API brought Aura's
+      sync back in June 2026.
+    user_impact: >-
+      Apps using the Library API, like Aura's photo frames, lost automatic access to people's Google
+      Photos library and albums, and the API's shared album functions stopped working.
+    company_said: >-
+      Google said the changes were to improve user privacy, and that it had APIs designed for
+      digital photo frames and a program to help partners update their products.
+    severity: 4
+    status: in-force
+    sources:
+      - url: https://developers.googleblog.com/en/google-photos-picker-api-launch-and-library-api-updates/
+        publisher: Google for Developers Blog
+        kind: primary
+        published: 2024-09-18
+        archive: https://web.archive.org/web/20240918230621/https://developers.googleblog.com/en/google-photos-picker-api-launch-and-library-api-updates/
+        quote: >-
+          The Library API will now focus on accessing and managing photos and videos uploaded by
+          your application.
+      - url: https://developers.google.com/photos/support/updates
+        publisher: Google for Developers
+        kind: primary
+        published: 2025-04-02
+        archive: https://web.archive.org/web/20250402121412/https://developers.google.com/photos/support/updates
+        quote: >-
+          You can now only list, search, and retrieve albums and media items that were created by
+          your app.
+      - url: https://developers.google.com/photos/support/updates
+        publisher: Google for Developers
+        kind: primary
+        published: 2025-04-02
+        archive: https://web.archive.org/web/20250402121412/https://developers.google.com/photos/support/updates
+        quote: >-
+          If your app relies on accessing the user's entire library, you may need to re-evaluate
+          your app or consider alternative approaches.
+      - url: https://www.androidpolice.com/aura-frames-google-photos-busted/
+        publisher: Android Police
+        kind: press
+        published: 2025-03-14
+        archive: https://web.archive.org/web/20250331233414/https://www.androidpolice.com/aura-frames-google-photos-busted/
+        quote: >-
+          But the update also breaks integrations with certain connected photo frames, including the
+          Aura frame I've been using for a couple of years.
+      - url: https://9to5google.com/2025/03/05/google-photos-digital-frames/
+        publisher: 9to5Google
+        kind: press
+        published: 2025-03-05
+        archive: https://web.archive.org/web/20250306013021/https://9to5google.com/2025/03/05/google-photos-digital-frames/
+        quote: >-
+          In a statement today, Google reiterates that the API changes are intended to “improve user
+          privacy.”
+      - url: https://9to5google.com/2026/06/04/google-photos-support-has-returned-for-auras-digital-photo-frames/
+        publisher: 9to5Google
+        kind: press
+        published: 2026-06-04
+        archive: https://web.archive.org/web/20260604195941/https://9to5google.com/2026/06/04/google-photos-support-has-returned-for-auras-digital-photo-frames/
+        quote: >-
+          a new “Ambient API” from Google Photos allows Aura photo frames to sync with your library
+          in Google’s app.
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
