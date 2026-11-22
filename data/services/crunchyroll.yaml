@@ -1,0 +1,312 @@
+service: crunchyroll
+name: Crunchyroll
+company: sony
+url: https://www.crunchyroll.com
+crw: https://consumerrights.wiki/w/Crunchyroll
+wikipedia: https://en.wikipedia.org/wiki/Crunchyroll
+
+plans:
+  - id: fan-us
+    name: Fan
+    region: US
+    currency: USD
+    billing: month
+    since: 2020-08-24
+    price: 7.99
+    incomplete: >-
+      Anime News Network says Fan's price rose from $6.95 to $7.99 in 2019, before the tiers had
+      names, so its chain before 2020 isn't sourced yet.
+    source:
+      url: https://www.crunchyroll.com/anime-news/2020/08/24-2/crunchyroll-introduces-new-membership-tiers-offers-even-more-access-to-anime
+      publisher: Crunchyroll
+      kind: primary
+      published: 2020-08-24
+      archive: https://web.archive.org/web/20200910172035/https://www.crunchyroll.com/anime-news/2020/08/24-2/crunchyroll-introduces-new-membership-tiers-offers-even-more-access-to-anime
+      quote: >-
+        Those who sign up for a Premium membership can now choose from different tiers, including:
+        Fan - $7.99/month
+
+  - id: mega-fan-us
+    name: Mega Fan
+    region: US
+    currency: USD
+    billing: month
+    since: 2020-08-24
+    price: 9.99
+    source:
+      url: https://www.crunchyroll.com/anime-news/2020/08/24-2/crunchyroll-introduces-new-membership-tiers-offers-even-more-access-to-anime
+      publisher: Crunchyroll
+      kind: primary
+      published: 2020-08-24
+      archive: https://web.archive.org/web/20200910172035/https://www.crunchyroll.com/anime-news/2020/08/24-2/crunchyroll-introduces-new-membership-tiers-offers-even-more-access-to-anime
+      quote: >-
+        Mega Fan - $9.99/month In addition to all the above perks-ad-free viewing, full access to
+        library and simulcast shows, and access to digital manga-the Mega Fan tier introduces
+        offline viewing and access to four concurrent streams
+
+  - id: ultimate-fan-us
+    name: Ultimate Fan
+    region: US
+    currency: USD
+    billing: month
+    since: 2020-08-24
+    price: 14.99
+    source:
+      url: https://www.crunchyroll.com/anime-news/2020/08/24-2/crunchyroll-introduces-new-membership-tiers-offers-even-more-access-to-anime
+      publisher: Crunchyroll
+      kind: primary
+      published: 2020-08-24
+      archive: https://web.archive.org/web/20200910172035/https://www.crunchyroll.com/anime-news/2020/08/24-2/crunchyroll-introduces-new-membership-tiers-offers-even-more-access-to-anime
+      quote: >-
+        Ultimate Fan - $14.99/month Sign up for the Ultimate Fan tier and you'll get the biggest
+        package of features yet
+
+changes:
+  - id: funimation-digital-copies
+    date: 2024-02-07
+    date_kind: announced
+    effective: 2024-04-02
+    category: bricked
+    title: Crunchyroll drops Funimation digital copies when Funimation closes
+    what_changed: >-
+      Crunchyroll said on 7 February 2024 that Funimation would close on 2 April 2024, and that it
+      wouldn't support Funimation Digital Copies. People had redeemed those with codes from
+      Funimation Blu-rays and DVDs, and Funimation had said they could keep them forever.
+    user_impact: >-
+      People who'd redeemed digital copies from their Funimation discs lost access to them, and
+      Crunchyroll said it would handle requests through customer service.
+    company_said: >-
+      Crunchyroll's president said that, going by how many people redeemed and used them, digital
+      copies weren't a feature Crunchyroll had or planned to add.
+    severity: 4
+    status: in-force
+    sources:
+      - url: https://help.crunchyroll.com/hc/en-us/articles/22843839604500-Funimation-End-of-Services
+        publisher: Crunchyroll Help
+        kind: primary
+        published: 2024-02-07
+        archive: https://web.archive.org/web/20240207155831/https://help.crunchyroll.com/hc/en-us/articles/22843839604500-FUNimation-End-of-Services
+        quote: >-
+          Please note that Crunchyroll does not currently support Funimation Digital copies, which
+          means that access to previously available digital copies will not be supported.
+      - url: https://help.crunchyroll.com/hc/en-us/articles/22843839604500-Funimation-End-of-Services
+        publisher: Crunchyroll Help
+        kind: primary
+        published: 2024-02-07
+        archive: https://web.archive.org/web/20240207155831/https://help.crunchyroll.com/hc/en-us/articles/22843839604500-FUNimation-End-of-Services
+        quote: >-
+          As part of Crunchyroll’s unification of fan services announced in March 2022, the
+          Funimation app and website will sunset on April 2, 2024.
+      - url: https://www.theverge.com/2024/2/8/24065940/funimation-shutdown-crunchyroll-digital-library
+        publisher: The Verge
+        kind: press
+        published: 2024-02-08
+        archive: https://web.archive.org/web/20240208180853/https://www.theverge.com/2024/2/8/24065940/funimation-shutdown-crunchyroll-digital-library
+        quote: >-
+          This promotion allowed users to redeem digital copies of a Funimation Blu-ray or DVD they
+          purchased, giving them the ability them to store and view the show or movie through the
+          streaming service. Funimation said users could keep the copies “forever” — but that’s
+          clearly not the case now.
+      - url: https://www.theverge.com/2024/2/26/24080637/funimation-shut-down-crunchyroll-digital-library-compensation
+        publisher: The Verge
+        kind: press
+        published: 2024-02-26
+        archive: https://web.archive.org/web/20240226165304/https://www.theverge.com/2024/2/26/24080637/funimation-shut-down-crunchyroll-digital-library-compensation
+        quote: >-
+          As we look at usage of that and the number of people that were redeeming those and using
+          them, it was just not a feature that was available in Crunchyroll and isn’t in our roadmap.
+      - url: https://www.theverge.com/2024/2/26/24080637/funimation-shut-down-crunchyroll-digital-library-compensation
+        publisher: The Verge
+        kind: press
+        published: 2024-02-26
+        archive: https://web.archive.org/web/20240226165304/https://www.theverge.com/2024/2/26/24080637/funimation-shut-down-crunchyroll-digital-library-compensation
+        quote: >-
+          As people reach out to us through customer service, we are responding and handling each
+          of those requests as they prefer.
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
+
+  - id: mega-ultimate-price-2024
+    date: 2024-05-01
+    date_kind: effective
+    category: price-rise
+    title: Crunchyroll Mega Fan goes from $9.99 to $11.99 a month, and Ultimate Fan to $15.99
+    what_changed: >-
+      Crunchyroll raised US Mega Fan from $9.99 to $11.99 a month and Ultimate Fan from $14.99 to
+      $15.99 for new members on 1 May 2024. Existing members paid it from their first bill on or
+      after 3 June 2024, and Fan stayed at $7.99.
+    before: $9.99 a month (Mega Fan)
+    after: $11.99 a month (Mega Fan)
+    user_impact: >-
+      Mega Fan and Ultimate Fan members in the US, Argentina, Colombia, France, Portugal and some
+      other countries paid more, while Fan members didn't.
+    company_said: >-
+      Crunchyroll pointed to its library of over 45,000 episodes, its simulcasts, Game Vault and
+      Crunchyroll Music.
+    severity: 1
+    status: in-force
+    regions: [US, AR, CO, FR, PT]
+    prices:
+      - { plan: mega-fan-us, from: 9.99, to: 11.99 }
+      - { plan: ultimate-fan-us, from: 14.99, to: 15.99 }
+    sources:
+      - url: https://help.crunchyroll.com/hc/en-us/articles/25774815730068-Price-change-FAQs
+        publisher: Crunchyroll Help
+        kind: primary
+        published: 2024-05-04
+        archive: https://web.archive.org/web/20240518044638/https://help.crunchyroll.com/hc/en-us/articles/25774815730068-Price-change-FAQs
+        quote: >-
+          The updated pricing for new Crunchyroll memberships will take effect on May 1, 2024 , for
+          new users. Existing subscribers will see these changes reflected in their next billing
+          cycle, starting on or after June 3rd, 2024.
+      - url: https://www.theverge.com/2024/5/1/24146651/crunchyroll-price-increase-subscription-anime
+        publisher: The Verge
+        kind: press
+        published: 2024-05-01
+        archive: https://web.archive.org/web/20240501205224/https://www.theverge.com/2024/5/1/24146651/crunchyroll-price-increase-subscription-anime
+        quote: >-
+          While the basic Crunchyroll Premium will continue to cost $7.99 / month, subscriptions for
+          the Mega Fan tier are increasing from $9.99 to $11.99 / month, and the Ultimate Fan tier
+          will rise from $14.99 to $15.99 / month.
+      - url: https://www.theverge.com/2024/5/1/24146651/crunchyroll-price-increase-subscription-anime
+        publisher: The Verge
+        kind: press
+        published: 2024-05-01
+        archive: https://web.archive.org/web/20240501205224/https://www.theverge.com/2024/5/1/24146651/crunchyroll-price-increase-subscription-anime
+        quote: >-
+          Notably, the price changes are only set to impact subscribers in Argentina, Colombia,
+          France, Portugal, the United States, and “select additional countries.”
+      - url: https://help.crunchyroll.com/hc/en-us/articles/25774815730068-Price-change-FAQs
+        publisher: Crunchyroll Help
+        kind: primary
+        published: 2024-05-04
+        archive: https://web.archive.org/web/20240518044638/https://help.crunchyroll.com/hc/en-us/articles/25774815730068-Price-change-FAQs
+        quote: >-
+          With this update, we're expanding our offerings to provide you with more of what you love:
+          the largest dedicated anime library with over 45,000 episodes
+      - url: https://www.crunchyroll.com/premium
+        publisher: Crunchyroll
+        kind: pricing-page
+        published: 2024-05-01
+        archive: https://web.archive.org/web/20240501154030/https://www.crunchyroll.com/premium
+        quote: >-
+          Most Popular Mega Fan $9.99/mo + Applicable taxes
+      - url: https://www.crunchyroll.com/premium
+        publisher: Crunchyroll
+        kind: pricing-page
+        published: 2024-07-02
+        archive: https://web.archive.org/web/20240702195100/https://www.crunchyroll.com/premium
+        quote: >-
+          Most Popular Mega Fan $11.99/mo + Applicable taxes
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
+
+  - id: free-plan-end
+    date: 2025-12-31
+    date_kind: effective
+    category: paywall
+    title: Crunchyroll ends its free, ad-supported plan
+    question: When did Crunchyroll end its free plan?
+    what_changed: >-
+      Crunchyroll ended free, ad-supported streaming on 31 December 2025, which it announced in an ad
+      during its own free streams. Free viewers already only had selected shows, as Crunchyroll had
+      stopped automatically offering all new simulcasts free in 2022.
+    before: Free with ads for selected shows
+    after: Paid plans only for on-demand streaming
+    user_impact: People using Crunchyroll's free on-demand streaming had to subscribe to keep watching.
+    severity: 3
+    status: in-force
+    sources:
+      - url: https://www.animenewsnetwork.com/news/2025-12-08/crunchyroll-halts-ad-supported-streaming-on-december-31/.231838
+        publisher: Anime News Network
+        kind: press
+        published: 2025-12-08
+        archive: https://web.archive.org/web/20251208190627/https://www.animenewsnetwork.com/news/2025-12-08/crunchyroll-halts-ad-supported-streaming-on-december-31/.231838
+        quote: >-
+          Crunchyroll revealed in an advertisement during its own free streams that it is halting
+          free ad-supported streaming on its service on December 31.
+      - url: https://www.animenewsnetwork.com/news/2025-12-08/crunchyroll-halts-ad-supported-streaming-on-december-31/.231838
+        publisher: Anime News Network
+        kind: press
+        published: 2025-12-08
+        archive: https://web.archive.org/web/20251208190627/https://www.animenewsnetwork.com/news/2025-12-08/crunchyroll-halts-ad-supported-streaming-on-december-31/.231838
+        quote: >-
+          Crunchyroll instead required that viewers have a subscription to access new and continuing
+          simulcasts.
+      - url: https://www.androidauthority.com/crunchyroll-ends-free-plan-3623492/
+        publisher: Android Authority
+        kind: press
+        published: 2025-12-09
+        archive: https://web.archive.org/web/20251209161241/https://www.androidauthority.com/crunchyroll-ends-free-plan-3623492/
+        quote: >-
+          Cord Cutters News reports that Crunchyroll will discontinue its free, ad-supported
+          streaming plan on December 31, 2025. The news apparently came via an in-player message in
+          place of a regular advertisement.
+      - url: https://www.animenewsnetwork.com/news/2026-02-02/crunchyroll-increases-subscription-prices-for-all-tiers/.233751
+        publisher: Anime News Network
+        kind: press
+        published: 2026-02-02
+        archive: https://web.archive.org/web/20260202204140/https://www.animenewsnetwork.com/news/2026-02-02/crunchyroll-increases-subscription-prices-for-all-tiers/.233751
+        quote: >-
+          Crunchyroll halted halting free ad-supported streaming on its service on December 31.
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
+
+  - id: price-2026
+    date: 2026-02-02
+    date_kind: announced
+    effective: 2026-03
+    category: price-rise
+    title: Crunchyroll raises every US monthly tier by $2, with Fan going from $7.99 to $9.99
+    what_changed: >-
+      Crunchyroll raised every US monthly tier by $2 on 2 February 2026, taking Fan to $9.99, Mega
+      Fan to $13.99 and Ultimate Fan to $17.99. Existing members paid it from their next bill after
+      4 March, and Fan gained offline viewing on 1 device.
+    before: $7.99 a month (Fan)
+    after: $9.99 a month (Fan)
+    user_impact: >-
+      US members on the Fan, Mega Fan and Ultimate Fan monthly tiers paid $2 more a month, with Fan
+      members getting offline viewing on 1 device.
+    severity: 2
+    status: in-force
+    regions: [US]
+    prices:
+      - { plan: fan-us, from: 7.99, to: 9.99 }
+      - { plan: mega-fan-us, from: 11.99, to: 13.99 }
+      - { plan: ultimate-fan-us, from: 15.99, to: 17.99 }
+    sources:
+      - url: https://www.animenewsnetwork.com/news/2026-02-02/crunchyroll-increases-subscription-prices-for-all-tiers/.233751
+        publisher: Anime News Network
+        kind: press
+        published: 2026-02-02
+        archive: https://web.archive.org/web/20260202204140/https://www.animenewsnetwork.com/news/2026-02-02/crunchyroll-increases-subscription-prices-for-all-tiers/.233751
+        quote: >-
+          The company increased the Fan Tier price from US$7.99 to US$9.99, the Mega Fan Tier price
+          from US$11.99 to US$13.99 per month and the Ultimate Fan Tier from US$15.99 to US$17.99
+          per month. The price changes will be reflected for existing paid subscriptions in the U.S.
+          on the next billing date after March 4.
+      - url: https://www.animenewsnetwork.com/news/2026-02-02/crunchyroll-increases-subscription-prices-for-all-tiers/.233751
+        publisher: Anime News Network
+        kind: press
+        published: 2026-02-02
+        archive: https://web.archive.org/web/20260202204140/https://www.animenewsnetwork.com/news/2026-02-02/crunchyroll-increases-subscription-prices-for-all-tiers/.233751
+        quote: The Fan Tier now allows users to download content for offline viewing on one device.
+      - url: https://www.crunchyroll.com/premium
+        publisher: Crunchyroll
+        kind: pricing-page
+        published: 2026-04-03
+        archive: https://web.archive.org/web/20260403113604/https://www.crunchyroll.com/premium
+        quote: >-
+          Fan $9.99/mo + Applicable taxes No ads Complete access to Crunchyroll's library New
+          episodes shortly after airing in Japan Stream on a total of 1 device at a time Offline
+          Viewing
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
