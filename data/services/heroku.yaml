@@ -1,0 +1,113 @@
+service: heroku
+name: Heroku
+company: salesforce
+url: https://www.heroku.com
+wikipedia: https://en.wikipedia.org/wiki/Heroku
+
+changes:
+  - id: free-plans-end
+    date: 2022-11-28
+    date_kind: effective
+    category: paywall
+    title: Heroku ends its free dyno, Postgres and Redis plans
+    question: When did Heroku end its free tier?
+    what_changed: >-
+      Heroku ended its free dyno, Postgres and Redis plans on 28 November 2022, after offering them
+      for over a decade. It announced it on 25 August 2022. Free dynos were scaled down to 0 and free
+      hobby-dev databases deleted unless their owners moved to a paid plan, such as Eco dynos at $5
+      for 1,000 hours a month shared across all of an account's Eco dynos. Heroku also said it would delete
+      accounts inactive for over a year, with their storage, from 26 October 2022.
+    before: Free dynos, Postgres and Redis
+    after: Eco dynos at $5 for 1,000 hours a month
+    user_impact: >-
+      Apps on free dynos were scaled down to 0 unless their owners paid, and free Postgres and Redis
+      databases that weren't upgraded were deleted, though Heroku support offered to restore deleted
+      Postgres data into a new paid database.
+    company_said: >-
+      Heroku said its teams were spending an extraordinary amount of effort to manage fraud and
+      abuse of the free plans, and it wanted to focus its resources on mission-critical
+      capabilities for customers.
+    severity: 3
+    status: in-force
+    sources:
+      - url: https://blog.heroku.com/next-chapter
+        publisher: Heroku
+        kind: primary
+        published: 2022-08-25
+        archive: https://web.archive.org/web/20220825150040/https://blog.heroku.com/next-chapter
+        quote: >-
+          In order to focus our resources on delivering mission-critical capabilities for
+          customers, we will be phasing out our free plan for Heroku Dynos, free plan for Heroku
+          Postgres, and free plan for Heroku Data for Redis®, as well as deleting inactive accounts.
+      - url: https://blog.heroku.com/next-chapter
+        publisher: Heroku
+        kind: primary
+        published: 2022-08-25
+        archive: https://web.archive.org/web/20220825150040/https://blog.heroku.com/next-chapter
+        quote: >-
+          Starting October 26, 2022, we will begin deleting inactive accounts and associated
+          storage for accounts that have been inactive for over a year. Starting November 28, 2022,
+          we plan to stop offering free product plans and plan to start shutting down free dynos
+          and data services.
+      - url: https://help.heroku.com/RSBRUH58/removal-of-heroku-free-product-plans-faq
+        publisher: Heroku Help
+        kind: primary
+        published: 2022-08-25
+        archive: https://web.archive.org/web/20220825154515/https://help.heroku.com/RSBRUH58/removal-of-heroku-free-product-plans-faq
+        quote: >-
+          free dynos will be scaled down to 0 and hobby-dev databases will be deleted starting
+          November 28, 2022.
+      - url: https://help.heroku.com/NOMNH3IT/what-is-happening-to-my-free-data-add-on-is-access-being-denied-is-my-data-being-deleted-if-so-when-and-how
+        publisher: Heroku Help
+        kind: primary
+        published: 2022-08-27
+        archive: https://web.archive.org/web/20220827131144/https://help.heroku.com/NOMNH3IT/what-is-happening-to-my-free-data-add-on-is-access-being-denied-is-my-data-being-deleted-if-so-when-and-how
+        quote: >-
+          Hobby-Dev Heroku Postgres and Heroku Data for Redis add-ons are being deleted from all
+          accounts starting on November 28, 2022.
+      - url: https://help.heroku.com/8FU825NU/end-of-heroku-free-plans-database-deleted-restore-database-app-down
+        publisher: Heroku Help
+        kind: primary
+        published: 2022-12-15
+        archive: https://web.archive.org/web/20221215052748/https://help.heroku.com/8FU825NU/end-of-heroku-free-plans-database-deleted-restore-database-app-down
+        quote: >-
+          Your free Postgres instance (hobby-dev) is removed with the removal of free plans in
+          Heroku and you would like to recover the deleted database. We can certainly help you in
+          recovering the database
+      - url: https://help.heroku.com/8FU825NU/end-of-heroku-free-plans-database-deleted-restore-database-app-down
+        publisher: Heroku Help
+        kind: primary
+        published: 2022-12-15
+        archive: https://web.archive.org/web/20221215052748/https://help.heroku.com/8FU825NU/end-of-heroku-free-plans-database-deleted-restore-database-app-down
+        quote: >-
+          Unfortunately, we do not have a way to recover data from a deleted Heroku Data for Redis
+          instance as free plans for Heroku Data for Redis don't persist instance data hence the
+          data on the instance is lost
+      - url: https://blog.heroku.com/new-low-cost-plans
+        publisher: Heroku
+        kind: primary
+        published: 2022-09-26
+        archive: https://web.archive.org/web/20250422022233/https://blog.heroku.com/new-low-cost-plans
+        quote: >-
+          With that in mind, we’re thrilled to announce our new Eco Dynos plan, which will cost $5
+          for 1,000 compute hours a month, shared across all of your eco dynos.
+      - url: https://blog.heroku.com/new-low-cost-plans
+        publisher: Heroku
+        kind: primary
+        published: 2022-09-26
+        archive: https://web.archive.org/web/20250422022233/https://blog.heroku.com/new-low-cost-plans
+        quote: >-
+          We’re very excited to announce new Mini plans for Heroku Postgres ($5/month) and Heroku
+          Key-Value Store (25 MB, $3/month).
+      - url: https://techcrunch.com/2022/08/25/heroku-announces-plans-to-eliminate-free-plans-blaming-fraud-and-abuse/
+        publisher: TechCrunch
+        kind: press
+        published: 2022-08-25
+        archive: https://web.archive.org/web/20261019092314/https://techcrunch.com/2022/08/25/heroku-announces-plans-to-eliminate-free-plans-blaming-fraud-and-abuse/
+        quote: >-
+          After offering them for over a decade, Heroku today announced that it will eliminate all
+          of its free services — pushing users to paid plans.
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
