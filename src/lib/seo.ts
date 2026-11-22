@@ -18,7 +18,7 @@ export const nouns: Record<Category, [string, string]> = {
   'api-restriction': ['API restriction', 'API restrictions'],
   tracking: ['tracking change', 'tracking changes'],
   'lock-out': ['lock-out', 'lock-outs'],
-  bricked: ['bricked device', 'bricked devices'],
+  bricked: ['bricked purchase', 'bricked purchases'],
   ai: ['AI feature pushed in', 'AI features pushed in']
 };
 
