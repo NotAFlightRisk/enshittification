@@ -635,6 +635,89 @@ changes:
     sources_checked: 2026-11-19
     status_checked: 2026-11-19
 
+  - id: mixed-reality-removed
+    date: 2024-10-01
+    date_kind: effective
+    category: bricked
+    title: Windows 11 24H2 removes Windows Mixed Reality, and its VR headsets stop working on it
+    question: When did Windows 11 remove Windows Mixed Reality?
+    what_changed: >-
+      Microsoft began releasing Windows 11 version 24H2 on 1 October 2024 without Windows Mixed
+      Reality, so Windows MR headsets don't work on it. Microsoft had announced it in December 2023,
+      along with the end of the Mixed Reality Portal app and Windows Mixed Reality for SteamVR. It
+      said existing
+      headsets would keep working with Steam through November 2026 for people who stayed on version
+      23H2, though 23H2 Home and Pro stopped getting updates in November 2025.
+    before: Windows MR headsets work on Windows 11 version 23H2
+    after: Windows MR headsets don't work on version 24H2 or later
+    user_impact: >-
+      Owners of Windows MR headsets from Acer, Asus, Dell, HP, Lenovo and Samsung (UploadVR estimated
+      around 80,000 SteamVR users had one) couldn't use them at all once they installed Windows 11
+      24H2, not even on Steam.
+    severity: 4
+    status: in-force
+    sources:
+      - url: https://learn.microsoft.com/en-us/windows/whats-new/removed-features
+        publisher: Microsoft Learn
+        kind: primary
+        published: 2026-08-25
+        archive: https://web.archive.org/web/20261114083834/https://learn.microsoft.com/en-us/windows/whats-new/removed-features
+        quote: >-
+          As announced in December of 2023, Mixed Reality was removed in Windows 11, version 24H2.
+          This deprecation includes the Mixed Reality Portal app, Windows Mixed Reality for SteamVR,
+          and Steam VR Beta.
+      - url: https://learn.microsoft.com/en-us/windows/whats-new/deprecated-features
+        publisher: Microsoft Learn
+        kind: primary
+        published: 2026-11-11
+        archive: https://web.archive.org/web/20261115064907/https://learn.microsoft.com/en-us/windows/whats-new/deprecated-features
+        quote: >-
+          Existing Windows Mixed Reality devices will continue to work with Steam through November
+          2026, if users remain on their current released version of Windows 11, version 23H2. After
+          November 2026, Windows Mixed Reality will no longer receive security updates, nonsecurity
+          updates, bug fixes, technical support, or online technical content updates.
+      - url: https://blogs.windows.com/windowsexperience/2024/10/01/how-to-get-new-experiences-for-windows-11/
+        publisher: Microsoft
+        kind: primary
+        published: 2024-10-01
+        archive: https://web.archive.org/web/20261030151215/https://blogs.windows.com/windowsexperience/2024/10/01/how-to-get-new-experiences-for-windows-11/
+        quote: >-
+          Starting today, we begin to release the Windows 11 2024 Update, also referred to as
+          Windows 11, version 24H2.
+      - url: https://learn.microsoft.com/en-us/lifecycle/products/windows-11-home-and-pro
+        publisher: Microsoft Learn
+        kind: primary
+        published: 2026-11-11
+        archive: https://web.archive.org/web/20261111184806/https://learn.microsoft.com/en-us/lifecycle/products/windows-11-home-and-pro
+        quote: Version 23H2 10/31/2023 8:00:00 AM 11/12/2025 6:59:59 AM
+      - url: https://www.uploadvr.com/windows-11-24h2-kills-windows-mr-support/
+        publisher: UploadVR
+        kind: press
+        published: 2024-10-01
+        archive: https://web.archive.org/web/20260612150650/https://www.uploadvr.com/windows-11-24h2-kills-windows-mr-support/
+        quote: >-
+          With Windows 11 24H2, the latest major version of Microsoft's PC operating system, you can
+          no longer use a Windows MR headset in any way
+      - url: https://www.uploadvr.com/windows-11-24h2-kills-windows-mr-support/
+        publisher: UploadVR
+        kind: press
+        published: 2024-10-01
+        archive: https://web.archive.org/web/20260612150650/https://www.uploadvr.com/windows-11-24h2-kills-windows-mr-support/
+        quote: >-
+          This includes all the Windows MR headsets from Acer, Asus, Dell, HP, Lenovo, and Samsung
+      - url: https://www.uploadvr.com/windows-11-24h2-kills-windows-mr-support/
+        publisher: UploadVR
+        kind: press
+        published: 2024-10-01
+        archive: https://web.archive.org/web/20260612150650/https://www.uploadvr.com/windows-11-24h2-kills-windows-mr-support/
+        quote: >-
+          In August 3.49% of SteamVR users were using a Windows MR headset, which we estimate to be
+          around 80,000 people.
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
+
   - id: windows-10-new-pc-ads
     date: 2024-11-20
     date_kind: reported
