@@ -1,0 +1,94 @@
+service: roku
+name: Roku
+company: roku
+url: https://www.roku.com
+crw: https://consumerrights.wiki/w/Roku
+wikipedia: https://en.wikipedia.org/wiki/Roku
+
+changes:
+  - id: dispute-terms-lockout
+    date: 2024-03-05
+    date_kind: reported
+    category: lock-out
+    title: Roku locks TVs and streaming devices until owners accept new dispute terms
+    what_changed: >-
+      In March 2024 owners reported Roku TVs and streaming devices showing a pop-up that blocked them
+      until they agreed to Roku's new Dispute Resolution Terms. There was no way to disagree on screen, and
+      opting out meant posting a letter to Roku's general counsel within 30 days of the terms
+      taking effect on February 20.
+    after: Devices unusable until you select Agree
+    user_impact: >-
+      Owners couldn't use devices they'd already bought until they accepted the new terms, and
+      anyone who didn't want the updated dispute terms had to opt out by post.
+    company_said: >-
+      Roku said that like many companies it updates its terms from time to time and takes steps to
+      make sure customers are informed of the change.
+    severity: 3
+    status: in-force
+    sources:
+      - url: https://arstechnica.com/gadgets/2024/03/disgraceful-messy-tos-update-allegedly-locks-roku-devices-until-users-give-in/
+        publisher: Ars Technica
+        kind: press
+        published: 2024-03-07
+        archive: https://web.archive.org/web/20240307202616/https://arstechnica.com/gadgets/2024/03/disgraceful-messy-tos-update-allegedly-locks-roku-devices-until-users-give-in/
+        quote: >-
+          The pop-up doesn't offer a way to disagree, and users are unable to use their device
+          unless they hit agree.
+      - url: https://arstechnica.com/gadgets/2024/03/disgraceful-messy-tos-update-allegedly-locks-roku-devices-until-users-give-in/
+        publisher: Ars Technica
+        kind: press
+        published: 2024-03-07
+        archive: https://web.archive.org/web/20240307202616/https://arstechnica.com/gadgets/2024/03/disgraceful-messy-tos-update-allegedly-locks-roku-devices-until-users-give-in/
+        quote: >-
+          Like many companies, Roku updates its terms of service from time to time. When we do, we
+          take steps to make sure customers are informed of the change.
+      - url: https://techcrunch.com/2024/03/05/roku-disables-tvs-and-streaming-devices-until-users-consent-to-forced-arbitration/
+        publisher: TechCrunch
+        kind: press
+        published: 2024-03-06
+        archive: https://web.archive.org/web/20240306005439/https://techcrunch.com/2024/03/05/roku-disables-tvs-and-streaming-devices-until-users-consent-to-forced-arbitration/
+        quote: >-
+          There was no accessing the device without agreeing to the new terms.
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
+
+  - id: autoplay-video-ads-test
+    date: 2025-03-17
+    date_kind: reported
+    category: ads
+    title: Roku tests video ads that play before the home screen
+    what_changed: >-
+      In March 2025 some Roku users reported video ads playing automatically before they could reach
+      the Roku OS home screen. Roku confirmed the ads were expected behaviour but called it a test,
+      and didn't say whether it would make them permanent.
+    user_impact: >-
+      Some people using Roku OS got a video ad that played on its own before the home screen, which
+      already showed ads.
+    company_said: >-
+      Roku said the test was the latest example of it exploring new ways to showcase brands and
+      programming.
+    severity: 1
+    status: test
+    sources:
+      - url: https://arstechnica.com/gadgets/2025/03/roku-says-unpopular-autoplay-ads-are-just-a-test/
+        publisher: Ars Technica
+        kind: press
+        published: 2025-03-17
+        archive: https://web.archive.org/web/20250317193754/https://arstechnica.com/gadgets/2025/03/roku-says-unpopular-autoplay-ads-are-just-a-test/
+        quote: >-
+          Reports of Roku customers seeing video ads automatically play before they could view the
+          OS’ home screen started appearing online this week.
+      - url: https://arstechnica.com/gadgets/2025/03/roku-says-unpopular-autoplay-ads-are-just-a-test/
+        publisher: Ars Technica
+        kind: press
+        published: 2025-03-17
+        archive: https://web.archive.org/web/20250317193754/https://arstechnica.com/gadgets/2025/03/roku-says-unpopular-autoplay-ads-are-just-a-test/
+        quote: >-
+          a Roku spokesperson shared a company statement that confirms that the autoplaying ads are
+          expected behavior but not a permanent part of Roku OS currently.
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22

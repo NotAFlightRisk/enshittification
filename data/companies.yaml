@@ -13,6 +13,11 @@
   url: https://redditinc.com
   wikipedia: https://en.wikipedia.org/wiki/Reddit
 
+- id: roku
+  name: Roku
+  url: https://www.roku.com
+  wikipedia: https://en.wikipedia.org/wiki/Roku,_Inc.
+
 - id: netflix
   name: Netflix
   url: https://about.netflix.com
