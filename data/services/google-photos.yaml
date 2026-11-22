@@ -65,7 +65,7 @@ changes:
         publisher: Google Photos Help
         kind: primary
         published: 2026-11-22
-        archive: pending
+        archive: https://web.archive.org/web/20261118010946/https://support.google.com/photos/answer/6220791
         quote: >-
           Photos and videos backed up in Storage saver count toward your Google Account storage.
     added: 2026-11-22
