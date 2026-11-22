@@ -1,0 +1,218 @@
+service: kindle
+name: Kindle
+company: amazon
+url: https://www.amazon.com/kindle
+wikipedia: https://en.wikipedia.org/wiki/Amazon_Kindle
+
+plans:
+  - id: unlimited-us
+    name: Kindle+ (was Kindle Unlimited)
+    region: US
+    currency: USD
+    billing: month
+    since: 2014-07-18
+    price: 9.99
+    source:
+      url: https://press.aboutamazon.com/news-releases/news-release-details/introducing-kindle-unlimited-unlimited-reading-and-listening-any
+      publisher: Amazon
+      kind: primary
+      published: 2014-07-18
+      archive: https://web.archive.org/web/20220212002829/https://press.aboutamazon.com/news-releases/news-release-details/introducing-kindle-unlimited-unlimited-reading-and-listening-any
+      quote: >-
+        listen as much as they want to thousands of Audible audiobooks, all for only $9.99 a month
+
+changes:
+  - id: unlimited-price-2023
+    date: 2023-05-11
+    date_kind: announced
+    category: price-rise
+    title: Kindle Unlimited goes from $9.99 to $11.99 a month in the US, its first rise
+    what_changed: >-
+      Amazon started emailing US Kindle Unlimited members on 11 May 2023 that the monthly price was
+      going from $9.99 to $11.99, its first rise since the 2014 launch. Monthly members paid it from
+      their next charge, and until 31 July 2023 they could lock in $9.99 by buying 6 or 12 months
+      up front.
+    before: $9.99 a month
+    after: $11.99 a month
+    user_impact: US members on a monthly Kindle Unlimited plan were charged $11.99 instead of $9.99 from their next renewal.
+    severity: 1
+    status: in-force
+    regions: [US]
+    prices:
+      - { plan: unlimited-us, from: 9.99, to: 11.99 }
+    sources:
+      - url: https://blog.the-ebook-reader.com/2023/05/12/kindle-unlimited-price-increase-heres-how-to-get-the-old-price/
+        publisher: The eBook Reader Blog
+        kind: press
+        published: 2023-05-12
+        archive: https://web.archive.org/web/20260716234236/https://blog.the-ebook-reader.com/2023/05/12/kindle-unlimited-price-increase-heres-how-to-get-the-old-price/
+        quote: >-
+          The Kindle Unlimited price increase to $11.99 per month officially went into effect on May
+          11th, 2023
+      - url: https://blog.the-ebook-reader.com/2023/05/12/kindle-unlimited-price-increase-heres-how-to-get-the-old-price/
+        publisher: The eBook Reader Blog
+        kind: press
+        published: 2023-05-12
+        archive: https://web.archive.org/web/20260716234236/https://blog.the-ebook-reader.com/2023/05/12/kindle-unlimited-price-increase-heres-how-to-get-the-old-price/
+        quote: >-
+          Yesterday Amazon started sending out emails to Kindle Unlimited subscribers in the US
+      - url: https://goodereader.com/blog/electronic-readers/amazon-is-increasing-the-cost-to-kindle-unlimited
+        publisher: Good e-Reader
+        kind: press
+        published: 2023-05-12
+        archive: https://web.archive.org/web/20250724140452/https://goodereader.com/blog/electronic-readers/amazon-is-increasing-the-cost-to-kindle-unlimited
+        quote: >-
+          If users are on a month-to-month renewal, the next time they are charged, it will be a
+          new amount.
+      - url: https://goodereader.com/blog/electronic-readers/amazon-is-increasing-the-cost-to-kindle-unlimited
+        publisher: Good e-Reader
+        kind: press
+        published: 2023-05-12
+        archive: https://web.archive.org/web/20250724140452/https://goodereader.com/blog/electronic-readers/amazon-is-increasing-the-cost-to-kindle-unlimited
+        quote: >-
+          Until July 31, 2023, users can lock in the old $9.99 by purchasing a six-month or a
+          12-month subscription upfront.
+      - url: https://goodereader.com/blog/electronic-readers/amazon-is-increasing-the-cost-to-kindle-unlimited
+        publisher: Good e-Reader
+        kind: press
+        published: 2023-05-12
+        archive: https://web.archive.org/web/20250724140452/https://goodereader.com/blog/electronic-readers/amazon-is-increasing-the-cost-to-kindle-unlimited
+        quote: >-
+          This is the first time Amazon has changed the price of Kindle Unlimited since the program
+          launched in 2014.
+      - url: https://www.aboutamazon.com/news/devices/what-is-kindle-unlimited
+        publisher: Amazon
+        kind: pricing-page
+        published: 2023-06-09
+        archive: https://web.archive.org/web/20230610001355/https://www.aboutamazon.com/news/devices/what-is-kindle-unlimited
+        quote: In the U.S., a Kindle Unlimited subscription costs $11.99 a month plus taxes.
+      - url: https://www.aboutamazon.com/news/devices/what-is-kindle-plus
+        publisher: Amazon
+        kind: pricing-page
+        published: 2026-10-22
+        archive: https://web.archive.org/web/20261117093634/https://www.aboutamazon.com/news/devices/what-is-kindle-plus
+        quote: In the U.S., a Kindle+ subscription costs $11.99 a month plus taxes.
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
+
+  - id: download-transfer-removed
+    date: 2025-02-26
+    date_kind: effective
+    category: removed-feature
+    title: Amazon stops letting you download Kindle books you bought to a computer
+    what_changed: >-
+      Amazon took the Download & Transfer via USB option off its website on 26 February 2025, so
+      bought Kindle books can no longer be saved to a computer. Books can still be sent to Kindles
+      over Wi-Fi, and ones already on a device keep working.
+    before: Bought books could be downloaded to a computer and copied to a Kindle over USB
+    after: Bought books can't be downloaded to a computer
+    user_impact: >-
+      People who used it to keep copies of the books they'd bought, or to convert them for
+      non-Kindle e-readers, could no longer download them to a computer.
+    severity: 1
+    status: in-force
+    sources:
+      - url: https://www.theverge.com/news/612898/amazon-removing-kindle-book-download-transfer-usb
+        publisher: The Verge
+        kind: press
+        published: 2025-02-14
+        archive: https://web.archive.org/web/20261104191910/https://www.theverge.com/news/612898/amazon-removing-kindle-book-download-transfer-usb
+        quote: >-
+          Starting February 26, 2025, the ‘Download & Transfer via USB’ option will no longer be
+          available. You can still send Kindle books to your Wi-Fi enabled devices by selecting the
+          ‘Deliver or Remove from Device’ option.
+      - url: https://www.theverge.com/news/612898/amazon-removing-kindle-book-download-transfer-usb
+        publisher: The Verge
+        kind: press
+        published: 2025-02-14
+        archive: https://web.archive.org/web/20261104191910/https://www.theverge.com/news/612898/amazon-removing-kindle-book-download-transfer-usb
+        quote: >-
+          It’s a feature that a lot of Kindle users are probably not aware of, given books can be
+          more easily sent to devices over Wi-Fi, but it’s especially useful for backing up
+          purchases or converting them to other formats compatible with non-Kindle e-readers.
+      - url: https://www.theverge.com/news/612898/amazon-removing-kindle-book-download-transfer-usb
+        publisher: The Verge
+        kind: press
+        published: 2025-02-14
+        archive: https://web.archive.org/web/20261104191910/https://www.theverge.com/news/612898/amazon-removing-kindle-book-download-transfer-usb
+        quote: >-
+          Customers can continue reading books previously downloaded on their Kindle device, and
+          access new content through the Kindle app, Kindle for web, as well as directly through
+          Kindle devices with WiFi capability
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
+
+  - id: old-kindles-store-cutoff
+    date: 2026-05-20
+    date_kind: effective
+    category: lock-out
+    title: Amazon cuts Kindles released in 2012 or earlier off from the Kindle Store
+    question: When did Amazon stop supporting older Kindles?
+    what_changed: >-
+      Amazon said Kindles released in 2012 or earlier would lose the Kindle Store on 20 May 2026,
+      in an email to customers on 8 April. After that they only read books already on them, and one
+      that's deregistered or factory reset can't be registered or used again. Amazon offered a
+      promotional code for 20% off selected new Kindles, plus an ebook credit once one was bought.
+    before: Affected Kindles could buy, borrow and download books from the Kindle Store
+    after: Affected Kindles only read books already downloaded to them
+    user_impact: >-
+      Owners of Kindle and Kindle Fire devices from 2012 or earlier, from the original Kindle to the
+      first Paperwhite, could only read what was already downloaded on them.
+    company_said: >-
+      Amazon said the models had been supported for at least 14 years, some as long as 18, and
+      technology had come a long way in that time.
+    severity: 3
+    status: in-force
+    sources:
+      - url: https://www.theregister.com/2026/04/08/amazon_kindle_support_discontinued/
+        publisher: The Register
+        kind: press
+        published: 2026-04-08
+        archive: https://web.archive.org/web/20260418193836/https://www.theregister.com/2026/04/08/amazon_kindle_support_discontinued/
+        quote: >-
+          Starting May 20, 2026, customers using Kindle and Kindle Fire devices released in 2012
+          and earlier will no longer be able to purchase, borrow, or download new content via the
+          Kindle Store.
+      - url: https://www.theregister.com/2026/04/08/amazon_kindle_support_discontinued/
+        publisher: The Register
+        kind: press
+        published: 2026-04-08
+        archive: https://web.archive.org/web/20260418193836/https://www.theregister.com/2026/04/08/amazon_kindle_support_discontinued/
+        quote: >-
+          If you deregister or factory reset these devices, you will not be able to re-register or
+          use these devices in any way.
+      - url: https://www.theregister.com/2026/04/08/amazon_kindle_support_discontinued/
+        publisher: The Register
+        kind: press
+        published: 2026-04-08
+        archive: https://web.archive.org/web/20260418193836/https://www.theregister.com/2026/04/08/amazon_kindle_support_discontinued/
+        quote: >-
+          Affected hardware includes first and second-generation Kindle versions, as well as Kindle
+          DX and DX Graphite, Kindle Keyboard, Kindle 4, Kindle Touch, Kindle 5 and Kindle
+          Paperwhite 1st generation.
+      - url: https://www.theregister.com/2026/04/08/amazon_kindle_support_discontinued/
+        publisher: The Register
+        kind: press
+        published: 2026-04-08
+        archive: https://web.archive.org/web/20260418193836/https://www.theregister.com/2026/04/08/amazon_kindle_support_discontinued/
+        quote: >-
+          These models have been supported for at least 14 years — some as long as 18 years — but
+          technology has come a long way in that time, and these devices will no longer be
+          supported moving forward.
+      - url: https://techcrunch.com/2026/04/08/amazon-to-end-support-for-older-kindle-devices-2012/
+        publisher: TechCrunch
+        kind: press
+        published: 2026-04-08
+        archive: https://web.archive.org/web/20260907192710/https://techcrunch.com/2026/04/08/amazon-to-end-support-for-older-kindle-devices-2012/
+        quote: >-
+          After May 20, users will only be able to use their devices to read content that’s already
+          downloaded. Once an older device is deregistered or reset to factory settings, it cannot be
+          re-registered after May 20.
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
