@@ -82,3 +82,8 @@
   name: Unity Technologies
   url: https://unity.com
   wikipedia: https://en.wikipedia.org/wiki/Unity_Technologies
+
+- id: sony
+  name: Sony
+  url: https://www.sony.com
+  wikipedia: https://en.wikipedia.org/wiki/Sony
