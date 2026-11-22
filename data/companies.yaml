@@ -101,3 +101,8 @@
 - id: medialab
   name: MediaLab
   url: https://medialab.la
+
+- id: chamberlain
+  name: Chamberlain Group
+  url: https://www.chamberlaingroup.com
+  wikipedia: https://en.wikipedia.org/wiki/Chamberlain_Group
