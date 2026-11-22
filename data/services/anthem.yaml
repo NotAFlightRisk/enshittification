@@ -1,0 +1,67 @@
+service: anthem
+name: Anthem
+company: ea
+url: https://web.archive.org/web/20250627055911/https://www.ea.com/games/anthem
+crw: https://consumerrights.wiki/w/Anthem
+wikipedia: https://en.wikipedia.org/wiki/Anthem_(video_game)
+
+changes:
+  - id: servers-shutdown
+    date: 2026-01-12
+    date_kind: effective
+    category: bricked
+    title: EA shuts down Anthem's servers, and the online-only game can no longer be played
+    question: When did Anthem shut down?
+    what_changed: >-
+      EA shut down Anthem's servers on 12 January 2026, and the online-only game can no longer be
+      played by anyone who owns it. EA announced it on 3 July 2025, when it also stopped selling the
+      game's premium currency, and said Anthem had no offline mode to fall back on.
+    user_impact: >-
+      Owners lost the ability to play Anthem.
+    severity: 5
+    status: in-force
+    sources:
+      - url: https://www.ea.com/games/anthem/news/anthem-game-update
+        publisher: EA
+        kind: primary
+        published: 2025-07-03
+        archive: https://web.archive.org/web/20250703185925/https://www.ea.com/games/anthem/news/anthem-game-update
+        quote: >-
+          After careful consideration, we will be sunsetting Anthem on January 12, 2026.
+      - url: https://www.ea.com/games/anthem/news/anthem-game-update
+        publisher: EA
+        kind: primary
+        published: 2025-07-03
+        archive: https://web.archive.org/web/20250703185925/https://www.ea.com/games/anthem/news/anthem-game-update
+        quote: >-
+          Anthem was designed to be an online-only title so once the servers go offline, the game
+          will no longer be playable.
+      - url: https://www.ea.com/games/anthem/news/anthem-game-update
+        publisher: EA
+        kind: primary
+        published: 2025-07-03
+        archive: https://web.archive.org/web/20250703185925/https://www.ea.com/games/anthem/news/anthem-game-update
+        quote: >-
+          As of today, you can no longer purchase in-game premium currency, but you can still use
+          your remaining balance until the servers go offline.
+      - url: https://www.techradar.com/gaming/all-those-moments-will-be-lost-in-time-like-tears-in-rain-players-bid-farewell-to-anthem-as-ea-officially-shuts-down-the-games-servers-for-good
+        publisher: TechRadar
+        kind: press
+        published: 2026-01-13
+        archive: https://web.archive.org/web/20260113135135/https://www.techradar.com/gaming/all-those-moments-will-be-lost-in-time-like-tears-in-rain-players-bid-farewell-to-anthem-as-ea-officially-shuts-down-the-games-servers-for-good
+        quote: >-
+          At some point on January 12, 2026, Anthem servers officially went offline, making
+          BioWare's 2019 online sci-fi shooter no longer playable to those who own a copy of the
+          game.
+      - url: https://www.pcgamer.com/games/third-person-shooter/surprise-the-anthem-servers-are-still-running-but-they-wont-be-after-january-12/
+        publisher: PC Gamer
+        kind: press
+        published: 2025-07-03
+        archive: https://web.archive.org/web/20261025202002/https://www.pcgamer.com/games/third-person-shooter/surprise-the-anthem-servers-are-still-running-but-they-wont-be-after-january-12
+        quote: >-
+          After careful consideration, we will be sunsetting Anthem on January 12, 2026. This
+          means that the game will still be playable online for the next 180+ days.
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
