@@ -1,0 +1,127 @@
+service: insteon
+name: Insteon
+company: smartlabs
+url: https://www.insteon.com
+wikipedia: https://en.wikipedia.org/wiki/Insteon
+
+changes:
+  - id: cloud-shutdown
+    date: 2022-04
+    date_kind: effective
+    category: bricked
+    title: Insteon's servers go offline without notice, and the Insteon Hub app stops working
+    question: What happened to Insteon?
+    what_changed: >-
+      Insteon's servers went offline without notice to customers in April 2022, and the Insteon Hub
+      app stopped working. Its owner Smartlabs said days later that a sale had fallen through and
+      it had been assigned to a financial services firm in March. A group of Insteon users bought
+      it, most hubs had begun coming back online by 9 June 2022, and from 15 June it charged $39.95
+      a year for app access.
+    user_impact: >-
+      Insteon Hub owners lost the app and the automation and scheduling that ran through it, though
+      physical switches and buttons on Insteon devices kept working.
+    company_said: >-
+      Smartlabs said supply chain disruption from the pandemic had proved incredibly difficult, and
+      that a sale it expected had fallen through.
+    severity: 4
+    status: reversed
+    reversed:
+      date: 2022-06-09
+      what: >-
+        A group of Insteon users bought the company and began bringing the hubs back online, though
+        not every function was back at first. From 15 June 2022 it charged $39.95 a year for Hub
+        service, covering app access and notifications, with Alexa and Google Assistant to follow.
+      sources:
+        - url: https://www.insteon.com/blog/2022/6/9/fnustys354bfmcmchr36wgvrn5h41z
+          publisher: Insteon
+          kind: primary
+          published: 2022-06-09
+          archive: https://web.archive.org/web/20220609182605/https://www.insteon.com/blog/2022/6/9/fnustys354bfmcmchr36wgvrn5h41z
+          quote: >-
+            We are a small group of passionate Insteon users that have successfully acquired
+            Insteon.
+        - url: https://www.insteon.com/blog/2022/6/9/fnustys354bfmcmchr36wgvrn5h41z
+          publisher: Insteon
+          kind: primary
+          published: 2022-06-09
+          archive: https://web.archive.org/web/20220609182605/https://www.insteon.com/blog/2022/6/9/fnustys354bfmcmchr36wgvrn5h41z
+          quote: >-
+            Most of you discovered that the Insteon Hubs began coming back online.
+        - url: https://www.insteon.com/blog/2022/6/9/fnustys354bfmcmchr36wgvrn5h41z
+          publisher: Insteon
+          kind: primary
+          published: 2022-06-09
+          archive: https://web.archive.org/web/20220609182605/https://www.insteon.com/blog/2022/6/9/fnustys354bfmcmchr36wgvrn5h41z
+          quote: >-
+            We are aware not all functions are back online but we are actively working on it.
+        - url: https://www.insteon.com/blog/2022/6/9/subscription-letter
+          publisher: Insteon
+          kind: primary
+          published: 2022-06-15
+          archive: https://web.archive.org/web/20220615174627/https://www.insteon.com/blog/2022/6/9/subscription-letter
+          quote: >-
+            1-Year Access 39.95 every 12 months Purchase 1 year of Insteon Hub service. Provides
+            mobile app access to Insteon Hub, email and push notifications, voice assistant
+            integrations (Amazon Alexa and Google Assistant), and more.
+        - url: https://www.insteon.com/blog/2022/6/9/subscription-letter
+          publisher: Insteon
+          kind: primary
+          published: 2022-06-15
+          archive: https://web.archive.org/web/20220615174627/https://www.insteon.com/blog/2022/6/9/subscription-letter
+          quote: >-
+            We continue to work on our Google Assistant integration as well as re-listing our Alexa
+            skill.
+    sources:
+      - url: https://www.theregister.com/2022/04/19/insteon_cloud_shutdown/
+        publisher: The Register
+        kind: press
+        published: 2022-04-19
+        archive: https://web.archive.org/web/20220419205302/https://www.theregister.com/2022/04/19/insteon_cloud_shutdown/
+        quote: >-
+          The silence of the servers doesn't prevent physical switches and buttons on Insteon
+          accessories from operating, but it does mean there's no automation and scheduling
+          available through the Insteon Hub mobile app.
+      - url: https://www.theregister.com/2022/04/19/insteon_cloud_shutdown/
+        publisher: The Register
+        kind: press
+        published: 2022-04-19
+        archive: https://web.archive.org/web/20220419205302/https://www.theregister.com/2022/04/19/insteon_cloud_shutdown/
+        quote: >-
+          Internet-of-Things biz Insteon appears to have shut down its servers down without
+          notifying its customers
+      - url: https://www.insteon.com/news2022
+        publisher: Insteon
+        kind: primary
+        published: 2022-04-20
+        archive: https://web.archive.org/web/20220420150811/https://www.insteon.com/news2022
+        quote: >-
+          The process resulted in several interested parties and a sale was expected to be realized
+          in the March timeframe. Unfortunately, that sale did not materialize. Consequently, the
+          company was assigned to a financial services firm in March to optimize the assets of the
+          company.
+      - url: https://www.insteon.com/news2022
+        publisher: Insteon
+        kind: primary
+        published: 2022-04-20
+        archive: https://web.archive.org/web/20220420150811/https://www.insteon.com/news2022
+        quote: >-
+          However, the subsequent (and enduring) disruption to the supply chain caused by the
+          pandemic proved incredibly difficult and the company engaged in a sales process in
+          November, 2021.
+      - url: https://www.insteon.com/blog/2022/6/9/fnustys354bfmcmchr36wgvrn5h41z
+        publisher: Insteon
+        kind: primary
+        published: 2022-06-09
+        archive: https://web.archive.org/web/20220609182605/https://www.insteon.com/blog/2022/6/9/fnustys354bfmcmchr36wgvrn5h41z
+        quote: Most of you discovered that the Insteon Hubs began coming back online.
+      - url: https://www.insteon.com/blog/2022/6/9/subscription-letter
+        publisher: Insteon
+        kind: primary
+        published: 2022-06-15
+        archive: https://web.archive.org/web/20220615174627/https://www.insteon.com/blog/2022/6/9/subscription-letter
+        quote: >-
+          1-Year Access 39.95 every 12 months Purchase 1 year of Insteon Hub service.
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
