@@ -1,0 +1,92 @@
+service: myq
+name: myQ
+company: chamberlain
+url: https://www.myq.com
+
+changes:
+  - id: third-party-apps-blocked
+    date: 2023-10-25
+    date_kind: announced
+    category: api-restriction
+    title: Chamberlain blocks Home Assistant and other unofficial apps from myQ garage doors
+    what_changed: >-
+      Chamberlain said on 25 October 2023 that it was blocking unauthorised third-party apps from
+      myQ, which broke Home Assistant and Homebridge. Home Assistant, which had a MyQ integration
+      since 2017, said it would remove it on 6 December 2023, as it wouldn't pay the partnership fee
+      Chamberlain's authorised partners pay. Chamberlain pointed owners to those partners, which The
+      Verge said were mostly security companies with monthly subscriptions and car makers.
+    before: Home Assistant, Homebridge and other apps could run myQ garage doors
+    after: The myQ app, Chamberlain's own integrations and paying partners, with unofficial apps blocked
+    user_impact: >-
+      Owners who ran their garage doors through Home Assistant, Homebridge and other unofficial
+      apps lost those integrations, which Chamberlain said came from 0.2% of myQ users.
+    company_said: >-
+      Chamberlain said unauthorised integrations had made up more than half of myQ's traffic, at
+      times a substantial DDoS, and that blocking them would improve myQ's performance and
+      reliability.
+    severity: 4
+    status: in-force
+    sources:
+      - url: https://chamberlaingroup.com/press/a-message-about-our-decision-to-prevent-unauthorized-usage-of-myq
+        publisher: Chamberlain Group
+        kind: primary
+        published: 2023-10-25
+        archive: https://web.archive.org/web/20260811122350/https://chamberlaingroup.com/press/a-message-about-our-decision-to-prevent-unauthorized-usage-of-myq
+        quote: >-
+          Chamberlain Group recently made the decision to prevent unauthorized usage of our myQ
+          ecosystem through third-party apps.
+      - url: https://chamberlaingroup.com/press/a-message-about-our-decision-to-prevent-unauthorized-usage-of-myq
+        publisher: Chamberlain Group
+        kind: primary
+        published: 2023-11-07
+        archive: https://web.archive.org/web/20260811122350/https://chamberlaingroup.com/press/a-message-about-our-decision-to-prevent-unauthorized-usage-of-myq
+        quote: >-
+          Unauthorized app integrations, stemming from only 0.2% of myQ users, previously accounted
+          for more than half of the traffic to and from the myQ system, and at times constituted a
+          substantial DDOS event that consumed high quantities of resources.
+      - url: https://www.home-assistant.io/blog/2023/11/06/removal-of-myq-integration/
+        publisher: Home Assistant
+        kind: press
+        published: 2023-11-06
+        archive: https://web.archive.org/web/20260830193842/https://www.home-assistant.io/blog/2023/11/06/removal-of-myq-integration/
+        quote: >-
+          the MyQ integration will be removed from Home Assistant in the upcoming 2023.12 release on
+          December 6, 2023.
+      - url: https://www.home-assistant.io/blog/2023/11/06/removal-of-myq-integration/
+        publisher: Home Assistant
+        kind: press
+        published: 2023-11-06
+        archive: https://web.archive.org/web/20260830193842/https://www.home-assistant.io/blog/2023/11/06/removal-of-myq-integration/
+        quote: >-
+          This ‘unauthorized usage’ appears to refer to the MyQ integration for Home Assistant which
+          was added to Home Assistant in February, 2017.
+      - url: https://www.home-assistant.io/blog/2023/11/06/removal-of-myq-integration/
+        publisher: Home Assistant
+        kind: press
+        published: 2023-11-06
+        archive: https://web.archive.org/web/20260830193842/https://www.home-assistant.io/blog/2023/11/06/removal-of-myq-integration/
+        quote: >-
+          In their partner program, the partner companies pay Chamberlain Group for the privilege of
+          letting MyQ owners control their own garage doors. We are open to working together with
+          Chamberlain Group, but as Home Assistant is an open-source project, we cannot pay a
+          partnership fee.
+      - url: https://www.theverge.com/23949612/chamberlain-myq-smart-garage-door-controller-homebridge-integrations
+        publisher: The Verge
+        kind: press
+        published: 2023-11-07
+        archive: https://web.archive.org/web/20261022043217/https://www.theverge.com/23949612/chamberlain-myq-smart-garage-door-controller-homebridge-integrations
+        quote: >-
+          The move breaks the smart home integrations of thousands of users who relied on platforms
+          such as Homebridge and Home Assistant
+      - url: https://www.theverge.com/23949612/chamberlain-myq-smart-garage-door-controller-homebridge-integrations
+        publisher: The Verge
+        kind: press
+        published: 2023-11-07
+        archive: https://web.archive.org/web/20261022043217/https://www.theverge.com/23949612/chamberlain-myq-smart-garage-door-controller-homebridge-integrations
+        quote: >-
+          However, those partners are primarily smart security companies with monthly subscriptions
+          (such as Alarm.com and Vivint) and car manufacturers.
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
