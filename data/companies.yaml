@@ -87,3 +87,8 @@
   name: Sony
   url: https://www.sony.com
   wikipedia: https://en.wikipedia.org/wiki/Sony
+
+- id: photobucket
+  name: Photobucket
+  url: https://photobucket.com
+  wikipedia: https://en.wikipedia.org/wiki/Photobucket

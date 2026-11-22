@@ -1,0 +1,91 @@
+service: photobucket
+name: Photobucket
+company: photobucket
+url: https://photobucket.com
+wikipedia: https://en.wikipedia.org/wiki/Photobucket
+
+changes:
+  - id: third-party-hosting-paywall
+    date: 2017-06
+    date_kind: effective
+    category: paywall
+    title: Photobucket puts embedding images on other sites behind a $399.99 a year plan
+    what_changed: >-
+      In late June 2017, Photobucket started blocking images that free accounts had embedded on
+      other sites unless they paid $399.99 a year. Its terms of 2 June had put that behind the Plus
+      500 plan, and people began seeing a Photobucket alert in place of images on forums and blogs.
+    before: Embedding on other sites free
+    after: $399.99 a year
+    user_impact: >-
+      Longtime users who relied on Photobucket to host images for forums and blogs saw them replaced
+      by an alert unless they paid.
+    severity: 3
+    status: reversed
+    reversed:
+      date: 2018-10
+      what: Photobucket let free accounts host images on other sites again, with a watermark on them.
+      sources:
+        - url: https://blog.photobucket.com/articles/free-hosting
+          publisher: Photobucket
+          kind: primary
+          published: 2018-11-03
+          archive: https://web.archive.org/web/20200423124206/https://blog.photobucket.com/articles/free-hosting
+          quote: >-
+            Over the past month, we’ve introduced a subtle, removable watermark to images hosted on
+            other websites from Photobucket free accounts.
+    sources:
+      - url: https://photobucket.com/terms
+        publisher: Photobucket
+        kind: primary
+        published: 2017-06-02
+        archive: https://web.archive.org/web/20170617035832/http://photobucket.com/terms
+        quote: >-
+          Plus 500 Plan: 500 GB of Storage for $399.99 / Year. The Plus 500 Plan allows for
+          unlimited image linking and 3 rd party image hosting.
+      - url: https://www.theregister.co.uk/2017/06/30/photobucket_charging_400yr_3rdparty_pgs/
+        publisher: The Register
+        kind: press
+        published: 2017-06-30
+        archive: https://web.archive.org/web/20170701010826/https://www.theregister.co.uk/2017/06/30/photobucket_charging_400yr_3rdparty_pgs/
+        quote: >-
+          The new policy will be particularly annoying to longtime users who have relied on
+          Photobucket's 14-year-old service to host the images they use to place images on forums
+          or in blog posts.
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
+
+  - id: free-hosting-bandwidth-cap
+    date: 2019-05-22
+    date_kind: announced
+    effective: 2019-06-01
+    category: paywall
+    title: Photobucket caps free and beginner image hosting at 25MB a month and blurs images over it
+    what_changed: >-
+      Photobucket said on 22 May 2019 that free accounts hosting images on other sites would get
+      25MB of bandwidth a month from 1 June. Members over the limit would have all their hosted
+      photos watermarked and blurred until they bought a higher plan.
+    before: Free hosting on other sites, watermarked
+    after: 25MB a month, then blurred
+    user_impact: >-
+      Free and beginner members whose hosted images used more than 25MB of bandwidth in a month had
+      every hosted photo blurred, which Photobucket put at less than 10% of its most active hosters.
+    company_said: Photobucket said members wanted fewer ads, and the hosting limits were how it would get there.
+    severity: 1
+    status: in-force
+    sources:
+      - url: https://blog.photobucket.com/articles/photobucket-is-investing-in-the-future-of-image-hosting-to-improve-the-user-experience
+        publisher: Photobucket
+        kind: primary
+        published: 2019-05-22
+        archive: https://web.archive.org/web/20190605104619/https://blog.photobucket.com/articles/photobucket-is-investing-in-the-future-of-image-hosting-to-improve-the-user-experience
+        quote: >-
+          Members with free or beginner plans who use Photobucket to host images on outside
+          websites will be limited to 25MB of bandwidth per month. Members who choose to remain on
+          our free or beginner plan and exceed this bandwidth limit will have all of their hosted
+          photos watermarked and blurred.
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2019-05-22
