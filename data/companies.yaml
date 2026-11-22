@@ -8,6 +8,11 @@
   url: https://newsroom.spotify.com
   wikipedia: https://en.wikipedia.org/wiki/Spotify
 
+- id: strava
+  name: Strava
+  url: https://www.strava.com
+  wikipedia: https://en.wikipedia.org/wiki/Strava
+
 - id: reddit
   name: Reddit
   url: https://redditinc.com
