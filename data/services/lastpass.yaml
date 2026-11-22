@@ -1,0 +1,96 @@
+service: lastpass
+name: LastPass
+company: lastpass
+url: https://www.lastpass.com
+crw: https://consumerrights.wiki/w/LastPass
+wikipedia: https://en.wikipedia.org/wiki/LastPass
+
+changes:
+  - id: free-one-device-type
+    date: 2021-03-16
+    date_kind: effective
+    category: paywall
+    title: LastPass limits its free plan to either computers or mobile devices
+    question: When did LastPass limit free users to one device type?
+    what_changed: >-
+      From 16 March 2021, LastPass's free plan only worked on one device type, computers or mobile
+      devices. LastPass announced it on 16 February. The first login on or after 16 March set the
+      type, free users could switch it up to 3 times, and using both meant paying for Premium or
+      Families, with Premium at $3 a month billed annually.
+    before: Free on computers and mobile devices
+    after: Free on computers or mobile devices, not both
+    user_impact: >-
+      Free users who used LastPass on both a computer and a phone or tablet had to pick one or pay,
+      apart from personal accounts linked to a Teams or Business account, though nobody lost what was
+      stored in their vault.
+    severity: 3
+    status: in-force
+    sources:
+      - url: https://blog.lastpass.com/2021/02/changes-to-lastpass-free/
+        publisher: LastPass
+        kind: primary
+        published: 2021-02-16
+        archive: https://web.archive.org/web/20240123235140/https://blog.lastpass.com/2021/02/changes-to-lastpass-free/
+        quote: >-
+          Starting March 16th, 2021, LastPass Free will only include access on unlimited devices of
+          one type.
+      - url: https://blog.lastpass.com/2021/02/changes-to-lastpass-free/
+        publisher: LastPass
+        kind: primary
+        published: 2021-02-16
+        archive: https://web.archive.org/web/20240123235140/https://blog.lastpass.com/2021/02/changes-to-lastpass-free/
+        quote: >-
+          At only $3 per month (billed annually), LastPass Premium enables you to not only store
+          your passwords but also protect your digital life
+      - url: https://support.logmeininc.com/lastpass/help/what-can-i-expect-to-change-for-lastpass-free-on-march-16-2021
+        publisher: LastPass Support
+        kind: primary
+        published: 2022-03-24
+        archive: https://web.archive.org/web/20220324051019/https://support.logmeininc.com/lastpass/help/what-can-i-expect-to-change-for-lastpass-free-on-march-16-2021
+        quote: >-
+          You are allowed to change your active device type for up to a maximum of three (3) times,
+          or you can upgrade to LastPass Premium or Families for unlimited device type access.
+      - url: https://support.logmeininc.com/lastpass/help/what-can-i-expect-to-change-for-lastpass-free-on-march-16-2021
+        publisher: LastPass Support
+        kind: primary
+        published: 2022-03-24
+        archive: https://web.archive.org/web/20220324051019/https://support.logmeininc.com/lastpass/help/what-can-i-expect-to-change-for-lastpass-free-on-march-16-2021
+        quote: >-
+          All LastPass Free users are impacted by these changes.
+      - url: https://support.logmeininc.com/lastpass/help/what-can-i-expect-to-change-for-lastpass-free-on-march-16-2021
+        publisher: LastPass Support
+        kind: primary
+        published: 2022-03-24
+        archive: https://web.archive.org/web/20220324051019/https://support.logmeininc.com/lastpass/help/what-can-i-expect-to-change-for-lastpass-free-on-march-16-2021
+        quote: >-
+          However, if you’d like to continue using LastPass on both your desktop and mobile
+          devices, you can upgrade to LastPass Premium or Families
+      - url: https://support.logmeininc.com/lastpass/help/what-can-i-expect-to-change-for-lastpass-free-on-march-16-2021
+        publisher: LastPass Support
+        kind: primary
+        published: 2022-03-24
+        archive: https://web.archive.org/web/20220324051019/https://support.logmeininc.com/lastpass/help/what-can-i-expect-to-change-for-lastpass-free-on-march-16-2021
+        quote: >-
+          LastPass Teams and LastPass Business accounts who have a personal Free account linked to
+          their company account are not be impacted by the device type limitation in LastPass Free
+          as long as they log into LastPass using their business account credentials.
+      - url: https://www.theverge.com/2021/2/16/22285531/lastpass-free-tier-mobile-computer-device-premium-family
+        publisher: The Verge
+        kind: press
+        published: 2021-02-16
+        archive: https://web.archive.org/web/20261028011142/https://www.theverge.com/2021/2/16/22285531/lastpass-free-tier-mobile-computer-device-premium-family
+        quote: >-
+          LastPass says no users will be locked out of their accounts or lose access to their
+          passwords as a result of the changes.
+      - url: https://www.engadget.com/lastpass-free-one-device-type-limitation-161122381.html
+        publisher: Engadget
+        kind: press
+        published: 2021-02-16
+        archive: https://web.archive.org/web/20240615235848/https://www.engadget.com/lastpass-free-one-device-type-limitation-161122381.html
+        quote: >-
+          LastPass is scaling back its free plan to limit use on one device type (computer or
+          mobile) at a time as of March 16th.
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
