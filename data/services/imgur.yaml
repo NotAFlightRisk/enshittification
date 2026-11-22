@@ -1,0 +1,63 @@
+service: imgur
+name: Imgur
+company: medialab
+url: https://imgur.com
+crw: https://consumerrights.wiki/w/Imgur
+wikipedia: https://en.wikipedia.org/wiki/Imgur
+
+changes:
+  - id: old-anonymous-uploads-removed
+    date: 2023-04-19
+    date_kind: announced
+    effective: 2023-05-15
+    category: removed-feature
+    title: Imgur says it will remove old, inactive uploads that aren't tied to an account
+    what_changed: >-
+      Imgur said on 19 April 2023 that once its new terms took effect on 15 May, it would remove
+      old, unused and inactive uploads not tied to an account. It told people to download anything
+      they wanted to keep. For years, people had uploaded to Imgur without an account and linked the
+      images from Reddit and other sites.
+    user_impact: >-
+      People who'd uploaded without an account had to download any old images they wanted to keep,
+      and links to them from Reddit and other sites could go dead.
+    severity: 3
+    status: in-force
+    sources:
+      - url: https://help.imgur.com/hc/en-us/articles/14415587638029
+        publisher: Imgur Help
+        kind: primary
+        published: 2023-04-19
+        archive: https://web.archive.org/web/20230502032424/https://help.imgur.com/hc/en-us/articles/14415587638029
+        quote: >-
+          Our new Terms of Service will go into effect on May 15, 2023. We will be focused on
+          removing old, unused, and inactive content that is not tied to a user account from our
+          platform as well as nudity, pornography, & sexually explicit content.
+      - url: https://help.imgur.com/hc/en-us/articles/14415587638029
+        publisher: Imgur Help
+        kind: primary
+        published: 2023-04-19
+        archive: https://web.archive.org/web/20230502032424/https://help.imgur.com/hc/en-us/articles/14415587638029
+        quote: >-
+          You will need to download/save any images that you wish to save if they no longer adhere
+          to these Terms.
+      - url: https://techcrunch.com/2023/04/20/imgur-will-ban-explicit-images-on-its-platform-this-month/
+        publisher: TechCrunch
+        kind: press
+        published: 2023-04-20
+        archive: https://web.archive.org/web/20230422062910/https://techcrunch.com/2023/04/20/imgur-will-ban-explicit-images-on-its-platform-this-month/
+        quote: >-
+          As a Twitter user noted, Imgur has been used for years to upload photos without an account
+          and post links to different kinds of sites. Removing those images might result in a lot of
+          dead links all over the internet.
+      - url: https://techcrunch.com/2023/04/20/imgur-will-ban-explicit-images-on-its-platform-this-month/
+        publisher: TechCrunch
+        kind: press
+        published: 2023-04-20
+        archive: https://web.archive.org/web/20230422062910/https://techcrunch.com/2023/04/20/imgur-will-ban-explicit-images-on-its-platform-this-month/
+        quote: >-
+          Many Reddit users are familiar with Imgur because Reddit didn’t support image uploads at
+          first. Users would rely on Imgur to upload images and then share them on Reddit.
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
