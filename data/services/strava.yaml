@@ -1,0 +1,73 @@
+service: strava
+name: Strava
+company: strava
+url: https://www.strava.com
+wikipedia: https://en.wikipedia.org/wiki/Strava
+
+changes:
+  - id: leaderboards-routes-paywall
+    date: 2020-05-18
+    date_kind: effective
+    category: paywall
+    title: Strava moves full segment leaderboards and the route builder to its subscription
+    what_changed: >-
+      Strava made full segment leaderboards, effort analysis, the route builder and route
+      recommendations subscriber-only on 18 May 2020. Free users kept the top 10 of each
+      leaderboard, and the subscription cost $59.99 a year, with a 60-day free trial for existing
+      free users.
+    before: Full segment leaderboards and route building free
+    after: Top 10 free, full leaderboards and route building with a $59.99 a year subscription
+    user_impact: >-
+      Free Strava users lost full segment leaderboards and could no longer create or edit routes,
+      including features some had used free since Strava launched in 2009.
+    company_said: >-
+      Strava's founders said it was not yet a profitable company, and the features they moved were
+      especially complex and expensive to maintain.
+    severity: 3
+    status: in-force
+    sources:
+      - url: https://www.bikeradar.com/news/strava-leaderboards-routes-subscription/
+        publisher: BikeRadar
+        kind: press
+        published: 2020-05-18
+        archive: https://web.archive.org/web/20200524084941/https://www.bikeradar.com/news/strava-leaderboards-routes-subscription/
+        quote: >-
+          Free users will no longer be able to view full segment leaderboards, analyse efforts,
+          create routes or view route recommendations.
+      - url: https://www.bikeradar.com/news/strava-leaderboards-routes-subscription/
+        publisher: BikeRadar
+        kind: press
+        published: 2020-05-18
+        archive: https://web.archive.org/web/20200524084941/https://www.bikeradar.com/news/strava-leaderboards-routes-subscription/
+        quote: >-
+          Asking long-established members to open their wallets for features that have previously
+          been free – some since Strava was launched in 2009 – is no easy task.
+      - url: https://www.bikeradar.com/news/strava-leaderboards-routes-subscription/
+        publisher: BikeRadar
+        kind: press
+        published: 2020-05-18
+        archive: https://web.archive.org/web/20200524084941/https://www.bikeradar.com/news/strava-leaderboards-routes-subscription/
+        quote: >-
+          costs £47.99 / $59.99 for a 12-month subscription
+      - url: https://gizmodo.com/stravas-best-features-will-now-be-subscription-only-1843540292
+        publisher: Gizmodo
+        kind: press
+        published: 2020-05-19
+        archive: https://web.archive.org/web/20200526081828/https://gizmodo.com/stravas-best-features-will-now-be-subscription-only-1843540292
+        quote: >-
+          Features like route planning, segment leaderboards (though the top 10 view will remain
+          free), matched runs, training logs, and monthly activity trends and comparisons will now
+          require a subscription.
+      - url: https://gizmodo.com/stravas-best-features-will-now-be-subscription-only-1843540292
+        publisher: Gizmodo
+        kind: press
+        published: 2020-05-19
+        archive: https://web.archive.org/web/20200526081828/https://gizmodo.com/stravas-best-features-will-now-be-subscription-only-1843540292
+        quote: >-
+          In their blog, Gainey and Horvath write that Strava is “not yet a profitable company.” The
+          post also explains that the features that they chose to move to the paid version were
+          “especially complex and expensive to maintain.”
+    added: 2026-11-22
+    updated: 2026-11-22
+    sources_checked: 2026-11-22
+    status_checked: 2026-11-22
