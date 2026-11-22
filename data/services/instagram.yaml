@@ -248,9 +248,9 @@ changes:
     category: ai
     title: Meta AI goes into Instagram's search bar, with no way to turn it off
     what_changed: >-
-      Meta put its Meta AI assistant into search on Instagram, Facebook, WhatsApp and Messenger on
-      18 April 2024, in English in the US and 13 other countries. There was no button to turn it
-      off, though people could still search as they normally would.
+      Meta said on 18 April 2024 it was rolling out Meta AI in search on Instagram, Facebook,
+      WhatsApp and Messenger, in English in the US and 13 other countries. There was no button to
+      turn it off, though people could still search as they normally would.
     user_impact: >-
       Instagram users who got it had Meta AI in the search bar whether they wanted it or not, with
       ordinary search still working underneath.
@@ -291,8 +291,11 @@ changes:
         quote: >-
           “You can search how you normally would and choose to engage with a variety of results —
           ones from Meta AI or others that appear as you type,” the spokesperson said in a statement.
+    corrections:
+      - date: 2026-11-22
+        what: Said Meta announced it was rolling out on 18 April 2024, not that everyone had it that day.
     added: 2026-11-21
-    updated: 2026-11-21
+    updated: 2026-11-22
     sources_checked: 2026-11-21
     status_checked: 2026-11-21
 
@@ -349,8 +352,8 @@ changes:
       the Irish Data Protection Commission asked it to delay, said on 13 September 2024 it would
       start in the UK, and planned to begin in the EU on 27 May 2025.
     user_impact: >-
-      Adults in the EU and UK had to find and send an objection form to keep their public Instagram
-      posts out of Meta's AI training.
+      Adults in the EU and UK had to send an objection form to keep their public Instagram posts out
+      of Meta's AI training.
     company_said: >-
       Meta said that without training on the public content Europeans share, its AI wouldn't
       accurately understand regional languages, cultures or trending topics.
@@ -411,7 +414,7 @@ changes:
         archive: https://web.archive.org/web/20251211222915/https://www.theregister.com/2025/05/22/irish_data_protection_commission_gives/
         quote: Meta intends to begin training AI on EU citizens' data on May 27.
     added: 2026-11-21
-    updated: 2026-11-21
+    updated: 2026-11-22
     sources_checked: 2026-11-21
     status_checked: 2026-11-21
 
