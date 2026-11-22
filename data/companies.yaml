@@ -23,6 +23,11 @@
   url: https://thewaltdisneycompany.com
   wikipedia: https://en.wikipedia.org/wiki/The_Walt_Disney_Company
 
+- id: ea
+  name: Electronic Arts
+  url: https://www.ea.com
+  wikipedia: https://en.wikipedia.org/wiki/Electronic_Arts
+
 - id: amazon
   name: Amazon
   url: https://www.aboutamazon.com
