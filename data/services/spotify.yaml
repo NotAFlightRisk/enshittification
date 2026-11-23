@@ -104,7 +104,7 @@ changes:
     added: 2026-11-18
     updated: 2026-11-19
     sources_checked: 2026-11-18
-    status_checked: 2026-11-18
+    status_checked: 2026-11-23
 
   - id: premium-price-2023
     date: 2023-07-24
@@ -155,7 +155,7 @@ changes:
     added: 2026-11-18
     updated: 2026-11-19
     sources_checked: 2026-11-18
-    status_checked: 2026-11-18
+    status_checked: 2026-11-23
 
   - id: lyrics-premium-test
     date: 2023-09-05
@@ -168,7 +168,36 @@ changes:
       users.
     user_impact: Free listeners in the test lost the in-app lyrics unless they paid for Premium.
     severity: 2
-    status: test
+    status: reversed
+    reversed:
+      date: 2024-07-30
+      what: >-
+        Spotify put lyrics behind a monthly limit for free users in May 2024, and started raising
+        that limit on 30 July 2024. Its lyrics help page now says lyrics are available on both the
+        free and Premium tiers.
+      sources:
+        - url: https://support.spotify.com/us/article/lyrics/
+          publisher: Spotify Support
+          kind: primary
+          published: 2026-09-23
+          archive: https://web.archive.org/web/20260923022804/https://support.spotify.com/us/article/lyrics/
+          quote: Lyrics are now available for Spotify users across both our free and Premium tiers.
+        - url: https://techcrunch.com/2024/07/30/spotify-expands-monthly-limit-lyrics-free-users/
+          publisher: TechCrunch
+          kind: press
+          published: 2024-07-30
+          archive: https://web.archive.org/web/20260225191712/https://techcrunch.com/2024/07/30/spotify-expands-monthly-limit-lyrics-free-users/
+          quote: >-
+            Back in May, Spotify quietly started putting lyrics behind a paywall, limiting free
+            users to lyrics for three songs per month.
+        - url: https://techcrunch.com/2024/07/30/spotify-expands-monthly-limit-lyrics-free-users/
+          publisher: TechCrunch
+          kind: press
+          published: 2024-07-30
+          archive: https://web.archive.org/web/20260225191712/https://techcrunch.com/2024/07/30/spotify-expands-monthly-limit-lyrics-free-users/
+          quote: >-
+            Spotify began testing a paywall for lyrics in September 2023.
+    related: [spotify/lyrics-free-limit]
     sources:
       - url: https://www.theverge.com/2023/9/5/23860124/spotify-lyrics-premium-only-feature
         publisher: The Verge
@@ -179,9 +208,9 @@ changes:
           Instead, they saw only a notification bubble saying, “Enjoy lyrics on Spotify Premium,”
           with a link to sign up.
     added: 2026-11-18
-    updated: 2026-11-19
+    updated: 2026-11-23
     sources_checked: 2026-11-18
-    status_checked: 2026-11-18
+    status_checked: 2026-11-23
 
   - id: lyrics-free-limit
     date: 2024-05
@@ -245,7 +274,7 @@ changes:
     added: 2026-11-21
     updated: 2026-11-21
     sources_checked: 2026-11-21
-    status_checked: 2026-11-21
+    status_checked: 2026-11-23
 
   - id: premium-price-2024
     date: 2024-06-03
@@ -292,7 +321,7 @@ changes:
     added: 2026-11-18
     updated: 2026-11-19
     sources_checked: 2026-11-18
-    status_checked: 2026-11-18
+    status_checked: 2026-11-23
 
   - id: web-api-endpoints-cut
     date: 2024-11-27
@@ -310,6 +339,7 @@ changes:
     company_said: Spotify said the changes were meant to create a more secure platform.
     severity: 1
     status: in-force
+    related: [spotify/developer-mode-limits]
     sources:
       - url: https://developer.spotify.com/blog/2024-11-27-changes-to-the-web-api
         publisher: Spotify for Developers
@@ -322,7 +352,7 @@ changes:
     added: 2026-11-18
     updated: 2026-11-19
     sources_checked: 2026-11-18
-    status_checked: 2026-11-18
+    status_checked: 2026-11-23
 
   - id: car-thing-bricked
     date: 2024-12-09
@@ -358,7 +388,7 @@ changes:
     added: 2026-11-18
     updated: 2026-11-19
     sources_checked: 2026-11-18
-    status_checked: 2026-11-18
+    status_checked: 2026-11-23
 
   - id: premium-price-2026
     date: 2026-01-15
@@ -416,4 +446,59 @@ changes:
     added: 2026-11-18
     updated: 2026-11-19
     sources_checked: 2026-11-18
-    status_checked: 2026-11-18
+    status_checked: 2026-11-23
+
+  - id: developer-mode-limits
+    date: 2026-02-06
+    date_kind: announced
+    effective: 2026-02-11
+    category: api-restriction
+    title: Spotify's Web API Development Mode needs Premium and allows 5 users per app
+    what_changed: >-
+      Spotify said on 6 February 2026 that Web API apps in Development Mode would need the owner to
+      have Premium, with 5 users per app and 1 app per developer. New apps also got a smaller set
+      of endpoints from 11 February, and existing apps had to follow from 9 March, though they kept
+      any users and apps they already had. In July 2026 Spotify raised the limit to 25 apps per
+      developer.
+    user_impact: >-
+      Developers with personal or hobby apps on Spotify's API had to pay for Premium to keep them
+      working, and new apps could have 5 users at most.
+    company_said: >-
+      Spotify said automation and AI had changed the risk profile of developer access, and that at
+      its scale those risks needed more structured controls.
+    severity: 1
+    status: in-force
+    related: [spotify/web-api-endpoints-cut]
+    sources:
+      - url: https://developer.spotify.com/blog/2026-02-06-update-on-developer-access-and-platform-security
+        publisher: Spotify for Developers
+        kind: primary
+        published: 2026-02-06
+        archive: https://web.archive.org/web/20261122172439/https://developer.spotify.com/blog/2026-02-06-update-on-developer-access-and-platform-security
+        quote: Development Mode use will require a Spotify Premium account
+      - url: https://developer.spotify.com/blog/2026-02-06-update-on-developer-access-and-platform-security
+        publisher: Spotify for Developers
+        kind: primary
+        published: 2026-02-06
+        archive: https://web.archive.org/web/20261122172439/https://developer.spotify.com/blog/2026-02-06-update-on-developer-access-and-platform-security
+        quote: >-
+          API access will be limited to a smaller set of supported endpoints From March 9 , these
+          same requirements will also apply to all existing Development Mode integrations .
+      - url: https://developer.spotify.com/documentation/web-api/tutorials/february-2026-migration-guide
+        publisher: Spotify for Developers
+        kind: primary
+        published: 2026-11-11
+        archive: https://web.archive.org/web/20261111112829/https://developer.spotify.com/documentation/web-api/tutorials/february-2026-migration-guide
+        quote: As of July 2026, the Client IDs per developer limit has been increased to 25.
+      - url: https://developer.spotify.com/documentation/web-api/tutorials/february-2026-migration-guide
+        publisher: Spotify for Developers
+        kind: primary
+        published: 2026-11-11
+        archive: https://web.archive.org/web/20261111112829/https://developer.spotify.com/documentation/web-api/tutorials/february-2026-migration-guide
+        quote: >-
+          Existing apps are grandfathered: If you already have multiple Client IDs or more than 5
+          users, you will retain them.
+    added: 2026-11-23
+    updated: 2026-11-23
+    sources_checked: 2026-11-23
+    status_checked: 2026-11-23
