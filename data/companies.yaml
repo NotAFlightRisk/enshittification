@@ -63,6 +63,11 @@
   url: https://news.adobe.com
   wikipedia: https://en.wikipedia.org/wiki/Adobe_Inc.
 
+- id: bungie
+  name: Bungie
+  url: https://www.bungie.net
+  wikipedia: https://en.wikipedia.org/wiki/Bungie
+
 - id: belkin
   name: Belkin
   url: https://www.belkin.com

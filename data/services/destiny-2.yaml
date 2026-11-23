@@ -1,0 +1,152 @@
+service: destiny-2
+name: Destiny 2
+company: bungie
+url: https://www.bungie.net
+wikipedia: https://en.wikipedia.org/wiki/Destiny_2
+
+changes:
+  - id: content-vault-2020
+    date: 2020-11-10
+    date_kind: effective
+    category: removed-feature
+    title: Bungie removes the Red War, Curse of Osiris and Warmind campaigns from Destiny 2
+    question: When did Destiny 2 remove Curse of Osiris and Warmind?
+    what_changed: >-
+      Bungie moved the Red War, Curse of Osiris and Warmind campaigns into its Destiny Content Vault
+      on 10 November 2020, so they can no longer be played. The Mercury, Mars, Titan and Io
+      destinations went too, with the Leviathan, Eater of Worlds, Spire of Stars, Scourge of the
+      Past and Crown of Sorrows raids. Bungie had announced the vault in June 2020.
+    user_impact: >-
+      Destiny 2 players could no longer play the original campaigns, the destinations they were set
+      on or the raids that went with them.
+    company_said: >-
+      Bungie said the vault would help it manage updates, keep file sizes down and prioritise newer
+      content.
+    severity: 3
+    status: in-force
+    sources:
+      - url: https://help.bungie.net/hc/en-us/articles/360049202971-Destiny-Content-Vault
+        publisher: Bungie Help
+        kind: primary
+        published: 2020-11-10
+        archive: https://web.archive.org/web/20261001011352/https://help.bungie.net/hc/en-us/articles/360049202971-Destiny-Content-Vault
+        quote: >-
+          With the launch of Year 4 on November 10, 2020, certain destinations, seasonal content,
+          activities, and quests moved into the Destiny Content Vault (DCV).
+      - url: https://help.bungie.net/hc/en-us/articles/360049202971-Destiny-Content-Vault
+        publisher: Bungie Help
+        kind: primary
+        published: 2020-11-10
+        archive: https://web.archive.org/web/20261001011352/https://help.bungie.net/hc/en-us/articles/360049202971-Destiny-Content-Vault
+        quote: >-
+          DESTINATIONS Mercury Mars Titan Io The Farm The Leviathan
+      - url: https://help.bungie.net/hc/en-us/articles/360049202971-Destiny-Content-Vault
+        publisher: Bungie Help
+        kind: primary
+        published: 2020-11-10
+        archive: https://web.archive.org/web/20261001011352/https://help.bungie.net/hc/en-us/articles/360049202971-Destiny-Content-Vault
+        quote: >-
+          Campaigns The Red War Curse of Osiris Warmind
+      - url: https://help.bungie.net/hc/en-us/articles/360049202971-Destiny-Content-Vault
+        publisher: Bungie Help
+        kind: primary
+        published: 2020-11-10
+        archive: https://web.archive.org/web/20261001011352/https://help.bungie.net/hc/en-us/articles/360049202971-Destiny-Content-Vault
+        quote: >-
+          RAIDS The Leviathan Eater of Worlds Spire of Stars Scourge of the Past Crown of Sorrows
+      - url: https://www.pcgamer.com/destiny-2-campaign-vault/
+        publisher: PC Gamer
+        kind: press
+        published: 2020-11-06
+        archive: https://web.archive.org/web/20201107034055/https://www.pcgamer.com/destiny-2-campaign-vault/
+        quote: >-
+          When Beyond Light launches, Bungie will pack the original campaign and its two follow-ups
+          away in the Destiny 2 Content Vault.
+      - url: https://www.pcgamer.com/destiny-2-curse-of-osiris-officially-revealed/
+        publisher: PC Gamer
+        kind: press
+        published: 2017-10-30
+        archive: https://web.archive.org/web/20171030215114/http://www.pcgamer.com/destiny-2-curse-of-osiris-officially-revealed/
+        quote: >-
+          A new trailer showcases new trouble in the first Destiny 2 expansion.
+      - url: https://www.theverge.com/2020/6/9/21285339/destiny-2-beyond-light-bungie-the-witch-queen-lightfall-major-expansions-no-sequel
+        publisher: The Verge
+        kind: press
+        published: 2020-06-09
+        archive: https://web.archive.org/web/20200610174424/https://www.theverge.com/2020/6/9/21285339/destiny-2-beyond-light-bungie-the-witch-queen-lightfall-major-expansions-no-sequel
+        quote: >-
+          Bungie says the goal is to help better manage updates to the game, keep file sizes down,
+          and allow the studio to better prioritize newer content.
+    added: 2026-11-23
+    updated: 2026-11-23
+    sources_checked: 2026-11-23
+    status_checked: 2026-10-01
+
+  - id: forsaken-campaign-vaulted
+    date: 2022-02-22
+    date_kind: effective
+    category: removed-feature
+    title: Bungie removes the Forsaken campaign and Tangled Shore from Destiny 2
+    what_changed: >-
+      Bungie moved the Forsaken campaign and the Tangled Shore into its Destiny Content Vault on 22
+      February 2022, when Year 5 began. The campaign had been free for all players until then, and
+      Forsaken's raid, dungeon and exotics, reached through the Dreaming City, stayed on sale as the
+      Forsaken Pack.
+    user_impact: >-
+      Destiny 2 players could no longer play the Forsaken campaign or visit the Tangled Shore.
+    company_said: >-
+      Bungie said cycling some destinations and activities into the vault each year let it update
+      the game more quickly.
+    severity: 3
+    status: in-force
+    sources:
+      - url: https://help.bungie.net/hc/en-us/articles/360049202971-Destiny-Content-Vault
+        publisher: Bungie Help
+        kind: primary
+        published: 2022-02-22
+        archive: https://web.archive.org/web/20261001011352/https://help.bungie.net/hc/en-us/articles/360049202971-Destiny-Content-Vault
+        quote: >-
+          With the launch of Year 5 on February 22, 2022, certain destinations, seasonal content,
+          activities, and quests moved into the Destiny Content Vault (DCV).
+      - url: https://help.bungie.net/hc/en-us/articles/360049202971-Destiny-Content-Vault
+        publisher: Bungie Help
+        kind: primary
+        published: 2022-02-22
+        archive: https://web.archive.org/web/20261001011352/https://help.bungie.net/hc/en-us/articles/360049202971-Destiny-Content-Vault
+        quote: >-
+          DESTINATIONS Tangled Shore Includes all locations, Lost Sectors, the Glykon, and Strikes
+      - url: https://help.bungie.net/hc/en-us/articles/360049202971-Destiny-Content-Vault
+        publisher: Bungie Help
+        kind: primary
+        published: 2022-02-22
+        archive: https://web.archive.org/web/20261001011352/https://help.bungie.net/hc/en-us/articles/360049202971-Destiny-Content-Vault
+        quote: >-
+          CAMPAIGNS AND SEASONAL NARRATIVES Campaigns Forsaken
+      - url: https://help.bungie.net/hc/en-us/articles/360049202531-Destiny-2-Forsaken-Pack-Guide
+        publisher: Bungie Help
+        kind: primary
+        published: 2022-01-24
+        archive: https://web.archive.org/web/20220124233206/https://help.bungie.net/hc/en-us/articles/360049202531-Destiny-2-Forsaken-Pack-Guide
+        quote: >-
+          The Destiny 2: Forsaken Pack includes access to over 20 Forsaken Exotic weapons, The
+          Shattered Throne dungeon, and Last Wish raid.
+      - url: https://help.bungie.net/hc/en-us/articles/360049202531-Destiny-2-Forsaken-Pack-Guide
+        publisher: Bungie Help
+        kind: primary
+        published: 2022-01-24
+        archive: https://web.archive.org/web/20220124233206/https://help.bungie.net/hc/en-us/articles/360049202531-Destiny-2-Forsaken-Pack-Guide
+        quote: >-
+          The Destiny 2: Forsaken campaign is free for all players until February 22, 2022
+      - url: https://help.bungie.net/hc/en-us/articles/360049202971-Destiny-Content-Vault
+        publisher: Bungie Help
+        kind: primary
+        published: 2022-02-22
+        archive: https://web.archive.org/web/20261001011352/https://help.bungie.net/hc/en-us/articles/360049202971-Destiny-Content-Vault
+        quote: >-
+          To create a sustainable ecosystem where the world can continue to evolve in exciting ways,
+          and where we can update the game more quickly, each year we will cycle some destination
+          and activity content out of the game (and into the DCV) to make room for new experiences.
+    added: 2026-11-23
+    updated: 2026-11-23
+    sources_checked: 2026-11-23
+    status_checked: 2026-10-01
