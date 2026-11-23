@@ -4,7 +4,7 @@
   "name": "CPI-U, all items, US city average, not seasonally adjusted",
   "source": "https://data.bls.gov/timeseries/CUUR0000SA0",
   "licence": "Public domain, US Bureau of Labor Statistics",
-  "updated": "2026-11-18",
+  "updated": "2026-11-23",
   "monthly": {
     "2005-01": 190.7,
     "2005-02": 191.8,
