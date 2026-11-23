@@ -53,6 +53,11 @@
   url: https://news.microsoft.com
   wikipedia: https://en.wikipedia.org/wiki/Microsoft
 
+- id: nbcuniversal
+  name: NBCUniversal
+  url: https://www.nbcuniversal.com
+  wikipedia: https://en.wikipedia.org/wiki/NBCUniversal
+
 - id: adobe
   name: Adobe
   url: https://news.adobe.com
