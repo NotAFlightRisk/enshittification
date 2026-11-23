@@ -1,0 +1,390 @@
+service: peacock
+name: Peacock
+company: nbcuniversal
+url: https://www.peacocktv.com
+wikipedia: https://en.wikipedia.org/wiki/Peacock_(streaming_service)
+
+plans:
+  - id: premium-us
+    name: Premium
+    region: US
+    currency: USD
+    billing: month
+    since: 2020-07-15
+    price: 4.99
+    source:
+      url: https://www.theverge.com/2020/1/16/21068607/nbc-peacock-streaming-service-price-launch-date-ads-universal-comcast-office-harry-potter
+      publisher: The Verge
+      kind: press
+      published: 2020-01-16
+      archive: https://web.archive.org/web/20200116234707/https://www.theverge.com/2020/1/16/21068607/nbc-peacock-streaming-service-price-launch-date-ads-universal-comcast-office-harry-potter
+      quote: The two premium tiers come in at $4.99 per month with ads and $9.99 per month with no ads.
+
+  - id: premium-plus-us
+    name: Premium Plus
+    region: US
+    currency: USD
+    billing: month
+    since: 2020-07-15
+    price: 9.99
+    source:
+      url: https://www.theverge.com/2020/1/16/21068607/nbc-peacock-streaming-service-price-launch-date-ads-universal-comcast-office-harry-potter
+      publisher: The Verge
+      kind: press
+      published: 2020-01-16
+      archive: https://web.archive.org/web/20200116234707/https://www.theverge.com/2020/1/16/21068607/nbc-peacock-streaming-service-price-launch-date-ads-universal-comcast-office-harry-potter
+      quote: The two premium tiers come in at $4.99 per month with ads and $9.99 per month with no ads.
+
+  - id: select-us
+    name: Select
+    region: US
+    currency: USD
+    billing: month
+    since: 2025-07
+    price: 7.99
+    source:
+      url: https://variety.com/2025/tv/news/peacock-price-increase-2025-1236463982/
+      publisher: Variety
+      kind: press
+      published: 2025-07-17
+      archive: https://web.archive.org/web/20250717183242/https://variety.com/2025/tv/news/peacock-price-increase-2025-1236463982/
+      quote: >-
+        the company is beginning to test a new Peacock "Select" tier, which will feature NBC and
+        Bravo current seasons and an assortment of library titles, which will be priced at
+        $7.99/month and $79.99/year.
+
+changes:
+  - id: free-tier-new-customers
+    date: 2023-01-30
+    date_kind: effective
+    category: paywall
+    title: Peacock stops offering its free tier to new customers
+    what_changed: >-
+      Peacock stopped offering its free, ad-supported tier to new customers on 30 January 2023.
+      New sign-ups had to pay for Premium at $4.99 a month or Premium Plus at $9.99, while existing
+      free users kept it, as did paying subscribers who stepped down.
+    before: Free with ads for a limited selection of content
+    after: $4.99 a month for new customers
+    user_impact: >-
+      New customers could no longer watch Peacock for free, though existing free accounts kept the
+      free tier.
+    company_said: >-
+      An NBCUniversal source told The Streamable the change would let Peacock better focus on its
+      Premium membership offerings.
+    severity: 2
+    status: in-force
+    regions: [US]
+    sources:
+      - url: https://www.theverge.com/2023/2/1/23581014/peacock-free-membership-new-customers-nbcuniversal-comcast
+        publisher: The Verge
+        kind: press
+        published: 2023-02-01
+        archive: https://web.archive.org/web/20230201160446/https://www.theverge.com/2023/2/1/23581014/peacock-free-membership-new-customers-nbcuniversal-comcast
+        quote: >-
+          As of January 30th, new Peacock customers will now need to subscribe to the Premium plan
+          ($4.99 / month) with ads or Premium Plus ($9.99 / month) without ads to access content on
+          the platform, as first reported by The Streamable.
+      - url: https://www.theverge.com/2023/2/1/23581014/peacock-free-membership-new-customers-nbcuniversal-comcast
+        publisher: The Verge
+        kind: press
+        published: 2023-02-01
+        archive: https://web.archive.org/web/20230201160446/https://www.theverge.com/2023/2/1/23581014/peacock-free-membership-new-customers-nbcuniversal-comcast
+        quote: >-
+          The free membership was supported by ads and gave users access to a limited selection of
+          Peacock content. Existing users will continue to have access to the free tier of Peacock,
+          as will Premium Peacock subscribers who want to step down from their current paid
+          membership.
+      - url: https://www.theverge.com/2023/2/1/23581014/peacock-free-membership-new-customers-nbcuniversal-comcast
+        publisher: The Verge
+        kind: press
+        published: 2023-02-01
+        archive: https://web.archive.org/web/20230201160446/https://www.theverge.com/2023/2/1/23581014/peacock-free-membership-new-customers-nbcuniversal-comcast
+        quote: >-
+          said that the membership change would allow Peacock to better focus on its Premium
+          membership offerings, which the company feels is the best way for customers to experience
+          the service.
+    added: 2026-11-23
+    updated: 2026-11-23
+    sources_checked: 2026-11-23
+    status_checked: 2023-02-01
+
+  - id: xfinity-free-premium-end
+    date: 2023-02-12
+    date_kind: announced
+    effective: 2023-06-26
+    category: paywall
+    title: Xfinity customers lose the Peacock Premium they got at no extra cost
+    what_changed: >-
+      NBCUniversal confirmed in February 2023 that Xfinity subscribers would lose free Peacock
+      Premium on 26 June 2023, which they'd had since its 2020 launch. New Xfinity customers stopped
+      getting it from 3 April and got a free trial instead, and Xfinity said it would offer a
+      discounted version.
+    before: Peacock Premium at no extra cost with Xfinity
+    after: Pay for Premium, normally $4.99 a month, or a discounted Xfinity add-on
+    user_impact: >-
+      Xfinity customers who watched Peacock Premium as part of their package had to pay to keep it,
+      as Cox customers already had to since January.
+    severity: 2
+    status: in-force
+    regions: [US]
+    sources:
+      - url: https://www.theverge.com/2023/2/12/23596786/xfinity-subscribers-peacock-nbcuniversal-comcast
+        publisher: The Verge
+        kind: press
+        published: 2023-02-12
+        archive: https://web.archive.org/web/20230212231704/https://www.theverge.com/2023/2/12/23596786/xfinity-subscribers-peacock-nbcuniversal-comcast
+        quote: >-
+          In a post on Twitter, the Comcast-owned NBCUniversal confirmed plans to stop offering
+          free access to Peacock Premium to Xfinity subscribers on June 26th, 2023 (via Variety).
+      - url: https://www.theverge.com/2023/2/12/23596786/xfinity-subscribers-peacock-nbcuniversal-comcast
+        publisher: The Verge
+        kind: press
+        published: 2023-02-12
+        archive: https://web.archive.org/web/20230212231704/https://www.theverge.com/2023/2/12/23596786/xfinity-subscribers-peacock-nbcuniversal-comcast
+        quote: >-
+          Peacock Premium, which normally costs $4.99 per month, is an ad-supported plan that has
+          been available to Xfinity customers at no extra cost since the service first launched in
+          2020.
+      - url: https://www.theverge.com/2023/2/12/23596786/xfinity-subscribers-peacock-nbcuniversal-comcast
+        publisher: The Verge
+        kind: press
+        published: 2023-02-12
+        archive: https://web.archive.org/web/20230212231704/https://www.theverge.com/2023/2/12/23596786/xfinity-subscribers-peacock-nbcuniversal-comcast
+        quote: >-
+          The company will also stop offering free Peacock Premium to new Xfinity customers
+          starting on April 3rd, and will only provide free, six-month trials going forward.
+      - url: https://www.theverge.com/2023/2/12/23596786/xfinity-subscribers-peacock-nbcuniversal-comcast
+        publisher: The Verge
+        kind: press
+        published: 2023-02-12
+        archive: https://web.archive.org/web/20230212231704/https://www.theverge.com/2023/2/12/23596786/xfinity-subscribers-peacock-nbcuniversal-comcast
+        quote: >-
+          As part of the change, Xfinity will start offering a discounted version of Peacock to
+          Xfinity subscribers in place of the free subscription.
+      - url: https://www.theverge.com/2023/2/12/23596786/xfinity-subscribers-peacock-nbcuniversal-comcast
+        publisher: The Verge
+        kind: press
+        published: 2023-02-12
+        archive: https://web.archive.org/web/20230212231704/https://www.theverge.com/2023/2/12/23596786/xfinity-subscribers-peacock-nbcuniversal-comcast
+        quote: >-
+          The company also ended its agreement with Cox internet and cable customers in January,
+          requiring them to pay up for Peacock Premium as well.
+    added: 2026-11-23
+    updated: 2026-11-23
+    sources_checked: 2026-11-23
+    status_checked: 2023-02-12
+
+  - id: price-2023
+    date: 2023-07-17
+    date_kind: announced
+    category: price-rise
+    title: Peacock Premium goes from $4.99 to $5.99 a month, its first US rise
+    what_changed: >-
+      Peacock said on 17 July 2023 that US Premium would go from $4.99 to $5.99 a month and Premium
+      Plus from $9.99 to $11.99, its first price rise. New customers paid it straight away and
+      existing customers from 17 August.
+    before: $4.99 a month (Premium)
+    after: $5.99 a month (Premium)
+    user_impact: US Premium subscribers paid $1 more a month and Premium Plus subscribers $2 more.
+    severity: 1
+    status: in-force
+    regions: [US]
+    prices:
+      - { plan: premium-us, from: 4.99, to: 5.99 }
+      - { plan: premium-plus-us, from: 9.99, to: 11.99 }
+    sources:
+      - url: https://www.theverge.com/2023/7/17/23798373/peacock-premium-plus-prices-up-raise
+        publisher: The Verge
+        kind: press
+        published: 2023-07-17
+        archive: https://web.archive.org/web/20230718024228/https://www.theverge.com/2023/7/17/23798373/peacock-premium-plus-prices-up-raise
+        quote: >-
+          effective August 17th, with the cheaper Premium plan going up by $1 each month, from $4.99
+          to $5.99, and the Premium Plus package that gets rid of ads on most content and adds
+          downloads for offline viewing along with access to live, local NBC channels is going up
+          by $2, from $9.99 to $11.99 per month.
+      - url: https://www.theverge.com/2023/7/17/23798373/peacock-premium-plus-prices-up-raise
+        publisher: The Verge
+        kind: press
+        published: 2023-07-17
+        archive: https://web.archive.org/web/20230718024228/https://www.theverge.com/2023/7/17/23798373/peacock-premium-plus-prices-up-raise
+        quote: It’s the first price hike for Peacock
+      - url: https://techcrunch.com/2023/07/17/peacock-is-set-to-raise-its-subscription-prices-on-august-17/
+        publisher: TechCrunch
+        kind: press
+        published: 2023-07-18
+        archive: https://web.archive.org/web/20240226093848/https://techcrunch.com/2023/07/17/peacock-is-set-to-raise-its-subscription-prices-on-august-17/
+        quote: >-
+          the streamer is notifying existing customers that it’s raising its subscription prices on August 17. The change will affect new customers immediately.
+    added: 2026-11-23
+    updated: 2026-11-23
+    sources_checked: 2026-11-23
+    status_checked: 2026-11-23
+
+  - id: price-2024
+    date: 2024-04-29
+    date_kind: reported
+    effective: 2024-07-18
+    category: price-rise
+    title: Peacock Premium goes from $5.99 to $7.99 a month, and Premium Plus to $13.99
+    what_changed: >-
+      The Verge reported on 29 April 2024 that US Peacock Premium would go from $5.99 to $7.99 a
+      month and Premium Plus from $11.99 to $13.99. New customers paid it from 18 July 2024 and
+      current subscribers from 17 August.
+    before: $5.99 a month (Premium)
+    after: $7.99 a month (Premium)
+    user_impact: US Premium and Premium Plus subscribers paid $2 more a month.
+    severity: 2
+    status: in-force
+    regions: [US]
+    prices:
+      - { plan: premium-us, from: 5.99, to: 7.99 }
+      - { plan: premium-plus-us, from: 11.99, to: 13.99 }
+    sources:
+      - url: https://www.theverge.com/2024/4/29/24144507/peacock-premium-price-increase
+        publisher: The Verge
+        kind: press
+        published: 2024-04-29
+        archive: https://web.archive.org/web/20240429175503/https://www.theverge.com/2024/4/29/24144507/peacock-premium-price-increase
+        quote: >-
+          Starting this summer, Peacock’s ad-supported Premium plan will go from $5.99 to $7.99 per
+          month, and its Premium Plus plan will increase from $11.99 to $13.99 per month.
+      - url: https://www.theverge.com/2024/4/29/24144507/peacock-premium-price-increase
+        publisher: The Verge
+        kind: press
+        published: 2024-04-29
+        archive: https://web.archive.org/web/20240429175503/https://www.theverge.com/2024/4/29/24144507/peacock-premium-price-increase
+        quote: >-
+          The $2 increase will take effect on July 18th for new customers, while current
+          subscribers will see the price hike on August 17th.
+    added: 2026-11-23
+    updated: 2026-11-23
+    sources_checked: 2026-11-23
+    status_checked: 2026-11-23
+
+  - id: price-2025
+    date: 2025-07-17
+    date_kind: announced
+    effective: 2025-07-23
+    category: price-rise
+    title: Peacock Premium goes from $7.99 to $10.99 a month, and Premium Plus to $16.99
+    what_changed: >-
+      Peacock said on 17 July 2025 that US Premium would go up by $3 to $10.99 a month and Premium
+      Plus by $3 to $16.99. New and returning customers paid it from 23 July and current
+      subscribers from their next bill on or after 22 August, and Peacock started testing a cheaper
+      Select tier at $7.99.
+    before: $7.99 a month (Premium)
+    after: $10.99 a month (Premium)
+    user_impact: US Premium and Premium Plus subscribers paid $3 more a month.
+    severity: 2
+    status: in-force
+    regions: [US]
+    prices:
+      - { plan: premium-us, from: 7.99, to: 10.99 }
+      - { plan: premium-plus-us, from: 13.99, to: 16.99 }
+    sources:
+      - url: https://variety.com/2025/tv/news/peacock-price-increase-2025-1236463982/
+        publisher: Variety
+        kind: press
+        published: 2025-07-17
+        archive: https://web.archive.org/web/20250717183242/https://variety.com/2025/tv/news/peacock-price-increase-2025-1236463982/
+        quote: >-
+          Starting July 23, the price for Peacock Premium (which includes ads) will increase by $3
+          to $10.99/month and Premium Plus by $3 to $16.99 per month.
+      - url: https://variety.com/2025/tv/news/peacock-price-increase-2025-1236463982/
+        publisher: Variety
+        kind: press
+        published: 2025-07-17
+        archive: https://web.archive.org/web/20250717183242/https://variety.com/2025/tv/news/peacock-price-increase-2025-1236463982/
+        quote: >-
+          NBCUniversal execs have believed Peacock is underpriced relative to the streamer’s rivals
+          — and, to that point, the company is raising rates for the third time in three years.
+      - url: https://www.cbsnews.com/news/peacock-price-hike-july-2025-streaming-subscription-costs-rise/
+        publisher: CBS News
+        kind: press
+        published: 2025-07-18
+        archive: https://web.archive.org/web/20261006072153/https://www.cbsnews.com/news/peacock-price-hike-july-2025-streaming-subscription-costs-rise/
+        quote: >-
+          Peacock subscribers will see the new rates applied on or after August 22 based on their billing cycle, according to the streaming provider.
+    added: 2026-11-23
+    updated: 2026-11-23
+    sources_checked: 2026-11-23
+    status_checked: 2026-11-23
+
+  - id: price-2026
+    date: 2026-08-18
+    date_kind: effective
+    category: price-rise
+    title: Peacock Premium goes from $10.99 to $12.99 a month, and Premium Plus to $19.99
+    what_changed: >-
+      Peacock raised US Premium from $10.99 to $12.99 a month and Premium Plus from $16.99 to
+      $19.99 for new and returning customers on 18 August 2026. Select went from $7.99 to $8.99, and current
+      subscribers paid the new prices from their next bill on or after 17 September.
+    before: $10.99 a month (Premium)
+    after: $12.99 a month (Premium)
+    user_impact: >-
+      US Premium subscribers paid $2 more a month, Premium Plus subscribers $3 more and Select
+      subscribers $1 more.
+    company_said: >-
+      Peacock said the rises let it keep creating the best experience for viewers, stay competitive
+      and deliver unique content across all genres.
+    severity: 1
+    status: in-force
+    regions: [US]
+    prices:
+      - { plan: premium-us, from: 10.99, to: 12.99 }
+      - { plan: premium-plus-us, from: 16.99, to: 19.99 }
+      - { plan: select-us, from: 7.99, to: 8.99 }
+    sources:
+      - url: https://www.peacocktv.com/help/article/price-increase
+        publisher: Peacock Help
+        kind: primary
+        published: 2026-08-18
+        archive: https://web.archive.org/web/20261107053446/https://www.peacocktv.com/help/article/price-increase
+        quote: >-
+          A Peacock Select monthly subscription is now $8.99/month (up from $7.99). A Peacock Premium monthly subscription is now $12.99/month (up from $10.99). A Peacock Premium Plus monthly subscription is now $19.99/month (up from $16.99).
+      - url: https://www.peacocktv.com/help/article/price-increase
+        publisher: Peacock Help
+        kind: primary
+        published: 2026-08-18
+        archive: https://web.archive.org/web/20261107053446/https://www.peacocktv.com/help/article/price-increase
+        quote: >-
+          The pricing will change on August 18, 2026, for new and returning subscribers. If you subscribed prior to August 18, 2026, the new pricing will be effective on your next billing date on or after September 17, 2026.
+      - url: https://variety.com/2026/tv/news/peacock-raises-prices-fourth-time-in-four-years-1236837016/
+        publisher: Variety
+        kind: press
+        published: 2026-08-18
+        archive: https://web.archive.org/web/20260818125534/https://variety.com/2026/tv/news/peacock-raises-prices-fourth-time-in-four-years-1236837016/
+        quote: >-
+          Starting Aug. 18, Peacock will increase its prices for new and returning customers, and
+          on or after Sept. 17 for current customers (depending on their next billing date).
+      - url: https://variety.com/2026/tv/news/peacock-raises-prices-fourth-time-in-four-years-1236837016/
+        publisher: Variety
+        kind: press
+        published: 2026-08-18
+        archive: https://web.archive.org/web/20260818125534/https://variety.com/2026/tv/news/peacock-raises-prices-fourth-time-in-four-years-1236837016/
+        quote: >-
+          Peacock Premium (which includes ads) will be $12.99/month, up from $10.99; Peacock Premium
+          Plus will be $19.99/month, a $3 increase from $16.99
+      - url: https://variety.com/2026/tv/news/peacock-raises-prices-fourth-time-in-four-years-1236837016/
+        publisher: Variety
+        kind: press
+        published: 2026-08-18
+        archive: https://web.archive.org/web/20260818125534/https://variety.com/2026/tv/news/peacock-raises-prices-fourth-time-in-four-years-1236837016/
+        quote: >-
+          the Peacock Select tier (which includes current and past seasons of NBC and Bravo shows
+          but excludes movies, live sports and Peacock originals) will increase from $7.99 to
+          $8.99/month.
+      - url: https://www.peacocktv.com/help/article/price-increase
+        publisher: Peacock Help
+        kind: primary
+        published: 2026-08-18
+        archive: https://web.archive.org/web/20261107053446/https://www.peacocktv.com/help/article/price-increase
+        quote: >-
+          These price changes allow Peacock to continue to create the best experience for its
+          viewers, remain competitive in the marketplace, and deliver unique content across all
+          genres.
+    added: 2026-11-23
+    updated: 2026-11-23
+    sources_checked: 2026-11-23
+    status_checked: 2026-11-23
