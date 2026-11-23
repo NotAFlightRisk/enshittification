@@ -71,3 +71,84 @@ changes:
     updated: 2026-11-22
     sources_checked: 2026-11-22
     status_checked: 2026-11-22
+
+  - id: api-data-sharing-limits
+    date: 2024-11-15
+    date_kind: announced
+    category: api-restriction
+    title: Strava stops third-party apps showing your activities to other users
+    what_changed: >-
+      Strava said on 15 November 2024 that third-party apps could only show a user's Strava activity
+      data to that user, under API terms backdated to 11 November. Strava said coaching
+      platforms were still allowed, and that it was stopping data being shown to other users, like
+      in a public feed or heatmap.
+    before: Apps could show your Strava activities to other users, like followers
+    after: Apps show them only to you, with coaching apps still allowed
+    user_impact: >-
+      Third-party apps could no longer show people's Strava activities to other users, and
+      Intervals.icu said followers would stop seeing them there.
+    company_said: >-
+      Strava said it was updating its API terms to continue its commitment to privacy and security
+      for its users, and expected the changes to affect less than .1% of apps.
+    severity: 1
+    status: in-force
+    sources:
+      - url: https://press.strava.com/articles/updates-to-stravas-api-agreement
+        publisher: Strava
+        kind: primary
+        published: 2024-11-15
+        archive: https://web.archive.org/web/20241120023146/https://press.strava.com/articles/updates-to-stravas-api-agreement
+        quote: >-
+          Effective November 11, the updated API agreement introduces three key changes that provide
+          Strava users with greater control, security, and a consistent experience: Stronger Privacy
+          Standards: Third-party apps may now only display a user’s Strava activity data to that
+          specific user.
+      - url: https://press.strava.com/articles/updates-to-stravas-api-agreement
+        publisher: Strava
+        kind: primary
+        published: 2024-11-15
+        archive: https://web.archive.org/web/20241120023146/https://press.strava.com/articles/updates-to-stravas-api-agreement
+        quote: >-
+          we are updating our API terms to continue our commitment to privacy and security for our
+          users.
+      - url: https://www.theverge.com/2024/11/19/24301056/strava-api-ai-data-sharing-policy-change-fitness-tracking
+        publisher: The Verge
+        kind: press
+        published: 2024-11-19
+        archive: https://web.archive.org/web/20261009113337/https://www.theverge.com/2024/11/19/24301056/strava-api-ai-data-sharing-policy-change-fitness-tracking
+        quote: >-
+          the overwhelming majority of existing use cases are still allowed, including coaching
+          platforms focused on providing feedback to users
+      - url: https://www.theverge.com/2024/11/19/24301056/strava-api-ai-data-sharing-policy-change-fitness-tracking
+        publisher: The Verge
+        kind: press
+        published: 2024-11-19
+        archive: https://web.archive.org/web/20261009113337/https://www.theverge.com/2024/11/19/24301056/strava-api-ai-data-sharing-policy-change-fitness-tracking
+        quote: >-
+          their data is being surfaced not just for their own use and visibility, but also to other
+          users (for example, in a public feed or heatmap).
+      - url: https://www.theverge.com/2024/11/19/24301056/strava-api-ai-data-sharing-policy-change-fitness-tracking
+        publisher: The Verge
+        kind: press
+        published: 2024-11-19
+        archive: https://web.archive.org/web/20261009113337/https://www.theverge.com/2024/11/19/24301056/strava-api-ai-data-sharing-policy-change-fitness-tracking
+        quote: We currently anticipate these changes will impact less than .1% of applications
+      - url: https://forum.intervals.icu/t/strava-visibility-update-coaching-is-ok/80331
+        publisher: Intervals.icu
+        kind: press
+        published: 2024-11-21
+        archive: https://web.archive.org/web/20241126202902/https://forum.intervals.icu/t/strava-visibility-update-coaching-is-ok/80331
+        quote: >-
+          So soon your followers will not be able to see your Strava activities but your coach will.
+      - url: https://www.strava.com/legal/api
+        publisher: Strava
+        kind: primary
+        published: 2026-06-01
+        archive: https://web.archive.org/web/20260826120154/https://www.strava.com/legal/api
+        quote: >-
+          Strava Data provided by a specific user can only be displayed or disclosed in your
+          Developer Application to that user.
+    added: 2026-11-23
+    updated: 2026-11-23
+    sources_checked: 2026-11-23
+    status_checked: 2026-11-23
