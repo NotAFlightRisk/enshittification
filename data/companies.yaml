@@ -88,6 +88,11 @@
   url: https://www.ubisoft.com/en-us/company/about-us
   wikipedia: https://en.wikipedia.org/wiki/Ubisoft
 
+- id: iamplus
+  name: i.am+
+  url: https://iamplus.com
+  wikipedia: https://en.wikipedia.org/wiki/I.am%2B
+
 - id: humane
   name: Humane
   url: https://web.archive.org/web/20250226161747/https://humane.com/
