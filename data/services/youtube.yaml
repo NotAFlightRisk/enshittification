@@ -108,7 +108,7 @@ changes:
     added: 2026-11-18
     updated: 2026-11-18
     sources_checked: 2026-11-18
-    status_checked: 2026-11-18
+    status_checked: 2026-11-23
 
   - id: dislike-count-hidden
     date: 2021-11-10
@@ -141,7 +141,7 @@ changes:
     added: 2026-11-18
     updated: 2026-11-18
     sources_checked: 2026-11-18
-    status_checked: 2026-11-18
+    status_checked: 2026-11-23
 
   - id: premium-family-price-2022
     date: 2022-10-20
@@ -184,7 +184,7 @@ changes:
     added: 2026-11-18
     updated: 2026-11-18
     sources_checked: 2026-11-18
-    status_checked: 2026-11-18
+    status_checked: 2026-11-23
 
   - id: 30-second-unskippable-tv-ads
     date: 2023-05-17
@@ -221,7 +221,7 @@ changes:
     added: 2026-11-18
     updated: 2026-11-19
     sources_checked: 2026-11-18
-    status_checked: 2026-11-18
+    status_checked: 2026-11-23
 
   - id: premium-price-2023
     date: 2023-07-19
@@ -268,7 +268,7 @@ changes:
     added: 2026-11-18
     updated: 2026-11-19
     sources_checked: 2026-11-18
-    status_checked: 2026-11-18
+    status_checked: 2026-11-23
 
   - id: premium-lite-europe-dropped
     date: 2023-09-25
@@ -341,7 +341,7 @@ changes:
     added: 2026-11-18
     updated: 2026-11-19
     sources_checked: 2026-11-18
-    status_checked: 2026-11-18
+    status_checked: 2026-11-23
 
   - id: longer-unskippable-tv-ads
     date: 2024-09
@@ -372,7 +372,7 @@ changes:
     added: 2026-11-18
     updated: 2026-11-19
     sources_checked: 2026-11-18
-    status_checked: 2026-11-18
+    status_checked: 2026-11-23
 
   - id: family-plan-household-pauses
     date: 2025-09-02
@@ -473,4 +473,4 @@ changes:
     added: 2026-11-18
     updated: 2026-11-19
     sources_checked: 2026-11-18
-    status_checked: 2026-11-18
+    status_checked: 2026-11-23
