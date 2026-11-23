@@ -1,0 +1,158 @@
+service: google-reader
+name: Google Reader
+company: google
+url: https://web.archive.org/web/20130314032502/http://googlereader.blogspot.com/2013/03/powering-down-google-reader.html
+wikipedia: https://en.wikipedia.org/wiki/Google_Reader
+
+changes:
+  - id: sharing-removed-for-google-plus
+    date: 2011-10-31
+    date_kind: effective
+    category: removed-feature
+    title: Google Reader turns off friending, following and shared items in favour of Google+
+    what_changed: >-
+      On 31 October 2011, Google turned off friending, following, shared items and comments in
+      Google Reader in favour of similar Google+ features. Like became +1, with an option to share
+      the item to Google+ circles in place of Share. Google had announced it just over a week
+      before, and said it would extend Reader's export to cover shared items, friends and likes.
+    before: Friending, following, shared items and comments inside Reader
+    after: A +1 button and sharing to Google+ circles
+    user_impact: >-
+      People who followed friends and shared items inside Reader lost those features, and sharing
+      with other Reader users moved to Google+.
+    company_said: >-
+      Google said retiring Reader's sharing features helped it focus on fewer areas and build an
+      even better experience across all of Google.
+    severity: 2
+    status: in-force
+    sources:
+      - url: https://googlereader.blogspot.com/2011/10/new-in-reader-fresh-design-and-google.html
+        publisher: Official Google Reader Blog
+        kind: primary
+        published: 2011-10-31
+        archive: https://web.archive.org/web/20111101160633/http://googlereader.blogspot.com/2011/10/new-in-reader-fresh-design-and-google.html
+        quote: >-
+          So starting today we'll be turning off friending, following, shared items and comments in
+          favor of similar Google+ functionality.
+      - url: https://googlereader.blogspot.com/2011/10/new-in-reader-fresh-design-and-google.html
+        publisher: Official Google Reader Blog
+        kind: primary
+        published: 2011-10-31
+        archive: https://web.archive.org/web/20111101160633/http://googlereader.blogspot.com/2011/10/new-in-reader-fresh-design-and-google.html
+        quote: >-
+          The ability to +1 a feed item (replacing "Like"), with an option to then share it with
+          your circles on Google+ (replacing "Share" and "Share with Note").
+      - url: https://googlereader.blogspot.com/2011/10/new-in-reader-fresh-design-and-google.html
+        publisher: Official Google Reader Blog
+        kind: primary
+        published: 2011-10-31
+        archive: https://web.archive.org/web/20111101160633/http://googlereader.blogspot.com/2011/10/new-in-reader-fresh-design-and-google.html
+        quote: >-
+          Retiring Reader's sharing features wasn't a decision that we made lightly, but in the end,
+          it helps us focus on fewer areas, and build an even better experience across all of
+          Google.
+      - url: https://googlereader.blogspot.com/2011/10/upcoming-changes-to-reader-new-look-new.html
+        publisher: Official Google Reader Blog
+        kind: primary
+        published: 2011-10
+        archive: https://web.archive.org/web/20111022005119/http://googlereader.blogspot.com/2011/10/upcoming-changes-to-reader-new-look-new.html
+        quote: >-
+          Many of Reader's social features will soon be available via Google+, so in a week's time
+          we'll be retiring things like friending, following and shared link blogs inside of Reader.
+      - url: https://googlereader.blogspot.com/2011/10/upcoming-changes-to-reader-new-look-new.html
+        publisher: Official Google Reader Blog
+        kind: primary
+        published: 2011-10
+        archive: https://web.archive.org/web/20111022005119/http://googlereader.blogspot.com/2011/10/upcoming-changes-to-reader-new-look-new.html
+        quote: >-
+          That's why we will also be extending Reader's subscription export feature to include the
+          following items.
+    added: 2026-11-23
+    updated: 2026-11-23
+    sources_checked: 2026-11-23
+    status_checked: 2026-11-23
+
+  - id: shutdown
+    date: 2013-07-01
+    date_kind: effective
+    category: removed-feature
+    title: Google shuts down Google Reader
+    question: When did Google Reader shut down?
+    what_changed: >-
+      Google shut down Google Reader on 1 July 2013, having announced on 13 March 2013 that it
+      would retire it. Users had until 15 July 2013 to download their subscriptions and other
+      Reader data through Google Takeout, after which Google said it would be permanently
+      deleted.
+    user_impact: >-
+      Reader users had to move to another feed reader, and lost their subscriptions, starred items
+      and notes unless they downloaded them through Google Takeout in time.
+    company_said: >-
+      Google said usage of Reader had declined, and that it was pouring all of its energy into
+      fewer products.
+    severity: 4
+    status: in-force
+    sources:
+      - url: https://googlereader.blogspot.com/2013/03/powering-down-google-reader.html
+        publisher: Official Google Reader Blog
+        kind: primary
+        published: 2013-03-13
+        archive: https://web.archive.org/web/20130314032502/http://googlereader.blogspot.com/2013/03/powering-down-google-reader.html
+        quote: >-
+          We have just announced on the Official Google Blog that we will soon retire Google Reader
+          (the actual date is July 1, 2013).
+      - url: https://googlereader.blogspot.com/2013/03/powering-down-google-reader.html
+        publisher: Official Google Reader Blog
+        kind: primary
+        published: 2013-03-13
+        archive: https://web.archive.org/web/20130314032502/http://googlereader.blogspot.com/2013/03/powering-down-google-reader.html
+        quote: >-
+          There are two simple reasons for this: usage of Google Reader has declined, and as a
+          company we're pouring all of our energy into fewer products.
+      - url: https://googleblog.blogspot.com/2013/03/a-second-spring-of-cleaning.html
+        publisher: Official Google Blog
+        kind: primary
+        published: 2013-03-13
+        archive: https://web.archive.org/web/20130314014859/http://googleblog.blogspot.com/2013/03/a-second-spring-of-cleaning.html
+        quote: >-
+          While the product has a loyal following, over the years usage has declined. So, on July
+          1, 2013, we will retire Google Reader.
+      - url: https://googlereader.blogspot.com/2013/07/a-final-farewell.html
+        publisher: Official Google Reader Blog
+        kind: primary
+        published: 2013-07-02
+        archive: https://web.archive.org/web/20130705042928/http://googlereader.blogspot.com/2013/07/a-final-farewell.html
+        quote: Thank you for stopping by. Today, we powered down Google Reader.
+      - url: https://www.google.com/reader/about/
+        publisher: Google Reader
+        kind: primary
+        published: 2013-07-01
+        archive: https://web.archive.org/web/20130702064036/https://www.google.com/reader/about/
+        quote: Thank you for stopping by.
+      - url: https://googlereader.blogspot.com/2013/07/a-final-farewell.html
+        publisher: Official Google Reader Blog
+        kind: primary
+        published: 2013-07-02
+        archive: https://web.archive.org/web/20130705042928/http://googlereader.blogspot.com/2013/07/a-final-farewell.html
+        quote: >-
+          You can download a copy of your Google Reader data via Google Takeout until 12PM PST July
+          15, 2013.
+      - url: https://googlereader.blogspot.com/2013/07/a-final-farewell.html
+        publisher: Official Google Reader Blog
+        kind: primary
+        published: 2013-07-02
+        archive: https://web.archive.org/web/20130705042928/http://googlereader.blogspot.com/2013/07/a-final-farewell.html
+        quote: >-
+          All Google Reader subscription data (eg. lists of people that you follow, items you have
+          starred, notes you have created, etc.) will be systematically deleted from Google
+          servers.
+      - url: https://googlereader.blogspot.com/2013/07/a-final-farewell.html
+        publisher: Official Google Reader Blog
+        kind: primary
+        published: 2013-07-02
+        archive: https://web.archive.org/web/20130705042928/http://googlereader.blogspot.com/2013/07/a-final-farewell.html
+        quote: >-
+          No -- all subscription data will be permanently, and irrevocably deleted.
+    added: 2026-11-23
+    updated: 2026-11-23
+    sources_checked: 2026-11-23
+    status_checked: 2026-11-23
