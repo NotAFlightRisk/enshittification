@@ -1,0 +1,295 @@
+service: linkedin
+name: LinkedIn
+company: microsoft
+url: https://www.linkedin.com
+crw: https://consumerrights.wiki/w/LinkedIn
+wikipedia: https://en.wikipedia.org/wiki/LinkedIn
+
+changes:
+  - id: open-apis-limited
+    date: 2015-02-12
+    date_kind: announced
+    effective: 2015-05-12
+    category: api-restriction
+    title: LinkedIn shuts most of its APIs to developers who aren't partners
+    what_changed: >-
+      LinkedIn said on 12 February 2015 that from 12 May its open APIs would only cover members' own
+      profiles and sharing posts as a member or company. Every other API needed developers to join
+      one of its partnership programs, and when it began rolling out on 12 May 2015, LinkedIn said
+      apps that hadn't adjusted would get errors signing in members or renewing access, and might
+      miss data.
+    user_impact: >-
+      Apps built on LinkedIn's other APIs lost access unless LinkedIn made their developers
+      partners, which TechCrunch said most small developers likely couldn't.
+    company_said: >-
+      LinkedIn said many apps built on its open APIs delivered value back to members and LinkedIn,
+      but not all had, so it was refocusing on partnership integrations.
+    severity: 3
+    status: in-force
+    sources:
+      - url: https://developer.linkedin.com/blog/posts/2015/developer-program-changes
+        publisher: LinkedIn Developer Network
+        kind: primary
+        published: 2015-02-12
+        archive: https://web.archive.org/web/20150327015224/https://developer.linkedin.com/blog/posts/2015/developer-program-changes
+        quote: >-
+          All other APIs will require developers to become a member of one of our partnership
+          programs.
+      - url: https://developer.linkedin.com/blog/posts/2015/developer-program-changes
+        publisher: LinkedIn Developer Network
+        kind: primary
+        published: 2015-02-12
+        archive: https://web.archive.org/web/20150327015224/https://developer.linkedin.com/blog/posts/2015/developer-program-changes
+        quote: >-
+          Starting on May 12, 2015, we will be limiting the open APIs to only support the following
+          uses
+      - url: https://developer.linkedin.com/blog/posts/2015/developer-program-changes
+        publisher: LinkedIn Developer Network
+        kind: primary
+        published: 2015-02-12
+        archive: https://web.archive.org/web/20150327015224/https://developer.linkedin.com/blog/posts/2015/developer-program-changes
+        quote: >-
+          While many delivered value back to our members and LinkedIn, not all have. As such, we’ve
+          taken steps to refocus the Developer Program from primarily open APIs to partnership
+          integrations
+      - url: https://developer.linkedin.com/blog/posts/2015/todays-changes
+        publisher: LinkedIn Developer Network
+        kind: primary
+        published: 2015-05-12
+        archive: https://web.archive.org/web/20150922222847/https://developer.linkedin.com/blog/posts/2015/todays-changes
+        quote: >-
+          If you have not yet adjusted your code, you will begin to see errors when trying to
+          authorize a new member or renew an access token. You may also not receive all the data you
+          expect.
+      - url: https://www.pcworld.com/article/2883992/linkedin-restricts-api-usage.html
+        publisher: PCWorld
+        kind: press
+        published: 2015-02-12
+        archive: https://web.archive.org/web/20150214080232/http://www.pcworld.com:80/article/2883992/linkedin-restricts-api-usage.html
+        quote: >-
+          LinkedIn is restricting access to most of its application programming interfaces (APIs) to
+          companies that have struck up partnerships with the social networking company.
+      - url: https://techcrunch.com/2015/02/12/linkedin-battens-down-the-hatches-on-api-use-limiting-full-access-to-partners/
+        publisher: TechCrunch
+        kind: press
+        published: 2015-02-12
+        archive: https://web.archive.org/web/20250411020656/https://techcrunch.com/2015/02/12/linkedin-battens-down-the-hatches-on-api-use-limiting-full-access-to-partners/
+        quote: >-
+          The professional network announced today that it would be restricting broad API use to
+          approved partners only
+      - url: https://techcrunch.com/2015/02/12/linkedin-battens-down-the-hatches-on-api-use-limiting-full-access-to-partners/
+        publisher: TechCrunch
+        kind: press
+        published: 2015-02-12
+        archive: https://web.archive.org/web/20250411020656/https://techcrunch.com/2015/02/12/linkedin-battens-down-the-hatches-on-api-use-limiting-full-access-to-partners/
+        quote: >-
+          which are not easy to get into and which in truth mean most small developers without deep
+          pockets or ample time likely won’t be able to partake.
+    added: 2026-11-23
+    updated: 2026-11-23
+    sources_checked: 2026-11-23
+    status_checked: 2026-11-23
+
+  - id: ai-training-default
+    date: 2024-09-18
+    date_kind: announced
+    category: ai
+    title: LinkedIn trains generative AI on members' data unless they opt out
+    what_changed: >-
+      LinkedIn said on 18 September 2024 that it trains generative AI on members' data, with an
+      opt-out, except in the European Economic Area and Switzerland. The Verge, citing 404 Media,
+      reported that LinkedIn had opted accounts in without asking, and added the setting before it
+      updated its privacy policy to say so. By 20 September 2024 it had paused training on UK
+      members' data after the Information Commissioner's Office raised concerns.
+    user_impact: >-
+      Members in most countries were opted in without being asked, and opting out didn't undo
+      training already done.
+    company_said: >-
+      LinkedIn said it was clarifying how it uses members' data to develop its and its affiliates'
+      products, including by training generative AI.
+    severity: 1
+    status: in-force
+    related: [linkedin/eu-uk-ai-training]
+    sources:
+      - url: https://www.linkedin.com/blog/member/trust-and-safety/updates-to-our-terms-of-service-2024
+        publisher: LinkedIn
+        kind: primary
+        published: 2024-09-18
+        archive: https://web.archive.org/web/20240918181101/https://www.linkedin.com/blog/member/trust-and-safety/updates-to-our-terms-of-service-2024
+        quote: >-
+          When it comes to using members’ data for generative AI training, we offer an opt-out
+          setting
+      - url: https://www.linkedin.com/blog/member/trust-and-safety/updates-to-our-terms-of-service-2024
+        publisher: LinkedIn
+        kind: primary
+        published: 2024-09-18
+        archive: https://web.archive.org/web/20240918181101/https://www.linkedin.com/blog/member/trust-and-safety/updates-to-our-terms-of-service-2024
+        quote: >-
+          At this time, we are not enabling training for generative AI on member data from the
+          European Economic Area or Switzerland
+      - url: https://www.theverge.com/2024/9/18/24248471/linkedin-ai-training-user-accounts-data-opt-in
+        publisher: The Verge
+        kind: press
+        published: 2024-09-18
+        archive: https://web.archive.org/web/20240919052448/https://www.theverge.com/2024/9/18/24248471/linkedin-ai-training-user-accounts-data-opt-in
+        quote: >-
+          the social network has, without asking, opted accounts into training generative AI models.
+          404Media reports that LinkedIn introduced the new privacy setting and opt-out form before
+          rolling out an updated privacy policy
+      - url: https://www.theverge.com/2024/9/18/24248471/linkedin-ai-training-user-accounts-data-opt-in
+        publisher: The Verge
+        kind: press
+        published: 2024-09-18
+        archive: https://web.archive.org/web/20240919052448/https://www.theverge.com/2024/9/18/24248471/linkedin-ai-training-user-accounts-data-opt-in
+        quote: >-
+          Opting out means that LinkedIn and its affiliates won’t use your personal data or content
+          on LinkedIn to train models going forward, but does not affect training that has already
+          taken place.
+      - url: https://www.linkedin.com/blog/member/trust-and-safety/updates-to-our-terms-of-service-2024
+        publisher: LinkedIn
+        kind: primary
+        published: 2024-09-18
+        archive: https://web.archive.org/web/20240918181101/https://www.linkedin.com/blog/member/trust-and-safety/updates-to-our-terms-of-service-2024
+        quote: >-
+          we have added language to clarify how we use the information you share with us to develop
+          the products and services of LinkedIn and its affiliates, including by training AI models
+          used for content generation
+      - url: https://www.bbc.com/news/articles/cy89x4y1pmgo
+        publisher: BBC News
+        kind: press
+        published: 2024-09-20
+        archive: https://web.archive.org/web/20260213215202/https://www.bbc.com/news/articles/cy89x4y1pmgo
+        quote: >-
+          LinkedIn has suspended the use of UK user data to train its artificial intelligence (AI)
+          models after a regulator raised concerns.
+      - url: https://www.bbc.com/news/articles/cy89x4y1pmgo
+        publisher: BBC News
+        kind: press
+        published: 2024-09-20
+        archive: https://web.archive.org/web/20260213215202/https://www.bbc.com/news/articles/cy89x4y1pmgo
+        quote: >-
+          quietly saw users around the world opted into their data being used to train its AI models
+    added: 2026-11-23
+    updated: 2026-11-23
+    sources_checked: 2026-11-23
+    status_checked: 2026-11-23
+
+  - id: eu-uk-ai-training
+    date: 2025-11-03
+    date_kind: effective
+    category: ai
+    title: LinkedIn extends AI training on member data to Europe, the UK, Canada and Hong Kong
+    what_changed: >-
+      From 3 November 2025, LinkedIn trains its generative AI on data from members in the EEA,
+      Switzerland, the UK, Canada and Hong Kong, unless they opt out. It can include profile details
+      and public posts, but not private messages, and in the UK, Canada and Hong Kong the same setting
+      lets LinkedIn share that data with Microsoft for its own model training.
+    user_impact: >-
+      Members in those regions could have data like their profile details and public posts used for
+      AI training unless they turned the setting off.
+    company_said: >-
+      LinkedIn said the AI features help hirers find and reach members more easily, and help members
+      write profile updates, messages and posts.
+    severity: 1
+    status: in-force
+    regions: [AT, BE, BG, HR, CY, CZ, DK, EE, FI, FR, DE, GR, HU, IE, IT, LV, LT, LU, MT, NL, PL, PT,
+      RO, SK, SI, ES, SE, IS, LI, NO, CH, GB, CA, HK]
+    related: [linkedin/ai-training-default]
+    sources:
+      - url: https://www.linkedin.com/help/linkedin/answer/a8059228
+        publisher: LinkedIn Help
+        kind: primary
+        published: 2025-09-18
+        archive: https://web.archive.org/web/20250918085139/https://www.linkedin.com/help/linkedin/answer/a8059228
+        quote: >-
+          Starting on November 3, 2025, we’ll start to use some data from members in these regions to
+          train these content-generating AI models that enhance your experience and better connect
+          our members to opportunities.
+      - url: https://www.linkedin.com/help/linkedin/answer/a8059228
+        publisher: LinkedIn Help
+        kind: primary
+        published: 2025-09-18
+        archive: https://web.archive.org/web/20250918085139/https://www.linkedin.com/help/linkedin/answer/a8059228
+        quote: >-
+          This may include data like details from your profile, and public content you post on
+          LinkedIn; it does not include your private messages.
+      - url: https://www.linkedin.com/help/linkedin/answer/a8059228
+        publisher: LinkedIn Help
+        kind: primary
+        published: 2025-09-18
+        archive: https://web.archive.org/web/20250918085139/https://www.linkedin.com/help/linkedin/answer/a8059228
+        quote: >-
+          This setting also controls whether LinkedIn can share this member data and content to our
+          Affiliate Microsoft for their model training activities.
+      - url: https://www.linkedin.com/help/linkedin/answer/a8059228
+        publisher: LinkedIn Help
+        kind: primary
+        published: 2025-09-18
+        archive: https://web.archive.org/web/20250918085139/https://www.linkedin.com/help/linkedin/answer/a8059228
+        quote: >-
+          Our GenAI features can help hirers find and reach you more easily, and assist members in
+          creating content such as profile updates, messages, and posts.
+      - url: https://www.linkedin.com/help/linkedin/answer/a8059228
+        publisher: LinkedIn Help
+        kind: primary
+        published: 2026-01
+        archive: https://web.archive.org/web/20260131215047/https://www.linkedin.com/help/linkedin/answer/a8059228
+        quote: >-
+          On November 3, 2025, we started to use some data from members in these regions
+    added: 2026-11-23
+    updated: 2026-11-23
+    sources_checked: 2026-11-23
+    status_checked: 2026-11-23
+
+  - id: microsoft-ad-data-sharing
+    date: 2025-11-03
+    date_kind: effective
+    category: tracking
+    title: LinkedIn starts sharing more member data with Microsoft for ads
+    what_changed: >-
+      From 3 November 2025, LinkedIn shares more data on members outside the EEA, Switzerland and the
+      UK with Microsoft, for personalised ads. It may include profile data, feed activity and ad
+      engagement, and members can opt out in their settings.
+    user_impact: >-
+      Members outside the EEA, Switzerland and the UK had more of their LinkedIn data shared with
+      Microsoft for its ads, unless they turned the setting off.
+    severity: 1
+    status: in-force
+    sources:
+      - url: https://www.linkedin.com/help/linkedin/answer/a8059228
+        publisher: LinkedIn Help
+        kind: primary
+        published: 2025-09-18
+        archive: https://web.archive.org/web/20250918085139/https://www.linkedin.com/help/linkedin/answer/a8059228
+        quote: >-
+          Starting November 3, 2025, we will share additional data about members in your region with
+          our Affiliate Microsoft so that the Microsoft family of companies can show you more
+          personalized and relevant ads.
+      - url: https://www.linkedin.com/help/linkedin/answer/a8059228
+        publisher: LinkedIn Help
+        kind: primary
+        published: 2025-09-18
+        archive: https://web.archive.org/web/20250918085139/https://www.linkedin.com/help/linkedin/answer/a8059228
+        quote: >-
+          This data may include your LinkedIn profile data, feed activity data, and ad engagement
+          data
+      - url: https://www.linkedin.com/help/linkedin/answer/a8059228
+        publisher: LinkedIn Help
+        kind: primary
+        published: 2025-09-18
+        archive: https://web.archive.org/web/20250918085139/https://www.linkedin.com/help/linkedin/answer/a8059228
+        quote: >-
+          We are not making any changes to our ad practices in these regions, so there are no new ad
+          settings in these regions.
+      - url: https://www.linkedin.com/help/linkedin/answer/a8059228
+        publisher: LinkedIn Help
+        kind: primary
+        published: 2026-01
+        archive: https://web.archive.org/web/20260131215047/https://www.linkedin.com/help/linkedin/answer/a8059228
+        quote: >-
+          As of November 3, 2025, we can share additional data about members in your region with our
+          Affiliate Microsoft
+    added: 2026-11-23
+    updated: 2026-11-23
+    sources_checked: 2026-11-23
+    status_checked: 2026-11-23
