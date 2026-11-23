@@ -1,0 +1,481 @@
+service: ring
+name: Ring
+company: amazon
+url: https://ring.com
+crw: https://consumerrights.wiki/w/Ring
+wikipedia: https://en.wikipedia.org/wiki/Ring_LLC
+
+plans:
+  - id: basic-us
+    name: Ring Solo, was Ring Protect Basic
+    region: US
+    currency: USD
+    billing: month
+    since: '2015'
+    price: 3
+    source:
+      url: https://techcrunch.com/2022/06/03/ring-announces-new-features-raises-its-basic-subscription-price-for-the-first-time-since-2017/
+      publisher: TechCrunch
+      kind: press
+      published: 2022-06-03
+      archive: https://web.archive.org/web/20221012153859/https://techcrunch.com/2022/06/03/ring-announces-new-features-raises-its-basic-subscription-price-for-the-first-time-since-2017/
+      quote: >-
+        Ring’s cheapest security camera subscription plan was introduced in 2015 and has stayed flat
+        at $3 per month ever since
+
+  - id: basic-annual-us
+    name: Ring Solo (annual), was Ring Protect Basic
+    region: US
+    currency: USD
+    billing: year
+    since: 2022-07-01
+    price: 39.99
+    incomplete: >-
+      The annual plan was on sale before 2022, but we haven't found when it launched or what it
+      cost then, so it's listed from the 2022 rise.
+    source:
+      url: https://blog.ring.com/products-innovation/we-are-continuing-to-innovate-for-our-neighbors/
+      publisher: Ring
+      kind: primary
+      published: 2022-06-01
+      archive: https://web.archive.org/web/20260209204557/https://blog.ring.com/products-innovation/we-are-continuing-to-innovate-for-our-neighbors/
+      quote: >-
+        we are raising the price of our Ring Protect Basic plan for the first time to $3.99 per
+        month, or $39.99 per year in the U.S.
+
+  - id: plus-us
+    name: Ring Protect Plus
+    region: US
+    currency: USD
+    billing: month
+    since: '2022'
+    price: 10
+    incomplete: >-
+      It was $10 a month in 2022, but we haven't found when it launched or what it cost then. In
+      2024 Ring moved it to Home Standard at $9.99, and in 2026 to Ring Multi, Ring Pro or Premium
+      Legacy, depending on add-ons and whether there's a Ring Alarm.
+    source:
+      url: https://techcrunch.com/2022/06/03/ring-announces-new-features-raises-its-basic-subscription-price-for-the-first-time-since-2017/
+      publisher: TechCrunch
+      kind: press
+      published: 2022-06-03
+      archive: https://web.archive.org/web/20221012153859/https://techcrunch.com/2022/06/03/ring-announces-new-features-raises-its-basic-subscription-price-for-the-first-time-since-2017/
+      quote: The Protect Plus plan covers all Ring devices and costs $10 a month or $100 a year.
+
+changes:
+  - id: neighbors-portal-police-requests
+    date: 2019-08-28
+    date_kind: announced
+    category: tracking
+    title: Ring says 405 police agencies can ask owners for videos through its Neighbors Portal
+    what_changed: >-
+      Ring said on 28 August 2019 that 405 police agencies used its Neighbors Portal, which let them
+      ask Ring owners for their videos on active investigations. The Washington Post reported the
+      same day that the number of police deals hadn't been reported until then. Ring added a map so
+      people could see if their local police had joined.
+    after: Police can ask Ring owners for their videos
+    user_impact: >-
+      Ring owners in those agencies' areas could be asked for their videos, though sharing was up to
+      them.
+    company_said: >-
+      Ring said it had designed how law enforcement uses the Neighbors app so users always stay in
+      control of the information they share.
+    severity: 1
+    status: reversed
+    regions: [US]
+    reversed:
+      date: 2024-01-24
+      what: >-
+        Ring sunset its Request for Assistance tool, so police and fire departments could no longer
+        use the Neighbors app to request and receive video, though they could still post there.
+      sources:
+        - url: https://blog.ring.com/about-ring/ring-announces-new-neighbors-app-features-sunsets-request-for-assistance-post/
+          publisher: Ring
+          kind: primary
+          published: 2024-01-24
+          archive: https://web.archive.org/web/20261030045844/https://blog.ring.com/about-ring/ring-announces-new-neighbors-app-features-sunsets-request-for-assistance-post/
+          quote: >-
+            They will no longer be able to use the RFA tool to request and receive video in the app.
+    related: [ring/community-requests]
+    sources:
+      - url: https://blog.ring.com/2019/08/28/working-together-for-safer-neighborhoods-introducing-the-neighbors-active-law-enforcement-map/
+        publisher: Ring
+        kind: primary
+        published: 2019-08-28
+        archive: https://web.archive.org/web/20261006150605/https://blog.ring.com/2019/08/28/working-together-for-safer-neighborhoods-introducing-the-neighbors-active-law-enforcement-map/
+        quote: >-
+          Today, 405 agencies use the Neighbors Portal, which is an extension of the Neighbors App
+          that allow law enforcement to engage with their local community—from posting important
+          information about crime and safety events in their neighborhoods to viewing and commenting
+          on public posts as a verified law enforcement officer to asking for help on active
+          investigations by submitting requests for video recordings.
+      - url: https://www.washingtonpost.com/technology/2019/08/28/doorbell-camera-firm-ring-has-partnered-with-police-forces-extending-surveillance-reach/
+        publisher: The Washington Post
+        kind: press
+        published: 2019-08-28
+        archive: https://web.archive.org/web/20190828121612/https://www.washingtonpost.com/technology/2019/08/28/doorbell-camera-firm-ring-has-partnered-with-police-forces-extending-surveillance-reach/
+        quote: >-
+          The number of police deals, which has not previously been reported, will likely fuel
+          broader questions about privacy, surveillance and the expanding reach of tech giants and
+          local police.
+        paywalled: true
+    added: 2026-11-23
+    updated: 2026-11-23
+    sources_checked: 2026-11-23
+    status_checked: 2026-11-23
+
+  - id: basic-price-2022
+    date: 2022-06-01
+    date_kind: announced
+    effective: 2022-07-01
+    category: price-rise
+    title: Ring Protect Basic goes from $3 to $3.99 a month, its first US rise
+    what_changed: >-
+      Ring said on 1 June 2022 that US Ring Protect Basic would go from $3 to $3.99 a month, or
+      $39.99 a year, its first rise since the plan launched in 2015. It took effect from the first
+      bill on or after 1 July 2022, and came with more video storage, bulk downloads and discounts.
+    before: $3 a month
+    after: $3.99 a month
+    user_impact: >-
+      Every US Protect Basic subscriber paid more, while Protect Plus and Pro kept their prices.
+    company_said: >-
+      Ring said it was raising the price with its continued investment in innovation and commitment
+      to bringing new capabilities.
+    severity: 2
+    status: in-force
+    regions: [US]
+    prices:
+      - { plan: basic-us, from: 3, to: 3.99 }
+    related: [ring/basic-price-2024]
+    sources:
+      - url: https://blog.ring.com/products-innovation/we-are-continuing-to-innovate-for-our-neighbors/
+        publisher: Ring
+        kind: primary
+        published: 2022-06-01
+        archive: https://web.archive.org/web/20260209204557/https://blog.ring.com/products-innovation/we-are-continuing-to-innovate-for-our-neighbors/
+        quote: >-
+          we are raising the price of our Ring Protect Basic plan for the first time to $3.99 per
+          month, or $39.99 per year in the U.S. The price change will take effect on the first
+          billing date on or after July 1, 2022.
+      - url: https://techcrunch.com/2022/06/03/ring-announces-new-features-raises-its-basic-subscription-price-for-the-first-time-since-2017/
+        publisher: TechCrunch
+        kind: press
+        published: 2022-06-03
+        archive: https://web.archive.org/web/20221012153859/https://techcrunch.com/2022/06/03/ring-announces-new-features-raises-its-basic-subscription-price-for-the-first-time-since-2017/
+        quote: >-
+          the price of the Protect Basic plan is increasing starting in July to $3.99 a month or
+          $39.99 a year in the U.S.
+    added: 2026-11-23
+    updated: 2026-11-23
+    sources_checked: 2026-11-23
+    status_checked: 2026-11-23
+
+  - id: alarm-app-features-paywall
+    date: 2023-03-29
+    date_kind: effective
+    category: paywall
+    title: Ring Alarms bought from 29 March 2023 need Ring Protect for the app's alarm features
+    what_changed: >-
+      Ring Alarms bought in the US and Canada from 29 March 2023 need Ring Protect for their in-app
+      features. Without it, the Ring Keypad arms and disarms them. Alarms owned
+      before that date keep their in-app features, with or without a subscription, for the expected
+      life of the device.
+    before: Ring Alarm in-app features without a subscription
+    after: Keypad only, unless you pay for Ring Protect
+    user_impact: >-
+      People who bought a Ring Alarm from 29 March 2023 and don't pay for Ring Protect can only arm
+      and disarm it on the keypad, with alarm alerts sounding from the base station.
+    severity: 2
+    status: in-force
+    regions: [US, CA]
+    related: [ring/home-away-modes-paywall]
+    sources:
+      - url: https://support.ring.com/hc/en-us/articles/12866034603028
+        publisher: Ring Help
+        kind: primary
+        published: 2023-03
+        archive: https://web.archive.org/web/20230302212259/https://support.ring.com/hc/en-us/articles/12866034603028
+        quote: >-
+          Starting March 29, 2023 , a Ring Protect subscription will be required to access Ring Alarm
+          in-app features in the US and Canada, including digital notifications and the ability to
+          Arm and Disarm from your app. If you owned an Alarm before this date, your current device
+          will keep these in-app features.
+      - url: https://ring.com/support/articles/odtb0/Price-Increase-for-Ring-Protect-Basic-March2024
+        publisher: Ring Help
+        kind: primary
+        published: 2024-02-08
+        archive: https://web.archive.org/web/20240208214404/https://ring.com/support/articles/odtb0/Price-Increase-for-Ring-Protect-Basic-March2024
+        quote: >-
+          If you bought a Ring Alarm after March 29, 2023, you will lose Ring Alarm in-app features
+          if you cancel your Ring Protect subscription. You can still Arm and Disarm your Alarm
+          directly from the Ring Keypad without a subscription. Alarm alerts will sound locally from
+          the physical Ring Alarm Base Station.
+      - url: https://ring.com/support/articles/odtb0/Price-Increase-for-Ring-Protect-Basic-March2024
+        publisher: Ring Help
+        kind: primary
+        published: 2024-02-08
+        archive: https://web.archive.org/web/20240208214404/https://ring.com/support/articles/odtb0/Price-Increase-for-Ring-Protect-Basic-March2024
+        quote: >-
+          If you owned a Ring Alarm before March 29, 2023, you will have access to in-app features
+          (with or without a subscription) for the expected life of the device.
+    added: 2026-11-23
+    updated: 2026-11-23
+    sources_checked: 2026-11-23
+    status_checked: 2026-11-23
+
+  - id: home-away-modes-paywall
+    date: 2023-03-29
+    date_kind: effective
+    category: paywall
+    title: Ring puts Home and Away Modes for its doorbells and cameras behind Ring Protect
+    what_changed: >-
+      Ring made Home and Away Modes for doorbells and cameras a Ring Protect feature on 29 March 2023,
+      including on ones people already owned. Modes switch
+      recording and Live View on or off depending on whether you're home.
+    before: Home and Away Modes without a subscription
+    after: Home and Away Modes only with Ring Protect
+    user_impact: >-
+      Ring doorbell and camera owners without a subscription lost Modes in the app and through
+      Alexa, while Live View, talking through the doorbell, motion detection and alerts stayed free.
+    severity: 2
+    status: in-force
+    regions: [US, CA]
+    related: [ring/alarm-app-features-paywall]
+    sources:
+      - url: https://support.ring.com/hc/en-us/articles/12866034603028
+        publisher: Ring Help
+        kind: primary
+        published: 2023-03
+        archive: https://web.archive.org/web/20230302212259/https://support.ring.com/hc/en-us/articles/12866034603028
+        quote: >-
+          Beginning March 29, 2023, existing and future Ring doorbells and cameras will require a
+          Ring Protect Plan subscription to access the Home and Away Modes feature from the Ring app
+          and Alexa.
+      - url: https://support.ring.com/hc/en-us/articles/12866034603028
+        publisher: Ring Help
+        kind: primary
+        published: 2023-03
+        archive: https://web.archive.org/web/20230302212259/https://support.ring.com/hc/en-us/articles/12866034603028
+        quote: >-
+          With a subscription, set your Ring doorbells and cameras to Home or Away Mode and customize
+          settings to specify whether Live View and recording is turned on or off in certain Modes
+      - url: https://support.ring.com/hc/en-us/articles/12866034603028
+        publisher: Ring Help
+        kind: primary
+        published: 2023-03
+        archive: https://web.archive.org/web/20230302212259/https://support.ring.com/hc/en-us/articles/12866034603028
+        quote: >-
+          If you don’t have a Ring Protect subscription, you will still have access to other in-app
+          features for your doorbells and cameras, such as Live View, Two-Way Talk, Motion Detection,
+          and Alerts.
+      - url: https://ring.com/plans
+        publisher: Ring
+        kind: pricing-page
+        published: 2026-11-10
+        archive: https://web.archive.org/web/20261110233108/https://ring.com/plans
+        quote: >-
+          Device Modes Customize when your cameras record, remotely Arm and Disarm your Ring Alarm,
+          and more, all in the Ring app.
+    added: 2026-11-23
+    updated: 2026-11-23
+    sources_checked: 2026-11-23
+    status_checked: 2026-11-23
+
+  - id: basic-price-2024
+    date: 2024-02
+    date_kind: announced
+    effective: 2024-03-11
+    category: price-rise
+    title: Ring Protect Basic goes from $3.99 to $4.99 a month
+    what_changed: >-
+      Ring said in February 2024 that US Ring Protect Basic would go from $3.99 to $4.99 a month,
+      and from $39.99 to $49.99 a year, from 11 March 2024. Unlike the 2022 rise, it came with no
+      new features. Ring renamed it Home Basic in 2024 and Ring Solo in 2026, at the same price.
+    before: $3.99 a month
+    after: $4.99 a month
+    user_impact: >-
+      Every US Protect Basic subscriber paid more from their first renewal on or after 11 March 2024,
+      with Protect Plus and Pro left alone.
+    severity: 2
+    status: in-force
+    regions: [US]
+    prices:
+      - { plan: basic-us, from: 3.99, to: 4.99 }
+      - { plan: basic-annual-us, from: 39.99, to: 49.99 }
+    related: [ring/basic-price-2022]
+    sources:
+      - url: https://ring.com/support/articles/odtb0/Price-Increase-for-Ring-Protect-Basic-March2024
+        publisher: Ring Help
+        kind: primary
+        published: 2024-02-08
+        archive: https://web.archive.org/web/20240208214404/https://ring.com/support/articles/odtb0/Price-Increase-for-Ring-Protect-Basic-March2024
+        quote: >-
+          the price of a Ring Protect Basic subscription will increase from USD $3.99/month or USD
+          $39.99/year to USD $4.99/month or USD $49.99/year
+      - url: https://ring.com/support/articles/odtb0/Price-Increase-for-Ring-Protect-Basic-March2024
+        publisher: Ring Help
+        kind: primary
+        published: 2024-02-08
+        archive: https://web.archive.org/web/20240208214404/https://ring.com/support/articles/odtb0/Price-Increase-for-Ring-Protect-Basic-March2024
+        quote: >-
+          The March 11, 2024 price increase only applies to the Ring Protect Basic plan.
+      - url: https://www.engadget.com/rings-cheapest-subscription-plan-is-going-up-by-10-a-year-093533654.html
+        publisher: Engadget
+        kind: press
+        published: 2024-02-09
+        archive: https://web.archive.org/web/20261029221405/https://www.engadget.com/rings-cheapest-subscription-plan-is-going-up-by-10-a-year-093533654.html
+        quote: >-
+          This time, though the price is increasing with no additional benefits added.
+      - url: https://ring.com/support/articles/v5hc7/introducing-ring-home-plans
+        publisher: Ring Help
+        kind: primary
+        published: 2024-10
+        archive: https://web.archive.org/web/20241009203946/https://ring.com/support/articles/v5hc7/introducing-ring-home-plans
+        quote: >-
+          Ring Protect Basic Ring Home Basic $4.99/month or $49.99/year $4.99/month or $49.99/year
+      - url: https://ring.com/support/articles/v5hc7/introducing-ring-plans
+        publisher: Ring Help
+        kind: primary
+        published: '2026'
+        archive: https://web.archive.org/web/20261123175207/https://ring.com/support/articles/v5hc7/introducing-ring-plans
+        quote: >-
+          If you had a Home Basic plan Your plan name is now Ring Solo
+      - url: https://ring.com/plans
+        publisher: Ring
+        kind: pricing-page
+        published: 2026-11-10
+        archive: https://web.archive.org/web/20261110233108/https://ring.com/plans
+        quote: Ring Solo $4.99/mo or $49.99/yr
+      - url: https://ring.com/support/articles/v5hc7/introducing-ring-plans
+        publisher: Ring Help
+        kind: primary
+        published: '2026'
+        archive: https://web.archive.org/web/20261123175207/https://ring.com/support/articles/v5hc7/introducing-ring-plans
+        quote: >-
+          Ring Home plans were renamed Ring Protect plans in 2026. Your subscription automatically
+          transitions to your new plan, and you keep the same features. There is no additional
+          charge for this change.
+    added: 2026-11-23
+    updated: 2026-11-23
+    sources_checked: 2026-11-23
+    status_checked: 2026-11-23
+
+  - id: community-requests
+    date: 2025-04-22
+    date_kind: announced
+    effective: 2025-09-04
+    category: tracking
+    title: Ring brings back police requests for owners' videos, through Axon
+    what_changed: >-
+      Ring said on 22 April 2025 that it would bring police video requests back to the Neighbors app
+      through Axon, after ending them in January 2024. Community Requests began rolling out in the US
+      on 4 September 2025, notifying owners near an incident, with any videos they share going
+      straight to Axon Evidence. Ring said in October 2025 it planned a Flock Safety integration,
+      then cancelled it on 12 February 2026 before it launched.
+    before: No police video requests in the Neighbors app
+    after: Police using Axon can ask nearby owners for videos
+    user_impact: >-
+      US Ring owners near an incident a participating agency asks about get requests for their
+      videos unless they turn those notifications off, though sharing stays up to them.
+    company_said: >-
+      Ring said it was similar to the way the public has always responded to pleas for information,
+      just a much smarter way to get it to public safety agencies.
+    severity: 1
+    status: in-force
+    regions: [US]
+    related: [ring/neighbors-portal-police-requests]
+    sources:
+      - url: https://blog.ring.com/about-ring/ring-announces-plans-to-work-with-axon-to-bring-community-request-service-to-the-neighbors-app/
+        publisher: Ring
+        kind: primary
+        published: 2025-04-22
+        archive: https://web.archive.org/web/20260810012538/https://blog.ring.com/about-ring/ring-announces-plans-to-work-with-axon-to-bring-community-request-service-to-the-neighbors-app/
+        quote: >-
+          With Axon, we’re working to bring Community Request into Ring’s Neighbors app.
+      - url: https://blog.ring.com/about-ring/ring-launches-community-requests-a-new-way-to-help-your-community/
+        publisher: Ring
+        kind: primary
+        published: 2025-09-04
+        archive: https://web.archive.org/web/20261018133939/https://blog.ring.com/about-ring/ring-launches-community-requests-a-new-way-to-help-your-community/
+        quote: >-
+          The request appears publicly on the Neighbors feed, and Ring users within the designated
+          area receive a notification.
+      - url: https://blog.ring.com/about-ring/ring-announces-new-neighbors-app-features-sunsets-request-for-assistance-post/
+        publisher: Ring
+        kind: primary
+        published: 2024-01-24
+        archive: https://web.archive.org/web/20261030045844/https://blog.ring.com/about-ring/ring-announces-new-neighbors-app-features-sunsets-request-for-assistance-post/
+        quote: >-
+          They will no longer be able to use the RFA tool to request and receive video in the app.
+      - url: https://blog.ring.com/about-ring/ring-and-flock-cancel-partnership/
+        publisher: Ring
+        kind: primary
+        published: 2026-02-12
+        archive: https://web.archive.org/web/20261107121334/https://blog.ring.com/about-ring/ring-and-flock-cancel-partnership/
+        quote: >-
+          In October 2025, Ring and Flock Safety announced our intention to work together on an
+          integration with Community Requests.
+      - url: https://blog.ring.com/about-ring/ring-and-flock-cancel-partnership/
+        publisher: Ring
+        kind: primary
+        published: 2026-02-12
+        archive: https://web.archive.org/web/20261107121334/https://blog.ring.com/about-ring/ring-and-flock-cancel-partnership/
+        quote: >-
+          we have made the joint decision to cancel the planned integration. The integration never
+          launched, so no Ring customer videos were ever sent to Flock Safety.
+    added: 2026-11-23
+    updated: 2026-11-23
+    sources_checked: 2026-11-23
+    status_checked: 2026-11-23
+
+  - id: search-party-on-by-default
+    date: 2025-10-23
+    date_kind: reported
+    category: ai
+    title: Ring signs outdoor cameras up to AI scans for lost dogs unless owners opt out
+    what_changed: >-
+      Ring turned Search Party on by default for outdoor cameras ahead of its planned November 2025
+      launch, so they use AI to look for dogs reported missing nearby. PCWorld reported on 23 October
+      2025 that the setting was already on in the app. Owners whose camera spots a possible match are asked
+      whether to share the video, and can turn it off in the app's Control Center.
+    after: Outdoor cameras scan for lost dogs unless you turn it off
+    user_impact: >-
+      Ring owners' outdoor cameras joined searches for other people's lost dogs unless they found the
+      setting and turned it off.
+    company_said: >-
+      Ring said your privacy is always in your control, as owners choose which videos, if any, to
+      share with a neighbour looking for their dog.
+    severity: 1
+    status: in-force
+    sources:
+      - url: https://www.pcworld.com/article/2951106/rings-ai-powered-pet-finder-is-coming-and-youre-already-signed-up.html
+        publisher: PCWorld
+        kind: press
+        published: 2025-10-23
+        archive: https://web.archive.org/web/20251023180404/https://www.pcworld.com/article/2951106/rings-ai-powered-pet-finder-is-coming-and-youre-already-signed-up.html
+        quote: >-
+          Ring’s Search Party feature isn’t slated to go live until November, but banners announcing
+          the functionality have already started appearing in the Ring app, along with a
+          setting—already enabled—that lets you control whether Search Party is active on your Ring
+          cameras.
+      - url: https://blog.ring.com/products-innovation/icymi-ring-launches-4k-cameras-alexa-ai-search-party/
+        publisher: Ring
+        kind: primary
+        published: 2025-10-10
+        archive: https://web.archive.org/web/20260518190801/https://blog.ring.com/products-innovation/icymi-ring-launches-4k-cameras-alexa-ai-search-party/
+        quote: >-
+          When a neighbor reports their dog is missing in the Ring App, registered outdoor Ring
+          cameras will automatically scan for sightings in the neighborhood. If your device captures
+          footage of the missing dog, you'll receive a notification and can then choose to share the
+          video.
+      - url: https://www.engadget.com/big-tech/heres-how-to-disable-rings-creepy-search-party-feature-185420455.html
+        publisher: Engadget
+        kind: press
+        published: 2026-02-09
+        archive: https://web.archive.org/web/20260209195740/https://www.engadget.com/big-tech/heres-how-to-disable-rings-creepy-search-party-feature-185420455.html
+        quote: >-
+          many Ring users are looking for a way to disable the feature, as it's enabled by default.
+    added: 2026-11-23
+    updated: 2026-11-23
+    sources_checked: 2026-11-23
+    status_checked: 2026-11-23
