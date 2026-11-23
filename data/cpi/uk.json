@@ -4,7 +4,7 @@
   "name": "CPI index, all items, 2015=100",
   "source": "https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7bt/mm23",
   "licence": "Open Government Licence v3.0, Office for National Statistics",
-  "updated": "2026-11-18",
+  "updated": "2026-11-23",
   "monthly": {
     "2005-01": 77,
     "2005-02": 77.2,
