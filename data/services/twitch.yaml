@@ -1,0 +1,190 @@
+service: twitch
+name: Twitch
+company: amazon
+url: https://www.twitch.tv
+crw: https://consumerrights.wiki/w/Twitch
+wikipedia: https://en.wikipedia.org/wiki/Twitch_(service)
+
+plans:
+  - id: turbo-us
+    name: Turbo
+    region: US
+    currency: USD
+    billing: month
+    since: 2013-02-04
+    price: 8.99
+    source:
+      url: https://blog.twitch.tv/2013/02/announcing-twitch-turbo-an-ad-free-experience-for-twitch/
+      publisher: Twitch Blog
+      kind: primary
+      published: 2013-02-04
+      archive: https://web.archive.org/web/20140519031557/https://blog.twitch.tv/2013/02/announcing-twitch-turbo-an-ad-free-experience-for-twitch/
+      quote: >-
+        for $8.99 per month you gain access to a number of exclusive features to enhance your Twitch
+        experience
+
+changes:
+  - id: surestream-ads
+    date: 2016-11-02
+    date_kind: announced
+    category: ads
+    title: Twitch rolls out SureStream video ads that ad blockers can't skip
+    what_changed: >-
+      Twitch started rolling out SureStream on 2 November 2016, ad technology it said would reduce
+      the impact of software that bypasses ads. Twitch said the ads couldn't be skipped even with an
+      ad blocker on, and pointed anyone who didn't want ads to Twitch Prime, Turbo or channel subs.
+    user_impact: >-
+      Viewers who used an ad blocker on Twitch would have to watch its video ads wherever SureStream
+      was switched on, unless they paid to go ad-free.
+    company_said: >-
+      Twitch said SureStream would improve video ads for viewers and partners and increase the ad
+      revenue pool for partners.
+    severity: 3
+    status: in-force
+    sources:
+      - url: https://blog.twitch.tv/en/2016/11/02/introducing-sure-stream-for-a-better-video-ad-experience-on-twitch-3ca5ce3287c/
+        publisher: Twitch Blog
+        kind: primary
+        published: 2016-11-02
+        archive: https://web.archive.org/web/20220925212046/https://blog.twitch.tv/en/2016/11/02/introducing-sure-stream-for-a-better-video-ad-experience-on-twitch-3ca5ce3287c/
+        quote: >-
+          We are well aware that many dedicated Twitch viewers use software that bypasses ads, and the
+          rollout of this technology will reduce the efficacy of such software.
+      - url: https://blog.twitch.tv/en/2016/11/02/introducing-sure-stream-for-a-better-video-ad-experience-on-twitch-3ca5ce3287c/
+        publisher: Twitch Blog
+        kind: primary
+        published: 2016-11-02
+        archive: https://web.archive.org/web/20220925212046/https://blog.twitch.tv/en/2016/11/02/introducing-sure-stream-for-a-better-video-ad-experience-on-twitch-3ca5ce3287c/
+        quote: >-
+          Over time SureStream will allow us to improve the video advertising experience for viewers
+          and partners, improve ad deliverability by reducing the impact of third party services that
+          bypass ads, and increase the advertising revenue pool available for partners.
+      - url: https://techcrunch.com/2016/11/02/twitch-starts-selling-its-own-video-ads-says-they-cant-be-avoided-via-ad-blockers/
+        publisher: TechCrunch
+        kind: press
+        published: 2016-11-02
+        archive: https://web.archive.org/web/20161108231151/https://techcrunch.com/2016/11/02/twitch-starts-selling-its-own-video-ads-says-they-cant-be-avoided-via-ad-blockers/
+        quote: >-
+          Twitch’s SureStream ads, once enabled, won’t be able to be bypassed by viewers, even if
+          they have a third-party ad and content blocker enabled, Twitch noted in its announcement.
+    added: 2026-11-23
+    updated: 2026-11-23
+    sources_checked: 2026-11-23
+    status_checked: 2016-11-08
+
+  - id: turbo-price-2023
+    date: 2023-05-25
+    date_kind: announced
+    category: price-rise
+    title: Twitch Turbo goes from $8.99 to $11.99 a month in the US
+    what_changed: >-
+      Twitch raised Turbo, its ad-free plan, from $8.99 to $11.99 a month in the US on 25 May 2023,
+      and raised it in most other countries too. Subscribers were told by email, and existing ones got
+      a grace period before the new price applied.
+    before: $8.99 a month
+    after: $11.99 a month
+    user_impact: >-
+      Turbo subscribers in the US and most other countries paid more each month, with no new features
+      to go with it.
+    severity: 2
+    status: in-force
+    prices: [{ plan: turbo-us, from: 8.99, to: 11.99 }]
+    related: [amazon-prime/twitch-ad-free-ends]
+    sources:
+      - url: https://www.droid-life.com/2023/05/25/twitch-increases-turbo-price-by-3-in-the-us/
+        publisher: Droid Life
+        kind: press
+        published: 2023-05-25
+        archive: https://web.archive.org/web/20230525212905/https://www.droid-life.com/2023/05/25/twitch-increases-turbo-price-by-3-in-the-us/
+        quote: For the US, Twitch Turbo is increasing to $11.99 per month from $8.99.
+      - url: https://www.engadget.com/twitch-is-raising-prices-for-its-ad-free-turbo-service-185644399.html
+        publisher: Engadget
+        kind: press
+        published: 2023-05-25
+        archive: https://web.archive.org/web/20260520044601/https://www.engadget.com/twitch-is-raising-prices-for-its-ad-free-turbo-service-185644399.html
+        quote: >-
+          Current Turbo subscribers were informed about the pricing changes via emails sent out
+          Thursday, but there's some good news for long-time users.
+      - url: https://www.engadget.com/twitch-is-raising-prices-for-its-ad-free-turbo-service-185644399.html
+        publisher: Engadget
+        kind: press
+        published: 2023-05-25
+        archive: https://web.archive.org/web/20260520044601/https://www.engadget.com/twitch-is-raising-prices-for-its-ad-free-turbo-service-185644399.html
+        quote: >-
+          Twitch has offered no feature changes or add-ons to accompany this price hike. The monthly
+          cost for Turbo is increasing throughout the globe
+      - url: https://www.engadget.com/twitch-is-raising-prices-for-its-ad-free-turbo-service-185644399.html
+        publisher: Engadget
+        kind: press
+        published: 2023-05-25
+        archive: https://web.archive.org/web/20260520044601/https://www.engadget.com/twitch-is-raising-prices-for-its-ad-free-turbo-service-185644399.html
+        quote: >-
+          Also, current users get a three-month grace period until being forced to opt-into the new
+          price.
+    added: 2026-11-23
+    updated: 2026-11-23
+    sources_checked: 2026-11-23
+    status_checked: 2023-05-25
+
+  - id: highlights-storage-cap
+    date: 2025-02-19
+    date_kind: announced
+    effective: 2025-05-19
+    category: removed-feature
+    title: Twitch caps Highlights and uploads at 100 hours and deletes the least-viewed first
+    what_changed: >-
+      Twitch said on 19 February 2025 that it would cap Highlights and uploads at 100 hours a
+      channel and delete the rest, least-viewed Highlights first. The deadline was 19 April, later
+      pushed back to 19 May 2025.
+    user_impact: >-
+      Streamers with more than 100 hours of Highlights and uploads had to download and delete them
+      or lose them, which Twitch put at under 0.5% of active channels.
+    company_said: >-
+      Twitch said Highlights hadn't been effective at driving discovery or engagement, and that
+      storing them was costly.
+    severity: 1
+    status: in-force
+    sources:
+      - url: https://techcrunch.com/2025/02/20/twitch-caps-streamers-storage-at-100-hours-of-highlights-and-uploads/
+        publisher: TechCrunch
+        kind: press
+        published: 2025-02-20
+        archive: https://web.archive.org/web/20250220155913/https://techcrunch.com/2025/02/20/twitch-caps-streamers-storage-at-100-hours-of-highlights-and-uploads/
+        quote: >-
+          Twitch on Wednesday announced it will begin limiting streamers to 100 hours of highlights
+          and uploads, and will delete content if a channel exceeds the limit.
+      - url: https://techcrunch.com/2025/02/20/twitch-caps-streamers-storage-at-100-hours-of-highlights-and-uploads/
+        publisher: TechCrunch
+        kind: press
+        published: 2025-02-20
+        archive: https://web.archive.org/web/20250220155913/https://techcrunch.com/2025/02/20/twitch-caps-streamers-storage-at-100-hours-of-highlights-and-uploads/
+        quote: >-
+          Streamers whose channels are over the limit after this data will have their highlights and
+          uploads automatically deleted, starting with highlights with the least views.
+      - url: https://techcrunch.com/2025/02/20/twitch-caps-streamers-storage-at-100-hours-of-highlights-and-uploads/
+        publisher: TechCrunch
+        kind: press
+        published: 2025-02-20
+        archive: https://web.archive.org/web/20250220155913/https://techcrunch.com/2025/02/20/twitch-caps-streamers-storage-at-100-hours-of-highlights-and-uploads/
+        quote: >-
+          Introducing this 100-hour storage limit, which impacts less than 0.5% of active channels on
+          Twitch and accounts for less than 0.1% of hours watched
+      - url: https://techcrunch.com/2025/02/20/twitch-caps-streamers-storage-at-100-hours-of-highlights-and-uploads/
+        publisher: TechCrunch
+        kind: press
+        published: 2025-02-20
+        archive: https://web.archive.org/web/20250220155913/https://techcrunch.com/2025/02/20/twitch-caps-streamers-storage-at-100-hours-of-highlights-and-uploads/
+        quote: >-
+          The company said it’s introducing the change because highlights haven’t been effective in
+          driving discovery or engagement, and because storage is costly. The storage cap goes into
+          effect on April 19.
+      - url: https://www.shacknews.com/article/143893/twitch-vod-limit-deadline-extended
+        publisher: Shacknews
+        kind: press
+        published: 2025-04-14
+        archive: https://web.archive.org/web/20250414220308/https://www.shacknews.com/article/143893/twitch-vod-limit-deadline-extended?utm_source=dlvr.it&utm_medium=twitter
+        quote: Twitch has announced that the deadline is being extended to May 19.
+    added: 2026-11-23
+    updated: 2026-11-23
+    sources_checked: 2026-11-23
+    status_checked: 2025-04-14
