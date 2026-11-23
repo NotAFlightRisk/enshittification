@@ -1,0 +1,164 @@
+service: google-domains
+name: Google Domains
+company: google
+url: https://domains.google
+wikipedia: https://en.wikipedia.org/wiki/Google_Domains
+
+changes:
+  - id: sold-to-squarespace
+    date: 2023-09-07
+    date_kind: effective
+    category: removed-feature
+    title: Google sells Google Domains to Squarespace and moves its customers there
+    what_changed: >-
+      Google Domains stopped selling domains on 7 September 2023, when its sale to Squarespace
+      closed and every customer became a Squarespace customer. Google had announced the deal on 15
+      June 2023, existing domains kept working at Google until they moved, and the last ones moved
+      to Squarespace by 10 July 2024. Squarespace said it would honour Google Domains renewal prices
+      for at least 12 months.
+    before: Domains registered and managed with Google
+    after: Domains managed by Squarespace, under its terms and privacy policy
+    user_impact: >-
+      Every Google Domains customer became a Squarespace customer under its terms and, once their
+      domains moved, its privacy policy, and anyone who didn't want that had to move to another
+      registrar.
+    company_said: >-
+      Google said it was selling the Google Domains business as part of efforts to sharpen its
+      focus.
+    severity: 2
+    status: in-force
+    related: [google-domains/dynamic-dns-ends]
+    sources:
+      - url: https://support.google.com/domains/answer/13689670
+        publisher: Google Domains Help
+        kind: primary
+        published: 2023-06-15
+        archive: https://web.archive.org/web/20230615215511/https://support.google.com/domains/answer/13689670
+        quote: >-
+          On June 15, 2023, Google entered into a definitive agreement with Squarespace, where they
+          intend to purchase all domain registrations and related customer accounts from Google
+          Domains.
+      - url: https://support.google.com/domains/answer/13689670
+        publisher: Google Domains Help
+        kind: primary
+        published: 2023-11-10
+        archive: https://web.archive.org/web/20231110133236/https://support.google.com/domains/answer/13689670
+        quote: >-
+          Now that the transaction between Google and Squarespace has closed, you're a customer of
+          Squarespace. Google Domains will no longer offer new domain registrations.
+      - url: https://support.google.com/domains/answer/13689670
+        publisher: Google Domains Help
+        kind: primary
+        published: 2023-11-10
+        archive: https://web.archive.org/web/20231110133236/https://support.google.com/domains/answer/13689670
+        quote: >-
+          Effective upon the transfer of your customer and billing info to Squarespace, Squarespace
+          Terms of Service will be binding and enforceable and your data will be governed by the
+          Squarespace Privacy Policy
+      - url: https://support.google.com/domains/answer/13689670
+        publisher: Google Domains Help
+        kind: primary
+        published: 2023-11-10
+        archive: https://web.archive.org/web/20231110133236/https://support.google.com/domains/answer/13689670
+        quote: >-
+          This announcement doesn’t change your ability to transfer your domain to any other
+          registrar at any time, subject to restrictions set by registry operators and the gaining
+          registrar.
+      - url: https://support.google.com/domains/answer/13689670
+        publisher: Google Domains Help
+        kind: primary
+        published: 2024-12-01
+        archive: https://web.archive.org/web/20241201030234/https://support.google.com/domains/answer/13689670
+        quote: >-
+          When the transaction between Google and Squarespace closed on September 7, 2023, all
+          Google Domains users became customers of Squarespace. As of July 10, 2024, all domains
+          have migrated to Squarespace.
+      - url: https://support.squarespace.com/hc/en-us/articles/17131164996365
+        publisher: Squarespace Help Center
+        kind: primary
+        published: 2023-09-25
+        archive: https://web.archive.org/web/20231020041145/https://support.squarespace.com/hc/en-us/articles/17131164996365
+        quote: >-
+          Squarespace will honor all existing Google Domains customers’ renewal prices for at least
+          12 months following the acquisition.
+      - url: https://9to5google.com/2023/06/15/google-domains-squarespace/
+        publisher: 9to5Google
+        kind: press
+        published: 2023-06-15
+        archive: https://web.archive.org/web/20261112075704/https://9to5google.com/2023/06/15/google-domains-squarespace/
+        quote: >-
+          Google cited “efforts to sharpen our focus” in selling the Google Domains registrar
+          business
+      - url: https://9to5google.com/2023/09/16/google-domains-stopped-selling/
+        publisher: 9to5Google
+        kind: press
+        published: 2023-09-16
+        archive: https://web.archive.org/web/20250722214713/https://9to5google.com/2023/09/16/google-domains-stopped-selling/
+        quote: >-
+          Google Domains somewhat quietly stopped selling domains to new and existing customers on
+          September 7.
+    added: 2026-11-23
+    updated: 2026-11-23
+    sources_checked: 2026-11-23
+    status_checked: 2026-11-23
+
+  - id: dynamic-dns-ends
+    date: 2023-10-19
+    date_kind: announced
+    category: api-restriction
+    title: Google Domains' Dynamic DNS stops updating once domains move to Squarespace
+    what_changed: >-
+      Google listed Dynamic DNS as deprecated on 19 October 2023 in its Cloud Domains docs, with
+      updates stopping once a domain moved to Squarespace. Squarespace said it doesn't support
+      dynamic DNS, so records stay on the last IP address, and it doesn't renew Google Domains' ACME
+      certificates either. The last domains moved by 10 July 2024.
+    user_impact: >-
+      People who used Dynamic DNS to keep a domain pointed at an IP address that changes had their
+      records stuck on the last address once their domain moved to Squarespace.
+    severity: 3
+    status: in-force
+    related: [google-domains/sold-to-squarespace]
+    sources:
+      - url: https://support.squarespace.com/hc/en-us/articles/17131164996365-About-the-Google-Domains-migration-to-Squarespace
+        publisher: Squarespace Help Center
+        kind: primary
+        published: 2024-01-31
+        archive: https://web.archive.org/web/20240207182315/https://support.squarespace.com/hc/en-us/articles/17131164996365-About-the-Google-Domains-migration-to-Squarespace
+        quote: >-
+          No, Squarespace doesn't support dynamic DNS. After your domain migrates, any active DDNS
+          records will remain as A or AAAA records pointing to the last IP addresses provided prior
+          to migration, but they'll no longer update automatically.
+      - url: https://support.squarespace.com/hc/en-us/articles/17131164996365-About-the-Google-Domains-migration-to-Squarespace
+        publisher: Squarespace Help Center
+        kind: primary
+        published: 2024-01-31
+        archive: https://web.archive.org/web/20240207182315/https://support.squarespace.com/hc/en-us/articles/17131164996365-About-the-Google-Domains-migration-to-Squarespace
+        quote: Last updated January 31, 2024
+      - url: https://support.squarespace.com/hc/en-us/articles/17131164996365-About-the-Google-Domains-migration-to-Squarespace
+        publisher: Squarespace Help Center
+        kind: primary
+        published: 2026-05-28
+        archive: https://web.archive.org/web/20261104023300/https://support.squarespace.com/hc/en-us/articles/17131164996365-About-the-Google-Domains-migration-to-Squarespace
+        quote: >-
+          ACME TLS/SSL Certificates : Not supported. Existing certificates will work until
+          expiration, but will not renew.
+      - url: https://cloud.google.com/domains/docs/deprecations/feature-deprecations
+        publisher: Google Cloud Documentation
+        kind: primary
+        published: 2024-02-14
+        archive: https://web.archive.org/web/20240222005435/https://cloud.google.com/domains/docs/deprecations/feature-deprecations
+        quote: >-
+          Dynamic DNS October 19, 2023 January 22, 2024 You can continue using the Google Domains
+          user interface to configure this setting until the domain is migrated to Squarespace.
+          Afterward, Dynamic DNS updates doesn't work, and your domain points to the last known IP
+          address before the retirement.
+      - url: https://support.google.com/domains/answer/13689670
+        publisher: Google Domains Help
+        kind: primary
+        published: 2024-12-01
+        archive: https://web.archive.org/web/20241201030234/https://support.google.com/domains/answer/13689670
+        quote: As of July 10, 2024, all domains have migrated to Squarespace.
+    added: 2026-11-23
+    updated: 2026-11-23
+    sources_checked: 2026-11-23
+    status_checked: 2026-11-23
