@@ -1,0 +1,119 @@
+service: wink
+name: Wink
+company: iamplus
+url: https://www.wink.com
+crw: https://consumerrights.wiki/w/Wink
+wikipedia: https://en.wikipedia.org/wiki/Wink_(platform)
+
+changes:
+  - id: subscription-required
+    date: 2020-05-06
+    date_kind: announced
+    category: paywall
+    title: Wink charges hub owners $4.99 a month to keep cloud control and automations
+    what_changed: >-
+      Wink said on 6 May 2020 that hub owners would have to pay $4.99 a month from 13 May, or lose
+      app, voice and API control and have their automations disabled. It pushed the start back to
+      20 May, then indefinitely, and said on 8 July that subscriptions would begin on 27 July 2020,
+      with local control of some devices kept for people who didn't pay.
+    before: Cloud, voice and API control and automations included with the hub
+    after: $4.99 a month, or local control of some devices only
+    user_impact: >-
+      Wink Hub and Relay owners who didn't subscribe would lose cloud, voice and API control,
+      third-party integrations and their automations, and couldn't add new devices or update the
+      firmware, keeping local control of only some devices.
+    company_said: >-
+      Wink said it had relied solely on the one-time fee from hardware sales to cover cloud costs,
+      development and support, and that long term costs and recent economic events had strained its
+      business.
+    severity: 3
+    status: in-force
+    sources:
+      - url: https://blog.wink.com/wink-blog/2020/5/6/introducing-wink-subscription
+        publisher: Wink Blog
+        kind: primary
+        published: 2020-05-06
+        archive: https://web.archive.org/web/20200506203904/https://blog.wink.com/wink-blog/2020/5/6/introducing-wink-subscription
+        quote: >-
+          In order to provide for development and continued growth, we are transitioning to a $4.99
+          monthly subscription, starting on May 13, 2020.
+      - url: https://blog.wink.com/wink-blog/2020/5/6/introducing-wink-subscription
+        publisher: Wink Blog
+        kind: primary
+        published: 2020-05-06
+        archive: https://web.archive.org/web/20200506203904/https://blog.wink.com/wink-blog/2020/5/6/introducing-wink-subscription
+        quote: >-
+          Should you choose not to sign up for a subscription you will no longer be able to access
+          your Wink devices from the app, with voice control or through the API, and your
+          automations will be disabled on May 13.
+      - url: https://blog.wink.com/wink-blog/2020/5/6/introducing-wink-subscription
+        publisher: Wink Blog
+        kind: primary
+        published: 2020-05-06
+        archive: https://web.archive.org/web/20200506203904/https://blog.wink.com/wink-blog/2020/5/6/introducing-wink-subscription
+        quote: >-
+          During this time, Wink has relied solely on the one-time fee derived from hardware sales
+          to cover ongoing cloud costs, development, and customer support.
+      - url: https://blog.wink.com/wink-blog/2020/5/6/introducing-wink-subscription
+        publisher: Wink Blog
+        kind: primary
+        published: 2020-05-06
+        archive: https://web.archive.org/web/20200506203904/https://blog.wink.com/wink-blog/2020/5/6/introducing-wink-subscription
+        quote: >-
+          Wink has taken many steps in an effort to keep your Hub's blue light on, however, long
+          term costs and recent economic events have caused additional strain on our business.
+      - url: https://blog.wink.com/wink-blog/2020/7/8/update-on-the-upcoming-wink-subscription
+        publisher: Wink Blog
+        kind: primary
+        published: 2020-07-08
+        archive: https://web.archive.org/web/20200708225236/https://blog.wink.com/wink-blog/2020/7/8/update-on-the-upcoming-wink-subscription
+        quote: >-
+          We were able to extend our service so that subscriptions will now begin on Monday, July
+          27th, 2020.
+      - url: https://blog.wink.com/wink-blog/2020/7/8/update-on-the-upcoming-wink-subscription
+        publisher: Wink Blog
+        kind: primary
+        published: 2020-07-08
+        archive: https://web.archive.org/web/20200708225236/https://blog.wink.com/wink-blog/2020/7/8/update-on-the-upcoming-wink-subscription
+        quote: >-
+          Users who do not sign up will still have access to limited functionality without being
+          charged. This will specifically allow for local control over select devices
+      - url: https://www.theverge.com/2020/7/8/21317739/smart-home-platform-wink-monthly-subscription-price-date
+        publisher: The Verge
+        kind: press
+        published: 2020-07-08
+        archive: https://web.archive.org/web/20200709082258/https://www.theverge.com/2020/7/8/21317739/smart-home-platform-wink-monthly-subscription-price-date
+        quote: >-
+          Customers who don't subscribe will have local access to a list of select devices but will
+          be locked out of almost all of Wink's features, including API support, voice controls,
+          cloud controls, third-party integrations, advanced settings, the ability to add new
+          devices, edit device names, or even update the firmware for Wink's Hub and Relay hardware.
+      - url: https://www.theverge.com/2020/7/8/21317739/smart-home-platform-wink-monthly-subscription-price-date
+        publisher: The Verge
+        kind: press
+        published: 2020-07-08
+        archive: https://web.archive.org/web/20200709082258/https://www.theverge.com/2020/7/8/21317739/smart-home-platform-wink-monthly-subscription-price-date
+        quote: >-
+          The monthly subscription was originally set to kick on just a week after Wink had
+          announced it on May 13th, although the company has repeatedly pushed back that date: first
+          to May 20th and then a second indefinite delay
+      - url: https://www.theverge.com/2020/7/8/21317739/smart-home-platform-wink-monthly-subscription-price-date
+        publisher: The Verge
+        kind: press
+        published: 2020-07-08
+        archive: https://web.archive.org/web/20200709082258/https://www.theverge.com/2020/7/8/21317739/smart-home-platform-wink-monthly-subscription-price-date
+        quote: >-
+          Wink — which has been owned by Will.i.am's technology company i.am+ since 2017 — was
+          already in trouble when i.am+ started to run out of money in 2019
+      - url: https://www.wink.com/
+        publisher: Wink
+        kind: primary
+        published: 2026-11-06
+        archive: https://web.archive.org/web/20261106000450/https://www.wink.com/
+        quote: >-
+          Sign up for a Wink Subscription today for full access, including cloud control and
+          automations.
+    added: 2026-11-23
+    updated: 2026-11-23
+    sources_checked: 2026-11-23
+    status_checked: 2026-11-23
