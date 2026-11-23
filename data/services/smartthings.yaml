@@ -1,0 +1,206 @@
+service: smartthings
+name: SmartThings
+company: samsung
+url: https://www.smartthings.com
+wikipedia: https://en.wikipedia.org/wiki/SmartThings
+
+changes:
+  - id: hub-v1-shutdown
+    date: 2021-03
+    date_kind: announced
+    effective: 2021-07
+    category: bricked
+    title: SmartThings discontinues its original 2013 hub and the Link for Nvidia Shield
+    what_changed: >-
+      SmartThings said in March 2021 that its original 2013 hub and the Link for Nvidia Shield would
+      stop working after 30 June 2021. Eligible owners got a limited-time offer of an Aeotec Smart
+      Home Hub for $35, and US owners still under warranty could apply for a refund that depended on
+      the hub's age. There was no migration tool, so every device on the old hub had to be unpaired
+      and paired again with the new one.
+    user_impact: >-
+      Owners of those hubs would no longer be able to control or automate their Zigbee, Z-Wave or LAN
+      devices in SmartThings without a new hub, and automations that relied on the old one could be
+      deleted.
+    company_said: >-
+      SmartThings had listed retiring select legacy hubs in a 2020 plan to move to services it said
+      offered lower latency, higher reliability and local execution.
+    severity: 5
+    status: in-force
+    related: [smartthings/groovy-shutdown]
+    sources:
+      - url: https://support.smartthings.com/hc/en-us/articles/360055814272
+        publisher: SmartThings Support
+        kind: primary
+        published: 2021-03-01
+        archive: https://web.archive.org/web/20210301155517/https://support.smartthings.com/hc/en-us/articles/360055814272
+        quote: >-
+          What happens to my SmartThings hub after June 30, 2021? Your SmartThings Hub (2013) or
+          SmartThings Link for NVIDIA® SHIELD™ will no longer work
+      - url: https://support.smartthings.com/hc/en-us/articles/360055814272
+        publisher: SmartThings Support
+        kind: primary
+        published: 2021-03-01
+        archive: https://web.archive.org/web/20210301155517/https://support.smartthings.com/hc/en-us/articles/360055814272
+        quote: >-
+          However, without a SmartThings hub, you will no longer be able to automate and control
+          Zigbee, Z-Wave, or LAN devices. To continue using these smart home devices, eligible
+          customers may opt to purchase a new SmartThings compatible Aeotec Smart Home Hub for $35 --
+          that is 65% off the retail price.
+      - url: https://support.smartthings.com/hc/en-us/articles/360055814272
+        publisher: SmartThings Support
+        kind: primary
+        published: 2021-03-01
+        archive: https://web.archive.org/web/20210301155517/https://support.smartthings.com/hc/en-us/articles/360055814272
+        quote: >-
+          Please visit TheSmartestHouse.com to learn more and redeem this limited-time special offer.
+      - url: https://support.smartthings.com/hc/en-us/articles/360055814272
+        publisher: SmartThings Support
+        kind: primary
+        published: 2021-07-06
+        archive: https://web.archive.org/web/20231128161554/https://support.smartthings.com/hc/en-us/articles/360055814272
+        quote: >-
+          You may be eligible to receive a full or partial refund for your SmartThings Link for
+          NVIDIA SHIELD or SmartThings Hub (2013) (refund amounts will vary based on the age of your
+          device).
+      - url: https://support.smartthings.com/hc/en-us/articles/360055814272
+        publisher: SmartThings Support
+        kind: primary
+        published: 2021-07-06
+        archive: https://web.archive.org/web/20231128161554/https://support.smartthings.com/hc/en-us/articles/360055814272
+        quote: >-
+          Refund is limited to U.S. customers (50 States & D.C.) on products intended for U.S. use only.
+      - url: https://support.smartthings.com/hc/en-us/articles/360055814272
+        publisher: SmartThings Support
+        kind: primary
+        published: 2021-07-06
+        archive: https://web.archive.org/web/20231128161554/https://support.smartthings.com/hc/en-us/articles/360055814272
+        quote: >-
+          After June 30th , Automations and Scenes that rely on your legacy hub and connected devices
+          may be deleted from the SmartThings app with your legacy hub.
+      - url: https://arstechnica.com/gadgets/2021/06/samsung-is-killing-the-first-gen-smartthings-hub-this-month/
+        publisher: Ars Technica
+        kind: press
+        published: 2021-06-03
+        archive: https://web.archive.org/web/20210603184825/https://arstechnica.com/gadgets/2021/06/samsung-is-killing-the-first-gen-smartthings-hub-this-month/
+        quote: >-
+          Samsung doesn't provide any kind of migration program, so you have to unpair every single
+          individual smart device from the old hub and pair it to the new one.
+      - url: https://community.smartthings.com/t/announcement-changes-to-our-legacy-smartthings-platform/197958
+        publisher: SmartThings Community
+        kind: primary
+        published: 2020-06-24
+        archive: https://web.archive.org/web/20201022012638/https://community.smartthings.com/t/announcement-changes-to-our-legacy-smartthings-platform/197958/
+        quote: >-
+          We will transition to new services and integrations that offer lower latency, higher
+          reliability, and local execution.
+      - url: https://community.smartthings.com/t/announcement-changes-to-our-legacy-smartthings-platform/197958
+        publisher: SmartThings Community
+        kind: primary
+        published: 2020-06-24
+        archive: https://web.archive.org/web/20201022012638/https://community.smartthings.com/t/announcement-changes-to-our-legacy-smartthings-platform/197958/
+        quote: >-
+          Retire select legacy hubs – Don’t worry, affected users will have plenty of time to move to
+          a newer version of Hub.
+    added: 2026-11-23
+    updated: 2026-11-23
+    sources_checked: 2026-11-23
+    status_checked: 2026-11-23
+
+  - id: groovy-shutdown
+    date: 2022-08-17
+    date_kind: announced
+    effective: 2023-01
+    category: api-restriction
+    title: SmartThings ends Groovy SmartApps and custom device handlers
+    what_changed: >-
+      SmartThings said on 17 August 2022 that it would retire Groovy, which ran custom device
+      handlers and SmartApps, and later set 31 December 2022 to end both. It pushed that into early
+      2023, said in January 2023 that it would start shutting down Groovy SmartApps the following
+      week, and said in March 2023 that devices on community-made handlers would move to its own
+      drivers, or a placeholder, from 15 April 2023.
+    user_impact: >-
+      Community-made SmartApps and the cloud-connected devices that relied on them would no longer
+      work unless their maker moved them to the newer platform, and devices with no newer driver
+      could end up as a placeholder that no longer works in the app.
+    company_said: >-
+      SmartThings said its newer platform had increased reliability, decreased latency and reduced
+      the need for data to leave the home.
+    severity: 4
+    status: in-force
+    related: [smartthings/hub-v1-shutdown]
+    sources:
+      - url: https://community.smartthings.com/t/the-end-of-groovy-has-arrived/246280
+        publisher: SmartThings Community
+        kind: primary
+        published: 2022-08-17
+        archive: https://web.archive.org/web/20221204080037/https://community.smartthings.com/t/the-end-of-groovy-has-arrived/246280/
+        quote: >-
+          On October 15th 2022 certain functions of the legacy developer IDE, such as the creation of
+          new DTH’s, Smartapps, and debugging tools will be removed from the SmartThings platform and
+          will no longer be supported.
+      - url: https://community.smartthings.com/t/the-end-of-groovy-has-arrived/246280
+        publisher: SmartThings Community
+        kind: primary
+        published: 2022-08-17
+        archive: https://web.archive.org/web/20221204080037/https://community.smartthings.com/t/the-end-of-groovy-has-arrived/246280/
+        quote: >-
+          Shutdown custom Groovy DTHs · Shutdown SmartApp execution
+      - url: https://community.smartthings.com/t/the-end-of-groovy-has-arrived/246280
+        publisher: SmartThings Community
+        kind: primary
+        published: 2022-08-17
+        archive: https://web.archive.org/web/20221204080037/https://community.smartthings.com/t/the-end-of-groovy-has-arrived/246280/
+        quote: >-
+          All of this platform growth has increased reliability, decreased latency, and reduced the
+          need for data transfer outside of the home environment.
+      - url: https://support.smartthings.com/hc/en-us/articles/9339624925204
+        publisher: SmartThings Support
+        kind: primary
+        published: 2022-09-15
+        archive: https://web.archive.org/web/20220926163216/https://support.smartthings.com/hc/en-us/articles/9339624925204-Platform-Transition-FAQ
+        quote: >-
+          All other SmartThings and 3rd party created Groovy SmartApps will no longer be supported
+          starting on December 31, 2022, at 00:00 (PST).
+      - url: https://community.smartthings.com/t/update-to-smartthings-groovy-transition/254856
+        publisher: SmartThings Community
+        kind: primary
+        published: 2022-12-27
+        archive: https://web.archive.org/web/20221228013122/https://community.smartthings.com/t/update-to-smartthings-groovy-transition/254856
+        quote: >-
+          we will be extending the transition timeline from December 31st into early 2023.
+      - url: https://community.smartthings.com/t/groovy-smartapp-shutdown/255510
+        publisher: SmartThings Community
+        kind: primary
+        published: 2023-01-06
+        archive: https://web.archive.org/web/20230130133810/https://community.smartthings.com/t/groovy-smartapp-shutdown/255510
+        quote: >-
+          Starting Next Week , we will begin the process of shutting down the legacy architecture for
+          Groovy SmartApps as part of our platform transition process.
+      - url: https://community.smartthings.com/t/groovy-smartapp-shutdown/255510
+        publisher: SmartThings Community
+        kind: primary
+        published: 2023-01-06
+        archive: https://web.archive.org/web/20230130133810/https://community.smartthings.com/t/groovy-smartapp-shutdown/255510
+        quote: >-
+          Community-based Groovy SmartApps or cloud-connected devices that rely on older Groovy Smart
+          App connections will no longer work after this shutdown occurs.
+      - url: https://community.smartthings.com/t/next-steps-for-community-created-groovy-integrations/261245
+        publisher: SmartThings Community
+        kind: primary
+        published: 2023-03-28
+        archive: https://web.archive.org/web/20230329004005/https://community.smartthings.com/t/next-steps-for-community-created-groovy-integrations/261245
+        quote: >-
+          Our next step is to begin migration for community-created and non-supported legacy DTHs
+          starting April 15, 2023
+      - url: https://community.smartthings.com/t/next-steps-for-community-created-groovy-integrations/261245
+        publisher: SmartThings Community
+        kind: primary
+        published: 2023-03-28
+        archive: https://web.archive.org/web/20230329004005/https://community.smartthings.com/t/next-steps-for-community-created-groovy-integrations/261245
+        quote: >-
+          it may be migrated to a non-functional placeholder Lua Edge driver called a “Thing”. If
+          this occurs, the device will no longer work in the SmartThings app.
+    added: 2026-11-23
+    updated: 2026-11-23
+    sources_checked: 2026-11-23
+    status_checked: 2026-11-23
