@@ -1,0 +1,105 @@
+service: weather-underground
+name: Weather Underground
+company: the-weather-company
+url: https://www.wunderground.com
+wikipedia: https://en.wikipedia.org/wiki/Weather_Underground_(weather_service)
+
+changes:
+  - id: api-shutdown
+    date: 2018-09
+    date_kind: announced
+    effective: 2019-03
+    category: api-restriction
+    title: Weather Underground retires its API, including the free developer keys
+    what_changed: >-
+      Weather Underground said in September 2018 that it would retire its API, having said by May
+      2018 that it would no longer give out free keys. It later said keys not tied to a personal
+      weather station would be turned off on 4 March 2019, and old keys tied to one would work until
+      22 March, with station owners moved to new keys for a replacement API.
+    before: Free developer keys for under 500 hits a day
+    after: Free replacement keys only for weather stations that upload to it
+    user_impact: >-
+      Developers on free keys lost the API, weather station owners had to move their tools to the
+      new API, and Home Assistant later removed its Weather Underground integration as defunct.
+    company_said: >-
+      Weather Underground said its infrastructure had struggled to keep up with the growing numbers
+      of users coming to it for API data.
+    severity: 4
+    status: in-force
+    related: [dark-sky/api-shutdown]
+    sources:
+      - url: https://apicommunity.wunderground.com/weatherapi/topics/end-of-service-for-the-weather-underground-api
+        publisher: Weather Underground
+        kind: primary
+        published: 2018-09
+        archive: https://web.archive.org/web/20180921064610/https://apicommunity.wunderground.com/weatherapi/topics/end-of-service-for-the-weather-underground-api
+        quote: >-
+          Over the years, our infrastructure has struggled to keep up with the growing numbers of
+          users coming to us for API data. We realized we needed to make changes to ensure the
+          highest level of quality, performance and uptime for our API users. As a result, we’ve
+          made the difficult decision to retire the Weather Underground API.
+      - url: https://www.wunderground.com/weather/api
+        publisher: Weather Underground
+        kind: primary
+        published: 2018-05
+        archive: https://web.archive.org/web/20180516033828/https://www.wunderground.com/weather/api
+        quote: >-
+          To improve our services and enhance our relationship with our users, we will no longer
+          provide free weather API keys as part of our program.
+      - url: https://www.wunderground.com/weather/api/d/pricing.html
+        publisher: Weather Underground
+        kind: pricing-page
+        published: 2018-03-14
+        archive: https://web.archive.org/web/20180314002215/https://www.wunderground.com/weather/api/d/pricing.html
+        quote: >-
+          please use the Free Developer level for your API needs for as long as you can, including
+          History data Or if your use of the API falls under 500 hits per day and you are still
+          complying with the Terms of Service, you do not need to ask permission.
+      - url: https://apicommunity.wunderground.com/weatherapi/topics/end-of-feb-wu-api-update
+        publisher: Weather Underground
+        kind: primary
+        published: 2019-02
+        archive: https://web.archive.org/web/20190420101216/https://apicommunity.wunderground.com/weatherapi/topics/end-of-feb-wu-api-update
+        quote: >-
+          On March 4, 2019, all keys not connected to a personal weather station will be turned off.
+      - url: https://apicommunity.wunderground.com/weatherapi/topics/end-of-feb-wu-api-update
+        publisher: Weather Underground
+        kind: primary
+        published: 2019-02
+        archive: https://web.archive.org/web/20190420101216/https://apicommunity.wunderground.com/weatherapi/topics/end-of-feb-wu-api-update
+        quote: >-
+          Keys connected to Personal Weather Stations remain protected as we continue to direct PWS
+          owners to the replacement API's key generation portal
+      - url: https://apicommunity.wunderground.com/weatherapi/topics/end-of-feb-wu-api-update
+        publisher: Weather Underground
+        kind: primary
+        published: 2019-02
+        archive: https://web.archive.org/web/20190420101216/https://apicommunity.wunderground.com/weatherapi/topics/end-of-feb-wu-api-update
+        quote: >-
+          Remember that the new keys work on the new API only, and the old keys work on the old API
+          only. Old API keys that are associated with a PWS will be kept working until March 22,
+          2019.
+      - url: https://apicommunity.wunderground.com/weatherapi/topics/end-of-feb-wu-api-update
+        publisher: Weather Underground
+        kind: primary
+        published: 2019-02
+        archive: https://web.archive.org/web/20190420101216/https://apicommunity.wunderground.com/weatherapi/topics/end-of-feb-wu-api-update
+        quote: The system will also verify that you have a PWS uploading to the system.
+      - url: https://apicommunity.wunderground.com/weatherapi/topics/end-of-feb-wu-api-update
+        publisher: Weather Underground
+        kind: primary
+        published: 2019-02
+        archive: https://web.archive.org/web/20190420101216/https://apicommunity.wunderground.com/weatherapi/topics/end-of-feb-wu-api-update
+        quote: >-
+          As of this moment, we do not anticipate offering free access to the replacement API for
+          anyone except PWS owner/uploaders.
+      - url: https://www.home-assistant.io/blog/2021/08/04/release-20218/
+        publisher: Home Assistant
+        kind: press
+        published: 2021-08-04
+        archive: https://web.archive.org/web/20210804103724/https://www.home-assistant.io/blog/2021/08/04/release-20218/
+        quote: Remove defunct Weather Underground integration
+    added: 2026-11-24
+    updated: 2026-11-24
+    sources_checked: 2026-11-24
+    status_checked: 2026-11-24
