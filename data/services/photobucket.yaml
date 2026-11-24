@@ -65,7 +65,8 @@ changes:
     what_changed: >-
       Photobucket said on 22 May 2019 that free accounts hosting images on other sites would get
       25MB of bandwidth a month from 1 June. Members over the limit would have all their hosted
-      photos watermarked and blurred until they bought a higher plan.
+      photos watermarked and blurred until they bought a higher plan. Free accounts lost hosting
+      altogether when Photobucket ended them in 2023.
     before: Free hosting on other sites, watermarked
     after: 25MB a month, then blurred
     user_impact: >-
@@ -74,6 +75,7 @@ changes:
     company_said: Photobucket said members wanted fewer ads, and the hosting limits were how it would get there.
     severity: 1
     status: in-force
+    related: [photobucket/free-accounts-deactivated]
     sources:
       - url: https://blog.photobucket.com/articles/photobucket-is-investing-in-the-future-of-image-hosting-to-improve-the-user-experience
         publisher: Photobucket
@@ -85,7 +87,108 @@ changes:
           websites will be limited to 25MB of bandwidth per month. Members who choose to remain on
           our free or beginner plan and exceed this bandwidth limit will have all of their hosted
           photos watermarked and blurred.
+      - url: https://my.photobucket.com/expired
+        publisher: Photobucket
+        kind: primary
+        published: 2023-07-09
+        archive: https://web.archive.org/web/20230709054813/https://my.photobucket.com/expired
+        quote: Hosted images will be unavailable
     added: 2026-11-22
-    updated: 2026-11-22
+    updated: 2026-11-24
     sources_checked: 2026-11-22
-    status_checked: 2019-05-22
+    status_checked: 2026-11-24
+
+  - id: free-account-250-image-limit
+    date: 2020-10-01
+    date_kind: effective
+    category: paywall
+    title: Photobucket blurs free accounts' photos past the first 250 unless they pay
+    what_changed: >-
+      From 1 October 2020, Photobucket blurred every photo in a free account past its first 250
+      uploads unless the owner paid for a plan. The blurred photos weren't deleted, and owners could
+      still download them, or delete older ones to bring the rest back into view.
+    user_impact: >-
+      Free members with more than 250 photos could only see the oldest 250 on Photobucket, with the
+      rest blurred until they paid or deleted older ones, though they could still download them.
+    severity: 2
+    status: in-force
+    related: [photobucket/free-accounts-deactivated]
+    sources:
+      - url: https://support.photobucket.com/hc/en-us/articles/360050390351
+        publisher: Photobucket
+        kind: primary
+        published: 2021-07-22
+        archive: https://web.archive.org/web/20210924011242/https://support.photobucket.com/hc/en-us/articles/360050390351
+        quote: >-
+          The storage for our free accounts is limited to 250 images. Beginning October 1st, 2020, any
+          over the free limit images will be blurred in your account unless you upgrade to one of our
+          subscription plans.
+      - url: https://support.photobucket.com/hc/en-us/articles/360050390351-Why-are-my-images-blurred-
+        publisher: Photobucket
+        kind: primary
+        published: 2020-10-20
+        archive: https://web.archive.org/web/20201020202902/https://support.photobucket.com/hc/en-us/articles/360050390351-Why-are-my-images-blurred-
+        quote: >-
+          Beginning October 1st, any images that are over the free limit will be temporarily
+          unavailable to you unless you upgrade your account to one of our subscription plans.
+    added: 2026-11-24
+    updated: 2026-11-24
+    sources_checked: 2026-11-24
+    status_checked: 2026-11-24
+
+  - id: free-accounts-deactivated
+    date: 2023-06
+    date_kind: reported
+    category: lock-out
+    title: Photobucket ends free accounts and locks free users out of their photos
+    question: When did Photobucket deactivate free accounts?
+    what_changed: >-
+      Photobucket was deactivating free accounts by June 2023, emailing free users that it no longer
+      supported them. Its help centre had said by 16 February 2023 that it was ending free accounts,
+      and that an account not on a paid plan by the end of a 7-day free trial would lose access to its
+      photos, though they wouldn't be deleted.
+    before: A free Photobucket account
+    after: Pay, or lose access to photos and hosted images
+    user_impact: >-
+      Free members lost access to the photos and videos they'd stored, and their hosted images became
+      unavailable, until they started a trial or paid for a plan.
+    severity: 3
+    status: in-force
+    related: [photobucket/free-account-250-image-limit, photobucket/free-hosting-bandwidth-cap]
+    sources:
+      - url: https://support.photobucket.com/hc/en-us/articles/13209408103572-Changes-to-the-Photobucket-Free-Account
+        publisher: Photobucket
+        kind: primary
+        published: 2023-02-16
+        archive: https://web.archive.org/web/20230326224614/https://support.photobucket.com/hc/en-us/articles/13209408103572-Changes-to-the-Photobucket-Free-Account
+        quote: >-
+          Photobucket is in the process of ending its Free account service. You may continue to use
+          your free account if you start a Free Trial for your account or upgrade your account to one
+          of our subscription plans.
+      - url: https://my.photobucket.com/expired
+        publisher: Photobucket
+        kind: primary
+        published: 2023-07-09
+        archive: https://web.archive.org/web/20230709054813/https://my.photobucket.com/expired
+        quote: >-
+          Photobucket no longer supports free accounts so we’ve had to unfortunately deactivate your
+          account.
+      - url: https://www.ghacks.net/2023/06/15/photobucket-kicks-out-all-free-users-of-the-image-hosting-service/
+        publisher: gHacks
+        kind: press
+        published: 2023-06-15
+        archive: https://web.archive.org/web/20230616073149/https://www.ghacks.net/2023/06/15/photobucket-kicks-out-all-free-users-of-the-image-hosting-service/
+        quote: >-
+          Free users of the image and media hosting service Photobucket are receiving cancellation
+          emails currently. The service informs users that it is ending support for Free subscriptions
+          and that accounts have been deactivated as a consequence.
+      - url: https://support.photobucket.com/hc/en-us/articles/19626379105300-My-account-is-deactivated
+        publisher: Photobucket
+        kind: primary
+        published: 2026-08-11
+        archive: https://web.archive.org/web/20260812225337/https://support.photobucket.com/hc/en-us/articles/19626379105300-My-account-is-deactivated
+        quote: The account is locked because there is no active subscription.
+    added: 2026-11-24
+    updated: 2026-11-24
+    sources_checked: 2026-11-24
+    status_checked: 2026-11-24
