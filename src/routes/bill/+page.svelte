@@ -102,12 +102,13 @@
               checked={picked.has(plan.key)}
               onchange={() => toggle(plan.key)}
             />
-            <span
-              >{plan.name}
-              <small
-                >{plan.region}, {money(plan.now, plan.currency)} {perBilling[plan.billing]}</small
-              ></span
-            >
+            <span>
+              {plan.name}
+              <small>
+                {plan.region}, {money(plan.now, plan.currency)}
+                {perBilling[plan.billing]}
+              </small>
+            </span>
           </label>
         {/each}
       </fieldset>
@@ -133,10 +134,10 @@
           {#each chosen as plan (plan.key)}
             {@const then = plan.then[year]}
             <tr>
-              <th scope="row"
-                >{plan.service}
-                {plan.name} <span>{plan.region}, {perBilling[plan.billing]}</span></th
-              >
+              <th scope="row">
+                {plan.service}
+                {plan.name} <span>{plan.region}, {perBilling[plan.billing]}</span>
+              </th>
               <td>{then ? money(then.price, plan.currency) : "Didn't exist yet"}</td>
               <td>{money(plan.now, plan.currency)}</td>
               <td>{then?.kept ? money(Math.round(then.kept * 100) / 100, plan.currency) : '-'}</td>

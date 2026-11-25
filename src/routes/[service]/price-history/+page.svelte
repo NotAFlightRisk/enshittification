@@ -62,11 +62,13 @@
         />
         <table>
           <thead>
-            <tr
-              ><th scope="col">From</th><th scope="col">Price</th><th scope="col">Change</th><th
-                scope="col">Why we know</th
-              ></tr
-            >
+            <tr>
+              <th scope="col">From</th><th scope="col">Price</th><th scope="col">Change</th><th
+                scope="col"
+              >
+                Why we know
+              </th>
+            </tr>
           </thead>
           <tbody>
             {#each plan.steps.toReversed() as step, index (step.date)}
@@ -79,8 +81,9 @@
                   {#if step.change}
                     <a href="/{service.service}/{step.change}">The change</a>
                   {:else}
-                    <a href={plan.source.archive} rel="external nofollow">{plan.source.publisher}</a
-                    >
+                    <a href={plan.source.archive} rel="external nofollow">
+                      {plan.source.publisher}
+                    </a>
                   {/if}
                 </td>
               </tr>

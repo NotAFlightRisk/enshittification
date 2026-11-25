@@ -65,8 +65,10 @@
     <p>
       None yet. Either it's all right, or nobody's checked. <a
         href="{site.repo}/issues"
-        rel="external">Prove it's the second one</a
-      >.
+        rel="external"
+      >
+        Prove it's the second one
+      </a>.
     </p>
   {/if}
 </section>

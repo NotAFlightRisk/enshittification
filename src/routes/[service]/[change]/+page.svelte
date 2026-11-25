@@ -166,12 +166,12 @@
 </article>
 
 <nav class="neighbours" aria-label="More changes">
-  {#if data.older}<a class="older" href={data.older.path}
-      ><span>Before this at {entry.serviceName}</span>{data.older.title}</a
-    >{/if}
-  {#if data.newer}<a class="newer" href={data.newer.path}
-      ><span>After this at {entry.serviceName}</span>{data.newer.title}</a
-    >{/if}
+  {#if data.older}<a class="older" href={data.older.path}>
+      <span>Before this at {entry.serviceName}</span>{data.older.title}
+    </a>{/if}
+  {#if data.newer}<a class="newer" href={data.newer.path}>
+      <span>After this at {entry.serviceName}</span>{data.newer.title}
+    </a>{/if}
 </nav>
 
 {#if data.elsewhere.length}
