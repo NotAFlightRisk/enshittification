@@ -14,12 +14,12 @@ changes:
     title: Tesla puts live traffic view, music streaming and the browser behind a subscription
     what_changed: >-
       Electrek reported on 23 June 2018 that Tesla cars ordered from 1 July would need paid Premium
-      Connectivity for the live traffic view, streaming and the browser. The free Standard
-      Connectivity kept maps and navigation. Model S, Model X and premium-interior Model 3 orders
-      got a year of Premium free, cars ordered by 30 June 2018 kept it for life, and Tesla's page
-      later put it at $9.99 a month or $99 a year.
+      Connectivity for the live traffic view, streaming and the browser. Free Standard Connectivity
+      kept basic maps and navigation, and most features over Wi-Fi. Cars ordered by 30 June 2018
+      kept Premium for life, Model S, Model X and premium-interior Model 3 orders got a free year,
+      and Tesla's US page later put it at $9.99 a month or $99 a year.
     before: Live traffic, satellite maps, music streaming and the browser included
-    after: A subscription, $9.99 a month by 2022, or maps and navigation only
+    after: A subscription, $9.99 a month by 2022, or basic maps and most features over Wi-Fi
     user_impact: >-
       People ordering a Tesla from July 2018 had to pay a subscription for the live traffic view,
       satellite maps, in-car streaming and the browser, after a free year on the models that got
@@ -89,113 +89,14 @@ changes:
         quote: >-
           Premium Connectivity currently is available as a monthly subscription of $9.99 plus
           applicable tax or as an annual subscription of $99 plus applicable tax
-    added: 2026-11-25
-    updated: 2026-11-25
-    sources_checked: 2026-11-25
-    status_checked: 2026-11-25
-
-  - id: battery-update-range-cut
-    date: 2019-06-20
-    date_kind: reported
-    category: removed-feature
-    title: Tesla's battery update cuts the range of older Model S and Model X cars
-    what_changed: >-
-      Electrek reported on 20 June 2019 that owners of older Model S and Model X cars with 85 kWh
-      packs had lost 12 to 30 miles of range after the 2019.16 updates. Tesla confirmed the range
-      reduction was due to the update, having said on 15 May that it was revising charge and thermal
-      settings over the air after several Model S fires.
-    before: Range before the 2019.16 updates
-    after: 12 to 30 miles less range for some 85 kWh cars
-    user_impact: >-
-      Some owners of older Model S and Model X cars with 85 kWh packs lost range on cars they
-      already owned, which Tesla said was only a small percentage of owners, and Electrek later
-      reported slower Supercharging too.
-    company_said: >-
-      Tesla said the update was out of an abundance of caution, to help protect the battery and
-      improve battery longevity.
-    severity: 2
-    status: reversed
-    reversed:
-      date: 2021-07-30
-      what: >-
-        Electrek reported that Tesla had pushed software updates to restore the capacity, though
-        some owners still had battery capacity issues, as it moved to settle a US class action over
-        it.
-      sources:
-        - url: https://electrek.co/2021/07/30/tesla-agrees-pay-owners-battery-throttling-class-action-lawsuit/
-          publisher: Electrek
-          kind: press
-          published: 2021-07-30
-          archive: https://web.archive.org/web/20250922032242/https://electrek.co/2021/07/30/tesla-agrees-pay-owners-battery-throttling-class-action-lawsuit/
-          quote: >-
-            Two years later, Tesla has pushed some software updates to restore the capacity, and it
-            is now ready to settle the matter.
-        - url: https://electrek.co/2021/07/30/tesla-agrees-pay-owners-battery-throttling-class-action-lawsuit/
-          publisher: Electrek
-          kind: press
-          published: 2021-07-30
-          archive: https://web.archive.org/web/20250922032242/https://electrek.co/2021/07/30/tesla-agrees-pay-owners-battery-throttling-class-action-lawsuit/
-          quote: >-
-            who confirmed that his own car saw its capacity restored, but he is aware of some owners
-            who still have had battery capacity issues since the update.
-    sources:
-      - url: https://electrek.co/2019/06/20/tesla-battery-range-drop-software-update-longevity/
-        publisher: Electrek
-        kind: press
-        published: 2019-06-20
-        archive: https://web.archive.org/web/20260614202258/https://electrek.co/2019/06/20/tesla-battery-range-drop-software-update-longevity/
+      - url: https://www.tesla.com/support/connectivity
+        publisher: Tesla Support
+        kind: primary
+        published: 2022-08-02
+        archive: https://web.archive.org/web/20220802070201/https://www.tesla.com/support/connectivity
         quote: >-
-          Over the last week, we received several reports from Tesla owners about seeing significant
-          drops in range from 12 to 30 miles over a short period of time.
-      - url: https://electrek.co/2019/06/20/tesla-battery-range-drop-software-update-longevity/
-        publisher: Electrek
-        kind: press
-        published: 2019-06-20
-        archive: https://web.archive.org/web/20260614202258/https://electrek.co/2019/06/20/tesla-battery-range-drop-software-update-longevity/
-        quote: >-
-          Only Model S and Model X vehicles with 85 kWh battery packs, which were discontinued in
-          2016, seem to be affected at this point.
-      - url: https://electrek.co/2019/06/20/tesla-battery-range-drop-software-update-longevity/
-        publisher: Electrek
-        kind: press
-        published: 2019-06-20
-        archive: https://web.archive.org/web/20260614202258/https://electrek.co/2019/06/20/tesla-battery-range-drop-software-update-longevity/
-        quote: >-
-          For most owners, the range drop happened after updating to Tesla’s 2019.16.1 and .2
-          software updates.
-      - url: https://electrek.co/2019/06/20/tesla-battery-range-drop-software-update-longevity/
-        publisher: Electrek
-        kind: press
-        published: 2019-06-20
-        archive: https://web.archive.org/web/20260614202258/https://electrek.co/2019/06/20/tesla-battery-range-drop-software-update-longevity/
-        quote: >-
-          We contacted Tesla about the issue and the company confirmed to Electrek that the range
-          reduction is due to the software update.
-      - url: https://electrek.co/2019/06/20/tesla-battery-range-drop-software-update-longevity/
-        publisher: Electrek
-        kind: press
-        published: 2019-06-20
-        archive: https://web.archive.org/web/20260614202258/https://electrek.co/2019/06/20/tesla-battery-range-drop-software-update-longevity/
-        quote: >-
-          it resulted in a range loss for only “a small percentage of owners.”
-      - url: https://electrek.co/2019/05/15/tesla-fiire-update-battery-software/
-        publisher: Electrek
-        kind: press
-        published: 2019-05-15
-        archive: https://web.archive.org/web/20231216025906/https://electrek.co/2019/05/15/tesla-fiire-update-battery-software/
-        quote: >-
-          As we continue our investigation of the root cause, out of an abundance of caution, we are
-          revising charge and thermal management settings on Model S and Model X vehicles via an
-          over-the-air software update that will begin rolling out today, to help further protect
-          the battery and improve battery longevity.
-      - url: https://electrek.co/2021/07/30/tesla-agrees-pay-owners-battery-throttling-class-action-lawsuit/
-        publisher: Electrek
-        kind: press
-        published: 2021-07-30
-        archive: https://web.archive.org/web/20250922032242/https://electrek.co/2021/07/30/tesla-agrees-pay-owners-battery-throttling-class-action-lawsuit/
-        quote: >-
-          On top of the range loss, the DC fast-charging rate at Supercharger stations has also been
-          reduced.
+          With Standard Connectivity, you have access to most connectivity features over Wi-Fi, in
+          addition to basic maps and navigation and music streaming over Bluetooth
     added: 2026-11-25
     updated: 2026-11-25
     sources_checked: 2026-11-25
@@ -205,21 +106,21 @@ changes:
     date: 2020-02-06
     date_kind: reported
     category: removed-feature
-    title: Tesla removes paid Autopilot and Full Self-Driving from a used Model S over the air
+    title: Tesla remotely removes Autopilot and Full Self-Driving from a used Model S it sold
     what_changed: >-
       Jalopnik reported on 6 February 2020 that Tesla had remotely removed Autopilot and Full
-      Self-Driving from a used 2017 Model S. Tesla had sold it at auction with both on the sticker,
-      worth $8,000 together, audited it 3 days later, and a later software update took them away
-      from the owner who then bought it from the dealer.
-    before: Enhanced Autopilot and Full Self-Driving, as listed when the car was sold
+      Self-Driving from a used 2017 Model S. Tesla had sold it at auction to a dealer with both on
+      the sticker, worth $8,000 together, audited it 3 days later, and a later software update took
+      them away from the owner who then bought it from the dealer.
+    before: Enhanced Autopilot and Full Self-Driving, listed on the car's sticker
     after: Both removed, with Tesla offering to sell them again
     user_impact: >-
-      The owner lost features listed on the car he bought, and Electrek said he was apparently not
-      alone, going by other reports on Tesla's forums.
+      The owner lost features that were listed on the car when Tesla sold it, and Tesla offered to
+      sell them back to him.
     company_said: >-
       Tesla's customer service said an audit had corrected cars incorrectly configured for Autopilot
       versions that hadn't been paid for, and offered to sell the owner the upgrade.
-    severity: 3
+    severity: 1
     status: reversed
     reversed:
       date: 2020-02-13
@@ -301,14 +202,6 @@ changes:
           Tesla has recently identified instances of customers being incorrectly configured for
           Autopilot versions that they did not pay for. Since, there was an audit done to correct
           these instances.
-      - url: https://electrek.co/2020/02/07/tesla-takes-away-autopilot-used-car-sold-dealer/
-        publisher: Electrek
-        kind: press
-        published: 2020-02-07
-        archive: https://web.archive.org/web/20250108111539/https://electrek.co/2020/02/07/tesla-takes-away-autopilot-used-car-sold-dealer/
-        quote: >-
-          Alec still doesn’t have the features, and he is apparently not alone in this situation
-          based on other reports on Tesla forums
     added: 2026-11-25
     updated: 2026-11-25
     sources_checked: 2026-11-25
@@ -321,15 +214,15 @@ changes:
     title: Tesla limits free Standard Connectivity to 8 years on cars ordered after 20 July 2022
     what_changed: >-
       Electrek reported on 27 July 2022 that Tesla had put an 8 year limit on free Standard
-      Connectivity, which covers maps and navigation. Cars ordered by 20 July 2022 keep it for life,
-      while later orders, and used cars bought after that date, get it until 8 years from first
-      delivery. Tesla said some connectivity features may be changed or removed after that.
+      Connectivity. That's basic maps and navigation, and most features over Wi-Fi. Cars ordered
+      by 20 July 2022 keep it for life, while later orders, and used cars bought after that date,
+      get it for 8 years from first delivery or first day in service, whichever comes first. Tesla
+      said some features may be changed or removed after that.
     before: Standard Connectivity for the life of the car
-    after: Standard Connectivity until 8 years from first delivery
+    after: Standard Connectivity for 8 years from first delivery or first day in service
     user_impact: >-
-      People ordering a Tesla, or buying a used one, after 20 July 2022 face losing some connected
-      features once the car is 8 years old, and Electrek said Tesla only mentioned buying Premium
-      Connectivity after that.
+      People ordering a Tesla, or buying a used one, after 20 July 2022 may lose some connected
+      features, including ones that use cellular data, once the car is 8 years old.
     severity: 1
     status: in-force
     sources:
@@ -367,6 +260,14 @@ changes:
         quote: >-
           Without Standard Connectivity, access to some connectivity features, including those that
           use cellular data or third-party licenses, may be changed or removed.
+      - url: https://www.tesla.com/support/connectivity
+        publisher: Tesla Support
+        kind: primary
+        published: 2022-08-02
+        archive: https://web.archive.org/web/20220802070201/https://www.tesla.com/support/connectivity
+        quote: >-
+          With Standard Connectivity, you have access to most connectivity features over Wi-Fi, in
+          addition to basic maps and navigation and music streaming over Bluetooth
       - url: https://electrek.co/2022/07/27/tesla-end-unlimited-standard-connectivity-8-year-limit/
         publisher: Electrek
         kind: press
@@ -375,15 +276,6 @@ changes:
         quote: >-
           Tesla has finally put an end to its unlimited “Standard Connectivity” internet connection
           included in all Tesla vehicles with now a new generous eight-year time limit.
-      - url: https://electrek.co/2022/07/27/tesla-end-unlimited-standard-connectivity-8-year-limit/
-        publisher: Electrek
-        kind: press
-        published: 2022-07-27
-        archive: https://web.archive.org/web/20231201034943/https://electrek.co/2022/07/27/tesla-end-unlimited-standard-connectivity-8-year-limit/
-        quote: >-
-          Interestingly, it doesn’t sound like Tesla planned to offer an option to buy Standard
-          Connectivity after the eight-year period is over as Tesla only mentions buying Premium
-          Connectivity after that
     added: 2026-11-25
     updated: 2026-11-25
     sources_checked: 2026-11-25
@@ -396,17 +288,17 @@ changes:
     category: api-restriction
     title: Tesla starts charging third-party apps per use of its Fleet API
     what_changed: >-
-      Tesla said on 27 November 2024 that its Fleet API, free since launch, would charge apps per
-      use from 1 January 2025. Apps from countries where it couldn't take payment got limited usage
-      instead. It had said in March that Fleet API was the only supported API and that other vehicle
-      APIs would be phased out from April 2024. The developer of the Tessie app said the new pricing
-      would cost him about $60m a year.
+      Tesla said on 27 November 2024 that its Fleet API, free during a discovery period, would
+      charge apps per use from 1 January 2025. It had said in March that Fleet API was the only
+      supported API and that other vehicle APIs would be phased out from April 2024. The developer
+      of the Tessie app said it would cost him about $60m a year for 400,000 drivers, though he
+      could get round it by talking to the cars directly.
     before: Fleet API free for third-party apps
     after: Pay per use, with a $10 monthly discount for individual developers and small apps
     user_impact: >-
-      Owners who used third-party apps like Tessie saw them face per-use API bills, which Electrek
-      said would likely kill some useful third-party apps.
-    severity: 3
+      Makers of third-party apps for Tesla owners had to start paying per use, and Electrek said it
+      would likely kill some useful ones.
+    severity: 2
     status: in-force
     sources:
       - url: https://developer.tesla.com/docs/fleet-api/announcements
@@ -469,6 +361,21 @@ changes:
         archive: https://web.archive.org/web/20250722232251/https://electrek.co/2024/11/28/tesla-releases-api-pricing-dev-says-would-cost-60-million-per-year-to-run-his-3rd-party-app/
         quote: >-
           It will likely kill some useful third-party apps.
+      - url: https://electrek.co/2024/11/28/tesla-releases-api-pricing-dev-says-would-cost-60-million-per-year-to-run-his-3rd-party-app/
+        publisher: Electrek
+        kind: press
+        published: 2024-11-28
+        archive: https://web.archive.org/web/20250722232251/https://electrek.co/2024/11/28/tesla-releases-api-pricing-dev-says-would-cost-60-million-per-year-to-run-his-3rd-party-app/
+        quote: >-
+          That’s with 400,000 Tesla drivers reportedly using the app.
+      - url: https://electrek.co/2024/11/28/tesla-releases-api-pricing-dev-says-would-cost-60-million-per-year-to-run-his-3rd-party-app/
+        publisher: Electrek
+        kind: press
+        published: 2024-11-28
+        archive: https://web.archive.org/web/20250722232251/https://electrek.co/2024/11/28/tesla-releases-api-pricing-dev-says-would-cost-60-million-per-year-to-run-his-3rd-party-app/
+        quote: >-
+          the developer says that he can get around it by dropping the API and using “direct car
+          communication over IP and BLE.”
     added: 2026-11-25
     updated: 2026-11-25
     sources_checked: 2026-11-25
@@ -478,7 +385,7 @@ changes:
     date: 2026-02-14
     date_kind: effective
     category: removed-feature
-    title: Tesla stops selling Full Self-Driving outright and makes it subscription only
+    title: Tesla stops selling Full Self-Driving outright in the US, leaving a subscription
     question: When did Tesla stop selling FSD?
     what_changed: >-
       Tesla stopped selling Full Self-Driving as a one-time purchase on 14 February 2026, leaving a
@@ -488,7 +395,7 @@ changes:
     after: $99 a month only
     user_impact: >-
       New buyers could no longer pay once for Full Self-Driving that stayed with the car, and had to
-      keep paying monthly instead.
+      keep paying monthly instead, while cars it was already bought for kept it.
     severity: 2
     status: in-force
     regions: [US]
@@ -523,6 +430,14 @@ changes:
         archive: https://web.archive.org/web/20260409013311/https://electrek.co/2026/01/14/tesla-tsla-stop-selling-full-self-driving-package-subscription-only/
         quote: >-
           It essentially puts an end to FSD as a purchasable product attached to the vehicle.
+      - url: https://electrek.co/2026/10/21/tesla-fsd-subscriptions-1-74-million-musk-pay-package/
+        publisher: Electrek
+        kind: press
+        published: 2026-10-21
+        archive: https://web.archive.org/web/20261116020326/https://electrek.co/2026/10/21/tesla-fsd-subscriptions-1-74-million-musk-pay-package/
+        quote: >-
+          Counting people who bought FSD outright isn’t wrong on its own. Those cars do have the
+          software.
     added: 2026-11-25
     updated: 2026-11-25
     sources_checked: 2026-11-25
@@ -530,15 +445,16 @@ changes:
 
   - id: autopilot-not-standard
     date: 2026-01-23
-    date_kind: reported
+    date_kind: effective
     category: paywall
     title: Tesla drops Autosteer as standard on new Model 3 and Model Y, leaving it to FSD
     question: When did Tesla stop including Autopilot as standard?
     what_changed: >-
-      Electrek reported on 23 January 2026 that Tesla had dropped Basic Autopilot as standard on new
-      Model 3 and Model Y orders in North America. New cars kept Traffic-Aware Cruise Control, but
-      Autosteer lane keeping, standard for nearly 7 years, now needed Full Self-Driving, at $99 a
-      month or $8,000 before it went subscription only. The Netherlands followed in May 2026.
+      Tesla dropped Basic Autopilot as standard on new Model 3 and Model Y orders in North America on
+      23 January 2026. New cars kept Traffic-Aware Cruise Control, but Autosteer lane keeping,
+      standard for nearly 7 years, now needed Full Self-Driving, at $99 a month or $8,000 before it
+      went subscription only. The Netherlands followed in May 2026, with FSD at €99 a month or
+      €7,500 once.
     before: Traffic-Aware Cruise Control and Autosteer standard
     after: Traffic-Aware Cruise Control only, Autosteer with Full Self-Driving
     user_impact: >-
@@ -588,6 +504,14 @@ changes:
         archive: https://web.archive.org/web/20261001180029/https://electrek.co/2026/05/12/tesla-removes-basic-autopilot-netherlands-fsd-only/
         quote: >-
           Tesla has quietly removed Basic Autopilot from its online configurator in the Netherlands.
+      - url: https://electrek.co/2026/05/12/tesla-removes-basic-autopilot-netherlands-fsd-only/
+        publisher: Electrek
+        kind: press
+        published: 2026-05-12
+        archive: https://web.archive.org/web/20261001180029/https://electrek.co/2026/05/12/tesla-removes-basic-autopilot-netherlands-fsd-only/
+        quote: >-
+          the only driver-assistance option available is FSD (Supervised), offered as a €99/month
+          subscription, a €7,500 one-time purchase, or “Add later.”
     added: 2026-11-25
     updated: 2026-11-25
     sources_checked: 2026-11-25
