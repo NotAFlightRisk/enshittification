@@ -118,10 +118,10 @@
   url: https://web.archive.org/web/20220420150811/https://www.insteon.com/news2022
   wikipedia: https://en.wikipedia.org/wiki/Insteon
 
-- id: warner-bros-discovery
-  name: Warner Bros. Discovery
-  url: https://www.wbd.com
-  wikipedia: https://en.wikipedia.org/wiki/Warner_Bros._Discovery
+- id: skydance
+  name: Skydance
+  url: https://www.skydance.com
+  wikipedia: https://en.wikipedia.org/wiki/Skydance
 
 - id: meta
   name: Meta
