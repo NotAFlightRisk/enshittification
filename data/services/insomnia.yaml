@@ -1,0 +1,146 @@
+service: insomnia
+name: Insomnia
+company: kong
+url: https://insomnia.rest
+
+changes:
+  - id: account-required
+    date: 2023-09-27
+    date_kind: effective
+    category: lock-out
+    title: Insomnia 8.0 needs an account for everything but its Scratch Pad
+    question: When did Insomnia start requiring an account?
+    what_changed: >-
+      From Insomnia 8.0 on 27 September 2023, projects outside the local Scratch Pad needed an
+      Insomnia account and were set to sync to Kong's cloud. A wizard after the update offered to
+      export the data or move it all to the cloud on signing in, and Scratch Pad needed no account.
+      Insomnia 8.3, announced on 18 October 2023, brought back local-only projects, but Kong still
+      requires an account for most of the app.
+    before: Local projects with no account
+    after: An account for anything but Scratch Pad
+    user_impact: >-
+      People who updated couldn't open their existing projects without signing in, unless they
+      exported them and re-imported a collection into Scratch Pad or went back to an older version,
+      though Kong said nothing was synced or lost until they signed in.
+    company_said: >-
+      Kong said supporting both local and cloud storage for all of Insomnia's data was causing
+      issues and migration problems, and that a cloud version would let it offer premium features to
+      keep the project running.
+    severity: 3
+    status: in-force
+    sources:
+      - url: https://konghq.com/blog/product-releases/insomnia-8-3
+        publisher: Kong
+        kind: primary
+        published: 2023-10-18
+        archive: https://web.archive.org/web/20231024150122/https://konghq.com/blog/product-releases/insomnia-8-3
+        quote: >-
+          We learned after releasing Insomnia 8.0 that for many users using cloud storage for
+          projects (encrypted or not) is simply not an option.
+      - url: https://konghq.com/blog/product-releases/insomnia-8-3
+        publisher: Kong
+        kind: primary
+        published: 2023-10-18
+        archive: https://web.archive.org/web/20231024150122/https://konghq.com/blog/product-releases/insomnia-8-3
+        quote: >-
+          brought back 100% local storage with no cloud synchronization for your projects, while at
+          the same time keeping the same workflow for users who want to collaborate in the cloud.
+      - url: https://konghq.com/blog/product-releases/insomnia-8-3
+        publisher: Kong
+        kind: primary
+        published: 2023-10-18
+        archive: https://web.archive.org/web/20231024150122/https://konghq.com/blog/product-releases/insomnia-8-3
+        quote: >-
+          Account management is still done in the cloud on insomnia.rest
+      - url: https://github.com/Kong/insomnia/issues/6577
+        publisher: Kong (Marco Palladino, CTO, on GitHub)
+        kind: primary
+        published: 2023-09-27
+        archive: https://web.archive.org/web/20230928000851/https://github.com/Kong/insomnia/issues/6577
+        quote: >-
+          After downloading the new binary (either manually or via the auto-update) we show an
+          onboarding wizard that communicates that your data (collections, tests, etc) will be
+          synchronized to the cloud after the user creates an account or signs in.
+      - url: https://github.com/Kong/insomnia/issues/6577
+        publisher: Kong (Marco Palladino, CTO, on GitHub)
+        kind: primary
+        published: 2023-09-27
+        archive: https://web.archive.org/web/20230928000851/https://github.com/Kong/insomnia/issues/6577
+        quote: >-
+          There is an option to export the data, and the data is not actually synchronized until
+          either an account is being created, or a login is being performed.
+      - url: https://github.com/Kong/insomnia/issues/6577
+        publisher: Kong (Marco Palladino, CTO, on GitHub)
+        kind: primary
+        published: 2023-09-27
+        archive: https://web.archive.org/web/20230928000851/https://github.com/Kong/insomnia/issues/6577
+        quote: >-
+          You can either create an account with Insomnia (can be a Free account) or downgrade to a
+          previous version of Insomnia.
+      - url: https://github.com/Kong/insomnia/issues/6577
+        publisher: Kong (Marco Palladino, CTO, on GitHub)
+        kind: primary
+        published: 2023-09-27
+        archive: https://web.archive.org/web/20230928000851/https://github.com/Kong/insomnia/issues/6577
+        quote: >-
+          Yes, you can via the Scratch Pad capability which is always local and doesn't require an
+          account.
+      - url: https://github.com/Kong/insomnia/issues/6577
+        publisher: Kong (Marco Palladino, CTO, on GitHub)
+        kind: primary
+        published: 2023-09-27
+        archive: https://web.archive.org/web/20230928000851/https://github.com/Kong/insomnia/issues/6577
+        quote: >-
+          There is a significant effort in maintaining full support for an abstraction that
+          supports two different backend (in the cloud, and locally), which is causing a large
+          amount of issues and migration problems.
+      - url: https://github.com/Kong/insomnia/issues/6577
+        publisher: Kong (Marco Palladino, CTO, on GitHub)
+        kind: primary
+        published: 2023-09-27
+        archive: https://web.archive.org/web/20230928000851/https://github.com/Kong/insomnia/issues/6577
+        quote: >-
+          We opted to either "Export all data" in the onboarding wizard or "Move all to cloud"
+      - url: https://github.com/Kong/insomnia/issues/6577
+        publisher: Kong (Marco Palladino, CTO, on GitHub)
+        kind: primary
+        published: 2023-09-27
+        archive: https://web.archive.org/web/20230928000851/https://github.com/Kong/insomnia/issues/6577
+        quote: >-
+          You can also export your data and re-import a collection into Scratch Pad and keep working
+          locally.
+      - url: https://github.com/Kong/insomnia/issues/6577
+        publisher: Kong (Marco Palladino, CTO, on GitHub)
+        kind: primary
+        published: 2023-09-27
+        archive: https://web.archive.org/web/20230928000851/https://github.com/Kong/insomnia/issues/6577
+        quote: >-
+          The data is not lost.
+      - url: https://github.com/Kong/insomnia/issues/6577
+        publisher: Kong (Marco Palladino, CTO, on GitHub)
+        kind: primary
+        published: 2023-09-27
+        archive: https://web.archive.org/web/20230928000851/https://github.com/Kong/insomnia/issues/6577
+        quote: >-
+          By offering a cloud version of Insomnia, we can provide premium capabilities that can
+          further allow us to keep this project running and active.
+      - url: https://github.com/Kong/insomnia
+        publisher: Kong (Insomnia README)
+        kind: primary
+        published: 2026-08-12
+        archive: https://web.archive.org/web/20260812010527/https://github.com/Kong/insomnia
+        quote: >-
+          but to access most capabilities of the product we require an account.
+      - url: https://konghq.com/blog/product-releases/insomnia-8-0
+        publisher: Kong
+        kind: primary
+        published: 2023-09-28
+        archive: https://web.archive.org/web/20230928131934/https://konghq.com/blog/product-releases/insomnia-8-0
+        quote: >-
+          Kong Insomnia 8.0 introduces the highly requested Scratch Pad capability that our
+          community can use to try out the product without needing an Insomnia account to get
+          started.
+    added: 2026-11-25
+    updated: 2026-11-25
+    sources_checked: 2026-11-25
+    status_checked: 2026-11-25

@@ -181,3 +181,7 @@
   name: Tesla
   url: https://www.tesla.com
   wikipedia: https://en.wikipedia.org/wiki/Tesla,_Inc.
+
+- id: kong
+  name: Kong
+  url: https://konghq.com
