@@ -39,9 +39,9 @@
         style:top="{point.y}%"
       >
         {#if point.change}
-          <a href="/{service}/{point.change}" title="{shortDate(point.date)}: what changed"
-            >{content}</a
-          >
+          <a href="/{service}/{point.change}" title="{shortDate(point.date)}: what changed">
+            {content}
+          </a>
         {:else}
           <span title="Launch, {shortDate(point.date)}">{content}</span>
         {/if}

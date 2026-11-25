@@ -43,10 +43,9 @@
       <a href="/{rise.plan.service}/price-history">{rise.plan.serviceName} {rise.plan.name}</a>
       <span>{rise.plan.region}, {perBilling[rise.plan.billing]}</span>
     </th>
-    <td
-      >{money(rise.from, rise.plan.currency)}{#if !rank}<span>, {shortDate(rise.since)}</span
-        >{/if}</td
-    >
+    <td>
+      {money(rise.from, rise.plan.currency)}{#if !rank}<span>, {shortDate(rise.since)}</span>{/if}
+    </td>
     <td>{money(rise.now, rise.plan.currency)}</td>
     <td class="rise">{percent(rise.rise)}</td>
     <td>{rise.inflation === undefined ? 'n/a' : percent(rise.inflation)}</td>

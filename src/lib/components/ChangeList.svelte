@@ -23,9 +23,9 @@
       <time datetime={change.date}>{shortDate(change.date)}</time>
       <div class="what">
         <a href={change.path}>
-          {#if showService && !change.title.startsWith(change.serviceName)}<b
-              >{change.serviceName}</b
-            >{/if}
+          {#if showService && !change.title.startsWith(change.serviceName)}<b>
+              {change.serviceName}
+            </b>{/if}
           {change.title}
         </a>
         <p class="meta">
@@ -33,8 +33,10 @@
           <span
             class="level"
             class:danger={levelOf(change.severity) === 'danger' && !isHollow(change.status)}
-            data-level={levelOf(change.severity)}>{levels[levelOf(change.severity)].name}</span
+            data-level={levelOf(change.severity)}
           >
+            {levels[levelOf(change.severity)].name}
+          </span>
           {#if showStatus && change.status !== 'in-force'}
             <span class="status">{statuses[change.status]}</span>
           {/if}
