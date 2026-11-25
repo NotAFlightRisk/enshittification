@@ -176,3 +176,8 @@
   name: The Weather Company
   url: https://www.weathercompany.com
   wikipedia: https://en.wikipedia.org/wiki/The_Weather_Company
+
+- id: tesla
+  name: Tesla
+  url: https://www.tesla.com
+  wikipedia: https://en.wikipedia.org/wiki/Tesla,_Inc.
