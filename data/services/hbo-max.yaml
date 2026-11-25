@@ -1,6 +1,6 @@
 service: hbo-max
 name: HBO Max
-company: warner-bros-discovery
+company: skydance
 url: https://www.hbomax.com
 crw: https://consumerrights.wiki/w/HBO_Max
 wikipedia: https://en.wikipedia.org/wiki/HBO_Max
