@@ -12,8 +12,8 @@ changes:
     question: When did Insomnia start requiring an account?
     what_changed: >-
       From Insomnia 8.0, which reached users on 27 September 2023, projects outside the local
-      Scratch Pad needed an Insomnia account. The update offered to export them or move them to
-      Kong's cloud on signing in, though Git Sync projects never went there. Insomnia 8.3 brought
+      Scratch Pad needed an Insomnia account. Kong said the update offered to export them or move
+      them to its cloud on signing in, though Git Sync projects never went there. Insomnia 8.3 brought
       back fully local projects on 18 October 2023, but they still need an account, as does most of
       the app.
     before: Fully local projects without an account
