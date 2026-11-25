@@ -1,0 +1,204 @@
+service: postman
+name: Postman
+company: postman
+url: https://www.postman.com
+wikipedia: https://en.wikipedia.org/wiki/Postman_(software)
+
+changes:
+  - id: free-plan-single-user
+    date: 2026-03-01
+    date_kind: effective
+    category: paywall
+    title: Postman limits its Free plan to a single user, ending free team collaboration
+    what_changed: >-
+      Postman limited its Free plan to a single user on 1 March 2026, after letting free teams of up
+      to 3 users collaborate. It announced the new plans on 31 January 2026. Its docs say an
+      existing Free team with multiple members is put into a read-only state, where 1 Admin keeps
+      editing access and the rest get limited actions in shared workspaces.
+    before: Free teams of up to 3 users
+    after: Free plan limited to 1 user
+    user_impact: >-
+      Members of free teams were made read-only in their shared workspaces, except 1 Admin, unless
+      someone upgraded to a paid plan or the Admin removed the others.
+    company_said: >-
+      Postman said its existing plans could be challenging to navigate given its growing suite of
+      add-ons, and that the Free and new Solo plans are designed for individual developers.
+    severity: 3
+    status: in-force
+    sources:
+      - url: https://learning.postman.com/docs/billing/about-plans
+        publisher: Postman Docs
+        kind: primary
+        published: 2026-03
+        archive: https://web.archive.org/web/20260305083345/https://learning.postman.com/docs/billing/about-plans
+        quote: >-
+          Previously, Free plans could create a team and invite up to three users to collaborate.
+          With the new plans, Free plans are limited to one user and can’t create a team. To
+          collaborate with others, you will need to upgrade to a paid plan.
+      - url: https://learning.postman.com/docs/billing/about-plans
+        publisher: Postman Docs
+        kind: primary
+        published: 2026-03
+        archive: https://web.archive.org/web/20260305083345/https://learning.postman.com/docs/billing/about-plans
+        quote: Postman plan offerings changed in March 2026, and the new plans are now available for purchase.
+      - url: https://blog.postman.com/new-capabilities-march-2026/
+        publisher: Postman Blog
+        kind: primary
+        published: 2026-01-31
+        archive: https://web.archive.org/web/20260416132413/https://blog.postman.com/new-capabilities-march-2026/
+        quote: >-
+          On March 1, we’re also updating Postman’s pricing and packaging. We have learned from
+          customers that our existing pricing plans can be challenging to navigate given our growing
+          suite of add-ons.
+      - url: https://blog.postman.com/new-capabilities-march-2026/
+        publisher: Postman Blog
+        kind: primary
+        published: 2026-01-31
+        archive: https://web.archive.org/web/20260416132413/https://blog.postman.com/new-capabilities-march-2026/
+        quote: >-
+          The Free plan and new Solo plan are designed for individual developers and support everyday
+          development workflows
+      - url: https://learning.postman.com/docs/administration/free-and-solo
+        publisher: Postman Docs
+        kind: primary
+        published: 2026-04
+        archive: https://web.archive.org/web/20260419085013/https://learning.postman.com/docs/administration/free-and-solo
+        quote: >-
+          When a Free plan team has multiple members, the team is put into a read-only state because
+          the Free plan only allows one member per team. When a team becomes read-only, Postman
+          automatically selects one Admin to keep Editor access.
+      - url: https://learning.postman.com/docs/administration/free-and-solo
+        publisher: Postman Docs
+        kind: primary
+        published: 2026-04
+        archive: https://web.archive.org/web/20260419085013/https://learning.postman.com/docs/administration/free-and-solo
+        quote: >-
+          Can access shared workspaces but have limited actions within them.
+      - url: https://learning.postman.com/docs/administration/free-and-solo
+        publisher: Postman Docs
+        kind: primary
+        published: 2026-04
+        archive: https://web.archive.org/web/20260419085013/https://learning.postman.com/docs/administration/free-and-solo
+        quote: >-
+          Any team member can start a trial or upgrade to a paid plan. Otherwise, the Admin can remove
+          other members to reduce the team size to one.
+      - url: https://www.postman.com/pricing/
+        publisher: Postman
+        kind: pricing-page
+        published: 2026-01-11
+        archive: https://web.archive.org/web/20260111144836/https://www.postman.com/pricing/
+        quote: For individuals and small teams building and testing APIs $0 Get Started
+      - url: https://www.postman.com/pricing/
+        publisher: Postman
+        kind: pricing-page
+        published: 2026-01-11
+        archive: https://web.archive.org/web/20260111144836/https://www.postman.com/pricing/
+        quote: Up to 3 free users
+      - url: https://www.postman.com/pricing/
+        publisher: Postman
+        kind: pricing-page
+        published: 2026-04-02
+        archive: https://web.archive.org/web/20260402032126/https://www.postman.com/pricing/
+        quote: Total users included 1 user
+    added: 2026-11-25
+    updated: 2026-11-25
+    sources_checked: 2026-11-25
+    status_checked: 2026-11-25
+  - id: scratch-pad-removed
+    date: 2023-09-15
+    date_kind: effective
+    category: removed-feature
+    title: Postman removes Scratch Pad, its offline mode for collections without an account
+    question: When did Postman remove Scratch Pad?
+    what_changed: >-
+      Postman removed Scratch Pad, its offline mode, with its 15 September 2023 release, after
+      announcing it on 14 May 2023. New downloads lost it from 15 May 2023. In its place came a
+      lightweight API client that keeps a local history of requests, but collections and
+      environments now need a signed-in Postman account and its cloud workspaces.
+    before: Collections and environments kept offline, with no account
+    after: Collections and environments need a Postman account
+    user_impact: >-
+      People who used Postman without an account had to sign in and move their collections,
+      environments and history into Postman's workspaces, or lose them.
+    company_said: >-
+      Postman said keeping two separate architectures, Scratch Pad and workspaces, for the same
+      features meant spending 2x-4x the time developing or improving the product.
+    severity: 3
+    status: in-force
+    sources:
+      - url: https://blog.postman.com/announcing-new-lightweight-postman-api-client/
+        publisher: Postman Blog
+        kind: primary
+        published: 2023-05-14
+        archive: https://web.archive.org/web/20230515000045/https://blog.postman.com/announcing-new-lightweight-postman-api-client/
+        quote: >-
+          Starting May 15, 2023, Scratch Pad mode will no longer be available in the latest version
+          of the Postman app for new downloads.
+      - url: https://blog.postman.com/announcing-new-lightweight-postman-api-client/
+        publisher: Postman Blog
+        kind: primary
+        published: 2023-05-14
+        archive: https://web.archive.org/web/20230515000045/https://blog.postman.com/announcing-new-lightweight-postman-api-client/
+        quote: >-
+          For users currently using the Scratch Pad mode, it will continue working in deprecated
+          mode until September 15, 2023.
+      - url: https://blog.postman.com/announcing-new-lightweight-postman-api-client/
+        publisher: Postman Blog
+        kind: primary
+        published: 2023-05-14
+        archive: https://web.archive.org/web/20230929170608/https://blog.postman.com/announcing-new-lightweight-postman-api-client/
+        quote: >-
+          Scratch Pad is no longer available starting with the September 15, 2023 release.
+      - url: https://blog.postman.com/announcing-new-lightweight-postman-api-client/
+        publisher: Postman Blog
+        kind: primary
+        published: 2023-05-14
+        archive: https://web.archive.org/web/20230515000045/https://blog.postman.com/announcing-new-lightweight-postman-api-client/
+        quote: >-
+          So far, we have continued to maintain offline collections through the Scratch Pad and
+          collections through cloud-powered workspaces.
+      - url: https://blog.postman.com/announcing-new-lightweight-postman-api-client/
+        publisher: Postman Blog
+        kind: primary
+        published: 2023-05-14
+        archive: https://web.archive.org/web/20230515000045/https://blog.postman.com/announcing-new-lightweight-postman-api-client/
+        quote: >-
+          However, maintaining two separate architectures—one with the Scratch Pad and the other
+          with workspaces—for the same set of features has meant that we spend 2x-4x the amount of
+          time in developing or improving the product.
+      - url: https://blog.postman.com/announcing-new-lightweight-postman-api-client/
+        publisher: Postman Blog
+        kind: primary
+        published: 2023-05-14
+        archive: https://web.archive.org/web/20230515000045/https://blog.postman.com/announcing-new-lightweight-postman-api-client/
+        quote: >-
+          The API client maintains a history of API calls so you can go back to the requests you use
+          often.
+      - url: https://blog.postman.com/announcing-new-lightweight-postman-api-client/
+        publisher: Postman Blog
+        kind: primary
+        published: 2023-05-14
+        archive: https://web.archive.org/web/20230929170608/https://blog.postman.com/announcing-new-lightweight-postman-api-client/
+        quote: >-
+          No, environments and collections features require you to be signed in to a Postman
+          account.
+      - url: https://blog.postman.com/announcing-new-lightweight-postman-api-client/
+        publisher: Postman Blog
+        kind: primary
+        published: 2023-05-14
+        archive: https://web.archive.org/web/20230929170608/https://blog.postman.com/announcing-new-lightweight-postman-api-client/
+        quote: >-
+          You must migrate your data to a Postman account in order to recover the data created in
+          the Scratch Pad.
+      - url: https://blog.postman.com/announcing-new-lightweight-postman-api-client/
+        publisher: Postman Blog
+        kind: primary
+        published: 2023-05-14
+        archive: https://web.archive.org/web/20230515000045/https://blog.postman.com/announcing-new-lightweight-postman-api-client/
+        quote: >-
+          We recommend migrating to workspaces through our migration tool, which enables you to pick
+          up right where you left off with your collections, environments, and history.
+    added: 2026-11-25
+    updated: 2026-11-25
+    sources_checked: 2026-11-25
+    status_checked: 2026-11-25
