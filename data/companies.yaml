@@ -182,6 +182,11 @@
   url: https://www.tesla.com
   wikipedia: https://en.wikipedia.org/wiki/Tesla,_Inc.
 
+- id: postman
+  name: Postman
+  url: https://www.postman.com
+  wikipedia: https://en.wikipedia.org/wiki/Postman_(software)
+
 - id: kong
   name: Kong
   url: https://konghq.com
