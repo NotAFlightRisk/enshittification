@@ -1,0 +1,181 @@
+service: bambu-lab
+name: Bambu Lab
+company: bambu-lab
+url: https://bambulab.com
+crw: https://consumerrights.wiki/w/Bambu_Lab
+wikipedia: https://en.wikipedia.org/wiki/Bambu_Lab
+
+changes:
+  - id: authorization-control
+    date: 2025-03-12
+    date_kind: effective
+    category: api-restriction
+    title: Bambu Lab firmware stops unauthorised software controlling its printers directly
+    what_changed: >-
+      Bambu Lab's X1 firmware dated 12 March 2025 made its printers reject control commands from
+      software it hadn't authorised, as it announced on 16 January. Starting prints, moving the
+      axes, calibrating and binding then needed authorised software or its new Bambu Connect, Home
+      Assistant could only read some printer information, and Panda Touch's control functions
+      stopped working. After feedback from print farm owners it added an optional Developer Mode
+      that turns the check off, but only in LAN mode, and the P1 and A1 firmware with the change is
+      dated 3 June 2025.
+    before: OrcaSlicer, Home Assistant and Panda Touch could send control commands to the printer
+    after: Authorised software or Bambu Connect only, unless the printer is in LAN-only Developer Mode
+    user_impact: >-
+      Owners who updated, which Bambu said during the beta wasn't forced, could no longer control
+      their printers from Home Assistant, Panda Touch and other unauthorised tools unless they
+      switched to Developer Mode, which needs LAN mode, where the Bambu Handy app isn't available.
+    company_said: >-
+      Bambu Lab said it was a security measure against remote hacks, that unauthorised requests to
+      its cloud, at peaks of 30 million a day, were straining its infrastructure, and that Bambu
+      Connect would keep third-party integration going.
+    severity: 3
+    status: in-force
+    sources:
+      - url: https://blog.bambulab.com/firmware-update-introducing-new-authorization-control-system-2/
+        publisher: Bambu Lab
+        kind: primary
+        published: 2025-01-16
+        archive: blocked
+        quote: >-
+          These updates will introduce authorization controls that require official authorization
+          for critical printer operations. Furthermore, unauthorized third-party software will be
+          prohibited from executing critical operations.
+      - url: https://blog.bambulab.com/firmware-update-introducing-new-authorization-control-system-2/
+        publisher: Bambu Lab
+        kind: primary
+        published: 2025-01-16
+        archive: blocked
+        quote: >-
+          If you upgrade to the firmware with Authorization Features, you will only be able to
+          monitor print progress and status (e.g., status updates in HomeAssistant).
+      - url: https://blog.bambulab.com/firmware-update-introducing-new-authorization-control-system-2/
+        publisher: Bambu Lab
+        kind: primary
+        published: 2025-01-16
+        archive: blocked
+        quote: >-
+          If aftermarket accessories, such as Panda Touch, control features like binding/unbinding
+          the printer, initiating print jobs, axis movement, or calibrations, these functions will no
+          longer work.
+      - url: https://blog.bambulab.com/firmware-update-introducing-new-authorization-control-system-2/
+        publisher: Bambu Lab
+        kind: primary
+        published: 2025-01-16
+        archive: blocked
+        quote: >-
+          Our monitoring systems have detected peaks of up to 30 million unauthorized requests per
+          day, creating unnecessary strain on our infrastructure.
+      - url: https://blog.bambulab.com/firmware-update-introducing-new-authorization-control-system-2/
+        publisher: Bambu Lab
+        kind: primary
+        published: 2025-01-16
+        archive: blocked
+        quote: >-
+          If you choose to upgrade to the firmware version with Authorization Features, you must
+          download and install Bambu Connect (a printer control software) from the official website.
+      - url: https://blog.bambulab.com/updates-and-third-party-integration-with-bambu-connect/
+        publisher: Bambu Lab
+        kind: primary
+        published: 2025-01-20
+        archive: blocked
+        quote: >-
+          This is beta testing, not a forced update. The choice is yours.
+      - url: https://blog.bambulab.com/updates-and-third-party-integration-with-bambu-connect/
+        publisher: Bambu Lab
+        kind: primary
+        published: 2025-01-20
+        archive: blocked
+        quote: >-
+          Developer Mode (Optional): For advanced users of the X1, P1, A1, and A1 Mini who prefer
+          full control over their network security, an option will be available to leave the MQTT
+          channel, live stream, and FTP open.
+      - url: https://blog.bambulab.com/firmware-update-introducing-new-authorization-control-system-2/
+        publisher: Bambu Lab
+        kind: primary
+        published: 2025-01-16
+        archive: blocked
+        quote: >-
+          This change is mitigating any risk of remote hacks or printer exposure issues that have happened in the past
+      - url: https://blog.bambulab.com/firmware-update-introducing-new-authorization-control-system-2/
+        publisher: Bambu Lab
+        kind: primary
+        published: 2025-01-16
+        archive: blocked
+        quote: >-
+          While Home Assistant will still be able to access some printer information, certain functionalities will be limited.
+      - url: https://blog.bambulab.com/updates-and-third-party-integration-with-bambu-connect/
+        publisher: Bambu Lab
+        kind: primary
+        published: 2025-01-20
+        archive: blocked
+        quote: >-
+          Many concerns have come from print farm owners who depend on reliable and uninterrupted access to their 3D printers.
+      - url: https://blog.bambulab.com/updates-and-third-party-integration-with-bambu-connect/
+        publisher: Bambu Lab
+        kind: primary
+        published: 2025-01-20
+        archive: blocked
+        quote: >-
+          We're creating Bambu Connect specifically to ensure continued third-party integration while enhancing security.
+      - url: https://wiki.bambulab.com/en/x1/manual/X1-X1C-firmware-release-history
+        publisher: Bambu Lab Wiki
+        kind: primary
+        published: 2025-03-12
+        archive: blocked
+        quote: >-
+          The printer now verifies whether control commands originate from official or authorized
+          software. If not, the commands will be rejected.
+      - url: https://wiki.bambulab.com/en/x1/manual/X1-X1C-firmware-release-history
+        publisher: Bambu Lab Wiki
+        kind: primary
+        published: 2025-03-12
+        archive: blocked
+        quote: 01.08.05.00 (20250312)
+      - url: https://wiki.bambulab.com/en/p1/manual/p1p-firmware-release-history
+        publisher: Bambu Lab Wiki
+        kind: primary
+        published: 2025-06-03
+        archive: blocked
+        quote: P1 series Version 01.08.02.00 (20250603)
+      - url: https://wiki.bambulab.com/en/a1/manual/a1-firmware-release-history
+        publisher: Bambu Lab Wiki
+        kind: primary
+        published: 2025-06-03
+        archive: blocked
+        quote: >-
+          When enabled, Authorization Control will be disabled, allowing the printer to accept all
+          control instructions without verification.
+      - url: https://wiki.bambulab.com/en/a1/manual/a1-firmware-release-history
+        publisher: Bambu Lab Wiki
+        kind: primary
+        published: 2025-06-03
+        archive: blocked
+        quote: Version 01.05.00.00（20250603）
+      - url: https://wiki.bambulab.com/en/knowledge-sharing/enable-lan-mode
+        publisher: Bambu Lab Wiki
+        kind: primary
+        published: 2026-11-05
+        archive: blocked
+        quote: Bambu Handy app is not available when using LAN Mode.
+      - url: https://arstechnica.com/gadgets/2025/01/bambu-lab-pushes-a-control-system-for-3d-printers-and-boy-did-it-not-go-well/
+        publisher: Ars Technica
+        kind: press
+        published: 2025-01-21
+        archive: https://web.archive.org/web/20250121233510/https://arstechnica.com/gadgets/2025/01/bambu-lab-pushes-a-control-system-for-3d-printers-and-boy-did-it-not-go-well/
+        quote: >-
+          More importantly, the firm said it would update LAN mode on its devices so that there is a
+          Standard Mode with Bambu Connect in place and a Developer Mode that leaves the printer's
+          MQTT, live stream, and FTP functions open.
+      - url: https://hackaday.com/2025/01/17/new-bambu-lab-firmware-update-adds-mandatory-authorization-control-system/
+        publisher: Hackaday
+        kind: press
+        published: 2025-01-17
+        archive: https://web.archive.org/web/20250117235736/https://hackaday.com/2025/01/17/new-bambu-lab-firmware-update-adds-mandatory-authorization-control-system/
+        quote: >-
+          For those who do not wish to use this feature, not upgrading the firmware is currently the
+          only recourse.
+    added: 2026-11-26
+    updated: 2026-11-26
+    sources_checked: 2026-11-26
+    status_checked: 2026-11-26
