@@ -342,6 +342,84 @@ changes:
     sources_checked: 2026-11-21
     status_checked: 2026-11-21
 
+  - id: paid-sharing
+    date: 2025-09
+    date_kind: effective
+    category: paywall
+    title: HBO Max starts telling viewers outside the household to get their own account
+    question: When did HBO Max crack down on password sharing?
+    what_changed: >-
+      In September 2025 HBO Max started telling some viewers outside the owner's household to sign
+      up for their own account, TheWrap reported. Until then its prompts could be skipped. By
+      November its US help centre told people who don't live with the owner to subscribe, and
+      limited how many times the owner could choose I'm Traveling. Since April 2025 subscribers paying HBO Max
+      directly could instead add one Extra Member for $7.99 a month.
+    user_impact: >-
+      Some US viewers using a login from another home were told to get their own subscription, or
+      the owner could pay $7.99 a month for one Extra Member, which bundle subscribers couldn't add.
+    company_said: >-
+      WBD said the Extra Member add-on gave subscribers greater flexibility in managing their
+      accounts.
+    severity: 3
+    status: in-force
+    regions: [US]
+    related: [netflix/paid-sharing, disney-plus/paid-sharing]
+    sources:
+      - url: https://www.thewrap.com/hbo-max-price-hike-and-password-sharing-crackdown-expected-to-accelerate-revenue-in-2026/
+        publisher: TheWrap
+        kind: press
+        published: 2025-11-06
+        archive: https://web.archive.org/web/20251209011525/https://www.thewrap.com/hbo-max-price-hike-and-password-sharing-crackdown-expected-to-accelerate-revenue-in-2026/
+        quote: >-
+          in September started sending messages to some users asking them to sign up for account.
+          Prior to that, it had sent “soft” messages to users that they were able to skip.
+      - url: https://help.hbomax.com/us/Answer/Detail/000002592
+        publisher: HBO Max Help Center
+        kind: primary
+        published: 2025-11-16
+        archive: https://web.archive.org/web/20251116065943/https://help.hbomax.com/us/Answer/Detail/000002592
+        quote: >-
+          If you don't live with the account owner, choose Subscribe Now or Get Started to sign up for
+          your own HBO Max account.
+      - url: https://help.hbomax.com/us/Answer/Detail/000002592
+        publisher: HBO Max Help Center
+        kind: primary
+        published: 2025-11-16
+        archive: https://web.archive.org/web/20251116065943/https://help.hbomax.com/us/Answer/Detail/000002592
+        quote: >-
+          If you're traveling within the U.S. and get the message 'Subscribe today to keep streaming,'
+          select I'm Traveling to continue watching HBO Max. Please note that the number of times you
+          can choose 'I'm Traveling' is limited.
+      - url: https://www.theverge.com/news/754357/hbo-max-password-sharing-annoying-earnings
+        publisher: The Verge
+        kind: press
+        published: 2025-08-07
+        archive: https://web.archive.org/web/20261112153201/https://www.theverge.com/news/754357/hbo-max-password-sharing-annoying-earnings
+        quote: >-
+          In September, you’ll actually start to see the messaging — which right now has been a
+          fairly soft, cancelable messaging — start to get more fixed and such that people have to
+          take action
+      - url: https://press.wbd.com/us/media-release/max-launches-extra-member-add-799mo-across-subscription-tiers-us
+        publisher: Warner Bros. Discovery
+        kind: primary
+        published: 2025-04-22
+        archive: https://web.archive.org/web/20260525162228/https://press.wbd.com/us/media-release/max-launches-extra-member-add-799mo-across-subscription-tiers-us
+        quote: >-
+          This feature costs $7.99/month. The price is the same regardless of which tier an eligible
+          user is subscribed to.
+      - url: https://press.wbd.com/us/media-release/max-launches-extra-member-add-799mo-across-subscription-tiers-us
+        publisher: Warner Bros. Discovery
+        kind: primary
+        published: 2025-04-22
+        archive: https://web.archive.org/web/20260525162228/https://press.wbd.com/us/media-release/max-launches-extra-member-add-799mo-across-subscription-tiers-us
+        quote: >-
+          Extra Member Add-On is currently available for users who subscribe directly to Max
+          (excluding bundle subscribers).
+    added: 2026-11-26
+    updated: 2026-11-26
+    sources_checked: 2026-11-26
+    status_checked: 2026-11-26
+
   - id: price-2025
     date: 2025-10-21
     date_kind: effective
