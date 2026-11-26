@@ -287,7 +287,37 @@ changes:
       Lite subscribers had to pay for full Premium, which costs more and bundles YouTube Music, or
       go back to watching ads.
     severity: 2
-    status: in-force
+    status: reversed
+    reversed:
+      date: 2026-08
+      what: >-
+        YouTube said in August 2026 that it was expanding Premium Lite to all countries where
+        Premium is available, and by late August its help page listed the newer Lite plan in
+        Belgium, Denmark, Finland, Luxembourg, the Netherlands, Norway and Sweden. It isn't the old
+        plan, though: the new Lite makes most videos ad-free, not all of them.
+      sources:
+        - url: https://9to5google.com/2026/08/10/youtube-premium-lite-expansion-monetization-changes/
+          publisher: 9to5Google
+          kind: press
+          published: 2026-08-10
+          archive: https://web.archive.org/web/20261013093201/https://9to5google.com/2026/08/10/youtube-premium-lite-expansion-monetization-changes/
+          quote: We are expanding Premium Lite to all countries where Premium is available.
+        - url: https://support.google.com/youtube/answer/6307365?hl=en
+          publisher: YouTube Help
+          kind: primary
+          published: 2026-08-26
+          archive: https://web.archive.org/web/20260826192949/https://support.google.com/youtube/answer/6307365?hl=en
+          quote: >-
+            Premium Lite memberships available locations Algeria Argentina Australia Austria
+            Bangladesh Belarus Belgium
+        - url: https://blog.youtube/news-and-events/introducing-premium-lite/
+          publisher: YouTube Official Blog
+          kind: primary
+          published: 2025-03-05
+          archive: https://web.archive.org/web/20261117143854/https://blog.youtube/news-and-events/introducing-premium-lite/
+          quote: >-
+            Premium Lite gives viewers a new, more affordable way to enjoy most videos on YouTube
+            ad-free
     regions: [BE, DK, FI, LU, NL, NO, SE]
     sources:
       - url: https://9to5google.com/2023/09/25/youtube-premium-lite-shut-down/
@@ -307,9 +337,9 @@ changes:
           At €6.99 per month, YouTube’s Premium Lite plan first launched in select European
           countries in 2021
     added: 2026-11-20
-    updated: 2026-11-20
+    updated: 2026-11-26
     sources_checked: 2026-11-20
-    status_checked: 2026-11-20
+    status_checked: 2026-11-26
 
   - id: ad-blocker-crackdown
     date: 2023-10-31
