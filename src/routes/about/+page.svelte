@@ -11,7 +11,7 @@
     type Category,
     type Level
   } from '#lib/data/types.ts';
-  import { site, suggestionUrl } from '#lib/site.ts';
+  import { relatedApps, site, suggestionUrl } from '#lib/site.ts';
 
   const kinds = Object.keys(categories) as Category[];
   const gradesIn = (level: Level) =>
@@ -121,7 +121,71 @@
   </p>
 </section>
 
+<section class="related" aria-labelledby="related">
+  <h2 id="related">Other projects, not enshittified (yet)</h2>
+  <ul>
+    {#each relatedApps as app (app.slug)}
+      <li>
+        <a href={app.url} rel="external">
+          <img src="/apps/{app.slug}.svg" alt="" width="32" height="32" loading="lazy" />
+          <b>{app.name}</b>
+          <span>{app.about}</span>
+        </a>
+      </li>
+    {/each}
+  </ul>
+</section>
+
 <style>
+  .related {
+    display: grid;
+    gap: var(--space-4);
+    margin-top: var(--space-7);
+
+    & h2 {
+      font-size: var(--text-lg);
+    }
+
+    & ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr));
+      gap: var(--space-4);
+      padding: 0;
+      list-style: none;
+    }
+
+    & a {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      align-content: start;
+      gap: var(--space-1) var(--space-3);
+      height: 100%;
+      padding: var(--space-4);
+      border: var(--medium) solid var(--edge);
+      background: var(--paper);
+      text-decoration: none;
+
+      &:hover b {
+        text-decoration: underline 2px;
+      }
+    }
+
+    & img {
+      grid-row: span 2;
+    }
+
+    & b {
+      font-family: var(--font-sign);
+      font-size: var(--text-md);
+      line-height: 1.1;
+    }
+
+    & span {
+      font-size: var(--text-sm);
+      color: var(--ink-soft);
+    }
+  }
+
   .signs {
     display: flex;
     flex-wrap: wrap;

@@ -7,6 +7,58 @@ export const site = {
     'Every price rise, new ad format, paywall, removed feature and API lockdown at the big services, dated, sourced and archived.'
 };
 
+// the about page's other projects, with their logos in static/apps
+export const relatedApps = [
+  {
+    slug: 'fineprint',
+    name: 'fineprint',
+    about: 'VPNs graded on what they log, not on who paid for the review',
+    url: 'https://fineprint.peng.ly'
+  },
+  {
+    slug: 'awesome-privacy-guide',
+    name: 'Awesome Privacy Guide',
+    about: 'Private alternatives to the apps that went off',
+    url: 'https://awesomeprivacy.peng.ly'
+  },
+  {
+    slug: 'exitformat',
+    name: 'Exit Format',
+    about: 'How to get your data out before the next price rise',
+    url: 'https://exitformat.peng.ly'
+  },
+  {
+    slug: 'android-rom-compat',
+    name: 'Android ROM Compat',
+    about: 'Keep your phone going after its maker stops caring',
+    url: 'https://android-rom-compat.peng.ly'
+  },
+  {
+    slug: 'git-star-ranking',
+    name: 'git-star-ranking',
+    about: 'GitHub users and repos ranked by stars, with no promoted results',
+    url: 'https://git-star-ranking.com'
+  },
+  {
+    slug: 'afterlife',
+    name: 'Hacker Afterlife',
+    about: 'Every Hacker News link that died, with an archived copy',
+    url: 'https://afterlife.peng.ly'
+  },
+  {
+    slug: 'hearsay',
+    name: 'hearsay',
+    about: "Watch the internet's routing live on a 3D globe",
+    url: 'https://hearsay.peng.ly'
+  },
+  {
+    slug: 'haveibeentrainedon',
+    name: 'Have I Been Trained On?',
+    about: 'Find out if your writing got scraped to train an AI',
+    url: 'https://haveibeentrainedon.peng.ly'
+  }
+];
+
 // every page lives at its path with no trailing slash, and the home page at /
 export const absolute = (path: string) => new URL(path, site.url).href;
 
