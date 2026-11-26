@@ -200,3 +200,8 @@
   name: Bambu Lab
   url: https://bambulab.com
   wikipedia: https://en.wikipedia.org/wiki/Bambu_Lab
+
+- id: arlo
+  name: Arlo
+  url: https://www.arlo.com
+  wikipedia: https://en.wikipedia.org/wiki/Arlo_Technologies
