@@ -24,6 +24,119 @@ plans:
         experience
 
 changes:
+  - id: past-broadcasts-deleted
+    date: 2014-08-27
+    date_kind: effective
+    category: removed-feature
+    title: Twitch ends save forever for past broadcasts and deletes the saved ones
+    question: When did Twitch start deleting saved past broadcasts?
+    what_changed: >-
+      Twitch said it would start removing saved past broadcasts from its servers on 27 August 2014,
+      after taking away the option to save them forever. It announced the change on 6 August: past
+      broadcasts would be kept for up to 14 days, or 60 for Turbo subscribers and Partners.
+      Highlights were still saved indefinitely, and a 2-hour limit on them was dropped the next day.
+    before: Past broadcasts kept up to 3 days, or forever if saved
+    after: Past broadcasts kept up to 14 days, or 60 for Turbo and Partners
+    user_impact: >-
+      Streamers who had saved past broadcasts forever had 3 weeks' notice to export them to YouTube
+      or cut them into highlights before Twitch was due to start deleting them.
+    company_said: >-
+      Twitch said longer storage for past broadcasts, kept in 3 copies and playable on mobile,
+      came at considerable cost and meant dropping save forever, and that it wasn't a move to save
+      space.
+    severity: 2
+    status: in-force
+    related: [twitch/highlights-storage-cap]
+    sources:
+      - url: https://blog.twitch.tv/en/2014/08/06/update-changes-to-vods-on-twitch-169cd8bda850/
+        publisher: Twitch Blog
+        kind: primary
+        published: 2014-08-06
+        archive: https://web.archive.org/web/20190927011316/https://blog.twitch.tv/en/2014/08/06/update-changes-to-vods-on-twitch-169cd8bda850/
+        quote: >-
+          Historically, we’ve offered you the option to save a past broadcast forever.
+      - url: https://blog.twitch.tv/en/2014/08/06/update-changes-to-vods-on-twitch-169cd8bda850/
+        publisher: Twitch Blog
+        kind: primary
+        published: 2014-08-06
+        archive: https://web.archive.org/web/20190927011316/https://blog.twitch.tv/en/2014/08/06/update-changes-to-vods-on-twitch-169cd8bda850/
+        quote: >-
+          In order to enable this, we have to remove the “save forever” option entirely for past broadcasts.
+      - url: https://blog.twitch.tv/en/2014/08/06/update-changes-to-vods-on-twitch-169cd8bda850/
+        publisher: Twitch Blog
+        kind: primary
+        published: 2014-08-06
+        archive: https://web.archive.org/web/20190927011316/https://blog.twitch.tv/en/2014/08/06/update-changes-to-vods-on-twitch-169cd8bda850/
+        quote: >-
+          As for existing past broadcasts, beginning three weeks from today, we will begin removing them from Twitch servers.
+      - url: https://blog.twitch.tv/en/2014/08/06/update-changes-to-vods-on-twitch-169cd8bda850/
+        publisher: Twitch Blog
+        kind: primary
+        published: 2014-08-06
+        archive: https://web.archive.org/web/20190927011316/https://blog.twitch.tv/en/2014/08/06/update-changes-to-vods-on-twitch-169cd8bda850/
+        quote: >-
+          Unfortunately, increasing the amount of storage this way comes at considerable cost.
+      - url: https://blog.twitch.tv/en/2014/08/06/update-changes-to-vods-on-twitch-169cd8bda850/
+        publisher: Twitch Blog
+        kind: primary
+        published: 2014-08-06
+        archive: https://web.archive.org/web/20190927011316/https://blog.twitch.tv/en/2014/08/06/update-changes-to-vods-on-twitch-169cd8bda850/
+        quote: >-
+          To be clear: this is not a move to economize on space.
+      - url: https://blog.twitch.tv/en/2014/08/06/update-changes-to-vods-on-twitch-169cd8bda850/
+        publisher: Twitch Blog
+        kind: primary
+        published: 2014-08-06
+        archive: https://web.archive.org/web/20190927011316/https://blog.twitch.tv/en/2014/08/06/update-changes-to-vods-on-twitch-169cd8bda850/
+        quote: >-
+          Secure storage of your past broadcasts (with triple redundancy, we make three copies of your past broadcasts).
+      - url: https://blog.twitch.tv/en/2014/08/06/update-changes-to-vods-on-twitch-169cd8bda850/
+        publisher: Twitch Blog
+        kind: primary
+        published: 2014-08-06
+        archive: https://web.archive.org/web/20190927011316/https://blog.twitch.tv/en/2014/08/06/update-changes-to-vods-on-twitch-169cd8bda850/
+        quote: >-
+          Ability to watch VODs on mobile and other platforms.
+      - url: https://blog.twitch.tv/en/2014/08/06/update-changes-to-vods-on-twitch-169cd8bda850/
+        publisher: Twitch Blog
+        kind: primary
+        published: 2014-08-06
+        archive: https://web.archive.org/web/20190927011316/https://blog.twitch.tv/en/2014/08/06/update-changes-to-vods-on-twitch-169cd8bda850/
+        quote: >-
+          Highlights will be saved indefinitely; however, they will now be limited to 2 hours in length.
+      - url: https://blog.twitch.tv/en/2014/08/07/two-important-updates-more-to-come-b270cc25b89a/
+        publisher: Twitch Blog
+        kind: primary
+        published: 2014-08-07
+        archive: https://web.archive.org/web/20190927011222/https://blog.twitch.tv/en/2014/08/07/two-important-updates-more-to-come-b270cc25b89a/
+        quote: >-
+          You will once again be able to create highlights of any length and they will be saved indefinitely.
+      - url: https://blog.twitch.tv/en/2014/08/27/important-reminder-past-broadcasts-removed-today-490942b92927/
+        publisher: Twitch Blog
+        kind: primary
+        published: 2014-08-27
+        archive: https://web.archive.org/web/20190927011259/https://blog.twitch.tv/en/2014/08/27/important-reminder-past-broadcasts-removed-today-490942b92927/
+        quote: >-
+          Past broadcasts will begin to be removed from Twitch servers.
+      - url: https://blog.twitch.tv/en/2014/08/27/important-reminder-past-broadcasts-removed-today-490942b92927/
+        publisher: Twitch Blog
+        kind: primary
+        published: 2014-08-27
+        archive: https://web.archive.org/web/20190927011259/https://blog.twitch.tv/en/2014/08/27/important-reminder-past-broadcasts-removed-today-490942b92927/
+        quote: >-
+          Past broadcasts will now be saved for 14 days for all broadcasters, And 60 days for Twitch Turbo subscribers and members of the Twitch Partner Program
+      - url: https://techcrunch.com/2014/08/07/twitch-on-defense-after-abrupt-changes-to-its-content-policies-anger-users/
+        publisher: TechCrunch
+        kind: press
+        published: 2014-08-07
+        archive: https://web.archive.org/web/20140809021539/https://techcrunch.com/2014/08/07/twitch-on-defense-after-abrupt-changes-to-its-content-policies-anger-users/
+        quote: >-
+          In three weeks, Twitch announced, the company will start to remove past broadcasts from its servers. So all the content that its users have created and saved on its servers is up for deletion.
+    added: 2026-11-26
+    updated: 2026-11-26
+    sources_checked: 2026-11-26
+    status_checked: 2014-08-27
+
   - id: surestream-ads
     date: 2016-11-02
     date_kind: announced
