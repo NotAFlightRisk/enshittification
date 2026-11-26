@@ -127,7 +127,13 @@
     {#each relatedApps as app (app.slug)}
       <li>
         <a href={app.url} rel="external">
-          <img src="/apps/{app.slug}.svg" alt="" width="32" height="32" loading="lazy" />
+          <img
+            src="https://portfolio.peng.ly/logos/{app.slug}.svg"
+            alt=""
+            width="32"
+            height="32"
+            loading="lazy"
+          />
           <b>{app.name}</b>
           <span>{app.about}</span>
         </a>

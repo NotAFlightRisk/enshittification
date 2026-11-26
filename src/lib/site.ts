@@ -7,7 +7,7 @@ export const site = {
     'Every price rise, new ad format, paywall, removed feature and API lockdown at the big services, dated, sourced and archived.'
 };
 
-// the about page's other projects, with their logos in static/apps
+// the about page's other projects
 export const relatedApps = [
   {
     slug: 'fineprint',
