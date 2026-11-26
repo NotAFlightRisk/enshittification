@@ -125,3 +125,108 @@ changes:
     updated: 2026-11-22
     sources_checked: 2026-11-22
     status_checked: 2026-11-22
+
+  - id: hub-subscription
+    date: 2022-08-01
+    date_kind: effective
+    category: paywall
+    title: Insteon charges $39.95 a year to use the Insteon Hub app, which had no monthly fees
+    question: When did Insteon start charging a subscription?
+    what_changed: >-
+      Insteon began making Hub owners pay $39.95 a year to keep using the Insteon Hub app after a 1
+      August 2022 deadline, rolling it out slowly. It came with the revival by the users who bought
+      the company in June, and the app's listing had advertised "no monthly fees". Without a
+      subscription the app blocks new logins, and email and push alerts and Alexa and Google
+      Assistant stop working.
+    before: The Insteon Hub app, with no monthly fees
+    after: $39.95 a year, or $69.95 for 2 years at first, or no new app logins
+    user_impact: >-
+      Insteon Hub owners had to pay to keep using the app, alerts and voice control, though
+      Insteon's page today says devices can still be linked and set up by hand without a Hub.
+    severity: 3
+    status: in-force
+    related: [insteon/cloud-shutdown, wink/subscription-required]
+    sources:
+      - url: https://www.insteon.com/blog/2022/6/9/frequently-asked-questions-addressed
+        publisher: Insteon
+        kind: primary
+        published: 2022-06-18
+        archive: https://web.archive.org/web/20230114021203/https://www.insteon.com/blog/2022/6/9/frequently-asked-questions-addressed
+        quote: >-
+          August 1st was the deadline to purchase a subscription. We have begun enforcing the subscription but it’s being rolled out slowly.
+      - url: https://www.insteon.com/blog/2022/6/9/subscription-letter
+        publisher: Insteon
+        kind: primary
+        published: 2022-06-15
+        archive: https://web.archive.org/web/20220615174627/https://www.insteon.com/blog/2022/6/9/subscription-letter
+        quote: >-
+          1-Year Access 39.95 every 12 months Purchase 1 year of Insteon Hub service. Provides mobile app access to Insteon Hub, email and push notifications, voice assistant integrations (Amazon Alexa and Google Assistant), and more.
+      - url: https://support.insteon.com/support-knowledgebase/2022/08/1/what-happens-when-not-paying-for-subscription
+        publisher: Insteon Support
+        kind: primary
+        published: 2022-08-01
+        archive: https://web.archive.org/web/20260206024355/https://support.insteon.com/support-knowledgebase/2022/08/1/what-happens-when-not-paying-for-subscription
+        quote: >-
+          Short answer: you will no longer be able to use the Insteon mobile app to remotely or locally connect to and control your Insteon Hub and associated devices.
+      - url: https://support.insteon.com/support-knowledgebase/2022/08/1/what-happens-when-not-paying-for-subscription
+        publisher: Insteon Support
+        kind: primary
+        published: 2022-08-01
+        archive: https://web.archive.org/web/20260206024355/https://support.insteon.com/support-knowledgebase/2022/08/1/what-happens-when-not-paying-for-subscription
+        quote: >-
+          You will also no longer have access to our third party integrations that use the Insteon Hub cloud services such as our Amazon Alexa and Google Assistant integrations.
+      - url: https://support.insteon.com/support-knowledgebase/2022/08/1/what-happens-when-not-paying-for-subscription
+        publisher: Insteon Support
+        kind: primary
+        published: 2022-08-01
+        archive: https://web.archive.org/web/20260206024355/https://support.insteon.com/support-knowledgebase/2022/08/1/what-happens-when-not-paying-for-subscription
+        quote: >-
+          You will not receive alert notifications (email or push) when a device is activated.
+      - url: https://apps.apple.com/us/app/insteon-for-hub/id564887346
+        publisher: App Store
+        kind: primary
+        published: 2021-07-08
+        archive: https://web.archive.org/web/20210708175920/https://apps.apple.com/us/app/insteon-for-hub/id564887346
+        quote: >-
+          No monthly fees to view, control and monitor your home.
+      - url: https://www.insteon.com/products/connected-home-access
+        publisher: Insteon
+        kind: pricing-page
+        published: 2026-02-06
+        archive: https://web.archive.org/web/20260206004136/https://www.insteon.com/products/connected-home-access
+        quote: >-
+          a Hub and Connected Home Access are required.
+      - url: https://www.insteon.com/products/connected-home-access
+        publisher: Insteon
+        kind: pricing-page
+        published: 2026-02-06
+        archive: https://web.archive.org/web/20260206004136/https://www.insteon.com/products/connected-home-access
+        quote: >-
+          No, you can manually link devices, create scenes, virtual 3-way circuits, custom ramp
+          rates, and custom on-levels.
+      - url: https://www.insteon.com/blog/2022/6/9/subscription-letter
+        publisher: Insteon
+        kind: primary
+        published: 2022-06-15
+        archive: https://web.archive.org/web/20220615174627/https://www.insteon.com/blog/2022/6/9/subscription-letter
+        quote: >-
+          Get $9.95 off the subscription price when you purchase the 2 Year Access plan - on sale
+          now for $69.95
+      - url: https://www.insteon.com/blog/2022/6/9/fnustys354bfmcmchr36wgvrn5h41z
+        publisher: Insteon
+        kind: primary
+        published: 2022-06-09
+        archive: https://web.archive.org/web/20220609182605/https://www.insteon.com/blog/2022/6/9/fnustys354bfmcmchr36wgvrn5h41z
+        quote: >-
+          We are a small group of passionate Insteon users that have successfully acquired Insteon.
+      - url: https://staceyoniot.com/how-upset-should-you-really-be-about-insteons-subscription-plans/
+        publisher: Stacey on IoT
+        kind: press
+        published: 2022-08-02
+        archive: https://web.archive.org/web/20220802130701/https://staceyoniot.com/how-upset-should-you-really-be-about-insteons-subscription-plans/
+        quote: >-
+          Again, we understand that having to pay for things you previously didn’t have to pay for isn’t appealing.
+    added: 2026-11-26
+    updated: 2026-11-26
+    sources_checked: 2026-11-26
+    status_checked: 2026-11-26
