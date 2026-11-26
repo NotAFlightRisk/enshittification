@@ -502,3 +502,80 @@ changes:
     updated: 2026-11-23
     sources_checked: 2026-11-23
     status_checked: 2026-11-23
+
+  - id: family-qr-verification
+    date: 2026-10-19
+    date_kind: reported
+    category: lock-out
+    title: Spotify starts asking some Family members to scan a QR code in person with the manager
+    question: When did Spotify start QR code checks on Family plans?
+    what_changed: >-
+      By mid-October 2026 Spotify was asking some Premium Family members to verify they live with
+      the plan manager by scanning a QR code on the manager's phone. Before that, its help page
+      described verification only by full address. Both people have to be in the same place, and the code
+      changes every few seconds.
+    before: Members verified by giving their full address
+    after: Some members also have 7 days to scan a QR code on the manager's phone, in person
+    user_impact: >-
+      Members who couldn't scan the code with the manager in 7 days couldn't join a different Family
+      or Duo plan for 12 months, and 9to5Google said they would be moved to the free plan.
+    severity: 2
+    status: in-force
+    related: [youtube/family-plan-household-pauses]
+    sources:
+      - url: https://support.spotify.com/us/article/family-address-verification/
+        publisher: Spotify Support
+        kind: primary
+        published: 2026-10-15
+        archive: https://web.archive.org/web/20261015091753/https://support.spotify.com/us/article/family-address-verification/
+        quote: >-
+          We may ask some Premium Family members to verify they live with the plan manager by
+          scanning a QR code.
+      - url: https://support.spotify.com/us/article/family-address-verification/
+        publisher: Spotify Support
+        kind: primary
+        published: 2026-10-15
+        archive: https://web.archive.org/web/20261015091753/https://support.spotify.com/us/article/family-address-verification/
+        quote: >-
+          Both the manager and member need to be in the same place to complete the scan.
+      - url: https://support.spotify.com/us/article/family-address-verification/
+        publisher: Spotify Support
+        kind: primary
+        published: 2026-10-15
+        archive: https://web.archive.org/web/20261015091753/https://support.spotify.com/us/article/family-address-verification/
+        quote: >-
+          Plan members have 7 days to complete the QR code scan after getting the notification.
+      - url: https://support.spotify.com/us/article/family-address-verification/
+        publisher: Spotify Support
+        kind: primary
+        published: 2026-10-15
+        archive: https://web.archive.org/web/20261015091753/https://support.spotify.com/us/article/family-address-verification/
+        quote: They can’t join a different Family or Duo plan for 12 months
+      - url: https://support.spotify.com/us/article/family-address-verification/
+        publisher: Spotify Support
+        kind: primary
+        published: 2026-09-01
+        archive: https://web.archive.org/web/20260901083008/https://support.spotify.com/us/article/family-address-verification/
+        quote: >-
+          We ask members to verify that they live with the plan manager by providing their full
+          address
+      - url: https://9to5google.com/2026/10/19/spotify-qr-code-verification-family-sharing/
+        publisher: 9to5Google
+        kind: press
+        published: 2026-10-19
+        archive: https://web.archive.org/web/20261020003704/https://9to5google.com/2026/10/19/spotify-qr-code-verification-family-sharing/
+        quote: >-
+          Users on Reddit spotted this rolling out, adding that the QR code changes “every few
+          seconds.”
+      - url: https://9to5google.com/2026/10/19/spotify-qr-code-verification-family-sharing/
+        publisher: 9to5Google
+        kind: press
+        published: 2026-10-19
+        archive: https://web.archive.org/web/20261020003704/https://9to5google.com/2026/10/19/spotify-qr-code-verification-family-sharing/
+        quote: >-
+          Otherwise, they’re automatically pushed down to the free plan as soon as the window
+          closes.
+    added: 2026-11-26
+    updated: 2026-11-26
+    sources_checked: 2026-11-26
+    status_checked: 2026-11-26
