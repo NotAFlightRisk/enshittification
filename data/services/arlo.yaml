@@ -1,0 +1,329 @@
+service: arlo
+name: Arlo
+company: arlo
+url: https://www.arlo.com
+wikipedia: https://en.wikipedia.org/wiki/Arlo_Technologies
+
+plans:
+  - id: secure-single-us
+    name: Arlo Secure (single camera)
+    region: US
+    currency: USD
+    billing: month
+    since: 2021-07-21
+    price: 2.99
+    incomplete: >-
+      Arlo moved to new Plus and Premium plans on 3 January 2025, and we haven't found what that
+      meant for people already on this plan, so it's listed, not charted.
+    source:
+      url: https://www.arlo.com/en-us/arlo-unveils-ai-powered-service-plans-complete-with-new-one-touch-emergency-response-and-coverage-for-unlimited-devices.html
+      publisher: Arlo
+      kind: primary
+      published: 2021-07-21
+      archive: https://web.archive.org/web/20210722030806/https://www.arlo.com/en-us/arlo-unveils-ai-powered-service-plans-complete-with-new-one-touch-emergency-response-and-coverage-for-unlimited-devices.html
+      quote: For customers with a single device, Arlo offers a $2.99 a month option.
+
+  - id: secure-unlimited-us
+    name: Arlo Secure (unlimited cameras)
+    region: US
+    currency: USD
+    billing: month
+    since: 2021-07-21
+    price: 9.99
+    incomplete: >-
+      Arlo moved to new Plus and Premium plans on 3 January 2025, and we haven't found what that
+      meant for people already on this plan, so it's listed, not charted.
+    source:
+      url: https://www.arlo.com/en-us/arlo-unveils-ai-powered-service-plans-complete-with-new-one-touch-emergency-response-and-coverage-for-unlimited-devices.html
+      publisher: Arlo
+      kind: primary
+      published: 2021-07-21
+      archive: https://web.archive.org/web/20210722030806/https://www.arlo.com/en-us/arlo-unveils-ai-powered-service-plans-complete-with-new-one-touch-emergency-response-and-coverage-for-unlimited-devices.html
+      quote: >-
+        Arlo Secure plans start at $9.99 a month to support unlimited security devices in the home.
+
+  - id: secure-plus-us
+    name: Arlo Secure Plus
+    region: US
+    currency: USD
+    billing: month
+    since: 2021-07-21
+    price: 14.99
+    incomplete: >-
+      Arlo moved to new Plus and Premium plans on 3 January 2025, and we haven't found what that
+      meant for people already on this plan, so it's listed, not charted.
+    source:
+      url: https://www.arlo.com/en-us/arlo-unveils-ai-powered-service-plans-complete-with-new-one-touch-emergency-response-and-coverage-for-unlimited-devices.html
+      publisher: Arlo
+      kind: primary
+      published: 2021-07-21
+      archive: https://web.archive.org/web/20210722030806/https://www.arlo.com/en-us/arlo-unveils-ai-powered-service-plans-complete-with-new-one-touch-emergency-response-and-coverage-for-unlimited-devices.html
+      quote: >-
+        Arlo Secure Plus not only supports all household cameras, but also increases video recording
+        quality up to 4K for supported devices and includes the Emergency Response feature for $14.99
+        a month.
+
+changes:
+  - id: end-of-life-policy
+    date: 2023-01
+    date_kind: announced
+    category: paywall
+    title: Arlo plans to take free 7-day cloud storage off older cameras at end of life
+    what_changed: >-
+      Arlo said in January 2023 that older cameras reaching end of life would lose free 7-day cloud
+      storage, leaving cloud recording to Arlo Secure. The Wire-Free and Pro
+      cameras would reach end of life on 1 April 2023, the Pro 2, Q, Q+, Baby, Security Light and
+      Audio Doorbell on 1 January 2024, and the free storage would go from them by 1 January 2024.
+    before: Free 7-day cloud storage on older cameras
+    after: Cloud storage only with an Arlo Secure subscription, as planned
+    user_impact: >-
+      Owners of the listed cameras stood to lose free cloud storage, which The Verge called a big
+      selling point, unless they paid for Arlo Secure, though they could still live stream and store
+      clips locally on a base station.
+    company_said: >-
+      Arlo said it was migrating its video storage to a new platform that delivers better scalability
+      and efficiency.
+    severity: 3
+    status: reversed
+    reversed:
+      date: 2023-02
+      what: >-
+        Arlo's CEO Matthew McRae said in February 2023 that existing customers would keep free video
+        storage, and that end-of-life dates for some older cameras would move a further year to 2025.
+        Arlo's help page now says free 7-day storage stays even after a camera reaches end of life,
+        though motion and audio email notifications and E911 calling went in 2023.
+      sources:
+        - url: https://www.theverge.com/2023/2/13/23597509/arlo-reverse-eol-policy-free-cloud-storage
+          publisher: The Verge
+          kind: press
+          published: 2023-02-13
+          archive: https://web.archive.org/web/20230213154323/https://www.theverge.com/2023/2/13/23597509/arlo-reverse-eol-policy-free-cloud-storage
+          quote: >-
+            announcing that the company will not remove free storage of videos for existing
+            customers
+            and that it is extending the EOL dates for older cameras a further year to 2025
+        - url: https://kb.arlo.com/000063018/End-of-Life-for-Arlo-Devices-and-Services
+          publisher: Arlo Support
+          kind: primary
+          published: 2025-05-15
+          archive: https://web.archive.org/web/20251004104115/https://kb.arlo.com/000063018/End-of-Life-for-Arlo-Devices-and-Services
+          quote: >-
+            You will continue to have access to free 7-day storage for those applicable devices even
+            if they enter the EOL stage.
+        - url: https://kb.arlo.com/000063018/End-of-Life-for-Arlo-Devices-and-Services
+          publisher: Arlo Support
+          kind: primary
+          published: 2025-05-15
+          archive: https://web.archive.org/web/20251004104115/https://kb.arlo.com/000063018/End-of-Life-for-Arlo-Devices-and-Services
+          quote: >-
+            The following Arlo hardware devices were moved to EOL on January 1, 2025: Arlo Pro 2
+            (VMC4030P)
+        - url: https://kb.arlo.com/000063018/End-of-Life-for-Arlo-Devices-and-Services
+          publisher: Arlo Support
+          kind: primary
+          published: 2025-05-15
+          archive: https://web.archive.org/web/20251004104115/https://kb.arlo.com/000063018/End-of-Life-for-Arlo-Devices-and-Services
+          quote: >-
+            The following Arlo services were moved to EOL in 2023: Email Notifications for motion
+            and audio detection E911 Emergency Calling
+        - url: https://kb.arlo.com/000063018/End-of-Life-for-Arlo-Legacy-Cameras-and-Arlo-Services
+          publisher: Arlo Support
+          kind: primary
+          published: 2024-04-24
+          archive: https://web.archive.org/web/20240905134224/https://kb.arlo.com/000063018/End-of-Life-for-Arlo-Legacy-Cameras-and-Arlo-Services
+          quote: >-
+            The following Arlo hardware devices will be moved to EOL on July 1, 2023: Arlo Wire-Free
+            Camera (VMC3030) Arlo Pro Camera (VMC4030)
+        - url: https://kb.arlo.com/000063018/End-of-Life-for-Arlo-Legacy-Cameras-and-Arlo-Services
+          publisher: Arlo Support
+          kind: primary
+          published: 2024-04-24
+          archive: https://web.archive.org/web/20240905134224/https://kb.arlo.com/000063018/End-of-Life-for-Arlo-Legacy-Cameras-and-Arlo-Services
+          quote: >-
+            Arlo will provide critical security updates for hardware to one year beyond the
+            hardware's EOL date.
+    sources:
+      - url: https://kb.arlo.com/000063018/Arlo-Legacy-Cameras-End-of-Life
+        publisher: Arlo Support
+        kind: primary
+        published: 2023-01-01
+        archive: https://web.archive.org/web/20230101133608/https://kb.arlo.com/000063018/Arlo-Legacy-Cameras-End-of-Life
+        quote: >-
+          The following Arlo Services for the above products will be moved to EOL on January 1, 2024:
+          Arlo system notification emails E911 Free 7-day rolling cloud storage
+      - url: https://kb.arlo.com/000063018/Arlo-Legacy-Cameras-End-of-Life
+        publisher: Arlo Support
+        kind: primary
+        published: 2023-01-01
+        archive: https://web.archive.org/web/20230101133608/https://kb.arlo.com/000063018/Arlo-Legacy-Cameras-End-of-Life
+        quote: >-
+          The following Arlo hardware devices will be moved to EOL on April 1, 2023: Arlo Wire-Free
+          Camera (VMC3030) Arlo Pro Camera (VMC4030)
+      - url: https://kb.arlo.com/000063018/Arlo-Legacy-Cameras-End-of-Life
+        publisher: Arlo Support
+        kind: primary
+        published: 2023-01-01
+        archive: https://web.archive.org/web/20230101133608/https://kb.arlo.com/000063018/Arlo-Legacy-Cameras-End-of-Life
+        quote: >-
+          EOL devices can utilize Arlo’s new cloud video storage platform, which is available with the
+          Arlo Secure subscription service.
+      - url: https://kb.arlo.com/000063018/Arlo-Legacy-Cameras-End-of-Life
+        publisher: Arlo Support
+        kind: primary
+        published: 2023-01-01
+        archive: https://web.archive.org/web/20230101133608/https://kb.arlo.com/000063018/Arlo-Legacy-Cameras-End-of-Life
+        quote: >-
+          Arlo is migrating its video storage to a new platform that delivers better scalability and
+          efficiency
+      - url: https://kb.arlo.com/000063018/Arlo-Legacy-Cameras-End-of-Life
+        publisher: Arlo Support
+        kind: primary
+        published: 2023-01-01
+        archive: https://web.archive.org/web/20230101133608/https://kb.arlo.com/000063018/Arlo-Legacy-Cameras-End-of-Life
+        quote: >-
+          store video clips locally with a compatible Arlo SmartHub or Base Station
+      - url: https://9to5google.com/2023/01/02/arlo-end-of-life-policy/
+        publisher: 9to5Google
+        kind: press
+        published: 2023-01-02
+        archive: https://web.archive.org/web/20230102210616/https://9to5google.com/2023/01/02/arlo-end-of-life-policy/
+        quote: >-
+          The EOL of the Generation 3 (VMC3030) and Pro (VMC4030) cameras means that certain features
+          of, and support for, these cameras will become unavailable, including 7-day cloud storage,
+          firmware updates, and email notifications.
+      - url: https://www.theverge.com/2023/2/13/23597509/arlo-reverse-eol-policy-free-cloud-storage
+        publisher: The Verge
+        kind: press
+        published: 2023-02-13
+        archive: https://web.archive.org/web/20230213154323/https://www.theverge.com/2023/2/13/23597509/arlo-reverse-eol-policy-free-cloud-storage
+        quote: >-
+          The end-of-life policy was due to go into effect January 1st, 2023, and removed a big selling
+          point — seven-day free cloud storage — for many Arlo cams.
+    added: 2026-11-26
+    updated: 2026-11-26
+    sources_checked: 2026-11-26
+    status_checked: 2026-11-26
+
+  - id: secure-price-2023
+    date: 2023-01-03
+    date_kind: announced
+    effective: 2023-02-02
+    category: price-rise
+    title: Arlo Secure goes from $9.99 to $12.99 a month, and single camera to $4.99
+    what_changed: >-
+      Arlo said on 3 January 2023 that US Arlo Secure would go from $9.99 to $12.99 a month on 2
+      February 2023, and the single-camera plan from $2.99 to $4.99. Secure Plus went from $14.99 to
+      $17.99, each from a subscriber's next billing cycle.
+    before: $9.99 a month
+    after: $12.99 a month
+    user_impact: >-
+      US Arlo Secure subscribers whose price changed were told by email at least 30 days before it
+      went up, though monthly unlimited subscribers could keep their old price on an annual plan.
+    company_said: >-
+      Arlo said the rise would help it keep driving innovation and offering new security features
+      and enhancements.
+    severity: 2
+    status: in-force
+    regions: [US]
+    prices:
+      - { plan: secure-unlimited-us, from: 9.99, to: 12.99 }
+      - { plan: secure-single-us, from: 2.99, to: 4.99 }
+      - { plan: secure-plus-us, from: 14.99, to: 17.99 }
+    related: [arlo/single-camera-price-2024]
+    sources:
+      - url: https://kb.arlo.com/000063015/Arlo-Secure-Plan-Pricing-Update-February-2-2023
+        publisher: Arlo Support
+        kind: primary
+        published: 2023-01-03
+        archive: https://web.archive.org/web/20230103221809/https://kb.arlo.com/000063015/Arlo-Secure-Plan-Pricing-Update-February-2-2023
+        quote: >-
+          On the next billing cycle, on or after February 2, 2023 (US Pacific Standard Time), your
+          subscription rate will change.
+      - url: https://kb.arlo.com/000063015/Arlo-Secure-Plan-Pricing-Update-February-2-2023
+        publisher: Arlo Support
+        kind: primary
+        published: 2023-01-03
+        archive: https://web.archive.org/web/20230103221809/https://kb.arlo.com/000063015/Arlo-Secure-Plan-Pricing-Update-February-2-2023
+        quote: >-
+          Starting at $4.99/month for a single camera, the new pricing will go into effect on February
+          2, 2023.
+      - url: https://kb.arlo.com/000063015/Arlo-Secure-Plan-Pricing-Update-February-2-2023
+        publisher: Arlo Support
+        kind: primary
+        published: 2023-01-03
+        archive: https://web.archive.org/web/20230103221809/https://kb.arlo.com/000063015/Arlo-Secure-Plan-Pricing-Update-February-2-2023
+        quote: >-
+          United States USD 12.99 9.99 per month (when paying 119.88 annually) 17.99 14.99 per month
+          (when paying 179.88 annually)
+      - url: https://kb.arlo.com/000063015/Arlo-Secure-Plan-Pricing-Update-February-2-2023
+        publisher: Arlo Support
+        kind: primary
+        published: 2023-01-03
+        archive: https://web.archive.org/web/20230103221809/https://kb.arlo.com/000063015/Arlo-Secure-Plan-Pricing-Update-February-2-2023
+        quote: >-
+          For customers in the US and Canada, you can keep your current monthly unlimited plan price by
+          enrolling in an annual subscription plan.
+      - url: https://kb.arlo.com/000063015/Arlo-Secure-Plan-Pricing-Update-February-2-2023
+        publisher: Arlo Support
+        kind: primary
+        published: 2023-01-03
+        archive: https://web.archive.org/web/20230103221809/https://kb.arlo.com/000063015/Arlo-Secure-Plan-Pricing-Update-February-2-2023
+        quote: >-
+          If your price is changing, Arlo will send you an email, with details about the price change
+          at least 30 days before the billing date on which your price will increase.
+      - url: https://kb.arlo.com/000063015/Arlo-Secure-Plan-Pricing-Update-February-2-2023
+        publisher: Arlo Support
+        kind: primary
+        published: 2023-01-03
+        archive: https://web.archive.org/web/20230103221809/https://kb.arlo.com/000063015/Arlo-Secure-Plan-Pricing-Update-February-2-2023
+        quote: Customers have enjoyed the same pricing on subscription plans since 2014.
+    added: 2026-11-26
+    updated: 2026-11-26
+    sources_checked: 2026-11-26
+    status_checked: 2023-01-03
+
+  - id: single-camera-price-2024
+    date: 2024-01-31
+    date_kind: reported
+    category: price-rise
+    title: Arlo Secure's single-camera plan goes from $4.99 to $7.99 a month
+    what_changed: >-
+      Arlo emailed single-camera Arlo Secure subscribers in January 2024 that the plan would go from
+      $4.99 to $7.99 a month from their next billing period. The unlimited plan stayed at $12.99, so
+      a single camera cost just $5 less than unlimited.
+    before: $4.99 a month
+    after: $7.99 a month
+    user_impact: >-
+      Single-camera Arlo Secure subscribers paid more from their next billing period, and new
+      customers paid the new price straight away.
+    company_said: Arlo cited increasing costs in developing innovative solutions.
+    severity: 2
+    status: in-force
+    regions: [US]
+    prices:
+      - { plan: secure-single-us, from: 4.99, to: 7.99 }
+    related: [arlo/secure-price-2023]
+    sources:
+      - url: https://9to5google.com/2024/01/31/arlo-price-increase-2024-single-camera/
+        publisher: 9to5Google
+        kind: press
+        published: 2024-01-31
+        archive: https://web.archive.org/web/20240131170847/https://9to5google.com/2024/01/31/arlo-price-increase-2024-single-camera/
+        quote: The plan, which previously cost $4.99/month, now runs $7.99/month.
+      - url: https://9to5google.com/2024/01/31/arlo-price-increase-2024-single-camera/
+        publisher: 9to5Google
+        kind: press
+        published: 2024-01-31
+        archive: https://web.archive.org/web/20240131170847/https://9to5google.com/2024/01/31/arlo-price-increase-2024-single-camera/
+        quote: >-
+          The new price won’t kick in for existing subscribers until their next billing period.
+      - url: https://www.arlo.com/en-us/arlosecure.html
+        publisher: Arlo
+        kind: pricing-page
+        published: 2024-01-30
+        archive: https://web.archive.org/web/20240130173144/https://www.arlo.com/en-us/arlosecure.html
+        quote: $7.99 /mo Single Camera $149.99 /yr $12.99 /mo Unlimited Cameras
+    added: 2026-11-26
+    updated: 2026-11-26
+    sources_checked: 2026-11-26
+    status_checked: 2024-01-31
