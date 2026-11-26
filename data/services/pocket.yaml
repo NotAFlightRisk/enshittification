@@ -1,0 +1,141 @@
+service: pocket
+name: Pocket
+company: mozilla
+url: https://getpocket.com
+wikipedia: https://en.wikipedia.org/wiki/Pocket_(service)
+
+changes:
+  - id: shutdown
+    date: 2025-07-08
+    date_kind: effective
+    category: removed-feature
+    title: Mozilla shuts down Pocket
+    question: When did Pocket shut down?
+    what_changed: >-
+      Mozilla shut down Pocket on 8 July 2025, having announced on 22 May 2025 that it would close
+      the read-it-later app. Pocket left the app stores and stopped taking sign-ups and new Premium
+      subscriptions on the day of the announcement, and after 8 July the website was export-only.
+      Mozilla first gave users until 8 October 2025 to export their saves, then moved the deadline,
+      and on 12 November 2025 it switched off export and the Pocket API and queued all user data for
+      permanent deletion.
+    user_impact: >-
+      Pocket users had to export their saved articles by 12 November 2025 or lose them, apps built
+      on Pocket's API could no longer load people's lists or save, tag or delete articles, Kobo
+      eReaders that showed people's Pocket saves lost Pocket on 8 July, and annual Premium
+      subscribers got a prorated refund.
+    company_said: >-
+      Mozilla said the way people use the web had evolved, so it was putting its resources into
+      projects that better matched their browsing habits.
+    severity: 4
+    status: in-force
+    sources:
+      - url: https://support.mozilla.org/en-US/kb/future-of-pocket
+        publisher: Mozilla Support
+        kind: primary
+        published: 2025-05-22
+        archive: https://web.archive.org/web/20250522163613/https://support.mozilla.org/en-US/kb/future-of-pocket
+        quote: We’ve made the difficult decision to shut down Pocket on July 8, 2025.
+      - url: https://support.mozilla.org/en-US/kb/future-of-pocket
+        publisher: Mozilla Support
+        kind: primary
+        published: 2025-07
+        archive: https://web.archive.org/web/20250802094606/https://support.mozilla.org/en-US/kb/future-of-pocket
+        quote: As of July 8, 2025, Pocket is no longer available.
+      - url: https://blog.mozilla.org/en/mozilla/building-whats-next/
+        publisher: The Mozilla Blog
+        kind: primary
+        published: 2025-05-22
+        archive: https://web.archive.org/web/20250522164022/https://blog.mozilla.org/en/mozilla/building-whats-next/
+        quote: >-
+          You will no longer be able to download Pocket or purchase a new Pocket Premium
+          subscription from May 22, 2025.
+      - url: https://support.mozilla.org/en-US/kb/future-of-pocket
+        publisher: Mozilla Support
+        kind: primary
+        published: 2025-05-22
+        archive: https://web.archive.org/web/20250522163613/https://support.mozilla.org/en-US/kb/future-of-pocket
+        quote: >-
+          May 22, 2025 Pocket removed from app stores Monthly subscription renewals disabled New
+          Pocket account sign-ups disabled
+      - url: https://support.mozilla.org/en-US/kb/future-of-pocket
+        publisher: Mozilla Support
+        kind: primary
+        published: 2025-05-22
+        archive: https://web.archive.org/web/20250522163613/https://support.mozilla.org/en-US/kb/future-of-pocket
+        quote: >-
+          After July 8, Pocket will move into export-only mode. Users can export saves anytime until
+          October 8, 2025, after which user data will be permanently deleted.
+      - url: https://support.mozilla.org/en-US/kb/future-of-pocket
+        publisher: Mozilla Support
+        kind: primary
+        published: 2025-05-22
+        archive: https://web.archive.org/web/20250522163613/https://support.mozilla.org/en-US/kb/future-of-pocket
+        quote: >-
+          Any product that leverages Pocket’s API will no longer be able to load users’ lists, or
+          save, tag, or delete articles.
+      - url: https://support.mozilla.org/en-US/kb/future-of-pocket
+        publisher: Mozilla Support
+        kind: primary
+        published: 2025-11-12
+        archive: https://web.archive.org/web/20260101091132/https://support.mozilla.org/en-US/kb/future-of-pocket
+        quote: >-
+          As of November 12, 2025, user data export has been disabled, and all user data has been
+          queued for permanent deletion.
+      - url: https://support.mozilla.org/en-US/kb/future-of-pocket
+        publisher: Mozilla Support
+        kind: primary
+        published: 2025-11-12
+        archive: https://web.archive.org/web/20260101091132/https://support.mozilla.org/en-US/kb/future-of-pocket
+        quote: >-
+          The Pocket API was disabled on November 12, 2025, concurrent with the end of the user
+          export window and the beginning of data deletion.
+      - url: https://support.mozilla.org/en-US/kb/future-of-pocket
+        publisher: Mozilla Support
+        kind: primary
+        published: 2025-05-22
+        archive: https://web.archive.org/web/20250522163613/https://support.mozilla.org/en-US/kb/future-of-pocket
+        quote: >-
+          On July 8, 2025, Annual subscriptions will be cancelled and Annual users will receive a
+          prorated refund automatically to the original payment method.
+      - url: https://support.mozilla.org/en-US/kb/future-of-pocket
+        publisher: Mozilla Support
+        kind: primary
+        published: 2025-05-22
+        archive: https://web.archive.org/web/20250522163613/https://support.mozilla.org/en-US/kb/future-of-pocket
+        quote: >-
+          But the way people use the web has evolved, so we’re channeling our resources into
+          projects that better match their browsing habits and online needs.
+      - url: https://help.kobo.com/hc/en-us/articles/360017763753-Use-the-Pocket-App-with-your-Kobo-eReader
+        publisher: Kobo Help
+        kind: primary
+        published: 2025-05
+        archive: https://web.archive.org/web/20250521105131/https://help.kobo.com/hc/en-us/articles/360017763753-Use-the-Pocket-App-with-your-Kobo-eReader
+        quote: >-
+          After you complete the setup process, your eReader will sign in to your Pocket account and
+          show any articles that you've saved from Pocket.
+      - url: https://help.kobo.com/hc/en-us/articles/360017763753-Use-the-Pocket-App-with-your-Kobo-eReader
+        publisher: Kobo Help
+        kind: primary
+        published: 2025-07
+        archive: https://web.archive.org/web/20250716031420/https://help.kobo.com/hc/en-us/articles/360017763753-Use-the-Pocket-App-with-your-Kobo-eReader
+        quote: As of July 8, 2025, Pocket is no longer available.
+      - url: https://techcrunch.com/2025/05/22/mozilla-is-shutting-down-read-it-later-app-pocket/
+        publisher: TechCrunch
+        kind: press
+        published: 2025-05-22
+        archive: https://web.archive.org/web/20250522181701/https://techcrunch.com/2025/05/22/mozilla-is-shutting-down-read-it-later-app-pocket/
+        quote: >-
+          Mozilla announced on Thursday that it’s shutting down Pocket, a read-it-later app it
+          acquired in 2017, on July 8.
+      - url: https://www.vice.com/en/article/mozilla-pocket-gets-one-month-reprieve/
+        publisher: VICE
+        kind: press
+        published: 2025-10-09
+        archive: https://web.archive.org/web/20251009111037/https://www.vice.com/en/article/mozilla-pocket-gets-one-month-reprieve/
+        quote: >-
+          We made the difficult decision to shut down Pocket on July 8, 2025, with only the Pocket
+          Web data export page live until November 6, 2025.
+    added: 2026-11-26
+    updated: 2026-11-26
+    sources_checked: 2026-11-26
+    status_checked: 2026-11-26

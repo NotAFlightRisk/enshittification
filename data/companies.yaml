@@ -190,3 +190,8 @@
 - id: kong
   name: Kong
   url: https://konghq.com
+
+- id: mozilla
+  name: Mozilla
+  url: https://www.mozilla.org
+  wikipedia: https://en.wikipedia.org/wiki/Mozilla_Corporation
