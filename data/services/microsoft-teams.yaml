@@ -1,0 +1,129 @@
+service: microsoft-teams
+name: Microsoft Teams
+company: microsoft
+url: https://www.microsoft.com/en-us/microsoft-teams
+wikipedia: https://en.wikipedia.org/wiki/Microsoft_Teams
+
+changes:
+  - id: free-classic-retired
+    date: 2023-04-12
+    date_kind: effective
+    category: paywall
+    title: Microsoft retires Teams Free (classic), and keeping its data in Teams costs $4 a user
+    question: When did Microsoft retire Teams Free (classic)?
+    what_changed: >-
+      Microsoft said its legacy free Teams app for business, Teams Free (classic), would no longer
+      be available after 12 April 2023. After that, it said, users would lose access to their
+      account and its data would be deleted, and its page still gave that date over a year later. To
+      keep their chats, files, teams and meetings, organisations had to upgrade all the profiles on
+      their account to a paid plan, such as Teams Essentials at $4 per user a month or Microsoft 365
+      Business Basic at $6. The newer Microsoft Teams (free) was the free option, but none of their
+      data would move across to it, though files could be saved somewhere else first.
+    before: Free Teams for business, with its chats, files, teams and meetings
+    after: $4 per user a month to keep them, or a new free account with nothing moved over
+    user_impact: >-
+      Organisations on Teams Free (classic) had to upgrade every profile to keep their chats, files,
+      teams and meetings, or move to a new Microsoft Teams (free) account without them, saving their
+      files somewhere else first.
+    company_said: >-
+      Microsoft said it was making the change to invest in a single free Teams experience across
+      personal and small business.
+    severity: 3
+    status: in-force
+    sources:
+      - url: https://www.microsoft.com/en-us/microsoft-teams/free-classic-retirement
+        publisher: Microsoft
+        kind: primary
+        published: 2023-01-13
+        archive: https://web.archive.org/web/20230113135631/https://www.microsoft.com/en-us/microsoft-teams/free-classic-retirement
+        quote: >-
+          After April 12, 2023, Microsoft Teams Free (classic), the legacy free Teams app for
+          business, will no longer be available.
+      - url: https://www.microsoft.com/en-us/microsoft-teams/free-classic-retirement
+        publisher: Microsoft
+        kind: primary
+        published: 2023-01-13
+        archive: https://web.archive.org/web/20230113135631/https://www.microsoft.com/en-us/microsoft-teams/free-classic-retirement
+        quote: >-
+          You have until April 12, 2023 to view and export your files. After that date, you’ll lose
+          access to Teams Free (classic) and your data will be deleted.
+      - url: https://www.microsoft.com/en-us/microsoft-teams/free-classic-retirement
+        publisher: Microsoft
+        kind: primary
+        published: 2023-01-13
+        archive: https://web.archive.org/web/20230113135631/https://www.microsoft.com/en-us/microsoft-teams/free-classic-retirement
+        quote: For $4 per user/month
+      - url: https://www.microsoft.com/en-us/microsoft-teams/free-classic-retirement
+        publisher: Microsoft
+        kind: primary
+        published: 2023-01-13
+        archive: https://web.archive.org/web/20230113135631/https://www.microsoft.com/en-us/microsoft-teams/free-classic-retirement
+        quote: >-
+          Upgrading to Microsoft 365 Business Basic for $6 per user/month will enable you to
+          continue using Teams, maintain access to your chats, files, teams, and meetings
+      - url: https://www.microsoft.com/en-us/microsoft-teams/free-classic-retirement
+        publisher: Microsoft
+        kind: primary
+        published: 2023-01-13
+        archive: https://web.archive.org/web/20230113135631/https://www.microsoft.com/en-us/microsoft-teams/free-classic-retirement
+        quote: To transfer your data, you must upgrade all profiles on your organization’s account.
+      - url: https://www.microsoft.com/en-us/microsoft-teams/free-classic-retirement
+        publisher: Microsoft
+        kind: primary
+        published: 2023-01-13
+        archive: https://web.archive.org/web/20230113135631/https://www.microsoft.com/en-us/microsoft-teams/free-classic-retirement
+        quote: >-
+          You’ll be able to view and save files in your current account through April 12, 2023,
+          however, none of it will transfer to your new account.
+      - url: https://www.microsoft.com/en-us/microsoft-teams/free-classic-retirement
+        publisher: Microsoft
+        kind: primary
+        published: 2023-05-07
+        archive: https://web.archive.org/web/20230507143556/https://www.microsoft.com/en-us/microsoft-teams/free-classic-retirement
+        quote: >-
+          If you’re using Microsoft Teams Free (classic) in your organization, you must upgrade all
+          profiles on your organization’s account to continue accessing your data.
+      - url: https://www.microsoft.com/en-us/microsoft-teams/free-classic-retirement
+        publisher: Microsoft
+        kind: primary
+        published: 2023-05-07
+        archive: https://web.archive.org/web/20230507143556/https://www.microsoft.com/en-us/microsoft-teams/free-classic-retirement
+        quote: >-
+          After that date, you'll lose access to your account and your data will be deleted.
+      - url: https://www.microsoft.com/en-us/microsoft-teams/free-classic-retirement
+        publisher: Microsoft
+        kind: primary
+        published: 2023-05-07
+        archive: https://web.archive.org/web/20230507143556/https://www.microsoft.com/en-us/microsoft-teams/free-classic-retirement
+        quote: >-
+          None of your data will transfer, but you’ll be able to view and save the files that are in
+          your current account to another location through April 12, 2023.
+      - url: https://www.microsoft.com/en-us/microsoft-teams/free-classic-retirement
+        publisher: Microsoft
+        kind: primary
+        published: 2023-05-07
+        archive: https://web.archive.org/web/20230507143556/https://www.microsoft.com/en-us/microsoft-teams/free-classic-retirement
+        quote: >-
+          Microsoft is making this change to invest in a single free Teams experience across
+          personal and small business.
+      - url: https://www.microsoft.com/en-us/microsoft-teams/free-classic-retirement
+        publisher: Microsoft
+        kind: primary
+        published: 2024-05-20
+        archive: https://web.archive.org/web/20240520150040/https://www.microsoft.com/en-us/microsoft-teams/free-classic-retirement
+        quote: >-
+          After April 12, 2023, Microsoft Teams Free (classic), the legacy free Teams app for
+          business, will no longer be available.
+      - url: https://www.theregister.com/2023/02/07/microsoft_warns_teams_free_classic/
+        publisher: The Register
+        kind: press
+        published: 2023-02-07
+        archive: https://web.archive.org/web/20260222033917/https://www.theregister.com/2023/02/07/microsoft_warns_teams_free_classic/
+        quote: >-
+          Microsoft will officially kill its legacy free Teams app for business, Teams Free
+          (classic), on April 12, with all chats, files and other data lost unless you switch to a
+          paid version.
+    added: 2026-11-27
+    updated: 2026-11-27
+    sources_checked: 2026-11-27
+    status_checked: 2026-11-27
