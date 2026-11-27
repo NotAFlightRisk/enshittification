@@ -1,0 +1,201 @@
+service: yahoo-groups
+name: Yahoo Groups
+company: yahoo
+url: https://web.archive.org/web/20201012194937/https://help.yahoo.com/kb/groups/SLN35505.html
+wikipedia: https://en.wikipedia.org/wiki/Yahoo!_Groups
+
+changes:
+  - id: content-removed
+    date: 2019-12
+    date_kind: effective
+    category: removed-feature
+    title: Yahoo Groups deletes all the messages, files and photos posted to its site
+    question: When did Yahoo Groups delete its content?
+    what_changed: >-
+      Yahoo removed everything people had posted to the Yahoo Groups site in December 2019. Its help
+      centre said by 16 October 2019 that uploads would stop and that all previously posted content
+      would be permanently removed after 14 December, and uploads stopped on 28 October (first set
+      for 21 October). Message history, files, photos, polls, links, calendars, databases and
+      attachments went from the site, along with web conversations, email updates and message
+      digests. Groups carried on by email, public groups were to become private or restricted, and
+      Yahoo took download requests until 31 January 2020.
+    before: Message history, files and photos kept on the site
+    after: Group email and a group directory, with everything posted deleted
+    user_impact: >-
+      Members and admins of Yahoo Groups lost the message history, files and photos kept on the site
+      unless they saved them first, and new members of a public group had to ask for or get an
+      invite.
+    severity: 3
+    status: in-force
+    related: [yahoo-groups/shutdown]
+    sources:
+      - url: https://help.yahoo.com/kb/groups/SLN31010.html
+        publisher: Yahoo Help
+        kind: primary
+        published: 2019-10-16
+        archive: https://web.archive.org/web/20191016092004/https://help.yahoo.com/kb/groups/SLN31010.html
+        quote: >-
+          Beginning October 21, you won't be able to upload any more content to the site, and as of
+          December 14 all previously posted content on the site will be permanently removed.
+      - url: https://help.yahoo.com/kb/groups/SLN31010.html
+        publisher: Yahoo Help
+        kind: primary
+        published: 2019-12-21
+        archive: https://web.archive.org/web/20191221021234/https://help.yahoo.com/kb/groups/SLN31010.html
+        quote: >-
+          Beginning October 28, new content won't be able to be uploaded to the site, and all
+          previously posted content on the site will be permanently removed after December 14. We
+          will continue to process requests to download your content as long as they are submitted
+          by January 31, 2020.
+      - url: https://help.yahoo.com/kb/groups/SLN31010.html
+        publisher: Yahoo Help
+        kind: primary
+        published: 2019-10-16
+        archive: https://web.archive.org/web/20191016092004/https://help.yahoo.com/kb/groups/SLN31010.html
+        quote: >-
+          What features will go away? Files Polls Links Photos Folders Calendar Database Attachments
+          Conversations Email Updates Message Digest Message History
+      - url: https://help.yahoo.com/kb/groups/SLN31010.html
+        publisher: Yahoo Help
+        kind: primary
+        published: 2019-10-16
+        archive: https://web.archive.org/web/20191016092004/https://help.yahoo.com/kb/groups/SLN31010.html
+        quote: >-
+          The Yahoo Groups site will continue to exist, however, all public groups will be made
+          private or restricted. Any new group members will need to request an invite or be invited
+          by an admin.
+      - url: https://help.yahoo.com/kb/groups/SLN31010.html
+        publisher: Yahoo Help
+        kind: primary
+        published: 2019-10-16
+        archive: https://web.archive.org/web/20191016092004/https://help.yahoo.com/kb/groups/SLN31010.html
+        quote: >-
+          You'll still be able to communicate with your groups via email and search for private
+          groups on the site.
+      - url: https://help.yahoo.com/kb/groups/SLN35505.html
+        publisher: Yahoo Help
+        kind: primary
+        published: 2020-12-16
+        archive: https://web.archive.org/web/20201216175204/https://help.yahoo.com/kb/groups/SLN35505.html
+        quote: >-
+          We removed all user-generated content (photos, files, attachments etc) from the site in
+          December 2019.
+      - url: https://www.theverge.com/2019/10/16/20917710/yahoo-groups-deleting-all-content-upload-message-boards-email-communities
+        publisher: The Verge
+        kind: press
+        published: 2019-10-16
+        archive: https://web.archive.org/web/20191016235521/https://www.theverge.com/2019/10/16/20917710/yahoo-groups-deleting-all-content-upload-message-boards-email-communities
+        quote: >-
+          Once the old content is deleted, all you’ll be able to do on Yahoo Groups is browse the
+          groups directory, request to be invited to one, and, if you’re in a group, email that
+          group.
+    added: 2026-11-27
+    updated: 2026-11-27
+    sources_checked: 2026-11-27
+    status_checked: 2026-11-27
+
+  - id: shutdown
+    date: 2020-12-15
+    date_kind: effective
+    category: removed-feature
+    title: Yahoo shuts down Yahoo Groups
+    question: When did Yahoo Groups shut down?
+    what_changed: >-
+      Yahoo shut down Yahoo Groups on 15 December 2020, having announced it by 12 October 2020, the
+      day it stopped new groups being created. From 15 December the site was gone, emails to and
+      from groups were no longer delivered, including emails sent to a yahoogroups.com address, and
+      whatever was left on the site, member lists included, was permanently removed.
+    user_impact: >-
+      Groups still running on Yahoo Groups lost the service that carried their emails and had to
+      move somewhere else to carry on, only admins could export a member list before the cut-off to
+      invite people to a new group, and Yahoo pointed them at Nextdoor, Facebook Groups, Google
+      Groups and Groups.io.
+    company_said: >-
+      Yahoo said Yahoo Groups had seen a steady decline in usage over several years, and no longer
+      fitted its long-term strategy.
+    severity: 4
+    status: in-force
+    related: [yahoo-groups/content-removed]
+    sources:
+      - url: https://help.yahoo.com/kb/groups/SLN35505.html
+        publisher: Yahoo Help
+        kind: primary
+        published: 2020-10-12
+        archive: https://web.archive.org/web/20201012194937/https://help.yahoo.com/kb/groups/SLN35505.html
+        quote: Yahoo has made the decision to shut down Yahoo Groups.
+      - url: https://help.yahoo.com/kb/groups/SLN35505.html
+        publisher: Yahoo Help
+        kind: primary
+        published: 2020-10-12
+        archive: https://web.archive.org/web/20201012194937/https://help.yahoo.com/kb/groups/SLN35505.html
+        quote: >-
+          October 12 - The creation of new groups will be disabled. December 15 - You'll no longer
+          be able to send and receive emails from Yahoo Groups. The website will no longer be
+          accessible.
+      - url: https://help.yahoo.com/kb/groups/SLN35505.html
+        publisher: Yahoo Help
+        kind: primary
+        published: 2020-12-16
+        archive: https://web.archive.org/web/20201216175204/https://help.yahoo.com/kb/groups/SLN35505.html
+        quote: Yahoo Groups has permanently shut down as of December 15, 2020.
+      - url: https://help.yahoo.com/kb/groups/SLN35505.html
+        publisher: Yahoo Help
+        kind: primary
+        published: 2020-12-16
+        archive: https://web.archive.org/web/20201216175204/https://help.yahoo.com/kb/groups/SLN35505.html
+        quote: >-
+          As of December 15, 2020 members can no longer access the site, send or receive emails from
+          their groups or access any settings or info that was stored on the site, including lists
+          of group members. Any info that remained on the site has been permanently removed.
+      - url: https://help.yahoo.com/kb/groups/SLN35505.html
+        publisher: Yahoo Help
+        kind: primary
+        published: 2020-12-16
+        archive: https://web.archive.org/web/20201216175204/https://help.yahoo.com/kb/groups/SLN35505.html
+        quote: >-
+          Emails to @yahoogroups.com will also stop working, any emails sent after December 15th
+          will no longer be delivered to your Yahoo Group members.
+      - url: https://help.yahoo.com/kb/groups/SLN35505.html
+        publisher: Yahoo Help
+        kind: primary
+        published: 2020-10-12
+        archive: https://web.archive.org/web/20201012194937/https://help.yahoo.com/kb/groups/SLN35505.html
+        quote: >-
+          How do I get a list of my group members so I can communicate with them after Yahoo Groups
+          ends? Only admins will be able to invite group members to a new group using the following
+          actions
+      - url: https://help.yahoo.com/kb/groups/SLN35505.html
+        publisher: Yahoo Help
+        kind: primary
+        published: 2020-12-16
+        archive: https://web.archive.org/web/20201216175204/https://help.yahoo.com/kb/groups/SLN35505.html
+        quote: >-
+          The site we recommend the most is Nextdoor, as it has a help page advising how to switch
+          your Yahoo Groups to their site
+      - url: https://help.yahoo.com/kb/groups/SLN35505.html
+        publisher: Yahoo Help
+        kind: primary
+        published: 2020-10-12
+        archive: https://web.archive.org/web/20201012194937/https://help.yahoo.com/kb/groups/SLN35505.html
+        quote: >-
+          Facebook Groups - Requires a Facebook account Google Groups - The admin of the group must
+          have a Gmail account Groups.io - The paid version allows for importing members from Yahoo
+          Groups
+      - url: https://help.yahoo.com/kb/groups/SLN35505.html
+        publisher: Yahoo Help
+        kind: primary
+        published: 2020-10-12
+        archive: https://web.archive.org/web/20201012194937/https://help.yahoo.com/kb/groups/SLN35505.html
+        quote: Yahoo Groups has seen a steady decline in usage over the last several years.
+      - url: https://help.yahoo.com/kb/groups/SLN35505.html
+        publisher: Yahoo Help
+        kind: primary
+        published: 2020-10-12
+        archive: https://web.archive.org/web/20201012194937/https://help.yahoo.com/kb/groups/SLN35505.html
+        quote: >-
+          we must sometimes make difficult decisions regarding products that no longer fit our
+          long-term strategy
+    added: 2026-11-27
+    updated: 2026-11-27
+    sources_checked: 2026-11-27
+    status_checked: 2026-11-27
