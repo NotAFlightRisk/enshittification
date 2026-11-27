@@ -205,3 +205,8 @@
   name: Arlo
   url: https://www.arlo.com
   wikipedia: https://en.wikipedia.org/wiki/Arlo_Technologies
+
+- id: bose
+  name: Bose
+  url: https://www.bose.com
+  wikipedia: https://en.wikipedia.org/wiki/Bose_Corporation
