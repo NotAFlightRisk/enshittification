@@ -1,0 +1,125 @@
+service: yahoo-answers
+name: Yahoo Answers
+company: yahoo
+url: https://web.archive.org/web/20210505000149/https://help.yahoo.com/kb/SLN35642.html
+wikipedia: https://en.wikipedia.org/wiki/Yahoo!_Answers
+
+changes:
+  - id: shutdown
+    date: 2021-05-04
+    date_kind: effective
+    category: removed-feature
+    title: Yahoo shuts down Yahoo Answers
+    question: When did Yahoo Answers shut down?
+    what_changed: >-
+      Yahoo shut down Yahoo Answers on 4 May 2021, having announced it on 5 April 2021. New
+      questions and answers stopped on 20 April, and from 4 May the site was no longer accessible.
+      People could request a download of their own questions, answers and images until 30 June 2021,
+      but not anyone else's.
+    before: A question and answer site, running since 2005
+    after: Site no longer accessible, with a download of your own posts until 30 June 2021
+    user_impact: >-
+      People who asked and answered questions on Yahoo Answers lost the site, and could keep only a
+      download of their own questions, answers and images if they asked for it by 30 June 2021,
+      after which Yahoo said their data would be deleted. Posted questions and answers were no
+      longer viewable on Yahoo Answers.
+    company_said: >-
+      Yahoo said Yahoo Answers had declined in popularity as the needs of its members changed, so it
+      was shifting resources away from it to products that better served them.
+    severity: 4
+    status: in-force
+    related: [yahoo-groups/shutdown]
+    sources:
+      - url: https://help.yahoo.com/kb/SLN35642.html
+        publisher: Yahoo Help
+        kind: primary
+        published: 2021-05-05
+        archive: https://web.archive.org/web/20210505000149/https://help.yahoo.com/kb/SLN35642.html
+        quote: Yahoo Answers has shut down as of May 4, 2021.
+      - url: https://help.yahoo.com/kb/SLN35642.html
+        publisher: Yahoo Help
+        kind: primary
+        published: 2021-04-05
+        archive: https://web.archive.org/web/20210405173435/https://help.yahoo.com/kb/SLN35642.html
+        quote: Yahoo has made the decision to shut down Yahoo Answers.
+      - url: https://help.yahoo.com/kb/SLN35642.html
+        publisher: Yahoo Help
+        kind: primary
+        published: 2021-04-05
+        archive: https://web.archive.org/web/20210405173435/https://help.yahoo.com/kb/SLN35642.html
+        quote: >-
+          April 20th - You won't be able to post new Yahoo Answers questions or answer other users'
+          questions. May 4th - The website won't be accessible. If you try to access Yahoo Answers
+          on May 4th you'll be redirected to the Yahoo homepage.
+      - url: https://help.yahoo.com/kb/SLN35642.html
+        publisher: Yahoo Help
+        kind: primary
+        published: 2021-04-05
+        archive: https://web.archive.org/web/20210405173435/https://help.yahoo.com/kb/SLN35642.html
+        quote: >-
+          Your Yahoo Answers data download will return all user-generated content including your
+          Questions list, Questions, Answers list, Answers, and any images. You won't be able to
+          download other users' content, questions, or answers.
+      - url: https://help.yahoo.com/kb/SLN35642.html
+        publisher: Yahoo Help
+        kind: primary
+        published: 2021-05-05
+        archive: https://web.archive.org/web/20210505000149/https://help.yahoo.com/kb/SLN35642.html
+        quote: >-
+          As of May 4, 2021 you can no longer access the site, but you can still request a download
+          of your Yahoo Answers data until June 30, 2021.
+      - url: https://help.yahoo.com/kb/SLN35642.html
+        publisher: Yahoo Help
+        kind: primary
+        published: 2023-06-22
+        archive: https://web.archive.org/web/20230622183203/https://help.yahoo.com/kb/SLN35642.html
+        quote: As of June 30, 2021 you can no longer download your Yahoo Answers content.
+      - url: https://help.yahoo.com/kb/SLN35642.html
+        publisher: Yahoo Help
+        kind: primary
+        published: 2021-05-05
+        archive: https://web.archive.org/web/20210505000149/https://help.yahoo.com/kb/SLN35642.html
+        quote: >-
+          Yahoo Answers was once a key part of Yahoo's products and services, but it has declined in
+          popularity over the years as the needs of our members have changed. We decided to shift
+          our resources away from Yahoo Answers to focus on products that better serve our members
+      - url: https://www.theverge.com/2021/4/5/22368488/yahoo-answers-shutdown-may-4-internet-era-over-rip
+        publisher: The Verge
+        kind: press
+        published: 2021-04-05
+        archive: https://web.archive.org/web/20210405192534/https://www.theverge.com/2021/4/5/22368488/yahoo-answers-shutdown-may-4-internet-era-over-rip
+        quote: >-
+          With you and millions of other users, we built the best place on the web to ask and answer
+          questions on a variety of topics, creating a community of global knowledge sharing.
+      - url: https://www.theverge.com/2021/4/5/22368488/yahoo-answers-shutdown-may-4-internet-era-over-rip
+        publisher: The Verge
+        kind: press
+        published: 2021-04-05
+        archive: https://web.archive.org/web/20210405192534/https://www.theverge.com/2021/4/5/22368488/yahoo-answers-shutdown-may-4-internet-era-over-rip
+        quote: The platform has been operating since 2005.
+      - url: https://www.theverge.com/2021/4/5/22368488/yahoo-answers-shutdown-may-4-internet-era-over-rip
+        publisher: The Verge
+        kind: press
+        published: 2021-04-05
+        archive: https://web.archive.org/web/20210405192534/https://www.theverge.com/2021/4/5/22368488/yahoo-answers-shutdown-may-4-internet-era-over-rip
+        quote: >-
+          announced the change at the top of the Yahoo Answers homepage
+      - url: https://www.theverge.com/2021/4/5/22368488/yahoo-answers-shutdown-may-4-internet-era-over-rip
+        publisher: The Verge
+        kind: press
+        published: 2021-04-05
+        archive: https://web.archive.org/web/20210405192534/https://www.theverge.com/2021/4/5/22368488/yahoo-answers-shutdown-may-4-internet-era-over-rip
+        quote: >-
+          However, you can still view any posted questions and answers until May 4th.
+      - url: https://www.theverge.com/2021/4/5/22368488/yahoo-answers-shutdown-may-4-internet-era-over-rip
+        publisher: The Verge
+        kind: press
+        published: 2021-04-05
+        archive: https://web.archive.org/web/20210405192534/https://www.theverge.com/2021/4/5/22368488/yahoo-answers-shutdown-may-4-internet-era-over-rip
+        quote: >-
+          You will be able to do this until June 30th, 2021 after which your Yahoo Answers data will
+          be securely deleted and no longer available.
+    added: 2026-11-27
+    updated: 2026-11-27
+    sources_checked: 2026-11-27
+    status_checked: 2026-11-27
