@@ -210,3 +210,8 @@
   name: Bose
   url: https://www.bose.com
   wikipedia: https://en.wikipedia.org/wiki/Bose_Corporation
+
+- id: yahoo
+  name: Yahoo
+  url: https://www.yahooinc.com
+  wikipedia: https://en.wikipedia.org/wiki/Yahoo
