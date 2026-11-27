@@ -215,3 +215,8 @@
   name: Yahoo
   url: https://www.yahooinc.com
   wikipedia: https://en.wikipedia.org/wiki/Yahoo
+
+- id: vorwerk
+  name: Vorwerk
+  url: https://www.vorwerk.com
+  wikipedia: https://en.wikipedia.org/wiki/Vorwerk

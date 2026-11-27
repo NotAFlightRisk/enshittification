@@ -1,0 +1,193 @@
+service: neato
+name: Neato
+company: vorwerk
+url: https://neatorobotics.com
+wikipedia: https://en.wikipedia.org/wiki/Neato_Robotics
+
+changes:
+  - id: cloud-shutdown
+    date: 2025-10-06
+    date_kind: announced
+    category: bricked
+    title: Neato shuts down its cloud, so its robot vacuums lose app control and schedules
+    what_changed: >-
+      Neato said on 6 October 2025 that it was phasing out the cloud its robot vacuums rely on, and
+      emailed customers that it would be phased out during Q4 2025. When Neato closed in 2023,
+      Vorwerk had said it would support existing Neato products for the next 5 years. In November
+      2026, under commitments made to Italy's competition authority, Neato offered eligible private
+      customers in Europe who bought a D4 to D10 on or after 1 October 2020 a free Vorwerk VR7 for a
+      D8, D9 or D10, or a EUR 500 voucher for an older model, in return for the robot, undamaged
+      apart from normal wear.
+    before: App control, schedules, maps and no-go zones
+    after: Manual cleaning, started from the robot's button
+    user_impact: >-
+      Neato owners lost access to the MyNeato app, and with it remote starts, cleaning schedules,
+      maps and no-go zones, while the robots carry on cleaning manually, with a press of the button
+      starting a full house run.
+    company_said: >-
+      Neato said cybersecurity standards, compliance obligations and regulations had advanced since
+      2023, so its existing cloud could no longer be maintained in a reliable way.
+    severity: 4
+    status: in-force
+    sources:
+      - url: https://support.neatorobotics.com/support/solutions/articles/204000073686-announcement-6th-oct-2025
+        publisher: Neato Robotics Support
+        kind: primary
+        published: 2025-10-06
+        archive: https://web.archive.org/web/20251010113432/https://support.neatorobotics.com/support/solutions/articles/204000073686-announcement-6th-oct-2025
+        quote: >-
+          Prior to its closure, we had committed to providing five years of cloud services for our
+          products
+      - url: https://support.neatorobotics.com/support/solutions/articles/204000073686-announcement-6th-oct-2025
+        publisher: Neato Robotics Support
+        kind: primary
+        published: 2025-10-06
+        archive: https://web.archive.org/web/20251010113432/https://support.neatorobotics.com/support/solutions/articles/204000073686-announcement-6th-oct-2025
+        quote: We are now phasing out Neato cloud services.
+      - url: https://support.neatorobotics.com/support/solutions/articles/204000073686-announcement-6th-oct-2025
+        publisher: Neato Robotics Support
+        kind: primary
+        published: 2025-10-06
+        archive: https://web.archive.org/web/20251010113432/https://support.neatorobotics.com/support/solutions/articles/204000073686-announcement-6th-oct-2025
+        quote: >-
+          Your Neato robot will continue to function manually. Simply press the button once to
+          launch a full house run.
+      - url: https://support.neatorobotics.com/support/solutions/articles/204000073686-announcement-6th-oct-2025
+        publisher: Neato Robotics Support
+        kind: primary
+        published: 2025-10-06
+        archive: https://web.archive.org/web/20251010113432/https://support.neatorobotics.com/support/solutions/articles/204000073686-announcement-6th-oct-2025
+        quote: >-
+          Since 2023, cybersecurity standards, compliance obligations, and regulatory frameworks
+          have advanced significantly. Under these new conditions, the existing cloud infrastructure
+          can no longer be maintained in a reliable and future-proof way.
+      - url: https://www.engadget.com/shuttered-robot-vacuum-maker-neato-is-ending-cloud-services-sooner-than-planned-171604823.html
+        publisher: Engadget
+        kind: press
+        published: 2025-10-25
+        archive: https://web.archive.org/web/20251025175224/https://www.engadget.com/shuttered-robot-vacuum-maker-neato-is-ending-cloud-services-sooner-than-planned-171604823.html
+        quote: >-
+          has notified customers that "cloud services are being phased out during Q4 2025,"
+      - url: https://www.engadget.com/shuttered-robot-vacuum-maker-neato-is-ending-cloud-services-sooner-than-planned-171604823.html
+        publisher: Engadget
+        kind: press
+        published: 2025-10-25
+        archive: https://web.archive.org/web/20251025175224/https://www.engadget.com/shuttered-robot-vacuum-maker-neato-is-ending-cloud-services-sooner-than-planned-171604823.html
+        quote: >-
+          While Neato's parent company Vorwerk Group initially said cloud support would continue for
+          at least five years following its closure
+      - url: https://www.engadget.com/shuttered-robot-vacuum-maker-neato-is-ending-cloud-services-sooner-than-planned-171604823.html
+        publisher: Engadget
+        kind: press
+        published: 2025-10-25
+        archive: https://web.archive.org/web/20251025175224/https://www.engadget.com/shuttered-robot-vacuum-maker-neato-is-ending-cloud-services-sooner-than-planned-171604823.html
+        quote: >-
+          Without use of the app, customers won't be able to set cleaning schedules, remotely start
+          the vacuums or assign No-go zones.
+      - url: https://www.theverge.com/news/806246/neato-robovac-cloud-shutdown
+        publisher: The Verge
+        kind: press
+        published: 2025-10-24
+        archive: https://web.archive.org/web/20251024180942/https://www.theverge.com/news/806246/neato-robovac-cloud-shutdown
+        quote: >-
+          Users are receiving emails notifying them that their Neato robovacs will no longer have
+          access to cloud services, meaning they can’t be controlled through the robots’ MyNeato app
+          anymore.
+      - url: https://www.theverge.com/news/806246/neato-robovac-cloud-shutdown
+        publisher: The Verge
+        kind: press
+        published: 2025-10-24
+        archive: https://web.archive.org/web/20251024180942/https://www.theverge.com/news/806246/neato-robovac-cloud-shutdown
+        quote: >-
+          Vorwerk, the company that purchased Neato robovacs, is reneging on its promise to keep the
+          bots’ server running for 5 years.
+      - url: https://techcrunch.com/2023/05/01/neato-robotics-is-being-shut-down-after-18-years/
+        publisher: TechCrunch
+        kind: press
+        published: 2023-05-01
+        archive: https://web.archive.org/web/20230501192807/https://techcrunch.com/2023/05/01/neato-robotics-is-being-shut-down-after-18-years/
+        quote: >-
+          Vorwerk says its team will continue to support existing Neato products for the next five
+          years.
+      - url: https://www.heise.de/en/news/Vorwerk-shuts-down-Neato-cloud-thousands-of-users-demand-open-source-solution-11206228.html
+        publisher: heise online
+        kind: press
+        published: 2026-03-10
+        archive: https://web.archive.org/web/20260311145439/https://www.heise.de/en/news/Vorwerk-shuts-down-Neato-cloud-thousands-of-users-demand-open-source-solution-11206228.html
+        quote: >-
+          Following the premature shutdown of the Neato cloud platform by Vorwerk, thousands of
+          users demand their smart robot vacuums be kept functional
+      - url: https://www.heise.de/en/news/Vorwerk-shuts-down-Neato-cloud-thousands-of-users-demand-open-source-solution-11206228.html
+        publisher: heise online
+        kind: press
+        published: 2026-03-10
+        archive: https://web.archive.org/web/20260311145439/https://www.heise.de/en/news/Vorwerk-shuts-down-Neato-cloud-thousands-of-users-demand-open-source-solution-11206228.html
+        quote: >-
+          Without a cloud connection, the devices can no longer be controlled via app, cleaning
+          schedules cannot be set, or mapping functions can be used.
+      - url: https://support.neatorobotics.com/support/solutions/articles/204000080637-vorwerk-launches-voluntary-exchange-program-for-neato-customers-in-europe
+        publisher: Neato Robotics Support
+        kind: primary
+        published: 2026-04-27
+        archive: https://web.archive.org/web/20260429020110/https://support.neatorobotics.com/support/solutions/articles/204000080637-vorwerk-launches-voluntary-exchange-program-for-neato-customers-in-europe
+        quote: >-
+          Vorwerk takes the feedback and concerns of Neato customers seriously and has therefore
+          examined what best can be done for them following the discontinuation of Neato cloud
+          services.
+      - url: https://support.neatorobotics.com/en/support/solutions/articles/204000086838-neato-expands-its-customer-compensation-programme-for-customers-across-europe
+        publisher: Neato Robotics Support
+        kind: primary
+        published: 2026-11-20
+        archive: https://web.archive.org/web/20261127022124/https://support.neatorobotics.com/en/support/solutions/articles/204000086838-neato-expands-its-customer-compensation-programme-for-customers-across-europe
+        quote: >-
+          The programme is addressed to all Neato customers across Europe who acquired a Neato robot
+          (models D4 to D10) on or after 1 October 2020
+      - url: https://support.neatorobotics.com/en/support/solutions/articles/204000086838-neato-expands-its-customer-compensation-programme-for-customers-across-europe
+        publisher: Neato Robotics Support
+        kind: primary
+        published: 2026-11-20
+        archive: https://web.archive.org/web/20261127022124/https://support.neatorobotics.com/en/support/solutions/articles/204000086838-neato-expands-its-customer-compensation-programme-for-customers-across-europe
+        quote: >-
+          Eligible customers with older Neato models (D4, D6 and D7) purchased on or after 1 October
+          2020 will receive a EUR 500 voucher
+      - url: https://support.neatorobotics.com/en/support/solutions/articles/204000086838-neato-expands-its-customer-compensation-programme-for-customers-across-europe
+        publisher: Neato Robotics Support
+        kind: primary
+        published: 2026-11-20
+        archive: https://web.archive.org/web/20261127022124/https://support.neatorobotics.com/en/support/solutions/articles/204000086838-neato-expands-its-customer-compensation-programme-for-customers-across-europe
+        quote: >-
+          in implementation of the commitments made with the Italian Competition Authority
+      - url: https://support.neatorobotics.com/en/support/solutions/articles/204000086838-neato-expands-its-customer-compensation-programme-for-customers-across-europe
+        publisher: Neato Robotics Support
+        kind: primary
+        published: 2026-11-20
+        archive: https://web.archive.org/web/20261127022124/https://support.neatorobotics.com/en/support/solutions/articles/204000086838-neato-expands-its-customer-compensation-programme-for-customers-across-europe
+        quote: >-
+          The programme is available to eligible private customers who purchased a Neato robot on or
+          after 1 October 2020.
+      - url: https://support.neatorobotics.com/en/support/solutions/articles/204000086838-neato-expands-its-customer-compensation-programme-for-customers-across-europe
+        publisher: Neato Robotics Support
+        kind: primary
+        published: 2026-11-20
+        archive: https://web.archive.org/web/20261127022124/https://support.neatorobotics.com/en/support/solutions/articles/204000086838-neato-expands-its-customer-compensation-programme-for-customers-across-europe
+        quote: >-
+          Eligible customers with Neato D8, D9 or D10 models can have their device
+      - url: https://support.neatorobotics.com/en/support/solutions/articles/204000086838-neato-expands-its-customer-compensation-programme-for-customers-across-europe
+        publisher: Neato Robotics Support
+        kind: primary
+        published: 2026-11-20
+        archive: https://web.archive.org/web/20261127022124/https://support.neatorobotics.com/en/support/solutions/articles/204000086838-neato-expands-its-customer-compensation-programme-for-customers-across-europe
+        quote: >-
+          replaced free of charge with a Vorwerk Kobold/ Folletto VR7 robot vacuum cleaner.
+      - url: https://support.neatorobotics.com/en/support/solutions/articles/204000086838-neato-expands-its-customer-compensation-programme-for-customers-across-europe
+        publisher: Neato Robotics Support
+        kind: primary
+        published: 2026-11-20
+        archive: https://web.archive.org/web/20261127022124/https://support.neatorobotics.com/en/support/solutions/articles/204000086838-neato-expands-its-customer-compensation-programme-for-customers-across-europe
+        quote: >-
+          subject to the return of their undamaged Neato robot (except for wear and tear consistent
+          with its normal use)
+    added: 2026-11-27
+    updated: 2026-11-27
+    sources_checked: 2026-11-27
+    status_checked: 2026-11-27
