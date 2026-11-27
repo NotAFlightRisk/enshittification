@@ -1,0 +1,105 @@
+service: vine
+name: Vine
+company: x-corp
+url: https://vine.co
+wikipedia: https://en.wikipedia.org/wiki/Vine_(service)
+
+changes:
+  - id: shutdown
+    date: 2017-01-17
+    date_kind: effective
+    category: removed-feature
+    title: Twitter shuts down Vine's social network and turns the app into Vine Camera
+    question: When did Vine shut down?
+    what_changed: >-
+      Twitter shut down Vine's social network on 17 January 2017, turning off sharing, liking,
+      commenting and revining. An update turned the iOS and Android app into Vine Camera, which made
+      short looping videos to save to the phone or post to Twitter, and the Windows Phone app was
+      discontinued. Twitter had announced on 27 October 2016 that it would discontinue the mobile
+      app, and in December it said people could download their Vines from the app or the website,
+      and that all of them would stay on the vine.co website.
+    user_impact: >-
+      Vine's users could no longer share, like, comment on or revine videos, and creators could no
+      longer post to Vine or share new videos with followers there, though they could download their
+      Vines first.
+    severity: 4
+    status: in-force
+    sources:
+      - url: https://medium.com/@vine/important-news-about-vine-909c5f4ae7a7
+        publisher: Vine
+        kind: primary
+        published: 2016-10-27
+        archive: https://web.archive.org/web/20161027173126/https://medium.com/@vine/important-news-about-vine-909c5f4ae7a7
+        quote: >-
+          Today, we are sharing the news that in the coming months we’ll be discontinuing the mobile
+          app.
+      - url: https://medium.com/@vine/important-news-about-vine-909c5f4ae7a7
+        publisher: Vine
+        kind: primary
+        published: 2016-10-27
+        archive: https://web.archive.org/web/20161027173126/https://medium.com/@vine/important-news-about-vine-909c5f4ae7a7
+        quote: >-
+          Since 2013, millions of people have turned to Vine to laugh at loops and see creativity
+          unfold.
+      - url: https://medium.com/@vine/vine-update-59426a5adfab
+        publisher: Vine
+        kind: primary
+        published: 2016-12-16
+        archive: https://web.archive.org/web/20161216193528/https://medium.com/@vine/vine-update-59426a5adfab
+        quote: >-
+          Here’s what’s coming: in January, we’re transitioning the Vine app to a pared-down Vine
+          Camera
+      - url: https://medium.com/@vine/vine-update-59426a5adfab
+        publisher: Vine
+        kind: primary
+        published: 2016-12-16
+        archive: https://web.archive.org/web/20161216193528/https://medium.com/@vine/vine-update-59426a5adfab
+        quote: >-
+          With this camera app you’ll still be able to make six-second looping videos, and either
+          post them directly to Twitter or save them to your phone.
+      - url: https://medium.com/@vine/vine-update-59426a5adfab
+        publisher: Vine
+        kind: primary
+        published: 2016-12-16
+        archive: https://web.archive.org/web/20161216193528/https://medium.com/@vine/vine-update-59426a5adfab
+        quote: >-
+          And last but not least, you can now download your Vines through the app or the website.
+          All of your Vines will continue to live on the vine.co website so you can browse all of
+          the amazing videos you created over the years.
+      - url: https://medium.com/@vine/fixing-a-bug-in-the-vine-archive-47385e44ac2
+        publisher: Vine
+        kind: primary
+        published: 2017-05-19
+        archive: https://web.archive.org/web/20170520175522/https://medium.com/@vine/fixing-a-bug-in-the-vine-archive-47385e44ac2
+        quote: In Jan 2017, the Vine app transitioned to the Vine Camera app.
+      - url: https://techcrunch.com/2017/01/17/download-vine-camera/
+        publisher: TechCrunch
+        kind: press
+        published: 2017-01-17
+        archive: https://web.archive.org/web/20170118011122/https://techcrunch.com/2017/01/17/download-vine-camera/
+        quote: Today Twitter turned off sharing, liking, commenting and revining in Vine
+      - url: https://techcrunch.com/2017/01/17/download-vine-camera/
+        publisher: TechCrunch
+        kind: press
+        published: 2017-01-17
+        archive: https://web.archive.org/web/20170118011122/https://techcrunch.com/2017/01/17/download-vine-camera/
+        quote: and released its successor, Vine Camera, as an app update on iOS and Android.
+      - url: https://techcrunch.com/2017/01/17/download-vine-camera/
+        publisher: TechCrunch
+        kind: press
+        published: 2017-01-17
+        archive: https://web.archive.org/web/20170118011122/https://techcrunch.com/2017/01/17/download-vine-camera/
+        quote: It has also discontinued the Vine Windows Phone app.
+      - url: https://techcrunch.com/2017/01/17/download-vine-camera/
+        publisher: TechCrunch
+        kind: press
+        published: 2017-01-17
+        archive: https://web.archive.org/web/20170118011122/https://techcrunch.com/2017/01/17/download-vine-camera/
+        quote: >-
+          Rather than completely shut it down, Twitter gave Viners time to download their videos
+          before freezing the attached social network and re-releasing the app as a stripped-down
+          Vine Camera.
+    added: 2026-11-27
+    updated: 2026-11-27
+    sources_checked: 2026-11-27
+    status_checked: 2026-11-27
