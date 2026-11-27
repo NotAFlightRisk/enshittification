@@ -1,0 +1,144 @@
+service: bose-soundtouch
+name: Bose SoundTouch
+company: bose
+url: https://www.bose.com/soundtouch-end-of-life
+
+changes:
+  - id: cloud-shutdown
+    date: 2026-05-06
+    date_kind: effective
+    category: removed-feature
+    title: Bose switches off the SoundTouch cloud, and with it the music services in its app
+    question: When did Bose end support for SoundTouch?
+    what_changed: >-
+      Bose switched off the SoundTouch cloud on 6 May 2026, ending the music services built into the
+      SoundTouch app and support for SoundTouch presets. Bose had announced it in October 2025 for
+      18 February 2026, then moved the date and updated the app to keep what works without the
+      cloud, such as setup, grouping and playback controls, alongside Bluetooth, AirPlay, Spotify
+      Connect, AUX and, on soundbars, HDMI or optical. Stereo pairing for the SoundTouch 10, Alexa
+      voice commands and software and security updates went too, and Bose published its technical specifications and API documentation for independent developers.
+    before: Presets and music services played from the SoundTouch app
+    after: A local app for setup, grouping and controls, with music sent from other apps
+    user_impact: >-
+      Owners of SoundTouch speakers and soundbars, a range Bose introduced in 2013, lost the music
+      services in the SoundTouch app, Alexa and firmware updates, and could no longer change their
+      presets (Bose says some may still play), so music services have to be played from their own apps.
+      When it announced the shutdown, Bose offered a trade-in credit of up to $200.
+    company_said: >-
+      Bose said it was no longer able to sustain the development and support of the cloud
+      infrastructure behind this older generation of products.
+    severity: 3
+    status: in-force
+    sources:
+      - url: https://www.bose.com/soundtouch-end-of-life
+        publisher: Bose
+        kind: primary
+        published: 2026-05-06
+        archive: https://web.archive.org/web/20260923093943/https://www.bose.com/soundtouch-end-of-life
+        quote: >-
+          Cloud support has now ended, following an extension from the original February 18 date to
+          May 6, 2026.
+      - url: https://www.bose.com/soundtouch-end-of-life
+        publisher: Bose
+        kind: primary
+        published: 2026-05-06
+        archive: https://web.archive.org/web/20260923093943/https://www.bose.com/soundtouch-end-of-life
+        quote: With the Bose SoundTouch cloud now offline, access to Presets is no longer available.
+      - url: https://www.bose.com/soundtouch-end-of-life
+        publisher: Bose
+        kind: primary
+        published: 2026-05-06
+        archive: https://web.archive.org/web/20260923093943/https://www.bose.com/soundtouch-end-of-life
+        quote: >-
+          Browsing music services and initiating content from within the SoundTouch app no longer
+          functions.
+      - url: https://www.bose.com/soundtouch-end-of-life
+        publisher: Bose
+        kind: primary
+        published: 2026-05-06
+        archive: https://web.archive.org/web/20260923093943/https://www.bose.com/soundtouch-end-of-life
+        quote: >-
+          We’ve made our technical specifications available so that independent developers can
+          create their own SoundTouch-compatible tools and features.
+      - url: https://www.bose.com/soundtouch-end-of-life
+        publisher: Bose
+        kind: primary
+        published: 2026-05-06
+        archive: https://web.archive.org/web/20260923093943/https://www.bose.com/soundtouch-end-of-life
+        quote: >-
+          Setting up and configuring your system Remote control features, such as Play, Pause, Skip,
+          and Volume Grouping multiple speakers together
+      - url: https://www.bose.com/soundtouch-end-of-life
+        publisher: Bose
+        kind: primary
+        published: 2026-05-06
+        archive: https://web.archive.org/web/20260923093943/https://www.bose.com/soundtouch-end-of-life
+        quote: >-
+          While some existing presets may continue to work, we cannot guarantee that all presets
+          will work going forward. You will not be able to change any existing presets after May 6.
+      - url: https://www.bose.com/soundtouch-end-of-life
+        publisher: Bose
+        kind: primary
+        published: 2026-05-06
+        archive: https://web.archive.org/web/20260923093943/https://www.bose.com/soundtouch-end-of-life
+        quote: >-
+          Stereo pairing for SoundTouch 10 Alexa voice commands Important note: Your system will no
+          longer receive security and software updates.
+      - url: https://www.bose.com/soundtouch-end-of-life
+        publisher: Bose
+        kind: primary
+        published: 2026-05-06
+        archive: https://web.archive.org/web/20260923093943/https://www.bose.com/soundtouch-end-of-life
+        quote: >-
+          Firmware updates are no longer available now that the cloud is offline.
+      - url: https://www.bose.com/soundtouch-end-of-life
+        publisher: Bose
+        kind: primary
+        published: 2026-05-06
+        archive: https://web.archive.org/web/20260923093943/https://www.bose.com/soundtouch-end-of-life
+        quote: >-
+          Soundbars and home theater systems can still use HDMI or optical connections for TV audio.
+      - url: https://www.bose.com/soundtouch-end-of-life
+        publisher: Bose
+        kind: primary
+        published: 2026-05-06
+        archive: https://web.archive.org/web/20260923093943/https://www.bose.com/soundtouch-end-of-life
+        quote: >-
+          Bose SoundTouch systems were introduced into the market in 2013.
+      - url: https://www.bose.com/soundtouch-end-of-life
+        publisher: Bose
+        kind: primary
+        published: 2025-10-09
+        archive: https://web.archive.org/web/20251009202852/https://www.bose.com/soundtouch-end-of-life
+        quote: >-
+          we’re no longer able to sustain the development and support of the cloud infrastructure
+          that powers this older generation of products.
+      - url: https://arstechnica.com/gadgets/2025/10/bose-soundtouch-home-theater-systems-regress-into-dumb-speakers-feb-18/
+        publisher: Ars Technica
+        kind: press
+        published: 2025-10-10
+        archive: https://web.archive.org/web/20251010185827/https://arstechnica.com/gadgets/2025/10/bose-soundtouch-home-theater-systems-regress-into-dumb-speakers-feb-18/
+        quote: >-
+          On Thursday, Bose informed customers that as of February 18, 2026, it will stop supporting
+          the devices, and the devices’ cloud-based features, including the companion app, will stop
+          working.
+      - url: https://arstechnica.com/gadgets/2025/10/bose-soundtouch-home-theater-systems-regress-into-dumb-speakers-feb-18/
+        publisher: Ars Technica
+        kind: press
+        published: 2025-10-10
+        archive: https://web.archive.org/web/20251010185827/https://arstechnica.com/gadgets/2025/10/bose-soundtouch-home-theater-systems-regress-into-dumb-speakers-feb-18/
+        quote: >-
+          Affected customers can trade in their SoundTouch product for a credit worth up to $200
+      - url: https://arstechnica.com/gadgets/2026/01/bose-open-sources-its-soundtouch-home-theater-smart-speakers-ahead-of-eol/
+        publisher: Ars Technica
+        kind: press
+        published: 2026-01-07
+        archive: https://web.archive.org/web/20260107191907/https://arstechnica.com/gadgets/2026/01/bose-open-sources-its-soundtouch-home-theater-smart-speakers-ahead-of-eol/
+        quote: >-
+          In an email to customers, Bose announced that AirPlay and Spotify Connect will still work
+          with SoundTouch speakers after EoL, expanding the wireless capabilities that people will
+          still be able to access.
+    added: 2026-11-27
+    updated: 2026-11-27
+    sources_checked: 2026-11-27
+    status_checked: 2026-11-27
